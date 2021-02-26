@@ -1,0 +1,25 @@
+#+title: Dogen, the code-generator
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+
+[[file:../index.org][Back to home page]].
+
+* Introduction
+
+[[https://github.com/MASD-Project/dogen][Dogen]] is a code-generator I am developing as part of my PhD
+thesis. Here you can find links to a variety of content generated
+whilst developing Dogen.
+
+* Agile
+
+- [[file:product_backlog.org][Product backlog]]: a never ending list of stories that we'd love to
+  work on, at some point.
+- [[file:project_plan.org][Project plan]]: the highly idealised, road-map like plan to Dogen
+  development.
+
+# Local Variables:
+# org-html-validation-link: nil
+# org-tufte-include-footnotes-at-bottom: t
+# End:

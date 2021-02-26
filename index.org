@@ -26,6 +26,10 @@ particular order of importance - Angola, Finance, Programming,
 Computational Neuroscience, Football. There may be other topics here
 too.
 
+| Topic | Description                                                         |
+|-------+---------------------------------------------------------------------|
+| [[file:dogen/dogen.org][Dogen]] | Dogen is a code-generator I am developing as part of my PhD thesis. |
+
 * Site Tooling
 
 The site is kept intentionally very simple - just a set of org-mode
