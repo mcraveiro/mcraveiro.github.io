@@ -1,0 +1,61 @@
+#+title: Marco Craveiro's Home Page
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+HTML_HEAD: <link rel="stylesheet" href="css/tufte.css" type="text/css" />
+
+* Introduction
+
+Welcome to my website. Over the years I've accumulated quite a large
+amount of assorted content, in various different platforms, and begun
+to lose track of it. In order to bring some kind of order to the
+chaos, I decided to republish all of this material under a single
+home, using the tools I love - /e.g./, [[https://www.gnu.org/software/emacs/][emacs]], [[https://orgmode.org/][org-mode]], [[https://git-scm.com/][git]] and the
+like. I'm not entirely sure you will find anything particularly
+amazing around here, but have a browse. If you need to know more about
+me, see the [[file:about.org][about page]].
+
+* Content
+
+The site is organised rather like a wiki, instead of having the more
+traditional "blog posts" feel. Some of the stuff is very old and was
+originally published in [[https://mcraveiro.blogspot.com/][my blog in blogger]] - though these days I very
+much prefer writing and publishing directly in org-mode, and thus my
+blog has died a slow death. My main topics of interest are - in no
+particular order of importance - Angola, Finance, Programming,
+Computational Neuroscience, Football. There may be other topics here
+too.
+
+* Site Tooling
+
+The site is kept intentionally very simple - just a set of org-mode
+files, exported to HTML using the amazing
+[[https://github.com/dakrone/ox-tufte][ox-tufte]] [fn:ox-twbs] [fn:tufte_css]. The process of converting the
+org-mode files into HTML is /extraordinarily manual/ - I open a file
+and export using =org-tufte-export-to-html= or the org-mode export
+menu. I would very much advise /against/ copying this approach, and
+I've only chosen it because I lack the time to move to a more sensible
+framework.
+* Social Media
+
+You may find me in several social media platforms, though I am not the
+most prolific of posters. Also, this site does not support user
+commentary, so if for whatever reason you feel the need to reach out,
+your best bet is to find me on Twitter.
+
+| Platform       | Profile                                              |
+|----------------+------------------------------------------------------|
+| Micro-blogging | [[https://twitter.com/MarcoCraveiro][Twitter]], [[https://www.instagram.com/marco_craveiro/][Instagram]]                                   |
+| Development    | [[https://github.com/mcraveiro][GitHub]], [[https://gitlab.com/mcraveiro][GitLab]]                                       |
+| Other          | [[https://www.linkedin.com/in/marco-craveiro-31558919/][LinkedIn]]                                             |
+
+* Footnotes
+
+[fn:ox-twbs] Do see the equally amazing [[https://github.com/marsmining/ox-twbs][ox-twbs]].
+
+[fn:tufte_css] For the CSS see the [[https://github.com/edwardtufte/tufte-css][tufte-css]] GitHub project.
+
+# Local Variables:
+# org-html-validation-link: nil
+# org-tufte-include-footnotes-at-bottom: t
+# End:

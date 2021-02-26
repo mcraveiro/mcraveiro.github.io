@@ -1,0 +1,48 @@
+#+title: About Me
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+HTML_HEAD: <link rel="stylesheet" href="css/tufte.css" type="text/css" />
+
+[[file:index.org][Back to home page]].
+
+* Quick Bio
+
+The bio from my [[https://github.com/mcraveiro][GitHub profile]] is still fairly accurate:
+
+#+begin_quote
+Dad, Husband, PhD Student, Senior Software Engineer, FX Derivatives
+geek, Angolan-Portuguese.
+#+end_quote
+
+* Programming
+
+I've spent over twenty years programming professionally, almost all of
+which spent in the United Kingdom, with a few escapades in Angola and
+Portugal. My main focus over the last fifteen or so years has been the
+financial sector - in particular the FX derivatives market. I am
+currently gainfully employed and therefore not looking for
+opportunities.
+
+* Domain Driven Consulting
+
+On my spare time I also manage my company Domain Driven Consulting,
+focusing on software automation - the subject of which is my PhD
+thesis, which I will hope to publish soon (famous last words). My
+/alma matter/ is the [[https://www.herts.ac.uk/][University of Hertfordshire]].
+
+* Languages
+
+I speak fluently English and Portuguese, but I can survive in Spanish
+and if really pushed, maybe in French; my favourite expression, which
+I heard our [[https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo][Congolese neighbours]] say many a time is /Je me
+débrouille/.
+
+#+caption: Profile picture
+#+NAME: fig:gotch
+#+attr_html: :width 30% :height 30% :align center
+[[./gfx/gotchi_large.jpg]]
+
+# Local Variables:
+# org-html-validation-link: nil
+# org-tufte-include-footnotes-at-bottom: t
+# End:
