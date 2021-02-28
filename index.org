@@ -30,6 +30,7 @@ too.
 |---------------+---------------------------------------------------------------------|
 | [[file:dogen/dogen.org][Dogen]]         | Dogen is a code-generator I am developing as part of my PhD thesis. |
 | [[file:stackoverflow/answers.org][Stackoverflow]] | I occasionally create questions and answers in Stackoverflow.       |
+| [[file:bookmarks.org][Interesting]]   | Assorted bookmarks on stuff I bump into.                            |
 
 * Site Tooling
 

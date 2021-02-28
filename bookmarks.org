@@ -1,0 +1,70 @@
+#+title: Interesting
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+HTML_HEAD: <link rel="stylesheet" href="css/tufte.css" type="text/css" />
+
+[[file:index.org][Back to home page]].
+
+Assorted list of stuff on the web I found that looks interesting, so
+that I don't forget about it. If I have had time to parse it, it also
+has some minor commentary as to why I found it interesting.
+
+* Emacs
+
+Anything of interest on the subject of my favourite editor, Emacs.
+
+** Configs
+
+User configurations with stuff I want to copy.
+
+- [[https://github.com/redguardtoo/emacs.d][redguardtoo' emacs.d]]: "A fast and robust Emacs setup"
+- [[https://github.com/skeeto/.emacs.d][skeeto's .emacs.d]]: "My Personal Emacs Configuration"
+- [[https://github.com/caisah/emacs.dz][caisah's emacs.dz]]: "A list of people with nice emacs config files"
+
+** Authoring
+
+- [[https://github.com/emacs-love/weblorg][weblorg]]: "A Static HTML Generator entirely written in
+  Emacs-Lisp". Not actually using it at present, but it does seem to
+  make the whole authoring process much easier.
+
+** Email
+
+- [[https://muto.ca/posts/actually-using-emacs-rmail.html][Actually Using Emacs Rmail]]: blog post on how to setup rmail.
+
+** Toolbar
+
+- [[https://github.com/FStarLang/fstar-mode.el/blob/3afbf04e4eb21af950cfdb727d8b808164fd9415/fstar-mode.el#L5446][F* mode]]: interesting use of SVG icons. See also
+
+** People
+
+Blogs and other material from Emacs users.
+
+- [[https://two-wrongs.com/][Two Wrongs]]: blog created using Emacs tools with lots of posts on
+  emacs.
+
+* Audiobooks
+
+- [[https://www.bbc.co.uk/programmes/m000sh8r][Riot Girls]]: Sci-fi story from BBC. Girls from the future which
+  appear to solve all our problems.
+
+* Crypto
+
+** ADA
+
+- [[https://iohk.io/en/blog/posts/2021/02/25/babel-fees/][Babel fees - denominating transaction costs in native tokens]]
+- [[https://www.linkedin.com/pulse/mary-hardfork-what-mean-cardano-frederik-gregaard/][The Mary hardfork - what will it mean for Cardano?]]
+
+* C++
+
+** QuantLib
+
+- [[http://cogitolearning.co.uk/2012/09/quantlib-automatic-conversion-with-the-exchange-rate-manager/][QuantLib: Automatic Conversion with the Exchange Rate Manager]]
+
+* Articles I should read
+
+- [[https://blog.royalsloth.eu/posts/the-complexity-that-lives-in-the-gui/][The complexity that lives in the GUI]]
+
+# Local Variables:
+# org-html-validation-link: nil
+# org-tufte-include-footnotes-at-bottom: t
+# End:

@@ -6,26 +6,37 @@
 
 [[file:../index.org][Back to home page]].
 
+* Mine
+
 List of questions and answers I've done in Stack Overflow.
 
-* Emacs
+** Emacs
 
 - [[https://emacs.stackexchange.com/questions/63391/how-do-i-link-to-an-id-on-a-non-org-mode-file][Question: How do I link to an ID on a non org-mode file?]]
 - [[https://emacs.stackexchange.com/questions/45490/changing-display-function-in-define-word-package/63637#63637][Answer: changing display function in define-word package]]
 - [[https://emacs.stackexchange.com/questions/63350/how-can-i-display-very-large-svg-files-using-image-mode/63373#63373][Question: How can I display very large SVG files using `image-mode`?]]
 - [[https://stackoverflow.com/questions/1587972/how-to-display-indentation-guides-in-emacs/56144459#56144459][Answer: How to display indentation guides in Emacs?]]
 
-* Dotnet
+** Dotnet
 
 - [[https://stackoverflow.com/questions/7557562/how-do-i-get-the-message-msbuild-task-to-show-up-in-the-visual-studio-project/61209137#61209137][Answer: How do I get the <Message> MSBuild task to show up in the Visual Studio project output?]]
 
-* C++
+** C++
 
 - [[https://stackoverflow.com/questions/39798321/generate-clang-compilation-database-for-a-visual-studio-project/55675091#55675091][Answer: Generate clang compilation database for a Visual Studio project]]
 - [[https://stackoverflow.com/questions/6835728/how-to-break-when-a-specific-exception-type-is-thrown-in-gdb/61030819#61030819][Answer: How to break when a specific exception type is thrown in GDB?]]
 - [[https://stackoverflow.com/questions/58205454/faster-execution-of-vanilla-swaps-in-python-in-quantlib/62397407#62397407][Answer: Faster execution of Vanilla Swaps in Python in Quantlib]]
 - [[https://stackoverflow.com/questions/47475731/cmake-include-directories-for-custom-target-type/58200691#58200691][Answer: CMake include_directories for custom target type]]
 - [[https://stackoverflow.com/questions/39910468/odb-c-unknown-database-schema-error/58107350#58107350][Answer: ODB C++ - Unknown database schema error]]
+
+* Others
+
+Links to questions that I have used in the past for some reason or
+other and I don't want to forget.
+
+** Emacs
+
+- [[https://emacs.stackexchange.com/questions/4253/how-to-start-emacs-with-a-custom-user-emacs-directory][How to start emacs with a custom user-emacs-directory]]
 
 # Variables:
 # org-html-validation-link: nil
