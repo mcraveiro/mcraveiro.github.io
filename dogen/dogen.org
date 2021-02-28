@@ -19,6 +19,11 @@ whilst developing Dogen.
 - [[file:project_plan.org][Project plan]]: the highly idealised, road-map like plan to Dogen
   development.
 
+* PhD
+
+- [[file:papers.org][MDE Papers]]: lists a number of papers I have read on the topic of
+  Model Driven Engineering (MDE).
+
 # Local Variables:
 # org-html-validation-link: nil
 # org-tufte-include-footnotes-at-bottom: t
