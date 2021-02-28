@@ -35,6 +35,15 @@ User configurations with stuff I want to copy.
 
 - [[https://github.com/FStarLang/fstar-mode.el/blob/3afbf04e4eb21af950cfdb727d8b808164fd9415/fstar-mode.el#L5446][F* mode]]: interesting use of SVG icons. See also
 
+** Interesting modes
+
+- [[https://gitlab.com/howardabrams/emacs-piper][emacs-piper]]: "Wrapper around existing Emacs functionality that
+  creates an interactive user interface to dealing with unstructured
+  textual data similar with how we transform data through pipes in the
+  shell."
+- [[https://github.com/nobiot/org-transclusion][org-transclusion:]] "Transclusion is the ability to include content
+  from one file into another by reference."
+
 ** People
 
 Blogs and other material from Emacs users.
@@ -63,6 +72,10 @@ Blogs and other material from Emacs users.
 * Articles I should read
 
 - [[https://blog.royalsloth.eu/posts/the-complexity-that-lives-in-the-gui/][The complexity that lives in the GUI]]
+- [[https://aidancunniffe.com/why-programming-is-hard-to-fundamentally-improve-4101612d4ad9][Why Programming is Hard to Fundamentally Improve]]
+- [[https://www.scylladb.com/2020/03/26/avi-kivity-at-core-c-2019/][Avi Kivity at Core C++ 2019]]
+- [[https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html][The Clean Architecture]]
+- [[https://americanaffairsjournal.org/2020/05/science-without-validation-in-a-world-without-meaning/][Science without Validation in a World without Meaning]]
 
 # Local Variables:
 # org-html-validation-link: nil
