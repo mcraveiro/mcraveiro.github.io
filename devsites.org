@@ -14,10 +14,11 @@
 
 *** Emacs
 
- - [[https://emacs.stackexchange.com/questions/63391/how-do-i-link-to-an-id-on-a-non-org-mode-file][Question: How do I link to an ID on a non org-mode file?]]
- - [[https://emacs.stackexchange.com/questions/45490/changing-display-function-in-define-word-package/63637#63637][Answer: changing display function in define-word package]]
- - [[https://emacs.stackexchange.com/questions/63350/how-can-i-display-very-large-svg-files-using-image-mode/63373#63373][Question: How can I display very large SVG files using `image-mode`?]]
- - [[https://stackoverflow.com/questions/1587972/how-to-display-indentation-guides-in-emacs/56144459#56144459][Answer: How to display indentation guides in Emacs?]]
+- [[https://emacs.stackexchange.com/questions/63391/how-do-i-link-to-an-id-on-a-non-org-mode-file][Q: How do I link to an ID on a non org-mode file?]]
+- [[https://emacs.stackexchange.com/questions/45490/changing-display-function-in-define-word-package/63637#63637][A: changing display function in define-word package]]
+- [[https://emacs.stackexchange.com/questions/63350/how-can-i-display-very-large-svg-files-using-image-mode/63373#63373][Q: How can I display very large SVG files using `image-mode`?]]
+- [[https://stackoverflow.com/questions/1587972/how-to-display-indentation-guides-in-emacs/56144459#56144459][A: How to display indentation guides in Emacs?]]
+- Q&A: [[https://emacs.stackexchange.com/questions/63886/large-org-mode-file-causes-error-re-entering-top-level-after-c-stack-overflow][Large org-mode file causes error “Re-entering top level after C stack overflow”]]
 
 *** Dotnet
 
