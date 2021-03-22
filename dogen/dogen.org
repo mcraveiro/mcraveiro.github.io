@@ -18,6 +18,8 @@ whilst developing Dogen.
   work on, at some point.
 - [[file:project_plan.org][Project plan]]: the highly idealised, road-map like plan to Dogen
   development.
+- [[file:doxygen/index.html][Doxygen documentation]]: Generated documentation for the Dogen code
+  base.
 
 * PhD
 
