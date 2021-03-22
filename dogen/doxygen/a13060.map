@@ -1,0 +1,3 @@
+<map id="differ" name="differ">
+<area shape="rect" id="node1" title="Diffs two strings. Returns the result as a unified diff." alt="" coords="5,5,73,97"/>
+</map>

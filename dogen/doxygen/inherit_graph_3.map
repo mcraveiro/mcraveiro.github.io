@@ -1,0 +1,56 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,1279,92,1305"/>
+<area shape="rect" id="node2" href="$a08558.html" title="A fatal error has occurred whilst executing the application." alt="" coords="164,5,329,32"/>
+<area shape="rect" id="node3" href="$a08598.html" title="A fatal error has occurred during option parsing." alt="" coords="179,56,314,83"/>
+<area shape="rect" id="node4" href="$a08698.html" title="A fatal error has occurred while adapting an object into an element." alt="" coords="181,107,312,133"/>
+<area shape="rect" id="node5" href="$a08722.html" title="An error has occurred while building the dia object graph." alt="" coords="188,157,305,184"/>
+<area shape="rect" id="node6" href="$a08730.html" title="An error occurred whilst projecting elements from one space to another." alt="" coords="184,208,309,235"/>
+<area shape="rect" id="node7" href="$a08738.html" title="A cycle was detected in the references graph." alt="" coords="169,259,325,301"/>
+<area shape="rect" id="node8" href="$a08958.html" title="An error occurred whilst applying a transformation." alt="" coords="168,325,325,352"/>
+<area shape="rect" id="node9" href="$a08506.html" title="An error ocurred when dumping dogen&#39;s specs." alt="" coords="171,376,322,403"/>
+<area shape="rect" id="node10" href="$a09130.html" title="An error occurred whilst building." alt="" coords="191,427,303,453"/>
+<area shape="rect" id="node11" href="$a09134.html" title="An error occurred whilst flattening a name." alt="" coords="185,477,308,504"/>
+<area shape="rect" id="node12" href="$a09206.html" title="A fatal error has occurred while parsing." alt="" coords="193,528,301,555"/>
+<area shape="rect" id="node13" href="$a09234.html" title="An error occurred whilst pretty printing." alt="" coords="191,579,302,605"/>
+<area shape="rect" id="node14" href="$a09242.html" title="An error occurred during validation." alt="" coords="184,629,309,656"/>
+<area shape="rect" id="node15" href="$a08518.html" title="The values supplied for the configuration are not valid." alt="" coords="167,681,326,722"/>
+<area shape="rect" id="node16" href="$a09954.html" title="An error has occurred while formatting." alt="" coords="182,747,311,773"/>
+<area shape="rect" id="node17" href="$a09970.html" title="An error has occurred in a factory." alt="" coords="191,797,303,824"/>
+<area shape="rect" id="node18" href="$a10010.html" title="A fatal error has occurred while indexing." alt="" coords="189,848,305,875"/>
+<area shape="rect" id="node19" href="$a10030.html" title="An error has occurred while mapping element names." alt="" coords="188,899,305,925"/>
+<area shape="rect" id="node20" href="$a10062.html" title="An error occurred while trying to resolve a type." alt="" coords="184,949,309,976"/>
+<area shape="rect" id="node21" href="$a10074.html" title="An error occurred during validation." alt="" coords="184,1000,309,1027"/>
+<area shape="rect" id="node22" href="$a09266.html" title="An error has occurred while injecting types." alt="" coords="191,1051,303,1077"/>
+<area shape="rect" id="node23" href="$a10246.html" title="An error occurred whilst applying a transformation." alt="" coords="168,1101,325,1128"/>
+<area shape="rect" id="node24" href="$a10390.html" title="An error ocurred whilst projecting elements from one space into another." alt="" coords="184,1152,309,1179"/>
+<area shape="rect" id="node25" href="$a10434.html" title="An error occurred in the factory whilst making." alt="" coords="177,1203,316,1229"/>
+<area shape="rect" id="node26" href="$a10542.html" title="An error occurred whilst building." alt="" coords="191,1253,303,1280"/>
+<area shape="rect" id="node27" href="$a10558.html" title="An error ocurred whilst parsing an org&#45;mode document." alt="" coords="193,1304,301,1331"/>
+<area shape="rect" id="node28" href="$a10570.html" title="An error occurred whilst transforming." alt="" coords="168,1355,325,1381"/>
+<area shape="rect" id="node29" href="$a10786.html" title="An error occurred while the field factory was building." alt="" coords="191,1405,303,1432"/>
+<area shape="rect" id="node30" href="$a10818.html" title="An error occurred during validation." alt="" coords="184,1456,309,1483"/>
+<area shape="rect" id="node31" href="$a11354.html" title="An error occurred when trying to resolve a key." alt="" coords="184,1507,309,1533"/>
+<area shape="rect" id="node32" href="$a11358.html" title="An error occurred with the supplied KVPs." alt="" coords="184,1557,309,1584"/>
+<area shape="rect" id="node33" href="$a11386.html" title="An error occurred whilst formatting." alt="" coords="182,1608,311,1635"/>
+<area shape="rect" id="node34" href="$a11406.html" title="An error occurred whilst parsing." alt="" coords="193,1659,301,1685"/>
+<area shape="rect" id="node35" href="$a11422.html" title="An error occurred whilst extracting a key." alt="" coords="183,1709,310,1736"/>
+<area shape="rect" id="node36" href="$a11430.html" title="An error occurred whilst formatting." alt="" coords="182,1760,311,1787"/>
+<area shape="rect" id="node37" href="$a11470.html" title="An error has occurred while formatting." alt="" coords="182,1811,311,1837"/>
+<area shape="rect" id="node38" href="$a12894.html" title="An error occurred whilst applying a transformation." alt="" coords="168,1861,325,1888"/>
+<area shape="rect" id="node39" href="$a12958.html" title="An error occurred when trying to generate tracing data." alt="" coords="194,1912,299,1939"/>
+<area shape="rect" id="node40" href="$a12962.html" title="There was an error reading an environment variable." alt="" coords="159,1963,335,1989"/>
+<area shape="rect" id="node41" href="$a12974.html" title="base class for all exceptions within dogen." alt="" coords="203,2013,290,2040"/>
+<area shape="rect" id="node45" href="$a12978.html" title="File was not found." alt="" coords="189,2064,304,2091"/>
+<area shape="rect" id="node46" href="$a12982.html" title="An error occurred whilst performing an IO operation." alt="" coords="211,2115,283,2141"/>
+<area shape="rect" id="node47" href="$a12990.html" title="An error has occurred while formatting." alt="" coords="182,2165,311,2192"/>
+<area shape="rect" id="node48" href="$a13042.html" title="The values supplied for the logging configuration are not valid." alt="" coords="140,2216,353,2243"/>
+<area shape="rect" id="node49" href="$a13142.html" title="An error occurred whilst obtaining the test data." alt="" coords="169,2267,324,2293"/>
+<area shape="rect" id="node50" href="$a13318.html" title="An error occurred whilst adapting a model." alt="" coords="171,2317,322,2344"/>
+<area shape="rect" id="node51" href="$a13342.html" title="An error occurred whilst mapping enums to or from strings." alt="" coords="149,2368,344,2395"/>
+<area shape="rect" id="node52" href="$a13350.html" title="An error occurred whilst instantiating templates." alt="" coords="159,2419,334,2445"/>
+<area shape="rect" id="node53" href="$a13354.html" title="An error occurred whilst merging." alt="" coords="173,2469,320,2496"/>
+<area shape="rect" id="node54" href="$a13422.html" title="An error occurred whilst applying a transformation." alt="" coords="168,2520,325,2547"/>
+<area shape="rect" id="node42" href="$a12970.html" title="The exception thrown when an enum has an unexpected value." alt="" coords="405,1955,558,1981"/>
+<area shape="rect" id="node43" href="$a13114.html" title="Error occurred during container generation." alt="" coords="401,2006,561,2047"/>
+<area shape="rect" id="node44" href="$a13130.html" title="Attempting to generate more terms that those on the sequence." alt="" coords="402,2072,561,2099"/>
+</map>

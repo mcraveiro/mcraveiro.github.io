@@ -1,0 +1,10 @@
+<map id="value" name="value">
+<area shape="rect" id="node1" title="Base class of all value types." alt="" coords="644,5,757,259"/>
+<area shape="rect" id="node2" href="$a13198.html" title="Represents a boolean value." alt="" coords="5,365,121,589"/>
+<area shape="rect" id="node3" href="$a13202.html" title="Represents a CSV input that is split into a collection of text values." alt="" coords="146,365,325,589"/>
+<area shape="rect" id="node4" href="$a13206.html" title="Represents a collection of CSV input that is split into a collection of text values." alt="" coords="349,365,599,589"/>
+<area shape="rect" id="node5" href="$a13258.html" title="Represents a pair of key and value." alt="" coords="623,307,779,648"/>
+<area shape="rect" id="node6" href="$a13262.html" title="Represents a numeric integral value." alt="" coords="803,365,919,589"/>
+<area shape="rect" id="node7" href="$a13286.html" title="Represents a text value." alt="" coords="943,365,1059,589"/>
+<area shape="rect" id="node8" href="$a13290.html" title="Represents a collection of text values." alt="" coords="1083,365,1238,589"/>
+</map>

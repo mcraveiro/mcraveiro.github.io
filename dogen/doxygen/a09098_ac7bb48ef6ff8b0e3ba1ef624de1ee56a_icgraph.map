@@ -1,0 +1,11 @@
+<map id="meta_model" name="meta_model">
+<area shape="rect" id="node1" title="Top&#45;most container for the physical space." alt="" coords="875,180,979,207"/>
+<area shape="rect" id="node2" href="$a09214.html#ae504dc72e93bcbf43c5249ecc04c796c" title="Builds a qualified name for the meta&#45;model region in physical space." alt="" coords="604,125,827,181"/>
+<area shape="rect" id="node7" href="$a09218.html#a34c711c70c851cc5d70a5f58610cb30e" title="Adds a meta&#45;model to the meta&#45;name." alt="" coords="611,205,819,261"/>
+<area shape="rect" id="node3" href="$a09214.html#a710150c029c551c10ce815a265711a69" title="Builds a qualified name for the backend region in physical space." alt="" coords="310,125,505,181"/>
+<area shape="rect" id="node4" href="$a09214.html#a23d504058008f90133f519d576349c1b" title="Builds a qualified name for the complete archetype." alt="" coords="5,5,211,61"/>
+<area shape="rect" id="node5" href="$a09214.html#a3bdbe2f6af0525c77f16378ea55aebb5" title="Builds a qualified name for the facet region in physical space." alt="" coords="17,85,199,141"/>
+<area shape="rect" id="node6" href="$a09214.html#a8c039eeed172d091aa66582a708952d4" title="Builds a qualified name for the part region in physical space." alt="" coords="17,165,199,221"/>
+<area shape="rect" id="node8" href="$a10882.html#a671448af0bffa933b7d8d3a82c004a9b" title="Apply the transform." alt="" coords="259,213,556,254"/>
+<area shape="rect" id="node9" href="$a10886.html#a671448af0bffa933b7d8d3a82c004a9b" title="Apply the transform to generate a meta&#45;model." alt="" coords="7,245,209,301"/>
+</map>

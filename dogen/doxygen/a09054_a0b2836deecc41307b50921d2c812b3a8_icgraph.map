@@ -1,0 +1,7 @@
+<map id="model_modules" name="model_modules">
+<area shape="rect" id="node1" title="Modules related to just the model itself." alt="" coords="469,122,596,149"/>
+<area shape="rect" id="node2" href="$a09158.html#a755570a077cf80369cba4e5edddc158c" title="Combines element name with model name." alt="" coords="234,5,419,76"/>
+<area shape="rect" id="node4" href="$a09158.html#a401430a8eba80d7c491df57117dbd2d6" title="Creates the name of the containing element, derived from the element&#39;s name." alt="" coords="232,100,421,171"/>
+<area shape="rect" id="node5" href="$a09274.html#aa3967d06d9767f42aeddad918fd0051f" title="Returns true if the name matches the mock model factory naming convention for model n." alt="" coords="243,195,410,251"/>
+<area shape="rect" id="node3" href="$a10066.html#a125d93ce3c3688cda9227c5b82368495" title="Resolves the name as an object template name." alt="" coords="5,13,184,69"/>
+</map>

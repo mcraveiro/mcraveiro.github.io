@@ -1,0 +1,6 @@
+<map id="make_large_package" name="make_large_package">
+<area shape="rect" id="node1" title="Generates a new UML large package." alt="" coords="237,78,396,105"/>
+<area shape="rect" id="node2" href="$a08882.html#aee5a2fc12d09a55ecda08384cc0c60d9" title="Generates a UML class inside a large package, itself inside a large package." alt="" coords="5,5,189,47"/>
+<area shape="rect" id="node3" href="$a08882.html#a4ba9908dbc9110a0abe8759bec396825" title="Generates a UML class inside a large package, plus the large package itself." alt="" coords="10,71,185,112"/>
+<area shape="rect" id="node4" href="$a08882.html#a33b75142e8df78f6065555a26a89f98a" title="Generates two UML classes and a generalisation between the two, and places all objects inside a packa..." alt="" coords="13,136,182,177"/>
+</map>
