@@ -49,11 +49,17 @@ Any useful commentary in GitHub.
 
 Tickets that I raised, or to which I added significant commentary.
 
+** C++
+
+- [[https://github.com/jothepro/doxygen-awesome-css/issues/2][doxygen-awesome-css: Creating a link to the dark theme]]
+- [[https://github.com/doxygen/doxygen/issues/8455][doxygen: Documentation coverage information]]
+
 *** Emacs
 
 - [[https://github.com/skuro/plantuml-mode/issues/134][plantuml-mode: Vertical split preview #134]]
 - [[https://github.com/nobiot/org-transclusion/issues/59][org-transclusion: Transclusion of non-org mode files #59]]
 - [[https://github.com/abo-abo/define-word/issues/29][define-word: Redefining display function to output to a buffer instead of messages #29]]
+- [[https://github.com/emacs-csharp/csharp-mode/issues/230][beginning-of-defun et al. not behaving the same as on C++ mode]]
 
 # Variables:
 # org-html-validation-link: nil
