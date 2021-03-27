@@ -43,6 +43,7 @@ and export using =org-tufte-export-to-html= or the org-mode export
 menu. I would very much advise /against/ copying this approach, and
 I've only chosen it because I lack the time to move to a more sensible
 framework.
+
 * Social Media
 
 You may find me in several social media platforms, though I am not the
@@ -50,11 +51,12 @@ most prolific of posters. Also, this site does not support user
 commentary, so if for whatever reason you feel the need to reach out,
 your best bet is to find me on Twitter.
 
-| Platform       | Profile                                              |
-|----------------+------------------------------------------------------|
-| Micro-blogging | [[https://twitter.com/MarcoCraveiro][Twitter]], [[https://www.instagram.com/marco_craveiro/][Instagram]]                                   |
-| Development    | [[https://github.com/mcraveiro][GitHub]], [[https://gitlab.com/mcraveiro][GitLab]]                                       |
-| Other          | [[https://www.linkedin.com/in/marco-craveiro-31558919/][LinkedIn]]                                             |
+| Platform       | Profile            |
+|----------------+--------------------|
+| Micro-blogging | [[https://twitter.com/MarcoCraveiro][Twitter]], [[https://www.instagram.com/marco_craveiro/][Instagram]] |
+| Development    | [[https://github.com/mcraveiro][GitHub]], [[https://gitlab.com/mcraveiro][GitLab]]     |
+| Other          | [[https://www.linkedin.com/in/marco-craveiro-31558919/][LinkedIn]]           |
+| Videos         | [[https://www.youtube.com/channel/UCZLcCjqOG1VmbSfoAJAf2mA][YouTube]]            |
 
 * Footnotes
 
