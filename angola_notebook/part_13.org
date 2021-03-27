@@ -1,0 +1,904 @@
+#+title: Notebook of a Return to My Native Land - part 13
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+
+[[file:index.org][Back to chapter index.]]
+
+Wednesday, March 21, 2007
+
+#+begin_verse
+/In many respects, South Africa is developed; however, this development
+is significantly localised around four areas, namely Cape Town, Port
+Elizabeth, Durban, and Pretoria/Johannesburg. Beyond these four
+economic centres, development is marginal and poverty still reigns
+despite government efforts./ -- South Africa, Wikipedia
+#+end_verse
+
+* Back to the Big City
+
+There was one single running theme to our return to South Africa:
+amazement.
+
+Returning to Joburg felt very much like returning to Europe - to
+organisation and modernity. Many diasporians insist on going at least
+once a year back to Europe, and now we can understand why. You just
+need a bit of normality after the chaos. But Angola stays deep within
+you, as we found out when showing our passports. Apparently we only
+had another couple of weeks left on our original multiple entry visa,
+so the immigration officer asked me if I wanted a visa
+extension. Without even thinking, I instantly said "no thanks, we'll
+come back and renew it when required". Thankfully Shahin was more
+sensible and asked the officer how easy it was to renew the visa. To
+our great surprise, all it takes is to insert another sticker on your
+passport and stamp it. That's it. The entire visa renewal took no more
+than five minutes. We just stood there in amazement, speechless, a
+tear in the corner of the eye struggling to stay in. We just felt like
+hugging the woman.
+
+This second time round we also noticed the airport's quality a lot
+more. You can't really appreciate how South Africa is developed when
+you come from England because the infrastructure is, in many ways, of
+the same calibre. OR Tambo and Heathrow are very similar. But after
+spending hours on end in 4 de Fevereiro, totally confused and
+disorientated, not knowing if your flight will depart today or not, OR
+Tambo was nothing short of paradise on earth. Spotless, noiseless,
+perfectly organised. And the staff is so friendly everywhere you go,
+you just feel like giving them money. A far cry from the average
+Angolan waiter, to whom you're nothing but an annoyance.
+
+While we were wandering around the airport we bumped into a Vodacom
+shop. Having a mobile phone in Angola proved to be extremely useful,
+so we decided to buy one here too. Getting it was a painless
+experience and it was a big win as we have been using the phone almost
+all the time.
+
+To keep things simple, we decided to return to Gemini's
+backpackers. The forty-minute transfer from the airport was quite
+enjoyable, and it was great to see how big and developed Joburg really
+is. Whilst Gemini is miles away from Joburg's centre, it did have the
+redeeming factor of being a known good place. Besides, we intended to
+board the next available bus to Durban, so it didn't really matter
+where we were staying. In the end, it was a good choice. There's
+something reassuring in seeing familiar faces when you travel for
+extended periods of time. I don't know why, I guess maybe one starts
+to yearn for some normality in the midst of constant change. It was
+great to see Aaron again and it felt like nothing had changed. He was
+still running around doing errands, trying to sort out the world.
+
+When we ordered some dinner that night we were amazed at how cheap
+things are. We originally thought South Africa was an expensive place,
+but this was before paying 100 USD in a restaurant in downtown
+Luanda. In South Africa you can get a take-away for two people for 50
+rand. That is less than 4 GBP (around 8 USD). It really did feel dirt
+cheap after Angola, where we paid 25 USD for the only take-away we
+had.
+
+In the morning we went down to the bus interchange in downtown Joburg
+and boarded the next available Greyhound. We sat on the bus in quiet
+amazement. For 130 Rand per person, less than 10 GBP (20 USD) we got a
+luxury bus, including air conditioned and lots of space.
+
+They even served us complimentary tea and biscuits.
+
+The roads were absolutely excellent and the eight hours just flew
+by. We were in Durban in no time.
+
+** Durban
+
+Durban is one of the biggest cities in South Africa and the largest one in kwaZulu-Natal. It has over three million inhabitants. Its biggest claim to fame is the port - the busiest in Africa - but there are many other aspects of interest in the town. Tourism is huge here and the beaches are really nice.
+
+The city in itself is also quite remarkable in terms of architecture,
+combining high-rise with sprawl. The suburbs of Durban are mainly
+about low rise and narrow roads, a great number of medium and large
+houses with immense gardens, lush green trees peeping from
+high-voltage fences. Town centre is more about high-rise and
+skyscrapers: forty story towers built in that old seventies style,
+brown and grey. Durban also sports a great number of grand old
+buildings, very old and very noble.
+
+I'm afraid our first accommodation had nothing noble about it. We
+decided to crash at Bananas Backpackers, which according to Lonely
+Planet had one single selling point, being close to the beach. I
+suppose one may add the friendliness of the staff, who really were the
+heart and soul of the place. The good news ended there though.
+
+Bananas is located in one of the dodgiest areas of town, right next
+door to massage parlours, escort agencies and adult video shops. The
+streets are full with bayaye hanging round, looking for something to
+do. The building itself has seen better days and is in need of some
+refurbishment. Their Internet has been broken for months. To top it
+off, it was the first place in this trip with bed bugs. We only
+noticed them a few days in, when the weather turned cold and we needed
+to use the duvet. My thick Angolan skin seems to be less affected by
+these crazy critters but Shahin spent a night in pain, scratching
+herself like a dog with fleas. To be honest, I did like Bananas, a bit
+like poets like the Soho and bohemian life. It had character. And,
+excluding bed bugs, it is actually pretty clean, showers and kitchen
+and the like.
+
+Around the corner from Bananas we found the cheapest web cafe in
+Africa, selling one hour on fast Internet for six rand. That is like
+less than 1 USD, and we're talking about fast, reliable, ass-kicking
+Internet. We spent something like four hours on the net the first time
+we found this cyber cafe, uploading all the pictures we hadn't managed
+to upload in Angola and chatting to everyone we hadn't spoken to in
+months. The only down side of this cyber is the location. One never
+sees any tourists there other than us, and there are always lots of
+dodgy characters loitering around. But we never had any problems and
+the owners were really friendly people.
+
+Another very popular activity on our first few days in Durban was
+beach bumming. The coast has quite a few beaches, all with vast
+expanses of sand, but not many of them are swimming beaches. That is,
+you can probably swim at your own risk, but no one seems to.
+
+When most people think of the Indian ocean they probably see quiet,
+idyllically calm waters, still swimming pools disguised as
+ocean. Perhaps some parts of the Indian ocean are indeed like that,
+but make no mistake: kwaZulu-Natal certainly isn't. The sea here is
+fast and furious, with set after set of waves hitting the coast, each
+two metres high or more. The sets come packed in three or four waves
+at a time, not much space in between them. This is perfect for
+surfing, one of the most popular sports in Durban. It is not, however,
+ideal for swimming. On rough days swells can be higher than four
+metres (we saw waves wetting passers-by in the piers); on normal days,
+waves are on the two metre and above sort of range.
+
+And then there are our friends, the great white sharks. These are mean
+machines who don't even like human flesh, but since they have a nasty
+habit of nibbling before eating, they tend to maul people pretty
+badly. Those who survive, of course. The good news is Durban's coast
+is surrounded by shark nets, which get checked daily for damage. These
+seem pretty good at stopping the sharks, and there hasn't been any
+shark attacks for a very long time.
+
+Durban's beach is walled by massive high-rise five star hotels, all in
+one very long road. The hotels are surrounded by many restaurants,
+most reasonably priced, with meals ranging between 50 to 80 rand. One
+place we particularly liked was "Bombay to Beirut", a very good Indian
+restaurant. Next door to the beach there is a long promenade, with
+many bars and some more restaurants. There are also a few water parks
+for the kids and a large swimming pool. The swimming pool is Olympic
+sized, and I had great fun in attempting to swim two lengths non-stop
+in it. Never quite managed, but I felt compelled to try again and
+again since entrance was only 4 rands (less than 30p!) rather than the
+4 GBP we were used to paying to use our dodgy little pool in Bethnal
+Green.
+
+In those first few days we started getting upset at South Africa
+again. Beneath the layer of development and easiness lie some
+difficult social problems, made all the more obvious because of the
+colour divide. Its annoying to see that all shop and restaurant owners
+are white but all waiters are black; and we were the only non-whites
+in most restaurants we went to, making us feel like we were under a
+spotlight. Occasionally there were some Asian couples, but we've seen
+very few black or mixed groups.
+
+We chatted to some South Africans about this, and their views helped
+us understand that our expectations are somewhat unrealistic. After
+all, USA ended segregation in the seventies and there are still large
+integration problems there; South Africa only took the plunge thirteen
+years ago. The best way to look at it is to focus on the road
+travelled on those years, rather than the road ahead. And indeed they
+have managed to make huge amounts of progress. One just has to be
+patient.
+
+But a couple of interesting episodes made us a bit wary of going to
+the wrong places in town.
+
+The first one occurred on our way back from the Workshop. We were
+walking via town centre, a Saturday, no more than three o'clock. We
+suddenly spotted a bar with good music pumping. This was not your
+usual South African rock, but Kwaito, a jazzy, souly sort of
+indigenous music. We decided to go there for a drink. The place was
+called Bistro in the Park. As we got closer, I started thinking this
+was perhaps not a good idea. There weren't any non-blacks there
+(remember, I'm a coloured around here), there were lots of homeboys
+and a lot of them seemed drunk. But Shahin thought just having a quick
+one wouldn't hurt, so we went for it.
+
+As we were about to get in we noticed that everyone was being
+searched - everyone but us, that is. The security guard seemed to hit
+and miss with the searches, and that's never a good thing. Then I
+noticed that there was a massive queue for the bar, with everyone
+shouting their orders in Zulu. Nice one. I fought my way for a good
+while, gesticulated a lot and eventually - half-an-hour later -
+managed to get the drinks in. Interestingly enough, the smallest beer
+you can get is a 800 cc bottle, perfect for bottling someone.
+
+The music was great but the environment was pretty rough. On top of it
+all, there wasn't any space in the corners so we had to stay right in
+the middle of the "dance floor", yet again with the spotlight right on
+us. We survived the stares for quite a long time, but eventually, 600
+cc into my beer, we got picked up by some drunken fool to dance and
+that was the hidden signal to hit the road.
+
+Bistro in the Park is quite emblematic of the South African
+experience. You can either go to the more "white" places such as the
+restaurants in Florida Road (a nice area in the suburbs with lots of
+pubs and restaurants) or you can go to the more "black" places like
+Bistro. We feel awkward in either. I suppose eventually you get used
+to it, but its not nice to always be the ones standing out.
+
+The second episode happened a few days later, on our way back from the
+botanic gardens. The gardens are located on the hills of Durban, some
+thirty minutes from Bananas. We got there using a regular bus as we
+were on the company of a South African couple, Jenny and Felix, two
+savvy guys from Jozi that knew well the do's and don'ts around
+here. Jenny is South-African Asian, and Felix is Congolese - one of
+the first mixed couples we've seen around here.
+
+We went to the gardens by regular bus, and were pretty impressed with
+these: only 2 Rand and not very full. The gardens are nice, if
+somewhat small, with lots of colour and variety. Unfortunately we had
+to run back and leave Felix and Jenny behind because we were booked on
+a trip later on that day. As we were waiting at the bus stop, a
+candongueiro arrived. Here in South Africa these are called combi
+Taxis or African Taxis, and are much more upmarket than the Angolan
+counterparts, with loud music pumping and all sorts of boy racer
+implements on them such as neon lights.
+
+A brief parenthesis here: the African in the African Taxis stems from
+the fact that black South Africans are commonly known as "Africans"
+whereas white South Africans are known as "South Africans". Go figure.
+
+Anyway, back to the combi. After so many candongueiros in Angola, my
+brain was wired. Without even thinking I got into the combi and
+Shahin, short of starting a scandal, had no option but to follow
+me. Now, from whatever angle you look at it, this was a bad
+idea. First, you see very few non-blacks in combi's outside of Cape
+Town - let alone tourists.
+
+Second, if against all advice you do decide to take a combi, you
+should always make sure it is full. One or two people in is not safe
+enough; they may just exit and then you're left with the driver and
+cobrador, who may have a weapon on them and decide to take you for a
+ride in the townships. Me, being the usual optimist, I only started
+making the maths when we were inside the combi. There were exactly two
+passengers (bad), both of them women (good).
+
+To make things less obvious, me and Shahin didn't talk - but if looks
+could kill I would have been dead ten times before we got to town
+centre. The bummer was we did have to say where we were going to the
+cobrador. Not only were our accents a dead giveaway that we were
+foreigners, but I decided to do one better. For some random reason I
+have been calling the Workshop mall the Waterfall. Until now this was
+funny - just my usual terrible memory - but in the combi, man, that
+sure didn't help. Here I was trying to explain to the guy that we
+wanted to go to the Waterfall, Shahin ready to kill me, the cobrador
+puzzled, "Where do you want me to take you??".
+
+Eventually we managed to explain we wanted to go to the mall. The trip
+was uneventful, other than the sheer fear we felt. Luckily the women
+left more or less around the same time as we did, since Shahin was
+ready to get out with them regardless of where their stop was.
+
+All and all, it was a great demonstration of why we couldn't live in
+South Africa. To be perfectly honest, there probably aren't that many
+people that get kidnapped in combi's; but if you hear some of the
+stories around here, you'd be afraid of even walking the streets
+during daytime, let alone taking a combi.
+
+On a more positive note, we did a Ricksha city bus tour and that was
+very good. This is one of those really touristic buses that take you
+all around town, with a guide telling you about the points of
+interest. We went past all the typical touristy places, as well as
+some other less touristy such as the Indian market, and we got a good
+view of the town. Durban is actually a really nice place, very diverse
+and cosmopolitan. For example, its home to some six hundred thousand
+Asians - collectively known as Indians in South Africa, although many
+of them are actually from Pakistan and other Asian nations.
+
+** The Five Day Excursion
+
+After a good few days in Durban we started to get the travellers itch
+again. Life in the city was nice enough, but we exausthed all the easy
+things to do. There was some discussion on whether we should go on an
+organised twenty-one day trip to Victoria Falls, but twenty-one days
+on the road seemed like a lot of travelling in one go. After much
+debating we decided to go on a five day trip to get a feel for it, and
+then decide. The trip was composed of four smaller trips: the Zulu
+village on the valley of a thousand hills; Drakensberg, including
+Lesotho; the Hluhluwe Umfolozi safari park and finally, the St. Lucia
+wetlands.
+
+*** The Valley of a Thousand Hills
+
+The trip to the Zulu village started really early. We got taken there
+by minibus, as we would for all of the trips during the five days. The
+valley of a Thousand Hills is extremely beautiful, really green and
+scenic. Once in the village, a local community guard proceeded to show
+us around. After giving us an idea of life in the village, the guard
+took us to see a typical Zulu house. These are the roundavels you see
+in the pictures.
+
+Roundavels are round for practical reasons: back in the days of wild
+animals, they allowed for a quick scan of the entire house for any
+danger before getting in. (Note also that traditional roundavels do
+not have walls inside). This is also why the men go into the roundavel
+first, always entering by the right hand side - Zulus always carried
+their shields on their left arm and their dagger in their right
+hand. Nowadays, people are moving to square houses, standard European
+fare, because all of the advantages of roundavels are not particularly
+useful these days; square (or rectangular) houses tend to utilise the
+space a lot better and are cheaper to build.
+
+Another interesting peculiarity of roundavels is their thatched
+roof. These look rather nice. Unfortunately, you don't see many of
+these anymore. The main reason is they catch fire very easily and this
+was used in raids by rival villages. The authorities then tried to get
+people to use other materials, not so easily flammable such as
+zinc. This is rather unfortunate as zinc looks really ugly, mussueque
+like even, and it also makes the houses really hot when the sun is
+out, whereas thatched roofs are really good at keeping the houses
+cool.
+
+Roundavels are specialised, that is, each one is a room in itself. The
+house we visited had the kitchen in a big roundavel and another small
+one for the bedrooms. Kitchens are extremely important for the Zulus -
+and I suspect for many other African ethnic groups - as it is believed
+the spirit of the ancestors resides here. So all the libations and
+ceremonies are done in the kitchen.
+
+The other important aspect of a Zulu house is the kraal. The kraal is
+a fenced area where the animals are kept, and it is situated at the
+centre of the property to ensure the family can monitor the cattle
+from their houses. The kraal is also the area where animals are
+slaughtered for religious purposes and where Zulu children are marked
+on their faces to show which family they belong to. From a foreigner
+perspective this ceremony seems very cruel, as the children are very
+young and their faces are cut with razors to form permanent
+scars. However, this practice is still very widely accepted and
+respected within the Zulu culture.
+
+The guide also spent some time explaining the political and social
+structures that run the village. Zululand is governed by the Zulu
+King. The King is assisted by the Chiefs, each of which head a
+village. Both kingship and chiefdom are attained only by hereditary
+means. Villages are huge, with their population in the thousands. The
+chief is then advised by a small number of headmen, called the
+indunas. These are the executive. Villagers go to the indunas to
+explain their problems, and these will then be reported back to the
+Chief.
+
+The Chief actually owns all the land in the village, but he sublets it
+to the people by granting time leases. As an example, if a new family
+decides to settle into a village, they will request a plot of land. If
+granted, it will be big enough to build the required roundavels and
+kraal plus some extra space for subsistence farming. It will also have
+some space for further expansion, as it is common for Zulus to have
+their extended families in one plot.
+
+The excursion was then finished by having a Zulu meal, which required
+eating with our hands, followed by traditional singing and
+dancing. They forced everyone to get involved in the dancing so we had
+no choice but make fools of ourselves, stamping our feet on the ground
+and jumping around like mad.
+
+A final note on the moral issues raised by this type of tourism. On
+the positive side, this is sustainable tourism at its best: the
+village people are involved in it, and it creates jobs for them. The
+negative side, of course, is that the whole experience has to be
+somewhat demeaning to the locals. After all, these people have to open
+the doors of their houses to strangers and expose their culture as if
+it is something exotic and mysterious.
+
+On the whole, though, I think the enterprise is a positive one. This
+is because there are very few ways in which the outside world can
+inject money into a community and ensure it is used
+productively. Donations very rarely find their way to people in
+need. This sort of tourism works differently, and you know you are
+funding people who are willing to put in the work. Of course, the
+bigger tourism companies will take in their cut; but if you look at it
+from a developing perspective, its always better to have some income
+than none. With time, people will begin to understand the true value
+of things, and will demand more from the tourist operators.
+
+*** Drakensberg and Lesotho
+
+After a second really early wake up call, we were driven to Underberg
+(Berg in Afrikaans means mountain). We then got into a 4x4 and were
+driven to the Sani pass. The Sani pass is a long and windy road that
+links kwaZulu-Natal to Lesotho. The road crosses the Drankensberg
+mountain range, which is Afrikaans for The Dragon Mountains.
+
+The road is of the usual high standard until you reach the South
+African border, at which point it steadily degrades until there is no
+road at all. Interestingly, the border of Lesotho does not begin where
+South Africa ends; there is a huge stretch of land between them called
+no man's land. As the name implies, this land does not belong to
+either nation. In practice though, South Africa owns this bit of no
+man's land.
+
+The entire journey is one steady climb, metre after metre, cautiously
+inching towards the top of the mountain. Its very arduous and the
+terrain is totally unforgiving, mostly small rocks and gravel, a few
+rivers to cross. One tiny mistake can be enough to send your vehicle
+down the sides, it seems. The views, however, are extremely beautiful:
+huge, domineering mountains, a lot of greenery and wild life.
+
+Many, many bumps later we reached the top - 2873 metres above sea
+level - and crossed the Lesotho border. Happily, obtaining visas to
+Lesotho is rather easy, and it requires only your passport.
+
+After the long climb, one is somewhat surprised to see a huge
+plateau. Whilst the plateau is green, its mainly bushes and grass as
+very few plants are able to grow at these sort of heights. Since
+farming is not an option, the Basotho people - as the inhabitants of
+Lesotho are known - are mainly shepherds. Those who stay behind, that
+is. Most men end up emigrating to South Africa, in search of
+work. Women stay and look after the children, who in turn look after
+the cattle. Lesotho is very poor, and HIV/AIDS is very prevalent:
+around 1 in every 3 inhabitants is infected with the virus.
+
+The Sani pass is a cold place. In the height of summer, when Durban is
+boiling hot, we struggled to keep ourselves warm. The locals keep warm
+by wrapping themselves in hand-made blankets. Male Basotho also carry
+a walking stick with them, used for various purposes: fighting snakes
+along the way, help shepherding cattle, to aid climbing. These sticks
+are very personal and important objects, with a special design of
+beads that denotes the family from which that person originates. This
+can then be used to identify them, should they be found dead in the
+mountains.
+
+We visited a traditional Basotho house and ate some of their excellent
+homemade bread. This was actually much better than any bread we found
+in South Africa, so perhaps Lesotho should consider exporting
+it. Can't quite say the same about the traditional beer though. It
+reminds me of the Norwegian homemade beer, only drinkable after five
+or six pints - the point at which anything is drinkable. The people
+were hospitable and made us feel right at home, but with the usual
+caveat that one always feels like an intruder.
+
+A while later we had lunch at the local pub, the highest pub in
+Africa. It appears getting drunk at these sort of altitudes is
+cheaper, as one pint gets you drunk a lot quicker; I didn't actually
+put the theory to the test, so I guess we'll have to return for that.
+
+Later on that day we were driven to our accommodation in the
+mountains. These were rather nice, all made of wood. After a quick
+change, we drove up to a waterfall next door. The water was really
+cold, but it felt refreshing as the weather was extremely hot. It was
+too cold for Shahin though, so she didn't partake in the swimming.
+
+At night we had dinner sitting by the fire and gazing at the
+starts. Since there are very few sources of light, you can see quite a
+few stars out here. We had some interesting discussions with Brent,
+our tour guide, and the two Canadians Ron and Sharon, like the current
+state of Africa and where its headed.
+
+In the morning we woke up early, yet again, this time for horse
+riding. Although we were extremely apprehensive about it, Brent
+somehow convinced us that it would be fun. It sure didn't seem like it
+when I was trying to mount my horse in the stable. Had to have quite a
+few goes until I got it right, but eventually I did and we were on our
+way. The first five minutes of the trek were actually the most
+challenging ones as it starts going up a really step hill, covered in
+rocks. Once you go past that though, its mainly flat land. The entire
+ride was really enjoyable, and the views were amazing.
+
+After lunch we went on a three hour hike with a local guide to see the
+Bushmen paintings. Even though the terrain is at times quite hard to
+negotiate, the hike was still quite pleasant. The paintings are
+definitely worth seeing, more than thirty thousand years
+old. Regretfully, the local kids have damaged some of the paintings
+with crude graffiti. Our guide told us that the tourism authorities
+are trying hard to educate the kids, explaining the importance of the
+paintings.
+
+The day ended with a long drive back to Bananas.
+
+** Hluhluwe Umfolozi Safari Park
+
+We woke up early in the morning for a long drive to Hluhluwe Umfolozi,
+the oldest game reserve in South Africa. There we got to see many wild
+animals such as elephant, giraffe, buffalo, white rhino, baboons,
+impalas, zebras and many more. Its an interesting experience, chasing
+animals across a safari park and it certainly did an impression on me,
+but Shahin, she loved every minute of it. Every time an animal showed
+up she'd be the first one to spot it and shout, all animated.
+
+At this point we also made our minds about not going on the twenty one
+day safari, mainly for three reasons: first, after so many early
+starts, I was completely knackered; second, we didn't really fit in
+with the crowd, lots of young partying people - not the worst, mind
+you, but imagine being stuck with a worst crowd for twenty-one days;
+thirdly, many of these trips are expensive but don't actually include
+that many activities - you still have to pay extra for these. So all
+and all, we decided this wasn't a very good idea.
+
+We spent the night at Khumbalani, a lovely backpackers place run by
+Brent's parent's Kay and John.
+
+The last day of our five day trip started even earlier than the
+previous days. By now I was totally exhausted, barely awake. Shahin
+though was totally energised by the thought of seeing more
+animals. She was wide awake in the early hours of the day, spotting
+all kinds of animals. I must confess I fell asleep a few times.
+
+It has to be said, though, that the best time to come to a safari park
+is in the early hours of the day. We spotted lots and lots of animals
+up till nine o'clock. After this the weather becomes too hot for them
+and they decide to hide. It is amazing how these huge things can make
+themselves invisible. For instance, we saw an elephant moving into the
+trees and seconds later it was gone. This huge, immense thing just
+disappeared into the vegetation without a trace.
+
+** St. Lucia Wetlands
+
+We came back to Khumbalani for lunch and some rest, but we soon moved
+on to the next destination: a river cruise on the St. Lucia
+estuary. The river is rather large and filled with wildlife. We
+spotted pods of hippos resting in the sun as well as many different
+types of birds. There were some crocodiles in the river too, although
+they were a lot harder to spot.
+
+At night, the group was driven back to Durban. We decided to stay at
+Khumbalani lodge.
+
+** Mtubatuba
+
+St. Lucia is a fairly popular tourist destination, particularly for
+South Africans who flock to its beaches and bars during high
+season. The Khumbalani lodge, however, is located in the town of
+Mtubatuba, half-an-hour away from the main tourist attractions, and so
+does not benefit much from this type of tourism. Most visitors that
+come here do so as part of one of Brent's packages; they see the
+sights during the day, come to the lodge late in the evening to eat
+and sleep and then get transported back to their place of
+origin. Funny thing is, a few of these overnight visitors end up
+returning to the lodge and staying for a while. We were one such
+visitors.
+
+A good few months of travelling teach you to appreciate nice
+places. Little things make the difference: a nice clean kitchen, the
+friendliness of the staff. For instance, most backpackers advertise a
+swimming pool but we haven't seen a single pool clean enough to do any
+swimming. Items like these are merely symbolic, tick boxes for
+marketing propaganda used to fool inexperienced visitors.
+
+Khumbalani was the exact opposite of all these places. We didn't even
+know it existed until we got there, but after spending a night, we
+knew we had found our home away from home. The selling point? Hard to
+pinpoint. After all, there's the nice clean swimming pool, the lovely
+green grass in the garden, the new pool table (two Rand a game, around
+15p), cable TV with all channels including sports, the spotless
+kitchen, the power-shower. And you get all of this for 220 Rand a
+night for a double en-suite room (around 17 GBP).
+
+In addition to all of this comfort, we also had the house for
+ourselves for most of the time. Very rarely did the place get busy,
+and when it did, most people end up spending all day out and come home
+only to sleep. But in general, there wasn't that many people coming
+in - so much so we started feeling rather possessive about the place,
+resenting any intrusions.
+
+To top it all off, Khumbalani is managed by two really nice people,
+John and Kay. They really went out of their way to make sure we
+settled in alright. The end result of all of this was that our
+overnight stay ended up lasting eighteen days, and we really had to
+drag ourselves to leave the place. There are some negative aspects, of
+course, but they are relatively minor. Internet is expensive and slow
+(dial-up at fifty Rand an hour), and there isn't much around the place
+other than the shops at Mtubatuba. The place will not appeal to the
+young, rowdier crowd, looking for lots of beer, girls and techno. But
+for the weary traveller, it is excellent.
+
+Khumbalani was, to sum it, just like being at home. We had good home
+made food for the first time since we left Angola. We even cooked a
+curry for everyone, which John and Kay seemed to like. We got to eat
+John's brais, both fish and meat, with the famous boerewars sausage.
+
+Shahin made the most of our stay by going to the safari park five
+times. She managed to spot the elusive lions, an entire pride. These
+are really elusive animals, and camouflage so well in the grass they
+become invisible even to the trained eye. She was lucky enough to see
+a huge pride, a fact that got her excited for days on end. I was
+somewhat tired of animals and early starts, so I decided instead to
+watch football on telly, swim and play pool all day for a few days.
+
+We did have quite a few outings and adventures in Mtubatuba, described
+below.
+
+** Kosi Bay
+
+We did an overnight outing to Kosi bay which was absolutely
+excellent. We went with a local guy called Peter and his English wife
+Laura, really nice people. Kosi bay is extremely beautiful, located in
+a pristine natural reserve. During the night, Peter and a community
+guide took us to see turtle eggs hatching. Its interesting to see
+these little hatchlings breaking from their eggs and start their dash
+to the sea.
+
+Shahin was really excited with the turtles and ended up staying with
+the other guys till late, spotting lots of nests and helping the
+turtles to reach the sea. She saw dozens of them coming out of their
+nests. These young turtles are not particularly clever. Since they are
+not used to light, they believe that any source of light is the sea
+(which makes sense in the dark, the white foam of the sea is really
+clear at night).
+
+Unfortunately, our torches are a much more powerful source of
+light. Shahin reported excitedly that dozens of turtles started
+following her torch, all swinging to the left, and then all swinging
+to the right as she moved. She ended up having to go all the way into
+the sea (literally) to guide the crazy critters, just to make sure
+they didn't get lost.
+
+She also saved a few from their mortal enemies, the ghost crabs, which
+lie in wait for the turtles. Less heroically, she managed to step on a
+turtle by mistake. The young dude was stunned but otherwise
+unaffected, and managed to complete his journey to the sea
+successfully.
+
+In the morning we did some excellent snorkeling. This was the first
+time I used flippers, and they are rather uncomfortable. Once you do
+get used to them though, they actually do improve the entire
+experience, making swimming against the current a much more achievable
+feat.
+
+We went quite far, and the waves were pretty big - the biggest Peter
+recalled in a long while - but the effort was paid in full. The reef
+is teething with fish of all colours and sizes. Shahin didn't want to
+face the huge waves, so she didn't get to snorkel out there with
+us. The great thing about Kozi though is that there are many little
+rock pools with lots of fish, allowing the less experienced swimmers
+to enjoy some great snorkeling too, so Shahin still managed to see
+quite a lot of fish.
+
+** The Car Diaries
+
+Whilst Khumbalani is a nice place, mobility is definitely an
+issue. St. Lucia has both the beach and the restaurants, but you can
+only get there by car as there is no public transport. The lodge does
+offer a free shuttle to the town and back, but its always a pain to
+have to wait around for someone to pick you up. In addition, there are
+many places in the surrounding areas that require a car to get to.
+
+Shahin decided that the solution to all of these problems was renting
+a car. Somehow she convinced me that this was a good idea. Now, if you
+recall, we passed our driving test recently, and we haven't really
+driven anywhere else other than Southampton - and even then, only with
+our mate Nantha or on our driving lessons. So this was going to be our
+first real driving experience, just the two of us in the
+car. Fortunately the South Africans drive on the same side of the road
+as the English, but that's probably where the familiarities end.
+
+Renting a car was easy enough. After some investigation, Kay found us
+a place that rented cars for around 230 Rand a day. Because they
+didn't have their cheapest model available, they upgraded us to a
+brand-spanking new Nissan Tiida with A/C, central locking, the
+works. So the next challenge was to actually drive the thing.
+
+Up to this point, Shahin was the driving force (if you pardon me the
+pun). But when the vehicle was delivered to our house, she finally
+realised that we had to actually drive. Panic set in. After all, this
+was going to be the first time we would be alone driving, no one else
+there to help. Shahin tried the best she could to get out of it but I
+held fast and forced her to share all the driving.
+
+We decided to start by going around the block a couple of times,
+taking turns. It went fairly well, other than the neighbours staring
+at us. Luckily many driving instructors take their students to our
+block, so we managed to blend in rather well. After a few goes we
+managed to get confident enough to drive to the local town of
+Mtubatuba. Once we negotiated that successfully, we decided to go to
+the beach in St. Lucia.
+
+Some minor mishaps later - like my stalling in a motorway junction -
+we got the hang of it. We then decided to go to the safari park. This
+turned out to be the most adventurous of all the trips. The first few
+hours went by uneventfully. Then Shahin decided we should go off-road,
+since we didn't manage to spot any animals on the main road.
+
+A little explanation is required: the safari park has many roads, all
+in very good condition. It also has some dirt roads, allowing access
+to more inaccessible parts of the park. We had been on some of these
+before on a big 4x4 vehicle and thought they weren't that bad,
+really. So when Shahin suggested going on to the dirt roads, I wasn't
+too worried. Not ideal, but not that dangerous either. What we weren't
+aware off is that there are dirt roads and there are dirt roads. Some
+are worse than others. Of course, the park rangers know this and
+probably stick to the easier ones, but we didn't so we just made
+things up as we went along.
+
+One of these roads proved to be quite tricky, a near vertical drop in
+gravel that caught me by surprise. This slope was followed by a narrow
+bridge in a river bed. In the commotion and the rush of navigating the
+rocks downhill I forgot about the bridge and it appears we almost
+missed it, as the navigator tells the story. I thought the situation
+was perfectly under control, but apparently we were really close to
+falling into the river bed because the bridge was wet with river
+water, making it a really slippery surface. We could have easily
+skidded overboard. Fortunately, the car stayed the course and we got
+to the other side safe and sound.
+
+Just as we recovered from that little mishap, we found another bridge
+further down the dirt track. As I was inspecting the difficulties
+offered by this terrain - the Mikka Hakkinen in me - I noticed lots of
+shards of glass on the floor. A metre or two up, blood. Man, I started
+panicking. I just pointed to Shahin and mumbled something, probably
+like "danger, lets get the hell out of here!!", locked the doors,
+wound up the windows, sped across the bridge and over the hill at high
+speed.
+
+I was actually thinking about hijackings and killings, or lions and
+tigers getting us. But Shahin eventually came up with more sensible
+explanations like a car crash or a random harmless animal hitting the
+car. I preferred to listen to my ghetto sense: hit the road first and
+ask questions latter, preferably many kilometres away from the scene
+of the crime.
+
+In total we had the car for five days, and, all and all, it was great
+fun. We really started to appreciate the convenience of having a car,
+even though Shahin is still petrified of driving and will sell her
+soul just to get out of it. After such successful missions we started
+to get a bit cocky and even thought about driving all the way from
+St. Lucia to Durban or even to Port Elizabeth, several days
+away. Eventually common sense prevailed and we decided getting a bus
+would be safer and cheaper.
+
+These five mobile days, the first in our driving careers, were quite
+remarkable.
+
+** Deep Sea Fishing
+
+After a few days in the house, waiting for Shahin to return from her
+safari park adventures, I decided I needed to do something a bit more
+exciting than watching Manchester United fluke wins in the last few
+minutes. John had mentioned deep sea fishing and that seemed quite
+interesting, reminiscent of the pleasant Mussulo experiences.
+
+Very early in the morning, Kay dropped me off in St. Lucia, at the
+door step of the boat people. These were a couple of Afrikaner
+brothers, together with an Afrikaner customer. The day didn't start
+too well: only four of us, and the three of them speaking in
+Afrikaans, a language I didn't have the slightest inkling about. But
+onwards, into the breach.
+
+The first half-hour of hour trip was spent negotiating the sets of
+waves and without a doubt was the best part. We had to sit down on the
+floor of the boat and wear life-jackets. The waves were particularly
+rough, some more than three metres. The boat just went up in the air
+after crossing a wave, a few seconds elapsing before hitting the water
+again with a loud bang. I really enjoyed crossing the swell, it was
+extremely challenging but exciting at the same time.
+
+Once this was done we spent an hour or so looking for a reef, doing
+some fishing as we went along. Because the waves were really high, the
+boat kept on bobbing up and down all the while. I thought nothing
+much, being quite used to the sea. However, everything changed when we
+actually got to the reef. The captain stopped the engine, positioned
+the boat and got us ready to start fishing.
+
+Fishing consists of getting some bait onto the hooks, holding on to a
+really (and I mean really) heavy fishing rod, throwing the hook
+overboard with a weight and waiting until it hits the ground. After a
+while fish start to bite, at which point one has to reel it in as
+quickly as possible to get them stuck to the hook. This is all very
+straightforward enough, if somewhat intense in the physical
+department.
+
+Problem is, the three metre waves make the boat bob up and down a
+lot. For the first time in my life I actually started feeling sea
+sick, and ended up having to stop fishing to recover. I did manage to
+catch a few fish before stopping. I managed to recover by staring at
+the horizon for an hour or so, and fortunately it never got so bad as
+to require vomiting or anything of the kind, but for the first time I
+understood what people go through. My sympathies go out to people who
+get sea sick, with a big shout out to my mate Lay - man, its nasty!
+Sorry I made so much fun of you.
+
+After recovering I decided to stop fishing and just sit back and enjoy
+the scenery. It is actually quite remarkable, particularly with the
+huge waves, swallowing the boat and spitting it out again. And to make
+things more interesting, a dolphin appeared out of nowhere to join
+us. It swam by the boat for a long while, keeping us company, and they
+parted ways, shooting towards the coast.
+
+I also got to talk to both brothers a bit, and ended up liking them
+quite a lot. Men of the sea, quiet and reserved at first but easy
+going and friendly once they get to know a person. It ended up being a
+really nice day. I got to take some of my fish back home, and John
+taught me how to gut it and prepare it. Suffice to say that gutting
+fish is not very nice and it should be avoided at all costs. John then
+made a lovely braai with the fish, which we all ate.
+
+** Other Outings
+
+Whilst at Khumbalani, we did three other outings. The first one was to
+the local Emdonini Cheetah rehabilitation centre. This is a place
+dedicated to taking care of cats and prepare them to be reintroduced
+back into the wild. As the name indicates, they started off with
+Cheetahs but these days there are a few other types of cats: Servals,
+African Wildcats and the Lynx.
+
+The braver animal lovers can go into the cat's cages when the guard is
+feeding them - except African Wildcat's cage, since these guys are
+really mean. They look just like normal house cats but are really mean
+and vicious. To be honest, the Lynx looked even meaner. Lynx are
+pretty nasty cats because when they kill, they use the old army maxim
+of "leave no one standing". A farmer that is unlucky enough to have
+his or her sheep attacked by a Lynx will probably loose a whole flock
+in one night, since they kill everything in sight. This is why they
+are one of the few cats that are officially considered a pest
+(vermin), and can legally be killed.
+
+Shahin was much braver than me and went in all the cages, getting to
+see all the cats up close. The thought of being behind a fence with
+the planet's fastest animal made me cringe, so I watched Cheetahs from
+the outside. There were some interesting moments inside the cages as
+both Lynx and Cheetah got upset when the meat was finished and decided
+to get mean. The Cheetah was worse as it even guarded the door,
+stopping people from leaving. The only way to get it to move was to
+throw the meat bucket far away to distract it and run as fast as
+possible through the gate. I was pleased I was on the other side of
+the fence.
+
+The second outing was to Cape Vidal. We got there after a long drive,
+but it certainly was worth the effort because the snorkeling was
+excellent. We were told to go there in low tide, and its easy to
+understand why: the sea is furious, big, massive waves that look
+extremely dangerous. But when the tide is out, there's a reef that
+shields the beach from the waves and creates really nice rock pools
+with lots of fish.
+
+We both did lots of snorkeling, although Shahin was always a bit wary,
+fearful of waves crossing the reef. These are rather dangerous, and
+one got me just as I was climbing some rocks, and resulted in quite a
+few scratches and cuts. We spent the entire day there, snorkeling and
+soaking the hot sun.
+
+The third trip we did was to False Bay, also a pretty long drive from
+Mtubatuba. This is a nature reserve near one of St. Lucia's lakes. You
+can do all sorts of walks and hikes in the forest, as well as just bum
+around near the lake. Whilst it is a really pretty place, its not
+quite on the same level as Kozi Bay or Cape Vidal.
+
+** Back to Durban
+
+After almost twenty days in Khumbalani, it was time to move on. We
+were really getting used to the lodge and to Kay and John, so leaving
+felt as if the holidays were nearing an end. We feared dodgy
+backpacker's and sleepless nights. As it turned out, our fears were
+well placed.
+
+When we got back to Durban, we decided to avoid Bananas due to the bed
+bugs episode, and went to Hippo Hide instead. Unfortunately, they too
+had bed bugs, and these were much worse than Bananas. Shahin didn't
+manage to get much sleep over the next few days. We did get them to
+change the bedding, and that helped somewhat.
+
+We ended up spending a couple of days in Durban, and we had just
+enough time to go to the beach, go out with Brent and his wife Debbie,
+and to go to Roma Revolving Restaurant. The latter was particularly
+interesting as we had never been to a revolving restaurant
+before. Basically, the restaurant sits on top a very high building
+(32nd floor to be precise) and part of the restaurant rotates. Wait,
+don't panic yet. Its not a Ferris Wheel. It moves r e a l l y s l o w
+l y. Shahin did manage to get a bit dizzy and all, but it really
+wasn't that bad. And the views were amazing. You can see the whole of
+Durban from up there.
+
+Unexpectedly, the prices were very much in line with all other
+restaurants we've been to, but the food and service were excellent. If
+you do decide to go there, and you must if are in Durban, make sure
+you book well in advance. We didn't, and we almost didn't get a
+table. But just as luck would have it, we met the owner just as we
+were about to get the lift, and he asked us if we were looking for a
+table. He then proceeded to find us one. This is another peculiarity
+of the place: the owner takes all the orders in person. He is the
+typical Italian male, straight out of Godfather (even the accent is
+the same!), a really funny and humorous sort of guy. We had a great
+night there.
+
+When time came to leave Durban, we decided to fly. Brent suggested
+looking into the new cheap airlines such as Kalula and Mango, and
+these are actually really competitive. We got tickets to Cape Town for
+800 Rand, but we since heard that there are tickets from as little as
+200 Rand.
+
+With the tickets in our hands, we were ready to go to Cape Town, the
+coloured capital of the world.

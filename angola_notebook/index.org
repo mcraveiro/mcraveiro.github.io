@@ -22,3 +22,5 @@ time ago. This series of blog posts narrates the adventure.
 - [[file:part_11.org][Part XI - Benguela]]
 - [[file:part_12.org][Part XII - Luanda, Again]]
 - [[file:interlude.org][Interlude: Living in Angola]]
+- [[file:part_13.org][Part XIII - Back to the Big City]]
+- [[file:part_14.org][Part XV - Simon's Town]]

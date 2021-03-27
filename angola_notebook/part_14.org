@@ -1,0 +1,1084 @@
+#+title: Notebook of a Return to My Native Land - part 14
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+
+[[file:index.org][Back to chapter index.]]
+
+Saturday, July 07, 2007
+
+*NOTE:* since I'm never going to have enough time to finish the last
+chapter properly (it has been over two months...) I decided to publish
+it as it is. I didn't have enough time to check all the factual
+information so don't blame me if I got dates and places wrong! :-)
+Without further ado, here is the last chapter of our adventure.
+
+#+begin_verse
+/It matters not how strait the gate,/
+/How charged with punishments the scroll,/
+/I am the master of my fate:/
+/I am the captain of my soul./
+-- Invictus, William Ernest Henley
+#+end_verse
+
+* Simon's Town
+
+The flight to Cape Town was hilarious. Seriously. Kalula seems to have
+this policy of only hiring comedians and our flight attendant was
+perhaps one of their finest picks. Other than the first time I flew, I
+don't remember ever paying attention to safety instructions, but this
+time I felt compelled to listen and so did everyone else on the
+plane. I can still recall some of the jokes he made:
+
+#+begin_quote
+There is a no smoking policy in all Kalula flights, so please refrain
+from smoking anywhere on board, including toilets. Besides the usual
+smoke detectors, we also have installed hidden video cameras in all
+toilets to ensure you aren't breaking the law. This has the
+interesting side benefit of keeping the crew amused when we have
+nothing better to do, which is quite frequently.
+#+end_quote
+
+If you are going to leave anything behind please make sure it is
+something worth our while. We suggest cameras, laptops, latest
+generation phones or lots of money. Passenger on row 15 can leave his
+girlfriend behind, she's quite fit.
+
+Do you know why Cape Town is called the Mother City? Its because
+anything you try to do in Cape Town takes at least 9 months.
+
+There were many, many more jokes - every announcement had at least one
+or two - and most of them were quite funny. Every so often the entire
+plane would just burst out laughing, begging for mercy.
+
+After a cheap but filling lunch at Cape Town's airport, we begun our
+quest for accommodation. Usually this is a fairly painless process, as
+Shahin normally finds a place within two or three phone calls, but
+this time round she was struggling hard. Around six phone calls in,
+still with no luck, she decided that something wasn't quite
+right. What kind of place was this? All the backpackers lodges were
+fully booked and you even had to make a reservation for dorms! Dorms
+have been our last resort of last resorts - being middle-aged
+backpackers, we couldn't help but look at them snobbishly, one very
+small step above sleeping on the streets. And now suddenly, it seemed
+we were lucky if we managed to find any dorm space at all. "What kind
+of place is this?", we wondered.
+
+As we later found out, this was a particularly bad time to go to Cape
+Town. One of the biggest cycle races was on, and the whole of South
+Africa had relocated to the Mother City for it. These damned cyclists
+left total havoc on their wake and were sleeping virtually anywhere
+and everywhere you can think of. There wasn't a single bed available
+in any backpacker's and all other places had increased their prices by
+100% or more, trying to cash in with the event. It was just far too
+much excitement for our liking. After all, we were in no particular
+rush to get to Cape Town.
+
+The best strategy was to bid our time and wait for the dust to settle
+at a safe distance. Simon's Town, a little village next door, was the
+perfect candidate. (In my usual aloofness, I thought the destination
+was being chosen at random, but Shahin, ever the scheming Lonely
+Planet reader, had her reasons for choosing Simon's Town.) Although
+part of the route, the town managed to miraculously escape the worse
+of the accommodation fever that was taking over the province. We
+instantly booked a room and found transport.
+
+We got driven there in an official candongueiro designed for tourists,
+with comfy seats and even sporting professionally printed tickets. The
+driver was a genuine Cape Town coloured, the first we ever met, and we
+had great difficulty understanding him due to his strong Cape English
+accent. In truth we barely understood the man talking, which was most
+unfortunate since he spent the entire journey asking us questions or
+providing what appeared to be interesting information about the
+province. Capetonians speak very broad English - in particular the
+majority who have Afrikaans as their native language - and have an
+accent resembling a mix of Scottish with Australian, if such thing can
+be imagined. For the untrained ear, it is next to impossible to
+decipher. He didn't seem to take offence to our constant ramblings,
+fortunately, and carried on even though we kept on giving absolutely
+random answers to his perfectly valid questions.
+
+The transfer to Simon's Town took less than an hour, and the drive
+there is fantastic, offering great views of the mountains as well as
+the Atlantic Ocean and its beaches.
+
+We decided to stay in a lodge creatively called "Simon's Town
+Backpackers". Whilst a no-frills sort of place, it was very clean, not
+particularly rowdy, had Internet access and, most important of all, a
+pool table. All the mod coms a tired and weary backpacker needs.
+
+Simon's Town is rather small, not much more than a single long street
+containing all the shops and most restaurants. Perhaps due to its
+size, it is very safe to walk around the town pretty much at all
+hours, and even carrying valuables. What it lacks in size, though, it
+more than makes up in its quaintness: grand old houses built on top of
+hills, many over one hundred years old, lovely Victorian summer houses
+in a palette of watercolour blues and pastel cremes, some Art-Deco.
+
+In our first couple of days I found strange that most young people in
+Simon's Town, particularly men, were extremely fit - gym obsessed sort
+of people, bulging muscles coming out of their tight t-shirts, making
+me look even skinnier than usual. No, this was not a
+mini-California. Simon's Town is mainly known for its very large Naval
+base, and all the boys and girls you see out and about are young
+sailors. Perhaps this also helps to make the town safer, as their
+presence is bound to dissuade many a troublemaker. And these were
+pretty disciplined people, quietly drinking their beers in the corner,
+playing pool, not causing much trouble at all - at least during the
+time we were in town.
+
+#+caption: Cyclists passing through Simon's Town
+[[./simons_town_cyclists.jpg]]
+
+There are a few restaurants to choose from in Simon's Town, not a wide
+choice of options but just about enough to keep one entertained for a
+week or so. On the negative side, the food is as a norm of a lower
+standard than Durban's but the prices are much higher. Of all places
+we ate in, there is only one we unreservedly recommend: "Bertha's",
+just by the waterfront, around the corner from the backpackers
+lodge. The food here was of the highest quality, especially the fresh
+fish - but the meat was also commendable too - although prices were
+much higher than in durbs.
+
+High prices were a running theme. We spent on average 200 to 230 Rand
+per meal in Simon's Town, instead of the 140 or so we were used to
+paying, a trend that only got worse in Cape Town. Whilst overall food
+in South Africa is excellent and great value for money, there are a
+few places that are not very good. Interestingly, we found out that
+there is a high inverse correlation between cost and quality. Most of
+the expensive places we've been to weren't actually that good, and the
+cost was mainly due to their being near some kind of tourist
+attraction such as a Marina, the seafront or a big shopping mall. The
+probability of having a bad meal seems to increase exponentially the
+closer one gets to one of these. Cheaper, more out of the way places
+were normally quite good.
+
+
+The biggest attraction in Simon's Town - and the reason behind
+Shahin's desire to get us here - is the huge Boulders Beach penguin
+colony. The beach is less than half-an-hour walk from our lodge, a
+pleasant stroll along a curvy road that allows plenty of time to
+admire the sights: uncountable and diverse period Art-Deco houses, a
+small park with benches, the large navy base, the sailors
+quarters. The entrance to the Boulders Bay national park arrives all
+too soon, the sun still high up in the sky, but not so hot as to make
+walking strenuous.
+
+#+caption: Penguins at Boulders Beach, next door to Simon's Town.
+[[./simons_town_penguins.jpg]]
+
+The national park caters for the less wealthy, providing free access
+to an extensive area that circumscribes the main penguin
+colony. Access to the colony itself and the swimming beach requires
+purchasing a day-ticket, all for the very reasonable sum of 30
+Rands. The park is composed of paths, a set of wooden platforms that
+sit slightly above the sand-dune like vegetation, which appears very
+similar to the fynbos found in Kosi Bay. The platforms pierce the park
+in strategic places, giving visitors an excellent view, but at the
+same time creating the impression of an artificial environment rather
+than a pristine natural reserve. However, careful inspection reveals
+that the stilted design is there not by chance but due to clever
+environmental thinking, as it permits wildlife to roam unconstrained
+across the entire area.
+
+As you get closer, sharp screeching sounds attack you from all
+directions: mating calls perhaps, or parents looking for their
+children. Quite a few penguins live outside the main colony, in the
+free part of the park, and you can see dozens of them lying around,
+normally in pairs but sometimes in bigger groups. The main colony,
+however, overpowers the senses, with hundreds of animals congregating
+in a small space.
+
+We spent many hours observing these wonderful creatures going about
+their busy lives: some walking round as if socialising, parents with
+their chicks, a group suddenly arriving from a fishing expedition,
+others yet beginning theirs. Incredibly interesting characters, and in
+more ways than one. When they walk they seem to do so carefully and
+determinedly, sometimes staring at the floor as if cautiously
+preparing the next step, other times gazing at the horizon and the
+sea, always progressing at a relentless pace towards a destination
+only known by them. Mating for life and their quasi-human walk make
+them somewhat eerie, alien and yet very much like us.
+
+
+On one of our visits to the penguin colony, we decided to go in for a
+swim. We had to give it a go since you get to swim almost side-by-side
+with penguins - or at least as close at it gets, since they don't
+appear to be as sociable with humans as dolphins. The weather was hot
+as usual, and the beach was packed with locals. Well, packed isn't an
+accurate description since the sandy part of the beach is extremely
+small; in reality, it doesn't take a huge crowd to completely fill the
+beach. Once the preliminaries where taken care of - i.e. we somehow
+managed to find a corner to stand (literally) - I went in to
+snorkel. There were quite a few kids swimming, perhaps ten or so, and
+a handful of adults too, so the coldness of the water did not deterred
+me.
+
+It's impossible to describe the experience of swimming in the Atlantic
+side of South Africa. The best I can say is this: after a few seconds
+of swimming round, in which I didn't see a single living thing
+creature because the visibility was too low, I noticed that something
+was not quite right with me. I couldn't quite pinpoint what was wrong,
+so at first I attempted to ignore it. A few seconds more, and the
+funny sensation grew even weirder, and I had no option but come
+out. As soon as I got out I started breathing uncontrollably and
+desperately, gasping for air. That's when it hit me, the water was
+actually so cold it made me stop breathing through my snorkel!
+
+To be fair to South Africa's Atlantic coast, I experienced a similar
+reaction when swimming in northern Portugal, but not quite as extreme
+as this one. At any rate, our advice is clear: if you want to swim and
+enjoy the ocean in South Africa, stick with the Indian Ocean. The west
+coast is great for many things, but swimming is certainly not one of
+them.
+
+** Cape Town
+
+A few days of bumming around in Simon's Town proved more than
+enough. Although the town is nice, and its surroundings are rather
+pleasant, there just isn't enough to do to keep one busy for over
+three or four days. The cycle race did generate much excitement
+amongst the "Towners" and backpacking community - even Shahin was
+bitten by the virus and spend hours on end watching bikes going past
+our hostel - but once it was done and dusted, the sleepy town returned
+back to normality. And so did accommodation in Cape Town. It was
+undoubtedly time to leave.
+
+There were several options in terms of transportation. We could either
+came back on our "Business Class" candongueiro, take the bus or get
+the train. A lot of backpackers had mentioned that the train trip was
+a must, an opinion seconded by Shahin's faithful Lonely Planet, and
+since we hadn't actually used a train in Africa it became the obvious
+choice. We were on the road again.
+
+The trip didn't start terribly well, though. We miscalculated a bit
+the distance from the hostel to the train station. In reality, there
+are very few distances that could be considered walkable when you are
+carrying twenty kilos of luggage on your back plus another five or so
+on your arms, and the heat of the midday sun didn't help
+either. Drenched in sweat we managed to get to the station, barely
+able to speak to the ticket inspector, who, politely ignoring our
+gasping breathing and sweat covered shirts, told us that we had just
+missed a train. On the positive side, tickets were dirt cheap and we
+only had to wait for half-an-hour or so for the next train.
+
+The train arrived with a punctuality unseen in Britain, but since it
+was our first and only railway journey, we cannot extrapolate any
+conclusions regarding its reliability. The cars were rather peculiar,
+with chairs on the sides and a huge space in-between for
+standing. They vaguely resembled the Piccadilly line in London, but in
+a much wider and taller structure. The emptiness was even more
+palpable because there were no more than twenty passengers inside, but
+it was a remarkable lot for its diversity: some white people,
+coloureds, a few blacks and, of course, Shahin representing the
+Indians. This put us at ease somewhat, since you never feel totally at
+ease in any public transport in South Africa. The trip was quite
+amazing in terms of sightseeing, the large train windows providing
+great views of the coast, and the Cape Town station arrived all too
+soon.
+
+At this point things got complicated again. As strange as it may
+appear, its actually quite difficult to find the right exit at Cape
+Town's massive train terminal. This is because the terminal itself is
+very close to town centre and all roads around it are extremely
+busy. We walked around the terminal for a little while, but our many
+kilos of luggage didn't allow proper exploration. Shahin, already
+exhausted from the previous adventure of getting to the train station,
+was in no mood for my linear search approach for finding the correct
+exit (for non-computer scientists, this basically entails trying each
+exit at a time until you get to the right one; it's a great approach,
+but, I'll admit it, it has some limitations).
+
+A few well meaning Capetonians pointed out the exit for the taxis, but
+what they meant was "African Taxis" rather than cabs, and after the
+Joburg experiences that was a no-no. Tried as we might, it proved to
+be impossible to explain that we wanted a taxi rank, not a
+candongueiro rank. After much walking round we finally decided to go
+into the shopping mall next door to the terminal, grab some food at
+Wimpy's, and ask the waiters for some help. There they explained that
+there was no taxi rank as such, but instead one had to signal them to
+stop on one of the busy main roads; and no, they didn't have any taxi
+numbers. We were very much unconvinced about the idea of standing in a
+busy South African town with all of our stuff, and indeed the plan
+seemed little more than suicidal, but as we couldn't think of any
+other option at that juncture in time we left the mall and braved it.
+
+To our great relief it didn't take us long to get a cab, and whilst we
+still wondered if it was a dodgy taxi driver, it felt much better to
+be inside of a car rather than sitting vulnerable on a side-walk.
+
+If you have actually spent any time in Cape Town you'll probably find
+our fears quite amusing, and to be honest, I struggle not to laugh
+when I think back about it. But at the time we really thought our
+lives were in danger. Our perception of the city changed instantly as
+soon as we hit Long Street, one of the main arteries of day- and
+night-life in Cape Town. The place was booming with life, all colours
+of the rainbow widely represented, everyone walking up and down the
+streets as if in the safest of countries.
+
+We got dropped at Carnival Court, a nice if somewhat expensive
+backpackers. Like Long Street, the place was full of life, people
+sitting and standing everywhere, most lounging quietly in the veranda,
+smoking pot and observing the roaming crowds below. Our room was on
+the third floor, and it felt really good to be able to finally drop
+all of our stuff and change clothes. The tiredness of the day was fast
+catching up with us, but we decided to go for a small stroll around
+the block - assured as we were by the hostel staff that walking during
+the day was very safe. "Sometimes there's trouble at night, but its
+mainly OK" we were told.
+
+The problems with Carnival Court revealed themselves at night, but not
+for the reasons we expected. Cape Town is the Benidorm of South
+Africa, the city that never sleeps. And that's rather inconvenient if
+you intend to sleep. Like many such places, its perfect for the
+teenager and bachelor traveller who is mainly looking for some techno,
+alcohol and sex; but the older traveller, the one who wakes up early
+in the morning to look at monuments, struggles to keep up. At three
+o'clock in the morning the techno was still banging, not just from our
+own bar two floors down but also from every other backpacker's in the
+street - and there are many of those, believe me - and even our
+extreme tiredness was just not enough to allow our brains to switch
+off. The only way to find some sleep, any sleep, was to listen to
+music with our headphones on. It worked, but I must say that after a
+week my ears were in absolute pain. We also started to go to bed
+later, to make the process slightly more bearable.
+
+#+caption: The V&A Waterfront.
+[[./cape_town_victoria_albert.jpg]]
+
+Other than its loudness, Long Street is actually a nice place. There
+are many (many) second-hand bookshops, ready to receive your old books
+and change them for new ones for a small fee. There are also a few
+record shops, many coffee shops and cafes and plenty of bars,
+restaurants and pubs. There is a large Irish pub just underneath
+Carnival Court, but I must say we were terribly unimpressed with the
+staff - who would fit like a glove in any Angolan restaurant - and to
+make matters worse the beer wasn't much good either. But there were
+plenty of other places, such as Zula with great food and music,
+including impromptu dancing classes of Latin music and lots of
+animation. There is also a Mexican restaurant around the corner from
+Carnival, with great food and very reasonable prices - reasonable for
+Cape Town, that is. A great find was Mama Africa, a great African
+restaurant (it does sound funny saying African restaurant when you're
+in Africa but hey. I wonder if the Italians refer to their restaurants
+as Italian Restaurants in Italy). However, be sure to book well in
+advance as this place is worse than Roma Revolving, forever busy.
+
+Another must in Long Street is the Kurdish restaurant, the name of
+which escapes me know; it has great ambiance and food to go with
+it. It was there that I was asked if my Debian T-Shirt had anything to
+do with the lesbian movement. I gave a sad and weary look at the
+lesbian girl, shook my head looking at the horizon, wondering if
+Windows and Mac users ever suffer from this sort of humiliation. Not
+her fault, of course, but one cannot help but think that Linux still
+has a long way to go in terms of brand recognition outside the geek
+community.
+
+
+As we had done before in Durban, we decided to go on a bus tour of the
+city. These tours are normally quite expensive, designed with the lazy
+tourist in mind, but are actually a good way to get an overview of a
+large city before exploring it in earnest. In South Africa in
+particular these trips are a must, costing around 100 Rand - expensive
+relative to South African prices, but quite cheap in British
+terms. Most of the guides are quite knowledgeable and they don't
+hesitate to tackle difficult topics such as apartheid. Our trip in
+Cape Town took us to the bottom of Table Mountain, to District Six, to
+the Victoria and Albert (V&A) Waterfront, the crafts market, and many
+other places such as the beautiful and rather expensive beaches of
+Camps Bay. The experience was so good we ended up not leaving the bus
+on our first trip. I say first because we ended up going on the bus
+twice - the second time being rather more adventurous, as we'll see
+later on.
+
+The Waterfront was a place we particularly liked, with its Marina and
+restaurants, shops, crafts and hustle-and-bustle. Unfortunately, we
+must say that the restaurants there leave much to be desired. The
+places we ate in varied between bearable to inedible food, but the
+prices remained rather constantly high. The worst of them all was an
+African restaurant where I was served a sweetcorn soup that very much
+resembled the contents of a sweetcorn tin dropped in a bowl and wormed
+up - and even then not even that worm. The main course was of the same
+calibre, I'm afraid to say, and all of it for the bargain price of 250
+Rand - enough for two meals in Durban. The remaining restaurants, even
+the really expensive ones, could only be considered good if compared
+to this one restaurant. Without question, they were worse than the
+average restaurant in Durban. Another disappointment was St. Patrick's
+day at the Irish pub at the Waterfront. Castle, a robust South African
+lager is normally excellent in draught form, but the Irish pub seems
+to have the worst Castle pint in South Africa. Conveniently enough,
+all other beers are 10 Rand more expensive than Castle, and these are
+the ones everyone drinks. The whole atmosphere was badly
+fabricated. On the plus side, we did go to a very good Irish pub in
+town centre where the real Irish met and watched Rugby. This was an
+excellent bar, and the pint there was second to none, as was the
+craic.
+
+Whilst food and beer was not an highlight at V&A, everything else
+was. It is indeed a most quaint area, surrounded with old, beautiful
+buildings, but also displaying its share of modern architecture. There
+are also the statues of the four South African Nobel Peace Prize
+winners: Luthuli, Tutu, De Klerk and, of course, Mandela. Strolling
+down the quay as the sun went down, we spent many an evening looking
+at the boats and the masses of people, busying themselves with
+shopping, some just sitting and waiting, listening to the many street
+bands, the jazz bands impressing us in particular. We also took our
+freedom to walk in our own hands and ended up walking from Long Street
+to V&A as much as possible, getting purposely lost on our way, finding
+things otherwise hidden.
+
+The other main highlight around the Waterfront is the
+Oceanarium. Whilst not the biggest we've seen - Lisbon's is probably
+bigger and more diverse - it's still worth seeing huge sharks and a
+great diversity of fish, as well as different types of penguins and
+learn a little bit about the local ecosystems.
+
+** Camps Bay
+
+One sunny day we decided to go to Table Mountain, probably the most
+emblematic symbol of Cape Town. The mountain is one huge plateau, or
+so it seems from below, sometimes covered at the very top with
+clouds. This the locals call the table cloth, and the effect does
+indeed, from afar, resemble a large green table with a white table
+cloth. You do need some imagination, though. For the less athletic
+tourist, the mountain is well served with cable cars, taking you all
+the way to the summit. However, getting from town centre to the cable
+cars still involves some walking, most of it up a rather steep hill.
+
+We left the house fully intending to get a bus to the cable cars. But
+as we started to walk to the bus stop, uncertain as we were about its
+location, it became clear that walking to the summit wasn't that bad
+an idea. To me, that is. Shahin disagreed somewhat, but by then we
+already had started walking. The initial walk was rather steep indeed,
+with little in a way of a view as the streets were filled with
+houses. As we continued walking, perhaps half-an-hour or so into our
+march, the size of our undertaking started to dawn on us. We were
+nowhere near the cable cars, and the remaining of the way was perhaps
+steeper than the road behind us. At this point Shahin started to
+despair, but then realised that after all that trouble it would be a
+bit of a defeat to get a bus now. We sat down underneath trees quite a
+few times, and watched as elder people walked past us at high
+speed. At one point, a rather comical moment, we saw a guy on his
+sixties, or there abouts, cycling up the mountain! Half-an-hour or so
+later, as we were still making our way up, we saw him going down at
+full speed, probably doing all that exercise only purely for the joy
+of then going downhill.
+
+At one point, where the road starts zigzagging, we decided to go on a
+straight line and cut through the zigs an the zags, across bushes and
+badly made paths. In total it took us more than one hour and thirty
+minutes to get to the cable cars, stops included. We ascended towards
+the summit in a fancy new model cable car, sporting a rotating
+floor. But the biggest surprise was outside the car. As we looked at
+the harsh mountain in front of us we started to notice small dots,
+which eventually revealed themselves to be people. And there weren't
+just one or two of these, but at least ten or maybe fifteen. A couple
+of lads had walked past us on our climb to the cable cars and were now
+climbing up the rocks, with what appeared to be little or no climbing
+gear on them. We were positively amazed, and they sure made our hour
+long walk seem trivial.
+
+The new cars take you up the mountain in no time. After spending some
+time admiring the town below, we decided to explore the plateau. There
+one can choose between several trails, each with varying degrees of
+difficulty. We choose a medium one, but ended up getting somewhat lost
+and doing the remainder of a hard one. Although we were quite tired,
+and the hike quite frequently resembled a climb, it was worth it in
+the end because the views were incredible. On our way back, the
+weather suddenly turned on us, all in a short span of time. Suddenly
+the heat from the sun was gone, a chilling wind replacing it, and
+clouds were all around us. As time went by, the clouds became more and
+more pervasive, and we felt we had been really lucky not to have any
+clouds up to this point as one could not see anything at all. Instead
+of the stunning views we had less than an hour before, looking down
+the mountain was akin to looking ahead in a foggy day; visibility was
+no more than five metres. Shahin could not stop herself and took
+several pictures of me, this time with my head literally in the clouds
+rather than metaphorically.
+
+We made our way back without incident, other than the chilling cold we
+all felt, but feeling rather fortunate that the weather had changed
+after we got to the furthest point of the hike and were on our way
+back. There were also some stories of days when the weather really
+turns nasty and the cable cars have to stop servicing the mountain. On
+those days, if you're unlucky enough to be up there, you'll have to
+survive until the weather changes again. I'm sure there is some
+life-support on the touristic buildings for desperate situations
+though.
+
+All the hiking made us extremely hungry, but since there is only one
+restaurant on top of Table Mountai we expected the worse. A pleasant
+surprise awaited us, though, for although the food at the restaurant
+was not of french-chef quality, it was certainly very edible - the
+hunger probably helped too - and more importantly, all for the amazing
+price of 100 or so Rand.
+
+Our way down from the mountain was uneventful but rather pleasant,
+especially after the hard, long climb up.
+
+
+Another interesting adventure was our second bus tour. After a few
+days bumming around in cape town we decided to go on the bus again. To
+our great misfortune, it was one of those days when the winds hit Cape
+Town. At that point it hit me that a name much more apt for the town
+would have been Windhoek.
+
+#+caption: Fire at the Signal Hill
+[[./cape_town_signal_hill_fire.jpg]]
+
+The bus trip started normally, with a bit of wind. As we started
+making our into town the winds got stronger and stronger, to a point
+where hats where flying off the bus and people were hanging to the
+rails with extra-strength. The tour guide was doing her best to ensure
+no one was afraid, stating several times that there was no way a
+double-decker bus could topple with the wind; I'm not sure if she
+managed to convince any of the passengers. At one point pretty much
+everyone went downstairs, leaving us, the guide and two other couples
+to fight against the elements. Then, to make things even more
+exciting, we saw a massive fire in the distance. Signal Hill was on
+fire. Apparently this happens quite frequently in Cape Town, when the
+weather is really hot and the winds begin. All the conditions are
+ready for some nasty fires. We started making our way towards Table
+Mountain, a part which we dreaded because we thought the winds would
+certainly topple us down the mountain. In fact it was quite the
+contrary, as the mountain shielded us from the wind. From up there one
+could clearly see the flames, the entire hill ablaze, helicopters
+bringing huge buckets of water and throwing them into the flames
+without any visible effect.
+
+After a small stop at the mountain we made our way to Camps Bay, the
+huge column of smoke still making itself visible from the other side
+of the hill. We then made our way back and made our final stop at V&A,
+partly because we couldn't help but want to observe the progress of
+the fire. Here the winds were in full swing, and the blaze was at its
+cruelest splendour. The many passers-by, normally occupied with
+shopping, were now spending their time gazing at the hill, paralysed
+as if not knowing what to do. It was hard to stop one's mind from
+wondering, would the fire actually get to the waterfront? There was a
+large green gulf between the fire and V&A, but the flames were
+spreading faster and faster, a living entity propelled by some unknown
+evil desire to consume and burn. Ashes were everywhere. We stayed for
+a bit, watching man fighting against beast.
+
+The hour was getting late and we still had to get back to Long Street,
+so we started walking back, a journey that made us realise just how
+unforgiving Cape Town's winds really are. Suddenly, from absolutely
+nowhere, as you take a turn from a busy street, you get hit by a gush
+of wind so fast, so furious, that it really feels like you're about to
+take off like a kite. There were a few times when I felt like holding
+on to a street lamp or some rails, just for extra safety. At other
+turns it felt as if we were not going to be able to stop going
+forwards and walk straight into a main road, straight into the
+traffic. Near the train station the rubbish of the local markets
+gathered in huge spirals, mini-tornadoes that can hit you at very high
+speed.
+
+** Robben Island
+
+One of the highlights of Cape Town is its proximity to the infamous
+Robben Island, where many ANC supporters and other freedom fighters
+where jailed for fighting against apartheid. Arguably, it is the most
+famous prison in the world, due in no small part to the many years
+Nelson Mandela spent there. Mandela was incarcerated for a total of
+twenty seven years, most of which were served within the confines of
+the island. While his body was behind bars, his mind was never
+conquered; and the great man made sure his cause wouldn't be forgotten
+by incessantly sending letters to everyone and anyone who would
+listen.
+
+As we all know, Mandela - or Madiba, as he is affectionately known in
+his country - came from jail to lead his people, and had the honour of
+being elected the president of the last African country to escape
+colonial rule. Mandela closed the era that Kwame Nkrumah had opened
+all those years ago, simultaneously concluding one chapter and
+starting another, both of which fraught with difficulties.
+
+In keeping with these events, Robben Island was converted from a
+prison to a museum, highlighting both the conditions of its dwellers,
+as well as the importance of the causes they defended. Shahin and me
+have always been interested in issues of development and
+freedom. Having the chance to see the place that shaped the political
+mind of Mandela and many of the ANC cadres was an opportunity not to
+be missed.
+
+The boat to the island leaves from the Waterfront, and as with many
+things in the museum, tourists are transported in the very same
+vessels that were used to transport prisoners more than two decades
+ago. I believe one of the captains was also a captain back when Robben
+Island was still a prison. The boats are small, and struggle to
+accommodate the huge numbers of tourists that flock to see the island,
+but somehow we all managed to fit in. They certainly were not designed
+to provide comfort. The trip itself is rather quiet, most passengers
+lost in their own thoughts, but there is no running commentary. One is
+left to appreciate the stunning views of the ocean, Cape Town fading
+in the horizon, the island drawing nearer and nearer.
+
+#+caption: Security towers at Robben Island.
+[[./robben_island.jpg]]
+
+At the island one is taken into a bus, and driven around. The first
+stop was the quarry. If you know a bit of Madiba's story, you are
+aware that he spent many years breaking stones in a quarry, working
+long hours in the baking sun. It was this work, compounded certainly
+by the time he spent in Joburg reading law books by candle light, that
+greatly damaged his sight. One can easily see how, just by staring at
+the rocks for a few moments when the sun is shinning; the light
+reflected back is so bright one has difficulty in
+seeing. Unfortunately for Madiba and his colleagues, no sunglasses or
+any other type of protective gear were allowed, and they had to work,
+day in, day out, facing the sun and its bright reflexion on the rocks.
+
+The quarry had its positive side too. It was here that many political
+discussions regarding ANC's future where held. And it was here, many
+years later, that Madiba and many ex-prisoners came to honour those
+who gave their lives for the struggle. One could not stop feeling
+strong emotions when looking at the pile of rocks Madiba had started
+on that day. After talking for a bit, he just went quiet, gazed at the
+infinite, thoughtfully; and then grabbed a small stone, walked a few
+metres, stopped; and dropped the stone. Soon he was followed by every
+other ex-prisoner, and the pile was created. It is a great symbolic
+monument for the fallen, in a way much more significant than other
+more elaborate, more ornamental and artistic works of art. A simple
+stone, a simple pile, and yet so much profound meaning.
+
+We were told of this and much more else, some things which we knew,
+others which we didn't even imagine. With few words, our quietly
+spoken but very articulated guide transformed an arid scenery into one
+of the great stages of politics and freedom of the twentieth century.
+
+The departure from the quarry was done in a more somber mood, but
+darker shadows awaited us behind the walls. We were taken to the main
+prison buildings. Here we were handed over to another guide, with a
+difference: he was an ex-prisoner at Robben Island. He took us inside
+the building, and explained its many details. He made us see things as
+they once were. At one point, a bit into the tour, I noticed that he
+was a little shaken. This, in a person who does guided tours day in
+day out. Obviously not the best of professions. Then, with the tact
+that only a tourist would have, someone asked "If you hate this island
+so much, why do you work here as a guide?", to which he quietly and
+politely replied:
+
+I would never ever come back here if I could. When I left prison, and
+after the regime change, I was unemployed for a long time. It was then
+that the government offered me this job. I had no option but to
+accept, there were no jobs elsewhere. But I'll never allow my family
+to come here. They still leave in Soweto. If I could I'd leave this
+job right now. This is an evil place.  The man spoke slowly and with
+great sadness, the words of a person reliving a dark past; a freed
+prisoner and yet unable to walk through the open doors of his cage. We
+all went quiet, even our inquisitive companion. I kept on conjuring
+images of freed American slaves that knew not where to go, and so just
+staid in their master's plantation. There simply was nowhere else to
+go.
+
+We visited cells, saw the patio, saw many pictures of ex-prisoners,
+heard of those who never left and were taken by the island, of those
+who staid and learned how to read, write and got college degrees. As
+the boat took us back to Cape Town, the sun had cooled off
+dramatically and a bitterly cold wind was flowing from the ocean
+towards the coast.
+
+It was the grimmest of days; it was the brightest of days.
+
+** The Bright City Lights
+
+Cape Town is one of those popular places, the sort that you either
+love or hate. Unlike its European counterparts, like say Costa Del Sol
+or the Algarve, it does have some soul; its not just an hedonistic
+figment of the tourist's imagination. The biggest problem with it,
+though, is that the place we all visit exists only for a privileged
+few. The average Capetonian is much more likely to live in Cape Flats
+than in Long Street; and for him or her, the lights of the city are
+probably as foreign and exotic as London or Madrid. Truth to be told,
+it's probably much more accurate to describe Cape Town as one huge
+slum with a trendy little Cartier - a description to which, I'm sure,
+80% of its population would eagerly subscribe to.
+
+#+caption: Young Capetonian selling The Issue
+[[./cape_town_poverty.jpg]]
+
+It may seem unfair to single out the Cape since places like Jozi and
+even Durban, not to mention Luanda, also have deep poverty
+side-by-side with massive wealth. The problem with Cape Town is that
+it's easy to forget about poverty altogether because you feel safe
+enough in the affluent streets; it's slums are far away enough as to
+be invisible. Other places keep you in check, constantly reminding you
+of just how lucky you are. Not Cape Town, though. You can quietly sip
+your lovely South African wine with your lovely, if somewhat dear,
+meal and be entirely forgiven for not knowing about the plight of
+those surrounding you.
+
+Out of sight, out of mind.
+
+** Knysna
+
+Our original intention was to depart from Cape Town and join in the
+Garden Route. Lonely Planet spoke highly about the steam train linking
+George and Knysna and we, never ones to go on a straight line, wanted
+to verify these claims. However, to our great disappointment, there
+were some extensive engineering works being carried out and trains
+were not running at all. The previous mishaps on short distance
+driving where enough to dissuade us to drive, so we hoped on a
+Greyhound and rode all the way to Knysna.
+
+#+caption: The Plattenberg.
+[[./plattenberg.jpg]]
+
+After a very scenic bus trip, we arrived at Knysna and booked
+ourselves in the Knysna Backpackers. Incredibly, we forgot the lessons
+learned at Simon's Town and decided to walk from the bus stop to the
+hostel. The map told us we had a fair distance to walk - a stone's
+throw, really, if we had no luggage, but a considerable hike with 85
+litres on your back. What the map didn't say, though, was that much of
+the walk was uphill. Less than half-way through and we were drenched
+in sweat, feeling pains in muscles you didn't even know they
+existed. It was a painful walk, one we swore not to repeat anytime
+soon.
+
+At the hostel, we were received by very friendly staff. The
+accommodation wasn't luxurious - backpacker's places rarely are - but
+very clean and quiet, and we had a massive room for ourselves, located
+in a conservatory like part of the house.
+
+
+Knysna is not a particularly big place, nor does it appear to get that
+busy. The town is mainly one big block where most shops and businesses
+are. On one side of the block there is hilly residential area where we
+were located; the other side leads towards the lake.
+
+The town's main claim to fame is the Knysna Heads, located where the
+Knysna lake meets the sea. The Heads are huge cliffs, and they make
+navigation really difficult; the town is well known for shipwrecks,
+and every year a number of lives is lost at sea. The area surrounding
+the lake is has a posh Waterfront, with restaurants and shops as well
+as trips around the lake - and for the more adventurous, across the
+heads into the ocean and back.
+
+We decided to go on a boat trip, but not being exactly brave, we
+settled for just going around the lake. The journey was rather
+pleasant but, unexpectedly, it did get cold at times and the blankets
+provided ended up being very handy. This is all the more strange when
+one takes into account that the temperature on land was over thirty
+Celsius, with very little wind. Once on the lake though, the wind
+factor lowers the temperature dramatically.
+
+Enduring the cold was made much more bearable by the amazing views of
+the valley and the ocean. The mountains surrounding the lake are
+covered in lush vegetation, the odd house here and there. These are
+extremely expensive houses, and some even sport their own docks.
+
+
+A bit further up from the Waterfront - not quite all the way in to
+town - there is this rather interesting Internet cafe called
+Chatters. The place is run by an English family, as their accents
+instantly betrayed, a very friendly bunch indeed. But here's the
+twist: Chatters is actually a Cafe, come restaurant with a couple of
+PC's. So not only can you get your Castle or coffee with your Internet
+connection, listening to good music all the while, but all of this is
+available for only 25 Rand an hour. Of course, 25 Rand is not quite as
+good as the 6 Rand an hour we used to pay in Durban, but it's much
+better than Mtubatuba's 50 Rand. The only catch was we had to buy 4
+hours at a time to get the discounted price, but we liked Chatters so
+much we ended up spending hours on end there. The food was excellent;
+Shahin fell in love with their potato bake and deserts, and I
+absolutely loved their pizzas and coffee. But most of all, the people
+were really friendly.
+
+
+Once all the local attractions had been explored, we decided to hire a
+car. This part of the South African coastline is fertile in estuaries
+and natural reserves, as well as other little towns nearby, and the
+car gave us the flexibility to visit these places on day trips. Three
+of the most memorable ones were Plattenberg Bay, Nature's Valley and
+the Canopy Tree.
+
+Plattenberg Bay has a rather nice beach with big hotels next to it, a
+river-let flowing across town and then towards the sea. We spent a
+morning at the beach, eating a fantastic breakfast at one of the many
+beach restaurants and cafes available - all with large verandas from
+where you can idly gaze at the ocean. After a few hours in town it was
+quite clear that Plattenburg Bay would have been a better choice for a
+base camp than Knysna, both on the scenic side of things, but also
+because it seems to be a much livelier place.
+
+#+caption At a platform on the Canopy Tree tour. The tree is over 50 metres in height.
+[[./canopy_tree.jpg]]
+
+Nature's Valley, as the name implies is a very much unspoiled valley,
+at the bottom of which lies a river. The hills are covered with lots
+of vegetation and wild-life is abundant. The river is small during the
+dry season, so much so that we walked in it all the way up the
+ocean. There we found a large beach, a vast expanse of sand mostly
+untouched by human action.
+
+The last trip was the most exciting one. As usual, Shahin was brave in
+finding new things and booking us, but not quite so brave when time
+came for action. The concept behind the Canopy Tree tour is simple: a
+set of platforms are placed on top of very tall trees in a forest,
+each at a fair distance from the next, and the objective is to slide
+from one to the next over steel cables.
+
+Whilst the principle may sound easy, in practice the experience is a
+bit daunting because of the height of the trees and the distance
+between them. Once we got there, Shahin suddenly realised what she
+gotten herself into and started panicking somewhat. To help things
+along even more, our guide had a brilliant sense of humour and spend
+much of his time scaring tourists with shouts along the lines of
+"STOP!!! Your cable is going to break!!!" or "Oh my god, you're
+missing a strap!!". And since the guide was only targeting women, all
+the boys had a great laugh looking at the faces of sheer fear of all
+the girls and their screams of panic. It was definitely an experience
+worth having, hurling yourself from one tree to the next at fairly
+high speed, looking down at the forest underneath your feet.
+
+** Port Elizabeth
+
+When Knysna and surrounding areas started to become a bit boring, we
+hoped on a bus again and went off to Port Elizabeth. (Port Elizabeth
+is known to all locals as PE, an abbreviation which we quickly got
+used to, and that's what I'll use here too). PE didn't have much in a
+way of attractions, but it was a big city and big cities always have
+the advantage of being compact - something the Garden Route totally
+lacks - and it had a great beach.
+
+As usual, getting to PE was easy enough, courtesy of the great bus
+system in South Africa; but getting from the bus stop to the hostel
+was a mission. We got there late at night, after a good delay on a
+previous bus stop because the bus driver refused to go until all the
+passengers were safe and sound inside their cars. An elderly lady was
+waiting for her lift, so the entire bus had to stay there and wait
+with her. At the time we didn't think much of it (hurry up woman!),
+but when we got into PE and were exactly in the same situation,
+suddenly we became great fans of this bus company and it's humane
+policies. In the dark of night, around eleven or so, there were no
+cabs at all waiting for passengers; and we had no way of calling them
+either. A few of us were on the same situation, but they managed to
+get cabs. We were the last ones left. You could see that the bus staff
+were there just waiting for you, unable to go anywhere until you did,
+and many a time I felt compelled to send them on their
+way. Fortunately, Shahin had a lot more common sense than me and
+stopped me every time I came up with such nonsense. After a good
+thirty minutes a cab finally dropped by and accepted to take us to our
+hotel, and the bus people were finally allowed to go on their way,
+back to their homes.
+
+We were not entirely sure about our choice of taxi. The car looked as
+rundown as the average luandan cabs, something not as common in South
+Africa. However, it was a chance we were willing to take, all things
+considered. The taxi driver was a middle-aged coloured guy, full of
+advice about PE. "Heh, you were lucky, hard to find taxis at this time
+o' night hey? Very dangerous place that, shouldn't stay there for
+long.". He then proceeded to tell us all about the latest crimes and
+murders, explaining exactly why the bus terminal was not such a good
+place to be on your own. Of all the stories he told us, one I won't be
+able to forget. That was the hijacking story.
+
+Hey, I was on my cab this one day with a woman, right? And then I stop
+and someone tries to hijack the car. A couple of white guys,
+responsible for lots of hijacks, everyone knew they were bad news. So
+I fight against them, they trying to kick me out of the car, and leave
+with the woman. I tried to get the woman out, like. Did it in the end,
+but they stabbed me. Going to court soon on that one...  That sure
+made us really quiet and worried. What sort of place were we getting
+ourselves into? At any rate, we got into our hotel before he had time
+to tell us another horror story - we had our filling for the night by
+then. That's when things turned for the better. Following advice of
+some fellow travellers, we decided to start investigating regular
+Hotels as well as backpacker's places. We were told that its often
+possible to get really good deals on hotels and guest houses, and in
+doing so we found a fantastic place in PE. It was all booked in the
+previous night, but we only really understood the luxury when we
+entered our room. I can't really call it a room, flat is more
+accurate. We had two bedrooms, one with en-suite, a massive balcony
+with a view to the sea, a kitchen and a living room with all DSTV
+channels. This was certainly the most luxurious place we had ever been
+to in all our travels. And all of this for 400 Rand a
+night. Regrettably, when we tried to book the whole week there we were
+told they only had it available for the one night and it was fully
+booked for the rest of the time. The one night and day in pure luxury
+was great though.
+
+When we finally managed to leave the flat to inspected the city, we
+found out that our fears were a bit exaggerated. Yes, there are really
+dodgy parts of town and the bus station isn't very far from one, but
+at least the beach front and the area in which we were living wasn't
+bad at all - one could even walk around at night without too many
+problems.
+
+The time we spent in PE was mainly dedicated to recovery. The Garden
+Route was quite exhausting, as we had to do long drives to get to
+places and move around quite a lot. In PE we did very little, all of
+it requiring only a twenty minute walk at most. One of the highlights
+is the small Oceanarium just by the beach, were we saw a live show
+with the dolphins. The show was excellent. It's hard to believe just
+how intelligent dolphins are. After the show, when everyone had left,
+we staid back and got to observe the dolphins playing on their own
+initiative, just fooling around the swimming pool. We spent at least
+an hour just looking at them, teasing them, trying to get them to play
+with us, to no avail. This experience made us even keener to go
+swimming with dolphins, they are just extraordinary creatures.
+
+
+While I was recovering from my extreme tiredness, Shahin decided to go
+on a private safari game drive just to get a feel for it. As I
+mentioned previously, although I do like animals and parks to some
+extent, I don't share Shahin's extreme fondness for all things wild,
+and as such preferred to stay back and do some beach bumming. The
+reports from the safari experience were mixed. It was great to be able
+to see cats in the wild, something she didn't get to see much of in
+Durban. However, the park was extremely small. It wasn't so much that
+you spotted the lions, it was more like they couldn't really roam that
+far. All the cats looked extremely well fed, and not because they were
+being fed by a keeper; rather the cramped space offers little chance
+of survival to any type of prey, and the lions have to do little more
+than walk around and pick a zebra for lunch. In conclusion, Shahin
+wasn't entirely pleased with her private game reserve experiences. We
+were told that the Krugger park private game reserves are of a much
+better standard, something we no doubt will put to test in the near
+future.
+
+#+caption: View from our Hotel in Port Elizabeth.
+[[./port_elizabeth.jpg]]
+
+PE does lack somewhat with regards to eating. There are many
+restaurants to choose from, but other than our hotel's cuisine and one
+or two pub-like places, we didn't like the food at any of them. It
+just didn't taste that nice, really. On the plus side, it was much
+cheaper than Cape Town. The worst places were definitely those closer
+to the beach. One of the places we did like was a tavern next door to
+Nando's, located on one of the smaller shopping malls. It had live
+music of excellent quality. Unfortunately the artist, a young girl
+with a guitar and a brilliant voice, didn't have an email, website or
+even a demo tape so we won't be hearing her again, we don't think.
+
+
+As time went by we increasingly started to talk about going home. This
+is for several reasons. First, I didn't adapt very well to the
+backpacking life. I'm not very good at staying in a place for a day or
+two, then travel for ten hours and repeat the process. After doing
+this for a few days I start getting extremely tired, and not really
+enjoying most of the sightseeing. We affectionately named this process
+the Inverse Dina Effect, because my good friend Dina is unable to
+spend half-a-second unproductively on her holidays, and loves seeing
+everything she possibly can. Shahin is much more resilient to it than
+I am, perhaps because I am naturally lazy when it comes to holidays; I
+was brought up with the big summer holidays - ferias grandes - three
+whole months of sun, beach and laziness. I never quite grew off of it.
+
+The second factor was malaria. After having it twice, I didn't think I
+could cope with a third bout. Shahin had it only once, but she was
+well aware of just how nasty it can be. And Mozambique was going
+through some severe floods at the time, the ideal conditions for
+mosquitoes and malaria.
+
+The third problem was logistics. Due to my laziness and general
+inability of organising, Shahin had done most of the organisation on
+our trip. I could only claim some effort while at Angola, other than
+that she had sorted everything out. Slowly but surely it started to
+take a toll on her, and the idea of going to a country with a similar
+infrastructure to Angola made it all seem even worse. After all we had
+spent more than three days just trying to get a bus to Benguela, and
+that was one of the easiest trips! It was all too daunting after South
+Africa and it's web-based cheap flights, Greyhounds and organised
+trips.
+
+With all of this in mind, we decided to cut our holidays short, skip
+Mozambique and return to England within little more than a week. It
+was a difficult decision, in particular because we knew we may never
+get a chance like this again. At the same time, there is little point
+in continuing to travel when you are no longer paying attention to the
+scenery, doing it purely to get stamps on your passport and tick boxes
+on your life's "places to visit".
+
+It was all up in the air, until the point we went on line and booked
+ourselves on a flight back to London. There was no turning back then.
+
+We spent a few more days in PE, mostly relaxing, but also genuinely
+looking forward to go home; to eat normal food, and see friends we
+hadn't seen for months. Normality acquired an attractiveness of its
+own.
+
+Our last day in PE was a sleepless night, but not because we were
+worried about our next destination. An entire school of girls took
+over our hostel and literally spent all night, every single minute of
+it, talking. I knew women can talk, but these girls were aiming at
+some kind of Guinness Book record. We woke up absolutely knackered,
+got our stuff together and left for the airport.
+
+We had one last destination to see before going home, the place where
+it all had begun all those months ago: Johannesburg.
+
+** Jozi
+
+The Jozi we returned to was a very different place from that
+Johannesburg we had landed in November. Time allowed us to get to know
+South Africa and Africa a lot better, and now instead of fearing the
+city we finally started to treat it like any other place in the
+world. A place where one has to be cautions and use common sense, of
+course, but not exactly a war zone. This time we were determined to
+actually see a bit of it, rather than just escape some place else as
+we had done so many times in the past. And on the four days we had
+left, there were two things at the top of our list: Soweto and the
+Apartheid Museum.
+
+With our newly acquired confidence we no longer felt we had to return
+to Gemini. Instead we booked ourselves in a hostel around the corner
+from the airport, the Purple Palm backpackers, and it turned out to be
+an enlightened choice. We were able to walk around on foot during the
+day for the first time in Jozi, going up to the shops (whole of ten
+minutes!) and back without any major incidents. The staff at the
+hostel was extremely friendly. We did managed to catch up with one of
+our old acquaintances from Gemini, Eric, the Minibus driver. To our
+surprise he was organising the Soweto and Apartheid Museum tour. It
+was great seeing him again. Events like these make you realise just
+how small our world really is.
+
+#+caption: A poor area in Soweto.
+[[./jozi_soweto.jpg]]
+
+Our trip started with a drive around Soweto, followed by a short visit
+to a Church where police had attacked defenceless protesters. We then
+went to visit Madiba's house, a dingy little place where he used to
+dwell when he was living in Johannesburg. I must say I couldn't really
+get to appreciate Madiba's house, perhaps because there were so many
+tourists all crammed into a very little space. We could barely
+move. It was touching to see the place, but one would need to be there
+with a lot less people and with a lot more time to really be able to
+appreciate it properly. However, the house is highly popular with
+tourists so that is unlikely to happen in the near future.
+
+Soweto itself is a puzzling place. It has some really affluent areas
+such as for instance where Reverend Desmond Tutu and Winnie Mandela
+live, as well as many famous South African footballers. And it also
+has areas which are extremely deprived. We visited one such area,
+hopelessly poor from the outside but full of dignity and pride
+inside. One of the makeshift houses was a clear example of this. Made
+with the most improbably materials, the house had a lovely little
+garden with colourful flowers, a clear symbol that people would
+achieve so much if only they were given the opportunity to do so.
+
+Very much like Soweto, the Apartheid Museum is a place of despair but
+also a place of great hope. Its sad to see what human beings did to
+other human beings. It is also very sad to see how hopeless their
+cause was all those years ago, how little Europe and America cared for
+the oppression of millions of people. Africa has been the bastard
+child of the modern age, a fact all the more unfair because so much of
+modernity was only made possible due to the merciless, brutal
+exploitation of Africa and of the Africans. No industrial revolution
+would have occurred if it were not for the slave trade. No big
+multinational South African companies would exist today were it not
+for the unfairness of the regime, decade after decade. A lifetime of
+reading about Africa crystallises and becomes absurdly clear in a
+place like the Apartheid Museum. One picture after another bring back
+flooding memories of all those great men and women that fought so hard
+so we didn't have to.
+
+
+After our excursion to Soweto, time completely escaped from our
+hands. Before we knew it we were being transported from our hostel to
+the OR Tambo airport, boarding a British Airways flight and landing in
+London. The weather was mercilessly cold on our arrival, very much in
+keeping with our feelings.
+
+And so it was that our great adventure came to an end.
