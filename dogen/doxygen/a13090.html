@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: exception_fixture Struct Reference</title>
+<title>Dogen: text_transform_registrar Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,31 +63,48 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07585.html">utility</a></li><li class="navelem"><b>test</b></li><li class="navelem"><a class="el" href="a13090.html">exception_fixture</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07605.html">text</a></li><li class="navelem"><a class="el" href="a07608.html">transforms</a></li><li class="navelem"><a class="el" href="a13090.html">text_transform_registrar</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a13087.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">exception_fixture Struct Reference</div>  </div>
+<div class="title">text_transform_registrar Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Translates boost expcetions by dumping diagnostic information.  
+<p>Tracks the registration of M2T transforms.  
  <a href="a13090.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a06419_source.html">fixture.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a05690_source.html">text_transform_registrar.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for exception_fixture:</div>
+Collaboration diagram for text_transform_registrar:</div>
 <div class="dyncontent">
-<div class="center"><img src="a13088.png" border="0" usemap="#aexception__fixture_coll__map" alt="Collaboration graph"/></div>
-<map name="aexception__fixture_coll__map" id="aexception__fixture_coll__map">
-<area shape="rect" title="Translates boost expcetions by dumping diagnostic information." alt="" coords="5,5,165,83"/>
+<div class="center"><img src="a13088.png" border="0" usemap="#atext__transform__registrar_coll__map" alt="Collaboration graph"/></div>
+<map name="atext__transform__registrar_coll__map" id="atext__transform__registrar_coll__map">
+<area shape="rect" title="Tracks the registration of M2T transforms." alt="" coords="5,5,187,112"/>
 </map>
 </div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ab3a68a01a1c7c22bfbd9f3f6d20e7d5a"><td class="memItemLeft" align="right" valign="top"><a id="ab3a68a01a1c7c22bfbd9f3f6d20e7d5a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a13090.html#ab3a68a01a1c7c22bfbd9f3f6d20e7d5a">validate</a> () const</td></tr>
+<tr class="memdesc:ab3a68a01a1c7c22bfbd9f3f6d20e7d5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensures the registrar is ready to be used. <br /></td></tr>
+<tr class="separator:ab3a68a01a1c7c22bfbd9f3f6d20e7d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae61576cdce23f6231537ecdc5b56d3ab"><td class="memItemLeft" align="right" valign="top"><a id="ae61576cdce23f6231537ecdc5b56d3ab"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a13090.html#ae61576cdce23f6231537ecdc5b56d3ab">register_transform</a> (std::shared_ptr&lt; <a class="el" href="a13082.html">model_to_text_transform</a> &gt; t)</td></tr>
+<tr class="memdesc:ae61576cdce23f6231537ecdc5b56d3ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a transform. <br /></td></tr>
+<tr class="separator:ae61576cdce23f6231537ecdc5b56d3ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c86620ebc2956e1ef4cf940fade1c3d"><td class="memItemLeft" align="right" valign="top"><a id="a5c86620ebc2956e1ef4cf940fade1c3d"></a>
+const text_transform_repository &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a13090.html#a5c86620ebc2956e1ef4cf940fade1c3d">repository</a> () const</td></tr>
+<tr class="memdesc:a5c86620ebc2956e1ef4cf940fade1c3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all available transforms. <br /></td></tr>
+<tr class="separator:a5c86620ebc2956e1ef4cf940fade1c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Translates boost expcetions by dumping diagnostic information. </p>
+<div class="textblock"><p>Tracks the registration of M2T transforms. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

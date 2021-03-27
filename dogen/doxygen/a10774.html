@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: path_features Class Reference</title>
+<title>Dogen: transformation_error Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,49 +63,44 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07335.html">physical</a></li><li class="navelem"><a class="el" href="a07339.html">features</a></li><li class="navelem"><a class="el" href="a10774.html">path_features</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07528.html">org</a></li><li class="navelem"><b>transforms</b></li><li class="navelem"><a class="el" href="a10774.html">transformation_error</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a10771.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">path_features Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">transformation_error Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Set of features related to path processing.  
+<p>An error occurred whilst transforming.  
  <a href="a10774.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a03995_source.html">path_features.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a18659_source.html">transformation_error.hpp</a>&gt;</code></p>
+
+<p>Inherits exception, and exception.</p>
 <div class="dynheader">
-Collaboration diagram for path_features:</div>
+Collaboration diagram for transformation_error:</div>
 <div class="dyncontent">
-<div class="center"><img src="a10772.png" border="0" usemap="#apath__features_coll__map" alt="Collaboration graph"/></div>
-<map name="apath__features_coll__map" id="apath__features_coll__map">
-<area shape="rect" title="Set of features related to path processing." alt="" coords="5,5,224,127"/>
+<div class="center"><img src="a10772.png" border="0" usemap="#atransformation__error_coll__map" alt="Collaboration graph"/></div>
+<map name="atransformation__error_coll__map" id="atransformation__error_coll__map">
+<area shape="rect" title="An error occurred whilst transforming." alt="" coords="5,5,199,127"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aad83f516260438fbcc921dc0350fbaa5"><td class="memItemLeft" align="right" valign="top"><a id="aad83f516260438fbcc921dc0350fbaa5"></a>
-static feature_group&#160;</td><td class="memItemRight" valign="bottom"><b>make_feature_group</b> (const <a class="el" href="a13242.html">variability::entities::feature_model</a> &amp;fm)</td></tr>
-<tr class="separator:aad83f516260438fbcc921dc0350fbaa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34256b4d68c68abe99db49b4e57e47de"><td class="memItemLeft" align="right" valign="top"><a id="a34256b4d68c68abe99db49b4e57e47de"></a>
-static static_configuration&#160;</td><td class="memItemRight" valign="bottom"><b>make_static_configuration</b> (const feature_group &amp;fg, const variability::entities::configuration &amp;cfg)</td></tr>
-<tr class="separator:a34256b4d68c68abe99db49b4e57e47de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7eace8e86c71b0ce6da0a5cb452c1414"><td class="memTemplParams" colspan="2"><a id="a7eace8e86c71b0ce6da0a5cb452c1414"></a>
-template&lt;typename Configurable &gt; </td></tr>
-<tr class="memitem:a7eace8e86c71b0ce6da0a5cb452c1414"><td class="memTemplItemLeft" align="right" valign="top">static static_configuration&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_static_configuration</b> (const feature_group &amp;fg, const Configurable &amp;c)</td></tr>
-<tr class="separator:a7eace8e86c71b0ce6da0a5cb452c1414"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9b98c113e5c61a6f7a817603ef40562"><td class="memItemLeft" align="right" valign="top"><a id="ac9b98c113e5c61a6f7a817603ef40562"></a>
-static std::list&lt; <a class="el" href="a13238.html">dogen::variability::entities::feature</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>make_features</b> ()</td></tr>
-<tr class="separator:ac9b98c113e5c61a6f7a817603ef40562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a4aad0d9955d29185cfb6dec3fc5caf4e"><td class="memItemLeft" align="right" valign="top"><a id="a4aad0d9955d29185cfb6dec3fc5caf4e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>transformation_error</b> (const std::string &amp;message)</td></tr>
+<tr class="separator:a4aad0d9955d29185cfb6dec3fc5caf4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e01571e6589dc64e08addf4b1148a7a"><td class="memItemLeft" align="right" valign="top"><a id="a6e01571e6589dc64e08addf4b1148a7a"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>what</b> () const noexcept</td></tr>
+<tr class="separator:a6e01571e6589dc64e08addf4b1148a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Set of features related to path processing. </p>
+<div class="textblock"><p>An error occurred whilst transforming. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

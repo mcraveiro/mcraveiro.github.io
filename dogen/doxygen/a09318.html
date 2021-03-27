@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: modeline Class Reference</title>
+<title>Dogen: qualified_representations Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07159.html">logical</a></li><li class="navelem"><a class="el" href="a07160.html">entities</a></li><li class="navelem"><a class="el" href="a07162.html">decoration</a></li><li class="navelem"><a class="el" href="a09318.html">modeline</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07332.html">identification</a></li><li class="navelem"><a class="el" href="a07333.html">entities</a></li><li class="navelem"><a class="el" href="a09318.html">qualified_representations</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -71,298 +71,91 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a09315.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">modeline Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">qualified_representations Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Groups all the fields representing editor variables for emacs, vi, etc.  
+<p>All available qualified representations of a name.  
  <a href="a09318.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a01880_source.html">modeline.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a01232_source.html">qualified_representations.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for modeline:</div>
+Collaboration diagram for qualified_representations:</div>
 <div class="dyncontent">
-<div class="center"><img src="a09317.png" border="0" usemap="#amodeline_inherit__map" alt="Inheritance graph"/></div>
-<map name="amodeline_inherit__map" id="amodeline_inherit__map">
-<area shape="rect" title="Groups all the fields representing editor variables for emacs, vi, etc." alt="" coords="16,1656,167,2173"/>
-<area shape="rect" href="a09330.html" title="Represents a generic logical construct." alt="" coords="5,5,177,1608"/>
-</map>
-</div>
-<div class="dynheader">
-Collaboration diagram for modeline:</div>
-<div class="dyncontent">
-<div class="center"><img src="a09316.png" border="0" usemap="#amodeline_coll__map" alt="Collaboration graph"/></div>
-<map name="amodeline_coll__map" id="amodeline_coll__map">
-<area shape="rect" title="Groups all the fields representing editor variables for emacs, vi, etc." alt="" coords="16,1656,167,2173"/>
-<area shape="rect" href="a09330.html" title="Represents a generic logical construct." alt="" coords="5,5,177,1608"/>
+<div class="center"><img src="a09316.png" border="0" usemap="#aqualified__representations_coll__map" alt="Collaboration graph"/></div>
+<map name="aqualified__representations_coll__map" id="aqualified__representations_coll__map">
+<area shape="rect" title="All available qualified representations of a name." alt="" coords="5,5,228,552"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a53a0ca556723b583dc7f78dc250f6aa4"><td class="memItemLeft" align="right" valign="top"><a id="a53a0ca556723b583dc7f78dc250f6aa4"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>modeline</b> (const <a class="el" href="a09318.html">modeline</a> &amp;)=default</td></tr>
-<tr class="separator:a53a0ca556723b583dc7f78dc250f6aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96d6c00e9dac44304186ab13237d9c4c"><td class="memItemLeft" align="right" valign="top"><a id="a96d6c00e9dac44304186ab13237d9c4c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>modeline</b> (<a class="el" href="a09318.html">modeline</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a96d6c00e9dac44304186ab13237d9c4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab053bb70a49d7a0fa1576f96b43960c1"><td class="memItemLeft" align="right" valign="top"><a id="ab053bb70a49d7a0fa1576f96b43960c1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>modeline</b> (const <a class="el" href="a09070.html">dogen::identification::entities::logical_name</a> &amp;<a class="el" href="a09330.html#ab987b625dc3497f29df87215a22d077a">name</a>, const std::string &amp;<a class="el" href="a09330.html#ada09e34ce2cc1d55e2acaaaf25f529bf">documentation</a>, const <a class="el" href="a09042.html">dogen::identification::entities::codec_provenance</a> &amp;<a class="el" href="a09330.html#a1a34fb1b452030d4055b6ad745f28b66">provenance</a>, const <a class="el" href="a09050.html">dogen::identification::entities::logical_id</a> &amp;<a class="el" href="a09330.html#a026faa1669e88daa886577eaaf48dfd8">contained_by</a>, const bool <a class="el" href="a09330.html#a76cc22aa2eb34626eca0c804f8564349">in_global_module</a>, const <a class="el" href="a09474.html">dogen::logical::entities::stereotypes</a> &amp;<a class="el" href="a09474.html">stereotypes</a>, const dogen::identification::entities::logical_meta_name &amp;<a class="el" href="a09330.html#ac8d77bcd582af1d2dfdcbe1a31036c3e">meta_name</a>, const <a class="el" href="a07129.html#aca560c08bf06920a8d261d33c8a1474a">dogen::identification::entities::technical_space</a> <a class="el" href="a09330.html#a25964f1e81feec57c08a37c95d0aecd9">intrinsic_technical_space</a>, const boost::shared_ptr&lt; dogen::variability::entities::configuration &gt; &amp;<a class="el" href="a09330.html#a2aaf2edfc6c3a5e2f5b369171f6732e5">configuration</a>, const std::list&lt; <a class="el" href="a09046.html">dogen::identification::entities::label</a> &gt; &amp;<a class="el" href="a09330.html#a55959f6a1da8e301afac8e1a30d93446">labels</a>, const <a class="el" href="a07160.html#a0228e461d1dba5d48180ec28acb53605">dogen::logical::entities::generability_status</a> <a class="el" href="a07160.html#a0228e461d1dba5d48180ec28acb53605">generability_status</a>, const std::unordered_map&lt; <a class="el" href="a07129.html#aca560c08bf06920a8d261d33c8a1474a">dogen::identification::entities::technical_space</a>, boost::optional&lt; <a class="el" href="a09302.html">dogen::logical::entities::decoration::element_properties</a> &gt; &gt; &amp;<a class="el" href="a09330.html#ad2eb86283757ef53e7d0e829c961e899">decoration</a>, const std::list&lt; dogen::logical::entities::helper_properties &gt; &amp;helper_properties, const <a class="el" href="a07162.html#a3a94abd791c3d08cd22415a8106996c9">dogen::logical::entities::decoration::editor</a> <a class="el" href="a07162.html#a3a94abd791c3d08cd22415a8106996c9">editor</a>, const <a class="el" href="a07162.html#aaa665b0190906a01611b30f9f13a3c7f">dogen::logical::entities::decoration::modeline_location</a> <a class="el" href="a09318.html#a5a8b14bff96895dc78ed1c5e662eda8f">location</a>, const std::list&lt; dogen::logical::entities::decoration::modeline_field &gt; &amp;<a class="el" href="a09318.html#a34a1f4565bc56a1b6125043a8813b683">fields</a>, const <a class="el" href="a07129.html#aca560c08bf06920a8d261d33c8a1474a">dogen::identification::entities::technical_space</a> <a class="el" href="a09318.html#a1d74897020f8a6240426ea41d1282330">technical_space</a>)</td></tr>
-<tr class="separator:ab053bb70a49d7a0fa1576f96b43960c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1965a2a879f4379e1b5b4c3a47c3277d"><td class="memItemLeft" align="right" valign="top"><a id="a1965a2a879f4379e1b5b4c3a47c3277d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>accept</b> (const <a class="el" href="a09334.html">element_visitor</a> &amp;v) const override</td></tr>
-<tr class="separator:a1965a2a879f4379e1b5b4c3a47c3277d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f532d8db5bb4599da22e46025fd1efc"><td class="memItemLeft" align="right" valign="top"><a id="a8f532d8db5bb4599da22e46025fd1efc"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>accept</b> (<a class="el" href="a09334.html">element_visitor</a> &amp;v) const override</td></tr>
-<tr class="separator:a8f532d8db5bb4599da22e46025fd1efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac434fd87636aa9bfb18c227bc59bbe7b"><td class="memItemLeft" align="right" valign="top"><a id="ac434fd87636aa9bfb18c227bc59bbe7b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>accept</b> (const <a class="el" href="a09334.html">element_visitor</a> &amp;v) override</td></tr>
-<tr class="separator:ac434fd87636aa9bfb18c227bc59bbe7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b926f73fd6dcf4515a011ba0218877f"><td class="memItemLeft" align="right" valign="top"><a id="a8b926f73fd6dcf4515a011ba0218877f"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>accept</b> (<a class="el" href="a09334.html">element_visitor</a> &amp;v) override</td></tr>
-<tr class="separator:a8b926f73fd6dcf4515a011ba0218877f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69854d294ff0a1e9e3b140e9492af03c"><td class="memItemLeft" align="right" valign="top"><a id="a69854d294ff0a1e9e3b140e9492af03c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>to_stream</b> (std::ostream &amp;s) const override</td></tr>
-<tr class="separator:a69854d294ff0a1e9e3b140e9492af03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17761f18c059199dcf7cfac4eb462673"><td class="memItemLeft" align="right" valign="top"><a id="a17761f18c059199dcf7cfac4eb462673"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="a09318.html">modeline</a> &amp;rhs) const</td></tr>
-<tr class="separator:a17761f18c059199dcf7cfac4eb462673"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21e09aa904c028918dfc34918debca0f"><td class="memItemLeft" align="right" valign="top"><a id="a21e09aa904c028918dfc34918debca0f"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="a09318.html">modeline</a> &amp;rhs) const</td></tr>
-<tr class="separator:a21e09aa904c028918dfc34918debca0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06c0c6bc9d0146e02e3dceff995eb9d2"><td class="memItemLeft" align="right" valign="top"><a id="a06c0c6bc9d0146e02e3dceff995eb9d2"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>equals</b> (const <a class="el" href="a09330.html">dogen::logical::entities::element</a> &amp;other) const override</td></tr>
-<tr class="separator:a06c0c6bc9d0146e02e3dceff995eb9d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f2bc3111c063b7ca24ae150fb687a71"><td class="memItemLeft" align="right" valign="top"><a id="a0f2bc3111c063b7ca24ae150fb687a71"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="a09318.html">modeline</a> &amp;other) noexcept</td></tr>
-<tr class="separator:a0f2bc3111c063b7ca24ae150fb687a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4890fe131bbdc0e18cb496005492f2a5"><td class="memItemLeft" align="right" valign="top"><a id="a4890fe131bbdc0e18cb496005492f2a5"></a>
-<a class="el" href="a09318.html">modeline</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="a09318.html">modeline</a> other)</td></tr>
-<tr class="separator:a4890fe131bbdc0e18cb496005492f2a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b84bd77480c897376bce8d56a24127a"><td class="memItemLeft" align="right" valign="top"><a id="a0b84bd77480c897376bce8d56a24127a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>accept</b> (const <a class="el" href="a09334.html">element_visitor</a> &amp;v) const=0</td></tr>
-<tr class="separator:a0b84bd77480c897376bce8d56a24127a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e763c44757f049c28a1544e6a54d4a5"><td class="memItemLeft" align="right" valign="top"><a id="a9e763c44757f049c28a1544e6a54d4a5"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>accept</b> (<a class="el" href="a09334.html">element_visitor</a> &amp;v) const=0</td></tr>
-<tr class="separator:a9e763c44757f049c28a1544e6a54d4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11a9ea6c1c31cdcc14a045999d4928af"><td class="memItemLeft" align="right" valign="top"><a id="a11a9ea6c1c31cdcc14a045999d4928af"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>accept</b> (const <a class="el" href="a09334.html">element_visitor</a> &amp;v)=0</td></tr>
-<tr class="separator:a11a9ea6c1c31cdcc14a045999d4928af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabefcc09764c46ff8d5309d96ffe9f15"><td class="memItemLeft" align="right" valign="top"><a id="aabefcc09764c46ff8d5309d96ffe9f15"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>accept</b> (<a class="el" href="a09334.html">element_visitor</a> &amp;v)=0</td></tr>
-<tr class="separator:aabefcc09764c46ff8d5309d96ffe9f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86ad0fd0ef97293be2a4c6d46e568e10"><td class="memItemLeft" align="right" valign="top"><a id="a86ad0fd0ef97293be2a4c6d46e568e10"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>qualified_representations</b> (const <a class="el" href="a09318.html">qualified_representations</a> &amp;)=default</td></tr>
+<tr class="separator:a86ad0fd0ef97293be2a4c6d46e568e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf9af06e727de9906f5ed30c18cfb065"><td class="memItemLeft" align="right" valign="top"><a id="adf9af06e727de9906f5ed30c18cfb065"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>qualified_representations</b> (<a class="el" href="a09318.html">qualified_representations</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:adf9af06e727de9906f5ed30c18cfb065"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a960aa98b244ec914c1940ed2cc1a9507"><td class="memItemLeft" align="right" valign="top"><a id="a960aa98b244ec914c1940ed2cc1a9507"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>qualified_representations</b> (const std::string &amp;<a class="el" href="a09318.html#a2d20b31ca4ebaba96e81a36908aae294">dot</a>, const std::string &amp;<a class="el" href="a09318.html#ab8275ae6269c95fd70ef1d1da3fec547">colon</a>, const std::string &amp;<a class="el" href="a09318.html#a4371f907cd3d090937b1687df9ca56d5">identifiable</a>)</td></tr>
+<tr class="separator:a960aa98b244ec914c1940ed2cc1a9507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9117e70117fabaa5dead779d44b64689"><td class="memItemLeft" align="right" valign="top"><a id="a9117e70117fabaa5dead779d44b64689"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="a09318.html">qualified_representations</a> &amp;rhs) const</td></tr>
+<tr class="separator:a9117e70117fabaa5dead779d44b64689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf8f9f29169710e3a3d04cebe96205ca"><td class="memItemLeft" align="right" valign="top"><a id="acf8f9f29169710e3a3d04cebe96205ca"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="a09318.html">qualified_representations</a> &amp;rhs) const</td></tr>
+<tr class="separator:acf8f9f29169710e3a3d04cebe96205ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab09747632cf9091389f9e00591a22967"><td class="memItemLeft" align="right" valign="top"><a id="ab09747632cf9091389f9e00591a22967"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="a09318.html">qualified_representations</a> &amp;other) noexcept</td></tr>
+<tr class="separator:ab09747632cf9091389f9e00591a22967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31a04d723521bfeccd294b57534d7de5"><td class="memItemLeft" align="right" valign="top"><a id="a31a04d723521bfeccd294b57534d7de5"></a>
+<a class="el" href="a09318.html">qualified_representations</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="a09318.html">qualified_representations</a> other)</td></tr>
+<tr class="separator:a31a04d723521bfeccd294b57534d7de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:acc05a39ff88400e40279db58b5bd2b6e"><td class="memItemLeft" align="right" valign="top"><a id="acc05a39ff88400e40279db58b5bd2b6e"></a>
-<a class="el" href="a07162.html#a3a94abd791c3d08cd22415a8106996c9">dogen::logical::entities::decoration::editor</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09318.html#acc05a39ff88400e40279db58b5bd2b6e">editor</a> () const</td></tr>
-<tr class="memdesc:acc05a39ff88400e40279db58b5bd2b6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The modeline will use the syntax for this editor. <br /></td></tr>
-<tr class="separator:acc05a39ff88400e40279db58b5bd2b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7615c7432d2bf6d9e63cd9f077931737"><td class="memItemLeft" align="right" valign="top"><a id="a7615c7432d2bf6d9e63cd9f077931737"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>editor</b> (const <a class="el" href="a07162.html#a3a94abd791c3d08cd22415a8106996c9">dogen::logical::entities::decoration::editor</a> v)</td></tr>
-<tr class="separator:a7615c7432d2bf6d9e63cd9f077931737"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d20b31ca4ebaba96e81a36908aae294"><td class="memItemLeft" align="right" valign="top"><a id="a2d20b31ca4ebaba96e81a36908aae294"></a>
+const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09318.html#a2d20b31ca4ebaba96e81a36908aae294">dot</a> () const</td></tr>
+<tr class="memdesc:a2d20b31ca4ebaba96e81a36908aae294"><td class="mdescLeft">&#160;</td><td class="mdescRight">Qualified identifier using "." as the separator. <br /></td></tr>
+<tr class="separator:a2d20b31ca4ebaba96e81a36908aae294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f59d11410195d99c7ef5f4573ce8c96"><td class="memItemLeft" align="right" valign="top"><a id="a1f59d11410195d99c7ef5f4573ce8c96"></a>
+std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>dot</b> ()</td></tr>
+<tr class="separator:a1f59d11410195d99c7ef5f4573ce8c96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae55913c3b2fbeed7a58e4743fe0049e6"><td class="memItemLeft" align="right" valign="top"><a id="ae55913c3b2fbeed7a58e4743fe0049e6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dot</b> (const std::string &amp;v)</td></tr>
+<tr class="separator:ae55913c3b2fbeed7a58e4743fe0049e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d25b9ff4167c5ca0ef9b31707ac94b1"><td class="memItemLeft" align="right" valign="top"><a id="a7d25b9ff4167c5ca0ef9b31707ac94b1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dot</b> (const std::string &amp;&amp;v)</td></tr>
+<tr class="separator:a7d25b9ff4167c5ca0ef9b31707ac94b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a5a8b14bff96895dc78ed1c5e662eda8f"><td class="memItemLeft" align="right" valign="top"><a id="a5a8b14bff96895dc78ed1c5e662eda8f"></a>
-<a class="el" href="a07162.html#aaa665b0190906a01611b30f9f13a3c7f">dogen::logical::entities::decoration::modeline_location</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09318.html#a5a8b14bff96895dc78ed1c5e662eda8f">location</a> () const</td></tr>
-<tr class="memdesc:a5a8b14bff96895dc78ed1c5e662eda8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Where to place the modeline. <br /></td></tr>
-<tr class="separator:a5a8b14bff96895dc78ed1c5e662eda8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2fca1eeccf24386dc006c3a5d0aaeeb"><td class="memItemLeft" align="right" valign="top"><a id="ae2fca1eeccf24386dc006c3a5d0aaeeb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>location</b> (const <a class="el" href="a07162.html#aaa665b0190906a01611b30f9f13a3c7f">dogen::logical::entities::decoration::modeline_location</a> v)</td></tr>
-<tr class="separator:ae2fca1eeccf24386dc006c3a5d0aaeeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8275ae6269c95fd70ef1d1da3fec547"><td class="memItemLeft" align="right" valign="top"><a id="ab8275ae6269c95fd70ef1d1da3fec547"></a>
+const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09318.html#ab8275ae6269c95fd70ef1d1da3fec547">colon</a> () const</td></tr>
+<tr class="memdesc:ab8275ae6269c95fd70ef1d1da3fec547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Qualified identifier using "::" as the separator. <br /></td></tr>
+<tr class="separator:ab8275ae6269c95fd70ef1d1da3fec547"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d76a47b4595551b90b36a119cfccd46"><td class="memItemLeft" align="right" valign="top"><a id="a6d76a47b4595551b90b36a119cfccd46"></a>
+std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>colon</b> ()</td></tr>
+<tr class="separator:a6d76a47b4595551b90b36a119cfccd46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9950850c1d3ff296f36dc502e03eefee"><td class="memItemLeft" align="right" valign="top"><a id="a9950850c1d3ff296f36dc502e03eefee"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>colon</b> (const std::string &amp;v)</td></tr>
+<tr class="separator:a9950850c1d3ff296f36dc502e03eefee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72d14e7aa019455ec18c5f858fb4a563"><td class="memItemLeft" align="right" valign="top"><a id="a72d14e7aa019455ec18c5f858fb4a563"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>colon</b> (const std::string &amp;&amp;v)</td></tr>
+<tr class="separator:a72d14e7aa019455ec18c5f858fb4a563"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a34a1f4565bc56a1b6125043a8813b683"><td class="memItemLeft" align="right" valign="top"><a id="a34a1f4565bc56a1b6125043a8813b683"></a>
-const std::list&lt; dogen::logical::entities::decoration::modeline_field &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09318.html#a34a1f4565bc56a1b6125043a8813b683">fields</a> () const</td></tr>
-<tr class="memdesc:a34a1f4565bc56a1b6125043a8813b683"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of all the parameters in the preamble, in order of appearence. <br /></td></tr>
-<tr class="separator:a34a1f4565bc56a1b6125043a8813b683"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5df70704ffe74d48abf509565da47d1c"><td class="memItemLeft" align="right" valign="top"><a id="a5df70704ffe74d48abf509565da47d1c"></a>
-std::list&lt; dogen::logical::entities::decoration::modeline_field &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>fields</b> ()</td></tr>
-<tr class="separator:a5df70704ffe74d48abf509565da47d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d6dc8d6125e70c436f3b16c87056604"><td class="memItemLeft" align="right" valign="top"><a id="a9d6dc8d6125e70c436f3b16c87056604"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>fields</b> (const std::list&lt; dogen::logical::entities::decoration::modeline_field &gt; &amp;v)</td></tr>
-<tr class="separator:a9d6dc8d6125e70c436f3b16c87056604"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af76546d273deeb2929e4e54f122bbc6d"><td class="memItemLeft" align="right" valign="top"><a id="af76546d273deeb2929e4e54f122bbc6d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>fields</b> (const std::list&lt; dogen::logical::entities::decoration::modeline_field &gt; &amp;&amp;v)</td></tr>
-<tr class="separator:af76546d273deeb2929e4e54f122bbc6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a1d74897020f8a6240426ea41d1282330"><td class="memItemLeft" align="right" valign="top"><a id="a1d74897020f8a6240426ea41d1282330"></a>
-<a class="el" href="a07129.html#aca560c08bf06920a8d261d33c8a1474a">dogen::identification::entities::technical_space</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09318.html#a1d74897020f8a6240426ea41d1282330">technical_space</a> () const</td></tr>
-<tr class="memdesc:a1d74897020f8a6240426ea41d1282330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Technical space that this modeline targets. <br /></td></tr>
-<tr class="separator:a1d74897020f8a6240426ea41d1282330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bd4f3582948cf6fca87d1e8b307846b"><td class="memItemLeft" align="right" valign="top"><a id="a5bd4f3582948cf6fca87d1e8b307846b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>technical_space</b> (const <a class="el" href="a07129.html#aca560c08bf06920a8d261d33c8a1474a">dogen::identification::entities::technical_space</a> v)</td></tr>
-<tr class="separator:a5bd4f3582948cf6fca87d1e8b307846b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a09330"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a09330')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a09330.html">element</a></td></tr>
-<tr class="memitem:aa22450117c7f75e4d15f5d6ee35e5610 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="aa22450117c7f75e4d15f5d6ee35e5610"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>element</b> (const <a class="el" href="a09330.html">element</a> &amp;)=default</td></tr>
-<tr class="separator:aa22450117c7f75e4d15f5d6ee35e5610 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af99bd34cbbc3ac0c8c02599353e907bf inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="af99bd34cbbc3ac0c8c02599353e907bf"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>element</b> (<a class="el" href="a09330.html">element</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:af99bd34cbbc3ac0c8c02599353e907bf inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7dfe19710fb97ed9da441d53015613b inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="aa7dfe19710fb97ed9da441d53015613b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>element</b> (const <a class="el" href="a09070.html">dogen::identification::entities::logical_name</a> &amp;<a class="el" href="a09330.html#ab987b625dc3497f29df87215a22d077a">name</a>, const std::string &amp;<a class="el" href="a09330.html#ada09e34ce2cc1d55e2acaaaf25f529bf">documentation</a>, const <a class="el" href="a09042.html">dogen::identification::entities::codec_provenance</a> &amp;<a class="el" href="a09330.html#a1a34fb1b452030d4055b6ad745f28b66">provenance</a>, const <a class="el" href="a09050.html">dogen::identification::entities::logical_id</a> &amp;<a class="el" href="a09330.html#a026faa1669e88daa886577eaaf48dfd8">contained_by</a>, const bool <a class="el" href="a09330.html#a76cc22aa2eb34626eca0c804f8564349">in_global_module</a>, const <a class="el" href="a09474.html">dogen::logical::entities::stereotypes</a> &amp;<a class="el" href="a09474.html">stereotypes</a>, const dogen::identification::entities::logical_meta_name &amp;<a class="el" href="a09330.html#ac8d77bcd582af1d2dfdcbe1a31036c3e">meta_name</a>, const <a class="el" href="a07129.html#aca560c08bf06920a8d261d33c8a1474a">dogen::identification::entities::technical_space</a> <a class="el" href="a09330.html#a25964f1e81feec57c08a37c95d0aecd9">intrinsic_technical_space</a>, const boost::shared_ptr&lt; dogen::variability::entities::configuration &gt; &amp;<a class="el" href="a09330.html#a2aaf2edfc6c3a5e2f5b369171f6732e5">configuration</a>, const std::list&lt; <a class="el" href="a09046.html">dogen::identification::entities::label</a> &gt; &amp;<a class="el" href="a09330.html#a55959f6a1da8e301afac8e1a30d93446">labels</a>, const <a class="el" href="a07160.html#a0228e461d1dba5d48180ec28acb53605">dogen::logical::entities::generability_status</a> <a class="el" href="a07160.html#a0228e461d1dba5d48180ec28acb53605">generability_status</a>, const std::unordered_map&lt; <a class="el" href="a07129.html#aca560c08bf06920a8d261d33c8a1474a">dogen::identification::entities::technical_space</a>, boost::optional&lt; <a class="el" href="a09302.html">dogen::logical::entities::decoration::element_properties</a> &gt; &gt; &amp;<a class="el" href="a09330.html#ad2eb86283757ef53e7d0e829c961e899">decoration</a>, const std::list&lt; dogen::logical::entities::helper_properties &gt; &amp;helper_properties)</td></tr>
-<tr class="separator:aa7dfe19710fb97ed9da441d53015613b inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa27b96798596da93a74cf3d6ef89ff56 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="aa27b96798596da93a74cf3d6ef89ff56"></a>
-const std::list&lt; dogen::logical::entities::helper_properties &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>helper_properties</b> () const</td></tr>
-<tr class="separator:aa27b96798596da93a74cf3d6ef89ff56 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f22ab1321ebe8e69008194c27b7b68e inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="a4f22ab1321ebe8e69008194c27b7b68e"></a>
-std::list&lt; dogen::logical::entities::helper_properties &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>helper_properties</b> ()</td></tr>
-<tr class="separator:a4f22ab1321ebe8e69008194c27b7b68e inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47dea5bb05b7709c1a7484af6e3edc03 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="a47dea5bb05b7709c1a7484af6e3edc03"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>helper_properties</b> (const std::list&lt; dogen::logical::entities::helper_properties &gt; &amp;v)</td></tr>
-<tr class="separator:a47dea5bb05b7709c1a7484af6e3edc03 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac22a8a56b0d85243665b14f4f8c6f520 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="ac22a8a56b0d85243665b14f4f8c6f520"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>helper_properties</b> (const std::list&lt; dogen::logical::entities::helper_properties &gt; &amp;&amp;v)</td></tr>
-<tr class="separator:ac22a8a56b0d85243665b14f4f8c6f520 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab987b625dc3497f29df87215a22d077a inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="ab987b625dc3497f29df87215a22d077a"></a>
-const <a class="el" href="a09070.html">dogen::identification::entities::logical_name</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09330.html#ab987b625dc3497f29df87215a22d077a">name</a> () const</td></tr>
-<tr class="memdesc:ab987b625dc3497f29df87215a22d077a inherit pub_methods_a09330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fully qualified name. <br /></td></tr>
-<tr class="separator:ab987b625dc3497f29df87215a22d077a inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae295a50bee81e224c9888dc3333de447 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="ae295a50bee81e224c9888dc3333de447"></a>
-<a class="el" href="a09070.html">dogen::identification::entities::logical_name</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> ()</td></tr>
-<tr class="separator:ae295a50bee81e224c9888dc3333de447 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1aa9fb1c0c071830ca703f65090cb72b inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="a1aa9fb1c0c071830ca703f65090cb72b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> (const <a class="el" href="a09070.html">dogen::identification::entities::logical_name</a> &amp;v)</td></tr>
-<tr class="separator:a1aa9fb1c0c071830ca703f65090cb72b inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ba4b6731f9d1aa7aaf74ed7caa3c1f2 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="a0ba4b6731f9d1aa7aaf74ed7caa3c1f2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> (const <a class="el" href="a09070.html">dogen::identification::entities::logical_name</a> &amp;&amp;v)</td></tr>
-<tr class="separator:a0ba4b6731f9d1aa7aaf74ed7caa3c1f2 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada09e34ce2cc1d55e2acaaaf25f529bf inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09330.html#ada09e34ce2cc1d55e2acaaaf25f529bf">documentation</a> () const</td></tr>
-<tr class="memdesc:ada09e34ce2cc1d55e2acaaaf25f529bf inherit pub_methods_a09330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Code comments.  <a href="a09330.html#ada09e34ce2cc1d55e2acaaaf25f529bf">More...</a><br /></td></tr>
-<tr class="separator:ada09e34ce2cc1d55e2acaaaf25f529bf inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeaada1005dec4e8f5917d9807791f729 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="aeaada1005dec4e8f5917d9807791f729"></a>
-std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>documentation</b> ()</td></tr>
-<tr class="separator:aeaada1005dec4e8f5917d9807791f729 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34483c5ebc8121e73a2a132264705038 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="a34483c5ebc8121e73a2a132264705038"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>documentation</b> (const std::string &amp;v)</td></tr>
-<tr class="separator:a34483c5ebc8121e73a2a132264705038 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab07dec5a23541f09de0319da5db50030 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="ab07dec5a23541f09de0319da5db50030"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>documentation</b> (const std::string &amp;&amp;v)</td></tr>
-<tr class="separator:ab07dec5a23541f09de0319da5db50030 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a34fb1b452030d4055b6ad745f28b66 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="a1a34fb1b452030d4055b6ad745f28b66"></a>
-const <a class="el" href="a09042.html">dogen::identification::entities::codec_provenance</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09330.html#a1a34fb1b452030d4055b6ad745f28b66">provenance</a> () const</td></tr>
-<tr class="memdesc:a1a34fb1b452030d4055b6ad745f28b66 inherit pub_methods_a09330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Details of the provenance of this model element. <br /></td></tr>
-<tr class="separator:a1a34fb1b452030d4055b6ad745f28b66 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3505d93cba19b30534ae5029442dc2fe inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="a3505d93cba19b30534ae5029442dc2fe"></a>
-<a class="el" href="a09042.html">dogen::identification::entities::codec_provenance</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>provenance</b> ()</td></tr>
-<tr class="separator:a3505d93cba19b30534ae5029442dc2fe inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32e2efabf4a0310bdbf7570ceb542ed2 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="a32e2efabf4a0310bdbf7570ceb542ed2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>provenance</b> (const <a class="el" href="a09042.html">dogen::identification::entities::codec_provenance</a> &amp;v)</td></tr>
-<tr class="separator:a32e2efabf4a0310bdbf7570ceb542ed2 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a853ea9a368d80a0ae8557e19ee725ebf inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="a853ea9a368d80a0ae8557e19ee725ebf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>provenance</b> (const <a class="el" href="a09042.html">dogen::identification::entities::codec_provenance</a> &amp;&amp;v)</td></tr>
-<tr class="separator:a853ea9a368d80a0ae8557e19ee725ebf inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a026faa1669e88daa886577eaaf48dfd8 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="a026faa1669e88daa886577eaaf48dfd8"></a>
-const <a class="el" href="a09050.html">dogen::identification::entities::logical_id</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09330.html#a026faa1669e88daa886577eaaf48dfd8">contained_by</a> () const</td></tr>
-<tr class="memdesc:a026faa1669e88daa886577eaaf48dfd8 inherit pub_methods_a09330"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID of the element in which we are contained, if any. <br /></td></tr>
-<tr class="separator:a026faa1669e88daa886577eaaf48dfd8 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca53a7e5f44946cb88d68982f4d861de inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="aca53a7e5f44946cb88d68982f4d861de"></a>
-<a class="el" href="a09050.html">dogen::identification::entities::logical_id</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>contained_by</b> ()</td></tr>
-<tr class="separator:aca53a7e5f44946cb88d68982f4d861de inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27ac526158c93f78bf8d0c87b7b159f6 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="a27ac526158c93f78bf8d0c87b7b159f6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>contained_by</b> (const <a class="el" href="a09050.html">dogen::identification::entities::logical_id</a> &amp;v)</td></tr>
-<tr class="separator:a27ac526158c93f78bf8d0c87b7b159f6 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a443df888da38df7620eb9355a7b67c3c inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="a443df888da38df7620eb9355a7b67c3c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>contained_by</b> (const <a class="el" href="a09050.html">dogen::identification::entities::logical_id</a> &amp;&amp;v)</td></tr>
-<tr class="separator:a443df888da38df7620eb9355a7b67c3c inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76cc22aa2eb34626eca0c804f8564349 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="a76cc22aa2eb34626eca0c804f8564349"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09330.html#a76cc22aa2eb34626eca0c804f8564349">in_global_module</a> () const</td></tr>
-<tr class="memdesc:a76cc22aa2eb34626eca0c804f8564349 inherit pub_methods_a09330"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, the element is located in the global module. <br /></td></tr>
-<tr class="separator:a76cc22aa2eb34626eca0c804f8564349 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a524ffee0ec24445b58ecf5b0bba30296 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="a524ffee0ec24445b58ecf5b0bba30296"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>in_global_module</b> (const bool v)</td></tr>
-<tr class="separator:a524ffee0ec24445b58ecf5b0bba30296 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10148dff8f4730b51ae29f44eb86ae47 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="a10148dff8f4730b51ae29f44eb86ae47"></a>
-const <a class="el" href="a09474.html">dogen::logical::entities::stereotypes</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09330.html#a10148dff8f4730b51ae29f44eb86ae47">stereotypes</a> () const</td></tr>
-<tr class="memdesc:a10148dff8f4730b51ae29f44eb86ae47 inherit pub_methods_a09330"><td class="mdescLeft">&#160;</td><td class="mdescRight">All stereotypes associated with this element. <br /></td></tr>
-<tr class="separator:a10148dff8f4730b51ae29f44eb86ae47 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28bab5fade4c0f5af0bc69a9bdd2ebfe inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="a28bab5fade4c0f5af0bc69a9bdd2ebfe"></a>
-<a class="el" href="a09474.html">dogen::logical::entities::stereotypes</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>stereotypes</b> ()</td></tr>
-<tr class="separator:a28bab5fade4c0f5af0bc69a9bdd2ebfe inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a532ce85b0103c3f2fe25c34c13488c16 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="a532ce85b0103c3f2fe25c34c13488c16"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>stereotypes</b> (const <a class="el" href="a09474.html">dogen::logical::entities::stereotypes</a> &amp;v)</td></tr>
-<tr class="separator:a532ce85b0103c3f2fe25c34c13488c16 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b42331d2d5729052f8f73f471bb1d47 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="a8b42331d2d5729052f8f73f471bb1d47"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>stereotypes</b> (const <a class="el" href="a09474.html">dogen::logical::entities::stereotypes</a> &amp;&amp;v)</td></tr>
-<tr class="separator:a8b42331d2d5729052f8f73f471bb1d47 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8d77bcd582af1d2dfdcbe1a31036c3e inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="ac8d77bcd582af1d2dfdcbe1a31036c3e"></a>
-const dogen::identification::entities::logical_meta_name &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09330.html#ac8d77bcd582af1d2dfdcbe1a31036c3e">meta_name</a> () const</td></tr>
-<tr class="memdesc:ac8d77bcd582af1d2dfdcbe1a31036c3e inherit pub_methods_a09330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the element in the meta-model that this instance conforms to. <br /></td></tr>
-<tr class="separator:ac8d77bcd582af1d2dfdcbe1a31036c3e inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9737a3d15dfb72fff0c2885dddb75ce inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="ac9737a3d15dfb72fff0c2885dddb75ce"></a>
-dogen::identification::entities::logical_meta_name &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>meta_name</b> ()</td></tr>
-<tr class="separator:ac9737a3d15dfb72fff0c2885dddb75ce inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0aacd561b13e968268ce4faf98498698 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="a0aacd561b13e968268ce4faf98498698"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>meta_name</b> (const dogen::identification::entities::logical_meta_name &amp;v)</td></tr>
-<tr class="separator:a0aacd561b13e968268ce4faf98498698 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab36e0d4560e4ecf3932e6f549d40b26f inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="ab36e0d4560e4ecf3932e6f549d40b26f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>meta_name</b> (const dogen::identification::entities::logical_meta_name &amp;&amp;v)</td></tr>
-<tr class="separator:ab36e0d4560e4ecf3932e6f549d40b26f inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25964f1e81feec57c08a37c95d0aecd9 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a07129.html#aca560c08bf06920a8d261d33c8a1474a">dogen::identification::entities::technical_space</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09330.html#a25964f1e81feec57c08a37c95d0aecd9">intrinsic_technical_space</a> () const</td></tr>
-<tr class="memdesc:a25964f1e81feec57c08a37c95d0aecd9 inherit pub_methods_a09330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the intrinsic nature of the modeling element with regards to technical spaces.  <a href="a09330.html#a25964f1e81feec57c08a37c95d0aecd9">More...</a><br /></td></tr>
-<tr class="separator:a25964f1e81feec57c08a37c95d0aecd9 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36b1c9f44abba519f464c290f31a2b98 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="a36b1c9f44abba519f464c290f31a2b98"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>intrinsic_technical_space</b> (const <a class="el" href="a07129.html#aca560c08bf06920a8d261d33c8a1474a">dogen::identification::entities::technical_space</a> v)</td></tr>
-<tr class="separator:a36b1c9f44abba519f464c290f31a2b98 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2aaf2edfc6c3a5e2f5b369171f6732e5 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="a2aaf2edfc6c3a5e2f5b369171f6732e5"></a>
-const boost::shared_ptr&lt; dogen::variability::entities::configuration &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09330.html#a2aaf2edfc6c3a5e2f5b369171f6732e5">configuration</a> () const</td></tr>
-<tr class="memdesc:a2aaf2edfc6c3a5e2f5b369171f6732e5 inherit pub_methods_a09330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for this element. <br /></td></tr>
-<tr class="separator:a2aaf2edfc6c3a5e2f5b369171f6732e5 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75d70b4d31651b7ba6301ffacee2adaa inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="a75d70b4d31651b7ba6301ffacee2adaa"></a>
-boost::shared_ptr&lt; dogen::variability::entities::configuration &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>configuration</b> ()</td></tr>
-<tr class="separator:a75d70b4d31651b7ba6301ffacee2adaa inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94ab22e0efbcb8c63eee4dde325b127c inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="a94ab22e0efbcb8c63eee4dde325b127c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>configuration</b> (const boost::shared_ptr&lt; dogen::variability::entities::configuration &gt; &amp;v)</td></tr>
-<tr class="separator:a94ab22e0efbcb8c63eee4dde325b127c inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a196fc0a0605943c7a74a780b00e83c41 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="a196fc0a0605943c7a74a780b00e83c41"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>configuration</b> (const boost::shared_ptr&lt; dogen::variability::entities::configuration &gt; &amp;&amp;v)</td></tr>
-<tr class="separator:a196fc0a0605943c7a74a780b00e83c41 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55959f6a1da8e301afac8e1a30d93446 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="a55959f6a1da8e301afac8e1a30d93446"></a>
-const std::list&lt; <a class="el" href="a09046.html">dogen::identification::entities::label</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09330.html#a55959f6a1da8e301afac8e1a30d93446">labels</a> () const</td></tr>
-<tr class="memdesc:a55959f6a1da8e301afac8e1a30d93446 inherit pub_methods_a09330"><td class="mdescLeft">&#160;</td><td class="mdescRight">All labels associated with this element. <br /></td></tr>
-<tr class="separator:a55959f6a1da8e301afac8e1a30d93446 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad90fb6070353a05091a2d993185e2352 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="ad90fb6070353a05091a2d993185e2352"></a>
-std::list&lt; <a class="el" href="a09046.html">dogen::identification::entities::label</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>labels</b> ()</td></tr>
-<tr class="separator:ad90fb6070353a05091a2d993185e2352 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ad762be01207a5e4e901dd448340875 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="a8ad762be01207a5e4e901dd448340875"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>labels</b> (const std::list&lt; <a class="el" href="a09046.html">dogen::identification::entities::label</a> &gt; &amp;v)</td></tr>
-<tr class="separator:a8ad762be01207a5e4e901dd448340875 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91e5b21234166d6caa0cd6de2d78adbb inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="a91e5b21234166d6caa0cd6de2d78adbb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>labels</b> (const std::list&lt; <a class="el" href="a09046.html">dogen::identification::entities::label</a> &gt; &amp;&amp;v)</td></tr>
-<tr class="separator:a91e5b21234166d6caa0cd6de2d78adbb inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cc9c49a0cf8ece18b6372edfb4221d9 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="a4cc9c49a0cf8ece18b6372edfb4221d9"></a>
-<a class="el" href="a07160.html#a0228e461d1dba5d48180ec28acb53605">dogen::logical::entities::generability_status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09330.html#a4cc9c49a0cf8ece18b6372edfb4221d9">generability_status</a> () const</td></tr>
-<tr class="memdesc:a4cc9c49a0cf8ece18b6372edfb4221d9 inherit pub_methods_a09330"><td class="mdescLeft">&#160;</td><td class="mdescRight">The status of this element with regards to generability. <br /></td></tr>
-<tr class="separator:a4cc9c49a0cf8ece18b6372edfb4221d9 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22a819f7e45aee949abf18622f3f0c29 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="a22a819f7e45aee949abf18622f3f0c29"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>generability_status</b> (const <a class="el" href="a07160.html#a0228e461d1dba5d48180ec28acb53605">dogen::logical::entities::generability_status</a> v)</td></tr>
-<tr class="separator:a22a819f7e45aee949abf18622f3f0c29 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2eb86283757ef53e7d0e829c961e899 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="ad2eb86283757ef53e7d0e829c961e899"></a>
-const std::unordered_map&lt; <a class="el" href="a07129.html#aca560c08bf06920a8d261d33c8a1474a">dogen::identification::entities::technical_space</a>, boost::optional&lt; <a class="el" href="a09302.html">dogen::logical::entities::decoration::element_properties</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09330.html#ad2eb86283757ef53e7d0e829c961e899">decoration</a> () const</td></tr>
-<tr class="memdesc:ad2eb86283757ef53e7d0e829c961e899 inherit pub_methods_a09330"><td class="mdescLeft">&#160;</td><td class="mdescRight">If set, decoration to be added to each generated file. <br /></td></tr>
-<tr class="separator:ad2eb86283757ef53e7d0e829c961e899 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5a4ef06e5afa4bb1373df2d5bca9277 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="af5a4ef06e5afa4bb1373df2d5bca9277"></a>
-std::unordered_map&lt; <a class="el" href="a07129.html#aca560c08bf06920a8d261d33c8a1474a">dogen::identification::entities::technical_space</a>, boost::optional&lt; <a class="el" href="a09302.html">dogen::logical::entities::decoration::element_properties</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>decoration</b> ()</td></tr>
-<tr class="separator:af5a4ef06e5afa4bb1373df2d5bca9277 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1179705728114744f793356304b0b02 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="ad1179705728114744f793356304b0b02"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>decoration</b> (const std::unordered_map&lt; <a class="el" href="a07129.html#aca560c08bf06920a8d261d33c8a1474a">dogen::identification::entities::technical_space</a>, boost::optional&lt; <a class="el" href="a09302.html">dogen::logical::entities::decoration::element_properties</a> &gt; &gt; &amp;v)</td></tr>
-<tr class="separator:ad1179705728114744f793356304b0b02 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9c0ad762d032c0cb0baca8cfa84c303 inherit pub_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="ad9c0ad762d032c0cb0baca8cfa84c303"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>decoration</b> (const std::unordered_map&lt; <a class="el" href="a07129.html#aca560c08bf06920a8d261d33c8a1474a">dogen::identification::entities::technical_space</a>, boost::optional&lt; <a class="el" href="a09302.html">dogen::logical::entities::decoration::element_properties</a> &gt; &gt; &amp;&amp;v)</td></tr>
-<tr class="separator:ad9c0ad762d032c0cb0baca8cfa84c303 inherit pub_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_methods_a09330"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_a09330')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="a09330.html">element</a></td></tr>
-<tr class="memitem:abeaae3bacffbfbeb6057b57bb4facfe9 inherit pro_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="abeaae3bacffbfbeb6057b57bb4facfe9"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>compare</b> (const <a class="el" href="a09330.html">element</a> &amp;rhs) const</td></tr>
-<tr class="separator:abeaae3bacffbfbeb6057b57bb4facfe9 inherit pro_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55b3630d45fb7933dee66ff7accf21fa inherit pro_methods_a09330"><td class="memItemLeft" align="right" valign="top"><a id="a55b3630d45fb7933dee66ff7accf21fa"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="a09330.html">element</a> &amp;other) noexcept</td></tr>
-<tr class="separator:a55b3630d45fb7933dee66ff7accf21fa inherit pro_methods_a09330"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4371f907cd3d090937b1687df9ca56d5"><td class="memItemLeft" align="right" valign="top"><a id="a4371f907cd3d090937b1687df9ca56d5"></a>
+const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09318.html#a4371f907cd3d090937b1687df9ca56d5">identifiable</a> () const</td></tr>
+<tr class="memdesc:a4371f907cd3d090937b1687df9ca56d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Representation of the identifier that can usable as an identifier on all of the supported technical spaces, using the entire name structure. <br /></td></tr>
+<tr class="separator:a4371f907cd3d090937b1687df9ca56d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87371103cddcd588630bdc4ea300af1f"><td class="memItemLeft" align="right" valign="top"><a id="a87371103cddcd588630bdc4ea300af1f"></a>
+std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>identifiable</b> ()</td></tr>
+<tr class="separator:a87371103cddcd588630bdc4ea300af1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad916ac34a90c18358f650cccfd3f5f83"><td class="memItemLeft" align="right" valign="top"><a id="ad916ac34a90c18358f650cccfd3f5f83"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>identifiable</b> (const std::string &amp;v)</td></tr>
+<tr class="separator:ad916ac34a90c18358f650cccfd3f5f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40b82521dbe3a7507494b47d4a7d93ad"><td class="memItemLeft" align="right" valign="top"><a id="a40b82521dbe3a7507494b47d4a7d93ad"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>identifiable</b> (const std::string &amp;&amp;v)</td></tr>
+<tr class="separator:a40b82521dbe3a7507494b47d4a7d93ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Groups all the fields representing editor variables for emacs, vi, etc. </p>
-<p>A field is a key-value pair (KVP), where name is the first element and its value the second.</p>
-<p>Example: -*- mode: c++; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-</p>
-<p>In this particular case, both prefix and postfix are <em>-*-</em>; <em>mode</em> is the first field name and its value is <em>c++</em>; the KVP separator is <em></em>: and the field separator is <em></em>;. </p>
+<div class="textblock"><p>All available qualified representations of a name. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.cli/include/dogen.cli/types/parser_exception.hpp Source File</title>
+<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.cli/include/dogen.cli/types/generation_configuration.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,7 +68,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">parser_exception.hpp</div>  </div>
+<div class="title">generation_configuration.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* -*- mode: c++; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-</span></div>
@@ -91,38 +91,82 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * MA 02110-1301, USA.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_CLI_TYPES_PARSER_EXCEPTION_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_CLI_TYPES_PARSER_EXCEPTION_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_CLI_TYPES_GENERATION_CONFIGURATION_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_CLI_TYPES_GENERATION_CONFIGURATION_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; (_MSC_VER &gt;= 1200)</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;boost/exception/info.hpp&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07072.html">dogen::cli</a> {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="a08598.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="a08598.html">parser_exception</a> : <span class="keyword">public</span> <span class="keyword">virtual</span> std::exception, <span class="keyword">public</span> <span class="keyword">virtual</span> boost::exception {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="a08598.html">parser_exception</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    ~<a class="code" href="a08598.html">parser_exception</a>() noexcept = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="a08598.html">parser_exception</a>(<span class="keyword">const</span> std::string&amp; message) : message_(message) { }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* what() <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span>(message_.c_str()); }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">const</span> std::string message_;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aa07072_html"><div class="ttname"><a href="a07072.html">dogen::cli</a></div><div class="ttdoc">Implements the command-line interface for Dogen.</div><div class="ttdef"><b>Definition:</b> cli_configuration_io.hpp:31</div></div>
-<div class="ttc" id="aa08598_html"><div class="ttname"><a href="a08598.html">dogen::cli::parser_exception</a></div><div class="ttdoc">A fatal error has occurred during option parsing.</div><div class="ttdef"><b>Definition:</b> parser_exception.hpp:36</div></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;boost/filesystem/path.hpp&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07276.html">dogen::cli</a> {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="a08790.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="a08790.html">generation_configuration</a> final {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="a08790.html">generation_configuration</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="a08790.html">generation_configuration</a>(<span class="keyword">const</span> <a class="code" href="a08790.html">generation_configuration</a>&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    ~<a class="code" href="a08790.html">generation_configuration</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="a08790.html">generation_configuration</a>(<a class="code" href="a08790.html">generation_configuration</a>&amp;&amp; rhs);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="a08790.html">generation_configuration</a>(</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">const</span> std::vector&lt;boost::filesystem::path&gt;&amp; <a class="code" href="a08790.html#af20fb857ae25aec3129f209a506e4d8d">reference_model_directories</a>,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">const</span> boost::filesystem::path&amp; <a class="code" href="a08790.html#a2731b2267b94044f2adae16868042f68">target</a>,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">const</span> boost::filesystem::path&amp; output_directory);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">const</span> std::vector&lt;boost::filesystem::path&gt;&amp; <a class="code" href="a08790.html#af20fb857ae25aec3129f209a506e4d8d">reference_model_directories</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    std::vector&lt;boost::filesystem::path&gt;&amp; <a class="code" href="a08790.html#af20fb857ae25aec3129f209a506e4d8d">reference_model_directories</a>();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="a08790.html">generation_configuration</a>&amp; <a class="code" href="a08790.html#af20fb857ae25aec3129f209a506e4d8d">reference_model_directories</a>(<span class="keyword">const</span> std::vector&lt;boost::filesystem::path&gt;&amp; v);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="a08790.html">generation_configuration</a>&amp; <a class="code" href="a08790.html#af20fb857ae25aec3129f209a506e4d8d">reference_model_directories</a>(<span class="keyword">const</span> std::vector&lt;boost::filesystem::path&gt;&amp;&amp; v);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">const</span> boost::filesystem::path&amp; <a class="code" href="a08790.html#a2731b2267b94044f2adae16868042f68">target</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    boost::filesystem::path&amp; <a class="code" href="a08790.html#a2731b2267b94044f2adae16868042f68">target</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="a08790.html">generation_configuration</a>&amp; <a class="code" href="a08790.html#a2731b2267b94044f2adae16868042f68">target</a>(<span class="keyword">const</span> boost::filesystem::path&amp; v);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="a08790.html">generation_configuration</a>&amp; <a class="code" href="a08790.html#a2731b2267b94044f2adae16868042f68">target</a>(<span class="keyword">const</span> boost::filesystem::path&amp;&amp; v);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">const</span> boost::filesystem::path&amp; output_directory() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    boost::filesystem::path&amp; output_directory();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="a08790.html">generation_configuration</a>&amp; output_directory(<span class="keyword">const</span> boost::filesystem::path&amp; v);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="a08790.html">generation_configuration</a>&amp; output_directory(<span class="keyword">const</span> boost::filesystem::path&amp;&amp; v);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="a08790.html">generation_configuration</a>&amp; rhs) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="a08790.html">generation_configuration</a>&amp; rhs)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">return</span> !this-&gt;operator==(rhs);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> swap(<a class="code" href="a08790.html">generation_configuration</a>&amp; other) noexcept;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="a08790.html">generation_configuration</a>&amp; operator=(<a class="code" href="a08790.html">generation_configuration</a> other);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    std::vector&lt;boost::filesystem::path&gt; reference_model_directories_;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    boost::filesystem::path target_;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    boost::filesystem::path output_directory_;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">namespace </span>std {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> swap(</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="a08790.html">dogen::cli::generation_configuration</a>&amp; lhs,</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="a08790.html">dogen::cli::generation_configuration</a>&amp; rhs) {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    lhs.swap(rhs);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aa07276_html"><div class="ttname"><a href="a07276.html">dogen::cli</a></div><div class="ttdoc">Implements the command-line interface for Dogen.</div><div class="ttdef"><b>Definition:</b> cli_configuration_io.hpp:31</div></div>
+<div class="ttc" id="aa08790_html"><div class="ttname"><a href="a08790.html">dogen::cli::generation_configuration</a></div><div class="ttdoc">Configuration related to code generation.</div><div class="ttdef"><b>Definition:</b> generation_configuration.hpp:37</div></div>
+<div class="ttc" id="aa08790_html_a2731b2267b94044f2adae16868042f68"><div class="ttname"><a href="a08790.html#a2731b2267b94044f2adae16868042f68">dogen::cli::generation_configuration::target</a></div><div class="ttdeci">const boost::filesystem::path &amp; target() const</div><div class="ttdoc">Target model for generation.</div><div class="ttdef"><b>Definition:</b> generation_configuration.cpp:75</div></div>
+<div class="ttc" id="aa08790_html_af20fb857ae25aec3129f209a506e4d8d"><div class="ttname"><a href="a08790.html#af20fb857ae25aec3129f209a506e4d8d">dogen::cli::generation_configuration::reference_model_directories</a></div><div class="ttdeci">const std::vector&lt; boost::filesystem::path &gt; &amp; reference_model_directories() const</div><div class="ttdoc">Directories to search for reference models.</div><div class="ttdef"><b>Definition:</b> generation_configuration.cpp:57</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

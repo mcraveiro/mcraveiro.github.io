@@ -1,4 +1,3 @@
-<map id="licence" name="licence">
-<area shape="rect" id="node1" title="Represents legal licence for software projects." alt="" coords="32,1656,151,2115"/>
-<area shape="rect" id="node2" href="$a09330.html" title="Represents a generic logical construct." alt="" coords="5,5,177,1608"/>
+<map id="physical_name" name="physical_name">
+<area shape="rect" id="node1" title="Name of a physical model element." alt="" coords="5,5,161,435"/>
 </map>

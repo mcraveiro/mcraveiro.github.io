@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: initializer Class Reference</title>
+<title>Dogen: string_to_document_transform Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07335.html">physical</a></li><li class="navelem"><a class="el" href="a07339.html">features</a></li><li class="navelem"><a class="el" href="a10770.html">initializer</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07528.html">org</a></li><li class="navelem"><b>transforms</b></li><li class="navelem"><a class="el" href="a10770.html">string_to_document_transform</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -71,31 +71,31 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a10767.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">initializer Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">string_to_document_transform Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Registers all of the available feature templates with registrar.  
+<p>Converts a string containing a org-mode document into the dogen domain model org-mode representation.  
  <a href="a10770.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a17948_source.html">initializer.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a03773_source.html">string_to_document_transform.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for initializer:</div>
+Collaboration diagram for string_to_document_transform:</div>
 <div class="dyncontent">
-<div class="center"><img src="a10768.png" border="0" usemap="#ainitializer_coll__map" alt="Collaboration graph"/></div>
-<map name="ainitializer_coll__map" id="ainitializer_coll__map">
-<area shape="rect" title="Registers all of the available feature templates with registrar." alt="" coords="5,5,159,83"/>
+<div class="center"><img src="a10768.png" border="0" usemap="#astring__to__document__transform_coll__map" alt="Collaboration graph"/></div>
+<map name="astring__to__document__transform_coll__map" id="astring__to__document__transform_coll__map">
+<area shape="rect" title="Converts a string containing a org&#45;mode document into the dogen domain model org&#45;mode representation." alt="" coords="5,5,156,97"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a8a3570c68f8302f5b1328618a9027e17"><td class="memItemLeft" align="right" valign="top"><a id="a8a3570c68f8302f5b1328618a9027e17"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>register_entities</b> (<a class="el" href="a13358.html">variability::helpers::registrar</a> &amp;rg)</td></tr>
-<tr class="separator:a8a3570c68f8302f5b1328618a9027e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ccb942984f6314c75d3b2cad0518595"><td class="memItemLeft" align="right" valign="top"><a id="a5ccb942984f6314c75d3b2cad0518595"></a>
+static entities::document&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (boost::shared_ptr&lt; <a class="el" href="a13158.html">tracing::tracer</a> &gt; tracer, const std::string &amp;s)</td></tr>
+<tr class="separator:a5ccb942984f6314c75d3b2cad0518595"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Registers all of the available feature templates with registrar. </p>
+<div class="textblock"><p>Converts a string containing a org-mode document into the dogen domain model org-mode representation. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

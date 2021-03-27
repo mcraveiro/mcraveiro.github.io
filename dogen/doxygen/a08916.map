@@ -1,3 +1,3 @@
-<map id="enumeration" name="enumeration">
-<area shape="rect" id="node1" title="Represents a enumeration in a diagram." alt="" coords="5,5,147,317"/>
+<map id="dia_to_codec_projector" name="dia_to_codec_projector">
+<area shape="rect" id="node1" title="Projects dia objects into the codec space." alt="" coords="5,5,177,112"/>
 </map>

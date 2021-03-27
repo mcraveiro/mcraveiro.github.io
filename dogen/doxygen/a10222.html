@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: stereotypes_transform Class Reference</title>
+<title>Dogen: mapper Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,40 +63,49 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07159.html">logical</a></li><li class="navelem"><a class="el" href="a07172.html">transforms</a></li><li class="navelem"><a class="el" href="a10222.html">stereotypes_transform</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07363.html">logical</a></li><li class="navelem"><b>helpers</b></li><li class="navelem"><a class="el" href="a10222.html">mapper</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a10219.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">stereotypes_transform Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">mapper Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Locates objects with stereotypes and performs the required expansion.  
+<p>Responsible for mapping types from a technical space to another. Requires those mappings to exist.  
  <a href="a10222.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a02582_source.html">stereotypes_transform.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a02471_source.html">mapper.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for stereotypes_transform:</div>
+Collaboration diagram for mapper:</div>
 <div class="dyncontent">
-<div class="center"><img src="a10220.png" border="0" usemap="#astereotypes__transform_coll__map" alt="Collaboration graph"/></div>
-<map name="astereotypes__transform_coll__map" id="astereotypes__transform_coll__map">
-<area shape="rect" title="Locates objects with stereotypes and performs the required expansion." alt="" coords="5,5,176,83"/>
+<div class="center"><img src="a10220.png" border="0" usemap="#amapper_coll__map" alt="Collaboration graph"/></div>
+<map name="amapper_coll__map" id="amapper_coll__map">
+<area shape="rect" title="Responsible for mapping types from a technical space to another. Requires those mappings to exist." alt="" coords="5,5,136,112"/>
 </map>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ac5d65881c4ddf5073d30bca1136fa81c"><td class="memItemLeft" align="right" valign="top"><a id="ac5d65881c4ddf5073d30bca1136fa81c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>mapper</b> (const <a class="el" href="a10242.html">mapping_set_repository</a> &amp;msrp)</td></tr>
+<tr class="separator:ac5d65881c4ddf5073d30bca1136fa81c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f92636e670f4d1a3e62ce3c0ef590e9"><td class="memItemLeft" align="right" valign="top"><a id="a4f92636e670f4d1a3e62ce3c0ef590e9"></a>
+<a class="el" href="a09570.html">entities::model</a>&#160;</td><td class="memItemRight" valign="bottom"><b>map</b> (const <a class="el" href="a07333.html#aca560c08bf06920a8d261d33c8a1474a">identification::entities::technical_space</a> from, const <a class="el" href="a07333.html#aca560c08bf06920a8d261d33c8a1474a">identification::entities::technical_space</a> to, const <a class="el" href="a09570.html">entities::model</a> &amp;m) const</td></tr>
+<tr class="separator:a4f92636e670f4d1a3e62ce3c0ef590e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aeae2c499c48023fbeb1a6ed6059e5844"><td class="memItemLeft" align="right" valign="top"><a id="aeae2c499c48023fbeb1a6ed6059e5844"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10222.html#aeae2c499c48023fbeb1a6ed6059e5844">apply</a> (const <a class="el" href="a10118.html">context</a> &amp;ctx, <a class="el" href="a09366.html">entities::model</a> &amp;m)</td></tr>
-<tr class="memdesc:aeae2c499c48023fbeb1a6ed6059e5844"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expands all stereotypes used in model. <br /></td></tr>
-<tr class="separator:aeae2c499c48023fbeb1a6ed6059e5844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f73640a1fe8ba9ceee5bdf6a714990e"><td class="memItemLeft" align="right" valign="top"><a id="a8f73640a1fe8ba9ceee5bdf6a714990e"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>is_mappable</b> (const <a class="el" href="a07333.html#aca560c08bf06920a8d261d33c8a1474a">identification::entities::technical_space</a> from, const <a class="el" href="a07333.html#aca560c08bf06920a8d261d33c8a1474a">identification::entities::technical_space</a> to)</td></tr>
+<tr class="separator:a8f73640a1fe8ba9ceee5bdf6a714990e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Locates objects with stereotypes and performs the required expansion. </p>
+<div class="textblock"><p>Responsible for mapping types from a technical space to another. Requires those mappings to exist. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

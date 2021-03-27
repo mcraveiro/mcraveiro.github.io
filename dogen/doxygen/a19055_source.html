@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.physical/include/dogen.physical/types/physical.hpp Source File</title>
+<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.variability/include/dogen.variability/io/entities/feature_template_io.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,12 +63,12 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_9b8549976a668c2202007f21f8dd157b.html">dogen.physical</a></li><li class="navelem"><a class="el" href="dir_26d230d797375482fb1d633cc67158a1.html">include</a></li><li class="navelem"><a class="el" href="dir_7de440d8d60ef5abea2682ae081b1def.html">dogen.physical</a></li><li class="navelem"><a class="el" href="dir_b60224f7bae46d1c8beeaae488fadddb.html">types</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_802279b850942ba06ba156537b5c87ab.html">dogen.variability</a></li><li class="navelem"><a class="el" href="dir_6bbff91d2e3cf73d080fce5320ce048b.html">include</a></li><li class="navelem"><a class="el" href="dir_5ba5ba807b9f4f82bafbe23f904198b1.html">dogen.variability</a></li><li class="navelem"><a class="el" href="dir_e8ef777b65df9efd923ddab3bd7c9be6.html">io</a></li><li class="navelem"><a class="el" href="dir_cb89de7f9bfe9aee6e5d32a9ee2f0b00.html">entities</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">physical.hpp</div>  </div>
+<div class="title">feature_template_io.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* -*- mode: c++; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-</span></div>
@@ -91,18 +91,27 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * MA 02110-1301, USA.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_PHYSICAL_TYPES_PHYSICAL_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_PHYSICAL_TYPES_PHYSICAL_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_VARIABILITY_IO_ENTITIES_FEATURE_TEMPLATE_IO_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_VARIABILITY_IO_ENTITIES_FEATURE_TEMPLATE_IO_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; (_MSC_VER &gt;= 1200)</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07335.html">dogen::physical</a> {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aa07335_html"><div class="ttname"><a href="a07335.html">dogen::physical</a></div><div class="ttdoc">The pysical model defines the core entities that make up the physical dimension of MASD conceptual sp...</div><div class="ttdef"><b>Definition:</b> archetype_io.hpp:31</div></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;iosfwd&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;dogen.variability/types/entities/feature_template.hpp&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07845.html">dogen::variability::entities</a> {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;std::ostream&amp;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;operator&lt;&lt;(std::ostream&amp; s,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;     <span class="keyword">const</span> <a class="code" href="a13454.html">dogen::variability::entities::feature_template</a>&amp; v);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aa07845_html"><div class="ttname"><a href="a07845.html">dogen::variability::entities</a></div><div class="ttdoc">Contains all of the types describing variability with Masd.</div><div class="ttdef"><b>Definition:</b> binding_action_io.hpp:31</div></div>
+<div class="ttc" id="aa13454_html"><div class="ttname"><a href="a13454.html">dogen::variability::entities::feature_template</a></div><div class="ttdoc">Defines a template that can be used to instantiate features.</div><div class="ttdef"><b>Definition:</b> feature_template.hpp:45</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

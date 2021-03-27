@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: codec_model_set_to_logical_input_model_set_chain Class Reference</title>
+<title>Dogen: post_assembly_chain Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07285.html">orchestration</a></li><li class="navelem"><a class="el" href="a07286.html">transforms</a></li><li class="navelem"><a class="el" href="a10410.html">codec_model_set_to_logical_input_model_set_chain</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07363.html">logical</a></li><li class="navelem"><a class="el" href="a07376.html">transforms</a></li><li class="navelem"><a class="el" href="a10410.html">post_assembly_chain</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -71,32 +71,31 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a10407.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">codec_model_set_to_logical_input_model_set_chain Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">post_assembly_chain Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Converts an codec model set into a logical model set.  
+<p>Set of transforms to be performed after the merged model has been assembled.  
  <a href="a10410.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a03422_source.html">codec_model_set_to_logical_input_model_set_chain.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a02618_source.html">post_assembly_chain.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for codec_model_set_to_logical_input_model_set_chain:</div>
+Collaboration diagram for post_assembly_chain:</div>
 <div class="dyncontent">
-<div class="center"><img src="a10408.png" border="0" usemap="#acodec__model__set__to__logical__input__model__set__chain_coll__map" alt="Collaboration graph"/></div>
-<map name="acodec__model__set__to__logical__input__model__set__chain_coll__map" id="acodec__model__set__to__logical__input__model__set__chain_coll__map">
-<area shape="rect" title="Converts an codec model set into a logical model set." alt="" coords="5,5,165,112"/>
+<div class="center"><img src="a10408.png" border="0" usemap="#apost__assembly__chain_coll__map" alt="Collaboration graph"/></div>
+<map name="apost__assembly__chain_coll__map" id="apost__assembly__chain_coll__map">
+<area shape="rect" title="Set of transforms to be performed after the merged model has been assembled." alt="" coords="5,5,168,83"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aef6fb399ece634a23b7278e7be4b7cd5"><td class="memItemLeft" align="right" valign="top"><a id="aef6fb399ece634a23b7278e7be4b7cd5"></a>
-static <a class="el" href="a09346.html">logical::entities::input_model_set</a>&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (const context &amp;ctx, const codec::entities::model_set &amp;ms)</td></tr>
-<tr class="separator:aef6fb399ece634a23b7278e7be4b7cd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeae2c499c48023fbeb1a6ed6059e5844"><td class="memItemLeft" align="right" valign="top"><a id="aeae2c499c48023fbeb1a6ed6059e5844"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (const <a class="el" href="a10322.html">context</a> &amp;ctx, <a class="el" href="a09570.html">entities::model</a> &amp;m)</td></tr>
+<tr class="separator:aeae2c499c48023fbeb1a6ed6059e5844"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Converts an codec model set into a logical model set. </p>
-<dl class="section pre"><dt>Precondition</dt><dd>all codec transforms must have been applied to the codec model set. </dd></dl>
+<div class="textblock"><p>Set of transforms to be performed after the merged model has been assembled. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

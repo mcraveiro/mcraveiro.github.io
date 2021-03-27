@@ -1,3 +1,3 @@
-<map id="optional_helper_factory" name="optional_helper_factory">
-<area shape="rect" id="node1" title="Creates a physical representation for the helper optional_helper." alt="" coords="5,5,181,83"/>
+<map id="project_factory" name="project_factory">
+<area shape="rect" id="node1" title="Creates a physical representation for the part project." alt="" coords="5,5,125,83"/>
 </map>

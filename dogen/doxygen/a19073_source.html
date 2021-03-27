@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.physical/include/dogen.physical/types/entities/variable_relation.hpp Source File</title>
+<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.logical/include/dogen.logical/types/entities/decoration/element_repository.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,12 +63,12 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_9b8549976a668c2202007f21f8dd157b.html">dogen.physical</a></li><li class="navelem"><a class="el" href="dir_26d230d797375482fb1d633cc67158a1.html">include</a></li><li class="navelem"><a class="el" href="dir_7de440d8d60ef5abea2682ae081b1def.html">dogen.physical</a></li><li class="navelem"><a class="el" href="dir_b60224f7bae46d1c8beeaae488fadddb.html">types</a></li><li class="navelem"><a class="el" href="dir_0c02b1261ac095a1723e67f7141c52cf.html">entities</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_dcdb1ebffe0d4f9f28ec03b64a5aaaa2.html">dogen.logical</a></li><li class="navelem"><a class="el" href="dir_f21da09acadf64620e837bfe8ac71645.html">include</a></li><li class="navelem"><a class="el" href="dir_722eaea4b5f65416e2f35f6e2317bf5d.html">dogen.logical</a></li><li class="navelem"><a class="el" href="dir_0b9aa5753d72f7bd09d44f32cf47d3d9.html">types</a></li><li class="navelem"><a class="el" href="dir_34754b2d6e7d75549fcd05a9dff06308.html">entities</a></li><li class="navelem"><a class="el" href="dir_a7d7c733f2f1d486f807383f532609e5.html">decoration</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">variable_relation.hpp</div>  </div>
+<div class="title">element_repository.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* -*- mode: c++; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-</span></div>
@@ -91,77 +91,93 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * MA 02110-1301, USA.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_PHYSICAL_TYPES_ENTITIES_VARIABLE_RELATION_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_PHYSICAL_TYPES_ENTITIES_VARIABLE_RELATION_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_LOGICAL_TYPES_ENTITIES_DECORATION_ELEMENT_REPOSITORY_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_LOGICAL_TYPES_ENTITIES_DECORATION_ELEMENT_REPOSITORY_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; (_MSC_VER &gt;= 1200)</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;dogen.physical/types/entities/variable_relation_type.hpp&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07336.html">dogen::physical::entities</a> {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">class </span>variable_relation final {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    variable_relation(<span class="keyword">const</span> variable_relation&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    variable_relation(variable_relation&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    ~variable_relation() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;boost/shared_ptr.hpp&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;dogen.identification/types/entities/logical_id.hpp&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;dogen.identification/hash/entities/logical_id_hash.hpp&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/decoration/licence_fwd.hpp&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/decoration/modeline_fwd.hpp&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/decoration/modeline_group_fwd.hpp&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/decoration/generation_marker_fwd.hpp&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07366.html">dogen::logical::entities::decoration</a> {</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    variable_relation();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    variable_relation(</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">const</span> std::string&amp; original_urn,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">const</span> std::string&amp; resolved_urn,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">const</span> <a class="code" href="a07336.html#ad262d134811747c5473c557a0ab7c90e">dogen::physical::entities::variable_relation_type</a> type);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">const</span> std::string&amp; original_urn() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    std::string&amp; original_urn();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> original_urn(<span class="keyword">const</span> std::string&amp; v);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> original_urn(<span class="keyword">const</span> std::string&amp;&amp; v);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">const</span> std::string&amp; resolved_urn() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    std::string&amp; resolved_urn();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> resolved_urn(<span class="keyword">const</span> std::string&amp; v);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> resolved_urn(<span class="keyword">const</span> std::string&amp;&amp; v);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="a07336.html#ad262d134811747c5473c557a0ab7c90e">dogen::physical::entities::variable_relation_type</a> type() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> type(<span class="keyword">const</span> <a class="code" href="a07336.html#ad262d134811747c5473c557a0ab7c90e">dogen::physical::entities::variable_relation_type</a> v);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> variable_relation&amp; rhs) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> variable_relation&amp; rhs)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordflow">return</span> !this-&gt;operator==(rhs);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> swap(variable_relation&amp; other) noexcept;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    variable_relation&amp; operator=(variable_relation other);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">class </span>element_repository final {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    element_repository() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    element_repository(<span class="keyword">const</span> element_repository&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    element_repository(element_repository&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    ~element_repository() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    element_repository(</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">const</span> std::unordered_map&lt;<a class="code" href="a09254.html">dogen::identification::entities::logical_id</a>, boost::shared_ptr&lt;dogen::logical::entities::decoration::modeline_group&gt; &gt;&amp; modeline_groups,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">const</span> std::unordered_map&lt;<a class="code" href="a09254.html">dogen::identification::entities::logical_id</a>, boost::shared_ptr&lt;dogen::logical::entities::decoration::modeline&gt; &gt;&amp; modelines,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">const</span> std::unordered_map&lt;<a class="code" href="a09254.html">dogen::identification::entities::logical_id</a>, boost::shared_ptr&lt;dogen::logical::entities::decoration::licence&gt; &gt;&amp; licences,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keyword">const</span> std::unordered_map&lt;<a class="code" href="a09254.html">dogen::identification::entities::logical_id</a>, boost::shared_ptr&lt;dogen::logical::entities::decoration::generation_marker&gt; &gt;&amp; generation_markers);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">const</span> std::unordered_map&lt;dogen::identification::entities::logical_id, boost::shared_ptr&lt;dogen::logical::entities::decoration::modeline_group&gt; &gt;&amp; modeline_groups() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    std::unordered_map&lt;dogen::identification::entities::logical_id, boost::shared_ptr&lt;dogen::logical::entities::decoration::modeline_group&gt; &gt;&amp; modeline_groups();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> modeline_groups(<span class="keyword">const</span> std::unordered_map&lt;<a class="code" href="a09254.html">dogen::identification::entities::logical_id</a>, boost::shared_ptr&lt;dogen::logical::entities::decoration::modeline_group&gt; &gt;&amp; v);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> modeline_groups(<span class="keyword">const</span> std::unordered_map&lt;<a class="code" href="a09254.html">dogen::identification::entities::logical_id</a>, boost::shared_ptr&lt;dogen::logical::entities::decoration::modeline_group&gt; &gt;&amp;&amp; v);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">const</span> std::unordered_map&lt;dogen::identification::entities::logical_id, boost::shared_ptr&lt;dogen::logical::entities::decoration::modeline&gt; &gt;&amp; modelines() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    std::unordered_map&lt;dogen::identification::entities::logical_id, boost::shared_ptr&lt;dogen::logical::entities::decoration::modeline&gt; &gt;&amp; modelines();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> modelines(<span class="keyword">const</span> std::unordered_map&lt;<a class="code" href="a09254.html">dogen::identification::entities::logical_id</a>, boost::shared_ptr&lt;dogen::logical::entities::decoration::modeline&gt; &gt;&amp; v);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> modelines(<span class="keyword">const</span> std::unordered_map&lt;<a class="code" href="a09254.html">dogen::identification::entities::logical_id</a>, boost::shared_ptr&lt;dogen::logical::entities::decoration::modeline&gt; &gt;&amp;&amp; v);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">const</span> std::unordered_map&lt;dogen::identification::entities::logical_id, boost::shared_ptr&lt;dogen::logical::entities::decoration::licence&gt; &gt;&amp; licences() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    std::unordered_map&lt;dogen::identification::entities::logical_id, boost::shared_ptr&lt;dogen::logical::entities::decoration::licence&gt; &gt;&amp; licences();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> licences(<span class="keyword">const</span> std::unordered_map&lt;<a class="code" href="a09254.html">dogen::identification::entities::logical_id</a>, boost::shared_ptr&lt;dogen::logical::entities::decoration::licence&gt; &gt;&amp; v);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> licences(<span class="keyword">const</span> std::unordered_map&lt;<a class="code" href="a09254.html">dogen::identification::entities::logical_id</a>, boost::shared_ptr&lt;dogen::logical::entities::decoration::licence&gt; &gt;&amp;&amp; v);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">const</span> std::unordered_map&lt;dogen::identification::entities::logical_id, boost::shared_ptr&lt;dogen::logical::entities::decoration::generation_marker&gt; &gt;&amp; generation_markers() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    std::unordered_map&lt;dogen::identification::entities::logical_id, boost::shared_ptr&lt;dogen::logical::entities::decoration::generation_marker&gt; &gt;&amp; generation_markers();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> generation_markers(<span class="keyword">const</span> std::unordered_map&lt;<a class="code" href="a09254.html">dogen::identification::entities::logical_id</a>, boost::shared_ptr&lt;dogen::logical::entities::decoration::generation_marker&gt; &gt;&amp; v);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> generation_markers(<span class="keyword">const</span> std::unordered_map&lt;<a class="code" href="a09254.html">dogen::identification::entities::logical_id</a>, boost::shared_ptr&lt;dogen::logical::entities::decoration::generation_marker&gt; &gt;&amp;&amp; v);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> element_repository&amp; rhs) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> element_repository&amp; rhs)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">return</span> !this-&gt;operator==(rhs);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> swap(element_repository&amp; other) noexcept;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    element_repository&amp; operator=(element_repository other);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    std::unordered_map&lt;dogen::identification::entities::logical_id, boost::shared_ptr&lt;dogen::logical::entities::decoration::modeline_group&gt; &gt; modeline_groups_;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    std::unordered_map&lt;dogen::identification::entities::logical_id, boost::shared_ptr&lt;dogen::logical::entities::decoration::modeline&gt; &gt; modelines_;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    std::unordered_map&lt;dogen::identification::entities::logical_id, boost::shared_ptr&lt;dogen::logical::entities::decoration::licence&gt; &gt; licences_;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    std::unordered_map&lt;dogen::identification::entities::logical_id, boost::shared_ptr&lt;dogen::logical::entities::decoration::generation_marker&gt; &gt; generation_markers_;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    std::string original_urn_;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    std::string resolved_urn_;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="a07336.html#ad262d134811747c5473c557a0ab7c90e">dogen::physical::entities::variable_relation_type</a> type_;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;};</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">namespace </span>std {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> swap(</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    dogen::physical::entities::variable_relation&amp; lhs,</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    dogen::physical::entities::variable_relation&amp; rhs) {</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    lhs.swap(rhs);</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aa07336_html"><div class="ttname"><a href="a07336.html">dogen::physical::entities</a></div><div class="ttdoc">Defines the MASD physical space.</div><div class="ttdef"><b>Definition:</b> archetype_io.hpp:31</div></div>
-<div class="ttc" id="aa07336_html_ad262d134811747c5473c557a0ab7c90e"><div class="ttname"><a href="a07336.html#ad262d134811747c5473c557a0ab7c90e">dogen::physical::entities::variable_relation_type</a></div><div class="ttdeci">variable_relation_type</div><div class="ttdoc">Lists all of the valid variable relation types.</div><div class="ttdef"><b>Definition:</b> variable_relation_type.hpp:33</div></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">namespace </span>std {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> swap(</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    dogen::logical::entities::decoration::element_repository&amp; lhs,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    dogen::logical::entities::decoration::element_repository&amp; rhs) {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    lhs.swap(rhs);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aa07366_html"><div class="ttname"><a href="a07366.html">dogen::logical::entities::decoration</a></div><div class="ttdoc">Houses all of the meta-modeling elements and properties related to decorations.</div><div class="ttdef"><b>Definition:</b> editor_io.hpp:31</div></div>
+<div class="ttc" id="aa09254_html"><div class="ttname"><a href="a09254.html">dogen::identification::entities::logical_id</a></div><div class="ttdoc">ID of the elment in the logical dimension.</div><div class="ttdef"><b>Definition:</b> logical_id.hpp:35</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

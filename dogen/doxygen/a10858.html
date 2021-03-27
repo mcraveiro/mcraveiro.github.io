@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: generate_patch_transform Class Reference</title>
+<title>Dogen: model_set Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,39 +63,85 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07335.html">physical</a></li><li class="navelem"><a class="el" href="a07338.html">transforms</a></li><li class="navelem"><a class="el" href="a10858.html">generate_patch_transform</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07539.html">physical</a></li><li class="navelem"><a class="el" href="a07540.html">entities</a></li><li class="navelem"><a class="el" href="a10858.html">model_set</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a10855.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">generate_patch_transform Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">model_set Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Creates a patch file that, if applied to the current state of the filesystem, would make it the same as the generated model.  
+<p>Represents a set of related physical models.  
  <a href="a10858.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a04040_source.html">generate_patch_transform.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a18518_source.html">model_set.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for generate_patch_transform:</div>
+Collaboration diagram for model_set:</div>
 <div class="dyncontent">
-<div class="center"><img src="a10856.png" border="0" usemap="#agenerate__patch__transform_coll__map" alt="Collaboration graph"/></div>
-<map name="agenerate__patch__transform_coll__map" id="agenerate__patch__transform_coll__map">
-<area shape="rect" title="Creates a patch file that, if applied to the current state of the filesystem, would make it the same ..." alt="" coords="5,5,200,83"/>
+<div class="center"><img src="a10856.png" border="0" usemap="#amodel__set_coll__map" alt="Collaboration graph"/></div>
+<map name="amodel__set_coll__map" id="amodel__set_coll__map">
+<area shape="rect" title="Represents a set of related physical models." alt="" coords="5,5,132,435"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab8741519e1eb9fb7d04d92a2bf5bcf4a"><td class="memItemLeft" align="right" valign="top"><a id="ab8741519e1eb9fb7d04d92a2bf5bcf4a"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (const context &amp;ctx, const <a class="el" href="a10650.html">entities::model</a> &amp;m)</td></tr>
-<tr class="separator:ab8741519e1eb9fb7d04d92a2bf5bcf4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a912a3eb6d6651125ad4195f2daed0f2f"><td class="memItemLeft" align="right" valign="top"><a id="a912a3eb6d6651125ad4195f2daed0f2f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>model_set</b> (const <a class="el" href="a10858.html">model_set</a> &amp;)=default</td></tr>
+<tr class="separator:a912a3eb6d6651125ad4195f2daed0f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b62da26e095ad65bf3b63ab64cd85d0"><td class="memItemLeft" align="right" valign="top"><a id="a7b62da26e095ad65bf3b63ab64cd85d0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>model_set</b> (<a class="el" href="a10858.html">model_set</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a7b62da26e095ad65bf3b63ab64cd85d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb6bac25d0e12da351b30140c14910bf"><td class="memItemLeft" align="right" valign="top"><a id="aeb6bac25d0e12da351b30140c14910bf"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>model_set</b> (const <a class="el" href="a09314.html">dogen::identification::entities::physical_name</a> &amp;<a class="el" href="a10858.html#a661da8f07484aeaec5ca1fddc2c58b29">name</a>, const std::list&lt; <a class="el" href="a10854.html">dogen::physical::entities::model</a> &gt; &amp;<a class="el" href="a10858.html#a435e81ae5aea4948c56260a6351e3368">models</a>)</td></tr>
+<tr class="separator:aeb6bac25d0e12da351b30140c14910bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab87fe1b4b98dd2cbb8f642598cce0f53"><td class="memItemLeft" align="right" valign="top"><a id="ab87fe1b4b98dd2cbb8f642598cce0f53"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="a10858.html">model_set</a> &amp;rhs) const</td></tr>
+<tr class="separator:ab87fe1b4b98dd2cbb8f642598cce0f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0874f0be7637c28bdd68f0444db2f90a"><td class="memItemLeft" align="right" valign="top"><a id="a0874f0be7637c28bdd68f0444db2f90a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="a10858.html">model_set</a> &amp;rhs) const</td></tr>
+<tr class="separator:a0874f0be7637c28bdd68f0444db2f90a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae81194870bf9490cd997ac17d1ff5e14"><td class="memItemLeft" align="right" valign="top"><a id="ae81194870bf9490cd997ac17d1ff5e14"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="a10858.html">model_set</a> &amp;other) noexcept</td></tr>
+<tr class="separator:ae81194870bf9490cd997ac17d1ff5e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedee584498e722c270e1b147d3b0f28c"><td class="memItemLeft" align="right" valign="top"><a id="aedee584498e722c270e1b147d3b0f28c"></a>
+<a class="el" href="a10858.html">model_set</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="a10858.html">model_set</a> other)</td></tr>
+<tr class="separator:aedee584498e722c270e1b147d3b0f28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a661da8f07484aeaec5ca1fddc2c58b29"><td class="memItemLeft" align="right" valign="top"><a id="a661da8f07484aeaec5ca1fddc2c58b29"></a>
+const <a class="el" href="a09314.html">dogen::identification::entities::physical_name</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10858.html#a661da8f07484aeaec5ca1fddc2c58b29">name</a> () const</td></tr>
+<tr class="memdesc:a661da8f07484aeaec5ca1fddc2c58b29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the physical element. <br /></td></tr>
+<tr class="separator:a661da8f07484aeaec5ca1fddc2c58b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fe46b148388bd05874c05556f9f4a9d"><td class="memItemLeft" align="right" valign="top"><a id="a9fe46b148388bd05874c05556f9f4a9d"></a>
+<a class="el" href="a09314.html">dogen::identification::entities::physical_name</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> ()</td></tr>
+<tr class="separator:a9fe46b148388bd05874c05556f9f4a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad274f1f9577aaa8ec4accf9c383fc2dc"><td class="memItemLeft" align="right" valign="top"><a id="ad274f1f9577aaa8ec4accf9c383fc2dc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> (const <a class="el" href="a09314.html">dogen::identification::entities::physical_name</a> &amp;v)</td></tr>
+<tr class="separator:ad274f1f9577aaa8ec4accf9c383fc2dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5278052ff9eac2ed1d3831fa5444739"><td class="memItemLeft" align="right" valign="top"><a id="ae5278052ff9eac2ed1d3831fa5444739"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> (const <a class="el" href="a09314.html">dogen::identification::entities::physical_name</a> &amp;&amp;v)</td></tr>
+<tr class="separator:ae5278052ff9eac2ed1d3831fa5444739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a435e81ae5aea4948c56260a6351e3368"><td class="memItemLeft" align="right" valign="top"><a id="a435e81ae5aea4948c56260a6351e3368"></a>
+const std::list&lt; <a class="el" href="a10854.html">dogen::physical::entities::model</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10858.html#a435e81ae5aea4948c56260a6351e3368">models</a> () const</td></tr>
+<tr class="memdesc:a435e81ae5aea4948c56260a6351e3368"><td class="mdescLeft">&#160;</td><td class="mdescRight">All models that are a member of this set. <br /></td></tr>
+<tr class="separator:a435e81ae5aea4948c56260a6351e3368"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4334c65d05cc7bdb1a649bfbb5fd7441"><td class="memItemLeft" align="right" valign="top"><a id="a4334c65d05cc7bdb1a649bfbb5fd7441"></a>
+std::list&lt; <a class="el" href="a10854.html">dogen::physical::entities::model</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>models</b> ()</td></tr>
+<tr class="separator:a4334c65d05cc7bdb1a649bfbb5fd7441"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6056fc382efa96151fe4c2ca2d42c193"><td class="memItemLeft" align="right" valign="top"><a id="a6056fc382efa96151fe4c2ca2d42c193"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>models</b> (const std::list&lt; <a class="el" href="a10854.html">dogen::physical::entities::model</a> &gt; &amp;v)</td></tr>
+<tr class="separator:a6056fc382efa96151fe4c2ca2d42c193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00f0fc2a411e7815dedd1d9eb9e1622e"><td class="memItemLeft" align="right" valign="top"><a id="a00f0fc2a411e7815dedd1d9eb9e1622e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>models</b> (const std::list&lt; <a class="el" href="a10854.html">dogen::physical::entities::model</a> &gt; &amp;&amp;v)</td></tr>
+<tr class="separator:a00f0fc2a411e7815dedd1d9eb9e1622e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Creates a patch file that, if applied to the current state of the filesystem, would make it the same as the generated model. </p>
+<div class="textblock"><p>Represents a set of related physical models. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: comma_separated_collection Class Reference</title>
+<title>Dogen: basic_positive_indenter_scope&lt; CharType, TraitsType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07640.html">variability</a></li><li class="navelem"><a class="el" href="a07641.html">entities</a></li><li class="navelem"><a class="el" href="a13206.html">comma_separated_collection</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07789.html">utility</a></li><li class="navelem"><a class="el" href="a07790.html">formatters</a></li><li class="navelem"><a class="el" href="a13206.html">basic_positive_indenter_scope</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -71,121 +71,34 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a13203.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">comma_separated_collection Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">basic_positive_indenter_scope&lt; CharType, TraitsType &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Represents a collection of CSV input that is split into a collection of text values.  
+<p>Utility class that indents on construction and outdents on destruction.  
  <a href="a13206.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a06710_source.html">comma_separated_collection.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a06485_source.html">indent_filter.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for comma_separated_collection:</div>
+Collaboration diagram for basic_positive_indenter_scope&lt; CharType, TraitsType &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="a13205.png" border="0" usemap="#acomma__separated__collection_inherit__map" alt="Inheritance graph"/></div>
-<map name="acomma__separated__collection_inherit__map" id="acomma__separated__collection_inherit__map">
-<area shape="rect" title="Represents a collection of CSV input that is split into a collection of text values." alt="" coords="5,307,255,531"/>
-<area shape="rect" href="a13294.html" title="Base class of all value types." alt="" coords="73,5,187,259"/>
-</map>
-</div>
-<div class="dynheader">
-Collaboration diagram for comma_separated_collection:</div>
-<div class="dyncontent">
-<div class="center"><img src="a13204.png" border="0" usemap="#acomma__separated__collection_coll__map" alt="Collaboration graph"/></div>
-<map name="acomma__separated__collection_coll__map" id="acomma__separated__collection_coll__map">
-<area shape="rect" title="Represents a collection of CSV input that is split into a collection of text values." alt="" coords="5,307,255,531"/>
-<area shape="rect" href="a13294.html" title="Base class of all value types." alt="" coords="73,5,187,259"/>
+<div class="center"><img src="a13204.png" border="0" usemap="#abasic__positive__indenter__scope_3_01_char_type_00_01_traits_type_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="abasic__positive__indenter__scope_3_01_char_type_00_01_traits_type_01_4_coll__map" id="abasic__positive__indenter__scope_3_01_char_type_00_01_traits_type_01_4_coll__map">
+<area shape="rect" title="Utility class that indents on construction and outdents on destruction." alt="" coords="5,5,236,141"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3cda854e62664da99f85cb2f441964ee"><td class="memItemLeft" align="right" valign="top"><a id="a3cda854e62664da99f85cb2f441964ee"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>comma_separated_collection</b> (const <a class="el" href="a13206.html">comma_separated_collection</a> &amp;)=default</td></tr>
-<tr class="separator:a3cda854e62664da99f85cb2f441964ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9d4471c0065b53e2e96a8f271caf751"><td class="memItemLeft" align="right" valign="top"><a id="ab9d4471c0065b53e2e96a8f271caf751"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>comma_separated_collection</b> (<a class="el" href="a13206.html">comma_separated_collection</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:ab9d4471c0065b53e2e96a8f271caf751"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4c284cfa1eab31dc0e6bf7e6bcef813"><td class="memItemLeft" align="right" valign="top"><a id="ae4c284cfa1eab31dc0e6bf7e6bcef813"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>comma_separated_collection</b> (const std::list&lt; std::list&lt; std::string &gt; &gt; &amp;content)</td></tr>
-<tr class="separator:ae4c284cfa1eab31dc0e6bf7e6bcef813"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae68292d172e61a72b95239ec1a2086bd"><td class="memItemLeft" align="right" valign="top"><a id="ae68292d172e61a72b95239ec1a2086bd"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>accept</b> (const <a class="el" href="a13298.html">value_visitor</a> &amp;v) const override</td></tr>
-<tr class="separator:ae68292d172e61a72b95239ec1a2086bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab76e1998589603a52d0ef4c0b3b2e9a3"><td class="memItemLeft" align="right" valign="top"><a id="ab76e1998589603a52d0ef4c0b3b2e9a3"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>accept</b> (<a class="el" href="a13298.html">value_visitor</a> &amp;v) const override</td></tr>
-<tr class="separator:ab76e1998589603a52d0ef4c0b3b2e9a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76d7b87044bf774d6324a363a7463681"><td class="memItemLeft" align="right" valign="top"><a id="a76d7b87044bf774d6324a363a7463681"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>accept</b> (const <a class="el" href="a13298.html">value_visitor</a> &amp;v) override</td></tr>
-<tr class="separator:a76d7b87044bf774d6324a363a7463681"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa0356a67217b17d872e7dabc725d41a"><td class="memItemLeft" align="right" valign="top"><a id="aaa0356a67217b17d872e7dabc725d41a"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>accept</b> (<a class="el" href="a13298.html">value_visitor</a> &amp;v) override</td></tr>
-<tr class="separator:aaa0356a67217b17d872e7dabc725d41a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69854d294ff0a1e9e3b140e9492af03c"><td class="memItemLeft" align="right" valign="top"><a id="a69854d294ff0a1e9e3b140e9492af03c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>to_stream</b> (std::ostream &amp;s) const override</td></tr>
-<tr class="separator:a69854d294ff0a1e9e3b140e9492af03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad485d4bc8c1beee08efb13bdc0fe839f"><td class="memItemLeft" align="right" valign="top"><a id="ad485d4bc8c1beee08efb13bdc0fe839f"></a>
-const std::list&lt; std::list&lt; std::string &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>content</b> () const</td></tr>
-<tr class="separator:ad485d4bc8c1beee08efb13bdc0fe839f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f71c788b23ff2e734b7f18ce23750dd"><td class="memItemLeft" align="right" valign="top"><a id="a8f71c788b23ff2e734b7f18ce23750dd"></a>
-std::list&lt; std::list&lt; std::string &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>content</b> ()</td></tr>
-<tr class="separator:a8f71c788b23ff2e734b7f18ce23750dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53283fce1e2c3086d9df542f13158d2b"><td class="memItemLeft" align="right" valign="top"><a id="a53283fce1e2c3086d9df542f13158d2b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>content</b> (const std::list&lt; std::list&lt; std::string &gt; &gt; &amp;v)</td></tr>
-<tr class="separator:a53283fce1e2c3086d9df542f13158d2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a58c913268c81d12cb5aae350b2be4e"><td class="memItemLeft" align="right" valign="top"><a id="a0a58c913268c81d12cb5aae350b2be4e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>content</b> (const std::list&lt; std::list&lt; std::string &gt; &gt; &amp;&amp;v)</td></tr>
-<tr class="separator:a0a58c913268c81d12cb5aae350b2be4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a759f87a6df8b7a3666c2753de668b5b2"><td class="memItemLeft" align="right" valign="top"><a id="a759f87a6df8b7a3666c2753de668b5b2"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="a13206.html">comma_separated_collection</a> &amp;rhs) const</td></tr>
-<tr class="separator:a759f87a6df8b7a3666c2753de668b5b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1fe11e7d31cddef3a8de7bb5a29f972"><td class="memItemLeft" align="right" valign="top"><a id="aa1fe11e7d31cddef3a8de7bb5a29f972"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="a13206.html">comma_separated_collection</a> &amp;rhs) const</td></tr>
-<tr class="separator:aa1fe11e7d31cddef3a8de7bb5a29f972"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a353724a066c5a0f07599ae36b1b2e1ee"><td class="memItemLeft" align="right" valign="top"><a id="a353724a066c5a0f07599ae36b1b2e1ee"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>equals</b> (const <a class="el" href="a13294.html">dogen::variability::entities::value</a> &amp;other) const override</td></tr>
-<tr class="separator:a353724a066c5a0f07599ae36b1b2e1ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa32279a2f889cb052e9780f2bb7f8a55"><td class="memItemLeft" align="right" valign="top"><a id="aa32279a2f889cb052e9780f2bb7f8a55"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="a13206.html">comma_separated_collection</a> &amp;other) noexcept</td></tr>
-<tr class="separator:aa32279a2f889cb052e9780f2bb7f8a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8bafedfd7db8c13f0a9dafc96703aa3e"><td class="memItemLeft" align="right" valign="top"><a id="a8bafedfd7db8c13f0a9dafc96703aa3e"></a>
-<a class="el" href="a13206.html">comma_separated_collection</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="a13206.html">comma_separated_collection</a> other)</td></tr>
-<tr class="separator:a8bafedfd7db8c13f0a9dafc96703aa3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a675af24db970c81d2708a93537ffce5e"><td class="memItemLeft" align="right" valign="top"><a id="a675af24db970c81d2708a93537ffce5e"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>accept</b> (const <a class="el" href="a13298.html">value_visitor</a> &amp;v) const=0</td></tr>
-<tr class="separator:a675af24db970c81d2708a93537ffce5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf806c550c238e0017deb62112b27d8d"><td class="memItemLeft" align="right" valign="top"><a id="adf806c550c238e0017deb62112b27d8d"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>accept</b> (<a class="el" href="a13298.html">value_visitor</a> &amp;v) const=0</td></tr>
-<tr class="separator:adf806c550c238e0017deb62112b27d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25fb4f4e38071f67bb2f4130ec64f6c0"><td class="memItemLeft" align="right" valign="top"><a id="a25fb4f4e38071f67bb2f4130ec64f6c0"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>accept</b> (const <a class="el" href="a13298.html">value_visitor</a> &amp;v)=0</td></tr>
-<tr class="separator:a25fb4f4e38071f67bb2f4130ec64f6c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67f1ccb07bd99d346fb4d6fefeb0495b"><td class="memItemLeft" align="right" valign="top"><a id="a67f1ccb07bd99d346fb4d6fefeb0495b"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>accept</b> (<a class="el" href="a13298.html">value_visitor</a> &amp;v)=0</td></tr>
-<tr class="separator:a67f1ccb07bd99d346fb4d6fefeb0495b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a13294"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a13294')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a13294.html">value</a></td></tr>
-<tr class="memitem:ad8410ac74290f5efaac1dc1588f98604 inherit pub_methods_a13294"><td class="memItemLeft" align="right" valign="top"><a id="ad8410ac74290f5efaac1dc1588f98604"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>value</b> (const <a class="el" href="a13294.html">value</a> &amp;)=default</td></tr>
-<tr class="separator:ad8410ac74290f5efaac1dc1588f98604 inherit pub_methods_a13294"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7537577c351e21cbbf57f3ff778f6c05 inherit pub_methods_a13294"><td class="memItemLeft" align="right" valign="top"><a id="a7537577c351e21cbbf57f3ff778f6c05"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>value</b> (<a class="el" href="a13294.html">value</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a7537577c351e21cbbf57f3ff778f6c05 inherit pub_methods_a13294"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af40e4b86162bc34eac63901efa5d2508 inherit pub_methods_a13294"><td class="memItemLeft" align="right" valign="top"><a id="af40e4b86162bc34eac63901efa5d2508"></a>
-<a class="el" href="a13294.html">value</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="a13294.html">value</a> &amp;)=default</td></tr>
-<tr class="separator:af40e4b86162bc34eac63901efa5d2508 inherit pub_methods_a13294"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_methods_a13294"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_a13294')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="a13294.html">value</a></td></tr>
-<tr class="memitem:a6d0b3fa2d8a0611fe491b902b64868a8 inherit pro_methods_a13294"><td class="memItemLeft" align="right" valign="top"><a id="a6d0b3fa2d8a0611fe491b902b64868a8"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>compare</b> (const <a class="el" href="a13294.html">value</a> &amp;rhs) const</td></tr>
-<tr class="separator:a6d0b3fa2d8a0611fe491b902b64868a8 inherit pro_methods_a13294"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bf316bd09109cd43aa7c354c73d94e6 inherit pro_methods_a13294"><td class="memItemLeft" align="right" valign="top"><a id="a1bf316bd09109cd43aa7c354c73d94e6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="a13294.html">value</a> &amp;other) noexcept</td></tr>
-<tr class="separator:a1bf316bd09109cd43aa7c354c73d94e6 inherit pro_methods_a13294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5df47706dc73807a677f36eb125af7b7"><td class="memItemLeft" align="right" valign="top"><a id="a5df47706dc73807a677f36eb125af7b7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>basic_positive_indenter_scope</b> (std::basic_ostream&lt; CharType, TraitsType &gt; &amp;s)</td></tr>
+<tr class="separator:a5df47706dc73807a677f36eb125af7b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents a collection of CSV input that is split into a collection of text values. </p>
+<div class="textblock"><h3>template&lt;class CharType, class TraitsType = std::char_traits&lt;CharType&gt;&gt;<br />
+class dogen::utility::formatters::basic_positive_indenter_scope&lt; CharType, TraitsType &gt;</h3>
+
+<p>Utility class that indents on construction and outdents on destruction. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.logical/include/dogen.logical/types/entities/decoration/editor.hpp Source File</title>
+<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.logical/include/dogen.logical/lexical_cast/entities/decoration/editor_lc.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,12 +63,12 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_dcdb1ebffe0d4f9f28ec03b64a5aaaa2.html">dogen.logical</a></li><li class="navelem"><a class="el" href="dir_f21da09acadf64620e837bfe8ac71645.html">include</a></li><li class="navelem"><a class="el" href="dir_722eaea4b5f65416e2f35f6e2317bf5d.html">dogen.logical</a></li><li class="navelem"><a class="el" href="dir_0b9aa5753d72f7bd09d44f32cf47d3d9.html">types</a></li><li class="navelem"><a class="el" href="dir_34754b2d6e7d75549fcd05a9dff06308.html">entities</a></li><li class="navelem"><a class="el" href="dir_a7d7c733f2f1d486f807383f532609e5.html">decoration</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_dcdb1ebffe0d4f9f28ec03b64a5aaaa2.html">dogen.logical</a></li><li class="navelem"><a class="el" href="dir_f21da09acadf64620e837bfe8ac71645.html">include</a></li><li class="navelem"><a class="el" href="dir_722eaea4b5f65416e2f35f6e2317bf5d.html">dogen.logical</a></li><li class="navelem"><a class="el" href="dir_90724f414e4e1a0e446d003ed98b6392.html">lexical_cast</a></li><li class="navelem"><a class="el" href="dir_b25e7240f5e1fcd2bbec177b9dc6fd04.html">entities</a></li><li class="navelem"><a class="el" href="dir_c07abf7427bd41fb6d0a0b9c1eabcc17.html">decoration</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">editor.hpp</div>  </div>
+<div class="title">editor_lc.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* -*- mode: c++; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-</span></div>
@@ -91,33 +91,59 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * MA 02110-1301, USA.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_LOGICAL_TYPES_ENTITIES_DECORATION_EDITOR_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_LOGICAL_TYPES_ENTITIES_DECORATION_EDITOR_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_LOGICAL_LEXICAL_CAST_ENTITIES_DECORATION_EDITOR_LC_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_LOGICAL_LEXICAL_CAST_ENTITIES_DECORATION_EDITOR_LC_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; (_MSC_VER &gt;= 1200)</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07162.html">dogen::logical::entities::decoration</a> {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="a07162.html#a3a94abd791c3d08cd22415a8106996c9">   33</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="a07162.html#a3a94abd791c3d08cd22415a8106996c9">editor</a> : unsigned int {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="a07162.html#a3a94abd791c3d08cd22415a8106996c9afedb2d84cafe20862cb4399751a8a7e3">invalid</a> = 0, </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="a07162.html#a3a94abd791c3d08cd22415a8106996c9a762d19ab5586dc0c1c36f2588ffbc892">emacs</a> = 1, </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="a07162.html#a3a94abd791c3d08cd22415a8106996c9a35b36b28916d38b34abddf832e286126">vi</a> = 2, </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="a07162.html#a3a94abd791c3d08cd22415a8106996c9af898198629bb686f1dfc3d1ac8b13506">vim</a> = 3, </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="a07162.html#a3a94abd791c3d08cd22415a8106996c9a54d54a126a783bc9cba8c06137136943">ex</a> = 4 </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aa07162_html"><div class="ttname"><a href="a07162.html">dogen::logical::entities::decoration</a></div><div class="ttdoc">Houses all of the meta-modeling elements and properties related to decorations.</div><div class="ttdef"><b>Definition:</b> editor_io.hpp:31</div></div>
-<div class="ttc" id="aa07162_html_a3a94abd791c3d08cd22415a8106996c9"><div class="ttname"><a href="a07162.html#a3a94abd791c3d08cd22415a8106996c9">dogen::logical::entities::decoration::editor</a></div><div class="ttdeci">editor</div><div class="ttdoc">Supported editors for modelines.</div><div class="ttdef"><b>Definition:</b> editor.hpp:33</div></div>
-<div class="ttc" id="aa07162_html_a3a94abd791c3d08cd22415a8106996c9a35b36b28916d38b34abddf832e286126"><div class="ttname"><a href="a07162.html#a3a94abd791c3d08cd22415a8106996c9a35b36b28916d38b34abddf832e286126">dogen::logical::entities::decoration::editor::vi</a></div><div class="ttdeci">@ vi</div><div class="ttdoc">The generic vi editor.</div></div>
-<div class="ttc" id="aa07162_html_a3a94abd791c3d08cd22415a8106996c9a54d54a126a783bc9cba8c06137136943"><div class="ttname"><a href="a07162.html#a3a94abd791c3d08cd22415a8106996c9a54d54a126a783bc9cba8c06137136943">dogen::logical::entities::decoration::editor::ex</a></div><div class="ttdeci">@ ex</div><div class="ttdoc">The old ex editor.</div></div>
-<div class="ttc" id="aa07162_html_a3a94abd791c3d08cd22415a8106996c9a762d19ab5586dc0c1c36f2588ffbc892"><div class="ttname"><a href="a07162.html#a3a94abd791c3d08cd22415a8106996c9a762d19ab5586dc0c1c36f2588ffbc892">dogen::logical::entities::decoration::editor::emacs</a></div><div class="ttdeci">@ emacs</div><div class="ttdoc">The emacs editor.</div></div>
-<div class="ttc" id="aa07162_html_a3a94abd791c3d08cd22415a8106996c9af898198629bb686f1dfc3d1ac8b13506"><div class="ttname"><a href="a07162.html#a3a94abd791c3d08cd22415a8106996c9af898198629bb686f1dfc3d1ac8b13506">dogen::logical::entities::decoration::editor::vim</a></div><div class="ttdeci">@ vim</div><div class="ttdoc">The vi-like editor vim.</div></div>
-<div class="ttc" id="aa07162_html_a3a94abd791c3d08cd22415a8106996c9afedb2d84cafe20862cb4399751a8a7e3"><div class="ttname"><a href="a07162.html#a3a94abd791c3d08cd22415a8106996c9afedb2d84cafe20862cb4399751a8a7e3">dogen::logical::entities::decoration::editor::invalid</a></div><div class="ttdeci">@ invalid</div><div class="ttdoc">Represents an uninitialised enum.</div></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;boost/lexical_cast.hpp&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/decoration/editor.hpp&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span>boost {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">inline</span> std::string lexical_cast(<span class="keyword">const</span> <a class="code" href="a07366.html#a3a94abd791c3d08cd22415a8106996c9">dogen::logical::entities::decoration::editor</a>&amp; v) {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">using</span> <a class="code" href="a07366.html#a3a94abd791c3d08cd22415a8106996c9">dogen::logical::entities::decoration::editor</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">switch</span> (v) {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">case</span> editor::invalid:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;editor::invalid&quot;</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">case</span> editor::emacs:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;editor::emacs&quot;</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">case</span> editor::vi:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;editor::vi&quot;</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">case</span> editor::vim:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;editor::vim&quot;</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">case</span> editor::ex:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">return</span> <span class="stringliteral">&quot;editor::ex&quot;</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">default</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">throw</span> boost::bad_lexical_cast();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">inline</span> <a class="code" href="a07366.html#a3a94abd791c3d08cd22415a8106996c9">dogen::logical::entities::decoration::editor</a> lexical_cast(<span class="keyword">const</span> std::string &amp; s) {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">using</span> <a class="code" href="a07366.html#a3a94abd791c3d08cd22415a8106996c9">dogen::logical::entities::decoration::editor</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">if</span> (s == <span class="stringliteral">&quot;invalid&quot;</span> || s == <span class="stringliteral">&quot;editor::invalid&quot;</span>)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span> editor::invalid;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">if</span> (s == <span class="stringliteral">&quot;emacs&quot;</span> || s == <span class="stringliteral">&quot;editor::emacs&quot;</span>)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> editor::emacs;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">if</span> (s == <span class="stringliteral">&quot;vi&quot;</span> || s == <span class="stringliteral">&quot;editor::vi&quot;</span>)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">return</span> editor::vi;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">if</span> (s == <span class="stringliteral">&quot;vim&quot;</span> || s == <span class="stringliteral">&quot;editor::vim&quot;</span>)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span> editor::vim;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span> (s == <span class="stringliteral">&quot;ex&quot;</span> || s == <span class="stringliteral">&quot;editor::ex&quot;</span>)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> editor::ex;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">throw</span> boost::bad_lexical_cast();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aa07366_html_a3a94abd791c3d08cd22415a8106996c9"><div class="ttname"><a href="a07366.html#a3a94abd791c3d08cd22415a8106996c9">dogen::logical::entities::decoration::editor</a></div><div class="ttdeci">editor</div><div class="ttdoc">Supported editors for modelines.</div><div class="ttdef"><b>Definition:</b> editor.hpp:33</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

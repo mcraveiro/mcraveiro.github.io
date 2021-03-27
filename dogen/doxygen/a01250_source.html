@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.identification/include/dogen.identification/types/helpers/logical_name_tree_builder.hpp Source File</title>
+<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.identification/include/dogen.identification/types/entities/tagged_value.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,12 +63,12 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_44088bd95d989a7b0f205b5e5e3d23ab.html">dogen.identification</a></li><li class="navelem"><a class="el" href="dir_d8dc655d31737fcf721d9e1bd0bd8297.html">include</a></li><li class="navelem"><a class="el" href="dir_3c7ff776643feb73c558f293fc1b23f5.html">dogen.identification</a></li><li class="navelem"><a class="el" href="dir_6b3d7269864817b40da6476163dd6e97.html">types</a></li><li class="navelem"><a class="el" href="dir_990f9d60774f27e3c850b9f6d0303fbd.html">helpers</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_44088bd95d989a7b0f205b5e5e3d23ab.html">dogen.identification</a></li><li class="navelem"><a class="el" href="dir_d8dc655d31737fcf721d9e1bd0bd8297.html">include</a></li><li class="navelem"><a class="el" href="dir_3c7ff776643feb73c558f293fc1b23f5.html">dogen.identification</a></li><li class="navelem"><a class="el" href="dir_6b3d7269864817b40da6476163dd6e97.html">types</a></li><li class="navelem"><a class="el" href="dir_148037a1a0e2fa3ab2553a0b4e36a5d3.html">entities</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">logical_name_tree_builder.hpp</div>  </div>
+<div class="title">tagged_value.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* -*- mode: c++; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-</span></div>
@@ -91,74 +91,72 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * MA 02110-1301, USA.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_IDENTIFICATION_TYPES_HELPERS_LOGICAL_NAME_TREE_BUILDER_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_IDENTIFICATION_TYPES_HELPERS_LOGICAL_NAME_TREE_BUILDER_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_IDENTIFICATION_TYPES_ENTITIES_TAGGED_VALUE_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_IDENTIFICATION_TYPES_ENTITIES_TAGGED_VALUE_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; (_MSC_VER &gt;= 1200)</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;unordered_set&gt;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;boost/shared_ptr.hpp&gt;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;dogen.identification/types/entities/logical_name.hpp&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;dogen.identification/types/entities/logical_location.hpp&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;dogen.identification/types/entities/logical_name_tree.hpp&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;dogen.identification/types/helpers/node.hpp&quot;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07130.html">dogen::identification::helpers</a> {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="a09166.html">   48</a></span>&#160;<span class="keyword">class </span><a class="code" href="a09166.html">logical_name_tree_builder</a> final {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="a09166.html">logical_name_tree_builder</a>(<span class="keyword">const</span> <a class="code" href="a09166.html">logical_name_tree_builder</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    ~<a class="code" href="a09166.html">logical_name_tree_builder</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="a09166.html">logical_name_tree_builder</a>(<a class="code" href="a09166.html">logical_name_tree_builder</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="a09166.html">logical_name_tree_builder</a>&amp; operator=(</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">const</span> <a class="code" href="a09166.html">logical_name_tree_builder</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="a09166.html">logical_name_tree_builder</a>();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> finish_current_node();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a09166.html#a15b9e3bb94b4a98bdd1155ffbba9dfa7">add_name</a>(<span class="keyword">const</span> std::string&amp; n);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a09166.html#a292550574fad0a909d7464e6272eec2b">add_builtin</a>(<span class="keyword">const</span> std::string&amp; n);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a09166.html#a0a60db690beea6242a32c866be1b3ae2">start_children</a>();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a09166.html#a0959acea1868e34b3931d1c73d3359ee">next_child</a>();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a09166.html#af0f3d1686084deb8a7be907002d78d2f">end_children</a>();</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="a09074.html">entities::logical_name_tree</a> make_name_tree(<span class="keyword">const</span> <a class="code" href="a09202.html">node</a>&amp; n);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="a09074.html">entities::logical_name_tree</a> <a class="code" href="a09166.html#a6e1c00b96a1ce969f42e13fc57d557bf">build</a>();</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    std::list&lt;std::string&gt; names_;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    boost::shared_ptr&lt;node&gt; root_;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    boost::shared_ptr&lt;node&gt; current_;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;};</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aa07130_html"><div class="ttname"><a href="a07130.html">dogen::identification::helpers</a></div><div class="ttdoc">Assorted helpers used to construct domain entities.</div><div class="ttdef"><b>Definition:</b> separators_io.hpp:31</div></div>
-<div class="ttc" id="aa09074_html"><div class="ttname"><a href="a09074.html">dogen::identification::entities::logical_name_tree</a></div><div class="ttdoc">Adds support for name composition as a tree-like structure.</div><div class="ttdef"><b>Definition:</b> logical_name_tree.hpp:44</div></div>
-<div class="ttc" id="aa09166_html"><div class="ttname"><a href="a09166.html">dogen::identification::helpers::logical_name_tree_builder</a></div><div class="ttdoc">Creates a name tree as directed by the external caller.</div><div class="ttdef"><b>Definition:</b> logical_name_tree_builder.hpp:48</div></div>
-<div class="ttc" id="aa09166_html_a0959acea1868e34b3931d1c73d3359ee"><div class="ttname"><a href="a09166.html#a0959acea1868e34b3931d1c73d3359ee">dogen::identification::helpers::logical_name_tree_builder::next_child</a></div><div class="ttdeci">void next_child()</div><div class="ttdoc">Notify the presence of an additional child name.</div><div class="ttdef"><b>Definition:</b> logical_name_tree_builder.cpp:93</div></div>
-<div class="ttc" id="aa09166_html_a0a60db690beea6242a32c866be1b3ae2"><div class="ttname"><a href="a09166.html#a0a60db690beea6242a32c866be1b3ae2">dogen::identification::helpers::logical_name_tree_builder::start_children</a></div><div class="ttdeci">void start_children()</div><div class="ttdoc">Notify the start of children.</div><div class="ttdef"><b>Definition:</b> logical_name_tree_builder.cpp:75</div></div>
-<div class="ttc" id="aa09166_html_a15b9e3bb94b4a98bdd1155ffbba9dfa7"><div class="ttname"><a href="a09166.html#a15b9e3bb94b4a98bdd1155ffbba9dfa7">dogen::identification::helpers::logical_name_tree_builder::add_name</a></div><div class="ttdeci">void add_name(const std::string &amp;n)</div><div class="ttdoc">Adds the name to the tree.</div><div class="ttdef"><b>Definition:</b> logical_name_tree_builder.cpp:49</div></div>
-<div class="ttc" id="aa09166_html_a292550574fad0a909d7464e6272eec2b"><div class="ttname"><a href="a09166.html#a292550574fad0a909d7464e6272eec2b">dogen::identification::helpers::logical_name_tree_builder::add_builtin</a></div><div class="ttdeci">void add_builtin(const std::string &amp;n)</div><div class="ttdoc">Adds the built-in element name to the tree.</div><div class="ttdef"><b>Definition:</b> logical_name_tree_builder.cpp:54</div></div>
-<div class="ttc" id="aa09166_html_a6e1c00b96a1ce969f42e13fc57d557bf"><div class="ttname"><a href="a09166.html#a6e1c00b96a1ce969f42e13fc57d557bf">dogen::identification::helpers::logical_name_tree_builder::build</a></div><div class="ttdeci">entities::logical_name_tree build()</div><div class="ttdoc">Generate the name tree representation for the current node representation.</div><div class="ttdef"><b>Definition:</b> logical_name_tree_builder.cpp:143</div></div>
-<div class="ttc" id="aa09166_html_af0f3d1686084deb8a7be907002d78d2f"><div class="ttname"><a href="a09166.html#af0f3d1686084deb8a7be907002d78d2f">dogen::identification::helpers::logical_name_tree_builder::end_children</a></div><div class="ttdeci">void end_children()</div><div class="ttdoc">Notify the end of children.</div><div class="ttdef"><b>Definition:</b> logical_name_tree_builder.cpp:114</div></div>
-<div class="ttc" id="aa09202_html"><div class="ttname"><a href="a09202.html">dogen::identification::helpers::node</a></div><div class="ttdoc">Node in a tree of logical names.</div><div class="ttdef"><b>Definition:</b> node.hpp:41</div></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07333.html">dogen::identification::entities</a> {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="a09330.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="a09330.html">tagged_value</a> final {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="a09330.html">tagged_value</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="a09330.html">tagged_value</a>(<span class="keyword">const</span> <a class="code" href="a09330.html">tagged_value</a>&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="a09330.html">tagged_value</a>(<a class="code" href="a09330.html">tagged_value</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    ~<a class="code" href="a09330.html">tagged_value</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="a09330.html">tagged_value</a>(</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">const</span> std::string&amp; <a class="code" href="a09330.html#a99dc16e888c1d31bee49aaf246bc9ba6">tag</a>,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">const</span> std::string&amp; <a class="code" href="a09330.html#a565b661843feb1d3ecf78fff2ec3dcee">value</a>);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">const</span> std::string&amp; <a class="code" href="a09330.html#a99dc16e888c1d31bee49aaf246bc9ba6">tag</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    std::string&amp; <a class="code" href="a09330.html#a99dc16e888c1d31bee49aaf246bc9ba6">tag</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a09330.html#a99dc16e888c1d31bee49aaf246bc9ba6">tag</a>(<span class="keyword">const</span> std::string&amp; v);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a09330.html#a99dc16e888c1d31bee49aaf246bc9ba6">tag</a>(<span class="keyword">const</span> std::string&amp;&amp; v);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">const</span> std::string&amp; <a class="code" href="a09330.html#a565b661843feb1d3ecf78fff2ec3dcee">value</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    std::string&amp; <a class="code" href="a09330.html#a565b661843feb1d3ecf78fff2ec3dcee">value</a>();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a09330.html#a565b661843feb1d3ecf78fff2ec3dcee">value</a>(<span class="keyword">const</span> std::string&amp; v);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a09330.html#a565b661843feb1d3ecf78fff2ec3dcee">value</a>(<span class="keyword">const</span> std::string&amp;&amp; v);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="a09330.html">tagged_value</a>&amp; rhs) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="a09330.html">tagged_value</a>&amp; rhs)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">return</span> !this-&gt;operator==(rhs);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> swap(<a class="code" href="a09330.html">tagged_value</a>&amp; other) noexcept;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="a09330.html">tagged_value</a>&amp; operator=(<a class="code" href="a09330.html">tagged_value</a> other);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    std::string tag_;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    std::string value_;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">namespace </span>std {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> swap(</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="a09330.html">dogen::identification::entities::tagged_value</a>&amp; lhs,</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="a09330.html">dogen::identification::entities::tagged_value</a>&amp; rhs) {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    lhs.swap(rhs);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aa07333_html"><div class="ttname"><a href="a07333.html">dogen::identification::entities</a></div><div class="ttdoc">Stores all of the entities related to identification of Dogen elements.</div><div class="ttdef"><b>Definition:</b> logical_id_hash.hpp:31</div></div>
+<div class="ttc" id="aa09330_html"><div class="ttname"><a href="a09330.html">dogen::identification::entities::tagged_value</a></div><div class="ttdoc">Represents a tagged value in a similar spirit to UMLs.</div><div class="ttdef"><b>Definition:</b> tagged_value.hpp:36</div></div>
+<div class="ttc" id="aa09330_html_a565b661843feb1d3ecf78fff2ec3dcee"><div class="ttname"><a href="a09330.html#a565b661843feb1d3ecf78fff2ec3dcee">dogen::identification::entities::tagged_value::value</a></div><div class="ttdeci">const std::string &amp; value() const</div><div class="ttdoc">Value associated with this tag.</div><div class="ttdef"><b>Definition:</b> tagged_value.cpp:64</div></div>
+<div class="ttc" id="aa09330_html_a99dc16e888c1d31bee49aaf246bc9ba6"><div class="ttname"><a href="a09330.html#a99dc16e888c1d31bee49aaf246bc9ba6">dogen::identification::entities::tagged_value::tag</a></div><div class="ttdeci">const std::string &amp; tag() const</div><div class="ttdoc">Tag name.</div><div class="ttdef"><b>Definition:</b> tagged_value.cpp:48</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

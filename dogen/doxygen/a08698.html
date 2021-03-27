@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: adaptation_error Class Reference</title>
+<title>Dogen: converter Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07078.html">codec</a></li><li class="navelem"><b>helpers</b></li><li class="navelem"><a class="el" href="a08698.html">adaptation_error</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a08698.html">converter</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -71,36 +71,42 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a08695.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">adaptation_error Class Reference</div>  </div>
+<div class="title">converter Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A fatal error has occurred while adapting an object into an element.  
+<p>Converts a supported model type into another.  
  <a href="a08698.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00434_source.html">adaptation_error.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a21185_source.html">converter.hpp</a>&gt;</code></p>
 
-<p>Inherits exception, and exception.</p>
+<p>Inherited by converter.</p>
 <div class="dynheader">
-Collaboration diagram for adaptation_error:</div>
+Collaboration diagram for converter:</div>
 <div class="dyncontent">
-<div class="center"><img src="a08696.png" border="0" usemap="#aadaptation__error_coll__map" alt="Collaboration graph"/></div>
-<map name="aadaptation__error_coll__map" id="aadaptation__error_coll__map">
-<area shape="rect" title="A fatal error has occurred while adapting an object into an element." alt="" coords="5,5,172,127"/>
+<div class="center"><img src="a08696.png" border="0" usemap="#aconverter_coll__map" alt="Collaboration graph"/></div>
+<map name="aconverter_coll__map" id="aconverter_coll__map">
+<area shape="rect" title="Converts a supported model type into another." alt="" coords="5,5,125,156"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aad7fd660218a54e9b679293146631bb6"><td class="memItemLeft" align="right" valign="top"><a id="aad7fd660218a54e9b679293146631bb6"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>adaptation_error</b> (const std::string &amp;message)</td></tr>
-<tr class="separator:aad7fd660218a54e9b679293146631bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e01571e6589dc64e08addf4b1148a7a"><td class="memItemLeft" align="right" valign="top"><a id="a6e01571e6589dc64e08addf4b1148a7a"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>what</b> () const noexcept</td></tr>
-<tr class="separator:a6e01571e6589dc64e08addf4b1148a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62c9b158bd4b4aab3a0361a3fe1718e5"><td class="memItemLeft" align="right" valign="top"><a id="a62c9b158bd4b4aab3a0361a3fe1718e5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>converter</b> (const <a class="el" href="a08698.html">converter</a> &amp;)=delete</td></tr>
+<tr class="separator:a62c9b158bd4b4aab3a0361a3fe1718e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5974b0b1c072baf240a66ce678750694"><td class="memItemLeft" align="right" valign="top"><a id="a5974b0b1c072baf240a66ce678750694"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>converter</b> (<a class="el" href="a08698.html">converter</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:a5974b0b1c072baf240a66ce678750694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b72c2f645716bf82f3f0566452e3e24"><td class="memItemLeft" align="right" valign="top"><a id="a7b72c2f645716bf82f3f0566452e3e24"></a>
+<a class="el" href="a08698.html">converter</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="a08698.html">converter</a> &amp;)=delete</td></tr>
+<tr class="separator:a7b72c2f645716bf82f3f0566452e3e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb4d64b3c4db04ccd88015f15d530347"><td class="memItemLeft" align="right" valign="top"><a id="abb4d64b3c4db04ccd88015f15d530347"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>convert</b> (const configuration &amp;cfg, const boost::filesystem::path &amp;source, const boost::filesystem::path &amp;destination) const =0</td></tr>
+<tr class="separator:abb4d64b3c4db04ccd88015f15d530347"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A fatal error has occurred while adapting an object into an element. </p>
+<div class="textblock"><p>Converts a supported model type into another. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

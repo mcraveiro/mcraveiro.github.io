@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: artefact_to_artefact_chain Class Reference</title>
+<title>Dogen: application Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,40 +63,74 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07078.html">codec</a></li><li class="navelem"><b>transforms</b></li><li class="navelem"><a class="el" href="a08758.html">artefact_to_artefact_chain</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07276.html">cli</a></li><li class="navelem"><a class="el" href="a08758.html">application</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a08755.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">artefact_to_artefact_chain Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">application Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Converts an external model of a given type into another external model of another type and writes it to the filesystem.  
- <a href="a08758.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="a00473_source.html">artefact_to_artefact_chain.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00260_source.html">application.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for artefact_to_artefact_chain:</div>
+Collaboration diagram for application:</div>
 <div class="dyncontent">
-<div class="center"><img src="a08756.png" border="0" usemap="#aartefact__to__artefact__chain_coll__map" alt="Collaboration graph"/></div>
-<map name="aartefact__to__artefact__chain_coll__map" id="aartefact__to__artefact__chain_coll__map">
-<area shape="rect" title="Converts an external model of a given type into another external model of another type and writes it ..." alt="" coords="5,5,156,97"/>
+<div class="center"><img src="a08756.png" border="0" usemap="#aapplication_coll__map" alt="Collaboration graph"/></div>
+<map name="aapplication_coll__map" id="aapplication_coll__map">
+<area shape="rect" title=" " alt="" coords="5,5,136,171"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a6b6d4d1f1ba0ffc80910a0e9f8d56d85"><td class="memItemLeft" align="right" valign="top"><a id="a6b6d4d1f1ba0ffc80910a0e9f8d56d85"></a>
-static entities::artefact&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (const transforms::context &amp;ctx, const entities::artefact &amp;input, const boost::filesystem::path &amp;output_path)</td></tr>
-<tr class="separator:a6b6d4d1f1ba0ffc80910a0e9f8d56d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a6a3c85ea3dddfd67c35513d80e1d5786"><td class="memItemLeft" align="right" valign="top"><a id="a6a3c85ea3dddfd67c35513d80e1d5786"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>application</b> (const <a class="el" href="a08758.html">application</a> &amp;)=delete</td></tr>
+<tr class="separator:a6a3c85ea3dddfd67c35513d80e1d5786"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec74bcd29b53ee78383a338e70d5f596"><td class="memItemLeft" align="right" valign="top"><a id="aec74bcd29b53ee78383a338e70d5f596"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>application</b> (<a class="el" href="a08758.html">application</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:aec74bcd29b53ee78383a338e70d5f596"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58f589121efaa89b352e1fef2074fd47"><td class="memItemLeft" align="right" valign="top"><a id="a58f589121efaa89b352e1fef2074fd47"></a>
+<a class="el" href="a08758.html">application</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="a08758.html">application</a> &amp;)=delete</td></tr>
+<tr class="separator:a58f589121efaa89b352e1fef2074fd47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68a8ff996b7c10ddbd629e2d5e6d2728"><td class="memItemLeft" align="right" valign="top"><a id="a68a8ff996b7c10ddbd629e2d5e6d2728"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>application</b> (const <a class="el" href="a08698.html">converter</a> &amp;c, const <a class="el" href="a08718.html">generator</a> &amp;g, const <a class="el" href="a08742.html">spec_dumper</a> &amp;sd)</td></tr>
+<tr class="separator:a68a8ff996b7c10ddbd629e2d5e6d2728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab59eb847324b7e7655be2e530841061d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08758.html#ab59eb847324b7e7655be2e530841061d">run</a> (const <a class="el" href="a08774.html">configuration</a> &amp;cfg) const</td></tr>
+<tr class="separator:ab59eb847324b7e7655be2e530841061d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Converts an external model of a given type into another external model of another type and writes it to the filesystem. </p>
-</div></div><!-- contents -->
+<div class="textblock"><p>Entry point for the dogen command line application. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab59eb847324b7e7655be2e530841061d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab59eb847324b7e7655be2e530841061d">&#9670;&nbsp;</a></span>run()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void run </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a08774.html">configuration</a> &amp;&#160;</td>
+          <td class="paramname"><em>cfg</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Executes the application.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cfg</td><td>Application configuration. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1

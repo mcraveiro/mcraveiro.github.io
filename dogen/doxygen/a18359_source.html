@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.templating/include/dogen.templating/types/stitch/features.hpp Source File</title>
+<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.codec/include/dogen.codec/io/entities/element_io.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,12 +63,12 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_f4eebff0b104affe1acf05072442cc8d.html">dogen.templating</a></li><li class="navelem"><a class="el" href="dir_b55880945fda2c00d27f64f090c8125d.html">include</a></li><li class="navelem"><a class="el" href="dir_07b8102628c20e0f53a745f86343bce3.html">dogen.templating</a></li><li class="navelem"><a class="el" href="dir_6df07acc435201dcd605c8cb0ee734ca.html">types</a></li><li class="navelem"><a class="el" href="dir_3a28be378baab16190246d6af9769d34.html">stitch</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_22c4c46301db200517b9df1f9e397b7e.html">dogen.codec</a></li><li class="navelem"><a class="el" href="dir_cc360dac2744023b8b000f708c9eb509.html">include</a></li><li class="navelem"><a class="el" href="dir_9431ca7dbc6e2193e4c095b70c4226a3.html">dogen.codec</a></li><li class="navelem"><a class="el" href="dir_b4f6afb7df0584eae0063423ec6d83b2.html">io</a></li><li class="navelem"><a class="el" href="dir_d63f197640927399977bea359ea3e8a8.html">entities</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">features.hpp</div>  </div>
+<div class="title">element_io.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* -*- mode: c++; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-</span></div>
@@ -91,68 +91,27 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * MA 02110-1301, USA.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_TEMPLATING_TYPES_STITCH_FEATURES_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_TEMPLATING_TYPES_STITCH_FEATURES_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_CODEC_IO_ENTITIES_ELEMENT_IO_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_CODEC_IO_ENTITIES_ELEMENT_IO_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; (_MSC_VER &gt;= 1200)</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;dogen.variability/types/entities/feature.hpp&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;dogen.variability/types/entities/configuration.hpp&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;dogen.variability/types/entities/feature_model.hpp&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span>dogen::templating::stitch {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;iosfwd&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;dogen.codec/types/entities/element.hpp&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07283.html">dogen::codec::entities</a> {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;std::ostream&amp;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;operator&lt;&lt;(std::ostream&amp; s,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;     <span class="keyword">const</span> <a class="code" href="a08838.html">dogen::codec::entities::element</a>&amp; v);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="a11370.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="a11370.html">features</a> final {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">struct </span>feature_group {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="a13238.html">variability::entities::feature</a> stream_variable_name;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="a13238.html">variability::entities::feature</a> relative_output_directory;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="a13238.html">variability::entities::feature</a> inclusion_dependency;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="a13238.html">variability::entities::feature</a> containing_namespaces;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="a13238.html">variability::entities::feature</a> <a class="code" href="a11414.html">text_template</a>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="a13238.html">variability::entities::feature</a> kvp;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    };</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">static</span> feature_group</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    make_feature_group(<span class="keyword">const</span> <a class="code" href="a13242.html">variability::entities::feature_model</a>&amp; fm);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">struct </span>static_configuration {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        std::string stream_variable_name;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        std::string relative_output_directory;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        std::list&lt;std::string&gt; inclusion_dependency;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        std::string containing_namespaces;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        std::string <a class="code" href="a11414.html">text_template</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        std::list&lt;std::pair&lt;std::string, std::string&gt; &gt; kvp;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    };</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">static</span> static_configuration make_static_configuration(</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">const</span> feature_group&amp; fg,</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keyword">const</span> variability::entities::configuration&amp; cfg);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Configurable&gt;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">static</span> static_configuration make_static_configuration(</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keyword">const</span> feature_group&amp; fg, <span class="keyword">const</span> Configurable&amp; c) {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">return</span> make_static_configuration(fg, *c.configuration());</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">static</span> std::list&lt;dogen::variability::entities::feature&gt;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    make_features();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aa11370_html"><div class="ttname"><a href="a11370.html">dogen::templating::stitch::features</a></div><div class="ttdoc">Stitch templating features.</div><div class="ttdef"><b>Definition:</b> features.hpp:40</div></div>
-<div class="ttc" id="aa11414_html"><div class="ttname"><a href="a11414.html">dogen::templating::stitch::text_template</a></div><div class="ttdoc">Domain representation of a stitch template.</div><div class="ttdef"><b>Definition:</b> text_template.hpp:40</div></div>
-<div class="ttc" id="aa13238_html"><div class="ttname"><a href="a13238.html">dogen::variability::entities::feature</a></div><div class="ttdoc">Unit of configuration within Dogen. Defines the domain of values.</div><div class="ttdef"><b>Definition:</b> feature.hpp:42</div></div>
-<div class="ttc" id="aa13242_html"><div class="ttname"><a href="a13242.html">dogen::variability::entities::feature_model</a></div><div class="ttdoc">Container of all available features, organised for querying.</div><div class="ttdef"><b>Definition:</b> feature_model.hpp:39</div></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aa07283_html"><div class="ttname"><a href="a07283.html">dogen::codec::entities</a></div><div class="ttdoc">Object model that is codec-agnostic but aims to provide a representation of the core entities needed ...</div><div class="ttdef"><b>Definition:</b> artefact_io.hpp:31</div></div>
+<div class="ttc" id="aa08838_html"><div class="ttname"><a href="a08838.html">dogen::codec::entities::element</a></div><div class="ttdoc">Represents an element from an external model.</div><div class="ttdef"><b>Definition:</b> element.hpp:46</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

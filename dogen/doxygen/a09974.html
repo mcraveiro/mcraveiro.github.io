@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: configuration_model_set_adapter Class Reference</title>
+<title>Dogen: orm Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07159.html">logical</a></li><li class="navelem"><b>helpers</b></li><li class="navelem"><a class="el" href="a09974.html">configuration_model_set_adapter</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07363.html">logical</a></li><li class="navelem"><a class="el" href="a07378.html">features</a></li><li class="navelem"><a class="el" href="a09974.html">orm</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -71,32 +71,41 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a09971.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">configuration_model_set_adapter Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">orm Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Adapts a logical model set into its counterpart in variability, extracting all of the configuration information.  
+<p>Features related to ORM support.  
  <a href="a09974.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a02378_source.html">configuration_model_set_adapter.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a19148_source.html">orm.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for configuration_model_set_adapter:</div>
+Collaboration diagram for orm:</div>
 <div class="dyncontent">
-<div class="center"><img src="a09972.png" border="0" usemap="#aconfiguration__model__set__adapter_coll__map" alt="Collaboration graph"/></div>
-<map name="aconfiguration__model__set__adapter_coll__map" id="aconfiguration__model__set__adapter_coll__map">
-<area shape="rect" title="Adapts a logical model set into its counterpart in variability, extracting all of the configuration i..." alt="" coords="5,5,160,97"/>
+<div class="center"><img src="a09972.png" border="0" usemap="#aorm_coll__map" alt="Collaboration graph"/></div>
+<map name="aorm_coll__map" id="aorm_coll__map">
+<area shape="rect" title="Features related to ORM support." alt="" coords="5,5,224,127"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a33f9d97f1baeefc371d1846249ec8a7d"><td class="memItemLeft" align="right" valign="top"><a id="a33f9d97f1baeefc371d1846249ec8a7d"></a>
-static variability::entities::configuration_model_set&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09974.html#a33f9d97f1baeefc371d1846249ec8a7d">adapt</a> (const <a class="el" href="a09346.html">entities::input_model_set</a> &amp;ms)</td></tr>
-<tr class="memdesc:a33f9d97f1baeefc371d1846249ec8a7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adapts all models in a model set. <br /></td></tr>
-<tr class="separator:a33f9d97f1baeefc371d1846249ec8a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ac3f5954b277ac18b0bc22e4d7c5922"><td class="memItemLeft" align="right" valign="top"><a id="a4ac3f5954b277ac18b0bc22e4d7c5922"></a>
+static feature_group&#160;</td><td class="memItemRight" valign="bottom"><b>make_feature_group</b> (const <a class="el" href="a13446.html">variability::entities::feature_model</a> &amp;fm)</td></tr>
+<tr class="separator:a4ac3f5954b277ac18b0bc22e4d7c5922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af77ee7f525a2c0fe8e62c34d9dd22f15"><td class="memItemLeft" align="right" valign="top"><a id="af77ee7f525a2c0fe8e62c34d9dd22f15"></a>
+static static_configuration&#160;</td><td class="memItemRight" valign="bottom"><b>make_static_configuration</b> (const feature_group &amp;fg, const variability::entities::configuration &amp;cfg)</td></tr>
+<tr class="separator:af77ee7f525a2c0fe8e62c34d9dd22f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eace8e86c71b0ce6da0a5cb452c1414"><td class="memTemplParams" colspan="2"><a id="a7eace8e86c71b0ce6da0a5cb452c1414"></a>
+template&lt;typename Configurable &gt; </td></tr>
+<tr class="memitem:a7eace8e86c71b0ce6da0a5cb452c1414"><td class="memTemplItemLeft" align="right" valign="top">static static_configuration&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_static_configuration</b> (const feature_group &amp;fg, const Configurable &amp;c)</td></tr>
+<tr class="separator:a7eace8e86c71b0ce6da0a5cb452c1414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9b98c113e5c61a6f7a817603ef40562"><td class="memItemLeft" align="right" valign="top"><a id="ac9b98c113e5c61a6f7a817603ef40562"></a>
+static std::list&lt; <a class="el" href="a13442.html">dogen::variability::entities::feature</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>make_features</b> ()</td></tr>
+<tr class="separator:ac9b98c113e5c61a6f7a817603ef40562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Adapts a logical model set into its counterpart in variability, extracting all of the configuration information. </p>
+<div class="textblock"><p>Features related to ORM support. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

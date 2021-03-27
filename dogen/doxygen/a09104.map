@@ -1,3 +1,3 @@
-<map id="physical_meta_name_indices" name="physical_meta_name_indices">
-<area shape="rect" id="node1" title="Containing physical meta&#45;names, indexed as required by use cases." alt="" coords="5,5,211,1344"/>
+<map id="composite" name="composite">
+<area shape="rect" id="node1" title="Attribute value which is made up of other attributes." alt="" coords="5,5,160,552"/>
 </map>

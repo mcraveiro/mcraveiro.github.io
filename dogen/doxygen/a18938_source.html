@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.logical/include/dogen.logical/types/helpers/mapping.hpp Source File</title>
+<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.templating/include/dogen.templating/types/helpers/validation_error.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,12 +63,12 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_dcdb1ebffe0d4f9f28ec03b64a5aaaa2.html">dogen.logical</a></li><li class="navelem"><a class="el" href="dir_f21da09acadf64620e837bfe8ac71645.html">include</a></li><li class="navelem"><a class="el" href="dir_722eaea4b5f65416e2f35f6e2317bf5d.html">dogen.logical</a></li><li class="navelem"><a class="el" href="dir_0b9aa5753d72f7bd09d44f32cf47d3d9.html">types</a></li><li class="navelem"><a class="el" href="dir_c4d8af3a4a98cfe6b94a95946f3dea91.html">helpers</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_f4eebff0b104affe1acf05072442cc8d.html">dogen.templating</a></li><li class="navelem"><a class="el" href="dir_b55880945fda2c00d27f64f090c8125d.html">include</a></li><li class="navelem"><a class="el" href="dir_07b8102628c20e0f53a745f86343bce3.html">dogen.templating</a></li><li class="navelem"><a class="el" href="dir_6df07acc435201dcd605c8cb0ee734ca.html">types</a></li><li class="navelem"><a class="el" href="dir_8a93bca4b5740bdf3b8b2b2accc03292.html">helpers</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">mapping.hpp</div>  </div>
+<div class="title">validation_error.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* -*- mode: c++; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-</span></div>
@@ -91,76 +91,37 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * MA 02110-1301, USA.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_LOGICAL_TYPES_HELPERS_MAPPING_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_LOGICAL_TYPES_HELPERS_MAPPING_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_TEMPLATING_TYPES_HELPERS_VALIDATION_ERROR_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_TEMPLATING_TYPES_HELPERS_VALIDATION_ERROR_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; (_MSC_VER &gt;= 1200)</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/helpers/mapping_value.hpp&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;dogen.identification/types/entities/logical_id.hpp&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;dogen.identification/types/entities/technical_space.hpp&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;dogen.identification/hash/entities/technical_space_hash.hpp&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span>dogen::logical::helpers {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="a10022.html">   41</a></span>&#160;<span class="keyword">class </span><a class="code" href="a10022.html">mapping</a> final {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="a10022.html">mapping</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="a10022.html">mapping</a>(<span class="keyword">const</span> <a class="code" href="a10022.html">mapping</a>&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="a10022.html">mapping</a>(<a class="code" href="a10022.html">mapping</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    ~<a class="code" href="a10022.html">mapping</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="a10022.html">mapping</a>(</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">const</span> <a class="code" href="a09050.html">dogen::identification::entities::logical_id</a>&amp; <a class="code" href="a10022.html#a44d3a996cd3e4a14337d01b95b18b44b">agnostic_id</a>,</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">const</span> std::unordered_map&lt;dogen::identification::entities::technical_space, dogen::logical::helpers::mapping_value&gt;&amp; <a class="code" href="a10022.html#a9ec00dd0ff8af0caa7b3f4a1fa088d05">by_technical_space</a>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;boost/exception/info.hpp&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span>dogen::templating::helpers {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="a11562.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="a11562.html">validation_error</a> : <span class="keyword">public</span> <span class="keyword">virtual</span> std::exception, <span class="keyword">public</span> <span class="keyword">virtual</span> boost::exception {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="a11562.html">validation_error</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    ~<a class="code" href="a11562.html">validation_error</a>() noexcept = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">explicit</span> <a class="code" href="a11562.html">validation_error</a>(<span class="keyword">const</span> std::string&amp; message) : message_(message) { }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* what() <span class="keyword">const</span> noexcept { <span class="keywordflow">return</span>(message_.c_str()); }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">const</span> std::string message_;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">const</span> <a class="code" href="a09050.html">dogen::identification::entities::logical_id</a>&amp; <a class="code" href="a10022.html#a44d3a996cd3e4a14337d01b95b18b44b">agnostic_id</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="a09050.html">dogen::identification::entities::logical_id</a>&amp; <a class="code" href="a10022.html#a44d3a996cd3e4a14337d01b95b18b44b">agnostic_id</a>();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a10022.html#a44d3a996cd3e4a14337d01b95b18b44b">agnostic_id</a>(<span class="keyword">const</span> <a class="code" href="a09050.html">dogen::identification::entities::logical_id</a>&amp; v);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a10022.html#a44d3a996cd3e4a14337d01b95b18b44b">agnostic_id</a>(<span class="keyword">const</span> <a class="code" href="a09050.html">dogen::identification::entities::logical_id</a>&amp;&amp; v);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">const</span> std::unordered_map&lt;dogen::identification::entities::technical_space, dogen::logical::helpers::mapping_value&gt;&amp; <a class="code" href="a10022.html#a9ec00dd0ff8af0caa7b3f4a1fa088d05">by_technical_space</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    std::unordered_map&lt;dogen::identification::entities::technical_space, dogen::logical::helpers::mapping_value&gt;&amp; <a class="code" href="a10022.html#a9ec00dd0ff8af0caa7b3f4a1fa088d05">by_technical_space</a>();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a10022.html#a9ec00dd0ff8af0caa7b3f4a1fa088d05">by_technical_space</a>(<span class="keyword">const</span> std::unordered_map&lt;dogen::identification::entities::technical_space, dogen::logical::helpers::mapping_value&gt;&amp; v);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a10022.html#a9ec00dd0ff8af0caa7b3f4a1fa088d05">by_technical_space</a>(<span class="keyword">const</span> std::unordered_map&lt;dogen::identification::entities::technical_space, dogen::logical::helpers::mapping_value&gt;&amp;&amp; v);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="a10022.html">mapping</a>&amp; rhs) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="a10022.html">mapping</a>&amp; rhs)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keywordflow">return</span> !this-&gt;operator==(rhs);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> swap(<a class="code" href="a10022.html">mapping</a>&amp; other) noexcept;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="a10022.html">mapping</a>&amp; operator=(<a class="code" href="a10022.html">mapping</a> other);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="a09050.html">dogen::identification::entities::logical_id</a> agnostic_id_;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    std::unordered_map&lt;dogen::identification::entities::technical_space, dogen::logical::helpers::mapping_value&gt; by_technical_space_;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;};</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">namespace </span>std {</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> swap(</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="a10022.html">dogen::logical::helpers::mapping</a>&amp; lhs,</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="a10022.html">dogen::logical::helpers::mapping</a>&amp; rhs) {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    lhs.swap(rhs);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aa09050_html"><div class="ttname"><a href="a09050.html">dogen::identification::entities::logical_id</a></div><div class="ttdoc">ID of the elment in the logical dimension.</div><div class="ttdef"><b>Definition:</b> logical_id.hpp:35</div></div>
-<div class="ttc" id="aa10022_html"><div class="ttname"><a href="a10022.html">dogen::logical::helpers::mapping</a></div><div class="ttdoc">Stores the mapping of a key (the element id) to its values, organised by technical space.</div><div class="ttdef"><b>Definition:</b> mapping.hpp:41</div></div>
-<div class="ttc" id="aa10022_html_a44d3a996cd3e4a14337d01b95b18b44b"><div class="ttname"><a href="a10022.html#a44d3a996cd3e4a14337d01b95b18b44b">dogen::logical::helpers::mapping::agnostic_id</a></div><div class="ttdeci">const dogen::identification::entities::logical_id &amp; agnostic_id() const</div><div class="ttdoc">Technical space agnostic ID of the element we're mapping from.</div><div class="ttdef"><b>Definition:</b> mapping.cpp:48</div></div>
-<div class="ttc" id="aa10022_html_a9ec00dd0ff8af0caa7b3f4a1fa088d05"><div class="ttname"><a href="a10022.html#a9ec00dd0ff8af0caa7b3f4a1fa088d05">dogen::logical::helpers::mapping::by_technical_space</a></div><div class="ttdeci">const std::unordered_map&lt; dogen::identification::entities::technical_space, dogen::logical::helpers::mapping_value &gt; &amp; by_technical_space() const</div><div class="ttdoc">Values of the mapping, by technical space.</div><div class="ttdef"><b>Definition:</b> mapping.cpp:64</div></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aa11562_html"><div class="ttname"><a href="a11562.html">dogen::templating::helpers::validation_error</a></div><div class="ttdoc">An error occurred with the supplied KVPs.</div><div class="ttdef"><b>Definition:</b> validation_error.hpp:36</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

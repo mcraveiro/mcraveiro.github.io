@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: sequence_container_helper_factory Class Reference</title>
+<title>Dogen: logical_physical_region Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,41 +63,85 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07401.html">text</a></li><li class="navelem"><a class="el" href="a07404.html">transforms</a></li><li class="navelem"><b>cpp</b></li><li class="navelem"><b>hash</b></li><li class="navelem"><a class="el" href="a11650.html">sequence_container_helper_factory</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07605.html">text</a></li><li class="navelem"><b>entities</b></li><li class="navelem"><a class="el" href="a11650.html">logical_physical_region</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a11647.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">sequence_container_helper_factory Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">logical_physical_region Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Creates a physical representation for the helper sequence_container_helper.  
+<p>Represents a region of logical-physical space with a single logical element and its associated physical elements.  
  <a href="a11650.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a20021_source.html">sequence_container_helper_factory.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a05069_source.html">logical_physical_region.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for sequence_container_helper_factory:</div>
+Collaboration diagram for logical_physical_region:</div>
 <div class="dyncontent">
-<div class="center"><img src="a11648.png" border="0" usemap="#asequence__container__helper__factory_coll__map" alt="Collaboration graph"/></div>
-<map name="asequence__container__helper__factory_coll__map" id="asequence__container__helper__factory_coll__map">
-<area shape="rect" title="Creates a physical representation for the helper sequence_container_helper." alt="" coords="5,5,157,97"/>
+<div class="center"><img src="a11648.png" border="0" usemap="#alogical__physical__region_coll__map" alt="Collaboration graph"/></div>
+<map name="alogical__physical__region_coll__map" id="alogical__physical__region_coll__map">
+<area shape="rect" title="Represents a region of logical&#45;physical space with a single logical element and its associated physic..." alt="" coords="5,5,216,435"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a90b0bd1bc73eeb8a3d7d04e7fbb68e5e"><td class="memItemLeft" align="right" valign="top"><a id="a90b0bd1bc73eeb8a3d7d04e7fbb68e5e"></a>
-static physical::entities::helper&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a11650.html#a90b0bd1bc73eeb8a3d7d04e7fbb68e5e">make</a> ()</td></tr>
-<tr class="memdesc:a90b0bd1bc73eeb8a3d7d04e7fbb68e5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes the helper. <br /></td></tr>
-<tr class="separator:a90b0bd1bc73eeb8a3d7d04e7fbb68e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ad35c1234bf34d4edb1ff136a24b8c745"><td class="memItemLeft" align="right" valign="top"><a id="ad35c1234bf34d4edb1ff136a24b8c745"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>logical_physical_region</b> (const <a class="el" href="a11650.html">logical_physical_region</a> &amp;)=default</td></tr>
+<tr class="separator:ad35c1234bf34d4edb1ff136a24b8c745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6879320ba281a50286248945fa41eb68"><td class="memItemLeft" align="right" valign="top"><a id="a6879320ba281a50286248945fa41eb68"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>logical_physical_region</b> (<a class="el" href="a11650.html">logical_physical_region</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a6879320ba281a50286248945fa41eb68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a410989b6a4201eeee32a3895a28a8a71"><td class="memItemLeft" align="right" valign="top"><a id="a410989b6a4201eeee32a3895a28a8a71"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>logical_physical_region</b> (const boost::shared_ptr&lt; <a class="el" href="a09534.html">dogen::logical::entities::element</a> &gt; &amp;<a class="el" href="a11650.html#a12687449dd876866ece87bb4064659bb">logical_element</a>, const <a class="el" href="a10890.html">dogen::physical::entities::region</a> &amp;<a class="el" href="a11650.html#acbd27e767b6658fed904df21a86c0212">physical_region</a>)</td></tr>
+<tr class="separator:a410989b6a4201eeee32a3895a28a8a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1786c731df24b5ef31f14c568a8708a"><td class="memItemLeft" align="right" valign="top"><a id="ad1786c731df24b5ef31f14c568a8708a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="a11650.html">logical_physical_region</a> &amp;rhs) const</td></tr>
+<tr class="separator:ad1786c731df24b5ef31f14c568a8708a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24b5d573199138a8c969ddb2d71c5a15"><td class="memItemLeft" align="right" valign="top"><a id="a24b5d573199138a8c969ddb2d71c5a15"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="a11650.html">logical_physical_region</a> &amp;rhs) const</td></tr>
+<tr class="separator:a24b5d573199138a8c969ddb2d71c5a15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a76590385b5bb53e77c44458b1031b8"><td class="memItemLeft" align="right" valign="top"><a id="a7a76590385b5bb53e77c44458b1031b8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="a11650.html">logical_physical_region</a> &amp;other) noexcept</td></tr>
+<tr class="separator:a7a76590385b5bb53e77c44458b1031b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab064db5af11e769a6a2e196102dfbcb2"><td class="memItemLeft" align="right" valign="top"><a id="ab064db5af11e769a6a2e196102dfbcb2"></a>
+<a class="el" href="a11650.html">logical_physical_region</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="a11650.html">logical_physical_region</a> other)</td></tr>
+<tr class="separator:ab064db5af11e769a6a2e196102dfbcb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a12687449dd876866ece87bb4064659bb"><td class="memItemLeft" align="right" valign="top"><a id="a12687449dd876866ece87bb4064659bb"></a>
+const boost::shared_ptr&lt; <a class="el" href="a09534.html">dogen::logical::entities::element</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a11650.html#a12687449dd876866ece87bb4064659bb">logical_element</a> () const</td></tr>
+<tr class="memdesc:a12687449dd876866ece87bb4064659bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logical element that gives rise to the artefact. <br /></td></tr>
+<tr class="separator:a12687449dd876866ece87bb4064659bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c9ca54d8b612aee420a8ae1d269fbd1"><td class="memItemLeft" align="right" valign="top"><a id="a5c9ca54d8b612aee420a8ae1d269fbd1"></a>
+boost::shared_ptr&lt; <a class="el" href="a09534.html">dogen::logical::entities::element</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>logical_element</b> ()</td></tr>
+<tr class="separator:a5c9ca54d8b612aee420a8ae1d269fbd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4c7dfbfe63d079e86ee1531d006ab7f"><td class="memItemLeft" align="right" valign="top"><a id="ab4c7dfbfe63d079e86ee1531d006ab7f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>logical_element</b> (const boost::shared_ptr&lt; <a class="el" href="a09534.html">dogen::logical::entities::element</a> &gt; &amp;v)</td></tr>
+<tr class="separator:ab4c7dfbfe63d079e86ee1531d006ab7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42c5a601874ffc10567f8407e709e7d3"><td class="memItemLeft" align="right" valign="top"><a id="a42c5a601874ffc10567f8407e709e7d3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>logical_element</b> (const boost::shared_ptr&lt; <a class="el" href="a09534.html">dogen::logical::entities::element</a> &gt; &amp;&amp;v)</td></tr>
+<tr class="separator:a42c5a601874ffc10567f8407e709e7d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:acbd27e767b6658fed904df21a86c0212"><td class="memItemLeft" align="right" valign="top"><a id="acbd27e767b6658fed904df21a86c0212"></a>
+const <a class="el" href="a10890.html">dogen::physical::entities::region</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a11650.html#acbd27e767b6658fed904df21a86c0212">physical_region</a> () const</td></tr>
+<tr class="memdesc:acbd27e767b6658fed904df21a86c0212"><td class="mdescLeft">&#160;</td><td class="mdescRight">Physical artefacts that will be produced from the logical element. <br /></td></tr>
+<tr class="separator:acbd27e767b6658fed904df21a86c0212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a847385b266bbc111d6e587fe7f5714cd"><td class="memItemLeft" align="right" valign="top"><a id="a847385b266bbc111d6e587fe7f5714cd"></a>
+<a class="el" href="a10890.html">dogen::physical::entities::region</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>physical_region</b> ()</td></tr>
+<tr class="separator:a847385b266bbc111d6e587fe7f5714cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a644945971af53513bb7b779dfa3392ad"><td class="memItemLeft" align="right" valign="top"><a id="a644945971af53513bb7b779dfa3392ad"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>physical_region</b> (const <a class="el" href="a10890.html">dogen::physical::entities::region</a> &amp;v)</td></tr>
+<tr class="separator:a644945971af53513bb7b779dfa3392ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7316ffb14d3c5652525b2b16839769b"><td class="memItemLeft" align="right" valign="top"><a id="af7316ffb14d3c5652525b2b16839769b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>physical_region</b> (const <a class="el" href="a10890.html">dogen::physical::entities::region</a> &amp;&amp;v)</td></tr>
+<tr class="separator:af7316ffb14d3c5652525b2b16839769b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Creates a physical representation for the helper sequence_container_helper. </p>
-<p>Helper documentation: </p>
+<div class="textblock"><p>Represents a region of logical-physical space with a single logical element and its associated physical elements. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

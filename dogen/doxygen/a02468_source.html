@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.logical/include/dogen.logical/types/helpers/profile_adapter.hpp Source File</title>
+<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.logical/include/dogen.logical/types/helpers/indices_fwd.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,7 +68,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">profile_adapter.hpp</div>  </div>
+<div class="title">indices_fwd.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* -*- mode: c++; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-</span></div>
@@ -91,54 +91,20 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * MA 02110-1301, USA.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_LOGICAL_TYPES_HELPERS_PROFILE_ADAPTER_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_LOGICAL_TYPES_HELPERS_PROFILE_ADAPTER_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_LOGICAL_TYPES_HELPERS_INDICES_FWD_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_LOGICAL_TYPES_HELPERS_INDICES_FWD_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; (_MSC_VER &gt;= 1200)</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;dogen.variability/types/entities/profile.hpp&quot;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;dogen.variability/types/entities/feature_model.hpp&quot;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;dogen.variability/types/entities/profile_template.hpp&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;dogen.variability/types/transforms/profile_repository_inputs.hpp&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/input_model_set.hpp&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/variability/profile.hpp&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/variability/profile_template.hpp&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span>dogen::logical::helpers {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="a10058.html">   42</a></span>&#160;<span class="keyword">class </span><a class="code" href="a10058.html">profile_adapter</a> final {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">static</span> <a class="code" href="a13278.html">variability::entities::profile_template</a></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    adapt(<span class="keyword">const</span> entities::variability::profile_template&amp; pt);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">static</span> variability::entities::profile</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    adapt(<span class="keyword">const</span> <a class="code" href="a13242.html">variability::entities::feature_model</a>&amp; fm,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">const</span> <a class="code" href="a09590.html">entities::variability::profile</a>&amp; p, <span class="keyword">const</span> <span class="keywordtype">bool</span> compatibility_mode);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">static</span> std::list&lt;variability::entities::profile_template&gt;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    adapt_profile_templates(<span class="keyword">const</span> <a class="code" href="a09346.html">entities::input_model_set</a>&amp; ms);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">static</span> std::list&lt;variability::entities::profile&gt;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    adapt_profiles(<span class="keyword">const</span> <a class="code" href="a13242.html">variability::entities::feature_model</a>&amp; fm,</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keyword">const</span> <a class="code" href="a09346.html">entities::input_model_set</a>&amp; ms, <span class="keyword">const</span> <span class="keywordtype">bool</span> compatibility_mode);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">static</span> variability::transforms::profile_repository_inputs</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    adapt(<span class="keyword">const</span> <a class="code" href="a13242.html">variability::entities::feature_model</a>&amp; fm,</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keyword">const</span> <a class="code" href="a09346.html">entities::input_model_set</a>&amp; ms, <span class="keyword">const</span> <span class="keywordtype">bool</span> compatibility_mode);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aa09346_html"><div class="ttname"><a href="a09346.html">dogen::logical::entities::input_model_set</a></div><div class="ttdoc">Represents a set of related logical models used as an input to the logical model chains.</div><div class="ttdef"><b>Definition:</b> input_model_set.hpp:39</div></div>
-<div class="ttc" id="aa09590_html"><div class="ttname"><a href="a09590.html">dogen::logical::entities::variability::profile</a></div><div class="ttdoc">Represents a profile from the variability subsystem.</div><div class="ttdef"><b>Definition:</b> profile.hpp:40</div></div>
-<div class="ttc" id="aa10058_html"><div class="ttname"><a href="a10058.html">dogen::logical::helpers::profile_adapter</a></div><div class="ttdoc">Adapts all types in a model set related to variability profiles into their variability counterparts.</div><div class="ttdef"><b>Definition:</b> profile_adapter.hpp:42</div></div>
-<div class="ttc" id="aa13242_html"><div class="ttname"><a href="a13242.html">dogen::variability::entities::feature_model</a></div><div class="ttdoc">Container of all available features, organised for querying.</div><div class="ttdef"><b>Definition:</b> feature_model.hpp:39</div></div>
-<div class="ttc" id="aa13278_html"><div class="ttname"><a href="a13278.html">dogen::variability::entities::profile_template</a></div><div class="ttdoc">Holds a set of templates for configuration points.</div><div class="ttdef"><b>Definition:</b> profile_template.hpp:41</div></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>dogen::logical::helpers {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">class </span>indices;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

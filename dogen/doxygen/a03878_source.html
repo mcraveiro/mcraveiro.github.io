@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.physical/include/dogen.physical/types/entities/enablement_properties.hpp Source File</title>
+<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.physical/include/dogen.physical/hash/entities/operation_type_hash.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,12 +63,12 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_9b8549976a668c2202007f21f8dd157b.html">dogen.physical</a></li><li class="navelem"><a class="el" href="dir_26d230d797375482fb1d633cc67158a1.html">include</a></li><li class="navelem"><a class="el" href="dir_7de440d8d60ef5abea2682ae081b1def.html">dogen.physical</a></li><li class="navelem"><a class="el" href="dir_b60224f7bae46d1c8beeaae488fadddb.html">types</a></li><li class="navelem"><a class="el" href="dir_0c02b1261ac095a1723e67f7141c52cf.html">entities</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_9b8549976a668c2202007f21f8dd157b.html">dogen.physical</a></li><li class="navelem"><a class="el" href="dir_26d230d797375482fb1d633cc67158a1.html">include</a></li><li class="navelem"><a class="el" href="dir_7de440d8d60ef5abea2682ae081b1def.html">dogen.physical</a></li><li class="navelem"><a class="el" href="dir_f5ecbd471cf43b71657470d7131048bb.html">hash</a></li><li class="navelem"><a class="el" href="dir_852094589d2b5c8ca0668a67ae4c3090.html">entities</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">enablement_properties.hpp</div>  </div>
+<div class="title">operation_type_hash.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* -*- mode: c++; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-</span></div>
@@ -91,100 +91,31 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * MA 02110-1301, USA.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_PHYSICAL_TYPES_ENTITIES_ENABLEMENT_PROPERTIES_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_PHYSICAL_TYPES_ENTITIES_ENABLEMENT_PROPERTIES_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_PHYSICAL_HASH_ENTITIES_OPERATION_TYPE_HASH_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_PHYSICAL_HASH_ENTITIES_OPERATION_TYPE_HASH_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; (_MSC_VER &gt;= 1200)</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;boost/optional.hpp&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;functional&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;dogen.physical/types/entities/operation_type.hpp&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07336.html">dogen::physical::entities</a> {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span>std {</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="a10618.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="a10618.html">enablement_properties</a> final {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="a10618.html">enablement_properties</a>(<span class="keyword">const</span> <a class="code" href="a10618.html">enablement_properties</a>&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    ~<a class="code" href="a10618.html">enablement_properties</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">struct </span>hash&lt;<a class="code" href="a07272.html">dogen</a>::physical::entities::operation_type&gt; {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">size_t</span> operator()(<span class="keyword">const</span> <a class="code" href="a07540.html#a8782401f7ee63b51a837bd63a695f58b">dogen::physical::entities::operation_type</a>&amp; v)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">return</span> std::hash&lt;unsigned int&gt;()(<span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(v));</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="a10618.html">enablement_properties</a>();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="a10618.html">enablement_properties</a>(<a class="code" href="a10618.html">enablement_properties</a>&amp;&amp; rhs);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="a10618.html">enablement_properties</a>(</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="a10618.html#af5a8385102f8f8dd6c5957eac08b04c2">enabled</a>,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="a10618.html#ad1d0db4f8bcc2417e903fb0176c78ad1">overwrite</a>,</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">const</span> boost::optional&lt;bool&gt;&amp; <a class="code" href="a10618.html#afe381d04dffae82b33231d7f097ebcd1">facet_enabled</a>,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keyword">const</span> boost::optional&lt;bool&gt;&amp; <a class="code" href="a10618.html#a91b08b8c868fd239419e46db6bce90d2">archetype_enabled</a>,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">const</span> boost::optional&lt;bool&gt;&amp; <a class="code" href="a10618.html#aa59d81343570fd00782109d87cf5da09">facet_overwrite</a>,</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">const</span> boost::optional&lt;bool&gt;&amp; <a class="code" href="a10618.html#a50c22f98d2384373f2be9f392d2aa58d">archetype_overwrite</a>);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a10618.html#af5a8385102f8f8dd6c5957eac08b04c2">enabled</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a10618.html#af5a8385102f8f8dd6c5957eac08b04c2">enabled</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> v);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a10618.html#ad1d0db4f8bcc2417e903fb0176c78ad1">overwrite</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a10618.html#ad1d0db4f8bcc2417e903fb0176c78ad1">overwrite</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> v);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">const</span> boost::optional&lt;bool&gt;&amp; <a class="code" href="a10618.html#afe381d04dffae82b33231d7f097ebcd1">facet_enabled</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    boost::optional&lt;bool&gt;&amp; <a class="code" href="a10618.html#afe381d04dffae82b33231d7f097ebcd1">facet_enabled</a>();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a10618.html#afe381d04dffae82b33231d7f097ebcd1">facet_enabled</a>(<span class="keyword">const</span> boost::optional&lt;bool&gt;&amp; v);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a10618.html#afe381d04dffae82b33231d7f097ebcd1">facet_enabled</a>(<span class="keyword">const</span> boost::optional&lt;bool&gt;&amp;&amp; v);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">const</span> boost::optional&lt;bool&gt;&amp; <a class="code" href="a10618.html#a91b08b8c868fd239419e46db6bce90d2">archetype_enabled</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    boost::optional&lt;bool&gt;&amp; <a class="code" href="a10618.html#a91b08b8c868fd239419e46db6bce90d2">archetype_enabled</a>();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a10618.html#a91b08b8c868fd239419e46db6bce90d2">archetype_enabled</a>(<span class="keyword">const</span> boost::optional&lt;bool&gt;&amp; v);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a10618.html#a91b08b8c868fd239419e46db6bce90d2">archetype_enabled</a>(<span class="keyword">const</span> boost::optional&lt;bool&gt;&amp;&amp; v);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keyword">const</span> boost::optional&lt;bool&gt;&amp; <a class="code" href="a10618.html#aa59d81343570fd00782109d87cf5da09">facet_overwrite</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    boost::optional&lt;bool&gt;&amp; <a class="code" href="a10618.html#aa59d81343570fd00782109d87cf5da09">facet_overwrite</a>();</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a10618.html#aa59d81343570fd00782109d87cf5da09">facet_overwrite</a>(<span class="keyword">const</span> boost::optional&lt;bool&gt;&amp; v);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a10618.html#aa59d81343570fd00782109d87cf5da09">facet_overwrite</a>(<span class="keyword">const</span> boost::optional&lt;bool&gt;&amp;&amp; v);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keyword">const</span> boost::optional&lt;bool&gt;&amp; <a class="code" href="a10618.html#a50c22f98d2384373f2be9f392d2aa58d">archetype_overwrite</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    boost::optional&lt;bool&gt;&amp; <a class="code" href="a10618.html#a50c22f98d2384373f2be9f392d2aa58d">archetype_overwrite</a>();</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a10618.html#a50c22f98d2384373f2be9f392d2aa58d">archetype_overwrite</a>(<span class="keyword">const</span> boost::optional&lt;bool&gt;&amp; v);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a10618.html#a50c22f98d2384373f2be9f392d2aa58d">archetype_overwrite</a>(<span class="keyword">const</span> boost::optional&lt;bool&gt;&amp;&amp; v);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="a10618.html">enablement_properties</a>&amp; rhs) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="a10618.html">enablement_properties</a>&amp; rhs)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">return</span> !this-&gt;operator==(rhs);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">void</span> swap(<a class="code" href="a10618.html">enablement_properties</a>&amp; other) noexcept;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <a class="code" href="a10618.html">enablement_properties</a>&amp; operator=(<a class="code" href="a10618.html">enablement_properties</a> other);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">bool</span> enabled_;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">bool</span> overwrite_;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    boost::optional&lt;bool&gt; facet_enabled_;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    boost::optional&lt;bool&gt; archetype_enabled_;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    boost::optional&lt;bool&gt; facet_overwrite_;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    boost::optional&lt;bool&gt; archetype_overwrite_;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;};</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="keyword">namespace </span>std {</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> swap(</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <a class="code" href="a10618.html">dogen::physical::entities::enablement_properties</a>&amp; lhs,</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <a class="code" href="a10618.html">dogen::physical::entities::enablement_properties</a>&amp; rhs) {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    lhs.swap(rhs);</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;}</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;}</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aa07336_html"><div class="ttname"><a href="a07336.html">dogen::physical::entities</a></div><div class="ttdoc">Defines the MASD physical space.</div><div class="ttdef"><b>Definition:</b> archetype_io.hpp:31</div></div>
-<div class="ttc" id="aa10618_html"><div class="ttname"><a href="a10618.html">dogen::physical::entities::enablement_properties</a></div><div class="ttdoc">Stores the properties related to the enablement.</div><div class="ttdef"><b>Definition:</b> enablement_properties.hpp:36</div></div>
-<div class="ttc" id="aa10618_html_a50c22f98d2384373f2be9f392d2aa58d"><div class="ttname"><a href="a10618.html#a50c22f98d2384373f2be9f392d2aa58d">dogen::physical::entities::enablement_properties::archetype_overwrite</a></div><div class="ttdeci">const boost::optional&lt; bool &gt; &amp; archetype_overwrite() const</div><div class="ttdoc">If supplied and true, the archetype will have overwrite on.</div><div class="ttdef"><b>Definition:</b> enablement_properties.cpp:140</div></div>
-<div class="ttc" id="aa10618_html_a91b08b8c868fd239419e46db6bce90d2"><div class="ttname"><a href="a10618.html#a91b08b8c868fd239419e46db6bce90d2">dogen::physical::entities::enablement_properties::archetype_enabled</a></div><div class="ttdeci">const boost::optional&lt; bool &gt; &amp; archetype_enabled() const</div><div class="ttdoc">If supplied and true, the archetype is enabled.</div><div class="ttdef"><b>Definition:</b> enablement_properties.cpp:108</div></div>
-<div class="ttc" id="aa10618_html_aa59d81343570fd00782109d87cf5da09"><div class="ttname"><a href="a10618.html#aa59d81343570fd00782109d87cf5da09">dogen::physical::entities::enablement_properties::facet_overwrite</a></div><div class="ttdeci">const boost::optional&lt; bool &gt; &amp; facet_overwrite() const</div><div class="ttdoc">If supplied and true, the facet will have overwrite on.</div><div class="ttdef"><b>Definition:</b> enablement_properties.cpp:124</div></div>
-<div class="ttc" id="aa10618_html_ad1d0db4f8bcc2417e903fb0176c78ad1"><div class="ttname"><a href="a10618.html#ad1d0db4f8bcc2417e903fb0176c78ad1">dogen::physical::entities::enablement_properties::overwrite</a></div><div class="ttdeci">bool overwrite() const</div><div class="ttdoc">If true, the artefact will be expressed to the filesystem if there are changes.</div><div class="ttdef"><b>Definition:</b> enablement_properties.cpp:84</div></div>
-<div class="ttc" id="aa10618_html_af5a8385102f8f8dd6c5957eac08b04c2"><div class="ttname"><a href="a10618.html#af5a8385102f8f8dd6c5957eac08b04c2">dogen::physical::entities::enablement_properties::enabled</a></div><div class="ttdeci">bool enabled() const</div><div class="ttdoc">If true, the artefact is enabled and its content will be computed.</div><div class="ttdef"><b>Definition:</b> enablement_properties.cpp:76</div></div>
-<div class="ttc" id="aa10618_html_afe381d04dffae82b33231d7f097ebcd1"><div class="ttname"><a href="a10618.html#afe381d04dffae82b33231d7f097ebcd1">dogen::physical::entities::enablement_properties::facet_enabled</a></div><div class="ttdeci">const boost::optional&lt; bool &gt; &amp; facet_enabled() const</div><div class="ttdoc">If supplied and true, the facet is enabled.</div><div class="ttdef"><b>Definition:</b> enablement_properties.cpp:92</div></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aa07272_html"><div class="ttname"><a href="a07272.html">dogen</a></div><div class="ttdoc">Provides the top-level API for the dogen product.</div><div class="ttdef"><b>Definition:</b> configuration_io.hpp:31</div></div>
+<div class="ttc" id="aa07540_html_a8782401f7ee63b51a837bd63a695f58b"><div class="ttname"><a href="a07540.html#a8782401f7ee63b51a837bd63a695f58b">dogen::physical::entities::operation_type</a></div><div class="ttdeci">operation_type</div><div class="ttdoc">Operation to perform to a given artefact.</div><div class="ttdef"><b>Definition:</b> operation_type.hpp:33</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

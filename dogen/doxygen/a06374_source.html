@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.utility/include/dogen.utility/types/log/lifecycle_manager.hpp Source File</title>
+<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.tracing/include/dogen.tracing/types/metrics_fwd.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,12 +63,12 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_e144ee88741e14a18d4de393fc52b9b5.html">dogen.utility</a></li><li class="navelem"><a class="el" href="dir_14e0264bab8358c2110affe619f144a8.html">include</a></li><li class="navelem"><a class="el" href="dir_014843984735c1b216b3bc5f929b0466.html">dogen.utility</a></li><li class="navelem"><a class="el" href="dir_81f1fe2e028ed84ba454c4b825bbb494.html">types</a></li><li class="navelem"><a class="el" href="dir_4924ce1cd269524d5a57a9c92ced48b8.html">log</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_19fe7aeb709681508b1c522245461673.html">dogen.tracing</a></li><li class="navelem"><a class="el" href="dir_339146f59ee42719298c0dd750387a28.html">include</a></li><li class="navelem"><a class="el" href="dir_84565306132d708ebab1c014d5450bdf.html">dogen.tracing</a></li><li class="navelem"><a class="el" href="dir_7ba823fdbdc4405e4cba184cf6bae5b6.html">types</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">lifecycle_manager.hpp</div>  </div>
+<div class="title">metrics_fwd.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* -*- mode: c++; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-</span></div>
@@ -91,49 +91,21 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * MA 02110-1301, USA.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_UTILITY_LOG_LIFE_CYCLE_MANAGER_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_UTILITY_LOG_LIFE_CYCLE_MANAGER_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_TRACING_TYPES_METRICS_FWD_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_TRACING_TYPES_METRICS_FWD_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; (_MSC_VER &gt;= 1200)</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;boost/optional.hpp&gt;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;boost/shared_ptr.hpp&gt;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;boost/filesystem/path.hpp&gt;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;dogen.utility/types/log/severity_level.hpp&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;dogen.utility/types/log/logging_configuration.hpp&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span>dogen::utility::log {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="a13046.html">   42</a></span>&#160;<span class="keyword">class </span><a class="code" href="a13046.html">lifecycle_manager</a> {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="a13046.html">lifecycle_manager</a>() = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="a13046.html">lifecycle_manager</a>(<span class="keyword">const</span> <a class="code" href="a13046.html">lifecycle_manager</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    ~<a class="code" href="a13046.html">lifecycle_manager</a>() = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="a13046.html">lifecycle_manager</a>(<a class="code" href="a13046.html">lifecycle_manager</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="a13046.html">lifecycle_manager</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="a13046.html">lifecycle_manager</a>&amp;) = <span class="keyword">delete</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> create_file_backend(boost::filesystem::path path,</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">const</span> severity_level severity);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> create_console_backend(<span class="keyword">const</span> severity_level severity);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="a13046.html#a9d4141bfd33bb5d46df262b88ff4182f">initialise</a>(<span class="keyword">const</span> boost::optional&lt;logging_configuration&gt;&amp; ocfg);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="a13046.html#a7861ee1569802186a619778efc85af13">shutdown</a>();</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aa13046_html"><div class="ttname"><a href="a13046.html">dogen::utility::log::lifecycle_manager</a></div><div class="ttdoc">Manages the starting and stopping of logging for an application.</div><div class="ttdef"><b>Definition:</b> lifecycle_manager.hpp:42</div></div>
-<div class="ttc" id="aa13046_html_a7861ee1569802186a619778efc85af13"><div class="ttname"><a href="a13046.html#a7861ee1569802186a619778efc85af13">dogen::utility::log::lifecycle_manager::shutdown</a></div><div class="ttdeci">static void shutdown()</div><div class="ttdoc">Shutdown logging for the entire application.</div><div class="ttdef"><b>Definition:</b> lifecycle_manager.cpp:141</div></div>
-<div class="ttc" id="aa13046_html_a9d4141bfd33bb5d46df262b88ff4182f"><div class="ttname"><a href="a13046.html#a9d4141bfd33bb5d46df262b88ff4182f">dogen::utility::log::lifecycle_manager::initialise</a></div><div class="ttdeci">static void initialise(const boost::optional&lt; logging_configuration &gt; &amp;ocfg)</div><div class="ttdoc">Initialise logging for the entire application.</div><div class="ttdef"><b>Definition:</b> lifecycle_manager.cpp:102</div></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07780.html">dogen::tracing</a> {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">class </span>metrics;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aa07780_html"><div class="ttname"><a href="a07780.html">dogen::tracing</a></div><div class="ttdoc">Houses classes common to all transformations.</div><div class="ttdef"><b>Definition:</b> backend_io.hpp:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

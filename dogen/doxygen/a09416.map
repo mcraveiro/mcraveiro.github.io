@@ -1,4 +1,3 @@
-<map id="archetype" name="archetype">
-<area shape="rect" id="node1" title="Represents an archetype within a facet." alt="" coords="5,1656,216,3112"/>
-<area shape="rect" id="node2" href="$a09330.html" title="Represents a generic logical construct." alt="" coords="25,5,197,1608"/>
+<map id="physical_meta_id_builder" name="physical_meta_id_builder">
+<area shape="rect" id="node1" title="Builds qualified meta&#45;names according to the geometry of physical space." alt="" coords="5,5,193,361"/>
 </map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: context_factory Class Reference</title>
+<title>Dogen: stereotypes_transform Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07285.html">orchestration</a></li><li class="navelem"><a class="el" href="a07286.html">transforms</a></li><li class="navelem"><a class="el" href="a10426.html">context_factory</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07363.html">logical</a></li><li class="navelem"><a class="el" href="a07376.html">transforms</a></li><li class="navelem"><a class="el" href="a10426.html">stereotypes_transform</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -71,44 +71,32 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a10423.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">context_factory Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">stereotypes_transform Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Factory that creates the transformation context.  
+<p>Locates objects with stereotypes and performs the required expansion.  
  <a href="a10426.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a03431_source.html">context_factory.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a02630_source.html">stereotypes_transform.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for context_factory:</div>
+Collaboration diagram for stereotypes_transform:</div>
 <div class="dyncontent">
-<div class="center"><img src="a10424.png" border="0" usemap="#acontext__factory_coll__map" alt="Collaboration graph"/></div>
-<map name="acontext__factory_coll__map" id="acontext__factory_coll__map">
-<area shape="rect" title="Factory that creates the transformation context." alt="" coords="5,5,217,127"/>
+<div class="center"><img src="a10424.png" border="0" usemap="#astereotypes__transform_coll__map" alt="Collaboration graph"/></div>
+<map name="astereotypes__transform_coll__map" id="astereotypes__transform_coll__map">
+<area shape="rect" title="Locates objects with stereotypes and performs the required expansion." alt="" coords="5,5,176,83"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aa1de319215bd0afc636b8cf17e078af8"><td class="memItemLeft" align="right" valign="top"><a id="aa1de319215bd0afc636b8cf17e078af8"></a>
-static <a class="el" href="a10910.html">physical::transforms::minimal_context</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10426.html#aa1de319215bd0afc636b8cf17e078af8">make_minimal_context</a> (boost::shared_ptr&lt; <a class="el" href="a12954.html">tracing::tracer</a> &gt; tracer)</td></tr>
-<tr class="memdesc:aa1de319215bd0afc636b8cf17e078af8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the physical minimal context for bootstrapping. <br /></td></tr>
-<tr class="separator:aa1de319215bd0afc636b8cf17e078af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a160afa59ec93bc405504a3703be3c77b"><td class="memItemLeft" align="right" valign="top"><a id="a160afa59ec93bc405504a3703be3c77b"></a>
-static <a class="el" href="a13378.html">variability::transforms::context</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10426.html#a160afa59ec93bc405504a3703be3c77b">make_variability_context</a> (const configuration &amp;cfg, boost::shared_ptr&lt; <a class="el" href="a12954.html">tracing::tracer</a> &gt; tracer, const std::unordered_map&lt; std::string, std::vector&lt; std::string &gt;&gt; &amp;template_instantiation_domains)</td></tr>
-<tr class="memdesc:a160afa59ec93bc405504a3703be3c77b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the physical minimal context for bootstrapping. <br /></td></tr>
-<tr class="separator:a160afa59ec93bc405504a3703be3c77b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7310fc11858ac45b1dee8b9399b0e410"><td class="memItemLeft" align="right" valign="top"><a id="a7310fc11858ac45b1dee8b9399b0e410"></a>
-static codec::transforms::context&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10426.html#a7310fc11858ac45b1dee8b9399b0e410">make_codec_context</a> (const std::string &amp;activity, boost::shared_ptr&lt; <a class="el" href="a12954.html">tracing::tracer</a> &gt; tracer, boost::shared_ptr&lt; <a class="el" href="a10642.html">physical::entities::meta_model</a> &gt; pmm)</td></tr>
-<tr class="memdesc:a7310fc11858ac45b1dee8b9399b0e410"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a transform context required by the codec chain. <br /></td></tr>
-<tr class="separator:a7310fc11858ac45b1dee8b9399b0e410"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfc78b11d99252a2c771795ac752541c"><td class="memItemLeft" align="right" valign="top"><a id="acfc78b11d99252a2c771795ac752541c"></a>
-static context&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10426.html#acfc78b11d99252a2c771795ac752541c">make_context</a> (const configuration &amp;cfg, const std::string &amp;activity, const std::vector&lt; boost::filesystem::path &gt; &amp;reference_directories, const boost::filesystem::path &amp;output_directory, const <a class="el" href="a13378.html">variability::transforms::context</a> &amp;vctx, boost::shared_ptr&lt; <a class="el" href="a13242.html">variability::entities::feature_model</a> &gt; fm, boost::shared_ptr&lt; <a class="el" href="a10642.html">physical::entities::meta_model</a> &gt; pmm)</td></tr>
-<tr class="memdesc:acfc78b11d99252a2c771795ac752541c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the top-level context required by all transform chains. <br /></td></tr>
-<tr class="separator:acfc78b11d99252a2c771795ac752541c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeae2c499c48023fbeb1a6ed6059e5844"><td class="memItemLeft" align="right" valign="top"><a id="aeae2c499c48023fbeb1a6ed6059e5844"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10426.html#aeae2c499c48023fbeb1a6ed6059e5844">apply</a> (const <a class="el" href="a10322.html">context</a> &amp;ctx, <a class="el" href="a09570.html">entities::model</a> &amp;m)</td></tr>
+<tr class="memdesc:aeae2c499c48023fbeb1a6ed6059e5844"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expands all stereotypes used in model. <br /></td></tr>
+<tr class="separator:aeae2c499c48023fbeb1a6ed6059e5844"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Factory that creates the transformation context. </p>
+<div class="textblock"><p>Locates objects with stereotypes and performs the required expansion. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

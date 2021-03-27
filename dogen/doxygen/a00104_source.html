@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen/include/dogen/types/model_processing_configuration.hpp Source File</title>
+<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen/include/dogen/types/mock_configuration_factory.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,7 +68,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">model_processing_configuration.hpp</div>  </div>
+<div class="title">mock_configuration_factory.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* -*- mode: c++; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-</span></div>
@@ -91,86 +91,39 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * MA 02110-1301, USA.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_TYPES_MODEL_PROCESSING_CONFIGURATION_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_TYPES_MODEL_PROCESSING_CONFIGURATION_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_TYPES_MOCK_CONFIGURATION_FACTORY_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_TYPES_MOCK_CONFIGURATION_FACTORY_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; (_MSC_VER &gt;= 1200)</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;boost/date_time/posix_time/posix_time_types.hpp&gt;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07068.html">dogen</a> {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="a08526.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="a08526.html">model_processing_configuration</a> final {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="a08526.html">model_processing_configuration</a>(<span class="keyword">const</span> <a class="code" href="a08526.html">model_processing_configuration</a>&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="a08526.html">model_processing_configuration</a>(<a class="code" href="a08526.html">model_processing_configuration</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    ~<a class="code" href="a08526.html">model_processing_configuration</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="a08526.html">model_processing_configuration</a>();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="a08526.html">model_processing_configuration</a>(</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="a08526.html#a6740183209d4f985d464c05118196260">compatibility_mode_enabled</a>,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="a08526.html#a969e6a28a3ac51c249148f197bd301b0">dry_run_mode_enabled</a>,</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">const</span> std::vector&lt;std::string&gt;&amp; <a class="code" href="a08526.html#aa8996f6979f624eaa99b649a51485f65">variability_overrides</a>,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keyword">const</span> boost::posix_time::ptime&amp; <a class="code" href="a08526.html#a65744331a4e7a781f866573a236b007e">activity_timestamp</a>);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;boost/filesystem/path.hpp&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;dogen/types/configuration.hpp&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07272.html">dogen</a> {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="a08726.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="a08726.html">mock_configuration_factory</a> final {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="a08726.html">mock_configuration_factory</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> enable_tracing,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">bool</span> enable_reporting, <span class="keyword">const</span> <span class="keywordtype">bool</span> enable_diffing);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    configuration make(<span class="keyword">const</span> boost::filesystem::path&amp; target,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">const</span> std::string&amp; activity) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> enable_tracing_;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> enable_reporting_;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">bool</span> enable_diffing_;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a08526.html#a6740183209d4f985d464c05118196260">compatibility_mode_enabled</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a08526.html#a6740183209d4f985d464c05118196260">compatibility_mode_enabled</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> v);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a08526.html#a969e6a28a3ac51c249148f197bd301b0">dry_run_mode_enabled</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a08526.html#a969e6a28a3ac51c249148f197bd301b0">dry_run_mode_enabled</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> v);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">const</span> std::vector&lt;std::string&gt;&amp; <a class="code" href="a08526.html#aa8996f6979f624eaa99b649a51485f65">variability_overrides</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    std::vector&lt;std::string&gt;&amp; <a class="code" href="a08526.html#aa8996f6979f624eaa99b649a51485f65">variability_overrides</a>();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a08526.html#aa8996f6979f624eaa99b649a51485f65">variability_overrides</a>(<span class="keyword">const</span> std::vector&lt;std::string&gt;&amp; v);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a08526.html#aa8996f6979f624eaa99b649a51485f65">variability_overrides</a>(<span class="keyword">const</span> std::vector&lt;std::string&gt;&amp;&amp; v);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">const</span> boost::posix_time::ptime&amp; <a class="code" href="a08526.html#a65744331a4e7a781f866573a236b007e">activity_timestamp</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    boost::posix_time::ptime&amp; <a class="code" href="a08526.html#a65744331a4e7a781f866573a236b007e">activity_timestamp</a>();</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a08526.html#a65744331a4e7a781f866573a236b007e">activity_timestamp</a>(<span class="keyword">const</span> boost::posix_time::ptime&amp; v);</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a08526.html#a65744331a4e7a781f866573a236b007e">activity_timestamp</a>(<span class="keyword">const</span> boost::posix_time::ptime&amp;&amp; v);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="a08526.html">model_processing_configuration</a>&amp; rhs) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="a08526.html">model_processing_configuration</a>&amp; rhs)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordflow">return</span> !this-&gt;operator==(rhs);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    }</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> swap(<a class="code" href="a08526.html">model_processing_configuration</a>&amp; other) noexcept;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <a class="code" href="a08526.html">model_processing_configuration</a>&amp; operator=(<a class="code" href="a08526.html">model_processing_configuration</a> other);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">bool</span> compatibility_mode_enabled_;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">bool</span> dry_run_mode_enabled_;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    std::vector&lt;std::string&gt; variability_overrides_;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    boost::posix_time::ptime activity_timestamp_;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;};</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="keyword">namespace </span>std {</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> swap(</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <a class="code" href="a08526.html">dogen::model_processing_configuration</a>&amp; lhs,</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <a class="code" href="a08526.html">dogen::model_processing_configuration</a>&amp; rhs) {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    lhs.swap(rhs);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aa07068_html"><div class="ttname"><a href="a07068.html">dogen</a></div><div class="ttdoc">Provides the top-level API for the dogen product.</div><div class="ttdef"><b>Definition:</b> configuration_io.hpp:31</div></div>
-<div class="ttc" id="aa08526_html"><div class="ttname"><a href="a08526.html">dogen::model_processing_configuration</a></div><div class="ttdoc">Configuration related to the behaviour of Dogen whilst processing models.</div><div class="ttdef"><b>Definition:</b> model_processing_configuration.hpp:38</div></div>
-<div class="ttc" id="aa08526_html_a65744331a4e7a781f866573a236b007e"><div class="ttname"><a href="a08526.html#a65744331a4e7a781f866573a236b007e">dogen::model_processing_configuration::activity_timestamp</a></div><div class="ttdeci">const boost::posix_time::ptime &amp; activity_timestamp() const</div><div class="ttdoc">Timepoint at which the activity started.</div><div class="ttdef"><b>Definition:</b> model_processing_configuration.cpp:92</div></div>
-<div class="ttc" id="aa08526_html_a6740183209d4f985d464c05118196260"><div class="ttname"><a href="a08526.html#a6740183209d4f985d464c05118196260">dogen::model_processing_configuration::compatibility_mode_enabled</a></div><div class="ttdeci">bool compatibility_mode_enabled() const</div><div class="ttdoc">Try to process models even if there are errors.</div><div class="ttdef"><b>Definition:</b> model_processing_configuration.cpp:60</div></div>
-<div class="ttc" id="aa08526_html_a969e6a28a3ac51c249148f197bd301b0"><div class="ttname"><a href="a08526.html#a969e6a28a3ac51c249148f197bd301b0">dogen::model_processing_configuration::dry_run_mode_enabled</a></div><div class="ttdeci">bool dry_run_mode_enabled() const</div><div class="ttdoc">If true, all transforms wil be executed but no code will be emitted.</div><div class="ttdef"><b>Definition:</b> model_processing_configuration.cpp:68</div></div>
-<div class="ttc" id="aa08526_html_aa8996f6979f624eaa99b649a51485f65"><div class="ttname"><a href="a08526.html#aa8996f6979f624eaa99b649a51485f65">dogen::model_processing_configuration::variability_overrides</a></div><div class="ttdeci">const std::vector&lt; std::string &gt; &amp; variability_overrides() const</div><div class="ttdoc">Raw set of variability overrides.</div><div class="ttdef"><b>Definition:</b> model_processing_configuration.cpp:76</div></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aa07272_html"><div class="ttname"><a href="a07272.html">dogen</a></div><div class="ttdoc">Provides the top-level API for the dogen product.</div><div class="ttdef"><b>Definition:</b> configuration_io.hpp:31</div></div>
+<div class="ttc" id="aa08726_html"><div class="ttname"><a href="a08726.html">dogen::mock_configuration_factory</a></div><div class="ttdoc">Creates a configuration suitable for use in tests.</div><div class="ttdef"><b>Definition:</b> mock_configuration_factory.hpp:37</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

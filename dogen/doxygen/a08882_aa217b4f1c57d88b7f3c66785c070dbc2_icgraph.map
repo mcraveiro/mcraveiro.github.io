@@ -1,9 +1,0 @@
-<map id="make_class" name="make_class">
-<area shape="rect" id="node1" title="Generates a new UML class." alt="" coords="237,159,336,185"/>
-<area shape="rect" id="node2" href="$a08882.html#ac74d0ba1ff142faee9b47fefc9344f04" title="Generates two UML classes and an association between the two." alt="" coords="28,5,167,32"/>
-<area shape="rect" id="node3" href="$a08882.html#aee5a2fc12d09a55ecda08384cc0c60d9" title="Generates a UML class inside a large package, itself inside a large package." alt="" coords="5,57,189,98"/>
-<area shape="rect" id="node4" href="$a08882.html#a4ba9908dbc9110a0abe8759bec396825" title="Generates a UML class inside a large package, plus the large package itself." alt="" coords="10,122,185,163"/>
-<area shape="rect" id="node5" href="$a08882.html#a6c13b6c7e0dc7447adee699e09bc43af" title="Generates objects directly connected in a cycle." alt="" coords="6,188,189,215"/>
-<area shape="rect" id="node6" href="$a08882.html#a84da742b6e05509636c340700bf0e924" title="Generates two UML classes and a generalisation between the two." alt="" coords="18,239,177,265"/>
-<area shape="rect" id="node7" href="$a08882.html#a33b75142e8df78f6065555a26a89f98a" title="Generates two UML classes and a generalisation between the two, and places all objects inside a packa..." alt="" coords="13,290,182,331"/>
-</map>

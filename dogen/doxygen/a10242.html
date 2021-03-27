@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: template_rendering_transform Class Reference</title>
+<title>Dogen: mapping_set_repository Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,77 +63,82 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07159.html">logical</a></li><li class="navelem"><a class="el" href="a07172.html">transforms</a></li><li class="navelem"><a class="el" href="a10242.html">template_rendering_transform</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07363.html">logical</a></li><li class="navelem"><b>helpers</b></li><li class="navelem"><a class="el" href="a10242.html">mapping_set_repository</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a10239.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">template_rendering_transform Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">mapping_set_repository Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Renders all templates in archetypes.  
+<p>Stores all available mapping sets.  
  <a href="a10242.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a02594_source.html">template_rendering_transform.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a02495_source.html">mapping_set_repository.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for template_rendering_transform:</div>
+Collaboration diagram for mapping_set_repository:</div>
 <div class="dyncontent">
-<div class="center"><img src="a10240.png" border="0" usemap="#atemplate__rendering__transform_coll__map" alt="Collaboration graph"/></div>
-<map name="atemplate__rendering__transform_coll__map" id="atemplate__rendering__transform_coll__map">
-<area shape="rect" title="Renders all templates in archetypes." alt="" coords="5,5,156,97"/>
+<div class="center"><img src="a10240.png" border="0" usemap="#amapping__set__repository_coll__map" alt="Collaboration graph"/></div>
+<map name="amapping__set__repository_coll__map" id="amapping__set__repository_coll__map">
+<area shape="rect" title="Stores all available mapping sets." alt="" coords="5,5,220,229"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aeae2c499c48023fbeb1a6ed6059e5844"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10242.html#aeae2c499c48023fbeb1a6ed6059e5844">apply</a> (const <a class="el" href="a10118.html">context</a> &amp;ctx, <a class="el" href="a09366.html">entities::model</a> &amp;m)</td></tr>
-<tr class="separator:aeae2c499c48023fbeb1a6ed6059e5844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a68226313c0603556beeeddaffe76fb2f"><td class="memItemLeft" align="right" valign="top"><a id="a68226313c0603556beeeddaffe76fb2f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>mapping_set_repository</b> (const <a class="el" href="a10242.html">mapping_set_repository</a> &amp;)=default</td></tr>
+<tr class="separator:a68226313c0603556beeeddaffe76fb2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e65711304e5b2fbf19dcdc94aa31322"><td class="memItemLeft" align="right" valign="top"><a id="a1e65711304e5b2fbf19dcdc94aa31322"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>mapping_set_repository</b> (<a class="el" href="a10242.html">mapping_set_repository</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a1e65711304e5b2fbf19dcdc94aa31322"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af594dbda8442a702b87d5d97e866d452"><td class="memItemLeft" align="right" valign="top"><a id="af594dbda8442a702b87d5d97e866d452"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>mapping_set_repository</b> (const <a class="el" href="a10238.html">dogen::logical::helpers::mapping_set</a> &amp;default_mapping_set, const std::unordered_map&lt; std::string, <a class="el" href="a10238.html">dogen::logical::helpers::mapping_set</a> &gt; &amp;by_name)</td></tr>
+<tr class="separator:af594dbda8442a702b87d5d97e866d452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af41db94246a47975d18d877203037b7e"><td class="memItemLeft" align="right" valign="top"><a id="af41db94246a47975d18d877203037b7e"></a>
+const <a class="el" href="a10238.html">dogen::logical::helpers::mapping_set</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>default_mapping_set</b> () const</td></tr>
+<tr class="separator:af41db94246a47975d18d877203037b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80b9f884836197b5f1b2e428659ca844"><td class="memItemLeft" align="right" valign="top"><a id="a80b9f884836197b5f1b2e428659ca844"></a>
+<a class="el" href="a10238.html">dogen::logical::helpers::mapping_set</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>default_mapping_set</b> ()</td></tr>
+<tr class="separator:a80b9f884836197b5f1b2e428659ca844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d25417dd41e3deed5fd5e03e5d8a3e8"><td class="memItemLeft" align="right" valign="top"><a id="a7d25417dd41e3deed5fd5e03e5d8a3e8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>default_mapping_set</b> (const <a class="el" href="a10238.html">dogen::logical::helpers::mapping_set</a> &amp;v)</td></tr>
+<tr class="separator:a7d25417dd41e3deed5fd5e03e5d8a3e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16295b8f91da02964088f6ccec91e35a"><td class="memItemLeft" align="right" valign="top"><a id="a16295b8f91da02964088f6ccec91e35a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>default_mapping_set</b> (const <a class="el" href="a10238.html">dogen::logical::helpers::mapping_set</a> &amp;&amp;v)</td></tr>
+<tr class="separator:a16295b8f91da02964088f6ccec91e35a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a503663e146093e423d748ba96428bc1b"><td class="memItemLeft" align="right" valign="top"><a id="a503663e146093e423d748ba96428bc1b"></a>
+const std::unordered_map&lt; std::string, <a class="el" href="a10238.html">dogen::logical::helpers::mapping_set</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>by_name</b> () const</td></tr>
+<tr class="separator:a503663e146093e423d748ba96428bc1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b88d9ac53f82bd35addcf49e754771b"><td class="memItemLeft" align="right" valign="top"><a id="a6b88d9ac53f82bd35addcf49e754771b"></a>
+std::unordered_map&lt; std::string, <a class="el" href="a10238.html">dogen::logical::helpers::mapping_set</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>by_name</b> ()</td></tr>
+<tr class="separator:a6b88d9ac53f82bd35addcf49e754771b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa135959a7bccb5e80f9975618148e999"><td class="memItemLeft" align="right" valign="top"><a id="aa135959a7bccb5e80f9975618148e999"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>by_name</b> (const std::unordered_map&lt; std::string, <a class="el" href="a10238.html">dogen::logical::helpers::mapping_set</a> &gt; &amp;v)</td></tr>
+<tr class="separator:aa135959a7bccb5e80f9975618148e999"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90bbc752279e4678836a40aec610c17c"><td class="memItemLeft" align="right" valign="top"><a id="a90bbc752279e4678836a40aec610c17c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>by_name</b> (const std::unordered_map&lt; std::string, <a class="el" href="a10238.html">dogen::logical::helpers::mapping_set</a> &gt; &amp;&amp;v)</td></tr>
+<tr class="separator:a90bbc752279e4678836a40aec610c17c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19eb6c36a24143b961af9862be878c77"><td class="memItemLeft" align="right" valign="top"><a id="a19eb6c36a24143b961af9862be878c77"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="a10242.html">mapping_set_repository</a> &amp;rhs) const</td></tr>
+<tr class="separator:a19eb6c36a24143b961af9862be878c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee96cfbd87c5069d6fae40091030dd73"><td class="memItemLeft" align="right" valign="top"><a id="aee96cfbd87c5069d6fae40091030dd73"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="a10242.html">mapping_set_repository</a> &amp;rhs) const</td></tr>
+<tr class="separator:aee96cfbd87c5069d6fae40091030dd73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af11231bf75c7ef12cddb4751e987cf09"><td class="memItemLeft" align="right" valign="top"><a id="af11231bf75c7ef12cddb4751e987cf09"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="a10242.html">mapping_set_repository</a> &amp;other) noexcept</td></tr>
+<tr class="separator:af11231bf75c7ef12cddb4751e987cf09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc831f12a3a1d197dfee884ea6086c1b"><td class="memItemLeft" align="right" valign="top"><a id="adc831f12a3a1d197dfee884ea6086c1b"></a>
+<a class="el" href="a10242.html">mapping_set_repository</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="a10242.html">mapping_set_repository</a> other)</td></tr>
+<tr class="separator:adc831f12a3a1d197dfee884ea6086c1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Renders all templates in archetypes. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aeae2c499c48023fbeb1a6ed6059e5844"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeae2c499c48023fbeb1a6ed6059e5844">&#9670;&nbsp;</a></span>apply()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void apply </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a10118.html">context</a> &amp;&#160;</td>
-          <td class="paramname"><em>ctx</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a09366.html">entities::model</a> &amp;&#160;</td>
-          <td class="paramname"><em>m</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Execute the transform against the model. </p>
-
-</div>
-</div>
-</div><!-- contents -->
+<div class="textblock"><p>Stores all available mapping sets. </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1

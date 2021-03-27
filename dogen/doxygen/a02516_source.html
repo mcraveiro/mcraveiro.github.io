@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.logical/include/dogen.logical/types/transforms/enumerations_transform.hpp Source File</title>
+<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.logical/include/dogen.logical/types/helpers/profile_adapter.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,12 +63,12 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_dcdb1ebffe0d4f9f28ec03b64a5aaaa2.html">dogen.logical</a></li><li class="navelem"><a class="el" href="dir_f21da09acadf64620e837bfe8ac71645.html">include</a></li><li class="navelem"><a class="el" href="dir_722eaea4b5f65416e2f35f6e2317bf5d.html">dogen.logical</a></li><li class="navelem"><a class="el" href="dir_0b9aa5753d72f7bd09d44f32cf47d3d9.html">types</a></li><li class="navelem"><a class="el" href="dir_0f2586cfdc272837f4f129d954ea8e37.html">transforms</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_dcdb1ebffe0d4f9f28ec03b64a5aaaa2.html">dogen.logical</a></li><li class="navelem"><a class="el" href="dir_f21da09acadf64620e837bfe8ac71645.html">include</a></li><li class="navelem"><a class="el" href="dir_722eaea4b5f65416e2f35f6e2317bf5d.html">dogen.logical</a></li><li class="navelem"><a class="el" href="dir_0b9aa5753d72f7bd09d44f32cf47d3d9.html">types</a></li><li class="navelem"><a class="el" href="dir_c4d8af3a4a98cfe6b94a95946f3dea91.html">helpers</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">enumerations_transform.hpp</div>  </div>
+<div class="title">profile_adapter.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* -*- mode: c++; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-</span></div>
@@ -91,46 +91,54 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * MA 02110-1301, USA.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_LOGICAL_TYPES_TRANSFORMS_ENUMERATIONS_TRANSFORM_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_LOGICAL_TYPES_TRANSFORMS_ENUMERATIONS_TRANSFORM_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_LOGICAL_TYPES_HELPERS_PROFILE_ADAPTER_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_LOGICAL_TYPES_HELPERS_PROFILE_ADAPTER_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; (_MSC_VER &gt;= 1200)</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;iosfwd&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;dogen.identification/types/entities/technical_space.hpp&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/structural/enumeration.hpp&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/model.hpp&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/transforms/context_fwd.hpp&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07172.html">dogen::logical::transforms</a> {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="a10130.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="a10130.html">enumerations_transform</a> final {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">static</span> <a class="code" href="a09070.html">identification::entities::logical_name</a> obtain_enumeration_default_underlying_element_name(</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">const</span> <a class="code" href="a09366.html">entities::model</a>&amp; m);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">static</span> std::string obtain_invalid_enumerator_simple_name(</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">const</span> <a class="code" href="a07129.html#aca560c08bf06920a8d261d33c8a1474a">identification::entities::technical_space</a> ts);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">static</span> <a class="code" href="a09502.html">entities::structural::enumerator</a></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    make_invalid_enumerator(<span class="keyword">const</span> <a class="code" href="a09070.html">identification::entities::logical_name</a>&amp; n,</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">const</span> <a class="code" href="a07129.html#aca560c08bf06920a8d261d33c8a1474a">identification::entities::technical_space</a> ts);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> apply(<span class="keyword">const</span> <a class="code" href="a10118.html">context</a>&amp; ctx, <a class="code" href="a09366.html">entities::model</a>&amp; m);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aa07129_html_aca560c08bf06920a8d261d33c8a1474a"><div class="ttname"><a href="a07129.html#aca560c08bf06920a8d261d33c8a1474a">dogen::identification::entities::technical_space</a></div><div class="ttdeci">technical_space</div><div class="ttdoc">Models need to declare upfront the technical space they will target.</div><div class="ttdef"><b>Definition:</b> technical_space.hpp:33</div></div>
-<div class="ttc" id="aa07172_html"><div class="ttname"><a href="a07172.html">dogen::logical::transforms</a></div><div class="ttdoc">Houses all of the transformations supported by logical.</div><div class="ttdef"><b>Definition:</b> context_io.hpp:31</div></div>
-<div class="ttc" id="aa09070_html"><div class="ttname"><a href="a09070.html">dogen::identification::entities::logical_name</a></div><div class="ttdoc">Name of an element in logical space.</div><div class="ttdef"><b>Definition:</b> logical_name.hpp:50</div></div>
-<div class="ttc" id="aa09366_html"><div class="ttname"><a href="a09366.html">dogen::logical::entities::model</a></div><div class="ttdoc">Intermediate representation of a masd model.</div><div class="ttdef"><b>Definition:</b> model.hpp:67</div></div>
-<div class="ttc" id="aa09502_html"><div class="ttname"><a href="a09502.html">dogen::logical::entities::structural::enumerator</a></div><div class="ttdoc">One of a set of valid values that an enumeration can assume.</div><div class="ttdef"><b>Definition:</b> enumerator.hpp:42</div></div>
-<div class="ttc" id="aa10118_html"><div class="ttname"><a href="a10118.html">dogen::logical::transforms::context</a></div><div class="ttdoc">Context for all logical transformations.</div><div class="ttdef"><b>Definition:</b> context.hpp:47</div></div>
-<div class="ttc" id="aa10130_html"><div class="ttname"><a href="a10130.html">dogen::logical::transforms::enumerations_transform</a></div><div class="ttdoc">Expands all enumerations in model.</div><div class="ttdef"><b>Definition:</b> enumerations_transform.hpp:40</div></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;dogen.variability/types/entities/profile.hpp&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;dogen.variability/types/entities/feature_model.hpp&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;dogen.variability/types/entities/profile_template.hpp&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;dogen.variability/types/transforms/profile_repository_inputs.hpp&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/input_model_set.hpp&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/variability/profile.hpp&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/variability/profile_template.hpp&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span>dogen::logical::helpers {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="a10262.html">   42</a></span>&#160;<span class="keyword">class </span><a class="code" href="a10262.html">profile_adapter</a> final {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">static</span> <a class="code" href="a13482.html">variability::entities::profile_template</a></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    adapt(<span class="keyword">const</span> entities::variability::profile_template&amp; pt);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">static</span> variability::entities::profile</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    adapt(<span class="keyword">const</span> <a class="code" href="a13446.html">variability::entities::feature_model</a>&amp; fm,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">const</span> <a class="code" href="a09794.html">entities::variability::profile</a>&amp; p, <span class="keyword">const</span> <span class="keywordtype">bool</span> compatibility_mode);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">static</span> std::list&lt;variability::entities::profile_template&gt;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    adapt_profile_templates(<span class="keyword">const</span> <a class="code" href="a09550.html">entities::input_model_set</a>&amp; ms);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">static</span> std::list&lt;variability::entities::profile&gt;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    adapt_profiles(<span class="keyword">const</span> <a class="code" href="a13446.html">variability::entities::feature_model</a>&amp; fm,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keyword">const</span> <a class="code" href="a09550.html">entities::input_model_set</a>&amp; ms, <span class="keyword">const</span> <span class="keywordtype">bool</span> compatibility_mode);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">static</span> variability::transforms::profile_repository_inputs</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    adapt(<span class="keyword">const</span> <a class="code" href="a13446.html">variability::entities::feature_model</a>&amp; fm,</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keyword">const</span> <a class="code" href="a09550.html">entities::input_model_set</a>&amp; ms, <span class="keyword">const</span> <span class="keywordtype">bool</span> compatibility_mode);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aa09550_html"><div class="ttname"><a href="a09550.html">dogen::logical::entities::input_model_set</a></div><div class="ttdoc">Represents a set of related logical models used as an input to the logical model chains.</div><div class="ttdef"><b>Definition:</b> input_model_set.hpp:39</div></div>
+<div class="ttc" id="aa09794_html"><div class="ttname"><a href="a09794.html">dogen::logical::entities::variability::profile</a></div><div class="ttdoc">Represents a profile from the variability subsystem.</div><div class="ttdef"><b>Definition:</b> profile.hpp:40</div></div>
+<div class="ttc" id="aa10262_html"><div class="ttname"><a href="a10262.html">dogen::logical::helpers::profile_adapter</a></div><div class="ttdoc">Adapts all types in a model set related to variability profiles into their variability counterparts.</div><div class="ttdef"><b>Definition:</b> profile_adapter.hpp:42</div></div>
+<div class="ttc" id="aa13446_html"><div class="ttname"><a href="a13446.html">dogen::variability::entities::feature_model</a></div><div class="ttdoc">Container of all available features, organised for querying.</div><div class="ttdef"><b>Definition:</b> feature_model.hpp:39</div></div>
+<div class="ttc" id="aa13482_html"><div class="ttname"><a href="a13482.html">dogen::variability::entities::profile_template</a></div><div class="ttdoc">Holds a set of templates for configuration points.</div><div class="ttdef"><b>Definition:</b> profile_template.hpp:41</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

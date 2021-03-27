@@ -1,3 +1,3 @@
-<map id="qualified_representations_builder" name="qualified_representations_builder">
-<area shape="rect" id="node1" title="Builds a fully qualified representation of a qualifiable model element such as a name or a name tree." alt="" coords="5,5,208,200"/>
+<map id="codec_id" name="codec_id">
+<area shape="rect" id="node1" title="ID of the elment as sourced from the codec model, if any." alt="" coords="5,5,176,332"/>
 </map>

@@ -1,3 +1,3 @@
-<map id="codec_model_set_to_logical_input_model_set_chain" name="codec_model_set_to_logical_input_model_set_chain">
-<area shape="rect" id="node1" title="Converts an codec model set into a logical model set." alt="" coords="5,5,165,112"/>
+<map id="post_assembly_chain" name="post_assembly_chain">
+<area shape="rect" id="node1" title="Set of transforms to be performed after the merged model has been assembled." alt="" coords="5,5,168,83"/>
 </map>

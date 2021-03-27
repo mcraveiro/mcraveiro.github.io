@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.utility/include/dogen.utility/types/log/logging_configuration.hpp Source File</title>
+<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.tracing/include/dogen.tracing/types/references_printer.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,12 +63,12 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_e144ee88741e14a18d4de393fc52b9b5.html">dogen.utility</a></li><li class="navelem"><a class="el" href="dir_14e0264bab8358c2110affe619f144a8.html">include</a></li><li class="navelem"><a class="el" href="dir_014843984735c1b216b3bc5f929b0466.html">dogen.utility</a></li><li class="navelem"><a class="el" href="dir_81f1fe2e028ed84ba454c4b825bbb494.html">types</a></li><li class="navelem"><a class="el" href="dir_4924ce1cd269524d5a57a9c92ced48b8.html">log</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_19fe7aeb709681508b1c522245461673.html">dogen.tracing</a></li><li class="navelem"><a class="el" href="dir_339146f59ee42719298c0dd750387a28.html">include</a></li><li class="navelem"><a class="el" href="dir_84565306132d708ebab1c014d5450bdf.html">dogen.tracing</a></li><li class="navelem"><a class="el" href="dir_7ba823fdbdc4405e4cba184cf6bae5b6.html">types</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">logging_configuration.hpp</div>  </div>
+<div class="title">references_printer.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* -*- mode: c++; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-</span></div>
@@ -91,88 +91,55 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * MA 02110-1301, USA.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_UTILITY_TYPES_LOG_LOGGING_CONFIGURATION_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_UTILITY_TYPES_LOG_LOGGING_CONFIGURATION_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_TRACING_TYPES_REFERENCES_PRINTER_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_TRACING_TYPES_REFERENCES_PRINTER_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; (_MSC_VER &gt;= 1200)</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;boost/filesystem/path.hpp&gt;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span>dogen::utility::log {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="a13050.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="a13050.html">logging_configuration</a> final {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="a13050.html">logging_configuration</a>(<span class="keyword">const</span> <a class="code" href="a13050.html">logging_configuration</a>&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    ~<a class="code" href="a13050.html">logging_configuration</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="a13050.html">logging_configuration</a>();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="a13050.html">logging_configuration</a>(<a class="code" href="a13050.html">logging_configuration</a>&amp;&amp; rhs);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="a13050.html">logging_configuration</a>(</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">const</span> std::string&amp; <a class="code" href="a13050.html#a0b2108b0fc94e6d4c1c8a2667a33bafc">severity</a>,</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">const</span> std::string&amp; <a class="code" href="a13050.html#a45b6172157bc90e433f51aa6ebf82069">filename</a>,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="a13050.html#a0d111db547e52a8014148bded65f7da8">output_to_console</a>,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">const</span> boost::filesystem::path&amp; <a class="code" href="a13050.html#aaddbeb104441ff2edd441f204decd8eb">output_directory</a>);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">const</span> std::string&amp; <a class="code" href="a13050.html#a0b2108b0fc94e6d4c1c8a2667a33bafc">severity</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    std::string&amp; <a class="code" href="a13050.html#a0b2108b0fc94e6d4c1c8a2667a33bafc">severity</a>();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="a13050.html">logging_configuration</a>&amp; <a class="code" href="a13050.html#a0b2108b0fc94e6d4c1c8a2667a33bafc">severity</a>(<span class="keyword">const</span> std::string&amp; v);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="a13050.html">logging_configuration</a>&amp; <a class="code" href="a13050.html#a0b2108b0fc94e6d4c1c8a2667a33bafc">severity</a>(<span class="keyword">const</span> std::string&amp;&amp; v);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">const</span> std::string&amp; <a class="code" href="a13050.html#a45b6172157bc90e433f51aa6ebf82069">filename</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    std::string&amp; <a class="code" href="a13050.html#a45b6172157bc90e433f51aa6ebf82069">filename</a>();</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="a13050.html">logging_configuration</a>&amp; <a class="code" href="a13050.html#a45b6172157bc90e433f51aa6ebf82069">filename</a>(<span class="keyword">const</span> std::string&amp; v);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="a13050.html">logging_configuration</a>&amp; <a class="code" href="a13050.html#a45b6172157bc90e433f51aa6ebf82069">filename</a>(<span class="keyword">const</span> std::string&amp;&amp; v);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a13050.html#a0d111db547e52a8014148bded65f7da8">output_to_console</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="a13050.html">logging_configuration</a>&amp; <a class="code" href="a13050.html#a0d111db547e52a8014148bded65f7da8">output_to_console</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> v);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">const</span> boost::filesystem::path&amp; <a class="code" href="a13050.html#aaddbeb104441ff2edd441f204decd8eb">output_directory</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    boost::filesystem::path&amp; <a class="code" href="a13050.html#aaddbeb104441ff2edd441f204decd8eb">output_directory</a>();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="a13050.html">logging_configuration</a>&amp; <a class="code" href="a13050.html#aaddbeb104441ff2edd441f204decd8eb">output_directory</a>(<span class="keyword">const</span> boost::filesystem::path&amp; v);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="a13050.html">logging_configuration</a>&amp; <a class="code" href="a13050.html#aaddbeb104441ff2edd441f204decd8eb">output_directory</a>(<span class="keyword">const</span> boost::filesystem::path&amp;&amp; v);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="a13050.html">logging_configuration</a>&amp; rhs) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="a13050.html">logging_configuration</a>&amp; rhs)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">return</span> !this-&gt;operator==(rhs);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">void</span> swap(<a class="code" href="a13050.html">logging_configuration</a>&amp; other) noexcept;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="a13050.html">logging_configuration</a>&amp; operator=(<a class="code" href="a13050.html">logging_configuration</a> other);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    std::string severity_;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    std::string filename_;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">bool</span> output_to_console_;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    boost::filesystem::path output_directory_;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;};</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">namespace </span>std {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> swap(</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <a class="code" href="a13050.html">dogen::utility::log::logging_configuration</a>&amp; lhs,</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <a class="code" href="a13050.html">dogen::utility::log::logging_configuration</a>&amp; rhs) {</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    lhs.swap(rhs);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aa13050_html"><div class="ttname"><a href="a13050.html">dogen::utility::log::logging_configuration</a></div><div class="ttdoc">Options related to logging.</div><div class="ttdef"><b>Definition:</b> logging_configuration.hpp:37</div></div>
-<div class="ttc" id="aa13050_html_a0b2108b0fc94e6d4c1c8a2667a33bafc"><div class="ttname"><a href="a13050.html#a0b2108b0fc94e6d4c1c8a2667a33bafc">dogen::utility::log::logging_configuration::severity</a></div><div class="ttdeci">const std::string &amp; severity() const</div><div class="ttdoc">Level at which to log.</div><div class="ttdef"><b>Definition:</b> logging_configuration.cpp:65</div></div>
-<div class="ttc" id="aa13050_html_a0d111db547e52a8014148bded65f7da8"><div class="ttname"><a href="a13050.html#a0d111db547e52a8014148bded65f7da8">dogen::utility::log::logging_configuration::output_to_console</a></div><div class="ttdeci">bool output_to_console() const</div><div class="ttdoc">If true, dumps the log into the console.</div><div class="ttdef"><b>Definition:</b> logging_configuration.cpp:101</div></div>
-<div class="ttc" id="aa13050_html_a45b6172157bc90e433f51aa6ebf82069"><div class="ttname"><a href="a13050.html#a45b6172157bc90e433f51aa6ebf82069">dogen::utility::log::logging_configuration::filename</a></div><div class="ttdeci">const std::string &amp; filename() const</div><div class="ttdoc">Name of the file to log into.</div><div class="ttdef"><b>Definition:</b> logging_configuration.cpp:83</div></div>
-<div class="ttc" id="aa13050_html_aaddbeb104441ff2edd441f204decd8eb"><div class="ttname"><a href="a13050.html#aaddbeb104441ff2edd441f204decd8eb">dogen::utility::log::logging_configuration::output_directory</a></div><div class="ttdeci">const boost::filesystem::path &amp; output_directory() const</div><div class="ttdoc">Directory in which to place the output.</div><div class="ttdef"><b>Definition:</b> logging_configuration.cpp:110</div></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;libxml/tree.h&gt;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; (_MSC_VER &gt;= 1200)</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;unordered_set&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;dogen/types/tracing_format.hpp&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07780.html">dogen::tracing</a> {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="a13138.html">   41</a></span>&#160;<span class="keyword">class </span><a class="code" href="a13138.html">references_printer</a> final {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">typedef</span> std::unordered_map&lt;std::string, std::list&lt;std::string&gt;&gt;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    edges_per_model_type;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> print_plain(std::ostream&amp; o, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> fill_level,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">const</span> std::string&amp; vertex, <span class="keyword">const</span> edges_per_model_type&amp; edges_per_model);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> print_org_mode(std::ostream&amp; o, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> fill_level,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">const</span> std::string&amp; vertex, <span class="keyword">const</span> edges_per_model_type&amp; edges_per_model);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> create_graphviz_edge_set(</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        std::unordered_set&lt;std::string&gt;&amp; edge_set,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">const</span> std::string&amp; vertex,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">const</span> edges_per_model_type&amp; edges_per_model);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> print_graphviz(std::ostream&amp; o,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keyword">const</span> std::unordered_set&lt;std::string&gt;&amp; edge_set);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">static</span> std::string <a class="code" href="a13138.html#ae83593d50b0e30ae25ffbaae3470d540">print</a>(<span class="keyword">const</span> <a class="code" href="a07272.html#a99ea44b82246ab3bac1c3dea0c1bbad9">tracing_format</a> tf,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keyword">const</span> std::string&amp; root_vertex,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keyword">const</span> edges_per_model_type&amp; edges_per_model);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aa07272_html_a99ea44b82246ab3bac1c3dea0c1bbad9"><div class="ttname"><a href="a07272.html#a99ea44b82246ab3bac1c3dea0c1bbad9">dogen::tracing_format</a></div><div class="ttdeci">tracing_format</div><div class="ttdoc">Available formats for tracing transformations.</div><div class="ttdef"><b>Definition:</b> tracing_format.hpp:33</div></div>
+<div class="ttc" id="aa07780_html"><div class="ttname"><a href="a07780.html">dogen::tracing</a></div><div class="ttdoc">Houses classes common to all transformations.</div><div class="ttdef"><b>Definition:</b> backend_io.hpp:31</div></div>
+<div class="ttc" id="aa13138_html"><div class="ttname"><a href="a13138.html">dogen::tracing::references_printer</a></div><div class="ttdoc">Prints a graph of references according to the settings.</div><div class="ttdef"><b>Definition:</b> references_printer.hpp:41</div></div>
+<div class="ttc" id="aa13138_html_ae83593d50b0e30ae25ffbaae3470d540"><div class="ttname"><a href="a13138.html#ae83593d50b0e30ae25ffbaae3470d540">dogen::tracing::references_printer::print</a></div><div class="ttdeci">static std::string print(const tracing_format tf, const std::string &amp;root_vertex, const edges_per_model_type &amp;edges_per_model)</div><div class="ttdoc">Print the graph into a string.</div><div class="ttdef"><b>Definition:</b> references_printer.cpp:109</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

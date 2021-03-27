@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: file_to_file_chain Class Reference</title>
+<title>Dogen: generation_configuration Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,39 +63,97 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07078.html">codec</a></li><li class="navelem"><b>transforms</b></li><li class="navelem"><a class="el" href="a08790.html">file_to_file_chain</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07276.html">cli</a></li><li class="navelem"><a class="el" href="a08790.html">generation_configuration</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a08787.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">file_to_file_chain Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">generation_configuration Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Converts an external model of a given type into another external model of another type in the filesystem.  
+<p>Configuration related to code generation.  
  <a href="a08790.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00500_source.html">file_to_file_chain.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00290_source.html">generation_configuration.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for file_to_file_chain:</div>
+Collaboration diagram for generation_configuration:</div>
 <div class="dyncontent">
-<div class="center"><img src="a08788.png" border="0" usemap="#afile__to__file__chain_coll__map" alt="Collaboration graph"/></div>
-<map name="afile__to__file__chain_coll__map" id="afile__to__file__chain_coll__map">
-<area shape="rect" title="Converts an external model of a given type into another external model of another type in the filesys..." alt="" coords="5,5,136,83"/>
+<div class="center"><img src="a08788.png" border="0" usemap="#ageneration__configuration_coll__map" alt="Collaboration graph"/></div>
+<map name="ageneration__configuration_coll__map" id="ageneration__configuration_coll__map">
+<area shape="rect" title="Configuration related to code generation." alt="" coords="5,5,239,493"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad1c1b1be5ddde6090d9ef19098a11cbc"><td class="memItemLeft" align="right" valign="top"><a id="ad1c1b1be5ddde6090d9ef19098a11cbc"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (const transforms::context &amp;ctx, const boost::filesystem::path &amp;src_path, const boost::filesystem::path &amp;dst_path)</td></tr>
-<tr class="separator:ad1c1b1be5ddde6090d9ef19098a11cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:abf7f30c9dc6f07cebba33060464a4b33"><td class="memItemLeft" align="right" valign="top"><a id="abf7f30c9dc6f07cebba33060464a4b33"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>generation_configuration</b> (const <a class="el" href="a08790.html">generation_configuration</a> &amp;)=default</td></tr>
+<tr class="separator:abf7f30c9dc6f07cebba33060464a4b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c869e20db62f1149e292f57a2fe59f7"><td class="memItemLeft" align="right" valign="top"><a id="a7c869e20db62f1149e292f57a2fe59f7"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>generation_configuration</b> (<a class="el" href="a08790.html">generation_configuration</a> &amp;&amp;rhs)</td></tr>
+<tr class="separator:a7c869e20db62f1149e292f57a2fe59f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ea29a2c6d7090b11fa96548e741fcc0"><td class="memItemLeft" align="right" valign="top"><a id="a8ea29a2c6d7090b11fa96548e741fcc0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>generation_configuration</b> (const std::vector&lt; boost::filesystem::path &gt; &amp;<a class="el" href="a08790.html#af20fb857ae25aec3129f209a506e4d8d">reference_model_directories</a>, const boost::filesystem::path &amp;<a class="el" href="a08790.html#a2731b2267b94044f2adae16868042f68">target</a>, const boost::filesystem::path &amp;output_directory)</td></tr>
+<tr class="separator:a8ea29a2c6d7090b11fa96548e741fcc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaddbeb104441ff2edd441f204decd8eb"><td class="memItemLeft" align="right" valign="top"><a id="aaddbeb104441ff2edd441f204decd8eb"></a>
+const boost::filesystem::path &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>output_directory</b> () const</td></tr>
+<tr class="separator:aaddbeb104441ff2edd441f204decd8eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ba4db339b8d29a9b76b4bf18788bbba"><td class="memItemLeft" align="right" valign="top"><a id="a0ba4db339b8d29a9b76b4bf18788bbba"></a>
+boost::filesystem::path &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>output_directory</b> ()</td></tr>
+<tr class="separator:a0ba4db339b8d29a9b76b4bf18788bbba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4aa5dd8fcefbb15cc104ebcd0bd13f3"><td class="memItemLeft" align="right" valign="top"><a id="ab4aa5dd8fcefbb15cc104ebcd0bd13f3"></a>
+<a class="el" href="a08790.html">generation_configuration</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>output_directory</b> (const boost::filesystem::path &amp;v)</td></tr>
+<tr class="separator:ab4aa5dd8fcefbb15cc104ebcd0bd13f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add353b8d325293350ff7bde267264a5c"><td class="memItemLeft" align="right" valign="top"><a id="add353b8d325293350ff7bde267264a5c"></a>
+<a class="el" href="a08790.html">generation_configuration</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>output_directory</b> (const boost::filesystem::path &amp;&amp;v)</td></tr>
+<tr class="separator:add353b8d325293350ff7bde267264a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a891521525c59950ce209dbd0d4c1259a"><td class="memItemLeft" align="right" valign="top"><a id="a891521525c59950ce209dbd0d4c1259a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="a08790.html">generation_configuration</a> &amp;rhs) const</td></tr>
+<tr class="separator:a891521525c59950ce209dbd0d4c1259a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a673748167e38204213cb88a673823585"><td class="memItemLeft" align="right" valign="top"><a id="a673748167e38204213cb88a673823585"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="a08790.html">generation_configuration</a> &amp;rhs) const</td></tr>
+<tr class="separator:a673748167e38204213cb88a673823585"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af56ea681190ce26c49788427f4a91bd1"><td class="memItemLeft" align="right" valign="top"><a id="af56ea681190ce26c49788427f4a91bd1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="a08790.html">generation_configuration</a> &amp;other) noexcept</td></tr>
+<tr class="separator:af56ea681190ce26c49788427f4a91bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49b99fc53861aff2ac178aa9aae926dc"><td class="memItemLeft" align="right" valign="top"><a id="a49b99fc53861aff2ac178aa9aae926dc"></a>
+<a class="el" href="a08790.html">generation_configuration</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="a08790.html">generation_configuration</a> other)</td></tr>
+<tr class="separator:a49b99fc53861aff2ac178aa9aae926dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:af20fb857ae25aec3129f209a506e4d8d"><td class="memItemLeft" align="right" valign="top"><a id="af20fb857ae25aec3129f209a506e4d8d"></a>
+const std::vector&lt; boost::filesystem::path &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08790.html#af20fb857ae25aec3129f209a506e4d8d">reference_model_directories</a> () const</td></tr>
+<tr class="memdesc:af20fb857ae25aec3129f209a506e4d8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Directories to search for reference models. <br /></td></tr>
+<tr class="separator:af20fb857ae25aec3129f209a506e4d8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a512a5b57b23c5b64e68c30296e46081e"><td class="memItemLeft" align="right" valign="top"><a id="a512a5b57b23c5b64e68c30296e46081e"></a>
+std::vector&lt; boost::filesystem::path &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>reference_model_directories</b> ()</td></tr>
+<tr class="separator:a512a5b57b23c5b64e68c30296e46081e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8970d31beef7ea312780d3ffe4200e89"><td class="memItemLeft" align="right" valign="top"><a id="a8970d31beef7ea312780d3ffe4200e89"></a>
+<a class="el" href="a08790.html">generation_configuration</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>reference_model_directories</b> (const std::vector&lt; boost::filesystem::path &gt; &amp;v)</td></tr>
+<tr class="separator:a8970d31beef7ea312780d3ffe4200e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63e9921a75f0a74cca5b93710a713218"><td class="memItemLeft" align="right" valign="top"><a id="a63e9921a75f0a74cca5b93710a713218"></a>
+<a class="el" href="a08790.html">generation_configuration</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>reference_model_directories</b> (const std::vector&lt; boost::filesystem::path &gt; &amp;&amp;v)</td></tr>
+<tr class="separator:a63e9921a75f0a74cca5b93710a713218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a2731b2267b94044f2adae16868042f68"><td class="memItemLeft" align="right" valign="top"><a id="a2731b2267b94044f2adae16868042f68"></a>
+const boost::filesystem::path &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08790.html#a2731b2267b94044f2adae16868042f68">target</a> () const</td></tr>
+<tr class="memdesc:a2731b2267b94044f2adae16868042f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Target model for generation. <br /></td></tr>
+<tr class="separator:a2731b2267b94044f2adae16868042f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc62ef55ff9aa1e3d4d2d32a2bc35ffd"><td class="memItemLeft" align="right" valign="top"><a id="acc62ef55ff9aa1e3d4d2d32a2bc35ffd"></a>
+boost::filesystem::path &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>target</b> ()</td></tr>
+<tr class="separator:acc62ef55ff9aa1e3d4d2d32a2bc35ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ab4cc673abe550427ebad35bf9f0e16"><td class="memItemLeft" align="right" valign="top"><a id="a7ab4cc673abe550427ebad35bf9f0e16"></a>
+<a class="el" href="a08790.html">generation_configuration</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>target</b> (const boost::filesystem::path &amp;v)</td></tr>
+<tr class="separator:a7ab4cc673abe550427ebad35bf9f0e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00ab640d5ccca53238a82ca98396b60d"><td class="memItemLeft" align="right" valign="top"><a id="a00ab640d5ccca53238a82ca98396b60d"></a>
+<a class="el" href="a08790.html">generation_configuration</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>target</b> (const boost::filesystem::path &amp;&amp;v)</td></tr>
+<tr class="separator:a00ab640d5ccca53238a82ca98396b60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Converts an external model of a given type into another external model of another type in the filesystem. </p>
+<div class="textblock"><p>Configuration related to code generation. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

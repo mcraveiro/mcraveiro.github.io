@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.identification/include/dogen.identification/types/helpers/physical_meta_id_builder.hpp Source File</title>
+<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.identification/include/dogen.identification/types/helpers/identifiable_factory.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,7 +68,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">physical_meta_id_builder.hpp</div>  </div>
+<div class="title">identifiable_factory.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* -*- mode: c++; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-</span></div>
@@ -91,62 +91,26 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * MA 02110-1301, USA.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_IDENTIFICATION_TYPES_HELPERS_PHYSICAL_META_ID_BUILDER_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_IDENTIFICATION_TYPES_HELPERS_PHYSICAL_META_ID_BUILDER_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_IDENTIFICATION_TYPES_HELPERS_IDENTIFIABLE_FACTORY_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_IDENTIFICATION_TYPES_HELPERS_IDENTIFIABLE_FACTORY_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; (_MSC_VER &gt;= 1200)</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;dogen.identification/types/entities/physical_meta_id.hpp&quot;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;dogen.identification/types/entities/physical_meta_name.hpp&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;dogen.identification/types/entities/physical_meta_location.hpp&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07130.html">dogen::identification::helpers</a> {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="a09214.html">   42</a></span>&#160;<span class="keyword">class </span><a class="code" href="a09214.html">physical_meta_id_builder</a> final {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">static</span> <a class="code" href="a09094.html">entities::physical_meta_id</a> to_meta_id(<span class="keyword">const</span> std::string&amp; s);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">static</span> <a class="code" href="a09094.html">entities::physical_meta_id</a></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="a09214.html#ae504dc72e93bcbf43c5249ecc04c796c">build_meta_model</a>(<span class="keyword">const</span> <a class="code" href="a09098.html">entities::physical_meta_location</a>&amp; l);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">static</span> <a class="code" href="a09094.html">entities::physical_meta_id</a></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="a09214.html#ae504dc72e93bcbf43c5249ecc04c796c">build_meta_model</a>(<span class="keyword">const</span> <a class="code" href="a09102.html">entities::physical_meta_name</a>&amp; mn);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">static</span> <a class="code" href="a09094.html">entities::physical_meta_id</a></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="a09214.html#a710150c029c551c10ce815a265711a69">build_backend</a>(<span class="keyword">const</span> <a class="code" href="a09098.html">entities::physical_meta_location</a>&amp; l);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">static</span> <a class="code" href="a09094.html">entities::physical_meta_id</a></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="a09214.html#a710150c029c551c10ce815a265711a69">build_backend</a>(<span class="keyword">const</span> <a class="code" href="a09102.html">entities::physical_meta_name</a>&amp; n);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">static</span> <a class="code" href="a09094.html">entities::physical_meta_id</a></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="a09214.html#a8c039eeed172d091aa66582a708952d4">build_part</a>(<span class="keyword">const</span> <a class="code" href="a09098.html">entities::physical_meta_location</a>&amp; l);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">static</span> <a class="code" href="a09094.html">entities::physical_meta_id</a></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="a09214.html#a8c039eeed172d091aa66582a708952d4">build_part</a>(<span class="keyword">const</span> <a class="code" href="a09102.html">entities::physical_meta_name</a>&amp; n);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">static</span> <a class="code" href="a09094.html">entities::physical_meta_id</a></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="a09214.html#a3bdbe2f6af0525c77f16378ea55aebb5">build_facet</a>(<span class="keyword">const</span> <a class="code" href="a09098.html">entities::physical_meta_location</a>&amp; l,</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">bool</span> add_canonical = <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">static</span> <a class="code" href="a09094.html">entities::physical_meta_id</a></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="a09214.html#a3bdbe2f6af0525c77f16378ea55aebb5">build_facet</a>(<span class="keyword">const</span> <a class="code" href="a09102.html">entities::physical_meta_name</a>&amp; n,</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">bool</span> add_canonical = <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">static</span> <a class="code" href="a09094.html">entities::physical_meta_id</a></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="a09214.html#a23d504058008f90133f519d576349c1b">build_archetype</a>(<span class="keyword">const</span> <a class="code" href="a09098.html">entities::physical_meta_location</a>&amp; l);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keyword">static</span> <a class="code" href="a09094.html">entities::physical_meta_id</a></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="code" href="a09214.html#a23d504058008f90133f519d576349c1b">build_archetype</a>(<span class="keyword">const</span> <a class="code" href="a09102.html">entities::physical_meta_name</a>&amp; n);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;};</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aa07130_html"><div class="ttname"><a href="a07130.html">dogen::identification::helpers</a></div><div class="ttdoc">Assorted helpers used to construct domain entities.</div><div class="ttdef"><b>Definition:</b> separators_io.hpp:31</div></div>
-<div class="ttc" id="aa09094_html"><div class="ttname"><a href="a09094.html">dogen::identification::entities::physical_meta_id</a></div><div class="ttdoc">ID of the meta-element in the physical dimension.</div><div class="ttdef"><b>Definition:</b> physical_meta_id.hpp:35</div></div>
-<div class="ttc" id="aa09098_html"><div class="ttname"><a href="a09098.html">dogen::identification::entities::physical_meta_location</a></div><div class="ttdoc">Location of an entity or set of entities in the physical meta-model.</div><div class="ttdef"><b>Definition:</b> physical_meta_location.hpp:40</div></div>
-<div class="ttc" id="aa09102_html"><div class="ttname"><a href="a09102.html">dogen::identification::entities::physical_meta_name</a></div><div class="ttdoc">Name of an element in physical space.</div><div class="ttdef"><b>Definition:</b> physical_meta_name.hpp:45</div></div>
-<div class="ttc" id="aa09214_html"><div class="ttname"><a href="a09214.html">dogen::identification::helpers::physical_meta_id_builder</a></div><div class="ttdoc">Builds qualified meta-names according to the geometry of physical space.</div><div class="ttdef"><b>Definition:</b> physical_meta_id_builder.hpp:42</div></div>
-<div class="ttc" id="aa09214_html_a23d504058008f90133f519d576349c1b"><div class="ttname"><a href="a09214.html#a23d504058008f90133f519d576349c1b">dogen::identification::helpers::physical_meta_id_builder::build_archetype</a></div><div class="ttdeci">static entities::physical_meta_id build_archetype(const entities::physical_meta_location &amp;l)</div><div class="ttdoc">Builds a qualified name for the complete archetype.</div><div class="ttdef"><b>Definition:</b> physical_meta_id_builder.cpp:125</div></div>
-<div class="ttc" id="aa09214_html_a3bdbe2f6af0525c77f16378ea55aebb5"><div class="ttname"><a href="a09214.html#a3bdbe2f6af0525c77f16378ea55aebb5">dogen::identification::helpers::physical_meta_id_builder::build_facet</a></div><div class="ttdeci">static entities::physical_meta_id build_facet(const entities::physical_meta_location &amp;l, const bool add_canonical=false)</div><div class="ttdoc">Builds a qualified name for the facet region in physical space.</div><div class="ttdef"><b>Definition:</b> physical_meta_id_builder.cpp:100</div></div>
-<div class="ttc" id="aa09214_html_a710150c029c551c10ce815a265711a69"><div class="ttname"><a href="a09214.html#a710150c029c551c10ce815a265711a69">dogen::identification::helpers::physical_meta_id_builder::build_backend</a></div><div class="ttdeci">static entities::physical_meta_id build_backend(const entities::physical_meta_location &amp;l)</div><div class="ttdoc">Builds a qualified name for the backend region in physical space.</div><div class="ttdef"><b>Definition:</b> physical_meta_id_builder.cpp:68</div></div>
-<div class="ttc" id="aa09214_html_a8c039eeed172d091aa66582a708952d4"><div class="ttname"><a href="a09214.html#a8c039eeed172d091aa66582a708952d4">dogen::identification::helpers::physical_meta_id_builder::build_part</a></div><div class="ttdeci">static entities::physical_meta_id build_part(const entities::physical_meta_location &amp;l)</div><div class="ttdoc">Builds a qualified name for the part region in physical space.</div><div class="ttdef"><b>Definition:</b> physical_meta_id_builder.cpp:84</div></div>
-<div class="ttc" id="aa09214_html_ae504dc72e93bcbf43c5249ecc04c796c"><div class="ttname"><a href="a09214.html#ae504dc72e93bcbf43c5249ecc04c796c">dogen::identification::helpers::physical_meta_id_builder::build_meta_model</a></div><div class="ttdeci">static entities::physical_meta_id build_meta_model(const entities::physical_meta_location &amp;l)</div><div class="ttdoc">Builds a qualified name for the meta-model region in physical space.</div><div class="ttdef"><b>Definition:</b> physical_meta_id_builder.cpp:53</div></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07334.html">dogen::identification::helpers</a> {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">class </span>identifiable_factory {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">static</span> std::string make(<span class="keyword">const</span> std::string&amp; s);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aa07334_html"><div class="ttname"><a href="a07334.html">dogen::identification::helpers</a></div><div class="ttdoc">Assorted helpers used to construct domain entities.</div><div class="ttdef"><b>Definition:</b> separators_io.hpp:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

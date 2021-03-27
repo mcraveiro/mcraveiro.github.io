@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: model_generator Class Reference</title>
+<title>Dogen: generalization_transform Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07285.html">orchestration</a></li><li class="navelem"><b>tests</b></li><li class="navelem"><a class="el" href="a10346.html">model_generator</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07363.html">logical</a></li><li class="navelem"><a class="el" href="a07376.html">transforms</a></li><li class="navelem"><a class="el" href="a10346.html">generalization_transform</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -71,97 +71,32 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a10343.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">model_generator Class Reference</div>  </div>
+<div class="title">generalization_transform Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Generates a model and performs a canned set of associated checks.  
+<p>Expands generalisation relationships in model.  
  <a href="a10346.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a03401_source.html">model_generator.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a02573_source.html">generalization_transform.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for model_generator:</div>
+Collaboration diagram for generalization_transform:</div>
 <div class="dyncontent">
-<div class="center"><img src="a10344.png" border="0" usemap="#amodel__generator_coll__map" alt="Collaboration graph"/></div>
-<map name="amodel__generator_coll__map" id="amodel__generator_coll__map">
-<area shape="rect" title="Generates a model and performs a canned set of associated checks." alt="" coords="5,5,215,229"/>
+<div class="center"><img src="a10344.png" border="0" usemap="#ageneralization__transform_coll__map" alt="Collaboration graph"/></div>
+<map name="ageneralization__transform_coll__map" id="ageneralization__transform_coll__map">
+<area shape="rect" title="Expands generalisation relationships in model." alt="" coords="5,5,192,83"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a664d4fd14d0ea9e439c1264f181d4877"><td class="memItemLeft" align="right" valign="top"><a id="a664d4fd14d0ea9e439c1264f181d4877"></a>
-static <a class="el" href="a10650.html">dogen::physical::entities::model</a>&#160;</td><td class="memItemRight" valign="bottom"><b>apply_physical_model_production</b> (const boost::filesystem::path &amp;target, const std::vector&lt; boost::filesystem::path &gt; &amp;reference_directories, const boost::filesystem::path &amp;output_dir, const bool enable_tracing_locally=false, const bool enable_reporting_locally=false, const bool enable_diffing_locally=false)</td></tr>
-<tr class="separator:a664d4fd14d0ea9e439c1264f181d4877"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea07f1b91effad06114ce605597d39c7"><td class="memItemLeft" align="right" valign="top"><a id="aea07f1b91effad06114ce605597d39c7"></a>
-static <a class="el" href="a10650.html">dogen::physical::entities::model</a>&#160;</td><td class="memItemRight" valign="bottom"><b>apply_physical_model_production</b> (const boost::filesystem::path &amp;target, const boost::filesystem::path &amp;output_dir, const bool enable_tracing_locally=false, const bool enable_reporting_locally=false, const bool enable_diffing_locally=false)</td></tr>
-<tr class="separator:aea07f1b91effad06114ce605597d39c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08f26d4932742e3bc2921b128228c7d9"><td class="memItemLeft" align="right" valign="top"><a id="a08f26d4932742e3bc2921b128228c7d9"></a>
-static std::string&#160;</td><td class="memItemRight" valign="bottom"><b>apply_artefact_to_artefact_chain</b> (const boost::filesystem::path &amp;src, const bool enable_tracing_locally=false, const bool enable_reporting_locally=false, const bool enable_diffing_locally=false)</td></tr>
-<tr class="separator:a08f26d4932742e3bc2921b128228c7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac433bff20c30a5cbb3ef5f6d08f2693a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10346.html#ac433bff20c30a5cbb3ef5f6d08f2693a">check_for_differences</a> (const boost::filesystem::path &amp;output_dir, const <a class="el" href="a10650.html">dogen::physical::entities::model</a> &amp;m)</td></tr>
-<tr class="memdesc:ac433bff20c30a5cbb3ef5f6d08f2693a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks to see if the model contains any artefacts which are different from the files in the filesystem.  <a href="a10346.html#ac433bff20c30a5cbb3ef5f6d08f2693a">More...</a><br /></td></tr>
-<tr class="separator:ac433bff20c30a5cbb3ef5f6d08f2693a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3c6c55767716914c601ed53627bb409"><td class="memItemLeft" align="right" valign="top"><a id="ad3c6c55767716914c601ed53627bb409"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10346.html#ad3c6c55767716914c601ed53627bb409">check_for_delete_extra</a> (const boost::filesystem::path &amp;output_dir, const <a class="el" href="a10650.html">dogen::physical::entities::model</a> &amp;m)</td></tr>
-<tr class="memdesc:ad3c6c55767716914c601ed53627bb409"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a set of checks for the delete extra scenario. <br /></td></tr>
-<tr class="separator:ad3c6c55767716914c601ed53627bb409"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3a30ee1d4706a45fba4c0ca86effbdb"><td class="memItemLeft" align="right" valign="top"><a id="ad3a30ee1d4706a45fba4c0ca86effbdb"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10346.html#ad3a30ee1d4706a45fba4c0ca86effbdb">check_for_ignore_extra</a> (const boost::filesystem::path &amp;output_dir, const <a class="el" href="a10650.html">dogen::physical::entities::model</a> &amp;m)</td></tr>
-<tr class="memdesc:ad3a30ee1d4706a45fba4c0ca86effbdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a set of checks for the ignore extra scenario. <br /></td></tr>
-<tr class="separator:ad3a30ee1d4706a45fba4c0ca86effbdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a353efe3e745efa4de7cce46c61c20ca0"><td class="memItemLeft" align="right" valign="top"><a id="a353efe3e745efa4de7cce46c61c20ca0"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10346.html#a353efe3e745efa4de7cce46c61c20ca0">check_for_force_write</a> (const boost::filesystem::path &amp;output_dir, const <a class="el" href="a10650.html">dogen::physical::entities::model</a> &amp;m)</td></tr>
-<tr class="memdesc:a353efe3e745efa4de7cce46c61c20ca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a set of checks for the force write scenario. <br /></td></tr>
-<tr class="separator:a353efe3e745efa4de7cce46c61c20ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac51bdcff55887bbcc78ef0ab9479562d"><td class="memItemLeft" align="right" valign="top"><a id="ac51bdcff55887bbcc78ef0ab9479562d"></a>
-static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10346.html#ac51bdcff55887bbcc78ef0ab9479562d">check_out_of_sync</a> (const boost::filesystem::path &amp;output_dir, const <a class="el" href="a10650.html">dogen::physical::entities::model</a> &amp;m)</td></tr>
-<tr class="memdesc:ac51bdcff55887bbcc78ef0ab9479562d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs a set of checks for the model out of sync scenario. <br /></td></tr>
-<tr class="separator:ac51bdcff55887bbcc78ef0ab9479562d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2afc0b6e62c604f9abaf931261b67cc6"><td class="memItemLeft" align="right" valign="top"><a id="a2afc0b6e62c604f9abaf931261b67cc6"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (const <a class="el" href="a10322.html">context</a> &amp;ctx, const helpers::indices &amp;idx, <a class="el" href="a09570.html">entities::model</a> &amp;m)</td></tr>
+<tr class="separator:a2afc0b6e62c604f9abaf931261b67cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Generates a model and performs a canned set of associated checks. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac433bff20c30a5cbb3ef5f6d08f2693a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac433bff20c30a5cbb3ef5f6d08f2693a">&#9670;&nbsp;</a></span>check_for_differences()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool check_for_differences </td>
-          <td>(</td>
-          <td class="paramtype">const boost::filesystem::path &amp;&#160;</td>
-          <td class="paramname"><em>output_dir</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="a10650.html">dogen::physical::entities::model</a> &amp;&#160;</td>
-          <td class="paramname"><em>m</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Checks to see if the model contains any artefacts which are different from the files in the filesystem. </p>
-<dl class="section note"><dt>Note</dt><dd>We're using std::cout here by design as we always want the output to show up in CDash. </dd></dl>
-
-</div>
-</div>
-</div><!-- contents -->
+<div class="textblock"><p>Expands generalisation relationships in model. </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1

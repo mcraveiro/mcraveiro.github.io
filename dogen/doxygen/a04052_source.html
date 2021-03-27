@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.physical/include/dogen.physical/types/transforms/meta_model_production_chain.hpp Source File</title>
+<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.physical/include/dogen.physical/types/entities/region.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,12 +63,12 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_9b8549976a668c2202007f21f8dd157b.html">dogen.physical</a></li><li class="navelem"><a class="el" href="dir_26d230d797375482fb1d633cc67158a1.html">include</a></li><li class="navelem"><a class="el" href="dir_7de440d8d60ef5abea2682ae081b1def.html">dogen.physical</a></li><li class="navelem"><a class="el" href="dir_b60224f7bae46d1c8beeaae488fadddb.html">types</a></li><li class="navelem"><a class="el" href="dir_a707a2f4424f3f38aa99ed1c3cf9bc59.html">transforms</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_9b8549976a668c2202007f21f8dd157b.html">dogen.physical</a></li><li class="navelem"><a class="el" href="dir_26d230d797375482fb1d633cc67158a1.html">include</a></li><li class="navelem"><a class="el" href="dir_7de440d8d60ef5abea2682ae081b1def.html">dogen.physical</a></li><li class="navelem"><a class="el" href="dir_b60224f7bae46d1c8beeaae488fadddb.html">types</a></li><li class="navelem"><a class="el" href="dir_0c02b1261ac095a1723e67f7141c52cf.html">entities</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">meta_model_production_chain.hpp</div>  </div>
+<div class="title">region.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* -*- mode: c++; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-</span></div>
@@ -91,35 +91,102 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * MA 02110-1301, USA.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_PHYSICAL_TYPES_TRANSFORMS_META_MODEL_PRODUCTION_CHAIN_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_PHYSICAL_TYPES_TRANSFORMS_META_MODEL_PRODUCTION_CHAIN_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_PHYSICAL_TYPES_ENTITIES_REGION_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_PHYSICAL_TYPES_ENTITIES_REGION_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; (_MSC_VER &gt;= 1200)</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;boost/shared_ptr.hpp&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;dogen.physical/types/transforms/minimal_context.hpp&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;dogen.physical/types/entities/backend.hpp&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;dogen.physical/types/entities/meta_model.hpp&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07338.html">dogen::physical::transforms</a> {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="a10886.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="a10886.html">meta_model_production_chain</a> final {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">static</span> boost::shared_ptr&lt;physical::entities::meta_model&gt;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="a10886.html#a671448af0bffa933b7d8d3a82c004a9b">apply</a>(<span class="keyword">const</span> <a class="code" href="a10910.html">physical::transforms::minimal_context</a>&amp; ctx,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">const</span> std::list&lt;entities::backend&gt;&amp; bes);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;boost/shared_ptr.hpp&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;dogen.physical/types/entities/artefact_fwd.hpp&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;dogen.variability/types/entities/configuration_fwd.hpp&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;dogen.identification/types/entities/physical_meta_id.hpp&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;dogen.identification/types/entities/logical_provenance.hpp&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;dogen.identification/hash/entities/physical_meta_id_hash.hpp&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07540.html">dogen::physical::entities</a> {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="a10890.html">   43</a></span>&#160;<span class="keyword">class </span><a class="code" href="a10890.html">region</a> final {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="a10890.html">region</a>(<span class="keyword">const</span> <a class="code" href="a10890.html">region</a>&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="a10890.html">region</a>(<a class="code" href="a10890.html">region</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    ~<a class="code" href="a10890.html">region</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="a10890.html">region</a>();</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aa07338_html"><div class="ttname"><a href="a07338.html">dogen::physical::transforms</a></div><div class="ttdoc">Contains all of the transforms needed to produce models and meta-models for the physical model.</div><div class="ttdef"><b>Definition:</b> context_io.hpp:31</div></div>
-<div class="ttc" id="aa10886_html"><div class="ttname"><a href="a10886.html">dogen::physical::transforms::meta_model_production_chain</a></div><div class="ttdoc">Produces a complete physical meta-model from a set of initial parts.</div><div class="ttdef"><b>Definition:</b> meta_model_production_chain.hpp:40</div></div>
-<div class="ttc" id="aa10886_html_a671448af0bffa933b7d8d3a82c004a9b"><div class="ttname"><a href="a10886.html#a671448af0bffa933b7d8d3a82c004a9b">dogen::physical::transforms::meta_model_production_chain::apply</a></div><div class="ttdeci">static boost::shared_ptr&lt; physical::entities::meta_model &gt; apply(const physical::transforms::minimal_context &amp;ctx, const std::list&lt; entities::backend &gt; &amp;bes)</div><div class="ttdoc">Apply the transform to generate a meta-model.</div><div class="ttdef"><b>Definition:</b> meta_model_production_chain.cpp:47</div></div>
-<div class="ttc" id="aa10910_html"><div class="ttname"><a href="a10910.html">dogen::physical::transforms::minimal_context</a></div><div class="ttdoc">Smallest possible context required for bootstrapping purposes.</div><div class="ttdef"><b>Definition:</b> minimal_context.hpp:37</div></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="a10890.html">region</a>(</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">const</span> boost::shared_ptr&lt;dogen::variability::entities::configuration&gt;&amp; <a class="code" href="a10890.html#a2aaf2edfc6c3a5e2f5b369171f6732e5">configuration</a>,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">const</span> <a class="code" href="a09282.html">dogen::identification::entities::logical_provenance</a>&amp; <a class="code" href="a10890.html#a675f9c3355b4d2d4f72337a5d22d19ce">provenance</a>,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keyword">const</span> std::unordered_map&lt;<a class="code" href="a09298.html">dogen::identification::entities::physical_meta_id</a>, boost::shared_ptr&lt;dogen::physical::entities::artefact&gt; &gt;&amp; <a class="code" href="a10890.html#aebcc1037d59a347ba1f1a5bea34203af">artefacts_by_archetype</a>,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">const</span> std::unordered_map&lt;std::string, dogen::identification::entities::physical_meta_id&gt;&amp; <a class="code" href="a10890.html#a8c7ce78b2991f47d1929c309e7ee564c">archetype_for_role</a>,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">bool</span> <a class="code" href="a10890.html#abc8416a44ade45914ab9d60bcfa575d3">is_generatable</a>);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">const</span> boost::shared_ptr&lt;dogen::variability::entities::configuration&gt;&amp; <a class="code" href="a10890.html#a2aaf2edfc6c3a5e2f5b369171f6732e5">configuration</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    boost::shared_ptr&lt;dogen::variability::entities::configuration&gt;&amp; <a class="code" href="a10890.html#a2aaf2edfc6c3a5e2f5b369171f6732e5">configuration</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a10890.html#a2aaf2edfc6c3a5e2f5b369171f6732e5">configuration</a>(<span class="keyword">const</span> boost::shared_ptr&lt;dogen::variability::entities::configuration&gt;&amp; v);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a10890.html#a2aaf2edfc6c3a5e2f5b369171f6732e5">configuration</a>(<span class="keyword">const</span> boost::shared_ptr&lt;dogen::variability::entities::configuration&gt;&amp;&amp; v);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">const</span> <a class="code" href="a09282.html">dogen::identification::entities::logical_provenance</a>&amp; <a class="code" href="a10890.html#a675f9c3355b4d2d4f72337a5d22d19ce">provenance</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="a09282.html">dogen::identification::entities::logical_provenance</a>&amp; <a class="code" href="a10890.html#a675f9c3355b4d2d4f72337a5d22d19ce">provenance</a>();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a10890.html#a675f9c3355b4d2d4f72337a5d22d19ce">provenance</a>(<span class="keyword">const</span> <a class="code" href="a09282.html">dogen::identification::entities::logical_provenance</a>&amp; v);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a10890.html#a675f9c3355b4d2d4f72337a5d22d19ce">provenance</a>(<span class="keyword">const</span> <a class="code" href="a09282.html">dogen::identification::entities::logical_provenance</a>&amp;&amp; v);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">const</span> std::unordered_map&lt;dogen::identification::entities::physical_meta_id, boost::shared_ptr&lt;dogen::physical::entities::artefact&gt; &gt;&amp; <a class="code" href="a10890.html#aebcc1037d59a347ba1f1a5bea34203af">artefacts_by_archetype</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    std::unordered_map&lt;dogen::identification::entities::physical_meta_id, boost::shared_ptr&lt;dogen::physical::entities::artefact&gt; &gt;&amp; <a class="code" href="a10890.html#aebcc1037d59a347ba1f1a5bea34203af">artefacts_by_archetype</a>();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a10890.html#aebcc1037d59a347ba1f1a5bea34203af">artefacts_by_archetype</a>(<span class="keyword">const</span> std::unordered_map&lt;<a class="code" href="a09298.html">dogen::identification::entities::physical_meta_id</a>, boost::shared_ptr&lt;dogen::physical::entities::artefact&gt; &gt;&amp; v);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a10890.html#aebcc1037d59a347ba1f1a5bea34203af">artefacts_by_archetype</a>(<span class="keyword">const</span> std::unordered_map&lt;<a class="code" href="a09298.html">dogen::identification::entities::physical_meta_id</a>, boost::shared_ptr&lt;dogen::physical::entities::artefact&gt; &gt;&amp;&amp; v);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keyword">const</span> std::unordered_map&lt;std::string, dogen::identification::entities::physical_meta_id&gt;&amp; <a class="code" href="a10890.html#a8c7ce78b2991f47d1929c309e7ee564c">archetype_for_role</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    std::unordered_map&lt;std::string, dogen::identification::entities::physical_meta_id&gt;&amp; <a class="code" href="a10890.html#a8c7ce78b2991f47d1929c309e7ee564c">archetype_for_role</a>();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a10890.html#a8c7ce78b2991f47d1929c309e7ee564c">archetype_for_role</a>(<span class="keyword">const</span> std::unordered_map&lt;std::string, dogen::identification::entities::physical_meta_id&gt;&amp; v);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a10890.html#a8c7ce78b2991f47d1929c309e7ee564c">archetype_for_role</a>(<span class="keyword">const</span> std::unordered_map&lt;std::string, dogen::identification::entities::physical_meta_id&gt;&amp;&amp; v);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="a10890.html#abc8416a44ade45914ab9d60bcfa575d3">is_generatable</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a10890.html#abc8416a44ade45914ab9d60bcfa575d3">is_generatable</a>(<span class="keyword">const</span> <span class="keywordtype">bool</span> v);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="a10890.html">region</a>&amp; rhs) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="a10890.html">region</a>&amp; rhs)<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">return</span> !this-&gt;operator==(rhs);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">void</span> swap(<a class="code" href="a10890.html">region</a>&amp; other) noexcept;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="a10890.html">region</a>&amp; operator=(<a class="code" href="a10890.html">region</a> other);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    boost::shared_ptr&lt;dogen::variability::entities::configuration&gt; configuration_;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <a class="code" href="a09282.html">dogen::identification::entities::logical_provenance</a> provenance_;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    std::unordered_map&lt;dogen::identification::entities::physical_meta_id, boost::shared_ptr&lt;dogen::physical::entities::artefact&gt; &gt; artefacts_by_archetype_;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    std::unordered_map&lt;std::string, dogen::identification::entities::physical_meta_id&gt; archetype_for_role_;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">bool</span> is_generatable_;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;};</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keyword">namespace </span>std {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> swap(</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <a class="code" href="a10890.html">dogen::physical::entities::region</a>&amp; lhs,</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <a class="code" href="a10890.html">dogen::physical::entities::region</a>&amp; rhs) {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    lhs.swap(rhs);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;}</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aa07540_html"><div class="ttname"><a href="a07540.html">dogen::physical::entities</a></div><div class="ttdoc">Defines the MASD physical space.</div><div class="ttdef"><b>Definition:</b> archetype_io.hpp:31</div></div>
+<div class="ttc" id="aa09282_html"><div class="ttname"><a href="a09282.html">dogen::identification::entities::logical_provenance</a></div><div class="ttdoc">Source of a model element in the logical dimension.</div><div class="ttdef"><b>Definition:</b> logical_provenance.hpp:38</div></div>
+<div class="ttc" id="aa09298_html"><div class="ttname"><a href="a09298.html">dogen::identification::entities::physical_meta_id</a></div><div class="ttdoc">ID of the meta-element in the physical dimension.</div><div class="ttdef"><b>Definition:</b> physical_meta_id.hpp:35</div></div>
+<div class="ttc" id="aa10890_html"><div class="ttname"><a href="a10890.html">dogen::physical::entities::region</a></div><div class="ttdoc">Represents a region of logical-physical space fixed at one logical point.</div><div class="ttdef"><b>Definition:</b> region.hpp:43</div></div>
+<div class="ttc" id="aa10890_html_a2aaf2edfc6c3a5e2f5b369171f6732e5"><div class="ttname"><a href="a10890.html#a2aaf2edfc6c3a5e2f5b369171f6732e5">dogen::physical::entities::region::configuration</a></div><div class="ttdeci">const boost::shared_ptr&lt; dogen::variability::entities::configuration &gt; &amp; configuration() const</div><div class="ttdoc">Configuration for this element.</div><div class="ttdef"><b>Definition:</b> region.cpp:83</div></div>
+<div class="ttc" id="aa10890_html_a675f9c3355b4d2d4f72337a5d22d19ce"><div class="ttname"><a href="a10890.html#a675f9c3355b4d2d4f72337a5d22d19ce">dogen::physical::entities::region::provenance</a></div><div class="ttdeci">const dogen::identification::entities::logical_provenance &amp; provenance() const</div><div class="ttdoc">Details of the provenance of this model element.</div><div class="ttdef"><b>Definition:</b> region.cpp:99</div></div>
+<div class="ttc" id="aa10890_html_a8c7ce78b2991f47d1929c309e7ee564c"><div class="ttname"><a href="a10890.html#a8c7ce78b2991f47d1929c309e7ee564c">dogen::physical::entities::region::archetype_for_role</a></div><div class="ttdeci">const std::unordered_map&lt; std::string, dogen::identification::entities::physical_meta_id &gt; &amp; archetype_for_role() const</div><div class="ttdoc">Resolves a role into a concrete archetype, in the context of this logical element.</div><div class="ttdef"><b>Definition:</b> region.cpp:131</div></div>
+<div class="ttc" id="aa10890_html_abc8416a44ade45914ab9d60bcfa575d3"><div class="ttname"><a href="a10890.html#abc8416a44ade45914ab9d60bcfa575d3">dogen::physical::entities::region::is_generatable</a></div><div class="ttdeci">bool is_generatable() const</div><div class="ttdoc">If false, the entire artefact set is not generatable.</div><div class="ttdef"><b>Definition:</b> region.cpp:147</div></div>
+<div class="ttc" id="aa10890_html_aebcc1037d59a347ba1f1a5bea34203af"><div class="ttname"><a href="a10890.html#aebcc1037d59a347ba1f1a5bea34203af">dogen::physical::entities::region::artefacts_by_archetype</a></div><div class="ttdeci">const std::unordered_map&lt; dogen::identification::entities::physical_meta_id, boost::shared_ptr&lt; dogen::physical::entities::artefact &gt; &gt; &amp; artefacts_by_archetype() const</div><div class="ttdoc">All artefacts that are contained within this set, organised by archetype.</div><div class="ttdef"><b>Definition:</b> region.cpp:115</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

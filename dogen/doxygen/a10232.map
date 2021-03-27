@@ -1,3 +1,3 @@
-<map id="technical_space_properties_transform" name="technical_space_properties_transform">
-<area shape="rect" id="node1" title="Reads technical space specific properties." alt="" coords="5,5,204,97"/>
+<map id="mapping_error" name="mapping_error">
+<area shape="rect" id="node1" title="An error has occurred while mapping element names." alt="" coords="5,5,159,127"/>
 </map>

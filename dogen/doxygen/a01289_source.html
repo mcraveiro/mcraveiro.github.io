@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.identification/include/dogen.identification/types/helpers/separators.hpp Source File</title>
+<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.identification/include/dogen.identification/types/helpers/logical_name_tree_builder.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,7 +68,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">separators.hpp</div>  </div>
+<div class="title">logical_name_tree_builder.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* -*- mode: c++; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-</span></div>
@@ -91,31 +91,74 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * MA 02110-1301, USA.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_IDENTIFICATION_TYPES_HELPERS_SEPARATORS_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_IDENTIFICATION_TYPES_HELPERS_SEPARATORS_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_IDENTIFICATION_TYPES_HELPERS_LOGICAL_NAME_TREE_BUILDER_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_IDENTIFICATION_TYPES_HELPERS_LOGICAL_NAME_TREE_BUILDER_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; (_MSC_VER &gt;= 1200)</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07130.html">dogen::identification::helpers</a> {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="a07130.html#ac68e65e2836de860b0ab820393b205e3">   33</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="a07130.html#ac68e65e2836de860b0ab820393b205e3">separators</a> : unsigned int {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="a07130.html#ac68e65e2836de860b0ab820393b205e3afedb2d84cafe20862cb4399751a8a7e3">invalid</a> = 0, </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="a07130.html#ac68e65e2836de860b0ab820393b205e3abeec6a2a9822a59140a827bc7d47ba23">angle_brackets</a> = 1, </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="a07130.html#ac68e65e2836de860b0ab820393b205e3aae09509af4667150216dbd3ef80b7272">double_colons</a> = 2, </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="a07130.html#ac68e65e2836de860b0ab820393b205e3ae9c6cfa16d8958cb7752450883950ab8">dots</a> = 3 </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aa07130_html"><div class="ttname"><a href="a07130.html">dogen::identification::helpers</a></div><div class="ttdoc">Assorted helpers used to construct domain entities.</div><div class="ttdef"><b>Definition:</b> separators_io.hpp:31</div></div>
-<div class="ttc" id="aa07130_html_ac68e65e2836de860b0ab820393b205e3"><div class="ttname"><a href="a07130.html#ac68e65e2836de860b0ab820393b205e3">dogen::identification::helpers::separators</a></div><div class="ttdeci">separators</div><div class="ttdoc">Available separators to be used by the pretty printer.</div><div class="ttdef"><b>Definition:</b> separators.hpp:33</div></div>
-<div class="ttc" id="aa07130_html_ac68e65e2836de860b0ab820393b205e3aae09509af4667150216dbd3ef80b7272"><div class="ttname"><a href="a07130.html#ac68e65e2836de860b0ab820393b205e3aae09509af4667150216dbd3ef80b7272">dogen::identification::helpers::separators::double_colons</a></div><div class="ttdeci">@ double_colons</div><div class="ttdoc">Separate name elements with a '::'.</div></div>
-<div class="ttc" id="aa07130_html_ac68e65e2836de860b0ab820393b205e3abeec6a2a9822a59140a827bc7d47ba23"><div class="ttname"><a href="a07130.html#ac68e65e2836de860b0ab820393b205e3abeec6a2a9822a59140a827bc7d47ba23">dogen::identification::helpers::separators::angle_brackets</a></div><div class="ttdeci">@ angle_brackets</div><div class="ttdoc">Enclose name elements in '&lt;' and '&gt;'.</div></div>
-<div class="ttc" id="aa07130_html_ac68e65e2836de860b0ab820393b205e3ae9c6cfa16d8958cb7752450883950ab8"><div class="ttname"><a href="a07130.html#ac68e65e2836de860b0ab820393b205e3ae9c6cfa16d8958cb7752450883950ab8">dogen::identification::helpers::separators::dots</a></div><div class="ttdeci">@ dots</div><div class="ttdoc">Separate name elements with a '.'.</div></div>
-<div class="ttc" id="aa07130_html_ac68e65e2836de860b0ab820393b205e3afedb2d84cafe20862cb4399751a8a7e3"><div class="ttname"><a href="a07130.html#ac68e65e2836de860b0ab820393b205e3afedb2d84cafe20862cb4399751a8a7e3">dogen::identification::helpers::separators::invalid</a></div><div class="ttdeci">@ invalid</div><div class="ttdoc">Represents an uninitialised enum.</div></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;unordered_set&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;boost/shared_ptr.hpp&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;dogen.identification/types/entities/logical_name.hpp&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;dogen.identification/types/entities/logical_location.hpp&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;dogen.identification/types/entities/logical_name_tree.hpp&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;dogen.identification/types/helpers/node.hpp&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07334.html">dogen::identification::helpers</a> {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="a09370.html">   48</a></span>&#160;<span class="keyword">class </span><a class="code" href="a09370.html">logical_name_tree_builder</a> final {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="a09370.html">logical_name_tree_builder</a>(<span class="keyword">const</span> <a class="code" href="a09370.html">logical_name_tree_builder</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    ~<a class="code" href="a09370.html">logical_name_tree_builder</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="a09370.html">logical_name_tree_builder</a>(<a class="code" href="a09370.html">logical_name_tree_builder</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="a09370.html">logical_name_tree_builder</a>&amp; operator=(</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">const</span> <a class="code" href="a09370.html">logical_name_tree_builder</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="a09370.html">logical_name_tree_builder</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> finish_current_node();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a09370.html#a15b9e3bb94b4a98bdd1155ffbba9dfa7">add_name</a>(<span class="keyword">const</span> std::string&amp; n);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a09370.html#a292550574fad0a909d7464e6272eec2b">add_builtin</a>(<span class="keyword">const</span> std::string&amp; n);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a09370.html#a0a60db690beea6242a32c866be1b3ae2">start_children</a>();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a09370.html#a0959acea1868e34b3931d1c73d3359ee">next_child</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a09370.html#af0f3d1686084deb8a7be907002d78d2f">end_children</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="a09278.html">entities::logical_name_tree</a> make_name_tree(<span class="keyword">const</span> <a class="code" href="a09406.html">node</a>&amp; n);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="a09278.html">entities::logical_name_tree</a> <a class="code" href="a09370.html#a6e1c00b96a1ce969f42e13fc57d557bf">build</a>();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    std::list&lt;std::string&gt; names_;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    boost::shared_ptr&lt;node&gt; root_;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    boost::shared_ptr&lt;node&gt; current_;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;};</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aa07334_html"><div class="ttname"><a href="a07334.html">dogen::identification::helpers</a></div><div class="ttdoc">Assorted helpers used to construct domain entities.</div><div class="ttdef"><b>Definition:</b> separators_io.hpp:31</div></div>
+<div class="ttc" id="aa09278_html"><div class="ttname"><a href="a09278.html">dogen::identification::entities::logical_name_tree</a></div><div class="ttdoc">Adds support for name composition as a tree-like structure.</div><div class="ttdef"><b>Definition:</b> logical_name_tree.hpp:44</div></div>
+<div class="ttc" id="aa09370_html"><div class="ttname"><a href="a09370.html">dogen::identification::helpers::logical_name_tree_builder</a></div><div class="ttdoc">Creates a name tree as directed by the external caller.</div><div class="ttdef"><b>Definition:</b> logical_name_tree_builder.hpp:48</div></div>
+<div class="ttc" id="aa09370_html_a0959acea1868e34b3931d1c73d3359ee"><div class="ttname"><a href="a09370.html#a0959acea1868e34b3931d1c73d3359ee">dogen::identification::helpers::logical_name_tree_builder::next_child</a></div><div class="ttdeci">void next_child()</div><div class="ttdoc">Notify the presence of an additional child name.</div><div class="ttdef"><b>Definition:</b> logical_name_tree_builder.cpp:93</div></div>
+<div class="ttc" id="aa09370_html_a0a60db690beea6242a32c866be1b3ae2"><div class="ttname"><a href="a09370.html#a0a60db690beea6242a32c866be1b3ae2">dogen::identification::helpers::logical_name_tree_builder::start_children</a></div><div class="ttdeci">void start_children()</div><div class="ttdoc">Notify the start of children.</div><div class="ttdef"><b>Definition:</b> logical_name_tree_builder.cpp:75</div></div>
+<div class="ttc" id="aa09370_html_a15b9e3bb94b4a98bdd1155ffbba9dfa7"><div class="ttname"><a href="a09370.html#a15b9e3bb94b4a98bdd1155ffbba9dfa7">dogen::identification::helpers::logical_name_tree_builder::add_name</a></div><div class="ttdeci">void add_name(const std::string &amp;n)</div><div class="ttdoc">Adds the name to the tree.</div><div class="ttdef"><b>Definition:</b> logical_name_tree_builder.cpp:49</div></div>
+<div class="ttc" id="aa09370_html_a292550574fad0a909d7464e6272eec2b"><div class="ttname"><a href="a09370.html#a292550574fad0a909d7464e6272eec2b">dogen::identification::helpers::logical_name_tree_builder::add_builtin</a></div><div class="ttdeci">void add_builtin(const std::string &amp;n)</div><div class="ttdoc">Adds the built-in element name to the tree.</div><div class="ttdef"><b>Definition:</b> logical_name_tree_builder.cpp:54</div></div>
+<div class="ttc" id="aa09370_html_a6e1c00b96a1ce969f42e13fc57d557bf"><div class="ttname"><a href="a09370.html#a6e1c00b96a1ce969f42e13fc57d557bf">dogen::identification::helpers::logical_name_tree_builder::build</a></div><div class="ttdeci">entities::logical_name_tree build()</div><div class="ttdoc">Generate the name tree representation for the current node representation.</div><div class="ttdef"><b>Definition:</b> logical_name_tree_builder.cpp:143</div></div>
+<div class="ttc" id="aa09370_html_af0f3d1686084deb8a7be907002d78d2f"><div class="ttname"><a href="a09370.html#af0f3d1686084deb8a7be907002d78d2f">dogen::identification::helpers::logical_name_tree_builder::end_children</a></div><div class="ttdeci">void end_children()</div><div class="ttdoc">Notify the end of children.</div><div class="ttdef"><b>Definition:</b> logical_name_tree_builder.cpp:114</div></div>
+<div class="ttc" id="aa09406_html"><div class="ttname"><a href="a09406.html">dogen::identification::helpers::node</a></div><div class="ttdoc">Node in a tree of logical names.</div><div class="ttdef"><b>Definition:</b> node.hpp:41</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

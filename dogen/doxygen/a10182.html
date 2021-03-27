@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: object_templates_transform Class Reference</title>
+<title>Dogen: decomposer Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,57 +63,71 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07159.html">logical</a></li><li class="navelem"><a class="el" href="a07172.html">transforms</a></li><li class="navelem"><a class="el" href="a10182.html">object_templates_transform</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07363.html">logical</a></li><li class="navelem"><b>helpers</b></li><li class="navelem"><a class="el" href="a10182.html">decomposer</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a10179.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">object_templates_transform Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">decomposer Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Transform that specialises in indexing object-template-related relationships across the model.  
+<p>Collect the names of all elements and attributes, for subsequent validation.  
  <a href="a10182.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a02552_source.html">object_templates_transform.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a02429_source.html">decomposer.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for object_templates_transform:</div>
+Collaboration diagram for decomposer:</div>
 <div class="dyncontent">
-<div class="center"><img src="a10180.png" border="0" usemap="#aobject__templates__transform_coll__map" alt="Collaboration graph"/></div>
-<map name="aobject__templates__transform_coll__map" id="aobject__templates__transform_coll__map">
-<area shape="rect" title="Transform that specialises in indexing object&#45;template&#45;related relationships across the model." alt="" coords="5,5,212,83"/>
+<div class="center"><img src="a10180.png" border="0" usemap="#adecomposer_coll__map" alt="Collaboration graph"/></div>
+<map name="adecomposer_coll__map" id="adecomposer_coll__map">
+<area shape="rect" title="Collect the names of all elements and attributes, for subsequent validation." alt="" coords="5,5,128,215"/>
 </map>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:adb8c8d3781e56456376e036cc60e7476"><td class="memItemLeft" align="right" valign="top"><a id="adb8c8d3781e56456376e036cc60e7476"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const <a class="el" href="a09534.html">entities::element</a> &amp;e)</td></tr>
+<tr class="separator:adb8c8d3781e56456376e036cc60e7476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bd52ddc053e9f318ce51f1513734d4c"><td class="memItemLeft" align="right" valign="top"><a id="a8bd52ddc053e9f318ce51f1513734d4c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const <a class="el" href="a09714.html">entities::structural::module</a> &amp;m)</td></tr>
+<tr class="separator:a8bd52ddc053e9f318ce51f1513734d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b12d89dc8b205014bb68387ef6f8ef9"><td class="memItemLeft" align="right" valign="top"><a id="a0b12d89dc8b205014bb68387ef6f8ef9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const <a class="el" href="a09722.html">entities::structural::object_template</a> &amp;ot)</td></tr>
+<tr class="separator:a0b12d89dc8b205014bb68387ef6f8ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac158e7a9aea009f0a5d24f946806e2ad"><td class="memItemLeft" align="right" valign="top"><a id="ac158e7a9aea009f0a5d24f946806e2ad"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const <a class="el" href="a09690.html">entities::structural::builtin</a> &amp;b)</td></tr>
+<tr class="separator:ac158e7a9aea009f0a5d24f946806e2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2a52f677a61ce142f1523931c4ed9ba"><td class="memItemLeft" align="right" valign="top"><a id="af2a52f677a61ce142f1523931c4ed9ba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const <a class="el" href="a09702.html">entities::structural::enumeration</a> &amp;e)</td></tr>
+<tr class="separator:af2a52f677a61ce142f1523931c4ed9ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ed444b27cd4cb3b0e3ec72fbc47b178"><td class="memItemLeft" align="right" valign="top"><a id="a0ed444b27cd4cb3b0e3ec72fbc47b178"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const <a class="el" href="a09726.html">entities::structural::primitive</a> &amp;p)</td></tr>
+<tr class="separator:a0ed444b27cd4cb3b0e3ec72fbc47b178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9168f59fefca0f76ea1576da98e7d1e9"><td class="memItemLeft" align="right" valign="top"><a id="a9168f59fefca0f76ea1576da98e7d1e9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const <a class="el" href="a09718.html">entities::structural::object</a> &amp;o)</td></tr>
+<tr class="separator:a9168f59fefca0f76ea1576da98e7d1e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af25041e27868c8cc30a6b88f3975f39a"><td class="memItemLeft" align="right" valign="top"><a id="af25041e27868c8cc30a6b88f3975f39a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const <a class="el" href="a09710.html">entities::structural::exception</a> &amp;e)</td></tr>
+<tr class="separator:af25041e27868c8cc30a6b88f3975f39a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa62b076f40648a13ea96db5466040aa4"><td class="memItemLeft" align="right" valign="top"><a id="aa62b076f40648a13ea96db5466040aa4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>operator()</b> (const entities::structural::visitor &amp;v)</td></tr>
+<tr class="separator:aa62b076f40648a13ea96db5466040aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aeae2c499c48023fbeb1a6ed6059e5844"><td class="memItemLeft" align="right" valign="top"><a id="aeae2c499c48023fbeb1a6ed6059e5844"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10182.html#aeae2c499c48023fbeb1a6ed6059e5844">apply</a> (const <a class="el" href="a10118.html">context</a> &amp;ctx, <a class="el" href="a09366.html">entities::model</a> &amp;m)</td></tr>
-<tr class="memdesc:aeae2c499c48023fbeb1a6ed6059e5844"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms the object templates the supplied model. <br /></td></tr>
-<tr class="separator:aeae2c499c48023fbeb1a6ed6059e5844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0064cfd411a4a0b899e4462fe8b0276e"><td class="memItemLeft" align="right" valign="top"><a id="a0064cfd411a4a0b899e4462fe8b0276e"></a>
+static decomposition_result&#160;</td><td class="memItemRight" valign="bottom"><b>decompose</b> (const <a class="el" href="a09570.html">entities::model</a> &amp;em)</td></tr>
+<tr class="separator:a0064cfd411a4a0b899e4462fe8b0276e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Transform that specialises in indexing object-template-related relationships across the model. </p>
-<h1><a class="anchor" id="logical_object_templates_transform_0"></a>
-Model requirements</h1>
-<p>The object templates transform expects to receive a merged endmodel, but in practice it makes no requirements in terms of any dependent transforms.</p>
-<h1><a class="anchor" id="logical_object_templates_transform_1"></a>
-Transformation</h1>
-<p>The object templates expander only touches two types of model elements: object templates and objects. This is because these are the only two elements involved in relationships that deal with object templates. Each of these are processed differently.</p>
-<h2><a class="anchor" id="logical_object_templates_transform_11"></a>
-First stage: expanding object templates</h2>
-<p>The object templates transform starts by processing all object templates. Each object template goes through two steps: <em>expansion</em> and <em>reduction</em>. Expansion is defined as adding to each inherited object template the set of all object templates implied by the inheritance graph of that object template: that is, the object template itself, the object templates that the object template inherits from (lets call it <em>parents</em>), the object templates that the parents inherits from and so on.</p>
-<p>Once the expansion is complete, reduction takes place: that is, all duplicate object templates are removed. The final result is known as the <em>reduced object templates set</em>.</p>
-<p>Note that we use the word <em>set</em> here in the mathematical sense, as implementation-wise we use lists manage these relationships. This is because we aim to preserve order where possible; this is to avoid having the code generation move (potentially dramatically) every time any alteration is done to the object templates hierarchy.</p>
-<h2><a class="anchor" id="logical_object_templates_transform_12"></a>
-Second stage: expand objects</h2>
-<p>The object templates expander is also responsible for updating the instantiated object templates in an object - if any. Thus, only objects that are part of such relationships are affected. For example a child which does not instantiate any object templates is not affected, even if its parent does instantiate object templates.</p>
-<p>Note that object expansion must be done after the object templates expansion described above, as it depends on it.</p>
-<p>For objects which do not have parents, the operation is simple: for a given object <em>o</em>, we just need to compute the reduced object template set, as implied by the object templates it instantiates.</p>
-<p>For objects with parents things are slightly more complicated. We must first compute the reduced object template set implied by all its parents; this includes <em>all</em> instantiated object templates found in the entirety of the inheritance graph of a given object. Lets call that set <em>P</em>. We then take the set of all object templates instantiated by the object directly (say <em>R</em>). The final set of instantiated object templates for the object is given by the set difference between <em>R</em> and <em>S</em>; that is, we remove all object templates in <em>R</em> which are part of <em>S</em> - leaving those that only exist in <em>R</em> but not in <em>S</em>. </p>
+<div class="textblock"><p>Collect the names of all elements and attributes, for subsequent validation. </p>
+<p>Note that we do not add the model name itself; this is because we will validate the model's module, which is generated from the model name. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

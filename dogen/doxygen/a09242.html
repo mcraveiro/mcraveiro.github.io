@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: validation_error Class Reference</title>
+<title>Dogen: codec_location Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07128.html">identification</a></li><li class="navelem"><a class="el" href="a07130.html">helpers</a></li><li class="navelem"><a class="el" href="a09242.html">validation_error</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07332.html">identification</a></li><li class="navelem"><a class="el" href="a07333.html">entities</a></li><li class="navelem"><a class="el" href="a09242.html">codec_location</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -71,36 +71,71 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a09239.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">validation_error Class Reference</div>  </div>
+<div class="title">codec_location Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>An error occurred during validation.  
+<p>Location of a modeling element in the codec dimension.  
  <a href="a09242.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a18725_source.html">validation_error.hpp</a>&gt;</code></p>
-
-<p>Inherits exception, and exception.</p>
+<p><code>#include &lt;<a class="el" href="a01115_source.html">codec_location.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for validation_error:</div>
+Collaboration diagram for codec_location:</div>
 <div class="dyncontent">
-<div class="center"><img src="a09240.png" border="0" usemap="#avalidation__error_coll__map" alt="Collaboration graph"/></div>
-<map name="avalidation__error_coll__map" id="avalidation__error_coll__map">
-<area shape="rect" title="An error occurred during validation." alt="" coords="5,5,167,127"/>
+<div class="center"><img src="a09240.png" border="0" usemap="#acodec__location_coll__map" alt="Collaboration graph"/></div>
+<map name="acodec__location_coll__map" id="acodec__location_coll__map">
+<area shape="rect" title="Location of a modeling element in the codec dimension." alt="" coords="5,5,160,376"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6717470ecff9fb4083d04ff0870ba22c"><td class="memItemLeft" align="right" valign="top"><a id="a6717470ecff9fb4083d04ff0870ba22c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>validation_error</b> (const std::string &amp;message)</td></tr>
-<tr class="separator:a6717470ecff9fb4083d04ff0870ba22c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e01571e6589dc64e08addf4b1148a7a"><td class="memItemLeft" align="right" valign="top"><a id="a6e01571e6589dc64e08addf4b1148a7a"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>what</b> () const noexcept</td></tr>
-<tr class="separator:a6e01571e6589dc64e08addf4b1148a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36c7e82e51f42bcff99e3cda30323110"><td class="memItemLeft" align="right" valign="top"><a id="a36c7e82e51f42bcff99e3cda30323110"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>codec_location</b> (const <a class="el" href="a09242.html">codec_location</a> &amp;)=default</td></tr>
+<tr class="separator:a36c7e82e51f42bcff99e3cda30323110"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf01acf4bfbfdb3e41d7e11a6131026c"><td class="memItemLeft" align="right" valign="top"><a id="adf01acf4bfbfdb3e41d7e11a6131026c"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>codec_location</b> (<a class="el" href="a09242.html">codec_location</a> &amp;&amp;rhs)</td></tr>
+<tr class="separator:adf01acf4bfbfdb3e41d7e11a6131026c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb3af37f1d2b315067c69a5c53c05418"><td class="memItemLeft" align="right" valign="top"><a id="aeb3af37f1d2b315067c69a5c53c05418"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>codec_location</b> (const boost::filesystem::path &amp;<a class="el" href="a09242.html#ada3e7bb465d331a041707f7d6150e349">full_path</a>, const long <a class="el" href="a09242.html#a83969afa0c32afaea45c5ab1a2c782e8">line</a>)</td></tr>
+<tr class="separator:aeb3af37f1d2b315067c69a5c53c05418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a275fc48b942473b40a5d0c25e5019dde"><td class="memItemLeft" align="right" valign="top"><a id="a275fc48b942473b40a5d0c25e5019dde"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="a09242.html">codec_location</a> &amp;rhs) const</td></tr>
+<tr class="separator:a275fc48b942473b40a5d0c25e5019dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4bd2fbea1d4f6a8058e8607be0289ed"><td class="memItemLeft" align="right" valign="top"><a id="aa4bd2fbea1d4f6a8058e8607be0289ed"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="a09242.html">codec_location</a> &amp;rhs) const</td></tr>
+<tr class="separator:aa4bd2fbea1d4f6a8058e8607be0289ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67eec8e758e5743d732ad43c1d9fca5b"><td class="memItemLeft" align="right" valign="top"><a id="a67eec8e758e5743d732ad43c1d9fca5b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="a09242.html">codec_location</a> &amp;other) noexcept</td></tr>
+<tr class="separator:a67eec8e758e5743d732ad43c1d9fca5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74e2f568c76d424fd70b11018f9d98ec"><td class="memItemLeft" align="right" valign="top"><a id="a74e2f568c76d424fd70b11018f9d98ec"></a>
+<a class="el" href="a09242.html">codec_location</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="a09242.html">codec_location</a> other)</td></tr>
+<tr class="separator:a74e2f568c76d424fd70b11018f9d98ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:ada3e7bb465d331a041707f7d6150e349"><td class="memItemLeft" align="right" valign="top"><a id="ada3e7bb465d331a041707f7d6150e349"></a>
+const boost::filesystem::path &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09242.html#ada3e7bb465d331a041707f7d6150e349">full_path</a> () const</td></tr>
+<tr class="memdesc:ada3e7bb465d331a041707f7d6150e349"><td class="mdescLeft">&#160;</td><td class="mdescRight">Full path to the file that was read, if any. <br /></td></tr>
+<tr class="separator:ada3e7bb465d331a041707f7d6150e349"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0765c7fc8e525368d7c4afc1f7a3ba47"><td class="memItemLeft" align="right" valign="top"><a id="a0765c7fc8e525368d7c4afc1f7a3ba47"></a>
+boost::filesystem::path &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>full_path</b> ()</td></tr>
+<tr class="separator:a0765c7fc8e525368d7c4afc1f7a3ba47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a195e6d17967d2f7a9ecef6c750a1f11a"><td class="memItemLeft" align="right" valign="top"><a id="a195e6d17967d2f7a9ecef6c750a1f11a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>full_path</b> (const boost::filesystem::path &amp;v)</td></tr>
+<tr class="separator:a195e6d17967d2f7a9ecef6c750a1f11a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad40d2914de905c42ce09c3ac83e09198"><td class="memItemLeft" align="right" valign="top"><a id="ad40d2914de905c42ce09c3ac83e09198"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>full_path</b> (const boost::filesystem::path &amp;&amp;v)</td></tr>
+<tr class="separator:ad40d2914de905c42ce09c3ac83e09198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a83969afa0c32afaea45c5ab1a2c782e8"><td class="memItemLeft" align="right" valign="top"><a id="a83969afa0c32afaea45c5ab1a2c782e8"></a>
+long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09242.html#a83969afa0c32afaea45c5ab1a2c782e8">line</a> () const</td></tr>
+<tr class="memdesc:a83969afa0c32afaea45c5ab1a2c782e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Line number where the element was defined. <br /></td></tr>
+<tr class="separator:a83969afa0c32afaea45c5ab1a2c782e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb1a561cd48f7abf8a6e57841333475d"><td class="memItemLeft" align="right" valign="top"><a id="abb1a561cd48f7abf8a6e57841333475d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>line</b> (const long v)</td></tr>
+<tr class="separator:abb1a561cd48f7abf8a6e57841333475d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An error occurred during validation. </p>
+<div class="textblock"><p>Location of a modeling element in the codec dimension. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

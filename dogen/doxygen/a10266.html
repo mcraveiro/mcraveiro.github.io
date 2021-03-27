@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: variability_profiles_transform Class Reference</title>
+<title>Dogen: resolution_error Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,40 +63,44 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07159.html">logical</a></li><li class="navelem"><a class="el" href="a07172.html">transforms</a></li><li class="navelem"><a class="el" href="a10266.html">variability_profiles_transform</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07363.html">logical</a></li><li class="navelem"><b>helpers</b></li><li class="navelem"><a class="el" href="a10266.html">resolution_error</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a10263.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">variability_profiles_transform Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">resolution_error Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Updates the meta-elements in the logical model that are model variability profiles and profile templates.  
+<p>An error occurred while trying to resolve a type.  
  <a href="a10266.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a02612_source.html">variability_profiles_transform.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a19421_source.html">resolution_error.hpp</a>&gt;</code></p>
+
+<p>Inherits exception, and exception.</p>
 <div class="dynheader">
-Collaboration diagram for variability_profiles_transform:</div>
+Collaboration diagram for resolution_error:</div>
 <div class="dyncontent">
-<div class="center"><img src="a10264.png" border="0" usemap="#avariability__profiles__transform_coll__map" alt="Collaboration graph"/></div>
-<map name="avariability__profiles__transform_coll__map" id="avariability__profiles__transform_coll__map">
-<area shape="rect" title="Updates the meta&#45;elements in the logical model that are model variability profiles and profile templa..." alt="" coords="5,5,148,97"/>
+<div class="center"><img src="a10264.png" border="0" usemap="#aresolution__error_coll__map" alt="Collaboration graph"/></div>
+<map name="aresolution__error_coll__map" id="aresolution__error_coll__map">
+<area shape="rect" title="An error occurred while trying to resolve a type." alt="" coords="5,5,167,127"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ae0196927fdda74e64c5adfa84984f0c4"><td class="memItemLeft" align="right" valign="top"><a id="ae0196927fdda74e64c5adfa84984f0c4"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10266.html#ae0196927fdda74e64c5adfa84984f0c4">apply</a> (const <a class="el" href="a10118.html">context</a> &amp;ctx, <a class="el" href="a09346.html">entities::input_model_set</a> &amp;ms)</td></tr>
-<tr class="memdesc:ae0196927fdda74e64c5adfa84984f0c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the transform to the entire model set. <br /></td></tr>
-<tr class="separator:ae0196927fdda74e64c5adfa84984f0c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ad54c012fe3c1ffb3d76a71f78f9905d9"><td class="memItemLeft" align="right" valign="top"><a id="ad54c012fe3c1ffb3d76a71f78f9905d9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>resolution_error</b> (const std::string &amp;message)</td></tr>
+<tr class="separator:ad54c012fe3c1ffb3d76a71f78f9905d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e01571e6589dc64e08addf4b1148a7a"><td class="memItemLeft" align="right" valign="top"><a id="a6e01571e6589dc64e08addf4b1148a7a"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>what</b> () const noexcept</td></tr>
+<tr class="separator:a6e01571e6589dc64e08addf4b1148a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Updates the meta-elements in the logical model that are model variability profiles and profile templates. </p>
+<div class="textblock"><p>An error occurred while trying to resolve a type. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

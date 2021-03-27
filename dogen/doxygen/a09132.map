@@ -1,3 +1,3 @@
-<map id="flattening_error" name="flattening_error">
-<area shape="rect" id="node1" title="An error occurred whilst flattening a name." alt="" coords="5,5,164,127"/>
+<map id="layer" name="layer">
+<area shape="rect" id="node1" title="Represents a layer in a Dia diagram." alt="" coords="5,5,129,552"/>
 </map>

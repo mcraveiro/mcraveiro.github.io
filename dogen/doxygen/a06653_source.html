@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.variability/include/dogen.variability/io/entities/configuration_point_template_io.hpp Source File</title>
+<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.utility/include/dogen.utility/types/test_data/xml_reader.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,12 +63,12 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_802279b850942ba06ba156537b5c87ab.html">dogen.variability</a></li><li class="navelem"><a class="el" href="dir_6bbff91d2e3cf73d080fce5320ce048b.html">include</a></li><li class="navelem"><a class="el" href="dir_5ba5ba807b9f4f82bafbe23f904198b1.html">dogen.variability</a></li><li class="navelem"><a class="el" href="dir_e8ef777b65df9efd923ddab3bd7c9be6.html">io</a></li><li class="navelem"><a class="el" href="dir_cb89de7f9bfe9aee6e5d32a9ee2f0b00.html">entities</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_e144ee88741e14a18d4de393fc52b9b5.html">dogen.utility</a></li><li class="navelem"><a class="el" href="dir_14e0264bab8358c2110affe619f144a8.html">include</a></li><li class="navelem"><a class="el" href="dir_014843984735c1b216b3bc5f929b0466.html">dogen.utility</a></li><li class="navelem"><a class="el" href="dir_81f1fe2e028ed84ba454c4b825bbb494.html">types</a></li><li class="navelem"><a class="el" href="dir_e9d8474c215e52cb06cc73b755bd6a91.html">test_data</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">configuration_point_template_io.hpp</div>  </div>
+<div class="title">xml_reader.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* -*- mode: c++; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-</span></div>
@@ -91,26 +91,54 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * MA 02110-1301, USA.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_VARIABILITY_IO_ENTITIES_CONFIGURATION_POINT_TEMPLATE_IO_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_VARIABILITY_IO_ENTITIES_CONFIGURATION_POINT_TEMPLATE_IO_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_UTILITY_TEST_DATA_XML_READER_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_UTILITY_TEST_DATA_XML_READER_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; (_MSC_VER &gt;= 1200)</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;iosfwd&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;dogen.variability/types/entities/configuration_point_template.hpp&quot;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07641.html">dogen::variability::entities</a> {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;std::ostream&amp;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;operator&lt;&lt;(std::ostream&amp; s,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;     <span class="keyword">const</span> dogen::variability::entities::configuration_point_template&amp; v);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aa07641_html"><div class="ttname"><a href="a07641.html">dogen::variability::entities</a></div><div class="ttdoc">Contains all of the types describing variability with Masd.</div><div class="ttdef"><b>Definition:</b> binding_action_io.hpp:31</div></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;boost/filesystem/path.hpp&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07802.html">dogen::utility::test_data</a> {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="a13354.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="a13354.html">xml_reader</a> {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="a13354.html">xml_reader</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="a13354.html">xml_reader</a>(<span class="keyword">const</span> <a class="code" href="a13354.html">xml_reader</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    ~<a class="code" href="a13354.html">xml_reader</a>() = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="a13354.html">xml_reader</a>(<a class="code" href="a13354.html">xml_reader</a>&amp;&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="a13354.html">xml_reader</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="a13354.html">xml_reader</a>&amp;) = <span class="keyword">delete</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">static</span> boost::filesystem::path data_set();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">static</span> boost::filesystem::path non_existent_file();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">static</span> boost::filesystem::path input();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">static</span> boost::filesystem::path input_boolean_values();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">static</span> boost::filesystem::path input_double_values();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">static</span> boost::filesystem::path input_empty_file();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">static</span> boost::filesystem::path input_int_values();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">static</span> boost::filesystem::path input_long_values();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">static</span> boost::filesystem::path input_node_with_attributes();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">static</span> boost::filesystem::path input_one_node_indented();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">static</span> boost::filesystem::path input_one_node_inlined();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">static</span> boost::filesystem::path input_one_node_self_closing();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">static</span> boost::filesystem::path input_string_value_indented();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">static</span> boost::filesystem::path input_string_value_inlined();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">static</span> boost::filesystem::path input_three_nested_elements();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">static</span> boost::filesystem::path input_values_of_all_types();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keyword">static</span> boost::filesystem::path input_xml_declaration_one_node_indented();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">static</span> boost::filesystem::path expected();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">static</span> boost::filesystem::path actual();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aa07802_html"><div class="ttname"><a href="a07802.html">dogen::utility::test_data</a></div><div class="ttdoc">Contains dogen's static factories and helpers to access test data, as well as management of test data...</div><div class="ttdef"><b>Definition:</b> cpp_ref_impl_product.hpp:30</div></div>
+<div class="ttc" id="aa13354_html"><div class="ttname"><a href="a13354.html">dogen::utility::test_data::xml_reader</a></div><div class="ttdoc">Manages the location of all files in the XML Reader test data set.</div><div class="ttdef"><b>Definition:</b> xml_reader.hpp:36</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

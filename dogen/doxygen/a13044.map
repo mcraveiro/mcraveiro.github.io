@@ -1,3 +1,3 @@
-<map id="lifecycle_manager" name="lifecycle_manager">
-<area shape="rect" id="node1" title="Manages the starting and stopping of logging for an application." alt="" coords="5,5,184,171"/>
+<map id="visual_studio_factory" name="visual_studio_factory">
+<area shape="rect" id="node1" title="Creates a physical representation for the facet visual_studio." alt="" coords="5,5,167,83"/>
 </map>

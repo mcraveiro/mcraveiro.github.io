@@ -1,3 +1,3 @@
-<map id="physical_name" name="physical_name">
-<area shape="rect" id="node1" title="Name of a physical model element." alt="" coords="5,5,161,435"/>
+<map id="connection" name="connection">
+<area shape="rect" id="node1" title="Connection between entities in a Dia diagram." alt="" coords="5,5,155,552"/>
 </map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.text/include/dogen.text/types/transforms/cpp/hash/ptime_helper_transform.hpp Source File</title>
+<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.text/include/dogen.text/types/transforms/cpp/serialization/class_implementation_factory.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,12 +63,12 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_d0396150bcf57e911dff403e9b0739ba.html">dogen.text</a></li><li class="navelem"><a class="el" href="dir_8b3b310a3fe978bc384ba2728ff4d590.html">include</a></li><li class="navelem"><a class="el" href="dir_248786eec5607e5f0e503888893d78d4.html">dogen.text</a></li><li class="navelem"><a class="el" href="dir_eae8887358fa2693160c8fa64c912a82.html">types</a></li><li class="navelem"><a class="el" href="dir_07a606544302cc4d576fd1cfc4516e77.html">transforms</a></li><li class="navelem"><a class="el" href="dir_eafeec85fc307cbb86f9e673ddf809f2.html">cpp</a></li><li class="navelem"><a class="el" href="dir_76fcb900fc6d57a70bc8cf05a043fda0.html">hash</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_d0396150bcf57e911dff403e9b0739ba.html">dogen.text</a></li><li class="navelem"><a class="el" href="dir_8b3b310a3fe978bc384ba2728ff4d590.html">include</a></li><li class="navelem"><a class="el" href="dir_248786eec5607e5f0e503888893d78d4.html">dogen.text</a></li><li class="navelem"><a class="el" href="dir_eae8887358fa2693160c8fa64c912a82.html">types</a></li><li class="navelem"><a class="el" href="dir_07a606544302cc4d576fd1cfc4516e77.html">transforms</a></li><li class="navelem"><a class="el" href="dir_eafeec85fc307cbb86f9e673ddf809f2.html">cpp</a></li><li class="navelem"><a class="el" href="dir_ca5cd48b55b5b67ba0c7c189171c397d.html">serialization</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">ptime_helper_transform.hpp</div>  </div>
+<div class="title">class_implementation_factory.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* -*- mode: c++; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-</span></div>
@@ -91,36 +91,28 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * MA 02110-1301, USA.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_TEXT_TYPES_TRANSFORMS_CPP_HASH_PTIME_HELPER_TRANSFORM_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_TEXT_TYPES_TRANSFORMS_CPP_HASH_PTIME_HELPER_TRANSFORM_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_TEXT_TYPES_TRANSFORMS_CPP_SERIALIZATION_CLASS_IMPLEMENTATION_FACTORY_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_TEXT_TYPES_TRANSFORMS_CPP_SERIALIZATION_CLASS_IMPLEMENTATION_FACTORY_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; (_MSC_VER &gt;= 1200)</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;dogen.text/types/transforms/helper_transform.hpp&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;dogen.physical/types/entities/archetype.hpp&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span>dogen::text::transforms::cpp::hash {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span>dogen::text::transforms::cpp::serialization {</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">class </span>ptime_helper_transform final : <span class="keyword">public</span> text::transforms::helper_transform {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    std::string id() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    std::string family() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    std::list&lt;std::string&gt; owning_formatters() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::list&lt;std::string&gt; owning_facets() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    std::string helper_name() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">bool</span> is_enabled(<span class="keyword">const</span> physical::entities::model&amp; m,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">const</span> logical::entities::element&amp; e,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">const</span> physical::entities::artefact&amp; a,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">const</span> logical::entities::helper_properties&amp; hp) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> apply(std::ostream&amp; os,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">const</span> logical::entities::model&amp; m,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">const</span> logical::entities::helper_properties&amp; hp) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="a12146.html">   38</a></span>&#160;<span class="keyword">class </span><a class="code" href="a12146.html">class_implementation_factory</a> final {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">static</span> <a class="code" href="a10790.html">physical::entities::archetype</a> <a class="code" href="a12146.html#ad37ea896cdaf7b18ffb0c5d9a8ab0a03">make</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aa10790_html"><div class="ttname"><a href="a10790.html">dogen::physical::entities::archetype</a></div><div class="ttdoc">Represents a meta-artefact.</div><div class="ttdef"><b>Definition:</b> archetype.hpp:43</div></div>
+<div class="ttc" id="aa12146_html"><div class="ttname"><a href="a12146.html">dogen::text::transforms::cpp::serialization::class_implementation_factory</a></div><div class="ttdoc">Creates a physical representation for the archetype class_implementation.</div><div class="ttdef"><b>Definition:</b> class_implementation_factory.hpp:38</div></div>
+<div class="ttc" id="aa12146_html_ad37ea896cdaf7b18ffb0c5d9a8ab0a03"><div class="ttname"><a href="a12146.html#ad37ea896cdaf7b18ffb0c5d9a8ab0a03">dogen::text::transforms::cpp::serialization::class_implementation_factory::make</a></div><div class="ttdeci">static physical::entities::archetype make()</div><div class="ttdoc">Makes the archetype.</div><div class="ttdef"><b>Definition:</b> class_implementation_factory.cpp:26</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

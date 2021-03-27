@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: code_generation_chain Class Reference</title>
+<title>Dogen: physical_entities_transform Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07285.html">orchestration</a></li><li class="navelem"><a class="el" href="a07286.html">transforms</a></li><li class="navelem"><a class="el" href="a10406.html">code_generation_chain</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07363.html">logical</a></li><li class="navelem"><a class="el" href="a07376.html">transforms</a></li><li class="navelem"><a class="el" href="a10406.html">physical_entities_transform</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -71,41 +71,70 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a10403.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">code_generation_chain Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">physical_entities_transform Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Responsible for transforming a high-level representation of a domain into code, in one or more primary technical spaces.  
+<p>Transforms all physical entities in the logical model.  
  <a href="a10406.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a03419_source.html">code_generation_chain.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a02615_source.html">physical_entities_transform.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for code_generation_chain:</div>
+Collaboration diagram for physical_entities_transform:</div>
 <div class="dyncontent">
-<div class="center"><img src="a10404.png" border="0" usemap="#acode__generation__chain_coll__map" alt="Collaboration graph"/></div>
-<map name="acode__generation__chain_coll__map" id="acode__generation__chain_coll__map">
-<area shape="rect" title="Responsible for transforming a high&#45;level representation of a domain into code, in one or more primar..." alt="" coords="5,5,177,83"/>
+<div class="center"><img src="a10404.png" border="0" usemap="#aphysical__entities__transform_coll__map" alt="Collaboration graph"/></div>
+<map name="aphysical__entities__transform_coll__map" id="aphysical__entities__transform_coll__map">
+<area shape="rect" title="Transforms all physical entities in the logical model." alt="" coords="5,5,208,83"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a8677321814262847b8a2c18f5046b637"><td class="memItemLeft" align="right" valign="top"><a id="a8677321814262847b8a2c18f5046b637"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (const context &amp;ctx, const boost::filesystem::path &amp;target)</td></tr>
-<tr class="separator:a8677321814262847b8a2c18f5046b637"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeae2c499c48023fbeb1a6ed6059e5844"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10406.html#aeae2c499c48023fbeb1a6ed6059e5844">apply</a> (const <a class="el" href="a10322.html">context</a> &amp;ctx, <a class="el" href="a09570.html">entities::model</a> &amp;m)</td></tr>
+<tr class="separator:aeae2c499c48023fbeb1a6ed6059e5844"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Responsible for transforming a high-level representation of a domain into code, in one or more primary technical spaces. </p>
-<p>The model which one intends to transform is known as the <em>target</em> model. The transform starts by invoking the correct front-end to read in the target model and all of its dependencies. There are two types of dependencies:</p>
-<ul>
-<li><em>explicit:</em> specified by the options passed in; these are models created by the user and any models that they, in turn, depend on.</li>
-</ul>
-<ul>
-<li><em>implicit:</em> these are known as the <em>system</em> models. They are added automatically. Examples are built-ins, boost, std, etc.</li>
-</ul>
-<p>Collectively, all implicit and explicit models are referred to as the <em>input</em> models. The input models read the front-end are converted into the middle end representation - models. They are then merged it into a single, unified Yarn model, called the <em>merged</em> model; all dependencies are resolved and validated.</p>
-<p>The transform then instantiates all backends requested by the options passed in. They use the merged model to generate source code, and then outputted it to the desired destination. </p>
-</div></div><!-- contents -->
+<div class="textblock"><p>Transforms all physical entities in the logical model. </p>
+<p>Must execute after the containment transform. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aeae2c499c48023fbeb1a6ed6059e5844"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeae2c499c48023fbeb1a6ed6059e5844">&#9670;&nbsp;</a></span>apply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void apply </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a10322.html">context</a> &amp;&#160;</td>
+          <td class="paramname"><em>ctx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a09570.html">entities::model</a> &amp;&#160;</td>
+          <td class="paramname"><em>m</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Execute the transform against the model. </p>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1

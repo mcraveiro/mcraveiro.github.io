@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: documentation_trimming_transform Class Reference</title>
+<title>Dogen: conversion_configuration Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,39 +63,83 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07078.html">codec</a></li><li class="navelem"><b>transforms</b></li><li class="navelem"><a class="el" href="a08782.html">documentation_trimming_transform</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07276.html">cli</a></li><li class="navelem"><a class="el" href="a08782.html">conversion_configuration</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a08779.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">documentation_trimming_transform Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">conversion_configuration Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Removes any leading and trailing whitespace from all the documentation.  
+<p>Configuration for the model conversion.  
  <a href="a08782.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00494_source.html">documentation_trimming_transform.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00278_source.html">conversion_configuration.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for documentation_trimming_transform:</div>
+Collaboration diagram for conversion_configuration:</div>
 <div class="dyncontent">
-<div class="center"><img src="a08780.png" border="0" usemap="#adocumentation__trimming__transform_coll__map" alt="Collaboration graph"/></div>
-<map name="adocumentation__trimming__transform_coll__map" id="adocumentation__trimming__transform_coll__map">
-<area shape="rect" title="Removes any leading and trailing whitespace from all the documentation." alt="" coords="5,5,192,97"/>
+<div class="center"><img src="a08780.png" border="0" usemap="#aconversion__configuration_coll__map" alt="Collaboration graph"/></div>
+<map name="aconversion__configuration_coll__map" id="aconversion__configuration_coll__map">
+<area shape="rect" title="Configuration for the model conversion." alt="" coords="5,5,227,376"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aeae2c499c48023fbeb1a6ed6059e5844"><td class="memItemLeft" align="right" valign="top"><a id="aeae2c499c48023fbeb1a6ed6059e5844"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (const context &amp;ctx, <a class="el" href="a08638.html">entities::model</a> &amp;m)</td></tr>
-<tr class="separator:aeae2c499c48023fbeb1a6ed6059e5844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aaed0a2aa91522f9b132bbc654a660c2a"><td class="memItemLeft" align="right" valign="top"><a id="aaed0a2aa91522f9b132bbc654a660c2a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>conversion_configuration</b> (const <a class="el" href="a08782.html">conversion_configuration</a> &amp;)=default</td></tr>
+<tr class="separator:aaed0a2aa91522f9b132bbc654a660c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ad3def3b2acc294c9c180f613cc5668"><td class="memItemLeft" align="right" valign="top"><a id="a6ad3def3b2acc294c9c180f613cc5668"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>conversion_configuration</b> (<a class="el" href="a08782.html">conversion_configuration</a> &amp;&amp;rhs)</td></tr>
+<tr class="separator:a6ad3def3b2acc294c9c180f613cc5668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5231cf9176f3fc6f783d45fb54a659c5"><td class="memItemLeft" align="right" valign="top"><a id="a5231cf9176f3fc6f783d45fb54a659c5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>conversion_configuration</b> (const boost::filesystem::path &amp;source, const std::string &amp;<a class="el" href="a08782.html#a7a50a9b6fc6705872f4d7d670e4b02e9">destination</a>)</td></tr>
+<tr class="separator:a5231cf9176f3fc6f783d45fb54a659c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb5c12adac253ee9b0f0b8de4ea2189e"><td class="memItemLeft" align="right" valign="top"><a id="adb5c12adac253ee9b0f0b8de4ea2189e"></a>
+const boost::filesystem::path &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>source</b> () const</td></tr>
+<tr class="separator:adb5c12adac253ee9b0f0b8de4ea2189e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf5e861b9c83c44c5156592b092048f0"><td class="memItemLeft" align="right" valign="top"><a id="abf5e861b9c83c44c5156592b092048f0"></a>
+boost::filesystem::path &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>source</b> ()</td></tr>
+<tr class="separator:abf5e861b9c83c44c5156592b092048f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe268133b80b2481af3abfdb86be64c8"><td class="memItemLeft" align="right" valign="top"><a id="afe268133b80b2481af3abfdb86be64c8"></a>
+<a class="el" href="a08782.html">conversion_configuration</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>source</b> (const boost::filesystem::path &amp;v)</td></tr>
+<tr class="separator:afe268133b80b2481af3abfdb86be64c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8f849930ff23344ab7d15f7369fadaa"><td class="memItemLeft" align="right" valign="top"><a id="ae8f849930ff23344ab7d15f7369fadaa"></a>
+<a class="el" href="a08782.html">conversion_configuration</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>source</b> (const boost::filesystem::path &amp;&amp;v)</td></tr>
+<tr class="separator:ae8f849930ff23344ab7d15f7369fadaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10666b1a6a8df724da6bf4b59b9c5dbe"><td class="memItemLeft" align="right" valign="top"><a id="a10666b1a6a8df724da6bf4b59b9c5dbe"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="a08782.html">conversion_configuration</a> &amp;rhs) const</td></tr>
+<tr class="separator:a10666b1a6a8df724da6bf4b59b9c5dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3deb736c34a31d40e30c5efd65ec642"><td class="memItemLeft" align="right" valign="top"><a id="ae3deb736c34a31d40e30c5efd65ec642"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="a08782.html">conversion_configuration</a> &amp;rhs) const</td></tr>
+<tr class="separator:ae3deb736c34a31d40e30c5efd65ec642"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afce202f614e5bcce313c37d97191b454"><td class="memItemLeft" align="right" valign="top"><a id="afce202f614e5bcce313c37d97191b454"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="a08782.html">conversion_configuration</a> &amp;other) noexcept</td></tr>
+<tr class="separator:afce202f614e5bcce313c37d97191b454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a587079c958f0f2c7a115b8edc9915826"><td class="memItemLeft" align="right" valign="top"><a id="a587079c958f0f2c7a115b8edc9915826"></a>
+<a class="el" href="a08782.html">conversion_configuration</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="a08782.html">conversion_configuration</a> other)</td></tr>
+<tr class="separator:a587079c958f0f2c7a115b8edc9915826"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a7a50a9b6fc6705872f4d7d670e4b02e9"><td class="memItemLeft" align="right" valign="top"><a id="a7a50a9b6fc6705872f4d7d670e4b02e9"></a>
+const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08782.html#a7a50a9b6fc6705872f4d7d670e4b02e9">destination</a> () const</td></tr>
+<tr class="memdesc:a7a50a9b6fc6705872f4d7d670e4b02e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the file to output the conversion to. <br /></td></tr>
+<tr class="separator:a7a50a9b6fc6705872f4d7d670e4b02e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6357e8df4146c9c21cb72056f86a620"><td class="memItemLeft" align="right" valign="top"><a id="ad6357e8df4146c9c21cb72056f86a620"></a>
+std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>destination</b> ()</td></tr>
+<tr class="separator:ad6357e8df4146c9c21cb72056f86a620"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a018fc61c4300ab5144f09f77db19ea31"><td class="memItemLeft" align="right" valign="top"><a id="a018fc61c4300ab5144f09f77db19ea31"></a>
+<a class="el" href="a08782.html">conversion_configuration</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>destination</b> (const std::string &amp;v)</td></tr>
+<tr class="separator:a018fc61c4300ab5144f09f77db19ea31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a501ce71dea1f14c0db1eff90fef6e840"><td class="memItemLeft" align="right" valign="top"><a id="a501ce71dea1f14c0db1eff90fef6e840"></a>
+<a class="el" href="a08782.html">conversion_configuration</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>destination</b> (const std::string &amp;&amp;v)</td></tr>
+<tr class="separator:a501ce71dea1f14c0db1eff90fef6e840"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Removes any leading and trailing whitespace from all the documentation. </p>
+<div class="textblock"><p>Configuration for the model conversion. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

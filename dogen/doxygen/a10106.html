@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: associations_transform Class Reference</title>
+<title>Dogen: variability_entry Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07159.html">logical</a></li><li class="navelem"><a class="el" href="a07172.html">transforms</a></li><li class="navelem"><a class="el" href="a10106.html">associations_transform</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07363.html">logical</a></li><li class="navelem"><a class="el" href="a07378.html">features</a></li><li class="navelem"><a class="el" href="a10106.html">variability_entry</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -71,40 +71,38 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a10103.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">associations_transform Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">variability_entry Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Transform that specialises in indexing associations for objects.  
+<p>Features related to the processing of variability for profiles and profile templates.  
  <a href="a10106.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a02501_source.html">associations_transform.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a02396_source.html">variability_entry.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for associations_transform:</div>
+Collaboration diagram for variability_entry:</div>
 <div class="dyncontent">
-<div class="center"><img src="a10104.png" border="0" usemap="#aassociations__transform_coll__map" alt="Collaboration graph"/></div>
-<map name="aassociations__transform_coll__map" id="aassociations__transform_coll__map">
-<area shape="rect" title="Transform that specialises in indexing associations for objects." alt="" coords="5,5,180,83"/>
+<div class="center"><img src="a10104.png" border="0" usemap="#avariability__entry_coll__map" alt="Collaboration graph"/></div>
+<map name="avariability__entry_coll__map" id="avariability__entry_coll__map">
+<area shape="rect" title="Features related to the processing of variability for profiles and profile templates." alt="" coords="5,5,224,112"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aeae2c499c48023fbeb1a6ed6059e5844"><td class="memItemLeft" align="right" valign="top"><a id="aeae2c499c48023fbeb1a6ed6059e5844"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10106.html#aeae2c499c48023fbeb1a6ed6059e5844">apply</a> (const <a class="el" href="a10118.html">context</a> &amp;ctx, <a class="el" href="a09366.html">entities::model</a> &amp;m)</td></tr>
-<tr class="memdesc:aeae2c499c48023fbeb1a6ed6059e5844"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms all association relationships on all objects. <br /></td></tr>
-<tr class="separator:aeae2c499c48023fbeb1a6ed6059e5844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dfa21ca7b93abbd5afbbd421aa2cd5d"><td class="memItemLeft" align="right" valign="top"><a id="a7dfa21ca7b93abbd5afbbd421aa2cd5d"></a>
+static feature_group&#160;</td><td class="memItemRight" valign="bottom"><b>make_feature_group</b> (const <a class="el" href="a13446.html">variability::entities::feature_model</a> &amp;fm)</td></tr>
+<tr class="separator:a7dfa21ca7b93abbd5afbbd421aa2cd5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8138fc59a75e2fff7b3e4291666b72a"><td class="memItemLeft" align="right" valign="top"><a id="af8138fc59a75e2fff7b3e4291666b72a"></a>
+static static_configuration&#160;</td><td class="memItemRight" valign="bottom"><b>make_static_configuration</b> (const feature_group &amp;fg, const variability::entities::configuration &amp;cfg)</td></tr>
+<tr class="separator:af8138fc59a75e2fff7b3e4291666b72a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eace8e86c71b0ce6da0a5cb452c1414"><td class="memTemplParams" colspan="2"><a id="a7eace8e86c71b0ce6da0a5cb452c1414"></a>
+template&lt;typename Configurable &gt; </td></tr>
+<tr class="memitem:a7eace8e86c71b0ce6da0a5cb452c1414"><td class="memTemplItemLeft" align="right" valign="top">static static_configuration&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_static_configuration</b> (const feature_group &amp;fg, const Configurable &amp;c)</td></tr>
+<tr class="separator:a7eace8e86c71b0ce6da0a5cb452c1414"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Transform that specialises in indexing associations for objects. </p>
-<h1><a class="anchor" id="logical_associations_transform_0"></a>
-Requirements</h1>
-<p>The transform of local attributes is expected to have taken place.</p>
-<h1><a class="anchor" id="logical_associations_transform_1"></a>
-Indexing Process</h1>
-<p>The transform goes through all attributes in objects and, for every name tree, unpacks all the associations implied by their presence.</p>
-<p>Associations are of two types: <em>regular</em> or <em>weak</em>. This distinction is required due to the usage of the association at code generation time.</p>
-<p>A <em>regular</em> association means a full type definition is required to be available due to the association. A <em>weak</em> association means that the type is used via pointer and as such a forward declaration may suffice. </p>
+<div class="textblock"><p>Features related to the processing of variability for profiles and profile templates. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

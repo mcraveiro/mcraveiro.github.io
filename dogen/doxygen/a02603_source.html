@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.logical/include/dogen.logical/types/transforms/type_registrar_transform.hpp Source File</title>
+<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.logical/include/dogen.logical/types/transforms/odb_options_transform.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,7 +68,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">type_registrar_transform.hpp</div>  </div>
+<div class="title">odb_options_transform.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* -*- mode: c++; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-</span></div>
@@ -91,30 +91,47 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * MA 02110-1301, USA.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_LOGICAL_TYPES_TRANSFORMS_TYPE_REGISTRAR_TRANSFORM_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_LOGICAL_TYPES_TRANSFORMS_TYPE_REGISTRAR_TRANSFORM_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_LOGICAL_TYPES_TRANSFORMS_ODB_OPTIONS_TRANSFORM_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_LOGICAL_TYPES_TRANSFORMS_ODB_OPTIONS_TRANSFORM_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; (_MSC_VER &gt;= 1200)</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/model.hpp&quot;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/transforms/context_fwd.hpp&quot;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07172.html">dogen::logical::transforms</a> {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="a10254.html">   37</a></span>&#160;<span class="keyword">class </span><a class="code" href="a10254.html">type_registrar_transform</a> final {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> apply(<span class="keyword">const</span> <a class="code" href="a10118.html">context</a>&amp; ctx, <a class="code" href="a09366.html">entities::model</a>&amp; m);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aa07172_html"><div class="ttname"><a href="a07172.html">dogen::logical::transforms</a></div><div class="ttdoc">Houses all of the transformations supported by logical.</div><div class="ttdef"><b>Definition:</b> context_io.hpp:31</div></div>
-<div class="ttc" id="aa09366_html"><div class="ttname"><a href="a09366.html">dogen::logical::entities::model</a></div><div class="ttdoc">Intermediate representation of a masd model.</div><div class="ttdef"><b>Definition:</b> model.hpp:67</div></div>
-<div class="ttc" id="aa10118_html"><div class="ttname"><a href="a10118.html">dogen::logical::transforms::context</a></div><div class="ttdoc">Context for all logical transformations.</div><div class="ttdef"><b>Definition:</b> context.hpp:47</div></div>
-<div class="ttc" id="aa10254_html"><div class="ttname"><a href="a10254.html">dogen::logical::transforms::type_registrar_transform</a></div><div class="ttdoc">Populates the type registrars with information from the model.</div><div class="ttdef"><b>Definition:</b> type_registrar_transform.hpp:37</div></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include&lt;list&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/orm/letter_case.hpp&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/orm/database_system.hpp&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/orm/model_properties.hpp&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/model.hpp&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/transforms/context.hpp&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07376.html">dogen::logical::transforms</a> {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="a10390.html">   41</a></span>&#160;<span class="keyword">class </span><a class="code" href="a10390.html">odb_options_transform</a> final {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">static</span> std::string</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    to_odb_database(<span class="keyword">const</span> <a class="code" href="a07368.html#a1bebf3dfb8a2c68b11573c3e596a22d4">logical::entities::orm::database_system</a> ds);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">static</span> std::string</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    to_odb_sql_name_case(<span class="keyword">const</span> <a class="code" href="a07368.html#ab8fc5d9f80c5d0f1b66175e771a38cd2">logical::entities::orm::letter_case</a> lc);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">static</span> std::list&lt;std::string&gt;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    make_databases(<span class="keyword">const</span> logical::entities::orm::model_properties&amp; omp);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> apply(<span class="keyword">const</span> <a class="code" href="a10322.html">context</a>&amp; ctx, <a class="code" href="a09570.html">entities::model</a>&amp; m);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aa07368_html_a1bebf3dfb8a2c68b11573c3e596a22d4"><div class="ttname"><a href="a07368.html#a1bebf3dfb8a2c68b11573c3e596a22d4">dogen::logical::entities::orm::database_system</a></div><div class="ttdeci">database_system</div><div class="ttdef"><b>Definition:</b> database_system.hpp:30</div></div>
+<div class="ttc" id="aa07368_html_ab8fc5d9f80c5d0f1b66175e771a38cd2"><div class="ttname"><a href="a07368.html#ab8fc5d9f80c5d0f1b66175e771a38cd2">dogen::logical::entities::orm::letter_case</a></div><div class="ttdeci">letter_case</div><div class="ttdef"><b>Definition:</b> letter_case.hpp:30</div></div>
+<div class="ttc" id="aa07376_html"><div class="ttname"><a href="a07376.html">dogen::logical::transforms</a></div><div class="ttdoc">Houses all of the transformations supported by logical.</div><div class="ttdef"><b>Definition:</b> context_io.hpp:31</div></div>
+<div class="ttc" id="aa09570_html"><div class="ttname"><a href="a09570.html">dogen::logical::entities::model</a></div><div class="ttdoc">Intermediate representation of a masd model.</div><div class="ttdef"><b>Definition:</b> model.hpp:67</div></div>
+<div class="ttc" id="aa10322_html"><div class="ttname"><a href="a10322.html">dogen::logical::transforms::context</a></div><div class="ttdoc">Context for all logical transformations.</div><div class="ttdef"><b>Definition:</b> context.hpp:47</div></div>
+<div class="ttc" id="aa10390_html"><div class="ttname"><a href="a10390.html">dogen::logical::transforms::odb_options_transform</a></div><div class="ttdoc">Transforms the meta-model elements related to ODB options.</div><div class="ttdef"><b>Definition:</b> odb_options_transform.hpp:41</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

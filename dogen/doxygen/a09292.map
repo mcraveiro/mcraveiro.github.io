@@ -1,4 +1,3 @@
-<map id="cmakelists" name="cmakelists">
-<area shape="rect" id="node1" title="Represents build CMakeLists files." alt="" coords="27,1656,155,1880"/>
-<area shape="rect" id="node2" href="$a09330.html" title="Represents a generic logical construct." alt="" coords="5,5,177,1608"/>
+<map id="physical_id" name="physical_id">
+<area shape="rect" id="node1" title="ID for a physical element." alt="" coords="5,5,176,332"/>
 </map>

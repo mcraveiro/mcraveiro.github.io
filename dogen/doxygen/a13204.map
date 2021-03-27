@@ -1,4 +1,3 @@
-<map id="comma_separated_collection" name="comma_separated_collection">
-<area shape="rect" id="node1" title="Represents a collection of CSV input that is split into a collection of text values." alt="" coords="5,307,255,531"/>
-<area shape="rect" id="node2" href="$a13294.html" title="Base class of all value types." alt="" coords="73,5,187,259"/>
+<map id="basic_positive_indenter_scope&lt; CharType, TraitsType &gt;" name="basic_positive_indenter_scope&lt; CharType, TraitsType &gt;">
+<area shape="rect" id="node1" title="Utility class that indents on construction and outdents on destruction." alt="" coords="5,5,236,141"/>
 </map>

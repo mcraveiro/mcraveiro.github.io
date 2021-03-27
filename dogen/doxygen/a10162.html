@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: merge_transform Class Reference</title>
+<title>Dogen: generation_marker_formatter Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,48 +63,39 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07159.html">logical</a></li><li class="navelem"><a class="el" href="a07172.html">transforms</a></li><li class="navelem"><a class="el" href="a10162.html">merge_transform</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07363.html">logical</a></li><li class="navelem"><a class="el" href="a07379.html">formatters</a></li><li class="navelem"><a class="el" href="a10162.html">generation_marker_formatter</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a10159.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">merge_transform Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">generation_marker_formatter Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Combines a number of models into a single model.  
+<p>Populates the generation marker, ready to be wrapped in comments.  
  <a href="a10162.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a19229_source.html">merge_transform.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a02417_source.html">generation_marker_formatter.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for merge_transform:</div>
+Collaboration diagram for generation_marker_formatter:</div>
 <div class="dyncontent">
-<div class="center"><img src="a10160.png" border="0" usemap="#amerge__transform_coll__map" alt="Collaboration graph"/></div>
-<map name="amerge__transform_coll__map" id="amerge__transform_coll__map">
-<area shape="rect" title="Combines a number of models into a single model." alt="" coords="5,5,140,83"/>
+<div class="center"><img src="a10160.png" border="0" usemap="#ageneration__marker__formatter_coll__map" alt="Collaboration graph"/></div>
+<map name="ageneration__marker__formatter_coll__map" id="ageneration__marker__formatter_coll__map">
+<area shape="rect" title="Populates the generation marker, ready to be wrapped in comments." alt="" coords="5,5,220,83"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad0e45fb6d5cd3990cdb18d6ddf99fd75"><td class="memItemLeft" align="right" valign="top"><a id="ad0e45fb6d5cd3990cdb18d6ddf99fd75"></a>
-static <a class="el" href="a09366.html">entities::model</a>&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (const <a class="el" href="a10118.html">context</a> &amp;ctx, const <a class="el" href="a09346.html">logical::entities::input_model_set</a> &amp;ms)</td></tr>
-<tr class="separator:ad0e45fb6d5cd3990cdb18d6ddf99fd75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a737d6337f3d2c3cf57e0bb0ba6b465e0"><td class="memItemLeft" align="right" valign="top"><a id="a737d6337f3d2c3cf57e0bb0ba6b465e0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>format</b> (std::ostream &amp;s, const std::string &amp;generation_timestamp, const std::string &amp;origin_shah1_hash, const <a class="el" href="a09514.html">entities::decoration::generation_marker</a> &amp;gm) const</td></tr>
+<tr class="separator:a737d6337f3d2c3cf57e0bb0ba6b465e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Combines a number of models into a single model. </p>
-<p>The role of the merger is to aggregate a number of models into a single, coherent model called the <em>merged</em> model.</p>
-<p>There are two kinds of models:</p>
-<ul>
-<li>the <em>target</em> model: the model which the user is focusing on, most likely with the intention of code generating it. There can only be one target model for a given merge.</li>
-</ul>
-<ul>
-<li>the <em>reference</em> models; a model is a reference model if the target model refers to one or more of its types - or a model referred to by the target model refers to its types and so on.</li>
-</ul>
-<p>In summary, the target model cannot be evaluated without the definition of all models it references, directly or indirectly. Name resolution will fail if one or more of the referenced models have not been supplied. </p>
+<div class="textblock"><p>Populates the generation marker, ready to be wrapped in comments. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

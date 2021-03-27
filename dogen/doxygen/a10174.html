@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: modelines_transform Class Reference</title>
+<title>Dogen: building_error Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,39 +63,44 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07159.html">logical</a></li><li class="navelem"><a class="el" href="a07172.html">transforms</a></li><li class="navelem"><a class="el" href="a10174.html">modelines_transform</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07363.html">logical</a></li><li class="navelem"><b>helpers</b></li><li class="navelem"><a class="el" href="a10174.html">building_error</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a10171.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">modelines_transform Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">building_error Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Reads all meta-data related to modelines.  
+<p>An error has occurred in a factory.  
  <a href="a10174.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a02546_source.html">modelines_transform.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a18584_source.html">building_error.hpp</a>&gt;</code></p>
+
+<p>Inherits exception, and exception.</p>
 <div class="dynheader">
-Collaboration diagram for modelines_transform:</div>
+Collaboration diagram for building_error:</div>
 <div class="dyncontent">
-<div class="center"><img src="a10172.png" border="0" usemap="#amodelines__transform_coll__map" alt="Collaboration graph"/></div>
-<map name="amodelines__transform_coll__map" id="amodelines__transform_coll__map">
-<area shape="rect" title="Reads all meta&#45;data related to modelines." alt="" coords="5,5,167,83"/>
+<div class="center"><img src="a10172.png" border="0" usemap="#abuilding__error_coll__map" alt="Collaboration graph"/></div>
+<map name="abuilding__error_coll__map" id="abuilding__error_coll__map">
+<area shape="rect" title="An error has occurred in a factory." alt="" coords="5,5,153,127"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aeae2c499c48023fbeb1a6ed6059e5844"><td class="memItemLeft" align="right" valign="top"><a id="aeae2c499c48023fbeb1a6ed6059e5844"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (const <a class="el" href="a10118.html">context</a> &amp;ctx, <a class="el" href="a09366.html">entities::model</a> &amp;m)</td></tr>
-<tr class="separator:aeae2c499c48023fbeb1a6ed6059e5844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a3a502ec27dff26ed8645b68009ca91e0"><td class="memItemLeft" align="right" valign="top"><a id="a3a502ec27dff26ed8645b68009ca91e0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>building_error</b> (const std::string &amp;message)</td></tr>
+<tr class="separator:a3a502ec27dff26ed8645b68009ca91e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e01571e6589dc64e08addf4b1148a7a"><td class="memItemLeft" align="right" valign="top"><a id="a6e01571e6589dc64e08addf4b1148a7a"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>what</b> () const noexcept</td></tr>
+<tr class="separator:a6e01571e6589dc64e08addf4b1148a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Reads all meta-data related to modelines. </p>
+<div class="textblock"><p>An error has occurred in a factory. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

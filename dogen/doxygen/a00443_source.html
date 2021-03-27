@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.codec/include/dogen.codec/types/helpers/dia_to_codec_projector.hpp Source File</title>
+<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.codec/include/dogen.codec/types/features/input_technical_space.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,12 +63,12 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_22c4c46301db200517b9df1f9e397b7e.html">dogen.codec</a></li><li class="navelem"><a class="el" href="dir_cc360dac2744023b8b000f708c9eb509.html">include</a></li><li class="navelem"><a class="el" href="dir_9431ca7dbc6e2193e4c095b70c4226a3.html">dogen.codec</a></li><li class="navelem"><a class="el" href="dir_4f485a721974f18680b103473718749c.html">types</a></li><li class="navelem"><a class="el" href="dir_0c6869eb8e5b0bf175691a3fdc77066c.html">helpers</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_22c4c46301db200517b9df1f9e397b7e.html">dogen.codec</a></li><li class="navelem"><a class="el" href="dir_cc360dac2744023b8b000f708c9eb509.html">include</a></li><li class="navelem"><a class="el" href="dir_9431ca7dbc6e2193e4c095b70c4226a3.html">dogen.codec</a></li><li class="navelem"><a class="el" href="dir_4f485a721974f18680b103473718749c.html">types</a></li><li class="navelem"><a class="el" href="dir_a015c523e47a647bbca7240b8f2f4e8c.html">features</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">dia_to_codec_projector.hpp</div>  </div>
+<div class="title">input_technical_space.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* -*- mode: c++; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-</span></div>
@@ -91,8 +91,8 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * MA 02110-1301, USA.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_CODEC_TYPES_HELPERS_DIA_TO_CODEC_PROJECTOR_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_CODEC_TYPES_HELPERS_DIA_TO_CODEC_PROJECTOR_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_CODEC_TYPES_FEATURES_INPUT_TECHNICAL_SPACE_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_CODEC_TYPES_FEATURES_INPUT_TECHNICAL_SPACE_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; (_MSC_VER &gt;= 1200)</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
@@ -100,60 +100,48 @@ $(function() {
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;dogen.dia/types/entities/attribute_fwd.hpp&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;dogen.dia/types/entities/object_fwd.hpp&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;dogen.dia/types/entities/attribute_fwd.hpp&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;dogen.dia/types/entities/composite_fwd.hpp&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;dogen.dia/types/entities/diagram_fwd.hpp&quot;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;dogen.codec/types/entities/object_fwd.hpp&quot;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;dogen.codec/types/entities/comment_fwd.hpp&quot;</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">namespace </span>dogen::codec::helpers {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="a08714.html">   43</a></span>&#160;<span class="keyword">class </span><a class="code" href="a08714.html">dia_to_codec_projector</a> final {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">static</span> <a class="code" href="a08630.html">entities::comment</a> <a class="code" href="a08714.html#a5ebf8792deb676ad31c0075e32858afd">process_comment</a>(<span class="keyword">const</span> std::string&amp; c);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">static</span> std::string parse_string_attribute(</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">const</span> <a class="code" href="a08886.html">dogen::dia::entities::attribute</a>&amp; a);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">static</span> <a class="code" href="a08630.html">entities::comment</a></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    create_comment(<span class="keyword">const</span> <a class="code" href="a08886.html">dogen::dia::entities::attribute</a>&amp; a);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> parse_connections(<span class="keyword">const</span> <a class="code" href="a08934.html">dogen::dia::entities::object</a>&amp; o,</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="code" href="a08646.html">entities::object</a>&amp; co);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> parse_as_dia_text(<span class="keyword">const</span> <a class="code" href="a08886.html">dogen::dia::entities::attribute</a> a,</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="a08646.html">entities::object</a>&amp; o);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> parse_as_stereotypes(<a class="code" href="a08886.html">dogen::dia::entities::attribute</a> a,</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <a class="code" href="a08646.html">entities::object</a>&amp; o);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> parse_as_class_attributes(</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keyword">const</span> <a class="code" href="a08886.html">dogen::dia::entities::attribute</a> a, <a class="code" href="a08646.html">entities::object</a>&amp; o);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> parse_attributes(<span class="keyword">const</span> <a class="code" href="a08934.html">dogen::dia::entities::object</a>&amp; o,</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="a08646.html">entities::object</a>&amp; co);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keyword">static</span> <a class="code" href="a08646.html">entities::object</a> <a class="code" href="a08714.html#a50b8b9bda3ea21f65234e87a27db496d">project</a>(<span class="keyword">const</span> <a class="code" href="a08934.html">dogen::dia::entities::object</a>&amp; o);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keyword">static</span> std::list&lt;entities::object&gt;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="a08714.html#a50b8b9bda3ea21f65234e87a27db496d">project</a>(<span class="keyword">const</span> <a class="code" href="a08910.html">dogen::dia::entities::diagram</a>&amp; d);</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;};</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aa08630_html"><div class="ttname"><a href="a08630.html">dogen::codec::entities::comment</a></div><div class="ttdoc">Represents a comment block as read out from the codec representation.</div><div class="ttdef"><b>Definition:</b> comment.hpp:38</div></div>
-<div class="ttc" id="aa08646_html"><div class="ttname"><a href="a08646.html">dogen::codec::entities::object</a></div><div class="ttdoc">Represents an &quot;raw&quot; codec object which may or may not contain a modeling element of interest.</div><div class="ttdef"><b>Definition:</b> object.hpp:41</div></div>
-<div class="ttc" id="aa08714_html"><div class="ttname"><a href="a08714.html">dogen::codec::helpers::dia_to_codec_projector</a></div><div class="ttdoc">Projects dia objects into the codec space.</div><div class="ttdef"><b>Definition:</b> dia_to_codec_projector.hpp:43</div></div>
-<div class="ttc" id="aa08714_html_a50b8b9bda3ea21f65234e87a27db496d"><div class="ttname"><a href="a08714.html#a50b8b9bda3ea21f65234e87a27db496d">dogen::codec::helpers::dia_to_codec_projector::project</a></div><div class="ttdeci">static entities::object project(const dogen::dia::entities::object &amp;o)</div><div class="ttdoc">Projects a dia object into a codec object.</div><div class="ttdef"><b>Definition:</b> dia_to_codec_projector.cpp:353</div></div>
-<div class="ttc" id="aa08714_html_a5ebf8792deb676ad31c0075e32858afd"><div class="ttname"><a href="a08714.html#a5ebf8792deb676ad31c0075e32858afd">dogen::codec::helpers::dia_to_codec_projector::process_comment</a></div><div class="ttdeci">static entities::comment process_comment(const std::string &amp;c)</div><div class="ttdoc">Processes comments in dia diagrams.</div><div class="ttdef"><b>Definition:</b> dia_to_codec_projector.cpp:123</div></div>
-<div class="ttc" id="aa08886_html"><div class="ttname"><a href="a08886.html">dogen::dia::entities::attribute</a></div><div class="ttdoc">Attribute in a Dia diagram.</div><div class="ttdef"><b>Definition:</b> attribute.hpp:48</div></div>
-<div class="ttc" id="aa08910_html"><div class="ttname"><a href="a08910.html">dogen::dia::entities::diagram</a></div><div class="ttdoc">Represents a diagram in Dia.</div><div class="ttdef"><b>Definition:</b> diagram.hpp:38</div></div>
-<div class="ttc" id="aa08934_html"><div class="ttname"><a href="a08934.html">dogen::dia::entities::object</a></div><div class="ttdoc">Represents a Dia object.</div><div class="ttdef"><b>Definition:</b> object.hpp:41</div></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;dogen.variability/types/entities/feature.hpp&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;dogen.variability/types/entities/configuration.hpp&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;dogen.variability/types/entities/feature_model.hpp&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07286.html">dogen::codec::features</a> {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="a08862.html">   39</a></span>&#160;<span class="keyword">class </span><a class="code" href="a08862.html">input_technical_space</a> final {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">struct </span>feature_group {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <a class="code" href="a13442.html">variability::entities::feature</a> <a class="code" href="a08862.html">input_technical_space</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    };</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">static</span> feature_group</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    make_feature_group(<span class="keyword">const</span> <a class="code" href="a13446.html">variability::entities::feature_model</a>&amp; fm);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">struct </span>static_configuration {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        std::string <a class="code" href="a08862.html">input_technical_space</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    };</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">static</span> static_configuration make_static_configuration(</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keyword">const</span> feature_group&amp; fg,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">const</span> variability::entities::configuration&amp; cfg);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Configurable&gt;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">static</span> static_configuration make_static_configuration(</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keyword">const</span> feature_group&amp; fg, <span class="keyword">const</span> Configurable&amp; c) {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> make_static_configuration(fg, *c.configuration());</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">static</span> std::list&lt;dogen::variability::entities::feature&gt;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    make_features();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aa07286_html"><div class="ttname"><a href="a07286.html">dogen::codec::features</a></div><div class="ttdoc">Defines all of the features and feature groups used by the codec model.</div><div class="ttdef"><b>Definition:</b> features.hpp:32</div></div>
+<div class="ttc" id="aa08862_html"><div class="ttname"><a href="a08862.html">dogen::codec::features::input_technical_space</a></div><div class="ttdoc">Feature bundle for the input technical space.</div><div class="ttdef"><b>Definition:</b> input_technical_space.hpp:39</div></div>
+<div class="ttc" id="aa13442_html"><div class="ttname"><a href="a13442.html">dogen::variability::entities::feature</a></div><div class="ttdoc">Unit of configuration within Dogen. Defines the domain of values.</div><div class="ttdef"><b>Definition:</b> feature.hpp:42</div></div>
+<div class="ttc" id="aa13446_html"><div class="ttname"><a href="a13446.html">dogen::variability::entities::feature_model</a></div><div class="ttdoc">Container of all available features, organised for querying.</div><div class="ttdef"><b>Definition:</b> feature_model.hpp:39</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

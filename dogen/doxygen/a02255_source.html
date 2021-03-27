@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.logical/include/dogen.logical/types/entities/variability/profile_entry.hpp Source File</title>
+<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.logical/include/dogen.logical/types/entities/variability/abstract_profile.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,7 +68,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">profile_entry.hpp</div>  </div>
+<div class="title">abstract_profile.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* -*- mode: c++; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-</span></div>
@@ -91,70 +91,93 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * MA 02110-1301, USA.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_LOGICAL_TYPES_ENTITIES_VARIABILITY_PROFILE_ENTRY_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_LOGICAL_TYPES_ENTITIES_VARIABILITY_PROFILE_ENTRY_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_LOGICAL_TYPES_ENTITIES_VARIABILITY_ABSTRACT_PROFILE_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_LOGICAL_TYPES_ENTITIES_VARIABILITY_ABSTRACT_PROFILE_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; (_MSC_VER &gt;= 1200)</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;iosfwd&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/variability/abstract_profile_entry.hpp&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07169.html">dogen::logical::entities::variability</a> {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">class </span>profile_entry final : <span class="keyword">public</span> dogen::logical::entities::variability::abstract_profile_entry {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    profile_entry() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    profile_entry(<span class="keyword">const</span> profile_entry&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    profile_entry(profile_entry&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">virtual</span> ~profile_entry() noexcept { }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    profile_entry(</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">const</span> std::string&amp; documentation,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">const</span> boost::shared_ptr&lt;dogen::variability::entities::configuration&gt;&amp; configuration,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">const</span> <a class="code" href="a09070.html">dogen::identification::entities::logical_name</a>&amp; name,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">const</span> std::string&amp; original_key,</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">const</span> std::string&amp; key,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">const</span> std::list&lt;std::string&gt;&amp; value);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> to_stream(std::ostream&amp; s) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> profile_entry&amp; rhs) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> profile_entry&amp; rhs)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">return</span> !this-&gt;operator==(rhs);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">bool</span> equals(<span class="keyword">const</span> dogen::logical::entities::variability::abstract_profile_entry&amp; other) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> swap(profile_entry&amp; other) noexcept;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    profile_entry&amp; operator=(profile_entry other);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;iosfwd&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/element.hpp&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;dogen.identification/types/entities/logical_name.hpp&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07373.html">dogen::logical::entities::variability</a> {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">class </span>abstract_profile : <span class="keyword">public</span> <a class="code" href="a09534.html">dogen::logical::entities::element</a> {</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    abstract_profile() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    abstract_profile(<span class="keyword">const</span> abstract_profile&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    abstract_profile(abstract_profile&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">virtual</span> ~abstract_profile() noexcept = 0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;public:</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    abstract_profile(</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        const <a class="code" href="a07272.html">dogen</a>::identification::entities::logical_name&amp; name,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        const std::<span class="keywordtype">string</span>&amp; documentation,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        const <a class="code" href="a07272.html">dogen</a>::identification::entities::codec_provenance&amp; provenance,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        const <a class="code" href="a07272.html">dogen</a>::identification::entities::logical_id&amp; contained_by,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        const <span class="keywordtype">bool</span> in_global_module,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        const <a class="code" href="a07272.html">dogen</a>::logical::entities::stereotypes&amp; stereotypes,</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        const <a class="code" href="a07272.html">dogen</a>::identification::entities::logical_meta_name&amp; meta_name,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        const <a class="code" href="a07272.html">dogen</a>::identification::entities::technical_space intrinsic_technical_space,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        const boost::shared_ptr&lt;<a class="code" href="a07272.html">dogen</a>::variability::entities::configuration&gt;&amp; configuration,</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        const std::list&lt;<a class="code" href="a07272.html">dogen</a>::identification::entities::label&gt;&amp; labels,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        const <a class="code" href="a07272.html">dogen</a>::logical::entities::<a class="code" href="a07364.html#a0228e461d1dba5d48180ec28acb53605">generability_status</a> <a class="code" href="a07364.html#a0228e461d1dba5d48180ec28acb53605">generability_status</a>,</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        const std::unordered_map&lt;<a class="code" href="a07272.html">dogen</a>::identification::entities::technical_space, boost::optional&lt;<a class="code" href="a07272.html">dogen</a>::logical::entities::decoration::element_properties&gt; &gt;&amp; decoration,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        const std::list&lt;<a class="code" href="a07272.html">dogen</a>::logical::entities::helper_properties&gt;&amp; helper_properties,</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        const std::<span class="keywordtype">string</span>&amp; stereotype,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        const std::list&lt;<a class="code" href="a07272.html">dogen</a>::identification::entities::logical_name&gt;&amp; parents,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        const std::<span class="keywordtype">string</span>&amp; key_prefix);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;public:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    virtual <span class="keywordtype">void</span> to_stream(std::ostream&amp; s) const;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">namespace </span>std {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;public:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    const std::<span class="keywordtype">string</span>&amp; stereotype() const;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    std::<span class="keywordtype">string</span>&amp; stereotype();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> stereotype(const std::<span class="keywordtype">string</span>&amp; v);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> stereotype(const std::<span class="keywordtype">string</span>&amp;&amp; v);</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> swap(</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    dogen::logical::entities::variability::profile_entry&amp; lhs,</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    dogen::logical::entities::variability::profile_entry&amp; rhs) {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    lhs.swap(rhs);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aa07169_html"><div class="ttname"><a href="a07169.html">dogen::logical::entities::variability</a></div><div class="ttdoc">Houses all of the meta-modeling elements related to variability.</div><div class="ttdef"><b>Definition:</b> abstract_bundle_io.hpp:31</div></div>
-<div class="ttc" id="aa09070_html"><div class="ttname"><a href="a09070.html">dogen::identification::entities::logical_name</a></div><div class="ttdoc">Name of an element in logical space.</div><div class="ttdef"><b>Definition:</b> logical_name.hpp:50</div></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    const std::list&lt;<a class="code" href="a07272.html">dogen</a>::identification::entities::logical_name&gt;&amp; parents() const;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    std::list&lt;<a class="code" href="a07272.html">dogen</a>::identification::entities::logical_name&gt;&amp; parents();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> parents(const std::list&lt;<a class="code" href="a07272.html">dogen</a>::identification::entities::logical_name&gt;&amp; v);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> parents(const std::list&lt;<a class="code" href="a07272.html">dogen</a>::identification::entities::logical_name&gt;&amp;&amp; v);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    const std::<span class="keywordtype">string</span>&amp; key_prefix() const;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    std::<span class="keywordtype">string</span>&amp; key_prefix();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> key_prefix(const std::<span class="keywordtype">string</span>&amp; v);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> key_prefix(const std::<span class="keywordtype">string</span>&amp;&amp; v);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;protected:</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">bool</span> compare(const abstract_profile&amp; rhs) const;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;public:</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    virtual <span class="keywordtype">bool</span> equals(const <a class="code" href="a07272.html">dogen</a>::logical::entities::element&amp; other) const = 0;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;protected:</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">void</span> swap(abstract_profile&amp; other) noexcept;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;private:</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    std::<span class="keywordtype">string</span> stereotype_;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    std::list&lt;<a class="code" href="a07272.html">dogen</a>::identification::entities::logical_name&gt; parents_;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    std::<span class="keywordtype">string</span> key_prefix_;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;};</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;inline abstract_profile::~abstract_profile() noexcept { }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> abstract_profile&amp; lhs, <span class="keyword">const</span> abstract_profile&amp; rhs) {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">return</span> lhs.equals(rhs);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aa07272_html"><div class="ttname"><a href="a07272.html">dogen</a></div><div class="ttdoc">Provides the top-level API for the dogen product.</div><div class="ttdef"><b>Definition:</b> configuration_io.hpp:31</div></div>
+<div class="ttc" id="aa07364_html_a0228e461d1dba5d48180ec28acb53605"><div class="ttname"><a href="a07364.html#a0228e461d1dba5d48180ec28acb53605">dogen::logical::entities::generability_status</a></div><div class="ttdeci">generability_status</div><div class="ttdoc">The status of this element with regards to generability.</div><div class="ttdef"><b>Definition:</b> generability_status.hpp:33</div></div>
+<div class="ttc" id="aa07373_html"><div class="ttname"><a href="a07373.html">dogen::logical::entities::variability</a></div><div class="ttdoc">Houses all of the meta-modeling elements related to variability.</div><div class="ttdef"><b>Definition:</b> abstract_bundle_io.hpp:31</div></div>
+<div class="ttc" id="aa09534_html"><div class="ttname"><a href="a09534.html">dogen::logical::entities::element</a></div><div class="ttdoc">Represents a generic logical construct.</div><div class="ttdef"><b>Definition:</b> element.hpp:58</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

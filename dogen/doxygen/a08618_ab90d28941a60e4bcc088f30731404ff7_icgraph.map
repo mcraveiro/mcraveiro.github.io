@@ -1,9 +1,0 @@
-<map id="make_large_package" name="make_large_package">
-<area shape="rect" id="node1" title="Generates a new UML large package." alt="" coords="237,177,396,203"/>
-<area shape="rect" id="node2" href="$a08618.html#a77be06afe2cd25f3c196d5aed9f6bf5a" title="Generates a UML class inside a large package, itself inside a large package." alt="" coords="5,5,189,47"/>
-<area shape="rect" id="node3" href="$a08618.html#acd48e9e04ef4b1b7a0561a96ba277be5" title="Generates a UML class inside a large package, plus the large package itself." alt="" coords="10,71,185,112"/>
-<area shape="rect" id="node4" href="$a08618.html#a3b30ad9d53eb73d14cfd49638465b5e1" title="Generates an empty UML note inside a large package." alt="" coords="10,136,185,177"/>
-<area shape="rect" id="node5" href="$a08618.html#a98ac7ce186766e5d763b4e49a12f15aa" title="Generates two UML classes and a generalisation between the two, and places all objects inside a packa..." alt="" coords="13,201,182,243"/>
-<area shape="rect" id="node6" href="$a08618.html#a7802f4dfda6a598d6639ab19fbe65b01" title="Generates a UML note inside a large package." alt="" coords="11,267,183,308"/>
-<area shape="rect" id="node7" href="$a08618.html#a83409640e013798ffbf934bfeaee15e7" title="Generates an empty UML note inside a large package." alt="" coords="17,333,178,389"/>
-</map>

@@ -1,3 +1,3 @@
-<map id="merge_transform" name="merge_transform">
-<area shape="rect" id="node1" title="Merges a set of physical models into one." alt="" coords="5,5,140,83"/>
+<map id="path_configuration" name="path_configuration">
+<area shape="rect" id="node1" title="Describes how paths are handled within a part." alt="" coords="5,5,184,435"/>
 </map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: logical_name_factory Class Reference</title>
+<title>Dogen: string_to_diagram_transform Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,116 +63,40 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07128.html">identification</a></li><li class="navelem"><a class="el" href="a07130.html">helpers</a></li><li class="navelem"><a class="el" href="a09158.html">logical_name_factory</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07326.html">dia</a></li><li class="navelem"><b>transforms</b></li><li class="navelem"><a class="el" href="a09158.html">string_to_diagram_transform</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a09155.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">logical_name_factory Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">string_to_diagram_transform Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Creates logical names with all the fields filled in.  
+<p>Transforms a string with an XML representation of a Dia diagram into a diagram.  
  <a href="a09158.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a01244_source.html">logical_name_factory.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00884_source.html">string_to_diagram_transform.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for logical_name_factory:</div>
+Collaboration diagram for string_to_diagram_transform:</div>
 <div class="dyncontent">
-<div class="center"><img src="a09156.png" border="0" usemap="#alogical__name__factory_coll__map" alt="Collaboration graph"/></div>
-<map name="alogical__name__factory_coll__map" id="alogical__name__factory_coll__map">
-<area shape="rect" title="Creates logical names with all the fields filled in." alt="" coords="5,5,220,523"/>
+<div class="center"><img src="a09156.png" border="0" usemap="#astring__to__diagram__transform_coll__map" alt="Collaboration graph"/></div>
+<map name="astring__to__diagram__transform_coll__map" id="astring__to__diagram__transform_coll__map">
+<area shape="rect" title="Transforms a string with an XML representation of a Dia diagram into a diagram." alt="" coords="5,5,216,83"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a69d0efee270f4720edc16f0d03d52ef6"><td class="memItemLeft" align="right" valign="top"><a id="a69d0efee270f4720edc16f0d03d52ef6"></a>
-<a class="el" href="a09070.html">entities::logical_name</a>&#160;</td><td class="memItemRight" valign="bottom"><b>build_model_name</b> (const std::string &amp;model_name, const std::string &amp;external_modules=std::string()) const</td></tr>
-<tr class="separator:a69d0efee270f4720edc16f0d03d52ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2770b324c9c1ed3f012d5b9920a5e9f"><td class="memItemLeft" align="right" valign="top"><a id="ab2770b324c9c1ed3f012d5b9920a5e9f"></a>
-<a class="el" href="a09070.html">entities::logical_name</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09158.html#ab2770b324c9c1ed3f012d5b9920a5e9f">build_element_in_module</a> (const <a class="el" href="a09070.html">entities::logical_name</a> &amp;module_name, const std::string &amp;simple_name) const</td></tr>
-<tr class="memdesc:ab2770b324c9c1ed3f012d5b9920a5e9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a simple name for an element and the name of the module it is located in, creates the element name. <br /></td></tr>
-<tr class="separator:ab2770b324c9c1ed3f012d5b9920a5e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a755570a077cf80369cba4e5edddc158c"><td class="memItemLeft" align="right" valign="top"><a id="a755570a077cf80369cba4e5edddc158c"></a>
-<a class="el" href="a09070.html">entities::logical_name</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09158.html#a755570a077cf80369cba4e5edddc158c">build_combined_element_name</a> (const <a class="el" href="a09070.html">entities::logical_name</a> &amp;model_name, const <a class="el" href="a09070.html">entities::logical_name</a> &amp;partial_element_name, const bool populate_model_modules_if_blank=false, const bool populate_internal_modules_if_blank=false, const bool combine_internal_modules=false) const</td></tr>
-<tr class="memdesc:a755570a077cf80369cba4e5edddc158c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Combines element name with model name. <br /></td></tr>
-<tr class="separator:a755570a077cf80369cba4e5edddc158c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1ecccf8148ba987c1c4460f3ee81c2a"><td class="memItemLeft" align="right" valign="top"><a id="af1ecccf8148ba987c1c4460f3ee81c2a"></a>
-<a class="el" href="a09070.html">entities::logical_name</a>&#160;</td><td class="memItemRight" valign="bottom"><b>build_hacked_combined_element_name</b> (const <a class="el" href="a09070.html">entities::logical_name</a> &amp;model_name, const <a class="el" href="a09070.html">entities::logical_name</a> &amp;partial_element_name) const</td></tr>
-<tr class="separator:af1ecccf8148ba987c1c4460f3ee81c2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c81f7aedddec85248d37f574b329076"><td class="memItemLeft" align="right" valign="top"><a id="a4c81f7aedddec85248d37f574b329076"></a>
-<a class="el" href="a09070.html">entities::logical_name</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09158.html#a4c81f7aedddec85248d37f574b329076">build_attribute_name</a> (const <a class="el" href="a09070.html">entities::logical_name</a> &amp;owner_name, const std::string &amp;simple_name) const</td></tr>
-<tr class="memdesc:a4c81f7aedddec85248d37f574b329076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds an attribute name. <br /></td></tr>
-<tr class="separator:a4c81f7aedddec85248d37f574b329076"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a401430a8eba80d7c491df57117dbd2d6"><td class="memItemLeft" align="right" valign="top">boost::optional&lt; <a class="el" href="a09070.html">entities::logical_name</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09158.html#a401430a8eba80d7c491df57117dbd2d6">build_containing_element_name</a> (const <a class="el" href="a09070.html">entities::logical_name</a> &amp;n) const</td></tr>
-<tr class="memdesc:a401430a8eba80d7c491df57117dbd2d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the name of the containing element, derived from the element's name.  <a href="a09158.html#a401430a8eba80d7c491df57117dbd2d6">More...</a><br /></td></tr>
-<tr class="separator:a401430a8eba80d7c491df57117dbd2d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a4ffb0a1b49af0b3d2574b52b5f8311b6"><td class="memItemLeft" align="right" valign="top"><a id="a4ffb0a1b49af0b3d2574b52b5f8311b6"></a>
-<a class="el" href="a09070.html">entities::logical_name</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09158.html#a4ffb0a1b49af0b3d2574b52b5f8311b6">build_element_name</a> (const std::string &amp;simple_name) const</td></tr>
-<tr class="memdesc:a4ffb0a1b49af0b3d2574b52b5f8311b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given the components of a name for an element, creates the element name. <br /></td></tr>
-<tr class="separator:a4ffb0a1b49af0b3d2574b52b5f8311b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40c19e13ee00477861e08c8f835069cd"><td class="memItemLeft" align="right" valign="top"><a id="a40c19e13ee00477861e08c8f835069cd"></a>
-<a class="el" href="a09070.html">entities::logical_name</a>&#160;</td><td class="memItemRight" valign="bottom"><b>build_element_name</b> (const std::string &amp;model_name, const std::string &amp;simple_name) const</td></tr>
-<tr class="separator:a40c19e13ee00477861e08c8f835069cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04cf7f0f4abfb4eccbdd00f8c7dcfc95"><td class="memItemLeft" align="right" valign="top"><a id="a04cf7f0f4abfb4eccbdd00f8c7dcfc95"></a>
-<a class="el" href="a09070.html">entities::logical_name</a>&#160;</td><td class="memItemRight" valign="bottom"><b>build_element_name</b> (const std::string &amp;simple_name, const std::list&lt; std::string &gt; &amp;internal_modules) const</td></tr>
-<tr class="separator:a04cf7f0f4abfb4eccbdd00f8c7dcfc95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a10939c5f41c0a64be3aa8f3dc6254522"><td class="memItemLeft" align="right" valign="top"><a id="a10939c5f41c0a64be3aa8f3dc6254522"></a>
-<a class="el" href="a09070.html">entities::logical_name</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09158.html#a10939c5f41c0a64be3aa8f3dc6254522">build_element_in_model</a> (const <a class="el" href="a09070.html">entities::logical_name</a> &amp;model_name, const std::string &amp;simple_name) const</td></tr>
-<tr class="memdesc:a10939c5f41c0a64be3aa8f3dc6254522"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a simple name for an element and the name of the model it is located in, creates the element name. <br /></td></tr>
-<tr class="separator:a10939c5f41c0a64be3aa8f3dc6254522"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21b9c4338e575aeaabf383ba9bac5678"><td class="memItemLeft" align="right" valign="top"><a id="a21b9c4338e575aeaabf383ba9bac5678"></a>
-<a class="el" href="a09070.html">entities::logical_name</a>&#160;</td><td class="memItemRight" valign="bottom"><b>build_element_in_model</b> (const <a class="el" href="a09070.html">entities::logical_name</a> &amp;model_name, const std::string &amp;simple_name, const std::list&lt; std::string &gt; &amp;internal_modules) const</td></tr>
-<tr class="separator:a21b9c4338e575aeaabf383ba9bac5678"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a23e6536ab479f1454afad1adbbb9a0d7"><td class="memItemLeft" align="right" valign="top"><a id="a23e6536ab479f1454afad1adbbb9a0d7"></a>
-<a class="el" href="a09070.html">entities::logical_name</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09158.html#a23e6536ab479f1454afad1adbbb9a0d7">build_module_name</a> (const <a class="el" href="a09070.html">entities::logical_name</a> &amp;model_name, const std::list&lt; std::string &gt; &amp;internal_modules) const</td></tr>
-<tr class="memdesc:a23e6536ab479f1454afad1adbbb9a0d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a module name, given the model name and an internal module path. Uses the back of the module path to name the module. <br /></td></tr>
-<tr class="separator:a23e6536ab479f1454afad1adbbb9a0d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae78d2a89bbf10328b82e7710044ea200"><td class="memItemLeft" align="right" valign="top"><a id="ae78d2a89bbf10328b82e7710044ea200"></a>
-<a class="el" href="a09070.html">entities::logical_name</a>&#160;</td><td class="memItemRight" valign="bottom"><b>build_module_name</b> (const <a class="el" href="a09070.html">entities::logical_name</a> &amp;model_name, const std::string &amp;module_name, const std::list&lt; std::string &gt; &amp;internal_modules) const</td></tr>
-<tr class="separator:ae78d2a89bbf10328b82e7710044ea200"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a402705a5dd59c40d7a19168f29a6e143"><td class="memItemLeft" align="right" valign="top"><a id="a402705a5dd59c40d7a19168f29a6e143"></a>
-<a class="el" href="a09070.html">entities::logical_name</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09158.html#a402705a5dd59c40d7a19168f29a6e143">build_promoted_module_name</a> (const <a class="el" href="a09070.html">entities::logical_name</a> &amp;element_name) const</td></tr>
-<tr class="memdesc:a402705a5dd59c40d7a19168f29a6e143"><td class="mdescLeft">&#160;</td><td class="mdescRight">Promotes the first name of the internal module path to become the model name. <br /></td></tr>
-<tr class="separator:a402705a5dd59c40d7a19168f29a6e143"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ce939d4b6aa8e795210069da3c754a3"><td class="memItemLeft" align="right" valign="top"><a id="a8ce939d4b6aa8e795210069da3c754a3"></a>
-<a class="el" href="a09070.html">entities::logical_name</a>&#160;</td><td class="memItemRight" valign="bottom"><b>build_promoted_module_name</b> (const <a class="el" href="a09070.html">entities::logical_name</a> &amp;model_name, const <a class="el" href="a09070.html">entities::logical_name</a> &amp;element_name) const</td></tr>
-<tr class="separator:a8ce939d4b6aa8e795210069da3c754a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ae55ce9a9dca8eb8232a255ab8ad020e9"><td class="memItemLeft" align="right" valign="top"><a id="ae55ce9a9dca8eb8232a255ab8ad020e9"></a>
+static <a class="el" href="a09114.html">entities::diagram</a>&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (boost::shared_ptr&lt; <a class="el" href="a13158.html">tracing::tracer</a> &gt; tracer, const std::string &amp;s)</td></tr>
+<tr class="separator:ae55ce9a9dca8eb8232a255ab8ad020e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Creates logical names with all the fields filled in. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a401430a8eba80d7c491df57117dbd2d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a401430a8eba80d7c491df57117dbd2d6">&#9670;&nbsp;</a></span>build_containing_element_name()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">boost::optional&lt; <a class="el" href="a09070.html">entities::logical_name</a> &gt; build_containing_element_name </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a09070.html">entities::logical_name</a> &amp;&#160;</td>
-          <td class="paramname"><em>n</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Creates the name of the containing element, derived from the element's name. </p>
-<p>A containing name is the name of an element that is able to contain other elements. This is typically a module, but not always.</p>
-<p>If the supplying name does not represent a valid containment, returns null. At present there are two cases of "invalid" containment: the global module and the model's module. </p>
-
-</div>
-</div>
-</div><!-- contents -->
+<div class="textblock"><p>Transforms a string with an XML representation of a Dia diagram into a diagram. </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1

@@ -1,3 +1,3 @@
-<map id="enablement_properties" name="enablement_properties">
-<area shape="rect" id="node1" title="Stores the properties related to the enablement." alt="" coords="5,5,215,787"/>
+<map id="codec_model_to_logical_model_transform" name="codec_model_to_logical_model_transform">
+<area shape="rect" id="node1" title="Converts an codec model into an logical representation." alt="" coords="5,5,184,97"/>
 </map>

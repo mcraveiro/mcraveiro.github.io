@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.physical/include/dogen.physical/types/helpers/path_generator.hpp Source File</title>
+<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.physical/include/dogen.physical/types/entities/operation_reason.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,12 +63,12 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_9b8549976a668c2202007f21f8dd157b.html">dogen.physical</a></li><li class="navelem"><a class="el" href="dir_26d230d797375482fb1d633cc67158a1.html">include</a></li><li class="navelem"><a class="el" href="dir_7de440d8d60ef5abea2682ae081b1def.html">dogen.physical</a></li><li class="navelem"><a class="el" href="dir_b60224f7bae46d1c8beeaae488fadddb.html">types</a></li><li class="navelem"><a class="el" href="dir_081067ce33f9feeaabd1aa9bcfa79597.html">helpers</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_9b8549976a668c2202007f21f8dd157b.html">dogen.physical</a></li><li class="navelem"><a class="el" href="dir_26d230d797375482fb1d633cc67158a1.html">include</a></li><li class="navelem"><a class="el" href="dir_7de440d8d60ef5abea2682ae081b1def.html">dogen.physical</a></li><li class="navelem"><a class="el" href="dir_b60224f7bae46d1c8beeaae488fadddb.html">types</a></li><li class="navelem"><a class="el" href="dir_0c02b1261ac095a1723e67f7141c52cf.html">entities</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">path_generator.hpp</div>  </div>
+<div class="title">operation_reason.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* -*- mode: c++; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-</span></div>
@@ -91,37 +91,43 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * MA 02110-1301, USA.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_PHYSICAL_TYPES_HELPERS_PATH_GENERATOR_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_PHYSICAL_TYPES_HELPERS_PATH_GENERATOR_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_PHYSICAL_TYPES_ENTITIES_OPERATION_REASON_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_PHYSICAL_TYPES_ENTITIES_OPERATION_REASON_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; (_MSC_VER &gt;= 1200)</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07540.html">dogen::physical::entities</a> {</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07337.html">dogen::physical::helpers</a> {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">class </span>path_generator final {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    path_generator() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    path_generator(<span class="keyword">const</span> path_generator&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    path_generator(path_generator&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    ~path_generator() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    path_generator&amp; operator=(<span class="keyword">const</span> path_generator&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> path_generator&amp; rhs) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> path_generator&amp; rhs)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordflow">return</span> !this-&gt;operator==(rhs);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="a07540.html#adfdd024b78d7f2668a2822a893ae9c4a">   33</a></span>&#160;<span class="keyword">enum class</span> <a class="code" href="a07540.html#adfdd024b78d7f2668a2822a893ae9c4a">operation_reason</a> : unsigned int {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="a07540.html#adfdd024b78d7f2668a2822a893ae9c4aafedb2d84cafe20862cb4399751a8a7e3">invalid</a> = 0, </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="a07540.html#adfdd024b78d7f2668a2822a893ae9c4aa7602bb538121c56f19e33bcf7b25ffc4">newly_generated</a> = 1, </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="a07540.html#adfdd024b78d7f2668a2822a893ae9c4aae51b08e8d676fb9f946b71697c475182">changed_generated</a> = 2, </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="a07540.html#adfdd024b78d7f2668a2822a893ae9c4aa4cc4c9015efe7e7621091d6f63f8c237">unchanged_generated</a> = 3, </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="a07540.html#adfdd024b78d7f2668a2822a893ae9c4aa7a6f43ded24333b44b8a5d5dc159c4ea">already_exists</a> = 4, </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="a07540.html#adfdd024b78d7f2668a2822a893ae9c4aa16e529e511ec073f28b55315fca9b325">ignore_generated</a> = 5, </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="a07540.html#adfdd024b78d7f2668a2822a893ae9c4aa83ed1ec59fc2a00cf7165379a1842270">force_write</a> = 6, </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="a07540.html#adfdd024b78d7f2668a2822a893ae9c4aa73992dc32ee268c15ab79a4ff84cd323">unexpected</a> = 7, </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="a07540.html#adfdd024b78d7f2668a2822a893ae9c4aaed0009949287f468e52203626320d9ee">ignore_unexpected</a> = 8, </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="a07540.html#adfdd024b78d7f2668a2822a893ae9c4aa0b57d86ad69b3c8278c2fbea0c503f8a">ignore_regex</a> = 9 </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aa07337_html"><div class="ttname"><a href="a07337.html">dogen::physical::helpers</a></div><div class="ttdoc">Helpers for the physical model.</div><div class="ttdef"><b>Definition:</b> files_by_status_io.hpp:31</div></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aa07540_html"><div class="ttname"><a href="a07540.html">dogen::physical::entities</a></div><div class="ttdoc">Defines the MASD physical space.</div><div class="ttdef"><b>Definition:</b> archetype_io.hpp:31</div></div>
+<div class="ttc" id="aa07540_html_adfdd024b78d7f2668a2822a893ae9c4a"><div class="ttname"><a href="a07540.html#adfdd024b78d7f2668a2822a893ae9c4a">dogen::physical::entities::operation_reason</a></div><div class="ttdeci">operation_reason</div><div class="ttdoc">Reasons for performing an operation.</div><div class="ttdef"><b>Definition:</b> operation_reason.hpp:33</div></div>
+<div class="ttc" id="aa07540_html_adfdd024b78d7f2668a2822a893ae9c4aa0b57d86ad69b3c8278c2fbea0c503f8a"><div class="ttname"><a href="a07540.html#adfdd024b78d7f2668a2822a893ae9c4aa0b57d86ad69b3c8278c2fbea0c503f8a">dogen::physical::entities::operation_reason::ignore_regex</a></div><div class="ttdeci">@ ignore_regex</div><div class="ttdoc">File is unexpected but the user asked us to ignore it via regexes.</div></div>
+<div class="ttc" id="aa07540_html_adfdd024b78d7f2668a2822a893ae9c4aa16e529e511ec073f28b55315fca9b325"><div class="ttname"><a href="a07540.html#adfdd024b78d7f2668a2822a893ae9c4aa16e529e511ec073f28b55315fca9b325">dogen::physical::entities::operation_reason::ignore_generated</a></div><div class="ttdeci">@ ignore_generated</div><div class="ttdoc">User requested artefact to be ignored.</div></div>
+<div class="ttc" id="aa07540_html_adfdd024b78d7f2668a2822a893ae9c4aa4cc4c9015efe7e7621091d6f63f8c237"><div class="ttname"><a href="a07540.html#adfdd024b78d7f2668a2822a893ae9c4aa4cc4c9015efe7e7621091d6f63f8c237">dogen::physical::entities::operation_reason::unchanged_generated</a></div><div class="ttdeci">@ unchanged_generated</div><div class="ttdoc">Generated artefact contents match file contents.</div></div>
+<div class="ttc" id="aa07540_html_adfdd024b78d7f2668a2822a893ae9c4aa73992dc32ee268c15ab79a4ff84cd323"><div class="ttname"><a href="a07540.html#adfdd024b78d7f2668a2822a893ae9c4aa73992dc32ee268c15ab79a4ff84cd323">dogen::physical::entities::operation_reason::unexpected</a></div><div class="ttdeci">@ unexpected</div><div class="ttdoc">Artefact represents an unexpected file in project.</div></div>
+<div class="ttc" id="aa07540_html_adfdd024b78d7f2668a2822a893ae9c4aa7602bb538121c56f19e33bcf7b25ffc4"><div class="ttname"><a href="a07540.html#adfdd024b78d7f2668a2822a893ae9c4aa7602bb538121c56f19e33bcf7b25ffc4">dogen::physical::entities::operation_reason::newly_generated</a></div><div class="ttdeci">@ newly_generated</div><div class="ttdoc">Artefact will produce a new generated file.</div></div>
+<div class="ttc" id="aa07540_html_adfdd024b78d7f2668a2822a893ae9c4aa7a6f43ded24333b44b8a5d5dc159c4ea"><div class="ttname"><a href="a07540.html#adfdd024b78d7f2668a2822a893ae9c4aa7a6f43ded24333b44b8a5d5dc159c4ea">dogen::physical::entities::operation_reason::already_exists</a></div><div class="ttdeci">@ already_exists</div><div class="ttdoc">The file already exists and we we're asked to create only.</div></div>
+<div class="ttc" id="aa07540_html_adfdd024b78d7f2668a2822a893ae9c4aa83ed1ec59fc2a00cf7165379a1842270"><div class="ttname"><a href="a07540.html#adfdd024b78d7f2668a2822a893ae9c4aa83ed1ec59fc2a00cf7165379a1842270">dogen::physical::entities::operation_reason::force_write</a></div><div class="ttdeci">@ force_write</div><div class="ttdoc">User requested to always write generated artefacts.</div></div>
+<div class="ttc" id="aa07540_html_adfdd024b78d7f2668a2822a893ae9c4aae51b08e8d676fb9f946b71697c475182"><div class="ttname"><a href="a07540.html#adfdd024b78d7f2668a2822a893ae9c4aae51b08e8d676fb9f946b71697c475182">dogen::physical::entities::operation_reason::changed_generated</a></div><div class="ttdeci">@ changed_generated</div><div class="ttdoc">Artefact will produce a changed generated file.</div></div>
+<div class="ttc" id="aa07540_html_adfdd024b78d7f2668a2822a893ae9c4aaed0009949287f468e52203626320d9ee"><div class="ttname"><a href="a07540.html#adfdd024b78d7f2668a2822a893ae9c4aaed0009949287f468e52203626320d9ee">dogen::physical::entities::operation_reason::ignore_unexpected</a></div><div class="ttdeci">@ ignore_unexpected</div><div class="ttdoc">File is unexpected but the user asked us not to delete it.</div></div>
+<div class="ttc" id="aa07540_html_adfdd024b78d7f2668a2822a893ae9c4aafedb2d84cafe20862cb4399751a8a7e3"><div class="ttname"><a href="a07540.html#adfdd024b78d7f2668a2822a893ae9c4aafedb2d84cafe20862cb4399751a8a7e3">dogen::physical::entities::operation_reason::invalid</a></div><div class="ttdeci">@ invalid</div><div class="ttdoc">Represents an uninitialised enum.</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

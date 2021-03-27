@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: feature_template_repository Class Reference</title>
+<title>Dogen: logging_configuration Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07640.html">variability</a></li><li class="navelem"><a class="el" href="a07641.html">entities</a></li><li class="navelem"><a class="el" href="a13254.html">feature_template_repository</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07789.html">utility</a></li><li class="navelem"><b>log</b></li><li class="navelem"><a class="el" href="a13254.html">logging_configuration</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -71,62 +71,120 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a13251.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">feature_template_repository Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">logging_configuration Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Stores a set of feature templates.  
+<p>Options related to logging.  
  <a href="a13254.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a06755_source.html">feature_template_repository.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a06566_source.html">logging_configuration.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for feature_template_repository:</div>
+Collaboration diagram for logging_configuration:</div>
 <div class="dyncontent">
-<div class="center"><img src="a13252.png" border="0" usemap="#afeature__template__repository_coll__map" alt="Collaboration graph"/></div>
-<map name="afeature__template__repository_coll__map" id="afeature__template__repository_coll__map">
-<area shape="rect" title="Stores a set of feature templates." alt="" coords="5,5,249,259"/>
+<div class="center"><img src="a13252.png" border="0" usemap="#alogging__configuration_coll__map" alt="Collaboration graph"/></div>
+<map name="alogging__configuration_coll__map" id="alogging__configuration_coll__map">
+<area shape="rect" title="Options related to logging." alt="" coords="5,5,204,611"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9397ec4519ce8f2d1d935f109e7c5b08"><td class="memItemLeft" align="right" valign="top"><a id="a9397ec4519ce8f2d1d935f109e7c5b08"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>feature_template_repository</b> (const <a class="el" href="a13254.html">feature_template_repository</a> &amp;)=default</td></tr>
-<tr class="separator:a9397ec4519ce8f2d1d935f109e7c5b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67f19cc0caa52438b16f8126a421493e"><td class="memItemLeft" align="right" valign="top"><a id="a67f19cc0caa52438b16f8126a421493e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>feature_template_repository</b> (<a class="el" href="a13254.html">feature_template_repository</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a67f19cc0caa52438b16f8126a421493e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60827a9b7f295f870f4d4e0f8c18316b"><td class="memItemLeft" align="right" valign="top"><a id="a60827a9b7f295f870f4d4e0f8c18316b"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>feature_template_repository</b> (const std::list&lt; <a class="el" href="a13250.html">dogen::variability::entities::feature_template</a> &gt; &amp;templates)</td></tr>
-<tr class="separator:a60827a9b7f295f870f4d4e0f8c18316b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab094d518b7c6be5eda5dc5a8fcd4b30b"><td class="memItemLeft" align="right" valign="top"><a id="ab094d518b7c6be5eda5dc5a8fcd4b30b"></a>
-const std::list&lt; <a class="el" href="a13250.html">dogen::variability::entities::feature_template</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>templates</b> () const</td></tr>
-<tr class="separator:ab094d518b7c6be5eda5dc5a8fcd4b30b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fe65aaf96cf0aa1b16c960231a524f8"><td class="memItemLeft" align="right" valign="top"><a id="a0fe65aaf96cf0aa1b16c960231a524f8"></a>
-std::list&lt; <a class="el" href="a13250.html">dogen::variability::entities::feature_template</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>templates</b> ()</td></tr>
-<tr class="separator:a0fe65aaf96cf0aa1b16c960231a524f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae7b0add63a119ff0b5011f0fa05e64ab"><td class="memItemLeft" align="right" valign="top"><a id="ae7b0add63a119ff0b5011f0fa05e64ab"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>templates</b> (const std::list&lt; <a class="el" href="a13250.html">dogen::variability::entities::feature_template</a> &gt; &amp;v)</td></tr>
-<tr class="separator:ae7b0add63a119ff0b5011f0fa05e64ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a984531380ac2aaa151ae1ad2ed7f77"><td class="memItemLeft" align="right" valign="top"><a id="a6a984531380ac2aaa151ae1ad2ed7f77"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>templates</b> (const std::list&lt; <a class="el" href="a13250.html">dogen::variability::entities::feature_template</a> &gt; &amp;&amp;v)</td></tr>
-<tr class="separator:a6a984531380ac2aaa151ae1ad2ed7f77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e7eb3e4b56de1c2daf0f781c10eaff2"><td class="memItemLeft" align="right" valign="top"><a id="a0e7eb3e4b56de1c2daf0f781c10eaff2"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="a13254.html">feature_template_repository</a> &amp;rhs) const</td></tr>
-<tr class="separator:a0e7eb3e4b56de1c2daf0f781c10eaff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a074f134c65504da347ff3da4b995bcfd"><td class="memItemLeft" align="right" valign="top"><a id="a074f134c65504da347ff3da4b995bcfd"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="a13254.html">feature_template_repository</a> &amp;rhs) const</td></tr>
-<tr class="separator:a074f134c65504da347ff3da4b995bcfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19491d2c47e7dc7fb57ae151c31c4c33"><td class="memItemLeft" align="right" valign="top"><a id="a19491d2c47e7dc7fb57ae151c31c4c33"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="a13254.html">feature_template_repository</a> &amp;other) noexcept</td></tr>
-<tr class="separator:a19491d2c47e7dc7fb57ae151c31c4c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49a49e752d89ebbf08f63d0d46a56f2a"><td class="memItemLeft" align="right" valign="top"><a id="a49a49e752d89ebbf08f63d0d46a56f2a"></a>
-<a class="el" href="a13254.html">feature_template_repository</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="a13254.html">feature_template_repository</a> other)</td></tr>
-<tr class="separator:a49a49e752d89ebbf08f63d0d46a56f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52a925e9bd89f5f3c4d7a21832445b69"><td class="memItemLeft" align="right" valign="top"><a id="a52a925e9bd89f5f3c4d7a21832445b69"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>logging_configuration</b> (const <a class="el" href="a13254.html">logging_configuration</a> &amp;)=default</td></tr>
+<tr class="separator:a52a925e9bd89f5f3c4d7a21832445b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f6854027a19c284a0b79d7b86529f5e"><td class="memItemLeft" align="right" valign="top"><a id="a8f6854027a19c284a0b79d7b86529f5e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>logging_configuration</b> (<a class="el" href="a13254.html">logging_configuration</a> &amp;&amp;rhs)</td></tr>
+<tr class="separator:a8f6854027a19c284a0b79d7b86529f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c302fa5f6ca321985562aa90c828359"><td class="memItemLeft" align="right" valign="top"><a id="a1c302fa5f6ca321985562aa90c828359"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>logging_configuration</b> (const std::string &amp;<a class="el" href="a13254.html#a0b2108b0fc94e6d4c1c8a2667a33bafc">severity</a>, const std::string &amp;<a class="el" href="a13254.html#a45b6172157bc90e433f51aa6ebf82069">filename</a>, const bool <a class="el" href="a13254.html#a0d111db547e52a8014148bded65f7da8">output_to_console</a>, const boost::filesystem::path &amp;<a class="el" href="a13254.html#aaddbeb104441ff2edd441f204decd8eb">output_directory</a>)</td></tr>
+<tr class="separator:a1c302fa5f6ca321985562aa90c828359"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a504a058e41e64c00c342a54b44202d72"><td class="memItemLeft" align="right" valign="top"><a id="a504a058e41e64c00c342a54b44202d72"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="a13254.html">logging_configuration</a> &amp;rhs) const</td></tr>
+<tr class="separator:a504a058e41e64c00c342a54b44202d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26383467a059143c6f61779f69789282"><td class="memItemLeft" align="right" valign="top"><a id="a26383467a059143c6f61779f69789282"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="a13254.html">logging_configuration</a> &amp;rhs) const</td></tr>
+<tr class="separator:a26383467a059143c6f61779f69789282"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe39423edf2c86b0811a2b49d71c53ba"><td class="memItemLeft" align="right" valign="top"><a id="afe39423edf2c86b0811a2b49d71c53ba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="a13254.html">logging_configuration</a> &amp;other) noexcept</td></tr>
+<tr class="separator:afe39423edf2c86b0811a2b49d71c53ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ec0ff234a71f80cd200d7bca71c3619"><td class="memItemLeft" align="right" valign="top"><a id="a7ec0ff234a71f80cd200d7bca71c3619"></a>
+<a class="el" href="a13254.html">logging_configuration</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="a13254.html">logging_configuration</a> other)</td></tr>
+<tr class="separator:a7ec0ff234a71f80cd200d7bca71c3619"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a0b2108b0fc94e6d4c1c8a2667a33bafc"><td class="memItemLeft" align="right" valign="top"><a id="a0b2108b0fc94e6d4c1c8a2667a33bafc"></a>
+const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a13254.html#a0b2108b0fc94e6d4c1c8a2667a33bafc">severity</a> () const</td></tr>
+<tr class="memdesc:a0b2108b0fc94e6d4c1c8a2667a33bafc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Level at which to log. <br /></td></tr>
+<tr class="separator:a0b2108b0fc94e6d4c1c8a2667a33bafc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0bd6a9b2df578b1bdcf83c96fa27b3c"><td class="memItemLeft" align="right" valign="top"><a id="af0bd6a9b2df578b1bdcf83c96fa27b3c"></a>
+std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>severity</b> ()</td></tr>
+<tr class="separator:af0bd6a9b2df578b1bdcf83c96fa27b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9282f95520686957b1b91b9baaa4e82c"><td class="memItemLeft" align="right" valign="top"><a id="a9282f95520686957b1b91b9baaa4e82c"></a>
+<a class="el" href="a13254.html">logging_configuration</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>severity</b> (const std::string &amp;v)</td></tr>
+<tr class="separator:a9282f95520686957b1b91b9baaa4e82c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60a62eb3d8ab7cdf1329c40e7c1bade4"><td class="memItemLeft" align="right" valign="top"><a id="a60a62eb3d8ab7cdf1329c40e7c1bade4"></a>
+<a class="el" href="a13254.html">logging_configuration</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>severity</b> (const std::string &amp;&amp;v)</td></tr>
+<tr class="separator:a60a62eb3d8ab7cdf1329c40e7c1bade4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a45b6172157bc90e433f51aa6ebf82069"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a13254.html#a45b6172157bc90e433f51aa6ebf82069">filename</a> () const</td></tr>
+<tr class="memdesc:a45b6172157bc90e433f51aa6ebf82069"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the file to log into.  <a href="a13254.html#a45b6172157bc90e433f51aa6ebf82069">More...</a><br /></td></tr>
+<tr class="separator:a45b6172157bc90e433f51aa6ebf82069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63897b89e8de062f171e40fd3af6f690"><td class="memItemLeft" align="right" valign="top"><a id="a63897b89e8de062f171e40fd3af6f690"></a>
+std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>filename</b> ()</td></tr>
+<tr class="separator:a63897b89e8de062f171e40fd3af6f690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cbb1e50a006cf7681ac6a1db1a657d5"><td class="memItemLeft" align="right" valign="top"><a id="a8cbb1e50a006cf7681ac6a1db1a657d5"></a>
+<a class="el" href="a13254.html">logging_configuration</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>filename</b> (const std::string &amp;v)</td></tr>
+<tr class="separator:a8cbb1e50a006cf7681ac6a1db1a657d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95904dc8a7d9e18eea9f95e0daebf7d7"><td class="memItemLeft" align="right" valign="top"><a id="a95904dc8a7d9e18eea9f95e0daebf7d7"></a>
+<a class="el" href="a13254.html">logging_configuration</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>filename</b> (const std::string &amp;&amp;v)</td></tr>
+<tr class="separator:a95904dc8a7d9e18eea9f95e0daebf7d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a0d111db547e52a8014148bded65f7da8"><td class="memItemLeft" align="right" valign="top"><a id="a0d111db547e52a8014148bded65f7da8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a13254.html#a0d111db547e52a8014148bded65f7da8">output_to_console</a> () const</td></tr>
+<tr class="memdesc:a0d111db547e52a8014148bded65f7da8"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, dumps the log into the console. <br /></td></tr>
+<tr class="separator:a0d111db547e52a8014148bded65f7da8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1df2ad3d8c5dcf358f8f2ec834c60d1e"><td class="memItemLeft" align="right" valign="top"><a id="a1df2ad3d8c5dcf358f8f2ec834c60d1e"></a>
+<a class="el" href="a13254.html">logging_configuration</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>output_to_console</b> (const bool v)</td></tr>
+<tr class="separator:a1df2ad3d8c5dcf358f8f2ec834c60d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:aaddbeb104441ff2edd441f204decd8eb"><td class="memItemLeft" align="right" valign="top"><a id="aaddbeb104441ff2edd441f204decd8eb"></a>
+const boost::filesystem::path &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a13254.html#aaddbeb104441ff2edd441f204decd8eb">output_directory</a> () const</td></tr>
+<tr class="memdesc:aaddbeb104441ff2edd441f204decd8eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Directory in which to place the output. <br /></td></tr>
+<tr class="separator:aaddbeb104441ff2edd441f204decd8eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ba4db339b8d29a9b76b4bf18788bbba"><td class="memItemLeft" align="right" valign="top"><a id="a0ba4db339b8d29a9b76b4bf18788bbba"></a>
+boost::filesystem::path &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>output_directory</b> ()</td></tr>
+<tr class="separator:a0ba4db339b8d29a9b76b4bf18788bbba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a438f8eb3dc5b82d59a8661943403dd71"><td class="memItemLeft" align="right" valign="top"><a id="a438f8eb3dc5b82d59a8661943403dd71"></a>
+<a class="el" href="a13254.html">logging_configuration</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>output_directory</b> (const boost::filesystem::path &amp;v)</td></tr>
+<tr class="separator:a438f8eb3dc5b82d59a8661943403dd71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ab2092e4bcb4d0538f6acef27044d0b"><td class="memItemLeft" align="right" valign="top"><a id="a6ab2092e4bcb4d0538f6acef27044d0b"></a>
+<a class="el" href="a13254.html">logging_configuration</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>output_directory</b> (const boost::filesystem::path &amp;&amp;v)</td></tr>
+<tr class="separator:a6ab2092e4bcb4d0538f6acef27044d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Stores a set of feature templates. </p>
-</div></div><!-- contents -->
+<div class="textblock"><p>Options related to logging. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a45b6172157bc90e433f51aa6ebf82069"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45b6172157bc90e433f51aa6ebf82069">&#9670;&nbsp;</a></span>filename()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string &amp; filename </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Name of the file to log into. </p>
+<p>If empty, file logging is disabled. </p>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1

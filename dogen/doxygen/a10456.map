@@ -1,3 +1,3 @@
-<map id="text_model_to_physical_model_transform" name="text_model_to_physical_model_transform">
-<area shape="rect" id="node1" title="Converts text models into physical models." alt="" coords="5,5,183,97"/>
+<map id="type_registrar_transform" name="type_registrar_transform">
+<area shape="rect" id="node1" title="Populates the type registrars with information from the model." alt="" coords="5,5,189,83"/>
 </map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: indexing_error Class Reference</title>
+<title>Dogen: physical_helpers Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,44 +63,49 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07159.html">logical</a></li><li class="navelem"><b>helpers</b></li><li class="navelem"><a class="el" href="a10010.html">indexing_error</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07363.html">logical</a></li><li class="navelem"><a class="el" href="a07378.html">features</a></li><li class="navelem"><a class="el" href="a10010.html">physical_helpers</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a10007.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">indexing_error Class Reference</div>  </div>
+<div class="title">physical_helpers Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A fatal error has occurred while indexing.  
+<p>Features related to the helpers in physical domain.  
  <a href="a10010.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a02414_source.html">indexing_error.hpp</a>&gt;</code></p>
-
-<p>Inherits exception, and exception.</p>
+<p><code>#include &lt;<a class="el" href="a02384_source.html">physical_helpers.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for indexing_error:</div>
+Collaboration diagram for physical_helpers:</div>
 <div class="dyncontent">
-<div class="center"><img src="a10008.png" border="0" usemap="#aindexing__error_coll__map" alt="Collaboration graph"/></div>
-<map name="aindexing__error_coll__map" id="aindexing__error_coll__map">
-<area shape="rect" title="A fatal error has occurred while indexing." alt="" coords="5,5,157,127"/>
+<div class="center"><img src="a10008.png" border="0" usemap="#aphysical__helpers_coll__map" alt="Collaboration graph"/></div>
+<map name="aphysical__helpers_coll__map" id="aphysical__helpers_coll__map">
+<area shape="rect" title="Features related to the helpers in physical domain." alt="" coords="5,5,224,127"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a11f04d288f1ad199d513067d86ca4ffe"><td class="memItemLeft" align="right" valign="top"><a id="a11f04d288f1ad199d513067d86ca4ffe"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>indexing_error</b> (const std::string &amp;message)</td></tr>
-<tr class="separator:a11f04d288f1ad199d513067d86ca4ffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e01571e6589dc64e08addf4b1148a7a"><td class="memItemLeft" align="right" valign="top"><a id="a6e01571e6589dc64e08addf4b1148a7a"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>what</b> () const noexcept</td></tr>
-<tr class="separator:a6e01571e6589dc64e08addf4b1148a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ac3345c144edaa1864eeb971bbf102d0c"><td class="memItemLeft" align="right" valign="top"><a id="ac3345c144edaa1864eeb971bbf102d0c"></a>
+static feature_group&#160;</td><td class="memItemRight" valign="bottom"><b>make_feature_group</b> (const <a class="el" href="a13446.html">variability::entities::feature_model</a> &amp;fm)</td></tr>
+<tr class="separator:ac3345c144edaa1864eeb971bbf102d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0cfe3f507ce348b6e6a77e14a9b2241"><td class="memItemLeft" align="right" valign="top"><a id="af0cfe3f507ce348b6e6a77e14a9b2241"></a>
+static static_configuration&#160;</td><td class="memItemRight" valign="bottom"><b>make_static_configuration</b> (const feature_group &amp;fg, const variability::entities::configuration &amp;cfg)</td></tr>
+<tr class="separator:af0cfe3f507ce348b6e6a77e14a9b2241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eace8e86c71b0ce6da0a5cb452c1414"><td class="memTemplParams" colspan="2"><a id="a7eace8e86c71b0ce6da0a5cb452c1414"></a>
+template&lt;typename Configurable &gt; </td></tr>
+<tr class="memitem:a7eace8e86c71b0ce6da0a5cb452c1414"><td class="memTemplItemLeft" align="right" valign="top">static static_configuration&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_static_configuration</b> (const feature_group &amp;fg, const Configurable &amp;c)</td></tr>
+<tr class="separator:a7eace8e86c71b0ce6da0a5cb452c1414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9b98c113e5c61a6f7a817603ef40562"><td class="memItemLeft" align="right" valign="top"><a id="ac9b98c113e5c61a6f7a817603ef40562"></a>
+static std::list&lt; <a class="el" href="a13442.html">dogen::variability::entities::feature</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>make_features</b> ()</td></tr>
+<tr class="separator:ac9b98c113e5c61a6f7a817603ef40562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A fatal error has occurred while indexing. </p>
+<div class="textblock"><p>Features related to the helpers in physical domain. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

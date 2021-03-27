@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: physical_to_logical_population_transform Class Reference</title>
+<title>Dogen: transformation_error Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,39 +63,44 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07285.html">orchestration</a></li><li class="navelem"><a class="el" href="a07286.html">transforms</a></li><li class="navelem"><a class="el" href="a10450.html">physical_to_logical_population_transform</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07363.html">logical</a></li><li class="navelem"><a class="el" href="a07376.html">transforms</a></li><li class="navelem"><a class="el" href="a10450.html">transformation_error</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a10447.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">physical_to_logical_population_transform Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">transformation_error Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Populate logical elements that require information from the physical dimension.  
+<p>An error occurred whilst applying a transformation.  
  <a href="a10450.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a03449_source.html">physical_to_logical_population_transform.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a18656_source.html">transformation_error.hpp</a>&gt;</code></p>
+
+<p>Inherits exception, and exception.</p>
 <div class="dynheader">
-Collaboration diagram for physical_to_logical_population_transform:</div>
+Collaboration diagram for transformation_error:</div>
 <div class="dyncontent">
-<div class="center"><img src="a10448.png" border="0" usemap="#aphysical__to__logical__population__transform_coll__map" alt="Collaboration graph"/></div>
-<map name="aphysical__to__logical__population__transform_coll__map" id="aphysical__to__logical__population__transform_coll__map">
-<area shape="rect" title="Populate logical elements that require information from the physical dimension." alt="" coords="5,5,175,97"/>
+<div class="center"><img src="a10448.png" border="0" usemap="#atransformation__error_coll__map" alt="Collaboration graph"/></div>
+<map name="atransformation__error_coll__map" id="atransformation__error_coll__map">
+<area shape="rect" title="An error occurred whilst applying a transformation." alt="" coords="5,5,199,127"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a0aed9f178c210e2e4001f796461ca401"><td class="memItemLeft" align="right" valign="top"><a id="a0aed9f178c210e2e4001f796461ca401"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (const text::transforms::context &amp;ctx, <a class="el" href="a11450.html">text::entities::model</a> &amp;m)</td></tr>
-<tr class="separator:a0aed9f178c210e2e4001f796461ca401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a4aad0d9955d29185cfb6dec3fc5caf4e"><td class="memItemLeft" align="right" valign="top"><a id="a4aad0d9955d29185cfb6dec3fc5caf4e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>transformation_error</b> (const std::string &amp;message)</td></tr>
+<tr class="separator:a4aad0d9955d29185cfb6dec3fc5caf4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e01571e6589dc64e08addf4b1148a7a"><td class="memItemLeft" align="right" valign="top"><a id="a6e01571e6589dc64e08addf4b1148a7a"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>what</b> () const noexcept</td></tr>
+<tr class="separator:a6e01571e6589dc64e08addf4b1148a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Populate logical elements that require information from the physical dimension. </p>
+<div class="textblock"><p>An error occurred whilst applying a transformation. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

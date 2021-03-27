@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: visual_studio_project_type_transform Class Reference</title>
+<title>Dogen: resolver Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07159.html">logical</a></li><li class="navelem"><a class="el" href="a07172.html">transforms</a></li><li class="navelem"><a class="el" href="a10270.html">visual_studio_project_type_transform</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07363.html">logical</a></li><li class="navelem"><b>helpers</b></li><li class="navelem"><a class="el" href="a10270.html">resolver</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -71,31 +71,46 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a10267.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">visual_studio_project_type_transform Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">resolver Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Updates the mapping of visual studio project types.  
+<p>Resolves type references within a model.  
  <a href="a10270.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a02615_source.html">visual_studio_project_type_transform.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a19427_source.html">resolver.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for visual_studio_project_type_transform:</div>
+Collaboration diagram for resolver:</div>
 <div class="dyncontent">
-<div class="center"><img src="a10268.png" border="0" usemap="#avisual__studio__project__type__transform_coll__map" alt="Collaboration graph"/></div>
-<map name="avisual__studio__project__type__transform_coll__map" id="avisual__studio__project__type__transform_coll__map">
-<area shape="rect" title="Updates the mapping of visual studio project types." alt="" coords="5,5,165,97"/>
+<div class="center"><img src="a10268.png" border="0" usemap="#aresolver_coll__map" alt="Collaboration graph"/></div>
+<map name="aresolver_coll__map" id="aresolver_coll__map">
+<area shape="rect" title="Resolves type references within a model." alt="" coords="5,5,163,215"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a34eb2ab3f88adc4467f71271a539eaaa"><td class="memItemLeft" align="right" valign="top"><a id="a34eb2ab3f88adc4467f71271a539eaaa"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (const <a class="el" href="a10118.html">context</a> &amp;ctx, const <a class="el" href="a09366.html">logical::entities::model</a> &amp;m)</td></tr>
-<tr class="separator:a34eb2ab3f88adc4467f71271a539eaaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a105a13e71e9c5155dba61f8eadc561fd"><td class="memItemLeft" align="right" valign="top"><a id="a105a13e71e9c5155dba61f8eadc561fd"></a>
+static <a class="el" href="a09274.html">identification::entities::logical_name</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10270.html#a105a13e71e9c5155dba61f8eadc561fd">resolve</a> (const <a class="el" href="a09570.html">entities::model</a> &amp;m, const indices &amp;idx, const <a class="el" href="a09274.html">identification::entities::logical_name</a> &amp;ctx, const <a class="el" href="a09274.html">identification::entities::logical_name</a> &amp;n)</td></tr>
+<tr class="memdesc:a105a13e71e9c5155dba61f8eadc561fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves the name against the supplied model. <br /></td></tr>
+<tr class="separator:a105a13e71e9c5155dba61f8eadc561fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3b838e8989704e4254d33d612f5d2c7"><td class="memItemLeft" align="right" valign="top"><a id="af3b838e8989704e4254d33d612f5d2c7"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10270.html#af3b838e8989704e4254d33d612f5d2c7">resolve</a> (const indices &amp;idx, <a class="el" href="a09570.html">entities::model</a> &amp;m)</td></tr>
+<tr class="memdesc:af3b838e8989704e4254d33d612f5d2c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolve all references to types within model. <br /></td></tr>
+<tr class="separator:af3b838e8989704e4254d33d612f5d2c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a125d93ce3c3688cda9227c5b82368495"><td class="memItemLeft" align="right" valign="top"><a id="a125d93ce3c3688cda9227c5b82368495"></a>
+static boost::optional&lt; <a class="el" href="a09274.html">identification::entities::logical_name</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10270.html#a125d93ce3c3688cda9227c5b82368495">try_resolve_object_template_name</a> (<a class="el" href="a09274.html">identification::entities::logical_name</a> ctx, const std::string &amp;s, const <a class="el" href="a09570.html">entities::model</a> &amp;m)</td></tr>
+<tr class="memdesc:a125d93ce3c3688cda9227c5b82368495"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves the name as an object template name. <br /></td></tr>
+<tr class="separator:a125d93ce3c3688cda9227c5b82368495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70c5f35f5f08cdb14a7024df95137568"><td class="memItemLeft" align="right" valign="top"><a id="a70c5f35f5f08cdb14a7024df95137568"></a>
+static boost::optional&lt; <a class="el" href="a09274.html">identification::entities::logical_name</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>try_resolve_object_template_name</b> (const <a class="el" href="a09274.html">identification::entities::logical_name</a> &amp;ctx, const <a class="el" href="a09274.html">identification::entities::logical_name</a> &amp;n, const <a class="el" href="a09570.html">entities::model</a> &amp;m)</td></tr>
+<tr class="separator:a70c5f35f5f08cdb14a7024df95137568"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Updates the mapping of visual studio project types. </p>
+<div class="textblock"><p>Resolves type references within a model. </p>
+<p>Properties may come in from transformation missing information in their names - such as the model name, etc. The resolver fills in the missing gaps.</p>
+<p>The resolver is also responsible for making sure that all references to types (e.g. names) can be resolved to a type in the model. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

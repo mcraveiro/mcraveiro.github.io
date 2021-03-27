@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: font Class Reference</title>
+<title>Dogen: grapher Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,94 +63,212 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07122.html">dia</a></li><li class="navelem"><a class="el" href="a07123.html">entities</a></li><li class="navelem"><a class="el" href="a08922.html">font</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07282.html">codec</a></li><li class="navelem"><b>helpers</b></li><li class="navelem"><a class="el" href="a08922.html">grapher</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a08919.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">font Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">grapher Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Represents a font in a diagram.  
+<p>Generates a DAG of objects.  
  <a href="a08922.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00812_source.html">font.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00467_source.html">grapher.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for font:</div>
+Collaboration diagram for grapher:</div>
 <div class="dyncontent">
-<div class="center"><img src="a08920.png" border="0" usemap="#afont_coll__map" alt="Collaboration graph"/></div>
-<map name="afont_coll__map" id="afont_coll__map">
-<area shape="rect" title="Represents a font in a diagram." alt="" coords="5,5,121,229"/>
+<div class="center"><img src="a08920.png" border="0" usemap="#agrapher_coll__map" alt="Collaboration graph"/></div>
+<map name="agrapher_coll__map" id="agrapher_coll__map">
+<area shape="rect" title="Generates a DAG of objects." alt="" coords="5,5,161,244"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a62cd6c1fe8e01d2fb3a58b319d492ab4"><td class="memItemLeft" align="right" valign="top"><a id="a62cd6c1fe8e01d2fb3a58b319d492ab4"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>font</b> (const <a class="el" href="a08922.html">font</a> &amp;)=default</td></tr>
-<tr class="separator:a62cd6c1fe8e01d2fb3a58b319d492ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2273129b900675cd499d48e14af7d995"><td class="memItemLeft" align="right" valign="top"><a id="a2273129b900675cd499d48e14af7d995"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>font</b> (<a class="el" href="a08922.html">font</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a2273129b900675cd499d48e14af7d995"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e2afe89cc504bcad22bcc36b39aeae0"><td class="memItemLeft" align="right" valign="top"><a id="a6e2afe89cc504bcad22bcc36b39aeae0"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>font</b> (const std::string &amp;family, const std::string &amp;style, const std::string &amp;name)</td></tr>
-<tr class="separator:a6e2afe89cc504bcad22bcc36b39aeae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a070cab9e6678afe6c69e70b6fd9f1df1"><td class="memItemLeft" align="right" valign="top"><a id="a070cab9e6678afe6c69e70b6fd9f1df1"></a>
-const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>family</b> () const</td></tr>
-<tr class="separator:a070cab9e6678afe6c69e70b6fd9f1df1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22ca54266e4673ab72d497483e8840f2"><td class="memItemLeft" align="right" valign="top"><a id="a22ca54266e4673ab72d497483e8840f2"></a>
-std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>family</b> ()</td></tr>
-<tr class="separator:a22ca54266e4673ab72d497483e8840f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a809157d677e4c0dbd9079df6fe2eb479"><td class="memItemLeft" align="right" valign="top"><a id="a809157d677e4c0dbd9079df6fe2eb479"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>family</b> (const std::string &amp;v)</td></tr>
-<tr class="separator:a809157d677e4c0dbd9079df6fe2eb479"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8082dfdf595cca73f2dd435f6826cc5"><td class="memItemLeft" align="right" valign="top"><a id="aa8082dfdf595cca73f2dd435f6826cc5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>family</b> (const std::string &amp;&amp;v)</td></tr>
-<tr class="separator:aa8082dfdf595cca73f2dd435f6826cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae143fa0dd11e454b02ab99b15a5f41e0"><td class="memItemLeft" align="right" valign="top"><a id="ae143fa0dd11e454b02ab99b15a5f41e0"></a>
-const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>style</b> () const</td></tr>
-<tr class="separator:ae143fa0dd11e454b02ab99b15a5f41e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b5f1e242078ba1f73212ba480cb0126"><td class="memItemLeft" align="right" valign="top"><a id="a7b5f1e242078ba1f73212ba480cb0126"></a>
-std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>style</b> ()</td></tr>
-<tr class="separator:a7b5f1e242078ba1f73212ba480cb0126"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39af88eb8d2bc0bb99e24e235d71052e"><td class="memItemLeft" align="right" valign="top"><a id="a39af88eb8d2bc0bb99e24e235d71052e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>style</b> (const std::string &amp;v)</td></tr>
-<tr class="separator:a39af88eb8d2bc0bb99e24e235d71052e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf54840fb43cbd43d01ed88f82616ed7"><td class="memItemLeft" align="right" valign="top"><a id="abf54840fb43cbd43d01ed88f82616ed7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>style</b> (const std::string &amp;&amp;v)</td></tr>
-<tr class="separator:abf54840fb43cbd43d01ed88f82616ed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24dcbf29c0d6cd766009a182a6484e3b"><td class="memItemLeft" align="right" valign="top"><a id="a24dcbf29c0d6cd766009a182a6484e3b"></a>
-const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> () const</td></tr>
-<tr class="separator:a24dcbf29c0d6cd766009a182a6484e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e655a505173f492cd64fc45cb2944c5"><td class="memItemLeft" align="right" valign="top"><a id="a7e655a505173f492cd64fc45cb2944c5"></a>
-std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> ()</td></tr>
-<tr class="separator:a7e655a505173f492cd64fc45cb2944c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae4514260ad7d701f50fad6a60ea2d97"><td class="memItemLeft" align="right" valign="top"><a id="aae4514260ad7d701f50fad6a60ea2d97"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> (const std::string &amp;v)</td></tr>
-<tr class="separator:aae4514260ad7d701f50fad6a60ea2d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a864e4bd4bf33301730eafb43a9ee12"><td class="memItemLeft" align="right" valign="top"><a id="a6a864e4bd4bf33301730eafb43a9ee12"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> (const std::string &amp;&amp;v)</td></tr>
-<tr class="separator:a6a864e4bd4bf33301730eafb43a9ee12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af01929006fa86dee7a7be8de57fafcfa"><td class="memItemLeft" align="right" valign="top"><a id="af01929006fa86dee7a7be8de57fafcfa"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="a08922.html">font</a> &amp;rhs) const</td></tr>
-<tr class="separator:af01929006fa86dee7a7be8de57fafcfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab929cd19b49158e883684ce5185326f4"><td class="memItemLeft" align="right" valign="top"><a id="ab929cd19b49158e883684ce5185326f4"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="a08922.html">font</a> &amp;rhs) const</td></tr>
-<tr class="separator:ab929cd19b49158e883684ce5185326f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b4adac390f0180c248674ee4c50cfbf"><td class="memItemLeft" align="right" valign="top"><a id="a5b4adac390f0180c248674ee4c50cfbf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="a08922.html">font</a> &amp;other) noexcept</td></tr>
-<tr class="separator:a5b4adac390f0180c248674ee4c50cfbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23ff88c5aa177333c2d28af70178347c"><td class="memItemLeft" align="right" valign="top"><a id="a23ff88c5aa177333c2d28af70178347c"></a>
-<a class="el" href="a08922.html">font</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="a08922.html">font</a> other)</td></tr>
-<tr class="separator:a23ff88c5aa177333c2d28af70178347c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab37ccd362f2a908f0a2cc20a0d52fbb3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08922.html#ab37ccd362f2a908f0a2cc20a0d52fbb3">add</a> (const <a class="el" href="a08850.html">entities::object</a> &amp;o)</td></tr>
+<tr class="memdesc:ab37ccd362f2a908f0a2cc20a0d52fbb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an object to the graph.  <a href="a08922.html#ab37ccd362f2a908f0a2cc20a0d52fbb3">More...</a><br /></td></tr>
+<tr class="separator:ab37ccd362f2a908f0a2cc20a0d52fbb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9ab60c39045bb39161e8c635c02a494"><td class="memTemplParams" colspan="2">template&lt;typename Container &gt; </td></tr>
+<tr class="memitem:ad9ab60c39045bb39161e8c635c02a494"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="a08922.html#ad9ab60c39045bb39161e8c635c02a494">add</a> (const Container &amp;c)</td></tr>
+<tr class="memdesc:ad9ab60c39045bb39161e8c635c02a494"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a container of objects to the graph.  <a href="a08922.html#ad9ab60c39045bb39161e8c635c02a494">More...</a><br /></td></tr>
+<tr class="separator:ad9ab60c39045bb39161e8c635c02a494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a488287b2ec1ff965575ac154f61ec6"><td class="memItemLeft" align="right" valign="top"><a id="a8a488287b2ec1ff965575ac154f61ec6"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08922.html#a8a488287b2ec1ff965575ac154f61ec6">is_generated</a> () const</td></tr>
+<tr class="memdesc:a8a488287b2ec1ff965575ac154f61ec6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the graph has been generated, false otherwise. <br /></td></tr>
+<tr class="separator:a8a488287b2ec1ff965575ac154f61ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac13d88165da095e58f9649bdd171fcad"><td class="memItemLeft" align="right" valign="top">const graph_type &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08922.html#ac13d88165da095e58f9649bdd171fcad">graph</a> () const</td></tr>
+<tr class="memdesc:ac13d88165da095e58f9649bdd171fcad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the generated graph.  <a href="a08922.html#ac13d88165da095e58f9649bdd171fcad">More...</a><br /></td></tr>
+<tr class="separator:ac13d88165da095e58f9649bdd171fcad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f3542f9efb6c4d1a8b05cf68e4215a3"><td class="memItemLeft" align="right" valign="top">const std::unordered_map&lt; std::string, std::list&lt; std::string &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08922.html#a6f3542f9efb6c4d1a8b05cf68e4215a3">parent_id_to_child_ids</a> () const</td></tr>
+<tr class="memdesc:a6f3542f9efb6c4d1a8b05cf68e4215a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the parent to child relationships.  <a href="a08922.html#a6f3542f9efb6c4d1a8b05cf68e4215a3">More...</a><br /></td></tr>
+<tr class="separator:a6f3542f9efb6c4d1a8b05cf68e4215a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a3c01631a4116e8810c6c1021d7110ab7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08922.html#a3c01631a4116e8810c6c1021d7110ab7">generate</a> ()</td></tr>
+<tr class="memdesc:a3c01631a4116e8810c6c1021d7110ab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a DAG of all objects that have been added.  <a href="a08922.html#a3c01631a4116e8810c6c1021d7110ab7">More...</a><br /></td></tr>
+<tr class="separator:a3c01631a4116e8810c6c1021d7110ab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d211f148cd31f4ba0ea81a754ea8eb3"><td class="memTemplParams" colspan="2"><a id="a8d211f148cd31f4ba0ea81a754ea8eb3"></a>
+template&lt;typename Container &gt; </td></tr>
+<tr class="memitem:a8d211f148cd31f4ba0ea81a754ea8eb3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>generate</b> (const Container &amp;c)</td></tr>
+<tr class="separator:a8d211f148cd31f4ba0ea81a754ea8eb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a4d9e5ad026a91016b652cf868f92400c"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08922.html#a4d9e5ad026a91016b652cf868f92400c">root_id</a> ()</td></tr>
+<tr class="memdesc:a4d9e5ad026a91016b652cf868f92400c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the dia object ID of the root object.  <a href="a08922.html#a4d9e5ad026a91016b652cf868f92400c">More...</a><br /></td></tr>
+<tr class="separator:a4d9e5ad026a91016b652cf868f92400c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents a font in a diagram. </p>
-</div></div><!-- contents -->
+<div class="textblock"><p>Generates a DAG of objects. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4d9e5ad026a91016b652cf868f92400c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d9e5ad026a91016b652cf868f92400c">&#9670;&nbsp;</a></span>root_id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string root_id </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the dia object ID of the root object. </p>
+<dl class="section note"><dt>Note</dt><dd>only for testing purposes </dd></dl>
+
+</div>
+</div>
+<a id="ab37ccd362f2a908f0a2cc20a0d52fbb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab37ccd362f2a908f0a2cc20a0d52fbb3">&#9670;&nbsp;</a></span>add() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void add </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a08850.html">entities::object</a> &amp;&#160;</td>
+          <td class="paramname"><em>o</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds an object to the graph. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>The graph must not yet have been generated. </dd>
+<dd>
+The object must be relevant to the graph. </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="a08922_ab37ccd362f2a908f0a2cc20a0d52fbb3_icgraph.png" border="0" usemap="#aa08922_ab37ccd362f2a908f0a2cc20a0d52fbb3_icgraph" alt=""/></div>
+<map name="aa08922_ab37ccd362f2a908f0a2cc20a0d52fbb3_icgraph" id="aa08922_ab37ccd362f2a908f0a2cc20a0d52fbb3_icgraph">
+<area shape="rect" title="Adds an object to the graph." alt="" coords="100,5,147,32"/>
+<area shape="rect" href="a08922.html#ad9ab60c39045bb39161e8c635c02a494" title="Adds a container of objects to the graph." alt="" coords="5,5,52,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad9ab60c39045bb39161e8c635c02a494"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9ab60c39045bb39161e8c635c02a494">&#9670;&nbsp;</a></span>add() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void add </td>
+          <td>(</td>
+          <td class="paramtype">const Container &amp;&#160;</td>
+          <td class="paramname"><em>c</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a container of objects to the graph. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>The graph must not yet have been generated.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Couldn't find a way to constrain the container to non-associative containers of object. On the plus side, if you try to pass in some weird container (or a non-container), you should get a suitably puzzling error message. </dd></dl>
+
+</div>
+</div>
+<a id="a3c01631a4116e8810c6c1021d7110ab7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c01631a4116e8810c6c1021d7110ab7">&#9670;&nbsp;</a></span>generate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void generate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generate a DAG of all objects that have been added. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>Graph must not yet have been generated. </dd></dl>
+
+</div>
+</div>
+<a id="ac13d88165da095e58f9649bdd171fcad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac13d88165da095e58f9649bdd171fcad">&#9670;&nbsp;</a></span>graph()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const graph_type &amp; graph </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the generated graph. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>The graph must have already been generated. </dd></dl>
+
+</div>
+</div>
+<a id="a6f3542f9efb6c4d1a8b05cf68e4215a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f3542f9efb6c4d1a8b05cf68e4215a3">&#9670;&nbsp;</a></span>parent_id_to_child_ids()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::unordered_map&lt; std::string, std::list&lt; std::string &gt; &gt; &amp; parent_id_to_child_ids </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the parent to child relationships. </p>
+<dl class="section pre"><dt>Precondition</dt><dd>The graph must have already been generated. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1

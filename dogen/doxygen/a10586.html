@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: archetype Class Reference</title>
+<title>Dogen: dependencies_builder Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07335.html">physical</a></li><li class="navelem"><a class="el" href="a07336.html">entities</a></li><li class="navelem"><a class="el" href="a10586.html">archetype</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07489.html">orchestration</a></li><li class="navelem"><a class="el" href="a07493.html">helpers</a></li><li class="navelem"><a class="el" href="a10586.html">dependencies_builder</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -71,211 +71,78 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a10583.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">archetype Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">dependencies_builder Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Represents a meta-artefact.  
+<p>Helps in building the inclusion dependencies for a given formatteridentification::entities::logical_meta_physical_id.  
  <a href="a10586.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a18950_source.html">archetype.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a03488_source.html">dependencies_builder.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for archetype:</div>
+Collaboration diagram for dependencies_builder:</div>
 <div class="dyncontent">
-<div class="center"><img src="a10584.png" border="0" usemap="#aarchetype_coll__map" alt="Collaboration graph"/></div>
-<map name="aarchetype_coll__map" id="aarchetype_coll__map">
-<area shape="rect" title="Represents a meta&#45;artefact." alt="" coords="5,5,216,1549"/>
+<div class="center"><img src="a10584.png" border="0" usemap="#adependencies__builder_coll__map" alt="Collaboration graph"/></div>
+<map name="adependencies__builder_coll__map" id="adependencies__builder_coll__map">
+<area shape="rect" title="Helps in building the inclusion dependencies for a given formatteridentification::entities::logical_m..." alt="" coords="5,5,195,376"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a74852e4ff8e3dd62b6cabac9757e3b2d"><td class="memItemLeft" align="right" valign="top"><a id="a74852e4ff8e3dd62b6cabac9757e3b2d"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>archetype</b> (const <a class="el" href="a10586.html">archetype</a> &amp;)=default</td></tr>
-<tr class="separator:a74852e4ff8e3dd62b6cabac9757e3b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4959ec1b03c1e0bcb9daeec5a5b31df0"><td class="memItemLeft" align="right" valign="top"><a id="a4959ec1b03c1e0bcb9daeec5a5b31df0"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>archetype</b> (<a class="el" href="a10586.html">archetype</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a4959ec1b03c1e0bcb9daeec5a5b31df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a836501e1a79669ca0ff5412c1bba7955"><td class="memItemLeft" align="right" valign="top"><a id="a836501e1a79669ca0ff5412c1bba7955"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>archetype</b> (const std::string &amp;<a class="el" href="a10586.html#aa96fc91e0a878caf38caa30ca4bc54ec">description</a>, const <a class="el" href="a09102.html">dogen::identification::entities::physical_meta_name</a> &amp;<a class="el" href="a10586.html#a9c8f79729b850d7b802319372d47fe78">meta_name</a>, const std::list&lt; <a class="el" href="a09046.html">dogen::identification::entities::label</a> &gt; &amp;<a class="el" href="a10586.html#a55959f6a1da8e301afac8e1a30d93446">labels</a>, const std::string &amp;<a class="el" href="a10586.html#aa50e0cce94350b27b2572ea52886a378">postfix</a>, const std::list&lt; std::string &gt; &amp;<a class="el" href="a10586.html#aea52abc18c687112f220d9a4a15a6565">depends</a>, const std::list&lt; std::string &gt; &amp;<a class="el" href="a10586.html#a4fefaf17c669be61fceb4af7884e3105">generates</a>, const std::string &amp;<a class="el" href="a10586.html#a10b83e84a9ebc531886f4b40b9dfee7c">generated_by</a>, const <a class="el" href="a07129.html#aca560c08bf06920a8d261d33c8a1474a">dogen::identification::entities::technical_space</a> <a class="el" href="a10586.html#a1d74897020f8a6240426ea41d1282330">technical_space</a>, const std::string &amp;<a class="el" href="a10586.html#a88fd1c6a686adfcde6f753027c8691d1">archetype_kind_id</a>, const <a class="el" href="a09058.html">dogen::identification::entities::logical_meta_id</a> &amp;<a class="el" href="a10586.html#a09322c97bc21c5d1ecbb6dea71b922a4">logical_meta_element_id</a>, const <a class="el" href="a09094.html">dogen::identification::entities::physical_meta_id</a> &amp;<a class="el" href="a10666.html">part</a>, const <a class="el" href="a10694.html">dogen::physical::entities::relations</a> &amp;<a class="el" href="a10694.html">relations</a>)</td></tr>
-<tr class="separator:a836501e1a79669ca0ff5412c1bba7955"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61d9a5e6cf6c2a9244969b706bc623cf"><td class="memItemLeft" align="right" valign="top"><a id="a61d9a5e6cf6c2a9244969b706bc623cf"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="a10586.html">archetype</a> &amp;rhs) const</td></tr>
-<tr class="separator:a61d9a5e6cf6c2a9244969b706bc623cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9460ed15056c7851984c3f73fe4606fb"><td class="memItemLeft" align="right" valign="top"><a id="a9460ed15056c7851984c3f73fe4606fb"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="a10586.html">archetype</a> &amp;rhs) const</td></tr>
-<tr class="separator:a9460ed15056c7851984c3f73fe4606fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7275ef6fc545301e4b429c84f7070278"><td class="memItemLeft" align="right" valign="top"><a id="a7275ef6fc545301e4b429c84f7070278"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="a10586.html">archetype</a> &amp;other) noexcept</td></tr>
-<tr class="separator:a7275ef6fc545301e4b429c84f7070278"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a224cd81b2fdd969c47beeafc7d3b6ac7"><td class="memItemLeft" align="right" valign="top"><a id="a224cd81b2fdd969c47beeafc7d3b6ac7"></a>
-<a class="el" href="a10586.html">archetype</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="a10586.html">archetype</a> other)</td></tr>
-<tr class="separator:a224cd81b2fdd969c47beeafc7d3b6ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae88e04f19a2b248563aefc023de8ebcf"><td class="memItemLeft" align="right" valign="top"><a id="ae88e04f19a2b248563aefc023de8ebcf"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>dependencies_builder</b> (const std::unordered_map&lt; <a class="el" href="a09270.html">identification::entities::logical_meta_physical_id</a>, <a class="el" href="a10842.html">physical::entities::inclusion_directives</a> &gt; &amp;ids, const std::unordered_set&lt; <a class="el" href="a09270.html">identification::entities::logical_meta_physical_id</a> &gt; &amp;enabled_archetype_for_element)</td></tr>
+<tr class="separator:ae88e04f19a2b248563aefc023de8ebcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0f6e905935b972e5a7459f96e065de7"><td class="memItemLeft" align="right" valign="top"><a id="ad0f6e905935b972e5a7459f96e065de7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10586.html#ad0f6e905935b972e5a7459f96e065de7">is_enabled</a> (const <a class="el" href="a09274.html">identification::entities::logical_name</a> &amp;n, const std::string &amp;archetype) const</td></tr>
+<tr class="memdesc:ad0f6e905935b972e5a7459f96e065de7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the formatter is enabled. <br /></td></tr>
+<tr class="separator:ad0f6e905935b972e5a7459f96e065de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a279563a8e085463f18fdc89b6e154668"><td class="memItemLeft" align="right" valign="top"><a id="a279563a8e085463f18fdc89b6e154668"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10586.html#a279563a8e085463f18fdc89b6e154668">add</a> (const std::list&lt; <a class="el" href="a09274.html">identification::entities::logical_name</a> &gt; &amp;names, const std::string &amp;archetype)</td></tr>
+<tr class="memdesc:a279563a8e085463f18fdc89b6e154668"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the inclusion directives for the supplied archetype, for each of the supplied names. <br /></td></tr>
+<tr class="separator:a279563a8e085463f18fdc89b6e154668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae117eafc7ae748b3ac66db5d7dde7bc9"><td class="memItemLeft" align="right" valign="top"><a id="ae117eafc7ae748b3ac66db5d7dde7bc9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10586.html#ae117eafc7ae748b3ac66db5d7dde7bc9">add</a> (const std::list&lt; <a class="el" href="a09274.html">identification::entities::logical_name</a> &gt; &amp;names, const <a class="el" href="a09298.html">identification::entities::physical_meta_id</a> &amp;archetype)</td></tr>
+<tr class="memdesc:ae117eafc7ae748b3ac66db5d7dde7bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the inclusion directives for the supplied archetype, for each of the supplied names. <br /></td></tr>
+<tr class="separator:ae117eafc7ae748b3ac66db5d7dde7bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07c5f20161659c262fdf085b892f5c30"><td class="memItemLeft" align="right" valign="top"><a id="a07c5f20161659c262fdf085b892f5c30"></a>
+std::list&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10586.html#a07c5f20161659c262fdf085b892f5c30">build</a> ()</td></tr>
+<tr class="memdesc:a07c5f20161659c262fdf085b892f5c30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds the inclusion dependencies. All additions must have been performed already. <br /></td></tr>
+<tr class="separator:a07c5f20161659c262fdf085b892f5c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:aa96fc91e0a878caf38caa30ca4bc54ec"><td class="memItemLeft" align="right" valign="top"><a id="aa96fc91e0a878caf38caa30ca4bc54ec"></a>
-const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10586.html#aa96fc91e0a878caf38caa30ca4bc54ec">description</a> () const</td></tr>
-<tr class="memdesc:aa96fc91e0a878caf38caa30ca4bc54ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Human readable description of the entity. <br /></td></tr>
-<tr class="separator:aa96fc91e0a878caf38caa30ca4bc54ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49f71b213ae60559229fe469b56b9ada"><td class="memItemLeft" align="right" valign="top"><a id="a49f71b213ae60559229fe469b56b9ada"></a>
-std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>description</b> ()</td></tr>
-<tr class="separator:a49f71b213ae60559229fe469b56b9ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a999fdafb3ae5390199767b5ab3322a81"><td class="memItemLeft" align="right" valign="top"><a id="a999fdafb3ae5390199767b5ab3322a81"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>description</b> (const std::string &amp;v)</td></tr>
-<tr class="separator:a999fdafb3ae5390199767b5ab3322a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c352d36356fb086bf8db347c3f6f883"><td class="memItemLeft" align="right" valign="top"><a id="a6c352d36356fb086bf8db347c3f6f883"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>description</b> (const std::string &amp;&amp;v)</td></tr>
-<tr class="separator:a6c352d36356fb086bf8db347c3f6f883"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a6dcaabcbe3d8b04c76242f79070aec"><td class="memItemLeft" align="right" valign="top"><a id="a5a6dcaabcbe3d8b04c76242f79070aec"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10586.html#a5a6dcaabcbe3d8b04c76242f79070aec">add</a> (const std::string &amp;directive)</td></tr>
+<tr class="memdesc:a5a6dcaabcbe3d8b04c76242f79070aec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the supplied inclusion directive. <br /></td></tr>
+<tr class="separator:a5a6dcaabcbe3d8b04c76242f79070aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cd0397cfa23d28e6036593b41dcfa5e"><td class="memItemLeft" align="right" valign="top"><a id="a4cd0397cfa23d28e6036593b41dcfa5e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (const std::list&lt; std::string &gt; &amp;directives)</td></tr>
+<tr class="separator:a4cd0397cfa23d28e6036593b41dcfa5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35de5ef522d931c6d3f90ea020bee881"><td class="memItemLeft" align="right" valign="top"><a id="a35de5ef522d931c6d3f90ea020bee881"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10586.html#a35de5ef522d931c6d3f90ea020bee881">add_as_system</a> (const std::string &amp;directive)</td></tr>
+<tr class="memdesc:a35de5ef522d931c6d3f90ea020bee881"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds include as a system include, i.e. with angle brackets. <br /></td></tr>
+<tr class="separator:a35de5ef522d931c6d3f90ea020bee881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec93879004b8bbe1b72e1afcac5bd128"><td class="memItemLeft" align="right" valign="top"><a id="aec93879004b8bbe1b72e1afcac5bd128"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10586.html#aec93879004b8bbe1b72e1afcac5bd128">add_as_user</a> (const std::string &amp;directive)</td></tr>
+<tr class="memdesc:aec93879004b8bbe1b72e1afcac5bd128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds include as a user include, i.e. with double quotes. <br /></td></tr>
+<tr class="separator:aec93879004b8bbe1b72e1afcac5bd128"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf64f6779528f27a7dec4fecb78fea26"><td class="memItemLeft" align="right" valign="top"><a id="aaf64f6779528f27a7dec4fecb78fea26"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10586.html#aaf64f6779528f27a7dec4fecb78fea26">add</a> (const <a class="el" href="a09274.html">identification::entities::logical_name</a> &amp;n, const std::string &amp;archetype)</td></tr>
+<tr class="memdesc:aaf64f6779528f27a7dec4fecb78fea26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the inclusion directive for the supplied archetype and name. <br /></td></tr>
+<tr class="separator:aaf64f6779528f27a7dec4fecb78fea26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeca5d9ef24639dfbf296cb7bbfedb40"><td class="memItemLeft" align="right" valign="top"><a id="aeeca5d9ef24639dfbf296cb7bbfedb40"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (const boost::optional&lt; <a class="el" href="a09274.html">identification::entities::logical_name</a> &gt; &amp;n, const std::string &amp;archetype)</td></tr>
+<tr class="separator:aeeca5d9ef24639dfbf296cb7bbfedb40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a9c8f79729b850d7b802319372d47fe78"><td class="memItemLeft" align="right" valign="top"><a id="a9c8f79729b850d7b802319372d47fe78"></a>
-const <a class="el" href="a09102.html">dogen::identification::entities::physical_meta_name</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10586.html#a9c8f79729b850d7b802319372d47fe78">meta_name</a> () const</td></tr>
-<tr class="memdesc:a9c8f79729b850d7b802319372d47fe78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Meta-name for this meta-element. <br /></td></tr>
-<tr class="separator:a9c8f79729b850d7b802319372d47fe78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e798ce908137b1071709b6ce6161e05"><td class="memItemLeft" align="right" valign="top"><a id="a6e798ce908137b1071709b6ce6161e05"></a>
-<a class="el" href="a09102.html">dogen::identification::entities::physical_meta_name</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>meta_name</b> ()</td></tr>
-<tr class="separator:a6e798ce908137b1071709b6ce6161e05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49bbfd39a3a44d961092af680b1e3472"><td class="memItemLeft" align="right" valign="top"><a id="a49bbfd39a3a44d961092af680b1e3472"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>meta_name</b> (const <a class="el" href="a09102.html">dogen::identification::entities::physical_meta_name</a> &amp;v)</td></tr>
-<tr class="separator:a49bbfd39a3a44d961092af680b1e3472"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade7720fb76c496704d093d52232374f6"><td class="memItemLeft" align="right" valign="top"><a id="ade7720fb76c496704d093d52232374f6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>meta_name</b> (const <a class="el" href="a09102.html">dogen::identification::entities::physical_meta_name</a> &amp;&amp;v)</td></tr>
-<tr class="separator:ade7720fb76c496704d093d52232374f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a55959f6a1da8e301afac8e1a30d93446"><td class="memItemLeft" align="right" valign="top"><a id="a55959f6a1da8e301afac8e1a30d93446"></a>
-const std::list&lt; <a class="el" href="a09046.html">dogen::identification::entities::label</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10586.html#a55959f6a1da8e301afac8e1a30d93446">labels</a> () const</td></tr>
-<tr class="memdesc:a55959f6a1da8e301afac8e1a30d93446"><td class="mdescLeft">&#160;</td><td class="mdescRight">All labels associated with this element. <br /></td></tr>
-<tr class="separator:a55959f6a1da8e301afac8e1a30d93446"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad90fb6070353a05091a2d993185e2352"><td class="memItemLeft" align="right" valign="top"><a id="ad90fb6070353a05091a2d993185e2352"></a>
-std::list&lt; <a class="el" href="a09046.html">dogen::identification::entities::label</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>labels</b> ()</td></tr>
-<tr class="separator:ad90fb6070353a05091a2d993185e2352"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ad762be01207a5e4e901dd448340875"><td class="memItemLeft" align="right" valign="top"><a id="a8ad762be01207a5e4e901dd448340875"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>labels</b> (const std::list&lt; <a class="el" href="a09046.html">dogen::identification::entities::label</a> &gt; &amp;v)</td></tr>
-<tr class="separator:a8ad762be01207a5e4e901dd448340875"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91e5b21234166d6caa0cd6de2d78adbb"><td class="memItemLeft" align="right" valign="top"><a id="a91e5b21234166d6caa0cd6de2d78adbb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>labels</b> (const std::list&lt; <a class="el" href="a09046.html">dogen::identification::entities::label</a> &gt; &amp;&amp;v)</td></tr>
-<tr class="separator:a91e5b21234166d6caa0cd6de2d78adbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:aa50e0cce94350b27b2572ea52886a378"><td class="memItemLeft" align="right" valign="top"><a id="aa50e0cce94350b27b2572ea52886a378"></a>
-const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10586.html#aa50e0cce94350b27b2572ea52886a378">postfix</a> () const</td></tr>
-<tr class="memdesc:aa50e0cce94350b27b2572ea52886a378"><td class="mdescLeft">&#160;</td><td class="mdescRight">Postfix to apply to artefacts within this element, if any. <br /></td></tr>
-<tr class="separator:aa50e0cce94350b27b2572ea52886a378"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac96f5a5daf301438ac7c1ac7a19681bf"><td class="memItemLeft" align="right" valign="top"><a id="ac96f5a5daf301438ac7c1ac7a19681bf"></a>
-std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>postfix</b> ()</td></tr>
-<tr class="separator:ac96f5a5daf301438ac7c1ac7a19681bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a267643bd1cb9b60a8ae9a986b55030aa"><td class="memItemLeft" align="right" valign="top"><a id="a267643bd1cb9b60a8ae9a986b55030aa"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>postfix</b> (const std::string &amp;v)</td></tr>
-<tr class="separator:a267643bd1cb9b60a8ae9a986b55030aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f38bad20be627691d492fd3a5c58140"><td class="memItemLeft" align="right" valign="top"><a id="a8f38bad20be627691d492fd3a5c58140"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>postfix</b> (const std::string &amp;&amp;v)</td></tr>
-<tr class="separator:a8f38bad20be627691d492fd3a5c58140"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:aea52abc18c687112f220d9a4a15a6565"><td class="memItemLeft" align="right" valign="top"><a id="aea52abc18c687112f220d9a4a15a6565"></a>
-const std::list&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10586.html#aea52abc18c687112f220d9a4a15a6565">depends</a> () const</td></tr>
-<tr class="memdesc:aea52abc18c687112f220d9a4a15a6565"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of meta-elements this meta-element depends upon, if any. <br /></td></tr>
-<tr class="separator:aea52abc18c687112f220d9a4a15a6565"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb7cd6bf6036f0212ee60803d7739818"><td class="memItemLeft" align="right" valign="top"><a id="aeb7cd6bf6036f0212ee60803d7739818"></a>
-std::list&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>depends</b> ()</td></tr>
-<tr class="separator:aeb7cd6bf6036f0212ee60803d7739818"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16b1cae555e3499443944c8e3b5615a3"><td class="memItemLeft" align="right" valign="top"><a id="a16b1cae555e3499443944c8e3b5615a3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>depends</b> (const std::list&lt; std::string &gt; &amp;v)</td></tr>
-<tr class="separator:a16b1cae555e3499443944c8e3b5615a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51b13131dbde035af4962bf65897cf67"><td class="memItemLeft" align="right" valign="top"><a id="a51b13131dbde035af4962bf65897cf67"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>depends</b> (const std::list&lt; std::string &gt; &amp;&amp;v)</td></tr>
-<tr class="separator:a51b13131dbde035af4962bf65897cf67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a4fefaf17c669be61fceb4af7884e3105"><td class="memItemLeft" align="right" valign="top"><a id="a4fefaf17c669be61fceb4af7884e3105"></a>
-const std::list&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10586.html#a4fefaf17c669be61fceb4af7884e3105">generates</a> () const</td></tr>
-<tr class="memdesc:a4fefaf17c669be61fceb4af7884e3105"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of meta-elements this meta-element is used to generate, if any. <br /></td></tr>
-<tr class="separator:a4fefaf17c669be61fceb4af7884e3105"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46424f089be761c9504ab7cff9fdbbd0"><td class="memItemLeft" align="right" valign="top"><a id="a46424f089be761c9504ab7cff9fdbbd0"></a>
-std::list&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>generates</b> ()</td></tr>
-<tr class="separator:a46424f089be761c9504ab7cff9fdbbd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ee237e6f65c6cfa8cde1eb8785335df"><td class="memItemLeft" align="right" valign="top"><a id="a1ee237e6f65c6cfa8cde1eb8785335df"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>generates</b> (const std::list&lt; std::string &gt; &amp;v)</td></tr>
-<tr class="separator:a1ee237e6f65c6cfa8cde1eb8785335df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0d43d46e828bd40a0a1598b9e02bb0a"><td class="memItemLeft" align="right" valign="top"><a id="ae0d43d46e828bd40a0a1598b9e02bb0a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>generates</b> (const std::list&lt; std::string &gt; &amp;&amp;v)</td></tr>
-<tr class="separator:ae0d43d46e828bd40a0a1598b9e02bb0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a10b83e84a9ebc531886f4b40b9dfee7c"><td class="memItemLeft" align="right" valign="top"><a id="a10b83e84a9ebc531886f4b40b9dfee7c"></a>
-const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10586.html#a10b83e84a9ebc531886f4b40b9dfee7c">generated_by</a> () const</td></tr>
-<tr class="memdesc:a10b83e84a9ebc531886f4b40b9dfee7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Meta-element used to generate this meta-element, if any. <br /></td></tr>
-<tr class="separator:a10b83e84a9ebc531886f4b40b9dfee7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4a3c520e7340c65f91467f409442b31"><td class="memItemLeft" align="right" valign="top"><a id="ac4a3c520e7340c65f91467f409442b31"></a>
-std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>generated_by</b> ()</td></tr>
-<tr class="separator:ac4a3c520e7340c65f91467f409442b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada00a87986f0e9fa1b0550890747ad06"><td class="memItemLeft" align="right" valign="top"><a id="ada00a87986f0e9fa1b0550890747ad06"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>generated_by</b> (const std::string &amp;v)</td></tr>
-<tr class="separator:ada00a87986f0e9fa1b0550890747ad06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1e066f623eeaa88e9b35aa137c30625"><td class="memItemLeft" align="right" valign="top"><a id="af1e066f623eeaa88e9b35aa137c30625"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>generated_by</b> (const std::string &amp;&amp;v)</td></tr>
-<tr class="separator:af1e066f623eeaa88e9b35aa137c30625"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a1d74897020f8a6240426ea41d1282330"><td class="memItemLeft" align="right" valign="top"><a id="a1d74897020f8a6240426ea41d1282330"></a>
-<a class="el" href="a07129.html#aca560c08bf06920a8d261d33c8a1474a">dogen::identification::entities::technical_space</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10586.html#a1d74897020f8a6240426ea41d1282330">technical_space</a> () const</td></tr>
-<tr class="memdesc:a1d74897020f8a6240426ea41d1282330"><td class="mdescLeft">&#160;</td><td class="mdescRight">Technical space to which this physical element belongs to. <br /></td></tr>
-<tr class="separator:a1d74897020f8a6240426ea41d1282330"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bd4f3582948cf6fca87d1e8b307846b"><td class="memItemLeft" align="right" valign="top"><a id="a5bd4f3582948cf6fca87d1e8b307846b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>technical_space</b> (const <a class="el" href="a07129.html#aca560c08bf06920a8d261d33c8a1474a">dogen::identification::entities::technical_space</a> v)</td></tr>
-<tr class="separator:a5bd4f3582948cf6fca87d1e8b307846b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a88fd1c6a686adfcde6f753027c8691d1"><td class="memItemLeft" align="right" valign="top"><a id="a88fd1c6a686adfcde6f753027c8691d1"></a>
-const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10586.html#a88fd1c6a686adfcde6f753027c8691d1">archetype_kind_id</a> () const</td></tr>
-<tr class="memdesc:a88fd1c6a686adfcde6f753027c8691d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID for the archetype kind that this archetype is an instance of. <br /></td></tr>
-<tr class="separator:a88fd1c6a686adfcde6f753027c8691d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ebacb91817395800f7ae7596fd9012e"><td class="memItemLeft" align="right" valign="top"><a id="a4ebacb91817395800f7ae7596fd9012e"></a>
-std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>archetype_kind_id</b> ()</td></tr>
-<tr class="separator:a4ebacb91817395800f7ae7596fd9012e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93d21243aa3b2bf60644b9d852ef4b75"><td class="memItemLeft" align="right" valign="top"><a id="a93d21243aa3b2bf60644b9d852ef4b75"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>archetype_kind_id</b> (const std::string &amp;v)</td></tr>
-<tr class="separator:a93d21243aa3b2bf60644b9d852ef4b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea4359bdc81559827c1820c330ef2fd9"><td class="memItemLeft" align="right" valign="top"><a id="aea4359bdc81559827c1820c330ef2fd9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>archetype_kind_id</b> (const std::string &amp;&amp;v)</td></tr>
-<tr class="separator:aea4359bdc81559827c1820c330ef2fd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a09322c97bc21c5d1ecbb6dea71b922a4"><td class="memItemLeft" align="right" valign="top"><a id="a09322c97bc21c5d1ecbb6dea71b922a4"></a>
-const <a class="el" href="a09058.html">dogen::identification::entities::logical_meta_id</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10586.html#a09322c97bc21c5d1ecbb6dea71b922a4">logical_meta_element_id</a> () const</td></tr>
-<tr class="memdesc:a09322c97bc21c5d1ecbb6dea71b922a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">ID of the meta-element in the logical model this archetype binds to. <br /></td></tr>
-<tr class="separator:a09322c97bc21c5d1ecbb6dea71b922a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9432a10ab05eb0e9f3cf7a911e27c98a"><td class="memItemLeft" align="right" valign="top"><a id="a9432a10ab05eb0e9f3cf7a911e27c98a"></a>
-<a class="el" href="a09058.html">dogen::identification::entities::logical_meta_id</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>logical_meta_element_id</b> ()</td></tr>
-<tr class="separator:a9432a10ab05eb0e9f3cf7a911e27c98a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f15ae6c86758faf0b4c226881c25d18"><td class="memItemLeft" align="right" valign="top"><a id="a1f15ae6c86758faf0b4c226881c25d18"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>logical_meta_element_id</b> (const <a class="el" href="a09058.html">dogen::identification::entities::logical_meta_id</a> &amp;v)</td></tr>
-<tr class="separator:a1f15ae6c86758faf0b4c226881c25d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61543a3a6d165e29d11245911cc64fe2"><td class="memItemLeft" align="right" valign="top"><a id="a61543a3a6d165e29d11245911cc64fe2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>logical_meta_element_id</b> (const <a class="el" href="a09058.html">dogen::identification::entities::logical_meta_id</a> &amp;&amp;v)</td></tr>
-<tr class="separator:a61543a3a6d165e29d11245911cc64fe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a5ac90c4e734a75070201ecfe18bc2bc5"><td class="memItemLeft" align="right" valign="top"><a id="a5ac90c4e734a75070201ecfe18bc2bc5"></a>
-const <a class="el" href="a09094.html">dogen::identification::entities::physical_meta_id</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10586.html#a5ac90c4e734a75070201ecfe18bc2bc5">part</a> () const</td></tr>
-<tr class="memdesc:a5ac90c4e734a75070201ecfe18bc2bc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Part in which we are located. <br /></td></tr>
-<tr class="separator:a5ac90c4e734a75070201ecfe18bc2bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8799b3926967ea903f795787c7ee4bb1"><td class="memItemLeft" align="right" valign="top"><a id="a8799b3926967ea903f795787c7ee4bb1"></a>
-<a class="el" href="a09094.html">dogen::identification::entities::physical_meta_id</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>part</b> ()</td></tr>
-<tr class="separator:a8799b3926967ea903f795787c7ee4bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaef671bf9c8e4ba1a14c85f03a0f2aa9"><td class="memItemLeft" align="right" valign="top"><a id="aaef671bf9c8e4ba1a14c85f03a0f2aa9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>part</b> (const <a class="el" href="a09094.html">dogen::identification::entities::physical_meta_id</a> &amp;v)</td></tr>
-<tr class="separator:aaef671bf9c8e4ba1a14c85f03a0f2aa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1c4e12ac7ebfb7b16e52006a0332d7e"><td class="memItemLeft" align="right" valign="top"><a id="af1c4e12ac7ebfb7b16e52006a0332d7e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>part</b> (const <a class="el" href="a09094.html">dogen::identification::entities::physical_meta_id</a> &amp;&amp;v)</td></tr>
-<tr class="separator:af1c4e12ac7ebfb7b16e52006a0332d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a1c28449933444d5c0aefe5f681568c16"><td class="memItemLeft" align="right" valign="top"><a id="a1c28449933444d5c0aefe5f681568c16"></a>
-const <a class="el" href="a10694.html">dogen::physical::entities::relations</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10586.html#a1c28449933444d5c0aefe5f681568c16">relations</a> () const</td></tr>
-<tr class="memdesc:a1c28449933444d5c0aefe5f681568c16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Properties of this archetype with regards to relations. <br /></td></tr>
-<tr class="separator:a1c28449933444d5c0aefe5f681568c16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dbb82225a79da2b5fadf377f83fe0cf"><td class="memItemLeft" align="right" valign="top"><a id="a3dbb82225a79da2b5fadf377f83fe0cf"></a>
-<a class="el" href="a10694.html">dogen::physical::entities::relations</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>relations</b> ()</td></tr>
-<tr class="separator:a3dbb82225a79da2b5fadf377f83fe0cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ee59acc608487511731e8602d748da0"><td class="memItemLeft" align="right" valign="top"><a id="a8ee59acc608487511731e8602d748da0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>relations</b> (const <a class="el" href="a10694.html">dogen::physical::entities::relations</a> &amp;v)</td></tr>
-<tr class="separator:a8ee59acc608487511731e8602d748da0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad22d091d6ecc90d412fb8e219df712b7"><td class="memItemLeft" align="right" valign="top"><a id="ad22d091d6ecc90d412fb8e219df712b7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>relations</b> (const <a class="el" href="a10694.html">dogen::physical::entities::relations</a> &amp;&amp;v)</td></tr>
-<tr class="separator:ad22d091d6ecc90d412fb8e219df712b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89f1d578c5251626d25e0df81d1f6844"><td class="memItemLeft" align="right" valign="top"><a id="a89f1d578c5251626d25e0df81d1f6844"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10586.html#a89f1d578c5251626d25e0df81d1f6844">add</a> (const <a class="el" href="a09274.html">identification::entities::logical_name</a> &amp;n, const <a class="el" href="a09298.html">identification::entities::physical_meta_id</a> &amp;archetype)</td></tr>
+<tr class="memdesc:a89f1d578c5251626d25e0df81d1f6844"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the inclusion directive for the supplied archetype and name. <br /></td></tr>
+<tr class="separator:a89f1d578c5251626d25e0df81d1f6844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93c058d37828085fe8b30ad0feef261e"><td class="memItemLeft" align="right" valign="top"><a id="a93c058d37828085fe8b30ad0feef261e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (const boost::optional&lt; <a class="el" href="a09274.html">identification::entities::logical_name</a> &gt; &amp;n, const <a class="el" href="a09298.html">identification::entities::physical_meta_id</a> &amp;archetype)</td></tr>
+<tr class="separator:a93c058d37828085fe8b30ad0feef261e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents a meta-artefact. </p>
+<div class="textblock"><p>Helps in building the inclusion dependencies for a given formatteridentification::entities::logical_meta_physical_id. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

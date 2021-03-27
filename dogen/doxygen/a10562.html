@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: document_to_string_transform Class Reference</title>
+<title>Dogen: model_location Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07324.html">org</a></li><li class="navelem"><b>transforms</b></li><li class="navelem"><a class="el" href="a10562.html">document_to_string_transform</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07489.html">orchestration</a></li><li class="navelem"><a class="el" href="a07492.html">features</a></li><li class="navelem"><a class="el" href="a10562.html">model_location</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -71,31 +71,41 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a10559.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">document_to_string_transform Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">model_location Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Converts an org model document into a string.  
+<p>Feature group for model location related features.  
  <a href="a10562.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a03683_source.html">document_to_string_transform.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a03482_source.html">model_location.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for document_to_string_transform:</div>
+Collaboration diagram for model_location:</div>
 <div class="dyncontent">
-<div class="center"><img src="a10560.png" border="0" usemap="#adocument__to__string__transform_coll__map" alt="Collaboration graph"/></div>
-<map name="adocument__to__string__transform_coll__map" id="adocument__to__string__transform_coll__map">
-<area shape="rect" title="Converts an org model document into a string." alt="" coords="5,5,156,97"/>
+<div class="center"><img src="a10560.png" border="0" usemap="#amodel__location_coll__map" alt="Collaboration graph"/></div>
+<map name="amodel__location_coll__map" id="amodel__location_coll__map">
+<area shape="rect" title="Feature group for model location related features." alt="" coords="5,5,224,127"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a51a80a666947bb9f73bc1b7f41ce63eb"><td class="memItemLeft" align="right" valign="top"><a id="a51a80a666947bb9f73bc1b7f41ce63eb"></a>
-static std::string&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (boost::shared_ptr&lt; <a class="el" href="a12954.html">tracing::tracer</a> &gt; tracer, const entities::document &amp;doc)</td></tr>
-<tr class="separator:a51a80a666947bb9f73bc1b7f41ce63eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ef5e4e27deff54ae537b1686e262dd5"><td class="memItemLeft" align="right" valign="top"><a id="a0ef5e4e27deff54ae537b1686e262dd5"></a>
+static feature_group&#160;</td><td class="memItemRight" valign="bottom"><b>make_feature_group</b> (const <a class="el" href="a13446.html">variability::entities::feature_model</a> &amp;fm)</td></tr>
+<tr class="separator:a0ef5e4e27deff54ae537b1686e262dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd502c0afd0acfb67608dab182fe40c5"><td class="memItemLeft" align="right" valign="top"><a id="abd502c0afd0acfb67608dab182fe40c5"></a>
+static static_configuration&#160;</td><td class="memItemRight" valign="bottom"><b>make_static_configuration</b> (const feature_group &amp;fg, const variability::entities::configuration &amp;cfg)</td></tr>
+<tr class="separator:abd502c0afd0acfb67608dab182fe40c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eace8e86c71b0ce6da0a5cb452c1414"><td class="memTemplParams" colspan="2"><a id="a7eace8e86c71b0ce6da0a5cb452c1414"></a>
+template&lt;typename Configurable &gt; </td></tr>
+<tr class="memitem:a7eace8e86c71b0ce6da0a5cb452c1414"><td class="memTemplItemLeft" align="right" valign="top">static static_configuration&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_static_configuration</b> (const feature_group &amp;fg, const Configurable &amp;c)</td></tr>
+<tr class="separator:a7eace8e86c71b0ce6da0a5cb452c1414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9b98c113e5c61a6f7a817603ef40562"><td class="memItemLeft" align="right" valign="top"><a id="ac9b98c113e5c61a6f7a817603ef40562"></a>
+static std::list&lt; <a class="el" href="a13442.html">dogen::variability::entities::feature</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>make_features</b> ()</td></tr>
+<tr class="separator:ac9b98c113e5c61a6f7a817603ef40562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Converts an org model document into a string. </p>
+<div class="textblock"><p>Feature group for model location related features. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

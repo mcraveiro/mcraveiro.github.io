@@ -1,3 +1,3 @@
-<map id="modelines_transform" name="modelines_transform">
-<area shape="rect" id="node1" title="Reads all meta&#45;data related to modelines." alt="" coords="5,5,167,83"/>
+<map id="building_error" name="building_error">
+<area shape="rect" id="node1" title="An error has occurred in a factory." alt="" coords="5,5,153,127"/>
 </map>

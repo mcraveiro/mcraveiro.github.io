@@ -1,6 +1,0 @@
-<map id="exception" name="exception">
-<area shape="rect" id="node1" title="base class for all exceptions within dogen." alt="" coords="245,5,368,127"/>
-<area shape="rect" id="node2" href="$a12970.html" title="The exception thrown when an enum has an unexpected value." alt="" coords="5,175,195,281"/>
-<area shape="rect" id="node3" href="$a13114.html" title="Error occurred during container generation." alt="" coords="219,175,394,281"/>
-<area shape="rect" id="node4" href="$a13130.html" title="Attempting to generate more terms that those on the sequence." alt="" coords="419,189,603,267"/>
-</map>

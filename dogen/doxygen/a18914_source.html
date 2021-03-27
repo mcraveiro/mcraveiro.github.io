@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.logical/include/dogen.logical/types/entities/structural/element_repository_fwd.hpp Source File</title>
+<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.identification/include/dogen.identification/types/helpers/node.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,12 +63,12 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_dcdb1ebffe0d4f9f28ec03b64a5aaaa2.html">dogen.logical</a></li><li class="navelem"><a class="el" href="dir_f21da09acadf64620e837bfe8ac71645.html">include</a></li><li class="navelem"><a class="el" href="dir_722eaea4b5f65416e2f35f6e2317bf5d.html">dogen.logical</a></li><li class="navelem"><a class="el" href="dir_0b9aa5753d72f7bd09d44f32cf47d3d9.html">types</a></li><li class="navelem"><a class="el" href="dir_34754b2d6e7d75549fcd05a9dff06308.html">entities</a></li><li class="navelem"><a class="el" href="dir_13b77320ad810f28a76ea8bdb7ef9ca2.html">structural</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_44088bd95d989a7b0f205b5e5e3d23ab.html">dogen.identification</a></li><li class="navelem"><a class="el" href="dir_d8dc655d31737fcf721d9e1bd0bd8297.html">include</a></li><li class="navelem"><a class="el" href="dir_3c7ff776643feb73c558f293fc1b23f5.html">dogen.identification</a></li><li class="navelem"><a class="el" href="dir_6b3d7269864817b40da6476163dd6e97.html">types</a></li><li class="navelem"><a class="el" href="dir_990f9d60774f27e3c850b9f6d0303fbd.html">helpers</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">element_repository_fwd.hpp</div>  </div>
+<div class="title">node.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* -*- mode: c++; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-</span></div>
@@ -91,21 +91,84 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * MA 02110-1301, USA.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_LOGICAL_TYPES_ENTITIES_STRUCTURAL_ELEMENT_REPOSITORY_FWD_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_LOGICAL_TYPES_ENTITIES_STRUCTURAL_ELEMENT_REPOSITORY_FWD_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_IDENTIFICATION_TYPES_HELPERS_NODE_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_IDENTIFICATION_TYPES_HELPERS_NODE_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; (_MSC_VER &gt;= 1200)</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07167.html">dogen::logical::entities::structural</a> {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">class </span>element_repository;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;boost/weak_ptr.hpp&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;boost/shared_ptr.hpp&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;dogen.identification/types/entities/logical_name.hpp&quot;</span></div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aa07167_html"><div class="ttname"><a href="a07167.html">dogen::logical::entities::structural</a></div><div class="ttdoc">Houses all of the meta-modeling elements related to structural modeling.</div><div class="ttdef"><b>Definition:</b> assistant_io.hpp:31</div></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07334.html">dogen::identification::helpers</a> {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="a09406.html">   41</a></span>&#160;<span class="keyword">class </span><a class="code" href="a09406.html">node</a> final {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="a09406.html">node</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="a09406.html">node</a>(<span class="keyword">const</span> <a class="code" href="a09406.html">node</a>&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="a09406.html">node</a>(<a class="code" href="a09406.html">node</a>&amp;&amp;) = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    ~<a class="code" href="a09406.html">node</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="a09406.html">node</a>(</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">const</span> boost::weak_ptr&lt;dogen::identification::helpers::node&gt;&amp; <a class="code" href="a09406.html#a9c72de17321ce4b39cf49891da294950">parent</a>,</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">const</span> <a class="code" href="a09274.html">dogen::identification::entities::logical_name</a>&amp; <a class="code" href="a09406.html#a8b0bb8baafb404546b5d10c5343b7d3a">data</a>,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keyword">const</span> std::list&lt;boost::shared_ptr&lt;dogen::identification::helpers::node&gt; &gt;&amp; <a class="code" href="a09406.html#a18925873e215a645cd61c8f049bae11b">children</a>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">const</span> boost::weak_ptr&lt;dogen::identification::helpers::node&gt;&amp; <a class="code" href="a09406.html#a9c72de17321ce4b39cf49891da294950">parent</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    boost::weak_ptr&lt;dogen::identification::helpers::node&gt;&amp; <a class="code" href="a09406.html#a9c72de17321ce4b39cf49891da294950">parent</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a09406.html#a9c72de17321ce4b39cf49891da294950">parent</a>(<span class="keyword">const</span> boost::weak_ptr&lt;dogen::identification::helpers::node&gt;&amp; v);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a09406.html#a9c72de17321ce4b39cf49891da294950">parent</a>(<span class="keyword">const</span> boost::weak_ptr&lt;dogen::identification::helpers::node&gt;&amp;&amp; v);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">const</span> <a class="code" href="a09274.html">dogen::identification::entities::logical_name</a>&amp; <a class="code" href="a09406.html#a8b0bb8baafb404546b5d10c5343b7d3a">data</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="a09274.html">dogen::identification::entities::logical_name</a>&amp; <a class="code" href="a09406.html#a8b0bb8baafb404546b5d10c5343b7d3a">data</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a09406.html#a8b0bb8baafb404546b5d10c5343b7d3a">data</a>(<span class="keyword">const</span> <a class="code" href="a09274.html">dogen::identification::entities::logical_name</a>&amp; v);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a09406.html#a8b0bb8baafb404546b5d10c5343b7d3a">data</a>(<span class="keyword">const</span> <a class="code" href="a09274.html">dogen::identification::entities::logical_name</a>&amp;&amp; v);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">const</span> std::list&lt;boost::shared_ptr&lt;dogen::identification::helpers::node&gt; &gt;&amp; <a class="code" href="a09406.html#a18925873e215a645cd61c8f049bae11b">children</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    std::list&lt;boost::shared_ptr&lt;dogen::identification::helpers::node&gt; &gt;&amp; <a class="code" href="a09406.html#a18925873e215a645cd61c8f049bae11b">children</a>();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a09406.html#a18925873e215a645cd61c8f049bae11b">children</a>(<span class="keyword">const</span> std::list&lt;boost::shared_ptr&lt;dogen::identification::helpers::node&gt; &gt;&amp; v);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a09406.html#a18925873e215a645cd61c8f049bae11b">children</a>(<span class="keyword">const</span> std::list&lt;boost::shared_ptr&lt;dogen::identification::helpers::node&gt; &gt;&amp;&amp; v);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">    bool operator==(const node&amp; rhs) const;</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">    bool operator!=(const node&amp; rhs) const {</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">        return !this-&gt;operator==(rhs);</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">    }</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">public:</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">    void swap(node&amp; other) noexcept;</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">    node&amp; operator=(node other);</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    boost::weak_ptr&lt;dogen::identification::helpers::node&gt; parent_;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="a09274.html">dogen::identification::entities::logical_name</a> data_;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    std::list&lt;boost::shared_ptr&lt;dogen::identification::helpers::node&gt; &gt; children_;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;};</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="comment">namespace std {</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">template&lt;&gt;</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">inline void swap(</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">    dogen::identification::helpers::node&amp; lhs,</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">    dogen::identification::helpers::node&amp; rhs) {</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">    lhs.swap(rhs);</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">}</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">}</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aa07334_html"><div class="ttname"><a href="a07334.html">dogen::identification::helpers</a></div><div class="ttdoc">Assorted helpers used to construct domain entities.</div><div class="ttdef"><b>Definition:</b> separators_io.hpp:31</div></div>
+<div class="ttc" id="aa09274_html"><div class="ttname"><a href="a09274.html">dogen::identification::entities::logical_name</a></div><div class="ttdoc">Name of an element in logical space.</div><div class="ttdef"><b>Definition:</b> logical_name.hpp:50</div></div>
+<div class="ttc" id="aa09406_html"><div class="ttname"><a href="a09406.html">dogen::identification::helpers::node</a></div><div class="ttdoc">Node in a tree of logical names.</div><div class="ttdef"><b>Definition:</b> node.hpp:41</div></div>
+<div class="ttc" id="aa09406_html_a18925873e215a645cd61c8f049bae11b"><div class="ttname"><a href="a09406.html#a18925873e215a645cd61c8f049bae11b">dogen::identification::helpers::node::children</a></div><div class="ttdeci">const std::list&lt; boost::shared_ptr&lt; dogen::identification::helpers::node &gt; &gt; &amp; children() const</div><div class="ttdoc">Child nodes in a tree.</div><div class="ttdef"><b>Definition:</b> node.cpp:103</div></div>
+<div class="ttc" id="aa09406_html_a8b0bb8baafb404546b5d10c5343b7d3a"><div class="ttname"><a href="a09406.html#a8b0bb8baafb404546b5d10c5343b7d3a">dogen::identification::helpers::node::data</a></div><div class="ttdeci">const dogen::identification::entities::logical_name &amp; data() const</div><div class="ttdoc">Current node.</div><div class="ttdef"><b>Definition:</b> node.cpp:87</div></div>
+<div class="ttc" id="aa09406_html_a9c72de17321ce4b39cf49891da294950"><div class="ttname"><a href="a09406.html#a9c72de17321ce4b39cf49891da294950">dogen::identification::helpers::node::parent</a></div><div class="ttdeci">const boost::weak_ptr&lt; dogen::identification::helpers::node &gt; &amp; parent() const</div><div class="ttdoc">Parent in a tree.</div><div class="ttdef"><b>Definition:</b> node.cpp:71</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

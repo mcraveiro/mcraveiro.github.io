@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: references_resolver Class Reference</title>
+<title>Dogen: spec_dumper Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07078.html">codec</a></li><li class="navelem"><b>helpers</b></li><li class="navelem"><a class="el" href="a08742.html">references_resolver</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a08742.html">spec_dumper</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -71,37 +71,42 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a08739.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">references_resolver Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">spec_dumper Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Resolves a set of references to concrete paths to models.  
+<p>Dumps internal information from Dogen.  
  <a href="a08742.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00464_source.html">references_resolver.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a21200_source.html">spec_dumper.hpp</a>&gt;</code></p>
+
+<p>Inherited by spec_dumper.</p>
 <div class="dynheader">
-Collaboration diagram for references_resolver:</div>
+Collaboration diagram for spec_dumper:</div>
 <div class="dyncontent">
-<div class="center"><img src="a08740.png" border="0" usemap="#areferences__resolver_coll__map" alt="Collaboration graph"/></div>
-<map name="areferences__resolver_coll__map" id="areferences__resolver_coll__map">
-<area shape="rect" title="Resolves a set of references to concrete paths to models." alt="" coords="5,5,181,112"/>
+<div class="center"><img src="a08740.png" border="0" usemap="#aspec__dumper_coll__map" alt="Collaboration graph"/></div>
+<map name="aspec__dumper_coll__map" id="aspec__dumper_coll__map">
+<area shape="rect" title="Dumps internal information from Dogen." alt="" coords="5,5,151,156"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a87664ca0b4a13b1f60178348bab4d5b1"><td class="memItemLeft" align="right" valign="top"><a id="a87664ca0b4a13b1f60178348bab4d5b1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>references_resolver</b> (const std::list&lt; std::string &gt; &amp;extensions, const std::list&lt; boost::filesystem::path &gt; &amp;dirs)</td></tr>
-<tr class="separator:a87664ca0b4a13b1f60178348bab4d5b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7d608ced070bea0aff80236200ef4e0"><td class="memItemLeft" align="right" valign="top"><a id="ac7d608ced070bea0aff80236200ef4e0"></a>
-boost::filesystem::path&#160;</td><td class="memItemRight" valign="bottom"><b>resolve</b> (const std::string &amp;ref) const</td></tr>
-<tr class="separator:ac7d608ced070bea0aff80236200ef4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a257ebd130c6f9acb7e83fc6e75811bfb"><td class="memItemLeft" align="right" valign="top"><a id="a257ebd130c6f9acb7e83fc6e75811bfb"></a>
-std::list&lt; boost::filesystem::path &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>resolve</b> (const std::list&lt; std::string &gt; &amp;refs) const</td></tr>
-<tr class="separator:a257ebd130c6f9acb7e83fc6e75811bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4467d354b6f0c3072eacce802388def"><td class="memItemLeft" align="right" valign="top"><a id="ad4467d354b6f0c3072eacce802388def"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>spec_dumper</b> (const <a class="el" href="a08742.html">spec_dumper</a> &amp;)=delete</td></tr>
+<tr class="separator:ad4467d354b6f0c3072eacce802388def"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a088cef33b7dc8fe224aab7b5f7041db5"><td class="memItemLeft" align="right" valign="top"><a id="a088cef33b7dc8fe224aab7b5f7041db5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>spec_dumper</b> (<a class="el" href="a08742.html">spec_dumper</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:a088cef33b7dc8fe224aab7b5f7041db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d1dad0fd31395aaa4870b8af1177b2a"><td class="memItemLeft" align="right" valign="top"><a id="a4d1dad0fd31395aaa4870b8af1177b2a"></a>
+<a class="el" href="a08742.html">spec_dumper</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="a08742.html">spec_dumper</a> &amp;)=delete</td></tr>
+<tr class="separator:a4d1dad0fd31395aaa4870b8af1177b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a138011a29385b7166b0375fa46ca49bc"><td class="memItemLeft" align="right" valign="top"><a id="a138011a29385b7166b0375fa46ca49bc"></a>
+virtual <a class="el" href="a08750.html">specs</a>&#160;</td><td class="memItemRight" valign="bottom"><b>dump</b> (const configuration &amp;cfg) const =0</td></tr>
+<tr class="separator:a138011a29385b7166b0375fa46ca49bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Resolves a set of references to concrete paths to models. </p>
+<div class="textblock"><p>Dumps internal information from Dogen. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -63,30 +63,18 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07285.html">orchestration</a></li><li class="navelem"><a class="el" href="a07289.html">helpers</a></li><li class="navelem"><a class="el" href="a10382.html">dependencies_builder</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07363.html">logical</a></li><li class="navelem"><a class="el" href="a07376.html">transforms</a></li><li class="navelem"><a class="el" href="a10382.html">modules_transform</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">dependencies_builder Member List</div>  </div>
+<div class="title">modules_transform Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a10382.html">dependencies_builder</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="a10382.html">modules_transform</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a10382.html#a5a6dcaabcbe3d8b04c76242f79070aec">add</a>(const std::string &amp;directive)</td><td class="entry"><a class="el" href="a10382.html">dependencies_builder</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>add</b>(const std::list&lt; std::string &gt; &amp;directives) (defined in <a class="el" href="a10382.html">dependencies_builder</a>)</td><td class="entry"><a class="el" href="a10382.html">dependencies_builder</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a10382.html#aaf64f6779528f27a7dec4fecb78fea26">add</a>(const identification::entities::logical_name &amp;n, const std::string &amp;archetype)</td><td class="entry"><a class="el" href="a10382.html">dependencies_builder</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>add</b>(const boost::optional&lt; identification::entities::logical_name &gt; &amp;n, const std::string &amp;archetype) (defined in <a class="el" href="a10382.html">dependencies_builder</a>)</td><td class="entry"><a class="el" href="a10382.html">dependencies_builder</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a10382.html#a279563a8e085463f18fdc89b6e154668">add</a>(const std::list&lt; identification::entities::logical_name &gt; &amp;names, const std::string &amp;archetype)</td><td class="entry"><a class="el" href="a10382.html">dependencies_builder</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a10382.html#a89f1d578c5251626d25e0df81d1f6844">add</a>(const identification::entities::logical_name &amp;n, const identification::entities::physical_meta_id &amp;archetype)</td><td class="entry"><a class="el" href="a10382.html">dependencies_builder</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>add</b>(const boost::optional&lt; identification::entities::logical_name &gt; &amp;n, const identification::entities::physical_meta_id &amp;archetype) (defined in <a class="el" href="a10382.html">dependencies_builder</a>)</td><td class="entry"><a class="el" href="a10382.html">dependencies_builder</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a10382.html#ae117eafc7ae748b3ac66db5d7dde7bc9">add</a>(const std::list&lt; identification::entities::logical_name &gt; &amp;names, const identification::entities::physical_meta_id &amp;archetype)</td><td class="entry"><a class="el" href="a10382.html">dependencies_builder</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a10382.html#a35de5ef522d931c6d3f90ea020bee881">add_as_system</a>(const std::string &amp;directive)</td><td class="entry"><a class="el" href="a10382.html">dependencies_builder</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="a10382.html#aec93879004b8bbe1b72e1afcac5bd128">add_as_user</a>(const std::string &amp;directive)</td><td class="entry"><a class="el" href="a10382.html">dependencies_builder</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a10382.html#a07c5f20161659c262fdf085b892f5c30">build</a>()</td><td class="entry"><a class="el" href="a10382.html">dependencies_builder</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>dependencies_builder</b>(const std::unordered_map&lt; identification::entities::logical_meta_physical_id, physical::entities::inclusion_directives &gt; &amp;ids, const std::unordered_set&lt; identification::entities::logical_meta_physical_id &gt; &amp;enabled_archetype_for_element) (defined in <a class="el" href="a10382.html">dependencies_builder</a>)</td><td class="entry"><a class="el" href="a10382.html">dependencies_builder</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a10382.html#ad0f6e905935b972e5a7459f96e065de7">is_enabled</a>(const identification::entities::logical_name &amp;n, const std::string &amp;archetype) const</td><td class="entry"><a class="el" href="a10382.html">dependencies_builder</a></td><td class="entry"></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>apply</b>(const context &amp;ctx, entities::model &amp;m) (defined in <a class="el" href="a10382.html">modules_transform</a>)</td><td class="entry"><a class="el" href="a10382.html">modules_transform</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

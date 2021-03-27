@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: layer Class Reference</title>
+<title>Dogen: object_to_element_adapter Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,101 +63,40 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07122.html">dia</a></li><li class="navelem"><a class="el" href="a07123.html">entities</a></li><li class="navelem"><a class="el" href="a08930.html">layer</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07282.html">codec</a></li><li class="navelem"><b>helpers</b></li><li class="navelem"><a class="el" href="a08930.html">object_to_element_adapter</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a08927.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">layer Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">object_to_element_adapter Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Represents a layer in a Dia diagram.  
+<p>Adapts objects into elements.  
  <a href="a08930.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00824_source.html">layer.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00473_source.html">object_to_element_adapter.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for layer:</div>
+Collaboration diagram for object_to_element_adapter:</div>
 <div class="dyncontent">
-<div class="center"><img src="a08928.png" border="0" usemap="#alayer_coll__map" alt="Collaboration graph"/></div>
-<map name="alayer_coll__map" id="alayer_coll__map">
-<area shape="rect" title="Represents a layer in a Dia diagram." alt="" coords="5,5,129,552"/>
+<div class="center"><img src="a08928.png" border="0" usemap="#aobject__to__element__adapter_coll__map" alt="Collaboration graph"/></div>
+<map name="aobject__to__element__adapter_coll__map" id="aobject__to__element__adapter_coll__map">
+<area shape="rect" title="Adapts objects into elements." alt="" coords="5,5,205,83"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:af48937e1fb540eb250c02ec42adf8416"><td class="memItemLeft" align="right" valign="top"><a id="af48937e1fb540eb250c02ec42adf8416"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>layer</b> (const <a class="el" href="a08930.html">layer</a> &amp;)=default</td></tr>
-<tr class="separator:af48937e1fb540eb250c02ec42adf8416"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25a1eb0eaa774c0561d354e79564ac65"><td class="memItemLeft" align="right" valign="top"><a id="a25a1eb0eaa774c0561d354e79564ac65"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>layer</b> (<a class="el" href="a08930.html">layer</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a25a1eb0eaa774c0561d354e79564ac65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5806cd62753f5a8f4fd366c6d9220660"><td class="memItemLeft" align="right" valign="top"><a id="a5806cd62753f5a8f4fd366c6d9220660"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>layer</b> (const std::string &amp;<a class="el" href="a08930.html#a24dcbf29c0d6cd766009a182a6484e3b">name</a>, const bool <a class="el" href="a08930.html#a248194586da7714dde811e0baf33b441">visible</a>, const bool <a class="el" href="a08930.html#ad9735e23cb0888fb98e1c5893aecff7e">active</a>, const std::vector&lt; <a class="el" href="a08934.html">dogen::dia::entities::object</a> &gt; &amp;<a class="el" href="a08930.html#af0fb8d9275d0cbfdc4ece46a23fbb82c">objects</a>)</td></tr>
-<tr class="separator:a5806cd62753f5a8f4fd366c6d9220660"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6c796b13fdb17f1ca05a1db18f2ed68"><td class="memItemLeft" align="right" valign="top"><a id="ab6c796b13fdb17f1ca05a1db18f2ed68"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="a08930.html">layer</a> &amp;rhs) const</td></tr>
-<tr class="separator:ab6c796b13fdb17f1ca05a1db18f2ed68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92cae167184447b31424c26eca630c46"><td class="memItemLeft" align="right" valign="top"><a id="a92cae167184447b31424c26eca630c46"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="a08930.html">layer</a> &amp;rhs) const</td></tr>
-<tr class="separator:a92cae167184447b31424c26eca630c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e82be54c5c62b65a8d4aeffce1b87a7"><td class="memItemLeft" align="right" valign="top"><a id="a0e82be54c5c62b65a8d4aeffce1b87a7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="a08930.html">layer</a> &amp;other) noexcept</td></tr>
-<tr class="separator:a0e82be54c5c62b65a8d4aeffce1b87a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a635f286d1698d7938f204a1e7dad11"><td class="memItemLeft" align="right" valign="top"><a id="a1a635f286d1698d7938f204a1e7dad11"></a>
-<a class="el" href="a08930.html">layer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="a08930.html">layer</a> other)</td></tr>
-<tr class="separator:a1a635f286d1698d7938f204a1e7dad11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a24dcbf29c0d6cd766009a182a6484e3b"><td class="memItemLeft" align="right" valign="top"><a id="a24dcbf29c0d6cd766009a182a6484e3b"></a>
-const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08930.html#a24dcbf29c0d6cd766009a182a6484e3b">name</a> () const</td></tr>
-<tr class="memdesc:a24dcbf29c0d6cd766009a182a6484e3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the layer. <br /></td></tr>
-<tr class="separator:a24dcbf29c0d6cd766009a182a6484e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e655a505173f492cd64fc45cb2944c5"><td class="memItemLeft" align="right" valign="top"><a id="a7e655a505173f492cd64fc45cb2944c5"></a>
-std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> ()</td></tr>
-<tr class="separator:a7e655a505173f492cd64fc45cb2944c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae4514260ad7d701f50fad6a60ea2d97"><td class="memItemLeft" align="right" valign="top"><a id="aae4514260ad7d701f50fad6a60ea2d97"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> (const std::string &amp;v)</td></tr>
-<tr class="separator:aae4514260ad7d701f50fad6a60ea2d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a864e4bd4bf33301730eafb43a9ee12"><td class="memItemLeft" align="right" valign="top"><a id="a6a864e4bd4bf33301730eafb43a9ee12"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> (const std::string &amp;&amp;v)</td></tr>
-<tr class="separator:a6a864e4bd4bf33301730eafb43a9ee12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a248194586da7714dde811e0baf33b441"><td class="memItemLeft" align="right" valign="top"><a id="a248194586da7714dde811e0baf33b441"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08930.html#a248194586da7714dde811e0baf33b441">visible</a> () const</td></tr>
-<tr class="memdesc:a248194586da7714dde811e0baf33b441"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the layer is visible on screen or not. <br /></td></tr>
-<tr class="separator:a248194586da7714dde811e0baf33b441"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab28efb3507eff012eecce89df1d561dc"><td class="memItemLeft" align="right" valign="top"><a id="ab28efb3507eff012eecce89df1d561dc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>visible</b> (const bool v)</td></tr>
-<tr class="separator:ab28efb3507eff012eecce89df1d561dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:ad9735e23cb0888fb98e1c5893aecff7e"><td class="memItemLeft" align="right" valign="top"><a id="ad9735e23cb0888fb98e1c5893aecff7e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08930.html#ad9735e23cb0888fb98e1c5893aecff7e">active</a> () const</td></tr>
-<tr class="memdesc:ad9735e23cb0888fb98e1c5893aecff7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether the layer is active or not. <br /></td></tr>
-<tr class="separator:ad9735e23cb0888fb98e1c5893aecff7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdd95bde37b89105daa440962c06f6c6"><td class="memItemLeft" align="right" valign="top"><a id="abdd95bde37b89105daa440962c06f6c6"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>active</b> (const bool v)</td></tr>
-<tr class="separator:abdd95bde37b89105daa440962c06f6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:af0fb8d9275d0cbfdc4ece46a23fbb82c"><td class="memItemLeft" align="right" valign="top"><a id="af0fb8d9275d0cbfdc4ece46a23fbb82c"></a>
-const std::vector&lt; <a class="el" href="a08934.html">dogen::dia::entities::object</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08930.html#af0fb8d9275d0cbfdc4ece46a23fbb82c">objects</a> () const</td></tr>
-<tr class="memdesc:af0fb8d9275d0cbfdc4ece46a23fbb82c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dia objects contained in layer. <br /></td></tr>
-<tr class="separator:af0fb8d9275d0cbfdc4ece46a23fbb82c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c63bca0c5557be565b77a68078e1af3"><td class="memItemLeft" align="right" valign="top"><a id="a7c63bca0c5557be565b77a68078e1af3"></a>
-std::vector&lt; <a class="el" href="a08934.html">dogen::dia::entities::object</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>objects</b> ()</td></tr>
-<tr class="separator:a7c63bca0c5557be565b77a68078e1af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a160169224a67578839b3b25591b63f65"><td class="memItemLeft" align="right" valign="top"><a id="a160169224a67578839b3b25591b63f65"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>objects</b> (const std::vector&lt; <a class="el" href="a08934.html">dogen::dia::entities::object</a> &gt; &amp;v)</td></tr>
-<tr class="separator:a160169224a67578839b3b25591b63f65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dd1920302d84a45f821835a51e48eff"><td class="memItemLeft" align="right" valign="top"><a id="a5dd1920302d84a45f821835a51e48eff"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>objects</b> (const std::vector&lt; <a class="el" href="a08934.html">dogen::dia::entities::object</a> &gt; &amp;&amp;v)</td></tr>
-<tr class="separator:a5dd1920302d84a45f821835a51e48eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a2736db90231198fa97bb6a24dc7487fc"><td class="memItemLeft" align="right" valign="top"><a id="a2736db90231198fa97bb6a24dc7487fc"></a>
+static <a class="el" href="a08838.html">codec::entities::element</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08930.html#a2736db90231198fa97bb6a24dc7487fc">adapt</a> (const <a class="el" href="a08850.html">entities::object</a> &amp;po, const std::string &amp;contained_by, const std::list&lt; std::string &gt; &amp;parents)</td></tr>
+<tr class="memdesc:a2736db90231198fa97bb6a24dc7487fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adapts an object into an element. <br /></td></tr>
+<tr class="separator:a2736db90231198fa97bb6a24dc7487fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents a layer in a Dia diagram. </p>
+<div class="textblock"><p>Adapts objects into elements. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

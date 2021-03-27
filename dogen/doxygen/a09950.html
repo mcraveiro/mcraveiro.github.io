@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: decoration_formatter Class Reference</title>
+<title>Dogen: mapping Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,45 +63,49 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07159.html">logical</a></li><li class="navelem"><a class="el" href="a07175.html">formatters</a></li><li class="navelem"><a class="el" href="a09950.html">decoration_formatter</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07363.html">logical</a></li><li class="navelem"><a class="el" href="a07378.html">features</a></li><li class="navelem"><a class="el" href="a09950.html">mapping</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a09947.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">decoration_formatter Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">mapping Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Formats decorations into a stream.  
+<p>Meta-data related to element mapping.  
  <a href="a09950.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a02360_source.html">decoration_formatter.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a19139_source.html">mapping.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for decoration_formatter:</div>
+Collaboration diagram for mapping:</div>
 <div class="dyncontent">
-<div class="center"><img src="a09948.png" border="0" usemap="#adecoration__formatter_coll__map" alt="Collaboration graph"/></div>
-<map name="adecoration__formatter_coll__map" id="adecoration__formatter_coll__map">
-<area shape="rect" title="Formats decorations into a stream." alt="" coords="5,5,172,112"/>
+<div class="center"><img src="a09948.png" border="0" usemap="#amapping_coll__map" alt="Collaboration graph"/></div>
+<map name="amapping_coll__map" id="amapping_coll__map">
+<area shape="rect" title="Meta&#45;data related to element mapping." alt="" coords="5,5,224,127"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:ae69b902c1a02258c17ed0d216a2b2702"><td class="memItemLeft" align="right" valign="top"><a id="ae69b902c1a02258c17ed0d216a2b2702"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>format_preamble</b> (std::ostream &amp;s, const <a class="el" href="a07586.html#a71557b41d7e819a0d5589b1b709cb165">utility::formatters::comment_style</a> &amp;single_line_cs, const <a class="el" href="a07586.html#a71557b41d7e819a0d5589b1b709cb165">utility::formatters::comment_style</a> &amp;multi_line_cs, const std::string &amp;licence_text, const std::list&lt; std::string &gt; &amp;copyright_notices, const std::string &amp;generation_timestamp, const std::string &amp;origin_shah1_hash, const boost::shared_ptr&lt; <a class="el" href="a09318.html">logical::entities::decoration::modeline</a> &gt; ml, const boost::shared_ptr&lt; <a class="el" href="a09310.html">logical::entities::decoration::generation_marker</a> &gt; gm) const</td></tr>
-<tr class="separator:ae69b902c1a02258c17ed0d216a2b2702"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65cf0fb8c52cf23d66df5a7a552c5cba"><td class="memItemLeft" align="right" valign="top"><a id="a65cf0fb8c52cf23d66df5a7a552c5cba"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>format_preamble</b> (std::ostream &amp;s, const <a class="el" href="a07586.html#a71557b41d7e819a0d5589b1b709cb165">utility::formatters::comment_style</a> &amp;cs, const std::string &amp;licence_text, const std::list&lt; std::string &gt; &amp;copyright_notices, const std::string &amp;generation_timestamp, const std::string &amp;origin_shah1_hash, const boost::shared_ptr&lt; <a class="el" href="a09318.html">logical::entities::decoration::modeline</a> &gt; ml, const boost::shared_ptr&lt; <a class="el" href="a09310.html">logical::entities::decoration::generation_marker</a> &gt; gm) const</td></tr>
-<tr class="separator:a65cf0fb8c52cf23d66df5a7a552c5cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7180e52d28bb9499ebd8a427652d3cdf"><td class="memItemLeft" align="right" valign="top"><a id="a7180e52d28bb9499ebd8a427652d3cdf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>format_postamble</b> (std::ostream &amp;s, const <a class="el" href="a07586.html#a71557b41d7e819a0d5589b1b709cb165">utility::formatters::comment_style</a> &amp;cs, const boost::shared_ptr&lt; <a class="el" href="a09318.html">logical::entities::decoration::modeline</a> &gt; ml) const</td></tr>
-<tr class="separator:a7180e52d28bb9499ebd8a427652d3cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a00f4d89ebaa80a558c37244e1a3796ac"><td class="memItemLeft" align="right" valign="top"><a id="a00f4d89ebaa80a558c37244e1a3796ac"></a>
+static feature_group&#160;</td><td class="memItemRight" valign="bottom"><b>make_feature_group</b> (const <a class="el" href="a13446.html">variability::entities::feature_model</a> &amp;fm)</td></tr>
+<tr class="separator:a00f4d89ebaa80a558c37244e1a3796ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac46668ba659ac0f2358491c55094a18b"><td class="memItemLeft" align="right" valign="top"><a id="ac46668ba659ac0f2358491c55094a18b"></a>
+static static_configuration&#160;</td><td class="memItemRight" valign="bottom"><b>make_static_configuration</b> (const feature_group &amp;fg, const variability::entities::configuration &amp;cfg)</td></tr>
+<tr class="separator:ac46668ba659ac0f2358491c55094a18b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eace8e86c71b0ce6da0a5cb452c1414"><td class="memTemplParams" colspan="2"><a id="a7eace8e86c71b0ce6da0a5cb452c1414"></a>
+template&lt;typename Configurable &gt; </td></tr>
+<tr class="memitem:a7eace8e86c71b0ce6da0a5cb452c1414"><td class="memTemplItemLeft" align="right" valign="top">static static_configuration&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_static_configuration</b> (const feature_group &amp;fg, const Configurable &amp;c)</td></tr>
+<tr class="separator:a7eace8e86c71b0ce6da0a5cb452c1414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9b98c113e5c61a6f7a817603ef40562"><td class="memItemLeft" align="right" valign="top"><a id="ac9b98c113e5c61a6f7a817603ef40562"></a>
+static std::list&lt; <a class="el" href="a13442.html">dogen::variability::entities::feature</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>make_features</b> ()</td></tr>
+<tr class="separator:ac9b98c113e5c61a6f7a817603ef40562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Formats decorations into a stream. </p>
+<div class="textblock"><p>Meta-data related to element mapping. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

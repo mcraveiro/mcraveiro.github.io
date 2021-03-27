@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: configuration_points_factory Class Reference</title>
+<title>Dogen: sequence_exhausted Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,88 +63,52 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07640.html">variability</a></li><li class="navelem"><b>helpers</b></li><li class="navelem"><a class="el" href="a13334.html">configuration_points_factory</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07789.html">utility</a></li><li class="navelem"><a class="el" href="a07802.html">test_data</a></li><li class="navelem"><a class="el" href="a13334.html">sequence_exhausted</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a13331.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">configuration_points_factory Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">sequence_exhausted Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Makes configuration points.  
+<p>Attempting to generate more terms that those on the sequence.  
  <a href="a13334.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a06827_source.html">configuration_points_factory.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a06638_source.html">sequence.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for configuration_points_factory:</div>
+Inheritance diagram for sequence_exhausted:</div>
 <div class="dyncontent">
-<div class="center"><img src="a13332.png" border="0" usemap="#aconfiguration__points__factory_coll__map" alt="Collaboration graph"/></div>
-<map name="aconfiguration__points__factory_coll__map" id="aconfiguration__points__factory_coll__map">
-<area shape="rect" title="Makes configuration points." alt="" coords="5,5,175,156"/>
+<div class="center"><img src="a13333.png" border="0" usemap="#asequence__exhausted_inherit__map" alt="Inheritance graph"/></div>
+<map name="asequence__exhausted_inherit__map" id="asequence__exhausted_inherit__map">
+<area shape="rect" title="Attempting to generate more terms that those on the sequence." alt="" coords="5,175,189,252"/>
+<area shape="rect" href="a13178.html" title="base class for all exceptions within dogen." alt="" coords="36,5,159,127"/>
+</map>
+</div>
+<div class="dynheader">
+Collaboration diagram for sequence_exhausted:</div>
+<div class="dyncontent">
+<div class="center"><img src="a13332.png" border="0" usemap="#asequence__exhausted_coll__map" alt="Collaboration graph"/></div>
+<map name="asequence__exhausted_coll__map" id="asequence__exhausted_coll__map">
+<area shape="rect" title="Attempting to generate more terms that those on the sequence." alt="" coords="5,175,189,252"/>
+<area shape="rect" href="a13178.html" title="base class for all exceptions within dogen." alt="" coords="36,5,159,127"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:afa6f0df6bb240f0e8c11039c7d41c654"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a13334.html#afa6f0df6bb240f0e8c11039c7d41c654">configuration_points_factory</a> (const <a class="el" href="a13242.html">entities::feature_model</a> &amp;fm, const bool compatibility_mode)</td></tr>
-<tr class="memdesc:afa6f0df6bb240f0e8c11039c7d41c654"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise the configuration points factory.  <a href="a13334.html#afa6f0df6bb240f0e8c11039c7d41c654">More...</a><br /></td></tr>
-<tr class="separator:afa6f0df6bb240f0e8c11039c7d41c654"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27d5262dcf28807f2c2c587d7cee53f2"><td class="memItemLeft" align="right" valign="top"><a id="a27d5262dcf28807f2c2c587d7cee53f2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a13334.html#a27d5262dcf28807f2c2c587d7cee53f2">validate_binding</a> (const <a class="el" href="a13238.html">entities::feature</a> &amp;f, const <a class="el" href="a07641.html#a45daafe78be2bd888785318421154865">entities::binding_point</a> bp) const</td></tr>
-<tr class="memdesc:a27d5262dcf28807f2c2c587d7cee53f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensures the feature can be bound to the supplied binding type. <br /></td></tr>
-<tr class="separator:a27d5262dcf28807f2c2c587d7cee53f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8606520c65526b9cb266734817b8b9ab"><td class="memItemLeft" align="right" valign="top"><a id="a8606520c65526b9cb266734817b8b9ab"></a>
-std::unordered_map&lt; std::string, <a class="el" href="a13222.html">entities::configuration_point</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>make</b> (const <a class="el" href="a07641.html#a45daafe78be2bd888785318421154865">entities::binding_point</a> bp, const std::list&lt; <a class="el" href="a09126.html">identification::entities::tagged_value</a> &gt; &amp;tvs, const std::unordered_map&lt; std::string, std::list&lt; std::string &gt;&gt; &amp;aggregated_override_entries) const</td></tr>
-<tr class="separator:a8606520c65526b9cb266734817b8b9ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4b6e65bc80ea5193ca379f95f0f3048"><td class="memItemLeft" align="right" valign="top"><a id="ae4b6e65bc80ea5193ca379f95f0f3048"></a>
-std::unordered_map&lt; std::string, <a class="el" href="a13222.html">entities::configuration_point</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>make</b> (const std::list&lt; <a class="el" href="a09126.html">identification::entities::tagged_value</a> &gt; &amp;tvs) const</td></tr>
-<tr class="separator:ae4b6e65bc80ea5193ca379f95f0f3048"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_methods_a13178"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a13178')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a13178.html">exception</a></td></tr>
+<tr class="memitem:a122dfa6b0a2b92fbaf9c31f46f839958 inherit pub_methods_a13178"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a13178.html#a122dfa6b0a2b92fbaf9c31f46f839958">exception</a> (const std::string &amp;message)</td></tr>
+<tr class="separator:a122dfa6b0a2b92fbaf9c31f46f839958 inherit pub_methods_a13178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79009ed133fa02b942ddce8f0b987f3e inherit pub_methods_a13178"><td class="memItemLeft" align="right" valign="top"><a id="a79009ed133fa02b942ddce8f0b987f3e"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>what</b> () const  throw ()</td></tr>
+<tr class="separator:a79009ed133fa02b942ddce8f0b987f3e inherit pub_methods_a13178"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Makes configuration points. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="afa6f0df6bb240f0e8c11039c7d41c654"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa6f0df6bb240f0e8c11039c7d41c654">&#9670;&nbsp;</a></span>configuration_points_factory()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a13334.html">configuration_points_factory</a> </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="a13242.html">entities::feature_model</a> &amp;&#160;</td>
-          <td class="paramname"><em>fm</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const bool&#160;</td>
-          <td class="paramname"><em>compatibility_mode</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialise the configuration points factory. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fm</td><td>the feature model. </td></tr>
-    <tr><td class="paramname">compatibility_mode</td><td>if true, try to ignore some resolution errors. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-</div><!-- contents -->
+<div class="textblock"><p>Attempting to generate more terms that those on the sequence. </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1

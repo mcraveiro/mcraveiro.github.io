@@ -1,4 +1,3 @@
-<map id="facet" name="facet">
-<area shape="rect" id="node1" title="Represents a facet within a backend, such as type definitions." alt="" coords="5,1656,201,2760"/>
-<area shape="rect" id="node2" href="$a09330.html" title="Represents a generic logical construct." alt="" coords="17,5,189,1608"/>
+<map id="printing_error" name="printing_error">
+<area shape="rect" id="node1" title="An error occurred whilst pretty printing." alt="" coords="5,5,152,127"/>
 </map>

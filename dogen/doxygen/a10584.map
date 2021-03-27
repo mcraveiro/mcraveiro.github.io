@@ -1,3 +1,3 @@
-<map id="archetype" name="archetype">
-<area shape="rect" id="node1" title="Represents a meta&#45;artefact." alt="" coords="5,5,216,1549"/>
+<map id="dependencies_builder" name="dependencies_builder">
+<area shape="rect" id="node1" title="Helps in building the inclusion dependencies for a given formatteridentification::entities::logical_m..." alt="" coords="5,5,195,376"/>
 </map>

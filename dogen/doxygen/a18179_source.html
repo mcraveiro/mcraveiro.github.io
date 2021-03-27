@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.physical/include/dogen.physical/io/entities/model_set_io.hpp Source File</title>
+<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.text/include/dogen.text/types/transforms/cpp/lexical_cast/initializer.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,12 +63,12 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_9b8549976a668c2202007f21f8dd157b.html">dogen.physical</a></li><li class="navelem"><a class="el" href="dir_26d230d797375482fb1d633cc67158a1.html">include</a></li><li class="navelem"><a class="el" href="dir_7de440d8d60ef5abea2682ae081b1def.html">dogen.physical</a></li><li class="navelem"><a class="el" href="dir_4e7877b7f85d9373ba49ea5faae60893.html">io</a></li><li class="navelem"><a class="el" href="dir_7b5136fc2671f754b441f09d36f4df94.html">entities</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_d0396150bcf57e911dff403e9b0739ba.html">dogen.text</a></li><li class="navelem"><a class="el" href="dir_8b3b310a3fe978bc384ba2728ff4d590.html">include</a></li><li class="navelem"><a class="el" href="dir_248786eec5607e5f0e503888893d78d4.html">dogen.text</a></li><li class="navelem"><a class="el" href="dir_eae8887358fa2693160c8fa64c912a82.html">types</a></li><li class="navelem"><a class="el" href="dir_07a606544302cc4d576fd1cfc4516e77.html">transforms</a></li><li class="navelem"><a class="el" href="dir_eafeec85fc307cbb86f9e673ddf809f2.html">cpp</a></li><li class="navelem"><a class="el" href="dir_f0beb57dd11c97102fb86b787dd9171b.html">lexical_cast</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">model_set_io.hpp</div>  </div>
+<div class="title">initializer.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* -*- mode: c++; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-</span></div>
@@ -91,27 +91,29 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * MA 02110-1301, USA.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_PHYSICAL_IO_ENTITIES_MODEL_SET_IO_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_PHYSICAL_IO_ENTITIES_MODEL_SET_IO_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_TEXT_TYPES_TRANSFORMS_CPP_LEXICAL_CAST_INITIALIZER_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_TEXT_TYPES_TRANSFORMS_CPP_LEXICAL_CAST_INITIALIZER_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; (_MSC_VER &gt;= 1200)</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;iosfwd&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;dogen.physical/types/entities/model_set.hpp&quot;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;dogen.text/types/transforms/helper_registrar.hpp&quot;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;dogen.text/types/transforms/text_transform_registrar.hpp&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span><a class="code" href="a07336.html">dogen::physical::entities</a> {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span>dogen::text::transforms::cpp::lexical_cast {</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;std::ostream&amp;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;operator&lt;&lt;(std::ostream&amp; s,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;     <span class="keyword">const</span> <a class="code" href="a10654.html">dogen::physical::entities::model_set</a>&amp; v);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aa07336_html"><div class="ttname"><a href="a07336.html">dogen::physical::entities</a></div><div class="ttdoc">Defines the MASD physical space.</div><div class="ttdef"><b>Definition:</b> archetype_io.hpp:31</div></div>
-<div class="ttc" id="aa10654_html"><div class="ttname"><a href="a10654.html">dogen::physical::entities::model_set</a></div><div class="ttdoc">Represents a set of related physical models.</div><div class="ttdef"><b>Definition:</b> model_set.hpp:38</div></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="a12034.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="a12034.html">initializer</a> {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> initialize(<a class="code" href="a13090.html">text_transform_registrar</a>&amp; ttrg,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        helper_registrar&amp; hrg);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aa12034_html"><div class="ttname"><a href="a12034.html">dogen::text::transforms::cpp::lexical_cast::initializer</a></div><div class="ttdoc">Initialises the lexical cast facet.</div><div class="ttdef"><b>Definition:</b> initializer.hpp:36</div></div>
+<div class="ttc" id="aa13090_html"><div class="ttname"><a href="a13090.html">dogen::text::transforms::text_transform_registrar</a></div><div class="ttdoc">Tracks the registration of M2T transforms.</div><div class="ttdef"><b>Definition:</b> text_transform_registrar.hpp:37</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

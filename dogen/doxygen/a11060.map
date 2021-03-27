@@ -1,0 +1,3 @@
+<map id="generate_patch_transform" name="generate_patch_transform">
+<area shape="rect" id="node1" title="Creates a patch file that, if applied to the current state of the filesystem, would make it the same ..." alt="" coords="5,5,200,83"/>
+</map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: feature_template Class Reference</title>
+<title>Dogen: lifecycle_manager Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,215 +63,111 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07640.html">variability</a></li><li class="navelem"><a class="el" href="a07641.html">entities</a></li><li class="navelem"><a class="el" href="a13250.html">feature_template</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07789.html">utility</a></li><li class="navelem"><b>log</b></li><li class="navelem"><a class="el" href="a13250.html">lifecycle_manager</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a13247.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">feature_template Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">lifecycle_manager Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Defines a template that can be used to instantiate features.  
+<p>Manages the starting and stopping of logging for an application.  
  <a href="a13250.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a19148_source.html">feature_template.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a06560_source.html">lifecycle_manager.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for feature_template:</div>
+Collaboration diagram for lifecycle_manager:</div>
 <div class="dyncontent">
-<div class="center"><img src="a13249.png" border="0" usemap="#afeature__template_inherit__map" alt="Inheritance graph"/></div>
-<map name="afeature__template_inherit__map" id="afeature__template_inherit__map">
-<area shape="rect" title="Defines a template that can be used to instantiate features." alt="" coords="5,483,209,1381"/>
-<area shape="rect" href="a13234.html" title="Represents an element modeling some aspect of variability." alt="" coords="48,5,167,435"/>
-</map>
-</div>
-<div class="dynheader">
-Collaboration diagram for feature_template:</div>
-<div class="dyncontent">
-<div class="center"><img src="a13248.png" border="0" usemap="#afeature__template_coll__map" alt="Collaboration graph"/></div>
-<map name="afeature__template_coll__map" id="afeature__template_coll__map">
-<area shape="rect" title="Defines a template that can be used to instantiate features." alt="" coords="5,483,209,1381"/>
-<area shape="rect" href="a13234.html" title="Represents an element modeling some aspect of variability." alt="" coords="48,5,167,435"/>
+<div class="center"><img src="a13248.png" border="0" usemap="#alifecycle__manager_coll__map" alt="Collaboration graph"/></div>
+<map name="alifecycle__manager_coll__map" id="alifecycle__manager_coll__map">
+<area shape="rect" title="Manages the starting and stopping of logging for an application." alt="" coords="5,5,184,171"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aeb9bb79993e3035d2c7783d6f813e35a"><td class="memItemLeft" align="right" valign="top"><a id="aeb9bb79993e3035d2c7783d6f813e35a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>feature_template</b> (const <a class="el" href="a13250.html">feature_template</a> &amp;)=default</td></tr>
-<tr class="separator:aeb9bb79993e3035d2c7783d6f813e35a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a706ef6f4b4bba99f1ca66f54d875089a"><td class="memItemLeft" align="right" valign="top"><a id="a706ef6f4b4bba99f1ca66f54d875089a"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>feature_template</b> (<a class="el" href="a13250.html">feature_template</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a706ef6f4b4bba99f1ca66f54d875089a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8ea1197b91ac05d8ae0e88fe6e224e8"><td class="memItemLeft" align="right" valign="top"><a id="ac8ea1197b91ac05d8ae0e88fe6e224e8"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>feature_template</b> (const <a class="el" href="a09086.html">dogen::identification::entities::name</a> &amp;<a class="el" href="a13234.html#a7866e84cb50fd9b84ce19be2ccdb950f">name</a>, const std::string &amp;<a class="el" href="a13234.html#aa96fc91e0a878caf38caa30ca4bc54ec">description</a>, const boost::shared_ptr&lt; <a class="el" href="a13294.html">dogen::variability::entities::value</a> &gt; &amp;<a class="el" href="a13250.html#ac0b5809db313434130f6a7739a4e708d">default_value</a>, const <a class="el" href="a07641.html#a6a9014bb317bbfac82670e7aaaa0af31">dogen::variability::entities::value_type</a> <a class="el" href="a07641.html#a6a9014bb317bbfac82670e7aaaa0af31">value_type</a>, const <a class="el" href="a07641.html#a79a00a0556bbc40a4c30c81a3c6d9ee1">dogen::variability::entities::binding_action</a> profile_binding_action, const <a class="el" href="a07641.html#a79a00a0556bbc40a4c30c81a3c6d9ee1">dogen::variability::entities::binding_action</a> configuration_binding_action, const <a class="el" href="a07641.html#a45daafe78be2bd888785318421154865">dogen::variability::entities::binding_point</a> <a class="el" href="a07641.html#a45daafe78be2bd888785318421154865">binding_point</a>, const std::string &amp;<a class="el" href="a13250.html#a9422ec923eafd334b2ff2394739404c4">instantiation_domain_name</a>, const std::list&lt; <a class="el" href="a13230.html">dogen::variability::entities::default_value_override</a> &gt; &amp;<a class="el" href="a13250.html#a8304b2ef48ac0db4e2bf9898ebbf6f3f">default_value_overrides</a>)</td></tr>
-<tr class="separator:ac8ea1197b91ac05d8ae0e88fe6e224e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69854d294ff0a1e9e3b140e9492af03c"><td class="memItemLeft" align="right" valign="top"><a id="a69854d294ff0a1e9e3b140e9492af03c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>to_stream</b> (std::ostream &amp;s) const override</td></tr>
-<tr class="separator:a69854d294ff0a1e9e3b140e9492af03c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe069e6a06500465e5cfe8c2d54a488f"><td class="memItemLeft" align="right" valign="top"><a id="abe069e6a06500465e5cfe8c2d54a488f"></a>
-<a class="el" href="a07641.html#a79a00a0556bbc40a4c30c81a3c6d9ee1">dogen::variability::entities::binding_action</a>&#160;</td><td class="memItemRight" valign="bottom"><b>profile_binding_action</b> () const</td></tr>
-<tr class="separator:abe069e6a06500465e5cfe8c2d54a488f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a163263aed210d66bb843ba91740f603c"><td class="memItemLeft" align="right" valign="top"><a id="a163263aed210d66bb843ba91740f603c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>profile_binding_action</b> (const <a class="el" href="a07641.html#a79a00a0556bbc40a4c30c81a3c6d9ee1">dogen::variability::entities::binding_action</a> v)</td></tr>
-<tr class="separator:a163263aed210d66bb843ba91740f603c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a129e878e0e39cc2a7ebe82b9c03540df"><td class="memItemLeft" align="right" valign="top"><a id="a129e878e0e39cc2a7ebe82b9c03540df"></a>
-<a class="el" href="a07641.html#a79a00a0556bbc40a4c30c81a3c6d9ee1">dogen::variability::entities::binding_action</a>&#160;</td><td class="memItemRight" valign="bottom"><b>configuration_binding_action</b> () const</td></tr>
-<tr class="separator:a129e878e0e39cc2a7ebe82b9c03540df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9b36c9e2e060a546030e424729e885e"><td class="memItemLeft" align="right" valign="top"><a id="aa9b36c9e2e060a546030e424729e885e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>configuration_binding_action</b> (const <a class="el" href="a07641.html#a79a00a0556bbc40a4c30c81a3c6d9ee1">dogen::variability::entities::binding_action</a> v)</td></tr>
-<tr class="separator:aa9b36c9e2e060a546030e424729e885e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2e3db4d87d352096b27881810af4bf6"><td class="memItemLeft" align="right" valign="top"><a id="ac2e3db4d87d352096b27881810af4bf6"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="a13250.html">feature_template</a> &amp;rhs) const</td></tr>
-<tr class="separator:ac2e3db4d87d352096b27881810af4bf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7acb1d3e12826afc1eb696160632848"><td class="memItemLeft" align="right" valign="top"><a id="ab7acb1d3e12826afc1eb696160632848"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="a13250.html">feature_template</a> &amp;rhs) const</td></tr>
-<tr class="separator:ab7acb1d3e12826afc1eb696160632848"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3076280782864784781cd591eb95e0d7"><td class="memItemLeft" align="right" valign="top"><a id="a3076280782864784781cd591eb95e0d7"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>equals</b> (const <a class="el" href="a13234.html">dogen::variability::entities::element</a> &amp;other) const override</td></tr>
-<tr class="separator:a3076280782864784781cd591eb95e0d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9de8f5d6f363078832d06fabf467cac2"><td class="memItemLeft" align="right" valign="top"><a id="a9de8f5d6f363078832d06fabf467cac2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="a13250.html">feature_template</a> &amp;other) noexcept</td></tr>
-<tr class="separator:a9de8f5d6f363078832d06fabf467cac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5ed799cd4c84f811c9c996db5999004"><td class="memItemLeft" align="right" valign="top"><a id="aa5ed799cd4c84f811c9c996db5999004"></a>
-<a class="el" href="a13250.html">feature_template</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="a13250.html">feature_template</a> other)</td></tr>
-<tr class="separator:aa5ed799cd4c84f811c9c996db5999004"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:ac0b5809db313434130f6a7739a4e708d"><td class="memItemLeft" align="right" valign="top"><a id="ac0b5809db313434130f6a7739a4e708d"></a>
-const boost::shared_ptr&lt; <a class="el" href="a13294.html">dogen::variability::entities::value</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a13250.html#ac0b5809db313434130f6a7739a4e708d">default_value</a> () const</td></tr>
-<tr class="memdesc:ac0b5809db313434130f6a7739a4e708d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default value for element, if any. <br /></td></tr>
-<tr class="separator:ac0b5809db313434130f6a7739a4e708d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55ff2f6973274f29a958c134b823d128"><td class="memItemLeft" align="right" valign="top"><a id="a55ff2f6973274f29a958c134b823d128"></a>
-boost::shared_ptr&lt; <a class="el" href="a13294.html">dogen::variability::entities::value</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>default_value</b> ()</td></tr>
-<tr class="separator:a55ff2f6973274f29a958c134b823d128"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a962c0d0061db2f057a15f6332368afcb"><td class="memItemLeft" align="right" valign="top"><a id="a962c0d0061db2f057a15f6332368afcb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>default_value</b> (const boost::shared_ptr&lt; <a class="el" href="a13294.html">dogen::variability::entities::value</a> &gt; &amp;v)</td></tr>
-<tr class="separator:a962c0d0061db2f057a15f6332368afcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93624440e0aab96504c831b22ff73186"><td class="memItemLeft" align="right" valign="top"><a id="a93624440e0aab96504c831b22ff73186"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>default_value</b> (const boost::shared_ptr&lt; <a class="el" href="a13294.html">dogen::variability::entities::value</a> &gt; &amp;&amp;v)</td></tr>
-<tr class="separator:a93624440e0aab96504c831b22ff73186"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a36b8ed44930aaa74426da6e215130236"><td class="memItemLeft" align="right" valign="top"><a id="a36b8ed44930aaa74426da6e215130236"></a>
-<a class="el" href="a07641.html#a6a9014bb317bbfac82670e7aaaa0af31">dogen::variability::entities::value_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a13250.html#a36b8ed44930aaa74426da6e215130236">value_type</a> () const</td></tr>
-<tr class="memdesc:a36b8ed44930aaa74426da6e215130236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the value for the feature that will result of the template instantiation. <br /></td></tr>
-<tr class="separator:a36b8ed44930aaa74426da6e215130236"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2df980f87a3eddfcb504088637f5e4b"><td class="memItemLeft" align="right" valign="top"><a id="ab2df980f87a3eddfcb504088637f5e4b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>value_type</b> (const <a class="el" href="a07641.html#a6a9014bb317bbfac82670e7aaaa0af31">dogen::variability::entities::value_type</a> v)</td></tr>
-<tr class="separator:ab2df980f87a3eddfcb504088637f5e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a1db28044a04dc4fa64ed24c93bc4731e"><td class="memItemLeft" align="right" valign="top"><a id="a1db28044a04dc4fa64ed24c93bc4731e"></a>
-<a class="el" href="a07641.html#a45daafe78be2bd888785318421154865">dogen::variability::entities::binding_point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a13250.html#a1db28044a04dc4fa64ed24c93bc4731e">binding_point</a> () const</td></tr>
-<tr class="memdesc:a1db28044a04dc4fa64ed24c93bc4731e"><td class="mdescLeft">&#160;</td><td class="mdescRight">How the feature binds against other model elements. <br /></td></tr>
-<tr class="separator:a1db28044a04dc4fa64ed24c93bc4731e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf8ebdeaddefda549f2121710324a6f5"><td class="memItemLeft" align="right" valign="top"><a id="acf8ebdeaddefda549f2121710324a6f5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>binding_point</b> (const <a class="el" href="a07641.html#a45daafe78be2bd888785318421154865">dogen::variability::entities::binding_point</a> v)</td></tr>
-<tr class="separator:acf8ebdeaddefda549f2121710324a6f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a9422ec923eafd334b2ff2394739404c4"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a13250.html#a9422ec923eafd334b2ff2394739404c4">instantiation_domain_name</a> () const</td></tr>
-<tr class="memdesc:a9422ec923eafd334b2ff2394739404c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the domain to use for template instantiation.  <a href="a13250.html#a9422ec923eafd334b2ff2394739404c4">More...</a><br /></td></tr>
-<tr class="separator:a9422ec923eafd334b2ff2394739404c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac98a6040c0133af22a44b9cfa65fb07a"><td class="memItemLeft" align="right" valign="top"><a id="ac98a6040c0133af22a44b9cfa65fb07a"></a>
-std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>instantiation_domain_name</b> ()</td></tr>
-<tr class="separator:ac98a6040c0133af22a44b9cfa65fb07a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa6411156c9d21182805d1c52d38060f"><td class="memItemLeft" align="right" valign="top"><a id="afa6411156c9d21182805d1c52d38060f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>instantiation_domain_name</b> (const std::string &amp;v)</td></tr>
-<tr class="separator:afa6411156c9d21182805d1c52d38060f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2412a14b0053715eae350ac17dedd73d"><td class="memItemLeft" align="right" valign="top"><a id="a2412a14b0053715eae350ac17dedd73d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>instantiation_domain_name</b> (const std::string &amp;&amp;v)</td></tr>
-<tr class="separator:a2412a14b0053715eae350ac17dedd73d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a8304b2ef48ac0db4e2bf9898ebbf6f3f"><td class="memItemLeft" align="right" valign="top"><a id="a8304b2ef48ac0db4e2bf9898ebbf6f3f"></a>
-const std::list&lt; <a class="el" href="a13230.html">dogen::variability::entities::default_value_override</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a13250.html#a8304b2ef48ac0db4e2bf9898ebbf6f3f">default_value_overrides</a> () const</td></tr>
-<tr class="memdesc:a8304b2ef48ac0db4e2bf9898ebbf6f3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overrides for the default value, if any. <br /></td></tr>
-<tr class="separator:a8304b2ef48ac0db4e2bf9898ebbf6f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab88b874bbea813406547c4aa9681139"><td class="memItemLeft" align="right" valign="top"><a id="aab88b874bbea813406547c4aa9681139"></a>
-std::list&lt; <a class="el" href="a13230.html">dogen::variability::entities::default_value_override</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>default_value_overrides</b> ()</td></tr>
-<tr class="separator:aab88b874bbea813406547c4aa9681139"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab100f50986c8eaeebfa5d75349cdfac5"><td class="memItemLeft" align="right" valign="top"><a id="ab100f50986c8eaeebfa5d75349cdfac5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>default_value_overrides</b> (const std::list&lt; <a class="el" href="a13230.html">dogen::variability::entities::default_value_override</a> &gt; &amp;v)</td></tr>
-<tr class="separator:ab100f50986c8eaeebfa5d75349cdfac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd0d7066f8c88ab72fd5ce187a8d7d23"><td class="memItemLeft" align="right" valign="top"><a id="acd0d7066f8c88ab72fd5ce187a8d7d23"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>default_value_overrides</b> (const std::list&lt; <a class="el" href="a13230.html">dogen::variability::entities::default_value_override</a> &gt; &amp;&amp;v)</td></tr>
-<tr class="separator:acd0d7066f8c88ab72fd5ce187a8d7d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_a13234"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_a13234')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="a13234.html">element</a></td></tr>
-<tr class="memitem:aa22450117c7f75e4d15f5d6ee35e5610 inherit pub_methods_a13234"><td class="memItemLeft" align="right" valign="top"><a id="aa22450117c7f75e4d15f5d6ee35e5610"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>element</b> (const <a class="el" href="a13234.html">element</a> &amp;)=default</td></tr>
-<tr class="separator:aa22450117c7f75e4d15f5d6ee35e5610 inherit pub_methods_a13234"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af99bd34cbbc3ac0c8c02599353e907bf inherit pub_methods_a13234"><td class="memItemLeft" align="right" valign="top"><a id="af99bd34cbbc3ac0c8c02599353e907bf"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>element</b> (<a class="el" href="a13234.html">element</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:af99bd34cbbc3ac0c8c02599353e907bf inherit pub_methods_a13234"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a366748c166cfae015e72ab08c0a12b07 inherit pub_methods_a13234"><td class="memItemLeft" align="right" valign="top"><a id="a366748c166cfae015e72ab08c0a12b07"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>element</b> (const <a class="el" href="a09086.html">dogen::identification::entities::name</a> &amp;<a class="el" href="a13234.html#a7866e84cb50fd9b84ce19be2ccdb950f">name</a>, const std::string &amp;<a class="el" href="a13234.html#aa96fc91e0a878caf38caa30ca4bc54ec">description</a>)</td></tr>
-<tr class="separator:a366748c166cfae015e72ab08c0a12b07 inherit pub_methods_a13234"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7866e84cb50fd9b84ce19be2ccdb950f inherit pub_methods_a13234"><td class="memItemLeft" align="right" valign="top"><a id="a7866e84cb50fd9b84ce19be2ccdb950f"></a>
-const <a class="el" href="a09086.html">dogen::identification::entities::name</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a13234.html#a7866e84cb50fd9b84ce19be2ccdb950f">name</a> () const</td></tr>
-<tr class="memdesc:a7866e84cb50fd9b84ce19be2ccdb950f inherit pub_methods_a13234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of this variability element. <br /></td></tr>
-<tr class="separator:a7866e84cb50fd9b84ce19be2ccdb950f inherit pub_methods_a13234"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a830a8786e7851b3a9e9b3f5bd55283d7 inherit pub_methods_a13234"><td class="memItemLeft" align="right" valign="top"><a id="a830a8786e7851b3a9e9b3f5bd55283d7"></a>
-<a class="el" href="a09086.html">dogen::identification::entities::name</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> ()</td></tr>
-<tr class="separator:a830a8786e7851b3a9e9b3f5bd55283d7 inherit pub_methods_a13234"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af42ea30973f339589a0124852b3b770f inherit pub_methods_a13234"><td class="memItemLeft" align="right" valign="top"><a id="af42ea30973f339589a0124852b3b770f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> (const <a class="el" href="a09086.html">dogen::identification::entities::name</a> &amp;v)</td></tr>
-<tr class="separator:af42ea30973f339589a0124852b3b770f inherit pub_methods_a13234"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6412218f0a77a00eacc86ae32497934 inherit pub_methods_a13234"><td class="memItemLeft" align="right" valign="top"><a id="ae6412218f0a77a00eacc86ae32497934"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> (const <a class="el" href="a09086.html">dogen::identification::entities::name</a> &amp;&amp;v)</td></tr>
-<tr class="separator:ae6412218f0a77a00eacc86ae32497934 inherit pub_methods_a13234"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa96fc91e0a878caf38caa30ca4bc54ec inherit pub_methods_a13234"><td class="memItemLeft" align="right" valign="top"><a id="aa96fc91e0a878caf38caa30ca4bc54ec"></a>
-const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a13234.html#aa96fc91e0a878caf38caa30ca4bc54ec">description</a> () const</td></tr>
-<tr class="memdesc:aa96fc91e0a878caf38caa30ca4bc54ec inherit pub_methods_a13234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Human readable description of the feature, used for documentation. <br /></td></tr>
-<tr class="separator:aa96fc91e0a878caf38caa30ca4bc54ec inherit pub_methods_a13234"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49f71b213ae60559229fe469b56b9ada inherit pub_methods_a13234"><td class="memItemLeft" align="right" valign="top"><a id="a49f71b213ae60559229fe469b56b9ada"></a>
-std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>description</b> ()</td></tr>
-<tr class="separator:a49f71b213ae60559229fe469b56b9ada inherit pub_methods_a13234"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a999fdafb3ae5390199767b5ab3322a81 inherit pub_methods_a13234"><td class="memItemLeft" align="right" valign="top"><a id="a999fdafb3ae5390199767b5ab3322a81"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>description</b> (const std::string &amp;v)</td></tr>
-<tr class="separator:a999fdafb3ae5390199767b5ab3322a81 inherit pub_methods_a13234"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c352d36356fb086bf8db347c3f6f883 inherit pub_methods_a13234"><td class="memItemLeft" align="right" valign="top"><a id="a6c352d36356fb086bf8db347c3f6f883"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>description</b> (const std::string &amp;&amp;v)</td></tr>
-<tr class="separator:a6c352d36356fb086bf8db347c3f6f883 inherit pub_methods_a13234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade8e5c2fe64d8fc8ee35e64ef70937e1"><td class="memItemLeft" align="right" valign="top"><a id="ade8e5c2fe64d8fc8ee35e64ef70937e1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>lifecycle_manager</b> (const <a class="el" href="a13250.html">lifecycle_manager</a> &amp;)=delete</td></tr>
+<tr class="separator:ade8e5c2fe64d8fc8ee35e64ef70937e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afecaa741e9d831d29c41d09f8502dc92"><td class="memItemLeft" align="right" valign="top"><a id="afecaa741e9d831d29c41d09f8502dc92"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>lifecycle_manager</b> (<a class="el" href="a13250.html">lifecycle_manager</a> &amp;&amp;)=delete</td></tr>
+<tr class="separator:afecaa741e9d831d29c41d09f8502dc92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a563acc2f8b163d542ade32cbe1a5cf8d"><td class="memItemLeft" align="right" valign="top"><a id="a563acc2f8b163d542ade32cbe1a5cf8d"></a>
+<a class="el" href="a13250.html">lifecycle_manager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="a13250.html">lifecycle_manager</a> &amp;)=delete</td></tr>
+<tr class="separator:a563acc2f8b163d542ade32cbe1a5cf8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pro_methods_a13234"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_a13234')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="a13234.html">element</a></td></tr>
-<tr class="memitem:abeaae3bacffbfbeb6057b57bb4facfe9 inherit pro_methods_a13234"><td class="memItemLeft" align="right" valign="top"><a id="abeaae3bacffbfbeb6057b57bb4facfe9"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>compare</b> (const <a class="el" href="a13234.html">element</a> &amp;rhs) const</td></tr>
-<tr class="separator:abeaae3bacffbfbeb6057b57bb4facfe9 inherit pro_methods_a13234"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55b3630d45fb7933dee66ff7accf21fa inherit pro_methods_a13234"><td class="memItemLeft" align="right" valign="top"><a id="a55b3630d45fb7933dee66ff7accf21fa"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="a13234.html">element</a> &amp;other) noexcept</td></tr>
-<tr class="separator:a55b3630d45fb7933dee66ff7accf21fa inherit pro_methods_a13234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a9d4141bfd33bb5d46df262b88ff4182f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a13250.html#a9d4141bfd33bb5d46df262b88ff4182f">initialise</a> (const boost::optional&lt; <a class="el" href="a13254.html">logging_configuration</a> &gt; &amp;ocfg)</td></tr>
+<tr class="memdesc:a9d4141bfd33bb5d46df262b88ff4182f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise logging for the entire application.  <a href="a13250.html#a9d4141bfd33bb5d46df262b88ff4182f">More...</a><br /></td></tr>
+<tr class="separator:a9d4141bfd33bb5d46df262b88ff4182f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7861ee1569802186a619778efc85af13"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a13250.html#a7861ee1569802186a619778efc85af13">shutdown</a> ()</td></tr>
+<tr class="memdesc:a7861ee1569802186a619778efc85af13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shutdown logging for the entire application.  <a href="a13250.html#a7861ee1569802186a619778efc85af13">More...</a><br /></td></tr>
+<tr class="separator:a7861ee1569802186a619778efc85af13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Defines a template that can be used to instantiate features. </p>
+<div class="textblock"><p>Manages the starting and stopping of logging for an application. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9422ec923eafd334b2ff2394739404c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9422ec923eafd334b2ff2394739404c4">&#9670;&nbsp;</a></span>instantiation_domain_name()</h2>
+<a id="a9d4141bfd33bb5d46df262b88ff4182f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d4141bfd33bb5d46df262b88ff4182f">&#9670;&nbsp;</a></span>initialise()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::string &amp; instantiation_domain_name </td>
+          <td class="memname">void initialise </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const boost::optional&lt; <a class="el" href="a13254.html">logging_configuration</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ocfg</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Name of the domain to use for template instantiation. </p>
-<dl class="section pre"><dt>Precondition</dt><dd>The instantiation domain name must exist. </dd></dl>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="a13250_a9422ec923eafd334b2ff2394739404c4_icgraph.png" border="0" usemap="#aa13250_a9422ec923eafd334b2ff2394739404c4_icgraph" alt=""/></div>
-<map name="aa13250_a9422ec923eafd334b2ff2394739404c4_icgraph" id="aa13250_a9422ec923eafd334b2ff2394739404c4_icgraph">
-<area shape="rect" title="Name of the domain to use for template instantiation." alt="" coords="236,20,440,47"/>
-<area shape="rect" href="a13370.html#a0f11cd897660d026b578c8ed24a6617f" title="Instantiates the feature template across the elements of the requested domain." alt="" coords="5,5,188,61"/>
-</map>
+<p>Initialise logging for the entire application. </p>
+<p>If no configuration is supplied, logging is disabled.</p>
+<dl class="section note"><dt>Note</dt><dd>Must be done in a thread-safe context. </dd></dl>
+
 </div>
+</div>
+<a id="a7861ee1569802186a619778efc85af13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7861ee1569802186a619778efc85af13">&#9670;&nbsp;</a></span>shutdown()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void shutdown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Shutdown logging for the entire application. </p>
+<p>Should be done in a thread-safe context. </p>
 
 </div>
 </div>

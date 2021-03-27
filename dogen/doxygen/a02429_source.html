@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.logical/include/dogen.logical/types/helpers/mapping_context.hpp Source File</title>
+<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.logical/include/dogen.logical/types/helpers/decomposer.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,7 +68,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">mapping_context.hpp</div>  </div>
+<div class="title">decomposer.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* -*- mode: c++; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-</span></div>
@@ -91,81 +91,85 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * MA 02110-1301, USA.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_LOGICAL_TYPES_HELPERS_MAPPING_CONTEXT_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_LOGICAL_TYPES_HELPERS_MAPPING_CONTEXT_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_LOGICAL_TYPES_HELPERS_DECOMPOSER_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_LOGICAL_TYPES_HELPERS_DECOMPOSER_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; (_MSC_VER &gt;= 1200)</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;unordered_set&gt;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;dogen.identification/types/entities/logical_id.hpp&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;dogen.identification/types/entities/logical_name.hpp&quot;</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;dogen.identification/hash/entities/logical_id_hash.hpp&quot;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span>dogen::logical::helpers {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">class </span>mapping_context final {</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    mapping_context() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    mapping_context(<span class="keyword">const</span> mapping_context&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    mapping_context(mapping_context&amp;&amp;) = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    ~mapping_context() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/model.hpp&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/element.hpp&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/attribute.hpp&quot;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/structural/module.hpp&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/structural/object.hpp&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/structural/exception.hpp&quot;</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/structural/builtin.hpp&quot;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/structural/visitor.hpp&quot;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/structural/primitive.hpp&quot;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/structural/enumeration.hpp&quot;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/entities/structural/object_template.hpp&quot;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &quot;dogen.logical/types/helpers/decomposition_result.hpp&quot;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">namespace </span>dogen::logical::helpers {</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    mapping_context(</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">const</span> std::unordered_map&lt;dogen::identification::entities::logical_id, dogen::identification::entities::logical_name&gt;&amp; translations,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">const</span> std::unordered_set&lt;dogen::identification::entities::logical_id&gt;&amp; erasures,</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">const</span> std::unordered_map&lt;dogen::identification::entities::logical_id, dogen::identification::entities::logical_name&gt;&amp; codecs);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">const</span> std::unordered_map&lt;dogen::identification::entities::logical_id, dogen::identification::entities::logical_name&gt;&amp; translations() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    std::unordered_map&lt;dogen::identification::entities::logical_id, dogen::identification::entities::logical_name&gt;&amp; translations();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> translations(<span class="keyword">const</span> std::unordered_map&lt;dogen::identification::entities::logical_id, dogen::identification::entities::logical_name&gt;&amp; v);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> translations(<span class="keyword">const</span> std::unordered_map&lt;dogen::identification::entities::logical_id, dogen::identification::entities::logical_name&gt;&amp;&amp; v);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">const</span> std::unordered_set&lt;dogen::identification::entities::logical_id&gt;&amp; erasures() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    std::unordered_set&lt;dogen::identification::entities::logical_id&gt;&amp; erasures();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> erasures(<span class="keyword">const</span> std::unordered_set&lt;dogen::identification::entities::logical_id&gt;&amp; v);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> erasures(<span class="keyword">const</span> std::unordered_set&lt;dogen::identification::entities::logical_id&gt;&amp;&amp; v);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">const</span> std::unordered_map&lt;dogen::identification::entities::logical_id, dogen::identification::entities::logical_name&gt;&amp; codecs() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    std::unordered_map&lt;dogen::identification::entities::logical_id, dogen::identification::entities::logical_name&gt;&amp; codecs();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> codecs(<span class="keyword">const</span> std::unordered_map&lt;dogen::identification::entities::logical_id, dogen::identification::entities::logical_name&gt;&amp; v);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> codecs(<span class="keyword">const</span> std::unordered_map&lt;dogen::identification::entities::logical_id, dogen::identification::entities::logical_name&gt;&amp;&amp; v);</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="a10182.html">   52</a></span>&#160;<span class="keyword">class </span><a class="code" href="a10182.html">decomposer</a> final {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> add_name(<span class="keyword">const</span> <a class="code" href="a09254.html">identification::entities::logical_id</a>&amp; owner,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">const</span> <a class="code" href="a09274.html">identification::entities::logical_name</a>&amp; n);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> add_meta_name(<span class="keyword">const</span> <a class="code" href="a09254.html">identification::entities::logical_id</a>&amp; owner,</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keyword">const</span> identification::entities::logical_meta_name&amp; n);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> add_name_tree(<span class="keyword">const</span> <a class="code" href="a09254.html">identification::entities::logical_id</a>&amp; owner,</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keyword">const</span> <a class="code" href="a09278.html">identification::entities::logical_name_tree</a>&amp; nt);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> add_names(<span class="keyword">const</span> <a class="code" href="a09254.html">identification::entities::logical_id</a>&amp; owner,</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">const</span> std::list&lt;identification::entities::logical_name&gt;&amp; names);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> decompose_attributes(<span class="keyword">const</span> <a class="code" href="a09254.html">identification::entities::logical_id</a>&amp; owner,</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keyword">const</span> std::list&lt;entities::attribute&gt;&amp; attrs);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> decompose_element(<span class="keyword">const</span> <a class="code" href="a09534.html">entities::element</a>&amp; e);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> mapping_context&amp; rhs) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> mapping_context&amp; rhs)<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordflow">return</span> !this-&gt;operator==(rhs);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> swap(mapping_context&amp; other) noexcept;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    mapping_context&amp; operator=(mapping_context other);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    std::unordered_map&lt;dogen::identification::entities::logical_id, dogen::identification::entities::logical_name&gt; translations_;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    std::unordered_set&lt;dogen::identification::entities::logical_id&gt; erasures_;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    std::unordered_map&lt;dogen::identification::entities::logical_id, dogen::identification::entities::logical_name&gt; codecs_;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">     * These methods are morally private, but are required to be</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">     * public due to the traversal.</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> <a class="code" href="a09534.html">entities::element</a>&amp; e);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> <a class="code" href="a09714.html">entities::structural::module</a>&amp; m);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> <a class="code" href="a09722.html">entities::structural::object_template</a>&amp; ot);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> <a class="code" href="a09690.html">entities::structural::builtin</a>&amp; b);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> <a class="code" href="a09702.html">entities::structural::enumeration</a>&amp; e);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> <a class="code" href="a09726.html">entities::structural::primitive</a>&amp; p);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> <a class="code" href="a09718.html">entities::structural::object</a>&amp; o);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> <a class="code" href="a09710.html">entities::structural::exception</a>&amp; e);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> operator()(<span class="keyword">const</span> entities::structural::visitor&amp; v);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">const</span> decomposition_result&amp; result() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">namespace </span>std {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> swap(</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    dogen::logical::helpers::mapping_context&amp; lhs,</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    dogen::logical::helpers::mapping_context&amp; rhs) {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    lhs.swap(rhs);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;}</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">static</span> decomposition_result</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    decompose(<span class="keyword">const</span> <a class="code" href="a09570.html">entities::model</a>&amp; em);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    decomposition_result result_;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aa09254_html"><div class="ttname"><a href="a09254.html">dogen::identification::entities::logical_id</a></div><div class="ttdoc">ID of the elment in the logical dimension.</div><div class="ttdef"><b>Definition:</b> logical_id.hpp:35</div></div>
+<div class="ttc" id="aa09274_html"><div class="ttname"><a href="a09274.html">dogen::identification::entities::logical_name</a></div><div class="ttdoc">Name of an element in logical space.</div><div class="ttdef"><b>Definition:</b> logical_name.hpp:50</div></div>
+<div class="ttc" id="aa09278_html"><div class="ttname"><a href="a09278.html">dogen::identification::entities::logical_name_tree</a></div><div class="ttdoc">Adds support for name composition as a tree-like structure.</div><div class="ttdef"><b>Definition:</b> logical_name_tree.hpp:44</div></div>
+<div class="ttc" id="aa09534_html"><div class="ttname"><a href="a09534.html">dogen::logical::entities::element</a></div><div class="ttdoc">Represents a generic logical construct.</div><div class="ttdef"><b>Definition:</b> element.hpp:58</div></div>
+<div class="ttc" id="aa09570_html"><div class="ttname"><a href="a09570.html">dogen::logical::entities::model</a></div><div class="ttdoc">Intermediate representation of a masd model.</div><div class="ttdef"><b>Definition:</b> model.hpp:67</div></div>
+<div class="ttc" id="aa09690_html"><div class="ttname"><a href="a09690.html">dogen::logical::entities::structural::builtin</a></div><div class="ttdoc">Represents a value type that is built-in at the hardware level.</div><div class="ttdef"><b>Definition:</b> builtin.hpp:37</div></div>
+<div class="ttc" id="aa09702_html"><div class="ttname"><a href="a09702.html">dogen::logical::entities::structural::enumeration</a></div><div class="ttdoc">Defines a bounded set of logically related values for a built-in type or a string.</div><div class="ttdef"><b>Definition:</b> enumeration.hpp:41</div></div>
+<div class="ttc" id="aa09710_html"><div class="ttname"><a href="a09710.html">dogen::logical::entities::structural::exception</a></div><div class="ttdoc">Represents an exception which can be thrown.</div><div class="ttdef"><b>Definition:</b> exception.hpp:37</div></div>
+<div class="ttc" id="aa09714_html"><div class="ttname"><a href="a09714.html">dogen::logical::entities::structural::module</a></div><div class="ttdoc">Container for other logical elements.</div><div class="ttdef"><b>Definition:</b> module.hpp:43</div></div>
+<div class="ttc" id="aa09718_html"><div class="ttname"><a href="a09718.html">dogen::logical::entities::structural::object</a></div><div class="ttdoc">Representation of the class notion in the OOP paradigm.</div><div class="ttdef"><b>Definition:</b> object.hpp:51</div></div>
+<div class="ttc" id="aa09722_html"><div class="ttname"><a href="a09722.html">dogen::logical::entities::structural::object_template</a></div><div class="ttdoc">Represents a structural template for masd objects.</div><div class="ttdef"><b>Definition:</b> object_template.hpp:42</div></div>
+<div class="ttc" id="aa09726_html"><div class="ttname"><a href="a09726.html">dogen::logical::entities::structural::primitive</a></div><div class="ttdoc">Defines an element created by the user to wrap another element, most likely a built-in.</div><div class="ttdef"><b>Definition:</b> primitive.hpp:41</div></div>
+<div class="ttc" id="aa10182_html"><div class="ttname"><a href="a10182.html">dogen::logical::helpers::decomposer</a></div><div class="ttdoc">Collect the names of all elements and attributes, for subsequent validation.</div><div class="ttdef"><b>Definition:</b> decomposer.hpp:52</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

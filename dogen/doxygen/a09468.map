@@ -1,4 +1,3 @@
-<map id="type_registrar" name="type_registrar">
-<area shape="rect" id="node1" title="Responsible for registering types for serialisation purposes." alt="" coords="5,1656,204,2115"/>
-<area shape="rect" id="node2" href="$a09330.html" title="Represents a generic logical construct." alt="" coords="19,5,191,1608"/>
+<map id="building_error" name="building_error">
+<area shape="rect" id="node1" title="An error has occurred while injecting types." alt="" coords="5,5,153,127"/>
 </map>

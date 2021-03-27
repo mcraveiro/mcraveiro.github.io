@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: facet_features Class Reference</title>
+<title>Dogen: builder Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,49 +63,48 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07335.html">physical</a></li><li class="navelem"><a class="el" href="a07339.html">features</a></li><li class="navelem"><a class="el" href="a10742.html">facet_features</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07528.html">org</a></li><li class="navelem"><b>helpers</b></li><li class="navelem"><a class="el" href="a10742.html">builder</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a10739.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">facet_features Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">builder Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Physical features common to all facets.  
+<p>Builds org documents.  
  <a href="a10742.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a03986_source.html">facet_features.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a18572_source.html">builder.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for facet_features:</div>
+Collaboration diagram for builder:</div>
 <div class="dyncontent">
-<div class="center"><img src="a10740.png" border="0" usemap="#afacet__features_coll__map" alt="Collaboration graph"/></div>
-<map name="afacet__features_coll__map" id="afacet__features_coll__map">
-<area shape="rect" title="Physical features common to all facets." alt="" coords="5,5,224,127"/>
+<div class="center"><img src="a10740.png" border="0" usemap="#abuilder_coll__map" alt="Collaboration graph"/></div>
+<map name="abuilder_coll__map" id="abuilder_coll__map">
+<area shape="rect" title="Builds org documents." alt="" coords="5,5,176,127"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a0447826ad46dd72164ada0e9c8d21351"><td class="memItemLeft" align="right" valign="top"><a id="a0447826ad46dd72164ada0e9c8d21351"></a>
-static feature_group&#160;</td><td class="memItemRight" valign="bottom"><b>make_feature_group</b> (const <a class="el" href="a13242.html">variability::entities::feature_model</a> &amp;fm)</td></tr>
-<tr class="separator:a0447826ad46dd72164ada0e9c8d21351"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abaa6b0e1d38fdc64a464f967ab7e9b48"><td class="memItemLeft" align="right" valign="top"><a id="abaa6b0e1d38fdc64a464f967ab7e9b48"></a>
-static static_configuration&#160;</td><td class="memItemRight" valign="bottom"><b>make_static_configuration</b> (const feature_group &amp;fg, const variability::entities::configuration &amp;cfg)</td></tr>
-<tr class="separator:abaa6b0e1d38fdc64a464f967ab7e9b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7eace8e86c71b0ce6da0a5cb452c1414"><td class="memTemplParams" colspan="2"><a id="a7eace8e86c71b0ce6da0a5cb452c1414"></a>
-template&lt;typename Configurable &gt; </td></tr>
-<tr class="memitem:a7eace8e86c71b0ce6da0a5cb452c1414"><td class="memTemplItemLeft" align="right" valign="top">static static_configuration&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_static_configuration</b> (const feature_group &amp;fg, const Configurable &amp;c)</td></tr>
-<tr class="separator:a7eace8e86c71b0ce6da0a5cb452c1414"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b50286ce10903f2b2d173fa287be625"><td class="memItemLeft" align="right" valign="top"><a id="a1b50286ce10903f2b2d173fa287be625"></a>
-static std::list&lt; <a class="el" href="a13250.html">dogen::variability::entities::feature_template</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>make_templates</b> ()</td></tr>
-<tr class="separator:a1b50286ce10903f2b2d173fa287be625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:af26b513833cd133a24b5af067ae1181d"><td class="memItemLeft" align="right" valign="top"><a id="af26b513833cd133a24b5af067ae1181d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10742.html#af26b513833cd133a24b5af067ae1181d">add_line</a> (const std::string &amp;s)</td></tr>
+<tr class="memdesc:af26b513833cd133a24b5af067ae1181d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds line to the builder. <br /></td></tr>
+<tr class="separator:af26b513833cd133a24b5af067ae1181d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1474c9725c29a6b912f7532e7d3cd5fd"><td class="memItemLeft" align="right" valign="top"><a id="a1474c9725c29a6b912f7532e7d3cd5fd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10742.html#a1474c9725c29a6b912f7532e7d3cd5fd">add_final_new_line</a> ()</td></tr>
+<tr class="memdesc:a1474c9725c29a6b912f7532e7d3cd5fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a final new line to the content. <br /></td></tr>
+<tr class="separator:a1474c9725c29a6b912f7532e7d3cd5fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4564201bcac761a99cf4705bb53577f"><td class="memItemLeft" align="right" valign="top"><a id="af4564201bcac761a99cf4705bb53577f"></a>
+entities::document&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10742.html#af4564201bcac761a99cf4705bb53577f">build</a> ()</td></tr>
+<tr class="memdesc:af4564201bcac761a99cf4705bb53577f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds an org mode document from the data supplied so far. <br /></td></tr>
+<tr class="separator:af4564201bcac761a99cf4705bb53577f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Physical features common to all facets. </p>
+<div class="textblock"><p>Builds org documents. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

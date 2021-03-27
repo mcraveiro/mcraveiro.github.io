@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: meta_model_properties_transform Class Reference</title>
+<title>Dogen: region Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,39 +63,121 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07335.html">physical</a></li><li class="navelem"><a class="el" href="a07338.html">transforms</a></li><li class="navelem"><a class="el" href="a10890.html">meta_model_properties_transform</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07539.html">physical</a></li><li class="navelem"><a class="el" href="a07540.html">entities</a></li><li class="navelem"><a class="el" href="a10890.html">region</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a10887.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">meta_model_properties_transform Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">region Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Populates the meta-model properties.  
+<p>Represents a region of logical-physical space fixed at one logical point.  
  <a href="a10890.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a04055_source.html">meta_model_properties_transform.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a04052_source.html">region.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for meta_model_properties_transform:</div>
+Collaboration diagram for region:</div>
 <div class="dyncontent">
-<div class="center"><img src="a10888.png" border="0" usemap="#ameta__model__properties__transform_coll__map" alt="Collaboration graph"/></div>
-<map name="ameta__model__properties__transform_coll__map" id="ameta__model__properties__transform_coll__map">
-<area shape="rect" title="Populates the meta&#45;model properties." alt="" coords="5,5,183,97"/>
+<div class="center"><img src="a10888.png" border="0" usemap="#aregion_coll__map" alt="Collaboration graph"/></div>
+<map name="aregion_coll__map" id="aregion_coll__map">
+<area shape="rect" title="Represents a region of logical&#45;physical space fixed at one logical point." alt="" coords="5,5,205,728"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aeae2c499c48023fbeb1a6ed6059e5844"><td class="memItemLeft" align="right" valign="top"><a id="aeae2c499c48023fbeb1a6ed6059e5844"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (const context &amp;ctx, <a class="el" href="a10650.html">entities::model</a> &amp;m)</td></tr>
-<tr class="separator:aeae2c499c48023fbeb1a6ed6059e5844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a9df5370aef6dcbc8ce9599c85a5ada7a"><td class="memItemLeft" align="right" valign="top"><a id="a9df5370aef6dcbc8ce9599c85a5ada7a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>region</b> (const <a class="el" href="a10890.html">region</a> &amp;)=default</td></tr>
+<tr class="separator:a9df5370aef6dcbc8ce9599c85a5ada7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a386e9d8be1c66943594c4ce6a6cbefa8"><td class="memItemLeft" align="right" valign="top"><a id="a386e9d8be1c66943594c4ce6a6cbefa8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>region</b> (<a class="el" href="a10890.html">region</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a386e9d8be1c66943594c4ce6a6cbefa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1866f067051a9fd79cc2268c444a0f44"><td class="memItemLeft" align="right" valign="top"><a id="a1866f067051a9fd79cc2268c444a0f44"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>region</b> (const boost::shared_ptr&lt; dogen::variability::entities::configuration &gt; &amp;<a class="el" href="a10890.html#a2aaf2edfc6c3a5e2f5b369171f6732e5">configuration</a>, const <a class="el" href="a09282.html">dogen::identification::entities::logical_provenance</a> &amp;<a class="el" href="a10890.html#a675f9c3355b4d2d4f72337a5d22d19ce">provenance</a>, const std::unordered_map&lt; <a class="el" href="a09298.html">dogen::identification::entities::physical_meta_id</a>, boost::shared_ptr&lt; <a class="el" href="a10806.html">dogen::physical::entities::artefact</a> &gt; &gt; &amp;<a class="el" href="a10890.html#aebcc1037d59a347ba1f1a5bea34203af">artefacts_by_archetype</a>, const std::unordered_map&lt; std::string, <a class="el" href="a09298.html">dogen::identification::entities::physical_meta_id</a> &gt; &amp;<a class="el" href="a10890.html#a8c7ce78b2991f47d1929c309e7ee564c">archetype_for_role</a>, const bool <a class="el" href="a10890.html#abc8416a44ade45914ab9d60bcfa575d3">is_generatable</a>)</td></tr>
+<tr class="separator:a1866f067051a9fd79cc2268c444a0f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a984f44bdaf0f24c0bdbab1712cf20b92"><td class="memItemLeft" align="right" valign="top"><a id="a984f44bdaf0f24c0bdbab1712cf20b92"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="a10890.html">region</a> &amp;rhs) const</td></tr>
+<tr class="separator:a984f44bdaf0f24c0bdbab1712cf20b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab78deab91fb4028b9c1f6aaf5ff66bfb"><td class="memItemLeft" align="right" valign="top"><a id="ab78deab91fb4028b9c1f6aaf5ff66bfb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="a10890.html">region</a> &amp;rhs) const</td></tr>
+<tr class="separator:ab78deab91fb4028b9c1f6aaf5ff66bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefa0ec68c1079ba6c2f838ef077b85d9"><td class="memItemLeft" align="right" valign="top"><a id="aefa0ec68c1079ba6c2f838ef077b85d9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="a10890.html">region</a> &amp;other) noexcept</td></tr>
+<tr class="separator:aefa0ec68c1079ba6c2f838ef077b85d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a589bc688a2a3f0cd3e9797b46b524c30"><td class="memItemLeft" align="right" valign="top"><a id="a589bc688a2a3f0cd3e9797b46b524c30"></a>
+<a class="el" href="a10890.html">region</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="a10890.html">region</a> other)</td></tr>
+<tr class="separator:a589bc688a2a3f0cd3e9797b46b524c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a2aaf2edfc6c3a5e2f5b369171f6732e5"><td class="memItemLeft" align="right" valign="top"><a id="a2aaf2edfc6c3a5e2f5b369171f6732e5"></a>
+const boost::shared_ptr&lt; dogen::variability::entities::configuration &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10890.html#a2aaf2edfc6c3a5e2f5b369171f6732e5">configuration</a> () const</td></tr>
+<tr class="memdesc:a2aaf2edfc6c3a5e2f5b369171f6732e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for this element. <br /></td></tr>
+<tr class="separator:a2aaf2edfc6c3a5e2f5b369171f6732e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75d70b4d31651b7ba6301ffacee2adaa"><td class="memItemLeft" align="right" valign="top"><a id="a75d70b4d31651b7ba6301ffacee2adaa"></a>
+boost::shared_ptr&lt; dogen::variability::entities::configuration &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>configuration</b> ()</td></tr>
+<tr class="separator:a75d70b4d31651b7ba6301ffacee2adaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94ab22e0efbcb8c63eee4dde325b127c"><td class="memItemLeft" align="right" valign="top"><a id="a94ab22e0efbcb8c63eee4dde325b127c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>configuration</b> (const boost::shared_ptr&lt; dogen::variability::entities::configuration &gt; &amp;v)</td></tr>
+<tr class="separator:a94ab22e0efbcb8c63eee4dde325b127c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a196fc0a0605943c7a74a780b00e83c41"><td class="memItemLeft" align="right" valign="top"><a id="a196fc0a0605943c7a74a780b00e83c41"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>configuration</b> (const boost::shared_ptr&lt; dogen::variability::entities::configuration &gt; &amp;&amp;v)</td></tr>
+<tr class="separator:a196fc0a0605943c7a74a780b00e83c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a675f9c3355b4d2d4f72337a5d22d19ce"><td class="memItemLeft" align="right" valign="top"><a id="a675f9c3355b4d2d4f72337a5d22d19ce"></a>
+const <a class="el" href="a09282.html">dogen::identification::entities::logical_provenance</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10890.html#a675f9c3355b4d2d4f72337a5d22d19ce">provenance</a> () const</td></tr>
+<tr class="memdesc:a675f9c3355b4d2d4f72337a5d22d19ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Details of the provenance of this model element. <br /></td></tr>
+<tr class="separator:a675f9c3355b4d2d4f72337a5d22d19ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2478539bd054c0cae14093747b26d109"><td class="memItemLeft" align="right" valign="top"><a id="a2478539bd054c0cae14093747b26d109"></a>
+<a class="el" href="a09282.html">dogen::identification::entities::logical_provenance</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>provenance</b> ()</td></tr>
+<tr class="separator:a2478539bd054c0cae14093747b26d109"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82996555273b8f135063012f0f058021"><td class="memItemLeft" align="right" valign="top"><a id="a82996555273b8f135063012f0f058021"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>provenance</b> (const <a class="el" href="a09282.html">dogen::identification::entities::logical_provenance</a> &amp;v)</td></tr>
+<tr class="separator:a82996555273b8f135063012f0f058021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcb9c9fa50708b96b076d16ea1e664eb"><td class="memItemLeft" align="right" valign="top"><a id="adcb9c9fa50708b96b076d16ea1e664eb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>provenance</b> (const <a class="el" href="a09282.html">dogen::identification::entities::logical_provenance</a> &amp;&amp;v)</td></tr>
+<tr class="separator:adcb9c9fa50708b96b076d16ea1e664eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:aebcc1037d59a347ba1f1a5bea34203af"><td class="memItemLeft" align="right" valign="top"><a id="aebcc1037d59a347ba1f1a5bea34203af"></a>
+const std::unordered_map&lt; <a class="el" href="a09298.html">dogen::identification::entities::physical_meta_id</a>, boost::shared_ptr&lt; <a class="el" href="a10806.html">dogen::physical::entities::artefact</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10890.html#aebcc1037d59a347ba1f1a5bea34203af">artefacts_by_archetype</a> () const</td></tr>
+<tr class="memdesc:aebcc1037d59a347ba1f1a5bea34203af"><td class="mdescLeft">&#160;</td><td class="mdescRight">All artefacts that are contained within this set, organised by archetype. <br /></td></tr>
+<tr class="separator:aebcc1037d59a347ba1f1a5bea34203af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a665272f2c9078da4bbb9b1730cd0dac8"><td class="memItemLeft" align="right" valign="top"><a id="a665272f2c9078da4bbb9b1730cd0dac8"></a>
+std::unordered_map&lt; <a class="el" href="a09298.html">dogen::identification::entities::physical_meta_id</a>, boost::shared_ptr&lt; <a class="el" href="a10806.html">dogen::physical::entities::artefact</a> &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>artefacts_by_archetype</b> ()</td></tr>
+<tr class="separator:a665272f2c9078da4bbb9b1730cd0dac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaca67ac22e00d8694caef1ece85e7847"><td class="memItemLeft" align="right" valign="top"><a id="aaca67ac22e00d8694caef1ece85e7847"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>artefacts_by_archetype</b> (const std::unordered_map&lt; <a class="el" href="a09298.html">dogen::identification::entities::physical_meta_id</a>, boost::shared_ptr&lt; <a class="el" href="a10806.html">dogen::physical::entities::artefact</a> &gt; &gt; &amp;v)</td></tr>
+<tr class="separator:aaca67ac22e00d8694caef1ece85e7847"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a447931476ad941e4ad4967903ac9ddf7"><td class="memItemLeft" align="right" valign="top"><a id="a447931476ad941e4ad4967903ac9ddf7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>artefacts_by_archetype</b> (const std::unordered_map&lt; <a class="el" href="a09298.html">dogen::identification::entities::physical_meta_id</a>, boost::shared_ptr&lt; <a class="el" href="a10806.html">dogen::physical::entities::artefact</a> &gt; &gt; &amp;&amp;v)</td></tr>
+<tr class="separator:a447931476ad941e4ad4967903ac9ddf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a8c7ce78b2991f47d1929c309e7ee564c"><td class="memItemLeft" align="right" valign="top"><a id="a8c7ce78b2991f47d1929c309e7ee564c"></a>
+const std::unordered_map&lt; std::string, <a class="el" href="a09298.html">dogen::identification::entities::physical_meta_id</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10890.html#a8c7ce78b2991f47d1929c309e7ee564c">archetype_for_role</a> () const</td></tr>
+<tr class="memdesc:a8c7ce78b2991f47d1929c309e7ee564c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolves a role into a concrete archetype, in the context of this logical element. <br /></td></tr>
+<tr class="separator:a8c7ce78b2991f47d1929c309e7ee564c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8f67ec4064e15e83e3810ecf06e31d5"><td class="memItemLeft" align="right" valign="top"><a id="af8f67ec4064e15e83e3810ecf06e31d5"></a>
+std::unordered_map&lt; std::string, <a class="el" href="a09298.html">dogen::identification::entities::physical_meta_id</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>archetype_for_role</b> ()</td></tr>
+<tr class="separator:af8f67ec4064e15e83e3810ecf06e31d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa19281187db6e2735503f01d739d2e6b"><td class="memItemLeft" align="right" valign="top"><a id="aa19281187db6e2735503f01d739d2e6b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>archetype_for_role</b> (const std::unordered_map&lt; std::string, <a class="el" href="a09298.html">dogen::identification::entities::physical_meta_id</a> &gt; &amp;v)</td></tr>
+<tr class="separator:aa19281187db6e2735503f01d739d2e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88d4c692fc51eecfc1e74c93963ddbc1"><td class="memItemLeft" align="right" valign="top"><a id="a88d4c692fc51eecfc1e74c93963ddbc1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>archetype_for_role</b> (const std::unordered_map&lt; std::string, <a class="el" href="a09298.html">dogen::identification::entities::physical_meta_id</a> &gt; &amp;&amp;v)</td></tr>
+<tr class="separator:a88d4c692fc51eecfc1e74c93963ddbc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:abc8416a44ade45914ab9d60bcfa575d3"><td class="memItemLeft" align="right" valign="top"><a id="abc8416a44ade45914ab9d60bcfa575d3"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10890.html#abc8416a44ade45914ab9d60bcfa575d3">is_generatable</a> () const</td></tr>
+<tr class="memdesc:abc8416a44ade45914ab9d60bcfa575d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">If false, the entire artefact set is not generatable. <br /></td></tr>
+<tr class="separator:abc8416a44ade45914ab9d60bcfa575d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b108ec85a4fd063e568779230a38099"><td class="memItemLeft" align="right" valign="top"><a id="a7b108ec85a4fd063e568779230a38099"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>is_generatable</b> (const bool v)</td></tr>
+<tr class="separator:a7b108ec85a4fd063e568779230a38099"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Populates the meta-model properties. </p>
+<div class="textblock"><p>Represents a region of logical-physical space fixed at one logical point. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

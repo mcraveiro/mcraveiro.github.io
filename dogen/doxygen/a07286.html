@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: dogen::orchestration::transforms Namespace Reference</title>
+<title>Dogen: dogen::codec::features Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,75 +63,40 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07285.html">orchestration</a></li><li class="navelem"><a class="el" href="a07286.html">transforms</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07282.html">codec</a></li><li class="navelem"><a class="el" href="a07286.html">features</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
-<div class="title">dogen::orchestration::transforms Namespace Reference</div>  </div>
+<div class="title">dogen::codec::features Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Top-level transforms for Dogen. These are the entry points to all transformations.  
+<p>Defines all of the features and feature groups used by the codec model.  
 <a href="a07286.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10406.html">code_generation_chain</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Responsible for transforming a high-level representation of a domain into code, in one or more primary technical spaces.  <a href="a10406.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08858.html">initializer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers all of the available feature templates with registrar.  <a href="a08858.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10410.html">codec_model_set_to_logical_input_model_set_chain</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an codec model set into a logical model set.  <a href="a10410.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08862.html">input_technical_space</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Feature bundle for the input technical space.  <a href="a08862.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10414.html">codec_model_to_logical_model_transform</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts an codec model into an logical representation.  <a href="a10414.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08874.html">meta_data</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assorted meta-data.  <a href="a08874.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10422.html">context_bootstrapping_chain</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bootstraps the transforms sub-system.  <a href="a10422.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08886.html">reference</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Features related to model referencing.  <a href="a08886.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10426.html">context_factory</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Factory that creates the transformation context.  <a href="a10426.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08898.html">uml</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Features related to all UML injectors.  <a href="a08898.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10430.html">elements_removal_transform</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all elements which are not required for code generation.  <a href="a10430.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10434.html">factory_exception</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An error occurred in the factory whilst making.  <a href="a10434.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10442.html">logical_model_to_text_model_chain</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transforms a logical model representation into a text representation, performing an expansion into physical space.  <a href="a10442.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10450.html">physical_to_logical_population_transform</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populate logical elements that require information from the physical dimension.  <a href="a10450.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10454.html">text_model_production_chain</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Produces a text model.  <a href="a10454.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10458.html">text_model_to_physical_model_transform</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts text models into physical models.  <a href="a10458.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ad0370cf7b4f54be68cb9c9300458a299"><td class="memItemLeft" align="right" valign="top"><a id="ad0370cf7b4f54be68cb9c9300458a299"></a>
-std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;&lt;</b> (std::ostream &amp;s, const dogen::orchestration::transforms::context &amp;v)</td></tr>
-<tr class="separator:ad0370cf7b4f54be68cb9c9300458a299"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a2eb553348632d5424a9633923a84d0"><td class="memTemplParams" colspan="2"><a id="a1a2eb553348632d5424a9633923a84d0"></a>
-template&lt;typename Element &gt; </td></tr>
-<tr class="memitem:a1a2eb553348632d5424a9633923a84d0"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><b>insert</b> (const boost::shared_ptr&lt; Element &gt; &amp;e, std::unordered_map&lt; <a class="el" href="a09050.html">logical_id</a>, boost::shared_ptr&lt; Element &gt;&gt; &amp;dst)</td></tr>
-<tr class="separator:a1a2eb553348632d5424a9633923a84d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a384a5df16283ac28e4ab89d1312e4f9e"><td class="memItemLeft" align="right" valign="top"><a id="a384a5df16283ac28e4ab89d1312e4f9e"></a>
-<a class="el" href="a07129.html#aca560c08bf06920a8d261d33c8a1474a">identification::entities::technical_space</a>&#160;</td><td class="memItemRight" valign="bottom"><b>to_technical_space</b> (const std::string &amp;s)</td></tr>
-<tr class="separator:a384a5df16283ac28e4ab89d1312e4f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea4433949b9bb20e2e1ef98b62786ad9"><td class="memItemLeft" align="right" valign="top"><a id="aea4433949b9bb20e2e1ef98b62786ad9"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>odb_target_comparer</b> (const logical::entities::orm::odb_target &amp;lhs, const logical::entities::orm::odb_target &amp;rhs)</td></tr>
-<tr class="separator:aea4433949b9bb20e2e1ef98b62786ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Top-level transforms for Dogen. These are the entry points to all transformations. </p>
+<div class="textblock"><p>Defines all of the features and feature groups used by the codec model. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

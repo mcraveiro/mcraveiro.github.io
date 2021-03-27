@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: modeline_formatter Class Reference</title>
+<title>Dogen: origin Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,40 +63,49 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07159.html">logical</a></li><li class="navelem"><a class="el" href="a07175.html">formatters</a></li><li class="navelem"><a class="el" href="a09962.html">modeline_formatter</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07363.html">logical</a></li><li class="navelem"><a class="el" href="a07378.html">features</a></li><li class="navelem"><a class="el" href="a09962.html">origin</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a09959.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">modeline_formatter Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">origin Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Creates a modeline, ready to be wrapped in comments.  
+<p>Features related to the origin of the model.  
  <a href="a09962.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a02372_source.html">modeline_formatter.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a02378_source.html">origin.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for modeline_formatter:</div>
+Collaboration diagram for origin:</div>
 <div class="dyncontent">
-<div class="center"><img src="a09960.png" border="0" usemap="#amodeline__formatter_coll__map" alt="Collaboration graph"/></div>
-<map name="amodeline__formatter_coll__map" id="amodeline__formatter_coll__map">
-<area shape="rect" title="Creates a modeline, ready to be wrapped in comments." alt="" coords="5,5,157,83"/>
+<div class="center"><img src="a09960.png" border="0" usemap="#aorigin_coll__map" alt="Collaboration graph"/></div>
+<map name="aorigin_coll__map" id="aorigin_coll__map">
+<area shape="rect" title="Features related to the origin of the model." alt="" coords="5,5,224,127"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a89dba3ee68107f7d4c12cef490d377b7"><td class="memItemLeft" align="right" valign="top"><a id="a89dba3ee68107f7d4c12cef490d377b7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>format</b> (std::ostream &amp;s, const <a class="el" href="a09318.html">entities::decoration::modeline</a> &amp;m) const</td></tr>
-<tr class="separator:a89dba3ee68107f7d4c12cef490d377b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aceeba7759767e8df6b727eba764e15c8"><td class="memItemLeft" align="right" valign="top"><a id="aceeba7759767e8df6b727eba764e15c8"></a>
+static feature_group&#160;</td><td class="memItemRight" valign="bottom"><b>make_feature_group</b> (const <a class="el" href="a13446.html">variability::entities::feature_model</a> &amp;fm)</td></tr>
+<tr class="separator:aceeba7759767e8df6b727eba764e15c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae32725d7f1436687418305e6b064ef7c"><td class="memItemLeft" align="right" valign="top"><a id="ae32725d7f1436687418305e6b064ef7c"></a>
+static static_configuration&#160;</td><td class="memItemRight" valign="bottom"><b>make_static_configuration</b> (const feature_group &amp;fg, const variability::entities::configuration &amp;cfg)</td></tr>
+<tr class="separator:ae32725d7f1436687418305e6b064ef7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eace8e86c71b0ce6da0a5cb452c1414"><td class="memTemplParams" colspan="2"><a id="a7eace8e86c71b0ce6da0a5cb452c1414"></a>
+template&lt;typename Configurable &gt; </td></tr>
+<tr class="memitem:a7eace8e86c71b0ce6da0a5cb452c1414"><td class="memTemplItemLeft" align="right" valign="top">static static_configuration&#160;</td><td class="memTemplItemRight" valign="bottom"><b>make_static_configuration</b> (const feature_group &amp;fg, const Configurable &amp;c)</td></tr>
+<tr class="separator:a7eace8e86c71b0ce6da0a5cb452c1414"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9b98c113e5c61a6f7a817603ef40562"><td class="memItemLeft" align="right" valign="top"><a id="ac9b98c113e5c61a6f7a817603ef40562"></a>
+static std::list&lt; <a class="el" href="a13442.html">dogen::variability::entities::feature</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>make_features</b> ()</td></tr>
+<tr class="separator:ac9b98c113e5c61a6f7a817603ef40562"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Creates a modeline, ready to be wrapped in comments. </p>
-<p>Note that the name modeline is slightly misleading because a bottom modeline may actually have more than one line. To wrap it into comments one must iterate through the lines. </p>
+<div class="textblock"><p>Features related to the origin of the model. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

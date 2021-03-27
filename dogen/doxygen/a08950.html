@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: string Class Reference</title>
+<title>Dogen: references_validator Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,71 +63,39 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07122.html">dia</a></li><li class="navelem"><a class="el" href="a07123.html">entities</a></li><li class="navelem"><a class="el" href="a08950.html">string</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07282.html">codec</a></li><li class="navelem"><b>helpers</b></li><li class="navelem"><a class="el" href="a08950.html">references_validator</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a08947.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">string Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">references_validator Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Represents a string value.  
+<p>Checks that there are no cycles in the references graph.  
  <a href="a08950.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00848_source.html">string.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00488_source.html">references_validator.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for string:</div>
+Collaboration diagram for references_validator:</div>
 <div class="dyncontent">
-<div class="center"><img src="a08948.png" border="0" usemap="#astring_coll__map" alt="Collaboration graph"/></div>
-<map name="astring_coll__map" id="astring_coll__map">
-<area shape="rect" title="Represents a string value." alt="" coords="5,5,129,317"/>
+<div class="center"><img src="a08948.png" border="0" usemap="#areferences__validator_coll__map" alt="Collaboration graph"/></div>
+<map name="areferences__validator_coll__map" id="areferences__validator_coll__map">
+<area shape="rect" title="Checks that there are no cycles in the references graph." alt="" coords="5,5,161,83"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:adca1e9593a2cecfdd44e740b851d73f5"><td class="memItemLeft" align="right" valign="top"><a id="adca1e9593a2cecfdd44e740b851d73f5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>string</b> (const <a class="el" href="a08950.html">string</a> &amp;)=default</td></tr>
-<tr class="separator:adca1e9593a2cecfdd44e740b851d73f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae676fe9d51bbf5aebf62a29e795160d9"><td class="memItemLeft" align="right" valign="top"><a id="ae676fe9d51bbf5aebf62a29e795160d9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>string</b> (<a class="el" href="a08950.html">string</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:ae676fe9d51bbf5aebf62a29e795160d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7fab7d4eace6505cdd25961ccd21d328"><td class="memItemLeft" align="right" valign="top"><a id="a7fab7d4eace6505cdd25961ccd21d328"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>string</b> (const std::string &amp;<a class="el" href="a08950.html#a565b661843feb1d3ecf78fff2ec3dcee">value</a>)</td></tr>
-<tr class="separator:a7fab7d4eace6505cdd25961ccd21d328"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61ff633580dac505cd75ce3f3a9802da"><td class="memItemLeft" align="right" valign="top"><a id="a61ff633580dac505cd75ce3f3a9802da"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="a08950.html">string</a> &amp;rhs) const</td></tr>
-<tr class="separator:a61ff633580dac505cd75ce3f3a9802da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fa829153f2465e4499025e7f232b2d3"><td class="memItemLeft" align="right" valign="top"><a id="a1fa829153f2465e4499025e7f232b2d3"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="a08950.html">string</a> &amp;rhs) const</td></tr>
-<tr class="separator:a1fa829153f2465e4499025e7f232b2d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbd7d7b95bd601d5382962bc715cac5f"><td class="memItemLeft" align="right" valign="top"><a id="acbd7d7b95bd601d5382962bc715cac5f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="a08950.html">string</a> &amp;other) noexcept</td></tr>
-<tr class="separator:acbd7d7b95bd601d5382962bc715cac5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad225791c9678f186931f12ee3255f66a"><td class="memItemLeft" align="right" valign="top"><a id="ad225791c9678f186931f12ee3255f66a"></a>
-<a class="el" href="a08950.html">string</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="a08950.html">string</a> other)</td></tr>
-<tr class="separator:ad225791c9678f186931f12ee3255f66a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a565b661843feb1d3ecf78fff2ec3dcee"><td class="memItemLeft" align="right" valign="top"><a id="a565b661843feb1d3ecf78fff2ec3dcee"></a>
-const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08950.html#a565b661843feb1d3ecf78fff2ec3dcee">value</a> () const</td></tr>
-<tr class="memdesc:a565b661843feb1d3ecf78fff2ec3dcee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a string value. <br /></td></tr>
-<tr class="separator:a565b661843feb1d3ecf78fff2ec3dcee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3835be5cc7d2b54bce3b961db2861244"><td class="memItemLeft" align="right" valign="top"><a id="a3835be5cc7d2b54bce3b961db2861244"></a>
-std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>value</b> ()</td></tr>
-<tr class="separator:a3835be5cc7d2b54bce3b961db2861244"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0cde0406998052f8b8cabd84bbca7d2f"><td class="memItemLeft" align="right" valign="top"><a id="a0cde0406998052f8b8cabd84bbca7d2f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>value</b> (const std::string &amp;v)</td></tr>
-<tr class="separator:a0cde0406998052f8b8cabd84bbca7d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48130c5e89b97a6035acf21993b59c0e"><td class="memItemLeft" align="right" valign="top"><a id="a48130c5e89b97a6035acf21993b59c0e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>value</b> (const std::string &amp;&amp;v)</td></tr>
-<tr class="separator:a48130c5e89b97a6035acf21993b59c0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aa3eec94e8ab76fe233de148d350fc0de"><td class="memItemLeft" align="right" valign="top"><a id="aa3eec94e8ab76fe233de148d350fc0de"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>validate</b> (const <a class="el" href="a08854.html">entities::reference_graph_data</a> &amp;rgd)</td></tr>
+<tr class="separator:aa3eec94e8ab76fe233de148d350fc0de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents a string value. </p>
+<div class="textblock"><p>Checks that there are no cycles in the references graph. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

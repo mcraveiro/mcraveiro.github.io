@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: ptime_helper_factory Class Reference</title>
+<title>Dogen: formatting_error Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,41 +63,44 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07401.html">text</a></li><li class="navelem"><a class="el" href="a07404.html">transforms</a></li><li class="navelem"><b>cpp</b></li><li class="navelem"><b>hash</b></li><li class="navelem"><a class="el" href="a11634.html">ptime_helper_factory</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07587.html">templating</a></li><li class="navelem"><b>wale</b></li><li class="navelem"><a class="el" href="a11634.html">formatting_error</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a11631.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ptime_helper_factory Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">formatting_error Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Creates a physical representation for the helper ptime_helper.  
+<p>An error occurred whilst formatting.  
  <a href="a11634.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a19991_source.html">ptime_helper_factory.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a19412_source.html">formatting_error.hpp</a>&gt;</code></p>
+
+<p>Inherits exception, and exception.</p>
 <div class="dynheader">
-Collaboration diagram for ptime_helper_factory:</div>
+Collaboration diagram for formatting_error:</div>
 <div class="dyncontent">
-<div class="center"><img src="a11632.png" border="0" usemap="#aptime__helper__factory_coll__map" alt="Collaboration graph"/></div>
-<map name="aptime__helper__factory_coll__map" id="aptime__helper__factory_coll__map">
-<area shape="rect" title="Creates a physical representation for the helper ptime_helper." alt="" coords="5,5,167,83"/>
+<div class="center"><img src="a11632.png" border="0" usemap="#aformatting__error_coll__map" alt="Collaboration graph"/></div>
+<map name="aformatting__error_coll__map" id="aformatting__error_coll__map">
+<area shape="rect" title="An error occurred whilst formatting." alt="" coords="5,5,171,127"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a90b0bd1bc73eeb8a3d7d04e7fbb68e5e"><td class="memItemLeft" align="right" valign="top"><a id="a90b0bd1bc73eeb8a3d7d04e7fbb68e5e"></a>
-static physical::entities::helper&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a11634.html#a90b0bd1bc73eeb8a3d7d04e7fbb68e5e">make</a> ()</td></tr>
-<tr class="memdesc:a90b0bd1bc73eeb8a3d7d04e7fbb68e5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes the helper. <br /></td></tr>
-<tr class="separator:a90b0bd1bc73eeb8a3d7d04e7fbb68e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a8acdbb528b041faa95ec25d5e652f102"><td class="memItemLeft" align="right" valign="top"><a id="a8acdbb528b041faa95ec25d5e652f102"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>formatting_error</b> (const std::string &amp;message)</td></tr>
+<tr class="separator:a8acdbb528b041faa95ec25d5e652f102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e01571e6589dc64e08addf4b1148a7a"><td class="memItemLeft" align="right" valign="top"><a id="a6e01571e6589dc64e08addf4b1148a7a"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>what</b> () const noexcept</td></tr>
+<tr class="separator:a6e01571e6589dc64e08addf4b1148a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Creates a physical representation for the helper ptime_helper. </p>
-<p>Helper documentation: </p>
+<div class="textblock"><p>An error occurred whilst formatting. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

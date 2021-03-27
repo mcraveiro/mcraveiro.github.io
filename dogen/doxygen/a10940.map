@@ -1,3 +1,3 @@
-<map id="remove_regions_transform" name="remove_regions_transform">
-<area shape="rect" id="node1" title="Remove all regions which do not contain generatable artefacts." alt="" coords="5,5,204,83"/>
+<map id="enablement" name="enablement">
+<area shape="rect" id="node1" title="Enablement related properties." alt="" coords="5,5,161,83"/>
 </map>

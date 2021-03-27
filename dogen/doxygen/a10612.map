@@ -1,3 +1,3 @@
-<map id="constant_relation" name="constant_relation">
-<area shape="rect" id="node1" title="Represents a relation between archetypes, fixed to a logical model element." alt="" coords="5,5,224,669"/>
+<map id="codec_model_set_to_logical_input_model_set_chain" name="codec_model_set_to_logical_input_model_set_chain">
+<area shape="rect" id="node1" title="Converts an codec model set into a logical model set." alt="" coords="5,5,165,112"/>
 </map>

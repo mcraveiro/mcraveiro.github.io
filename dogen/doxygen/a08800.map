@@ -1,3 +1,3 @@
-<map id="meta_data_transform" name="meta_data_transform">
-<area shape="rect" id="node1" title="Reads assorted meta&#45;data." alt="" coords="5,5,168,83"/>
+<map id="parser_exception" name="parser_exception">
+<area shape="rect" id="node1" title="A fatal error has occurred during option parsing." alt="" coords="5,5,176,127"/>
 </map>

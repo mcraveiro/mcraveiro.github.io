@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: smart_pointer_helper_factory Class Reference</title>
+<title>Dogen: model_set Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,41 +63,85 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07401.html">text</a></li><li class="navelem"><a class="el" href="a07404.html">transforms</a></li><li class="navelem"><b>cpp</b></li><li class="navelem"><b>hash</b></li><li class="navelem"><a class="el" href="a11658.html">smart_pointer_helper_factory</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07605.html">text</a></li><li class="navelem"><b>entities</b></li><li class="navelem"><a class="el" href="a11658.html">model_set</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a11655.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">smart_pointer_helper_factory Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">model_set Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Creates a physical representation for the helper smart_pointer_helper.  
+<p>Represents a set of related models.  
  <a href="a11658.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a20039_source.html">smart_pointer_helper_factory.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a18521_source.html">model_set.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for smart_pointer_helper_factory:</div>
+Collaboration diagram for model_set:</div>
 <div class="dyncontent">
-<div class="center"><img src="a11656.png" border="0" usemap="#asmart__pointer__helper__factory_coll__map" alt="Collaboration graph"/></div>
-<map name="asmart__pointer__helper__factory_coll__map" id="asmart__pointer__helper__factory_coll__map">
-<area shape="rect" title="Creates a physical representation for the helper smart_pointer_helper." alt="" coords="5,5,167,97"/>
+<div class="center"><img src="a11656.png" border="0" usemap="#amodel__set_coll__map" alt="Collaboration graph"/></div>
+<map name="amodel__set_coll__map" id="amodel__set_coll__map">
+<area shape="rect" title="Represents a set of related models." alt="" coords="5,5,132,435"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a90b0bd1bc73eeb8a3d7d04e7fbb68e5e"><td class="memItemLeft" align="right" valign="top"><a id="a90b0bd1bc73eeb8a3d7d04e7fbb68e5e"></a>
-static physical::entities::helper&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a11658.html#a90b0bd1bc73eeb8a3d7d04e7fbb68e5e">make</a> ()</td></tr>
-<tr class="memdesc:a90b0bd1bc73eeb8a3d7d04e7fbb68e5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes the helper. <br /></td></tr>
-<tr class="separator:a90b0bd1bc73eeb8a3d7d04e7fbb68e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a912a3eb6d6651125ad4195f2daed0f2f"><td class="memItemLeft" align="right" valign="top"><a id="a912a3eb6d6651125ad4195f2daed0f2f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>model_set</b> (const <a class="el" href="a11658.html">model_set</a> &amp;)=default</td></tr>
+<tr class="separator:a912a3eb6d6651125ad4195f2daed0f2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b62da26e095ad65bf3b63ab64cd85d0"><td class="memItemLeft" align="right" valign="top"><a id="a7b62da26e095ad65bf3b63ab64cd85d0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>model_set</b> (<a class="el" href="a11658.html">model_set</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a7b62da26e095ad65bf3b63ab64cd85d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b402474c6d866c8c8e747c361925551"><td class="memItemLeft" align="right" valign="top"><a id="a3b402474c6d866c8c8e747c361925551"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>model_set</b> (const <a class="el" href="a09282.html">dogen::identification::entities::logical_provenance</a> &amp;<a class="el" href="a11658.html#a675f9c3355b4d2d4f72337a5d22d19ce">provenance</a>, const std::list&lt; <a class="el" href="a11654.html">dogen::text::entities::model</a> &gt; &amp;<a class="el" href="a11658.html#a250140d23b65dbaf4ccf5336135a954d">models</a>)</td></tr>
+<tr class="separator:a3b402474c6d866c8c8e747c361925551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab87fe1b4b98dd2cbb8f642598cce0f53"><td class="memItemLeft" align="right" valign="top"><a id="ab87fe1b4b98dd2cbb8f642598cce0f53"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="a11658.html">model_set</a> &amp;rhs) const</td></tr>
+<tr class="separator:ab87fe1b4b98dd2cbb8f642598cce0f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0874f0be7637c28bdd68f0444db2f90a"><td class="memItemLeft" align="right" valign="top"><a id="a0874f0be7637c28bdd68f0444db2f90a"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="a11658.html">model_set</a> &amp;rhs) const</td></tr>
+<tr class="separator:a0874f0be7637c28bdd68f0444db2f90a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae81194870bf9490cd997ac17d1ff5e14"><td class="memItemLeft" align="right" valign="top"><a id="ae81194870bf9490cd997ac17d1ff5e14"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="a11658.html">model_set</a> &amp;other) noexcept</td></tr>
+<tr class="separator:ae81194870bf9490cd997ac17d1ff5e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedee584498e722c270e1b147d3b0f28c"><td class="memItemLeft" align="right" valign="top"><a id="aedee584498e722c270e1b147d3b0f28c"></a>
+<a class="el" href="a11658.html">model_set</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="a11658.html">model_set</a> other)</td></tr>
+<tr class="separator:aedee584498e722c270e1b147d3b0f28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a675f9c3355b4d2d4f72337a5d22d19ce"><td class="memItemLeft" align="right" valign="top"><a id="a675f9c3355b4d2d4f72337a5d22d19ce"></a>
+const <a class="el" href="a09282.html">dogen::identification::entities::logical_provenance</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a11658.html#a675f9c3355b4d2d4f72337a5d22d19ce">provenance</a> () const</td></tr>
+<tr class="memdesc:a675f9c3355b4d2d4f72337a5d22d19ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Details of the provenance of this model element. <br /></td></tr>
+<tr class="separator:a675f9c3355b4d2d4f72337a5d22d19ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2478539bd054c0cae14093747b26d109"><td class="memItemLeft" align="right" valign="top"><a id="a2478539bd054c0cae14093747b26d109"></a>
+<a class="el" href="a09282.html">dogen::identification::entities::logical_provenance</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>provenance</b> ()</td></tr>
+<tr class="separator:a2478539bd054c0cae14093747b26d109"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82996555273b8f135063012f0f058021"><td class="memItemLeft" align="right" valign="top"><a id="a82996555273b8f135063012f0f058021"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>provenance</b> (const <a class="el" href="a09282.html">dogen::identification::entities::logical_provenance</a> &amp;v)</td></tr>
+<tr class="separator:a82996555273b8f135063012f0f058021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcb9c9fa50708b96b076d16ea1e664eb"><td class="memItemLeft" align="right" valign="top"><a id="adcb9c9fa50708b96b076d16ea1e664eb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>provenance</b> (const <a class="el" href="a09282.html">dogen::identification::entities::logical_provenance</a> &amp;&amp;v)</td></tr>
+<tr class="separator:adcb9c9fa50708b96b076d16ea1e664eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a250140d23b65dbaf4ccf5336135a954d"><td class="memItemLeft" align="right" valign="top"><a id="a250140d23b65dbaf4ccf5336135a954d"></a>
+const std::list&lt; <a class="el" href="a11654.html">dogen::text::entities::model</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a11658.html#a250140d23b65dbaf4ccf5336135a954d">models</a> () const</td></tr>
+<tr class="memdesc:a250140d23b65dbaf4ccf5336135a954d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Models that belong to this set. <br /></td></tr>
+<tr class="separator:a250140d23b65dbaf4ccf5336135a954d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a753bce69d4b2561c0bea025dcecde292"><td class="memItemLeft" align="right" valign="top"><a id="a753bce69d4b2561c0bea025dcecde292"></a>
+std::list&lt; <a class="el" href="a11654.html">dogen::text::entities::model</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>models</b> ()</td></tr>
+<tr class="separator:a753bce69d4b2561c0bea025dcecde292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf6f75cf65e9f61c3e1fe93afe24e1da"><td class="memItemLeft" align="right" valign="top"><a id="adf6f75cf65e9f61c3e1fe93afe24e1da"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>models</b> (const std::list&lt; <a class="el" href="a11654.html">dogen::text::entities::model</a> &gt; &amp;v)</td></tr>
+<tr class="separator:adf6f75cf65e9f61c3e1fe93afe24e1da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10814def82635228c29c68f5a49fa323"><td class="memItemLeft" align="right" valign="top"><a id="a10814def82635228c29c68f5a49fa323"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>models</b> (const std::list&lt; <a class="el" href="a11654.html">dogen::text::entities::model</a> &gt; &amp;&amp;v)</td></tr>
+<tr class="separator:a10814def82635228c29c68f5a49fa323"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Creates a physical representation for the helper smart_pointer_helper. </p>
-<p>Helper documentation: </p>
+<div class="textblock"><p>Represents a set of related models. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

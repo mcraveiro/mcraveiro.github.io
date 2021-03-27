@@ -63,30 +63,21 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07335.html">physical</a></li><li class="navelem"><a class="el" href="a07336.html">entities</a></li><li class="navelem"><a class="el" href="a10630.html">hard_coded_relation</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07489.html">orchestration</a></li><li class="navelem"><a class="el" href="a07490.html">transforms</a></li><li class="navelem"><a class="el" href="a10630.html">context_factory</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">hard_coded_relation Member List</div>  </div>
+<div class="title">context_factory Member List</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a10630.html">hard_coded_relation</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="a10630.html">context_factory</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>hard_coded_relation</b>()=default (defined in <a class="el" href="a10630.html">hard_coded_relation</a>)</td><td class="entry"><a class="el" href="a10630.html">hard_coded_relation</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>hard_coded_relation</b>(const hard_coded_relation &amp;)=default (defined in <a class="el" href="a10630.html">hard_coded_relation</a>)</td><td class="entry"><a class="el" href="a10630.html">hard_coded_relation</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>hard_coded_relation</b>(hard_coded_relation &amp;&amp;)=default (defined in <a class="el" href="a10630.html">hard_coded_relation</a>)</td><td class="entry"><a class="el" href="a10630.html">hard_coded_relation</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>hard_coded_relation</b>(const std::string &amp;value) (defined in <a class="el" href="a10630.html">hard_coded_relation</a>)</td><td class="entry"><a class="el" href="a10630.html">hard_coded_relation</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>operator!=</b>(const hard_coded_relation &amp;rhs) const (defined in <a class="el" href="a10630.html">hard_coded_relation</a>)</td><td class="entry"><a class="el" href="a10630.html">hard_coded_relation</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>operator=</b>(hard_coded_relation other) (defined in <a class="el" href="a10630.html">hard_coded_relation</a>)</td><td class="entry"><a class="el" href="a10630.html">hard_coded_relation</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>operator==</b>(const hard_coded_relation &amp;rhs) const (defined in <a class="el" href="a10630.html">hard_coded_relation</a>)</td><td class="entry"><a class="el" href="a10630.html">hard_coded_relation</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>swap</b>(hard_coded_relation &amp;other) noexcept (defined in <a class="el" href="a10630.html">hard_coded_relation</a>)</td><td class="entry"><a class="el" href="a10630.html">hard_coded_relation</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>value</b>() const (defined in <a class="el" href="a10630.html">hard_coded_relation</a>)</td><td class="entry"><a class="el" href="a10630.html">hard_coded_relation</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>value</b>() (defined in <a class="el" href="a10630.html">hard_coded_relation</a>)</td><td class="entry"><a class="el" href="a10630.html">hard_coded_relation</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>value</b>(const std::string &amp;v) (defined in <a class="el" href="a10630.html">hard_coded_relation</a>)</td><td class="entry"><a class="el" href="a10630.html">hard_coded_relation</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>value</b>(const std::string &amp;&amp;v) (defined in <a class="el" href="a10630.html">hard_coded_relation</a>)</td><td class="entry"><a class="el" href="a10630.html">hard_coded_relation</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~hard_coded_relation</b>()=default (defined in <a class="el" href="a10630.html">hard_coded_relation</a>)</td><td class="entry"><a class="el" href="a10630.html">hard_coded_relation</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a10630.html#a7310fc11858ac45b1dee8b9399b0e410">make_codec_context</a>(const std::string &amp;activity, boost::shared_ptr&lt; tracing::tracer &gt; tracer, boost::shared_ptr&lt; physical::entities::meta_model &gt; pmm)</td><td class="entry"><a class="el" href="a10630.html">context_factory</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a10630.html#acfc78b11d99252a2c771795ac752541c">make_context</a>(const configuration &amp;cfg, const std::string &amp;activity, const std::vector&lt; boost::filesystem::path &gt; &amp;reference_directories, const boost::filesystem::path &amp;output_directory, const variability::transforms::context &amp;vctx, boost::shared_ptr&lt; variability::entities::feature_model &gt; fm, boost::shared_ptr&lt; physical::entities::meta_model &gt; pmm)</td><td class="entry"><a class="el" href="a10630.html">context_factory</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a10630.html#aa1de319215bd0afc636b8cf17e078af8">make_minimal_context</a>(boost::shared_ptr&lt; tracing::tracer &gt; tracer)</td><td class="entry"><a class="el" href="a10630.html">context_factory</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr><td class="entry"><a class="el" href="a10630.html#a160afa59ec93bc405504a3703be3c77b">make_variability_context</a>(const configuration &amp;cfg, boost::shared_ptr&lt; tracing::tracer &gt; tracer, const std::unordered_map&lt; std::string, std::vector&lt; std::string &gt;&gt; &amp;template_instantiation_domains)</td><td class="entry"><a class="el" href="a10630.html">context_factory</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

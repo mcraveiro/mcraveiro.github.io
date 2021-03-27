@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: potential_binding Class Reference</title>
+<title>Dogen: differ Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,80 +63,90 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07640.html">variability</a></li><li class="navelem"><a class="el" href="a07641.html">entities</a></li><li class="navelem"><a class="el" href="a13266.html">potential_binding</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07789.html">utility</a></li><li class="navelem"><b>string</b></li><li class="navelem"><a class="el" href="a13266.html">differ</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a13263.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">potential_binding Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">differ Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Contains information about a potential binding.  
+<p>Diffs two strings. Returns the result as a unified diff.  
  <a href="a13266.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a06773_source.html">potential_binding.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a06587_source.html">differ.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for potential_binding:</div>
+Collaboration diagram for differ:</div>
 <div class="dyncontent">
-<div class="center"><img src="a13264.png" border="0" usemap="#apotential__binding_coll__map" alt="Collaboration graph"/></div>
-<map name="apotential__binding_coll__map" id="apotential__binding_coll__map">
-<area shape="rect" title="Contains information about a potential binding." alt="" coords="5,5,176,376"/>
+<div class="center"><img src="a13264.png" border="0" usemap="#adiffer_coll__map" alt="Collaboration graph"/></div>
+<map name="adiffer_coll__map" id="adiffer_coll__map">
+<area shape="rect" title="Diffs two strings. Returns the result as a unified diff." alt="" coords="5,5,73,97"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:acf8257fac28a08474e4bfd33a8dca334"><td class="memItemLeft" align="right" valign="top"><a id="acf8257fac28a08474e4bfd33a8dca334"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>potential_binding</b> (const <a class="el" href="a13266.html">potential_binding</a> &amp;)=default</td></tr>
-<tr class="separator:acf8257fac28a08474e4bfd33a8dca334"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00282924b8b174285051554d16071bc5"><td class="memItemLeft" align="right" valign="top"><a id="a00282924b8b174285051554d16071bc5"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>potential_binding</b> (<a class="el" href="a13266.html">potential_binding</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a00282924b8b174285051554d16071bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad6dea38238198a3720c02e2c24944e2"><td class="memItemLeft" align="right" valign="top"><a id="aad6dea38238198a3720c02e2c24944e2"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>potential_binding</b> (const std::string &amp;<a class="el" href="a13266.html#a24dcbf29c0d6cd766009a182a6484e3b">name</a>, const bool <a class="el" href="a13266.html#aa415db759b837f7aee8c5747a9b36de5">realized</a>)</td></tr>
-<tr class="separator:aad6dea38238198a3720c02e2c24944e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7b894938207be85bfcfc74344af6028"><td class="memItemLeft" align="right" valign="top"><a id="af7b894938207be85bfcfc74344af6028"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="a13266.html">potential_binding</a> &amp;rhs) const</td></tr>
-<tr class="separator:af7b894938207be85bfcfc74344af6028"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a064a9f261ef6504e6d91b86c406dfbb8"><td class="memItemLeft" align="right" valign="top"><a id="a064a9f261ef6504e6d91b86c406dfbb8"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="a13266.html">potential_binding</a> &amp;rhs) const</td></tr>
-<tr class="separator:a064a9f261ef6504e6d91b86c406dfbb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96c6d53b5c614b6644884e220ea5e2e4"><td class="memItemLeft" align="right" valign="top"><a id="a96c6d53b5c614b6644884e220ea5e2e4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="a13266.html">potential_binding</a> &amp;other) noexcept</td></tr>
-<tr class="separator:a96c6d53b5c614b6644884e220ea5e2e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f4568d202996691afa88dd28069269e"><td class="memItemLeft" align="right" valign="top"><a id="a1f4568d202996691afa88dd28069269e"></a>
-<a class="el" href="a13266.html">potential_binding</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="a13266.html">potential_binding</a> other)</td></tr>
-<tr class="separator:a1f4568d202996691afa88dd28069269e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a24dcbf29c0d6cd766009a182a6484e3b"><td class="memItemLeft" align="right" valign="top"><a id="a24dcbf29c0d6cd766009a182a6484e3b"></a>
-const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a13266.html#a24dcbf29c0d6cd766009a182a6484e3b">name</a> () const</td></tr>
-<tr class="memdesc:a24dcbf29c0d6cd766009a182a6484e3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The name to bind to. This can represent a profile or configuration name, or an alias. <br /></td></tr>
-<tr class="separator:a24dcbf29c0d6cd766009a182a6484e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e655a505173f492cd64fc45cb2944c5"><td class="memItemLeft" align="right" valign="top"><a id="a7e655a505173f492cd64fc45cb2944c5"></a>
-std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> ()</td></tr>
-<tr class="separator:a7e655a505173f492cd64fc45cb2944c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae4514260ad7d701f50fad6a60ea2d97"><td class="memItemLeft" align="right" valign="top"><a id="aae4514260ad7d701f50fad6a60ea2d97"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> (const std::string &amp;v)</td></tr>
-<tr class="separator:aae4514260ad7d701f50fad6a60ea2d97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a864e4bd4bf33301730eafb43a9ee12"><td class="memItemLeft" align="right" valign="top"><a id="a6a864e4bd4bf33301730eafb43a9ee12"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> (const std::string &amp;&amp;v)</td></tr>
-<tr class="separator:a6a864e4bd4bf33301730eafb43a9ee12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:aa415db759b837f7aee8c5747a9b36de5"><td class="memItemLeft" align="right" valign="top"><a id="aa415db759b837f7aee8c5747a9b36de5"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a13266.html#aa415db759b837f7aee8c5747a9b36de5">realized</a> () const</td></tr>
-<tr class="memdesc:aa415db759b837f7aee8c5747a9b36de5"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, the potential binding was realised into an actual binding. <br /></td></tr>
-<tr class="separator:aa415db759b837f7aee8c5747a9b36de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c279f147490e24b2611519af8a6829f"><td class="memItemLeft" align="right" valign="top"><a id="a7c279f147490e24b2611519af8a6829f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>realized</b> (const bool v)</td></tr>
-<tr class="separator:a7c279f147490e24b2611519af8a6829f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a82bc9fbd71e2f9ebc4363c4b182c23f4"><td class="memItemLeft" align="right" valign="top"><a id="a82bc9fbd71e2f9ebc4363c4b182c23f4"></a>
+static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a13266.html#a82bc9fbd71e2f9ebc4363c4b182c23f4">diff</a> (const std::string &amp;a, const std::string &amp;b)</td></tr>
+<tr class="memdesc:a82bc9fbd71e2f9ebc4363c4b182c23f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns diff as a string. <br /></td></tr>
+<tr class="separator:a82bc9fbd71e2f9ebc4363c4b182c23f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa39d500d37936b25e46dd58e5c6c5e89"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a13266.html#aa39d500d37936b25e46dd58e5c6c5e89">diff</a> (const std::string &amp;a, const std::string &amp;b, std::ostream &amp;s)</td></tr>
+<tr class="memdesc:aa39d500d37936b25e46dd58e5c6c5e89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dumps diff into a stream.  <a href="a13266.html#aa39d500d37936b25e46dd58e5c6c5e89">More...</a><br /></td></tr>
+<tr class="separator:aa39d500d37936b25e46dd58e5c6c5e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Contains information about a potential binding. </p>
-</div></div><!-- contents -->
+<div class="textblock"><p>Diffs two strings. Returns the result as a unified diff. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa39d500d37936b25e46dd58e5c6c5e89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa39d500d37936b25e46dd58e5c6c5e89">&#9670;&nbsp;</a></span>diff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool diff </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>s</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Dumps diff into a stream. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if there are any differences, false otherwise. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1

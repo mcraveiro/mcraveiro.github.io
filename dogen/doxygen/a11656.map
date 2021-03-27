@@ -1,3 +1,3 @@
-<map id="smart_pointer_helper_factory" name="smart_pointer_helper_factory">
-<area shape="rect" id="node1" title="Creates a physical representation for the helper smart_pointer_helper." alt="" coords="5,5,167,97"/>
+<map id="model_set" name="model_set">
+<area shape="rect" id="node1" title="Represents a set of related models." alt="" coords="5,5,132,435"/>
 </map>

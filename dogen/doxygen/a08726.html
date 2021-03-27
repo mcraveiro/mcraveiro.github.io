@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: object_to_element_adapter Class Reference</title>
+<title>Dogen: mock_configuration_factory Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,40 +63,42 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07078.html">codec</a></li><li class="navelem"><b>helpers</b></li><li class="navelem"><a class="el" href="a08726.html">object_to_element_adapter</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a08726.html">mock_configuration_factory</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a08723.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">object_to_element_adapter Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">mock_configuration_factory Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Adapts objects into elements.  
+<p>Creates a configuration suitable for use in tests.  
  <a href="a08726.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00452_source.html">object_to_element_adapter.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00104_source.html">mock_configuration_factory.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for object_to_element_adapter:</div>
+Collaboration diagram for mock_configuration_factory:</div>
 <div class="dyncontent">
-<div class="center"><img src="a08724.png" border="0" usemap="#aobject__to__element__adapter_coll__map" alt="Collaboration graph"/></div>
-<map name="aobject__to__element__adapter_coll__map" id="aobject__to__element__adapter_coll__map">
-<area shape="rect" title="Adapts objects into elements." alt="" coords="5,5,205,83"/>
+<div class="center"><img src="a08724.png" border="0" usemap="#amock__configuration__factory_coll__map" alt="Collaboration graph"/></div>
+<map name="amock__configuration__factory_coll__map" id="amock__configuration__factory_coll__map">
+<area shape="rect" title="Creates a configuration suitable for use in tests." alt="" coords="5,5,171,127"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a2736db90231198fa97bb6a24dc7487fc"><td class="memItemLeft" align="right" valign="top"><a id="a2736db90231198fa97bb6a24dc7487fc"></a>
-static <a class="el" href="a08634.html">codec::entities::element</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08726.html#a2736db90231198fa97bb6a24dc7487fc">adapt</a> (const <a class="el" href="a08646.html">entities::object</a> &amp;po, const std::string &amp;contained_by, const std::list&lt; std::string &gt; &amp;parents)</td></tr>
-<tr class="memdesc:a2736db90231198fa97bb6a24dc7487fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adapts an object into an element. <br /></td></tr>
-<tr class="separator:a2736db90231198fa97bb6a24dc7487fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a9f98ae8c4ac55047268f43f2d242ee0d"><td class="memItemLeft" align="right" valign="top"><a id="a9f98ae8c4ac55047268f43f2d242ee0d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>mock_configuration_factory</b> (const bool enable_tracing, const bool enable_reporting, const bool enable_diffing)</td></tr>
+<tr class="separator:a9f98ae8c4ac55047268f43f2d242ee0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac80122462edc91733f5eed890733db3c"><td class="memItemLeft" align="right" valign="top"><a id="ac80122462edc91733f5eed890733db3c"></a>
+configuration&#160;</td><td class="memItemRight" valign="bottom"><b>make</b> (const boost::filesystem::path &amp;target, const std::string &amp;activity) const</td></tr>
+<tr class="separator:ac80122462edc91733f5eed890733db3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Adapts objects into elements. </p>
+<div class="textblock"><p>Creates a configuration suitable for use in tests. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: projection_error Class Reference</title>
+<title>Dogen: odb_options_transform Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,44 +63,48 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07285.html">orchestration</a></li><li class="navelem"><a class="el" href="a07289.html">helpers</a></li><li class="navelem"><a class="el" href="a10390.html">projection_error</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07363.html">logical</a></li><li class="navelem"><a class="el" href="a07376.html">transforms</a></li><li class="navelem"><a class="el" href="a10390.html">odb_options_transform</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a10387.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">projection_error Class Reference</div>  </div>
+<div class="title">odb_options_transform Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>An error ocurred whilst projecting elements from one space into another.  
+<p>Transforms the meta-model elements related to ODB options.  
  <a href="a10390.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a18395_source.html">projection_error.hpp</a>&gt;</code></p>
-
-<p>Inherits exception, and exception.</p>
+<p><code>#include &lt;<a class="el" href="a02603_source.html">odb_options_transform.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for projection_error:</div>
+Collaboration diagram for odb_options_transform:</div>
 <div class="dyncontent">
-<div class="center"><img src="a10388.png" border="0" usemap="#aprojection__error_coll__map" alt="Collaboration graph"/></div>
-<map name="aprojection__error_coll__map" id="aprojection__error_coll__map">
-<area shape="rect" title="An error ocurred whilst projecting elements from one space into another." alt="" coords="5,5,167,127"/>
+<div class="center"><img src="a10388.png" border="0" usemap="#aodb__options__transform_coll__map" alt="Collaboration graph"/></div>
+<map name="aodb__options__transform_coll__map" id="aodb__options__transform_coll__map">
+<area shape="rect" title="Transforms the meta&#45;model elements related to ODB options." alt="" coords="5,5,204,127"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a927df4080ceecf60a450751f003d1b47"><td class="memItemLeft" align="right" valign="top"><a id="a927df4080ceecf60a450751f003d1b47"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>projection_error</b> (const std::string &amp;message)</td></tr>
-<tr class="separator:a927df4080ceecf60a450751f003d1b47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e01571e6589dc64e08addf4b1148a7a"><td class="memItemLeft" align="right" valign="top"><a id="a6e01571e6589dc64e08addf4b1148a7a"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>what</b> () const noexcept</td></tr>
-<tr class="separator:a6e01571e6589dc64e08addf4b1148a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a30dccf0420aa976b1dcda4ed1d6af92d"><td class="memItemLeft" align="right" valign="top"><a id="a30dccf0420aa976b1dcda4ed1d6af92d"></a>
+static std::string&#160;</td><td class="memItemRight" valign="bottom"><b>to_odb_database</b> (const <a class="el" href="a07368.html#a1bebf3dfb8a2c68b11573c3e596a22d4">logical::entities::orm::database_system</a> ds)</td></tr>
+<tr class="separator:a30dccf0420aa976b1dcda4ed1d6af92d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e66d92dfebce513c332194dd70ea53a"><td class="memItemLeft" align="right" valign="top"><a id="a3e66d92dfebce513c332194dd70ea53a"></a>
+static std::string&#160;</td><td class="memItemRight" valign="bottom"><b>to_odb_sql_name_case</b> (const <a class="el" href="a07368.html#ab8fc5d9f80c5d0f1b66175e771a38cd2">logical::entities::orm::letter_case</a> lc)</td></tr>
+<tr class="separator:a3e66d92dfebce513c332194dd70ea53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc76518cca9ee58f7b31495e67dd7976"><td class="memItemLeft" align="right" valign="top"><a id="acc76518cca9ee58f7b31495e67dd7976"></a>
+static std::list&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>make_databases</b> (const logical::entities::orm::model_properties &amp;omp)</td></tr>
+<tr class="separator:acc76518cca9ee58f7b31495e67dd7976"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeae2c499c48023fbeb1a6ed6059e5844"><td class="memItemLeft" align="right" valign="top"><a id="aeae2c499c48023fbeb1a6ed6059e5844"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (const <a class="el" href="a10322.html">context</a> &amp;ctx, <a class="el" href="a09570.html">entities::model</a> &amp;m)</td></tr>
+<tr class="separator:aeae2c499c48023fbeb1a6ed6059e5844"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An error ocurred whilst projecting elements from one space into another. </p>
+<div class="textblock"><p>Transforms the meta-model elements related to ODB options. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

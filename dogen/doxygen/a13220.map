@@ -1,4 +1,3 @@
-<map id="configuration_point" name="configuration_point">
-<area shape="rect" id="node1" title="Maps a feature name to an instance value." alt="" coords="5,483,188,824"/>
-<area shape="rect" id="node2" href="$a13234.html" title="Represents an element modeling some aspect of variability." alt="" coords="37,5,156,435"/>
+<map id="utility_formatter" name="utility_formatter">
+<area shape="rect" id="node1" title="Mixed grab&#45;bag of formatting utilities." alt="" coords="5,5,203,171"/>
 </map>

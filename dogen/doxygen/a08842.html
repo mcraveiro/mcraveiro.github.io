@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: org_artefact_to_model_transform Class Reference</title>
+<title>Dogen: model Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,39 +63,203 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07078.html">codec</a></li><li class="navelem"><b>transforms</b></li><li class="navelem"><a class="el" href="a08842.html">org_artefact_to_model_transform</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07282.html">codec</a></li><li class="navelem"><a class="el" href="a07283.html">entities</a></li><li class="navelem"><a class="el" href="a08842.html">model</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a08839.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">org_artefact_to_model_transform Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">model Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Processes the artefact as if encoded as an org-mode document, and converts it into an instance of the codec model.  
+<p>Represents an external model.  
  <a href="a08842.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00533_source.html">org_artefact_to_model_transform.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a18491_source.html">model.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for org_artefact_to_model_transform:</div>
+Collaboration diagram for model:</div>
 <div class="dyncontent">
-<div class="center"><img src="a08840.png" border="0" usemap="#aorg__artefact__to__model__transform_coll__map" alt="Collaboration graph"/></div>
-<map name="aorg__artefact__to__model__transform_coll__map" id="aorg__artefact__to__model__transform_coll__map">
-<area shape="rect" title="Processes the artefact as if encoded as an org&#45;mode document, and converts it into an instance of the..." alt="" coords="5,5,175,97"/>
+<div class="center"><img src="a08840.png" border="0" usemap="#amodel_coll__map" alt="Collaboration graph"/></div>
+<map name="amodel_coll__map" id="amodel_coll__map">
+<area shape="rect" title="Represents an external model." alt="" coords="5,5,216,1168"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a779eb0c19fc5433eea109c3a77671c37"><td class="memItemLeft" align="right" valign="top"><a id="a779eb0c19fc5433eea109c3a77671c37"></a>
-static <a class="el" href="a08638.html">entities::model</a>&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (const transforms::context &amp;ctx, const entities::artefact &amp;a)</td></tr>
-<tr class="separator:a779eb0c19fc5433eea109c3a77671c37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aa59ba1d0acfacec0a04b9177daff4743"><td class="memItemLeft" align="right" valign="top"><a id="aa59ba1d0acfacec0a04b9177daff4743"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>model</b> (const <a class="el" href="a08842.html">model</a> &amp;)=default</td></tr>
+<tr class="separator:aa59ba1d0acfacec0a04b9177daff4743"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a502e14916e4ca596c42659bd60991bb8"><td class="memItemLeft" align="right" valign="top"><a id="a502e14916e4ca596c42659bd60991bb8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>model</b> (<a class="el" href="a08842.html">model</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a502e14916e4ca596c42659bd60991bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e95ed34a34adb2b61a7f9ee2c0d267e"><td class="memItemLeft" align="right" valign="top"><a id="a6e95ed34a34adb2b61a7f9ee2c0d267e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>model</b> (const std::list&lt; <a class="el" href="a09330.html">dogen::identification::entities::tagged_value</a> &gt; &amp;tagged_values, const std::list&lt; <a class="el" href="a09326.html">dogen::identification::entities::stereotype</a> &gt; &amp;stereotypes, const <a class="el" href="a09290.html">dogen::identification::entities::name</a> &amp;<a class="el" href="a08842.html#a7866e84cb50fd9b84ce19be2ccdb950f">name</a>, const boost::shared_ptr&lt; dogen::variability::entities::configuration &gt; &amp;<a class="el" href="a08842.html#a2aaf2edfc6c3a5e2f5b369171f6732e5">configuration</a>, const <a class="el" href="a09246.html">dogen::identification::entities::codec_provenance</a> &amp;<a class="el" href="a08842.html#a1a34fb1b452030d4055b6ad745f28b66">provenance</a>, const std::list&lt; <a class="el" href="a09330.html">dogen::identification::entities::tagged_value</a> &gt; &amp;<a class="el" href="a08842.html#a05c9be9f08f5e7249223c346b32e3e59">tagged_values_overrides</a>, const <a class="el" href="a08834.html">dogen::codec::entities::comment</a> &amp;<a class="el" href="a08834.html">comment</a>, const std::list&lt; <a class="el" href="a08838.html">dogen::codec::entities::element</a> &gt; &amp;elements, const std::string &amp;<a class="el" href="a08842.html#aa9dca3fe43775520ad605400abc85dd5">input_technical_space</a>, const std::list&lt; std::string &gt; &amp;references, const std::unordered_set&lt; std::string &gt; &amp;<a class="el" href="a08842.html#a34e4caec3c8a216740d86c7f9c821cb8">processed_variability_overrides</a>)</td></tr>
+<tr class="separator:a6e95ed34a34adb2b61a7f9ee2c0d267e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04dba2a67ea4f616c6601ba2e6098524"><td class="memItemLeft" align="right" valign="top"><a id="a04dba2a67ea4f616c6601ba2e6098524"></a>
+const std::list&lt; <a class="el" href="a09330.html">dogen::identification::entities::tagged_value</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>tagged_values</b> () const</td></tr>
+<tr class="separator:a04dba2a67ea4f616c6601ba2e6098524"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa32a8990f5fb08b4867f3a5c53e51313"><td class="memItemLeft" align="right" valign="top"><a id="aa32a8990f5fb08b4867f3a5c53e51313"></a>
+std::list&lt; <a class="el" href="a09330.html">dogen::identification::entities::tagged_value</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>tagged_values</b> ()</td></tr>
+<tr class="separator:aa32a8990f5fb08b4867f3a5c53e51313"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cf7a76f9807bd0332b14b7503b5446b"><td class="memItemLeft" align="right" valign="top"><a id="a5cf7a76f9807bd0332b14b7503b5446b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>tagged_values</b> (const std::list&lt; <a class="el" href="a09330.html">dogen::identification::entities::tagged_value</a> &gt; &amp;v)</td></tr>
+<tr class="separator:a5cf7a76f9807bd0332b14b7503b5446b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6085745176497d62d734eea5de136e4"><td class="memItemLeft" align="right" valign="top"><a id="ae6085745176497d62d734eea5de136e4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>tagged_values</b> (const std::list&lt; <a class="el" href="a09330.html">dogen::identification::entities::tagged_value</a> &gt; &amp;&amp;v)</td></tr>
+<tr class="separator:ae6085745176497d62d734eea5de136e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4fee3766cdf578d15ad87c71b5b7299"><td class="memItemLeft" align="right" valign="top"><a id="ad4fee3766cdf578d15ad87c71b5b7299"></a>
+const std::list&lt; <a class="el" href="a09326.html">dogen::identification::entities::stereotype</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>stereotypes</b> () const</td></tr>
+<tr class="separator:ad4fee3766cdf578d15ad87c71b5b7299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c0c644295acb65d69ace70f5f423483"><td class="memItemLeft" align="right" valign="top"><a id="a0c0c644295acb65d69ace70f5f423483"></a>
+std::list&lt; <a class="el" href="a09326.html">dogen::identification::entities::stereotype</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>stereotypes</b> ()</td></tr>
+<tr class="separator:a0c0c644295acb65d69ace70f5f423483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d4188bb9740d5e7c1bfa210382f6474"><td class="memItemLeft" align="right" valign="top"><a id="a4d4188bb9740d5e7c1bfa210382f6474"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stereotypes</b> (const std::list&lt; <a class="el" href="a09326.html">dogen::identification::entities::stereotype</a> &gt; &amp;v)</td></tr>
+<tr class="separator:a4d4188bb9740d5e7c1bfa210382f6474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac21fbb643a1b66116f18fd55e955d49c"><td class="memItemLeft" align="right" valign="top"><a id="ac21fbb643a1b66116f18fd55e955d49c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>stereotypes</b> (const std::list&lt; <a class="el" href="a09326.html">dogen::identification::entities::stereotype</a> &gt; &amp;&amp;v)</td></tr>
+<tr class="separator:ac21fbb643a1b66116f18fd55e955d49c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76b3b9741205de7e996a19dcd8f02e42"><td class="memItemLeft" align="right" valign="top"><a id="a76b3b9741205de7e996a19dcd8f02e42"></a>
+const std::list&lt; <a class="el" href="a08838.html">dogen::codec::entities::element</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>elements</b> () const</td></tr>
+<tr class="separator:a76b3b9741205de7e996a19dcd8f02e42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c9a521ed3cb75d886a37e80fe34e302"><td class="memItemLeft" align="right" valign="top"><a id="a6c9a521ed3cb75d886a37e80fe34e302"></a>
+std::list&lt; <a class="el" href="a08838.html">dogen::codec::entities::element</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>elements</b> ()</td></tr>
+<tr class="separator:a6c9a521ed3cb75d886a37e80fe34e302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb25c9b33b57495438466ca0b9056b42"><td class="memItemLeft" align="right" valign="top"><a id="acb25c9b33b57495438466ca0b9056b42"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>elements</b> (const std::list&lt; <a class="el" href="a08838.html">dogen::codec::entities::element</a> &gt; &amp;v)</td></tr>
+<tr class="separator:acb25c9b33b57495438466ca0b9056b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a897c099aac37e35f47793b4f89e3625d"><td class="memItemLeft" align="right" valign="top"><a id="a897c099aac37e35f47793b4f89e3625d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>elements</b> (const std::list&lt; <a class="el" href="a08838.html">dogen::codec::entities::element</a> &gt; &amp;&amp;v)</td></tr>
+<tr class="separator:a897c099aac37e35f47793b4f89e3625d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f774315ae2244c49822120374d7e0e2"><td class="memItemLeft" align="right" valign="top"><a id="a2f774315ae2244c49822120374d7e0e2"></a>
+const std::list&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>references</b> () const</td></tr>
+<tr class="separator:a2f774315ae2244c49822120374d7e0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7175f123f36d28b5d6f2082fd9df54f6"><td class="memItemLeft" align="right" valign="top"><a id="a7175f123f36d28b5d6f2082fd9df54f6"></a>
+std::list&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>references</b> ()</td></tr>
+<tr class="separator:a7175f123f36d28b5d6f2082fd9df54f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4d908ca8223d4548174e52436fc9d1c"><td class="memItemLeft" align="right" valign="top"><a id="aa4d908ca8223d4548174e52436fc9d1c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>references</b> (const std::list&lt; std::string &gt; &amp;v)</td></tr>
+<tr class="separator:aa4d908ca8223d4548174e52436fc9d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8aa9c93d0c801f58949ffa6bec0397b"><td class="memItemLeft" align="right" valign="top"><a id="aa8aa9c93d0c801f58949ffa6bec0397b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>references</b> (const std::list&lt; std::string &gt; &amp;&amp;v)</td></tr>
+<tr class="separator:aa8aa9c93d0c801f58949ffa6bec0397b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2483d2e6a035cf6969cbaa3c89951cb1"><td class="memItemLeft" align="right" valign="top"><a id="a2483d2e6a035cf6969cbaa3c89951cb1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="a08842.html">model</a> &amp;rhs) const</td></tr>
+<tr class="separator:a2483d2e6a035cf6969cbaa3c89951cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1bc51331514c4d952d34fd271cb7a40"><td class="memItemLeft" align="right" valign="top"><a id="ac1bc51331514c4d952d34fd271cb7a40"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="a08842.html">model</a> &amp;rhs) const</td></tr>
+<tr class="separator:ac1bc51331514c4d952d34fd271cb7a40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a1acd7f98466981e7e4c48032490c40"><td class="memItemLeft" align="right" valign="top"><a id="a0a1acd7f98466981e7e4c48032490c40"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="a08842.html">model</a> &amp;other) noexcept</td></tr>
+<tr class="separator:a0a1acd7f98466981e7e4c48032490c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ac62ece8433d330c39b84b8ebc33936"><td class="memItemLeft" align="right" valign="top"><a id="a3ac62ece8433d330c39b84b8ebc33936"></a>
+<a class="el" href="a08842.html">model</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="a08842.html">model</a> other)</td></tr>
+<tr class="separator:a3ac62ece8433d330c39b84b8ebc33936"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a7866e84cb50fd9b84ce19be2ccdb950f"><td class="memItemLeft" align="right" valign="top"><a id="a7866e84cb50fd9b84ce19be2ccdb950f"></a>
+const <a class="el" href="a09290.html">dogen::identification::entities::name</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08842.html#a7866e84cb50fd9b84ce19be2ccdb950f">name</a> () const</td></tr>
+<tr class="memdesc:a7866e84cb50fd9b84ce19be2ccdb950f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the codec element. <br /></td></tr>
+<tr class="separator:a7866e84cb50fd9b84ce19be2ccdb950f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a830a8786e7851b3a9e9b3f5bd55283d7"><td class="memItemLeft" align="right" valign="top"><a id="a830a8786e7851b3a9e9b3f5bd55283d7"></a>
+<a class="el" href="a09290.html">dogen::identification::entities::name</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> ()</td></tr>
+<tr class="separator:a830a8786e7851b3a9e9b3f5bd55283d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af42ea30973f339589a0124852b3b770f"><td class="memItemLeft" align="right" valign="top"><a id="af42ea30973f339589a0124852b3b770f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> (const <a class="el" href="a09290.html">dogen::identification::entities::name</a> &amp;v)</td></tr>
+<tr class="separator:af42ea30973f339589a0124852b3b770f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6412218f0a77a00eacc86ae32497934"><td class="memItemLeft" align="right" valign="top"><a id="ae6412218f0a77a00eacc86ae32497934"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>name</b> (const <a class="el" href="a09290.html">dogen::identification::entities::name</a> &amp;&amp;v)</td></tr>
+<tr class="separator:ae6412218f0a77a00eacc86ae32497934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a2aaf2edfc6c3a5e2f5b369171f6732e5"><td class="memItemLeft" align="right" valign="top"><a id="a2aaf2edfc6c3a5e2f5b369171f6732e5"></a>
+const boost::shared_ptr&lt; dogen::variability::entities::configuration &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08842.html#a2aaf2edfc6c3a5e2f5b369171f6732e5">configuration</a> () const</td></tr>
+<tr class="memdesc:a2aaf2edfc6c3a5e2f5b369171f6732e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Configuration for this element. <br /></td></tr>
+<tr class="separator:a2aaf2edfc6c3a5e2f5b369171f6732e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75d70b4d31651b7ba6301ffacee2adaa"><td class="memItemLeft" align="right" valign="top"><a id="a75d70b4d31651b7ba6301ffacee2adaa"></a>
+boost::shared_ptr&lt; dogen::variability::entities::configuration &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>configuration</b> ()</td></tr>
+<tr class="separator:a75d70b4d31651b7ba6301ffacee2adaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94ab22e0efbcb8c63eee4dde325b127c"><td class="memItemLeft" align="right" valign="top"><a id="a94ab22e0efbcb8c63eee4dde325b127c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>configuration</b> (const boost::shared_ptr&lt; dogen::variability::entities::configuration &gt; &amp;v)</td></tr>
+<tr class="separator:a94ab22e0efbcb8c63eee4dde325b127c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a196fc0a0605943c7a74a780b00e83c41"><td class="memItemLeft" align="right" valign="top"><a id="a196fc0a0605943c7a74a780b00e83c41"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>configuration</b> (const boost::shared_ptr&lt; dogen::variability::entities::configuration &gt; &amp;&amp;v)</td></tr>
+<tr class="separator:a196fc0a0605943c7a74a780b00e83c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a1a34fb1b452030d4055b6ad745f28b66"><td class="memItemLeft" align="right" valign="top"><a id="a1a34fb1b452030d4055b6ad745f28b66"></a>
+const <a class="el" href="a09246.html">dogen::identification::entities::codec_provenance</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08842.html#a1a34fb1b452030d4055b6ad745f28b66">provenance</a> () const</td></tr>
+<tr class="memdesc:a1a34fb1b452030d4055b6ad745f28b66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provenance details of this codec element. <br /></td></tr>
+<tr class="separator:a1a34fb1b452030d4055b6ad745f28b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3505d93cba19b30534ae5029442dc2fe"><td class="memItemLeft" align="right" valign="top"><a id="a3505d93cba19b30534ae5029442dc2fe"></a>
+<a class="el" href="a09246.html">dogen::identification::entities::codec_provenance</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>provenance</b> ()</td></tr>
+<tr class="separator:a3505d93cba19b30534ae5029442dc2fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32e2efabf4a0310bdbf7570ceb542ed2"><td class="memItemLeft" align="right" valign="top"><a id="a32e2efabf4a0310bdbf7570ceb542ed2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>provenance</b> (const <a class="el" href="a09246.html">dogen::identification::entities::codec_provenance</a> &amp;v)</td></tr>
+<tr class="separator:a32e2efabf4a0310bdbf7570ceb542ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a853ea9a368d80a0ae8557e19ee725ebf"><td class="memItemLeft" align="right" valign="top"><a id="a853ea9a368d80a0ae8557e19ee725ebf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>provenance</b> (const <a class="el" href="a09246.html">dogen::identification::entities::codec_provenance</a> &amp;&amp;v)</td></tr>
+<tr class="separator:a853ea9a368d80a0ae8557e19ee725ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a05c9be9f08f5e7249223c346b32e3e59"><td class="memItemLeft" align="right" valign="top"><a id="a05c9be9f08f5e7249223c346b32e3e59"></a>
+const std::list&lt; <a class="el" href="a09330.html">dogen::identification::entities::tagged_value</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08842.html#a05c9be9f08f5e7249223c346b32e3e59">tagged_values_overrides</a> () const</td></tr>
+<tr class="memdesc:a05c9be9f08f5e7249223c346b32e3e59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Meta-data sourced externally that can be used to override meta-data in model. <br /></td></tr>
+<tr class="separator:a05c9be9f08f5e7249223c346b32e3e59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eb2077732a4d2b984efcf88c52af002"><td class="memItemLeft" align="right" valign="top"><a id="a7eb2077732a4d2b984efcf88c52af002"></a>
+std::list&lt; <a class="el" href="a09330.html">dogen::identification::entities::tagged_value</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>tagged_values_overrides</b> ()</td></tr>
+<tr class="separator:a7eb2077732a4d2b984efcf88c52af002"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeeb5f149d06fa42e7b5f71ff1bd7266a"><td class="memItemLeft" align="right" valign="top"><a id="aeeb5f149d06fa42e7b5f71ff1bd7266a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>tagged_values_overrides</b> (const std::list&lt; <a class="el" href="a09330.html">dogen::identification::entities::tagged_value</a> &gt; &amp;v)</td></tr>
+<tr class="separator:aeeb5f149d06fa42e7b5f71ff1bd7266a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab22ce21f55de0934bf6f260ccdbf6263"><td class="memItemLeft" align="right" valign="top"><a id="ab22ce21f55de0934bf6f260ccdbf6263"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>tagged_values_overrides</b> (const std::list&lt; <a class="el" href="a09330.html">dogen::identification::entities::tagged_value</a> &gt; &amp;&amp;v)</td></tr>
+<tr class="separator:ab22ce21f55de0934bf6f260ccdbf6263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:abeda30034d0d3b0ef3bc28dd07eeb5d1"><td class="memItemLeft" align="right" valign="top"><a id="abeda30034d0d3b0ef3bc28dd07eeb5d1"></a>
+const <a class="el" href="a08834.html">dogen::codec::entities::comment</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08842.html#abeda30034d0d3b0ef3bc28dd07eeb5d1">comment</a> () const</td></tr>
+<tr class="memdesc:abeda30034d0d3b0ef3bc28dd07eeb5d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Properties associated with the codec comment. <br /></td></tr>
+<tr class="separator:abeda30034d0d3b0ef3bc28dd07eeb5d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e13af97466781d1601a750edd11eff1"><td class="memItemLeft" align="right" valign="top"><a id="a2e13af97466781d1601a750edd11eff1"></a>
+<a class="el" href="a08834.html">dogen::codec::entities::comment</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>comment</b> ()</td></tr>
+<tr class="separator:a2e13af97466781d1601a750edd11eff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9734a7d5c49dc01a5c48453d06c9759c"><td class="memItemLeft" align="right" valign="top"><a id="a9734a7d5c49dc01a5c48453d06c9759c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>comment</b> (const <a class="el" href="a08834.html">dogen::codec::entities::comment</a> &amp;v)</td></tr>
+<tr class="separator:a9734a7d5c49dc01a5c48453d06c9759c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32f572096fbf233ee4481c796dd616c8"><td class="memItemLeft" align="right" valign="top"><a id="a32f572096fbf233ee4481c796dd616c8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>comment</b> (const <a class="el" href="a08834.html">dogen::codec::entities::comment</a> &amp;&amp;v)</td></tr>
+<tr class="separator:a32f572096fbf233ee4481c796dd616c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:aa9dca3fe43775520ad605400abc85dd5"><td class="memItemLeft" align="right" valign="top"><a id="aa9dca3fe43775520ad605400abc85dd5"></a>
+const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08842.html#aa9dca3fe43775520ad605400abc85dd5">input_technical_space</a> () const</td></tr>
+<tr class="memdesc:aa9dca3fe43775520ad605400abc85dd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Technical space to which the model belongs, within the codec space. <br /></td></tr>
+<tr class="separator:aa9dca3fe43775520ad605400abc85dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9836acd8d58955305ee9121ac808e87"><td class="memItemLeft" align="right" valign="top"><a id="ad9836acd8d58955305ee9121ac808e87"></a>
+std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>input_technical_space</b> ()</td></tr>
+<tr class="separator:ad9836acd8d58955305ee9121ac808e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab41bccb59af967b20c634cbefda96291"><td class="memItemLeft" align="right" valign="top"><a id="ab41bccb59af967b20c634cbefda96291"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>input_technical_space</b> (const std::string &amp;v)</td></tr>
+<tr class="separator:ab41bccb59af967b20c634cbefda96291"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a829e9307a1e7fe3b7f5ef4508e02eab1"><td class="memItemLeft" align="right" valign="top"><a id="a829e9307a1e7fe3b7f5ef4508e02eab1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>input_technical_space</b> (const std::string &amp;&amp;v)</td></tr>
+<tr class="separator:a829e9307a1e7fe3b7f5ef4508e02eab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
+<tr class="memitem:a34e4caec3c8a216740d86c7f9c821cb8"><td class="memItemLeft" align="right" valign="top"><a id="a34e4caec3c8a216740d86c7f9c821cb8"></a>
+const std::unordered_set&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a08842.html#a34e4caec3c8a216740d86c7f9c821cb8">processed_variability_overrides</a> () const</td></tr>
+<tr class="memdesc:a34e4caec3c8a216740d86c7f9c821cb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">All the variability overrides that were processed by this model. <br /></td></tr>
+<tr class="separator:a34e4caec3c8a216740d86c7f9c821cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9b207ee211344d6da9caadc06c14b04"><td class="memItemLeft" align="right" valign="top"><a id="ac9b207ee211344d6da9caadc06c14b04"></a>
+std::unordered_set&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>processed_variability_overrides</b> ()</td></tr>
+<tr class="separator:ac9b207ee211344d6da9caadc06c14b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8d47585a948b3c6c296e68bdad972b6"><td class="memItemLeft" align="right" valign="top"><a id="ac8d47585a948b3c6c296e68bdad972b6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>processed_variability_overrides</b> (const std::unordered_set&lt; std::string &gt; &amp;v)</td></tr>
+<tr class="separator:ac8d47585a948b3c6c296e68bdad972b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89226dc1366c93b52192a9a6e0ab40a5"><td class="memItemLeft" align="right" valign="top"><a id="a89226dc1366c93b52192a9a6e0ab40a5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>processed_variability_overrides</b> (const std::unordered_set&lt; std::string &gt; &amp;&amp;v)</td></tr>
+<tr class="separator:a89226dc1366c93b52192a9a6e0ab40a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Processes the artefact as if encoded as an org-mode document, and converts it into an instance of the codec model. </p>
+<div class="textblock"><p>Represents an external model. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

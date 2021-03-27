@@ -1,3 +1,3 @@
-<map id="sequence_container_helper_factory" name="sequence_container_helper_factory">
-<area shape="rect" id="node1" title="Creates a physical representation for the helper sequence_container_helper." alt="" coords="5,5,157,97"/>
+<map id="logical_physical_region" name="logical_physical_region">
+<area shape="rect" id="node1" title="Represents a region of logical&#45;physical space with a single logical element and its associated physic..." alt="" coords="5,5,216,435"/>
 </map>

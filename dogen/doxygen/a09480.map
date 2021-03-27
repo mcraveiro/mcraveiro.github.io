@@ -1,4 +1,3 @@
-<map id="assistant" name="assistant">
-<area shape="rect" id="node1" title="General type to provide helpers." alt="" coords="33,1656,150,1880"/>
-<area shape="rect" id="node2" href="$a09330.html" title="Represents a generic logical construct." alt="" coords="5,5,177,1608"/>
+<map id="mock_model_factory::flags" name="mock_model_factory::flags">
+<area shape="rect" id="node1" title="Configuration flags for the mock factory." alt="" coords="5,5,224,508"/>
 </map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.text/include/dogen.text/types/formatters/header_guard_formatter.hpp Source File</title>
+<title>Dogen: /work/DomainDrivenConsulting/masd/dogen/integration/projects/dogen.templating/include/dogen.templating/io/stitch/text_template_body_io.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,12 +63,12 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_d0396150bcf57e911dff403e9b0739ba.html">dogen.text</a></li><li class="navelem"><a class="el" href="dir_8b3b310a3fe978bc384ba2728ff4d590.html">include</a></li><li class="navelem"><a class="el" href="dir_248786eec5607e5f0e503888893d78d4.html">dogen.text</a></li><li class="navelem"><a class="el" href="dir_eae8887358fa2693160c8fa64c912a82.html">types</a></li><li class="navelem"><a class="el" href="dir_24f4393d7ad855dff4236caa83336881.html">formatters</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_a9ec1ef424966475f993eb98877e3088.html">projects</a></li><li class="navelem"><a class="el" href="dir_f4eebff0b104affe1acf05072442cc8d.html">dogen.templating</a></li><li class="navelem"><a class="el" href="dir_b55880945fda2c00d27f64f090c8125d.html">include</a></li><li class="navelem"><a class="el" href="dir_07b8102628c20e0f53a745f86343bce3.html">dogen.templating</a></li><li class="navelem"><a class="el" href="dir_225a7ef4b4a27a372cec204a32852d5d.html">io</a></li><li class="navelem"><a class="el" href="dir_26b1fcaf0e5b2f7abf941de812cbe3e6.html">stitch</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">header_guard_formatter.hpp</div>  </div>
+<div class="title">text_template_body_io.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/* -*- mode: c++; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*-</span></div>
@@ -91,38 +91,25 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * MA 02110-1301, USA.</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_TEXT_TYPES_FORMATTERS_HEADER_GUARD_FORMATTER_HPP</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_TEXT_TYPES_FORMATTERS_HEADER_GUARD_FORMATTER_HPP</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifndef DOGEN_TEMPLATING_IO_STITCH_TEXT_TEMPLATE_BODY_IO_HPP</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define DOGEN_TEMPLATING_IO_STITCH_TEXT_TEMPLATE_BODY_IO_HPP</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#if defined(_MSC_VER) &amp;&amp; (_MSC_VER &gt;= 1200)</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;iosfwd&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;dogen.templating/types/stitch/text_template_body.hpp&quot;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span>dogen::text::formatters {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span>dogen::templating::stitch {</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="a11474.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="a11474.html">header_guard_formatter</a> final {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="a11474.html">header_guard_formatter</a>(std::ostream&amp; s, <span class="keyword">const</span> std::string&amp; header_guard);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a11474.html#a55f584e44cf4b396c82ef12479c4cae0">format_begin</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="a11474.html#ab246e5814b29c65238a74b459fec9214">format_end</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    std::ostream&amp; stream_;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">const</span> std::string header_guard_;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aa11474_html"><div class="ttname"><a href="a11474.html">dogen::text::formatters::header_guard_formatter</a></div><div class="ttdoc">Generates C++ header guards.</div><div class="ttdef"><b>Definition:</b> header_guard_formatter.hpp:36</div></div>
-<div class="ttc" id="aa11474_html_a55f584e44cf4b396c82ef12479c4cae0"><div class="ttname"><a href="a11474.html#a55f584e44cf4b396c82ef12479c4cae0">dogen::text::formatters::header_guard_formatter::format_begin</a></div><div class="ttdeci">void format_begin()</div><div class="ttdoc">Creates the starting block of the header guard.</div><div class="ttdef"><b>Definition:</b> header_guard_formatter.cpp:51</div></div>
-<div class="ttc" id="aa11474_html_ab246e5814b29c65238a74b459fec9214"><div class="ttname"><a href="a11474.html#ab246e5814b29c65238a74b459fec9214">dogen::text::formatters::header_guard_formatter::format_end</a></div><div class="ttdeci">void format_end()</div><div class="ttdoc">Creates the ending block of the header guard.</div><div class="ttdef"><b>Definition:</b> header_guard_formatter.cpp:65</div></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;std::ostream&amp;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;operator&lt;&lt;(std::ostream&amp; s,</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;     <span class="keyword">const</span> dogen::templating::stitch::text_template_body&amp; v);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

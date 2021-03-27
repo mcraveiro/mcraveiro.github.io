@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: variability_profiles_chain Class Reference</title>
+<title>Dogen: profile_adapter Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07159.html">logical</a></li><li class="navelem"><a class="el" href="a07172.html">transforms</a></li><li class="navelem"><a class="el" href="a10262.html">variability_profiles_chain</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07363.html">logical</a></li><li class="navelem"><b>helpers</b></li><li class="navelem"><a class="el" href="a10262.html">profile_adapter</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -71,34 +71,32 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a10259.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">variability_profiles_chain Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">profile_adapter Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Handles the application of variability into the model set currently being processed.  
+<p>Adapts all types in a model set related to variability profiles into their variability counterparts.  
  <a href="a10262.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a02609_source.html">variability_profiles_chain.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a02516_source.html">profile_adapter.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for variability_profiles_chain:</div>
+Collaboration diagram for profile_adapter:</div>
 <div class="dyncontent">
-<div class="center"><img src="a10260.png" border="0" usemap="#avariability__profiles__chain_coll__map" alt="Collaboration graph"/></div>
-<map name="avariability__profiles__chain_coll__map" id="avariability__profiles__chain_coll__map">
-<area shape="rect" title="Handles the application of variability into the model set currently being processed." alt="" coords="5,5,148,97"/>
+<div class="center"><img src="a10260.png" border="0" usemap="#aprofile__adapter_coll__map" alt="Collaboration graph"/></div>
+<map name="aprofile__adapter_coll__map" id="aprofile__adapter_coll__map">
+<area shape="rect" title="Adapts all types in a model set related to variability profiles into their variability counterparts." alt="" coords="5,5,125,83"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ae0196927fdda74e64c5adfa84984f0c4"><td class="memItemLeft" align="right" valign="top"><a id="ae0196927fdda74e64c5adfa84984f0c4"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10262.html#ae0196927fdda74e64c5adfa84984f0c4">apply</a> (const <a class="el" href="a10118.html">context</a> &amp;ctx, <a class="el" href="a09346.html">entities::input_model_set</a> &amp;ms)</td></tr>
-<tr class="memdesc:ae0196927fdda74e64c5adfa84984f0c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies the transform to the entire model set. <br /></td></tr>
-<tr class="separator:ae0196927fdda74e64c5adfa84984f0c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a488b814c0a32249e0b9303a2d9f56c28"><td class="memItemLeft" align="right" valign="top"><a id="a488b814c0a32249e0b9303a2d9f56c28"></a>
+static variability::transforms::profile_repository_inputs&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10262.html#a488b814c0a32249e0b9303a2d9f56c28">adapt</a> (const <a class="el" href="a13446.html">variability::entities::feature_model</a> &amp;fm, const <a class="el" href="a09550.html">entities::input_model_set</a> &amp;ms, const bool compatibility_mode)</td></tr>
+<tr class="memdesc:a488b814c0a32249e0b9303a2d9f56c28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adapts a model set into the inputs required to build a profile repository. <br /></td></tr>
+<tr class="separator:a488b814c0a32249e0b9303a2d9f56c28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Handles the application of variability into the model set currently being processed. </p>
-<p>The variability profiles chain has the responsibility of initialising the "user-data" part of the variability subsystem. This is the second phase of variability processing; it presumes that the first phase was already performed - that is, the codec of all of the available features into a feature model.</p>
-<p>Profiles provide "named configurations" defined by users that allow for the packaging and sharing of configuration. The job of this transform is to locate all of the meta-model types that provide profile information (profiles and profile templates), convert them into the corresponding variability counterparts and then execute all of the required variability transforms. </p>
+<div class="textblock"><p>Adapts all types in a model set related to variability profiles into their variability counterparts. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

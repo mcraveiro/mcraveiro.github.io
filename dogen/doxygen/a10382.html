@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: dependencies_builder Class Reference</title>
+<title>Dogen: modules_transform Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,86 +63,39 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07285.html">orchestration</a></li><li class="navelem"><a class="el" href="a07289.html">helpers</a></li><li class="navelem"><a class="el" href="a10382.html">dependencies_builder</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07363.html">logical</a></li><li class="navelem"><a class="el" href="a07376.html">transforms</a></li><li class="navelem"><a class="el" href="a10382.html">modules_transform</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a10379.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">dependencies_builder Class Reference</div>  </div>
+<div class="title">modules_transform Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Helps in building the inclusion dependencies for a given formatteridentification::entities::logical_meta_physical_id.  
+<p>Generates all of the modules implied by the defined types.  
  <a href="a10382.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a03410_source.html">dependencies_builder.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a02597_source.html">modules_transform.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for dependencies_builder:</div>
+Collaboration diagram for modules_transform:</div>
 <div class="dyncontent">
-<div class="center"><img src="a10380.png" border="0" usemap="#adependencies__builder_coll__map" alt="Collaboration graph"/></div>
-<map name="adependencies__builder_coll__map" id="adependencies__builder_coll__map">
-<area shape="rect" title="Helps in building the inclusion dependencies for a given formatteridentification::entities::logical_m..." alt="" coords="5,5,195,376"/>
+<div class="center"><img src="a10380.png" border="0" usemap="#amodules__transform_coll__map" alt="Collaboration graph"/></div>
+<map name="amodules__transform_coll__map" id="amodules__transform_coll__map">
+<area shape="rect" title="Generates all of the modules implied by the defined types." alt="" coords="5,5,155,83"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:ae88e04f19a2b248563aefc023de8ebcf"><td class="memItemLeft" align="right" valign="top"><a id="ae88e04f19a2b248563aefc023de8ebcf"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>dependencies_builder</b> (const std::unordered_map&lt; <a class="el" href="a09066.html">identification::entities::logical_meta_physical_id</a>, <a class="el" href="a10638.html">physical::entities::inclusion_directives</a> &gt; &amp;ids, const std::unordered_set&lt; <a class="el" href="a09066.html">identification::entities::logical_meta_physical_id</a> &gt; &amp;enabled_archetype_for_element)</td></tr>
-<tr class="separator:ae88e04f19a2b248563aefc023de8ebcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0f6e905935b972e5a7459f96e065de7"><td class="memItemLeft" align="right" valign="top"><a id="ad0f6e905935b972e5a7459f96e065de7"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10382.html#ad0f6e905935b972e5a7459f96e065de7">is_enabled</a> (const <a class="el" href="a09070.html">identification::entities::logical_name</a> &amp;n, const std::string &amp;archetype) const</td></tr>
-<tr class="memdesc:ad0f6e905935b972e5a7459f96e065de7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the formatter is enabled. <br /></td></tr>
-<tr class="separator:ad0f6e905935b972e5a7459f96e065de7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a279563a8e085463f18fdc89b6e154668"><td class="memItemLeft" align="right" valign="top"><a id="a279563a8e085463f18fdc89b6e154668"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10382.html#a279563a8e085463f18fdc89b6e154668">add</a> (const std::list&lt; <a class="el" href="a09070.html">identification::entities::logical_name</a> &gt; &amp;names, const std::string &amp;archetype)</td></tr>
-<tr class="memdesc:a279563a8e085463f18fdc89b6e154668"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the inclusion directives for the supplied archetype, for each of the supplied names. <br /></td></tr>
-<tr class="separator:a279563a8e085463f18fdc89b6e154668"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae117eafc7ae748b3ac66db5d7dde7bc9"><td class="memItemLeft" align="right" valign="top"><a id="ae117eafc7ae748b3ac66db5d7dde7bc9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10382.html#ae117eafc7ae748b3ac66db5d7dde7bc9">add</a> (const std::list&lt; <a class="el" href="a09070.html">identification::entities::logical_name</a> &gt; &amp;names, const <a class="el" href="a09094.html">identification::entities::physical_meta_id</a> &amp;archetype)</td></tr>
-<tr class="memdesc:ae117eafc7ae748b3ac66db5d7dde7bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the inclusion directives for the supplied archetype, for each of the supplied names. <br /></td></tr>
-<tr class="separator:ae117eafc7ae748b3ac66db5d7dde7bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07c5f20161659c262fdf085b892f5c30"><td class="memItemLeft" align="right" valign="top"><a id="a07c5f20161659c262fdf085b892f5c30"></a>
-std::list&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10382.html#a07c5f20161659c262fdf085b892f5c30">build</a> ()</td></tr>
-<tr class="memdesc:a07c5f20161659c262fdf085b892f5c30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds the inclusion dependencies. All additions must have been performed already. <br /></td></tr>
-<tr class="separator:a07c5f20161659c262fdf085b892f5c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a5a6dcaabcbe3d8b04c76242f79070aec"><td class="memItemLeft" align="right" valign="top"><a id="a5a6dcaabcbe3d8b04c76242f79070aec"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10382.html#a5a6dcaabcbe3d8b04c76242f79070aec">add</a> (const std::string &amp;directive)</td></tr>
-<tr class="memdesc:a5a6dcaabcbe3d8b04c76242f79070aec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the supplied inclusion directive. <br /></td></tr>
-<tr class="separator:a5a6dcaabcbe3d8b04c76242f79070aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cd0397cfa23d28e6036593b41dcfa5e"><td class="memItemLeft" align="right" valign="top"><a id="a4cd0397cfa23d28e6036593b41dcfa5e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (const std::list&lt; std::string &gt; &amp;directives)</td></tr>
-<tr class="separator:a4cd0397cfa23d28e6036593b41dcfa5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35de5ef522d931c6d3f90ea020bee881"><td class="memItemLeft" align="right" valign="top"><a id="a35de5ef522d931c6d3f90ea020bee881"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10382.html#a35de5ef522d931c6d3f90ea020bee881">add_as_system</a> (const std::string &amp;directive)</td></tr>
-<tr class="memdesc:a35de5ef522d931c6d3f90ea020bee881"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds include as a system include, i.e. with angle brackets. <br /></td></tr>
-<tr class="separator:a35de5ef522d931c6d3f90ea020bee881"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec93879004b8bbe1b72e1afcac5bd128"><td class="memItemLeft" align="right" valign="top"><a id="aec93879004b8bbe1b72e1afcac5bd128"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10382.html#aec93879004b8bbe1b72e1afcac5bd128">add_as_user</a> (const std::string &amp;directive)</td></tr>
-<tr class="memdesc:aec93879004b8bbe1b72e1afcac5bd128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds include as a user include, i.e. with double quotes. <br /></td></tr>
-<tr class="separator:aec93879004b8bbe1b72e1afcac5bd128"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf64f6779528f27a7dec4fecb78fea26"><td class="memItemLeft" align="right" valign="top"><a id="aaf64f6779528f27a7dec4fecb78fea26"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10382.html#aaf64f6779528f27a7dec4fecb78fea26">add</a> (const <a class="el" href="a09070.html">identification::entities::logical_name</a> &amp;n, const std::string &amp;archetype)</td></tr>
-<tr class="memdesc:aaf64f6779528f27a7dec4fecb78fea26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the inclusion directive for the supplied archetype and name. <br /></td></tr>
-<tr class="separator:aaf64f6779528f27a7dec4fecb78fea26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeeca5d9ef24639dfbf296cb7bbfedb40"><td class="memItemLeft" align="right" valign="top"><a id="aeeca5d9ef24639dfbf296cb7bbfedb40"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (const boost::optional&lt; <a class="el" href="a09070.html">identification::entities::logical_name</a> &gt; &amp;n, const std::string &amp;archetype)</td></tr>
-<tr class="separator:aeeca5d9ef24639dfbf296cb7bbfedb40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a89f1d578c5251626d25e0df81d1f6844"><td class="memItemLeft" align="right" valign="top"><a id="a89f1d578c5251626d25e0df81d1f6844"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a10382.html#a89f1d578c5251626d25e0df81d1f6844">add</a> (const <a class="el" href="a09070.html">identification::entities::logical_name</a> &amp;n, const <a class="el" href="a09094.html">identification::entities::physical_meta_id</a> &amp;archetype)</td></tr>
-<tr class="memdesc:a89f1d578c5251626d25e0df81d1f6844"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the inclusion directive for the supplied archetype and name. <br /></td></tr>
-<tr class="separator:a89f1d578c5251626d25e0df81d1f6844"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93c058d37828085fe8b30ad0feef261e"><td class="memItemLeft" align="right" valign="top"><a id="a93c058d37828085fe8b30ad0feef261e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (const boost::optional&lt; <a class="el" href="a09070.html">identification::entities::logical_name</a> &gt; &amp;n, const <a class="el" href="a09094.html">identification::entities::physical_meta_id</a> &amp;archetype)</td></tr>
-<tr class="separator:a93c058d37828085fe8b30ad0feef261e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aeae2c499c48023fbeb1a6ed6059e5844"><td class="memItemLeft" align="right" valign="top"><a id="aeae2c499c48023fbeb1a6ed6059e5844"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (const <a class="el" href="a10322.html">context</a> &amp;ctx, <a class="el" href="a09570.html">entities::model</a> &amp;m)</td></tr>
+<tr class="separator:aeae2c499c48023fbeb1a6ed6059e5844"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Helps in building the inclusion dependencies for a given formatteridentification::entities::logical_meta_physical_id. </p>
+<div class="textblock"><p>Generates all of the modules implied by the defined types. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

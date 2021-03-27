@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: legacy_paths_transform Class Reference</title>
+<title>Dogen: outputting_properties Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,39 +63,87 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07335.html">physical</a></li><li class="navelem"><a class="el" href="a07338.html">transforms</a></li><li class="navelem"><a class="el" href="a10866.html">legacy_paths_transform</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07539.html">physical</a></li><li class="navelem"><a class="el" href="a07540.html">entities</a></li><li class="navelem"><a class="el" href="a10866.html">outputting_properties</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a10863.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">legacy_paths_transform Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">outputting_properties Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Populates the include and full paths in artefacts.  
+<p>Properties related to outputting.  
  <a href="a10866.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a04046_source.html">legacy_paths_transform.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a04019_source.html">outputting_properties.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for legacy_paths_transform:</div>
+Collaboration diagram for outputting_properties:</div>
 <div class="dyncontent">
-<div class="center"><img src="a10864.png" border="0" usemap="#alegacy__paths__transform_coll__map" alt="Collaboration graph"/></div>
-<map name="alegacy__paths__transform_coll__map" id="alegacy__paths__transform_coll__map">
-<area shape="rect" title="Populates the include and full paths in artefacts." alt="" coords="5,5,184,83"/>
+<div class="center"><img src="a10864.png" border="0" usemap="#aoutputting__properties_coll__map" alt="Collaboration graph"/></div>
+<map name="aoutputting__properties_coll__map" id="aoutputting__properties_coll__map">
+<area shape="rect" title="Properties related to outputting." alt="" coords="5,5,204,244"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aeae2c499c48023fbeb1a6ed6059e5844"><td class="memItemLeft" align="right" valign="top"><a id="aeae2c499c48023fbeb1a6ed6059e5844"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (const context &amp;ctx, <a class="el" href="a10650.html">entities::model</a> &amp;m)</td></tr>
-<tr class="separator:aeae2c499c48023fbeb1a6ed6059e5844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ab877e48c53675e61d6589892ed097581"><td class="memItemLeft" align="right" valign="top"><a id="ab877e48c53675e61d6589892ed097581"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>outputting_properties</b> (const <a class="el" href="a10866.html">outputting_properties</a> &amp;)=default</td></tr>
+<tr class="separator:ab877e48c53675e61d6589892ed097581"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4ed916cb72082a57c4d09abd48dd502"><td class="memItemLeft" align="right" valign="top"><a id="af4ed916cb72082a57c4d09abd48dd502"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>outputting_properties</b> (<a class="el" href="a10866.html">outputting_properties</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:af4ed916cb72082a57c4d09abd48dd502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d74ca1b545f486d1959d1ba97bdb1cd"><td class="memItemLeft" align="right" valign="top"><a id="a4d74ca1b545f486d1959d1ba97bdb1cd"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>outputting_properties</b> (const bool force_write, const bool delete_extra_files, const std::vector&lt; std::string &gt; &amp;ignore_files_matching_regex, const bool delete_empty_directories)</td></tr>
+<tr class="separator:a4d74ca1b545f486d1959d1ba97bdb1cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a186805303e4ed870ce9cd5c7faceb873"><td class="memItemLeft" align="right" valign="top"><a id="a186805303e4ed870ce9cd5c7faceb873"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>force_write</b> () const</td></tr>
+<tr class="separator:a186805303e4ed870ce9cd5c7faceb873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37b021ff9e3a7246bc889332297d40da"><td class="memItemLeft" align="right" valign="top"><a id="a37b021ff9e3a7246bc889332297d40da"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>force_write</b> (const bool v)</td></tr>
+<tr class="separator:a37b021ff9e3a7246bc889332297d40da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa307690371c34043fdf78d8c3a20a76"><td class="memItemLeft" align="right" valign="top"><a id="aaa307690371c34043fdf78d8c3a20a76"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>delete_extra_files</b> () const</td></tr>
+<tr class="separator:aaa307690371c34043fdf78d8c3a20a76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9df50be7ec491327fb2ebc95b65324c"><td class="memItemLeft" align="right" valign="top"><a id="af9df50be7ec491327fb2ebc95b65324c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>delete_extra_files</b> (const bool v)</td></tr>
+<tr class="separator:af9df50be7ec491327fb2ebc95b65324c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c69f3c3b5bbe09b6bbad719bc45e10c"><td class="memItemLeft" align="right" valign="top"><a id="a5c69f3c3b5bbe09b6bbad719bc45e10c"></a>
+const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ignore_files_matching_regex</b> () const</td></tr>
+<tr class="separator:a5c69f3c3b5bbe09b6bbad719bc45e10c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f0626bc49203d0761078e6bb967724e"><td class="memItemLeft" align="right" valign="top"><a id="a7f0626bc49203d0761078e6bb967724e"></a>
+std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ignore_files_matching_regex</b> ()</td></tr>
+<tr class="separator:a7f0626bc49203d0761078e6bb967724e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f82e6fb8c567171c7f5393879018dea"><td class="memItemLeft" align="right" valign="top"><a id="a9f82e6fb8c567171c7f5393879018dea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ignore_files_matching_regex</b> (const std::vector&lt; std::string &gt; &amp;v)</td></tr>
+<tr class="separator:a9f82e6fb8c567171c7f5393879018dea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59579170762bdb33b2943ac37298645b"><td class="memItemLeft" align="right" valign="top"><a id="a59579170762bdb33b2943ac37298645b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ignore_files_matching_regex</b> (const std::vector&lt; std::string &gt; &amp;&amp;v)</td></tr>
+<tr class="separator:a59579170762bdb33b2943ac37298645b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f28ed62dfcdc00e99add39828c43e40"><td class="memItemLeft" align="right" valign="top"><a id="a0f28ed62dfcdc00e99add39828c43e40"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>delete_empty_directories</b> () const</td></tr>
+<tr class="separator:a0f28ed62dfcdc00e99add39828c43e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7813c4d52bda7960b8a8a8bb4f0b83d2"><td class="memItemLeft" align="right" valign="top"><a id="a7813c4d52bda7960b8a8a8bb4f0b83d2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>delete_empty_directories</b> (const bool v)</td></tr>
+<tr class="separator:a7813c4d52bda7960b8a8a8bb4f0b83d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a180d959a3c275c58b23bc2eabf40017c"><td class="memItemLeft" align="right" valign="top"><a id="a180d959a3c275c58b23bc2eabf40017c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="a10866.html">outputting_properties</a> &amp;rhs) const</td></tr>
+<tr class="separator:a180d959a3c275c58b23bc2eabf40017c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afef3175577a4689f8e830812ab9e5fef"><td class="memItemLeft" align="right" valign="top"><a id="afef3175577a4689f8e830812ab9e5fef"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="a10866.html">outputting_properties</a> &amp;rhs) const</td></tr>
+<tr class="separator:afef3175577a4689f8e830812ab9e5fef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27e51be035220738198fb764917b3463"><td class="memItemLeft" align="right" valign="top"><a id="a27e51be035220738198fb764917b3463"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="a10866.html">outputting_properties</a> &amp;other) noexcept</td></tr>
+<tr class="separator:a27e51be035220738198fb764917b3463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73a6e63dcab71ed7b29551cdee8aa6d8"><td class="memItemLeft" align="right" valign="top"><a id="a73a6e63dcab71ed7b29551cdee8aa6d8"></a>
+<a class="el" href="a10866.html">outputting_properties</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="a10866.html">outputting_properties</a> other)</td></tr>
+<tr class="separator:a73a6e63dcab71ed7b29551cdee8aa6d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Populates the include and full paths in artefacts. </p>
+<div class="textblock"><p>Properties related to outputting. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,3 +1,3 @@
-<map id="references_resolver" name="references_resolver">
-<area shape="rect" id="node1" title="Resolves a set of references to concrete paths to models." alt="" coords="5,5,181,112"/>
+<map id="spec_dumper" name="spec_dumper">
+<area shape="rect" id="node1" title="Dumps internal information from Dogen." alt="" coords="5,5,151,156"/>
 </map>

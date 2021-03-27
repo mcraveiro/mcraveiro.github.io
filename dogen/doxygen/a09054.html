@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: logical_location Class Reference</title>
+<title>Dogen: provenance_transform Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,193 +63,40 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07128.html">identification</a></li><li class="navelem"><a class="el" href="a07129.html">entities</a></li><li class="navelem"><a class="el" href="a09054.html">logical_location</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07282.html">codec</a></li><li class="navelem"><b>transforms</b></li><li class="navelem"><a class="el" href="a09054.html">provenance_transform</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a09051.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">logical_location Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">provenance_transform Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Identifies a hierarchy of containment within the logical space.  
+<p>Computes the SHA1 hash for a model content and updates the model with this value.  
  <a href="a09054.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a01100_source.html">logical_location.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00557_source.html">provenance_transform.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for logical_location:</div>
+Collaboration diagram for provenance_transform:</div>
 <div class="dyncontent">
-<div class="center"><img src="a09052.png" border="0" usemap="#alogical__location_coll__map" alt="Collaboration graph"/></div>
-<map name="alogical__location_coll__map" id="alogical__location_coll__map">
-<area shape="rect" title="Identifies a hierarchy of containment within the logical space." alt="" coords="5,5,169,669"/>
+<div class="center"><img src="a09052.png" border="0" usemap="#aprovenance__transform_coll__map" alt="Collaboration graph"/></div>
+<map name="aprovenance__transform_coll__map" id="aprovenance__transform_coll__map">
+<area shape="rect" title="Computes the SHA1 hash for a model content and updates the model with this value." alt="" coords="5,5,175,83"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a569644bb69ead7c76c96f1a961ae4674"><td class="memItemLeft" align="right" valign="top"><a id="a569644bb69ead7c76c96f1a961ae4674"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>logical_location</b> (const <a class="el" href="a09054.html">logical_location</a> &amp;)=default</td></tr>
-<tr class="separator:a569644bb69ead7c76c96f1a961ae4674"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8388d368d8d9a9fdf073e7372392398e"><td class="memItemLeft" align="right" valign="top"><a id="a8388d368d8d9a9fdf073e7372392398e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>logical_location</b> (<a class="el" href="a09054.html">logical_location</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a8388d368d8d9a9fdf073e7372392398e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa07b45c6e8eec8cea5cee1459fb301fd"><td class="memItemLeft" align="right" valign="top"><a id="aa07b45c6e8eec8cea5cee1459fb301fd"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>logical_location</b> (const std::list&lt; std::string &gt; &amp;<a class="el" href="a09054.html#a4b2ae77979cc05b59dae6e93d159872d">external_modules</a>, const std::list&lt; std::string &gt; &amp;<a class="el" href="a09054.html#a0b2836deecc41307b50921d2c812b3a8">model_modules</a>, const std::list&lt; std::string &gt; &amp;<a class="el" href="a09054.html#a52e19e24f8dccba6c2d4792d25c7e03d">internal_modules</a>, const std::string &amp;<a class="el" href="a09054.html#a8a4b4f592cddfc9e414c89b6107aedb3">element</a>)</td></tr>
-<tr class="separator:aa07b45c6e8eec8cea5cee1459fb301fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0723882293e9b53fd2f6a3735609e9c"><td class="memItemLeft" align="right" valign="top"><a id="af0723882293e9b53fd2f6a3735609e9c"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="a09054.html">logical_location</a> &amp;rhs) const</td></tr>
-<tr class="separator:af0723882293e9b53fd2f6a3735609e9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9573e4dd51d29d073d23d7af46f0fbe"><td class="memItemLeft" align="right" valign="top"><a id="ab9573e4dd51d29d073d23d7af46f0fbe"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="a09054.html">logical_location</a> &amp;rhs) const</td></tr>
-<tr class="separator:ab9573e4dd51d29d073d23d7af46f0fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69cc8faffd26ab625c1c5d03f9e7fb19"><td class="memItemLeft" align="right" valign="top"><a id="a69cc8faffd26ab625c1c5d03f9e7fb19"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>swap</b> (<a class="el" href="a09054.html">logical_location</a> &amp;other) noexcept</td></tr>
-<tr class="separator:a69cc8faffd26ab625c1c5d03f9e7fb19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a985246fa257cbded18cbd61dc00c02e9"><td class="memItemLeft" align="right" valign="top"><a id="a985246fa257cbded18cbd61dc00c02e9"></a>
-<a class="el" href="a09054.html">logical_location</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="a09054.html">logical_location</a> other)</td></tr>
-<tr class="separator:a985246fa257cbded18cbd61dc00c02e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a4b2ae77979cc05b59dae6e93d159872d"><td class="memItemLeft" align="right" valign="top">const std::list&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09054.html#a4b2ae77979cc05b59dae6e93d159872d">external_modules</a> () const</td></tr>
-<tr class="memdesc:a4b2ae77979cc05b59dae6e93d159872d"><td class="mdescLeft">&#160;</td><td class="mdescRight">All modules external to the model itself.  <a href="a09054.html#a4b2ae77979cc05b59dae6e93d159872d">More...</a><br /></td></tr>
-<tr class="separator:a4b2ae77979cc05b59dae6e93d159872d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af73b66dcf94b03dba5a3ec762057e4ad"><td class="memItemLeft" align="right" valign="top"><a id="af73b66dcf94b03dba5a3ec762057e4ad"></a>
-std::list&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>external_modules</b> ()</td></tr>
-<tr class="separator:af73b66dcf94b03dba5a3ec762057e4ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a591765d7de4a6b86d9f071ef3840c8"><td class="memItemLeft" align="right" valign="top"><a id="a8a591765d7de4a6b86d9f071ef3840c8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>external_modules</b> (const std::list&lt; std::string &gt; &amp;v)</td></tr>
-<tr class="separator:a8a591765d7de4a6b86d9f071ef3840c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae433079a0ac6da29164b2528907b905c"><td class="memItemLeft" align="right" valign="top"><a id="ae433079a0ac6da29164b2528907b905c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>external_modules</b> (const std::list&lt; std::string &gt; &amp;&amp;v)</td></tr>
-<tr class="separator:ae433079a0ac6da29164b2528907b905c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a0b2836deecc41307b50921d2c812b3a8"><td class="memItemLeft" align="right" valign="top">const std::list&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09054.html#a0b2836deecc41307b50921d2c812b3a8">model_modules</a> () const</td></tr>
-<tr class="memdesc:a0b2836deecc41307b50921d2c812b3a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modules related to just the model itself.  <a href="a09054.html#a0b2836deecc41307b50921d2c812b3a8">More...</a><br /></td></tr>
-<tr class="separator:a0b2836deecc41307b50921d2c812b3a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae69cf45b2b7e9a34a9bf0cbfa88684e3"><td class="memItemLeft" align="right" valign="top"><a id="ae69cf45b2b7e9a34a9bf0cbfa88684e3"></a>
-std::list&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>model_modules</b> ()</td></tr>
-<tr class="separator:ae69cf45b2b7e9a34a9bf0cbfa88684e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a866ce157d2c099fe99b317db4160dea3"><td class="memItemLeft" align="right" valign="top"><a id="a866ce157d2c099fe99b317db4160dea3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>model_modules</b> (const std::list&lt; std::string &gt; &amp;v)</td></tr>
-<tr class="separator:a866ce157d2c099fe99b317db4160dea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fe8850cf406f351c6e2599f6cd74ac0"><td class="memItemLeft" align="right" valign="top"><a id="a2fe8850cf406f351c6e2599f6cd74ac0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>model_modules</b> (const std::list&lt; std::string &gt; &amp;&amp;v)</td></tr>
-<tr class="separator:a2fe8850cf406f351c6e2599f6cd74ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a52e19e24f8dccba6c2d4792d25c7e03d"><td class="memItemLeft" align="right" valign="top"><a id="a52e19e24f8dccba6c2d4792d25c7e03d"></a>
-const std::list&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09054.html#a52e19e24f8dccba6c2d4792d25c7e03d">internal_modules</a> () const</td></tr>
-<tr class="memdesc:a52e19e24f8dccba6c2d4792d25c7e03d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sub-modules within a model. <br /></td></tr>
-<tr class="separator:a52e19e24f8dccba6c2d4792d25c7e03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f0995d0df0fab079e3840b98c598fcd"><td class="memItemLeft" align="right" valign="top"><a id="a6f0995d0df0fab079e3840b98c598fcd"></a>
-std::list&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>internal_modules</b> ()</td></tr>
-<tr class="separator:a6f0995d0df0fab079e3840b98c598fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e488b3b6f6375844d5d2276e7b5083b"><td class="memItemLeft" align="right" valign="top"><a id="a4e488b3b6f6375844d5d2276e7b5083b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>internal_modules</b> (const std::list&lt; std::string &gt; &amp;v)</td></tr>
-<tr class="separator:a4e488b3b6f6375844d5d2276e7b5083b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa689a48bbf73fcb3b5dbdf81bf53407"><td class="memItemLeft" align="right" valign="top"><a id="afa689a48bbf73fcb3b5dbdf81bf53407"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>internal_modules</b> (const std::list&lt; std::string &gt; &amp;&amp;v)</td></tr>
-<tr class="separator:afa689a48bbf73fcb3b5dbdf81bf53407"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader"></div></td></tr>
-<tr class="memitem:a8a4b4f592cddfc9e414c89b6107aedb3"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a09054.html#a8a4b4f592cddfc9e414c89b6107aedb3">element</a> () const</td></tr>
-<tr class="memdesc:a8a4b4f592cddfc9e414c89b6107aedb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the owning element, if any.  <a href="a09054.html#a8a4b4f592cddfc9e414c89b6107aedb3">More...</a><br /></td></tr>
-<tr class="separator:a8a4b4f592cddfc9e414c89b6107aedb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39678e6d1f6d14df2f965f15b69e2d20"><td class="memItemLeft" align="right" valign="top"><a id="a39678e6d1f6d14df2f965f15b69e2d20"></a>
-std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>element</b> ()</td></tr>
-<tr class="separator:a39678e6d1f6d14df2f965f15b69e2d20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6207f028a518ff81414c41892e97f796"><td class="memItemLeft" align="right" valign="top"><a id="a6207f028a518ff81414c41892e97f796"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>element</b> (const std::string &amp;v)</td></tr>
-<tr class="separator:a6207f028a518ff81414c41892e97f796"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8622743ccf362276645b9ea3630a8b09"><td class="memItemLeft" align="right" valign="top"><a id="a8622743ccf362276645b9ea3630a8b09"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>element</b> (const std::string &amp;&amp;v)</td></tr>
-<tr class="separator:a8622743ccf362276645b9ea3630a8b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:af2e6b0d96af437f917f9d1c58bf1a775"><td class="memItemLeft" align="right" valign="top"><a id="af2e6b0d96af437f917f9d1c58bf1a775"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (const transforms::context &amp;ctx, const boost::filesystem::path &amp;p, <a class="el" href="a08842.html">entities::model</a> &amp;m)</td></tr>
+<tr class="separator:af2e6b0d96af437f917f9d1c58bf1a775"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Identifies a hierarchy of containment within the logical space. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a4b2ae77979cc05b59dae6e93d159872d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b2ae77979cc05b59dae6e93d159872d">&#9670;&nbsp;</a></span>external_modules()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::list&lt; std::string &gt; &amp; external_modules </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>All modules external to the model itself. </p>
-<p>It is sometimes useful to create a model within a set of existing modules. In this case, the model does not own the existing modules and they are considered "external" to the model. This is useful, for example, when declaring a model within a larger project such as <em><a class="el" href="a07159.html" title="The logcal model defines the core entities that live in the logical dimension of MASD&#39;s conceptual mo...">dogen::logical</a></em>. In this case, <em>dogen</em> is the external module. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="a09054_a4b2ae77979cc05b59dae6e93d159872d_icgraph.png" border="0" usemap="#aa09054_a4b2ae77979cc05b59dae6e93d159872d_icgraph" alt=""/></div>
-<map name="aa09054_a4b2ae77979cc05b59dae6e93d159872d_icgraph" id="aa09054_a4b2ae77979cc05b59dae6e93d159872d_icgraph">
-<area shape="rect" title="All modules external to the model itself." alt="" coords="243,27,381,54"/>
-<area shape="rect" href="a09158.html#a401430a8eba80d7c491df57117dbd2d6" title="Creates the name of the containing element, derived from the element&#39;s name." alt="" coords="5,5,195,76"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a0b2836deecc41307b50921d2c812b3a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b2836deecc41307b50921d2c812b3a8">&#9670;&nbsp;</a></span>model_modules()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::list&lt; std::string &gt; &amp; model_modules </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Modules related to just the model itself. </p>
-<p>It is only different from the model name if the model name is composite; that is, if the model name has multiple fields separated by dots, e.g. @ a.b. </p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="a09054_a0b2836deecc41307b50921d2c812b3a8_icgraph.png" border="0" usemap="#aa09054_a0b2836deecc41307b50921d2c812b3a8_icgraph" alt=""/></div>
-<map name="aa09054_a0b2836deecc41307b50921d2c812b3a8_icgraph" id="aa09054_a0b2836deecc41307b50921d2c812b3a8_icgraph">
-<area shape="rect" title="Modules related to just the model itself." alt="" coords="469,122,596,149"/>
-<area shape="rect" href="a09158.html#a755570a077cf80369cba4e5edddc158c" title="Combines element name with model name." alt="" coords="234,5,419,76"/>
-<area shape="rect" href="a09158.html#a401430a8eba80d7c491df57117dbd2d6" title="Creates the name of the containing element, derived from the element&#39;s name." alt="" coords="232,100,421,171"/>
-<area shape="rect" href="a09274.html#aa3967d06d9767f42aeddad918fd0051f" title="Returns true if the name matches the mock model factory naming convention for model n." alt="" coords="243,195,410,251"/>
-<area shape="rect" href="a10066.html#a125d93ce3c3688cda9227c5b82368495" title="Resolves the name as an object template name." alt="" coords="5,13,184,69"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a8a4b4f592cddfc9e414c89b6107aedb3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a4b4f592cddfc9e414c89b6107aedb3">&#9670;&nbsp;</a></span>element()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::string &amp; element </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Name of the owning element, if any. </p>
-<p>For coding elements which are located within other logical elements that are not modules, such as attributes, inner classes, etc. </p>
-
-</div>
-</div>
-</div><!-- contents -->
+<div class="textblock"><p>Computes the SHA1 hash for a model content and updates the model with this value. </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1

@@ -1,3 +1,3 @@
-<map id="primitive_implementation_factory" name="primitive_implementation_factory">
-<area shape="rect" id="node1" title="Creates a physical representation for the archetype primitive_implementation." alt="" coords="5,5,197,97"/>
+<map id="extraction_error" name="extraction_error">
+<area shape="rect" id="node1" title="An error occurred whilst extracting a key." alt="" coords="5,5,168,127"/>
 </map>

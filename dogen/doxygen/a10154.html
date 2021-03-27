@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: labelling_transform Class Reference</title>
+<title>Dogen: decoration_formatter Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,39 +63,45 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07159.html">logical</a></li><li class="navelem"><a class="el" href="a07172.html">transforms</a></li><li class="navelem"><a class="el" href="a10154.html">labelling_transform</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07363.html">logical</a></li><li class="navelem"><a class="el" href="a07379.html">formatters</a></li><li class="navelem"><a class="el" href="a10154.html">decoration_formatter</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a10151.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">labelling_transform Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">decoration_formatter Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Populates all labels.  
+<p>Formats decorations into a stream.  
  <a href="a10154.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a02534_source.html">labelling_transform.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a02408_source.html">decoration_formatter.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for labelling_transform:</div>
+Collaboration diagram for decoration_formatter:</div>
 <div class="dyncontent">
-<div class="center"><img src="a10152.png" border="0" usemap="#alabelling__transform_coll__map" alt="Collaboration graph"/></div>
-<map name="alabelling__transform_coll__map" id="alabelling__transform_coll__map">
-<area shape="rect" title="Populates all labels." alt="" coords="5,5,155,83"/>
+<div class="center"><img src="a10152.png" border="0" usemap="#adecoration__formatter_coll__map" alt="Collaboration graph"/></div>
+<map name="adecoration__formatter_coll__map" id="adecoration__formatter_coll__map">
+<area shape="rect" title="Formats decorations into a stream." alt="" coords="5,5,172,112"/>
 </map>
 </div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aeae2c499c48023fbeb1a6ed6059e5844"><td class="memItemLeft" align="right" valign="top"><a id="aeae2c499c48023fbeb1a6ed6059e5844"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (const <a class="el" href="a10118.html">context</a> &amp;ctx, <a class="el" href="a09366.html">entities::model</a> &amp;m)</td></tr>
-<tr class="separator:aeae2c499c48023fbeb1a6ed6059e5844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ae69b902c1a02258c17ed0d216a2b2702"><td class="memItemLeft" align="right" valign="top"><a id="ae69b902c1a02258c17ed0d216a2b2702"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>format_preamble</b> (std::ostream &amp;s, const <a class="el" href="a07790.html#a71557b41d7e819a0d5589b1b709cb165">utility::formatters::comment_style</a> &amp;single_line_cs, const <a class="el" href="a07790.html#a71557b41d7e819a0d5589b1b709cb165">utility::formatters::comment_style</a> &amp;multi_line_cs, const std::string &amp;licence_text, const std::list&lt; std::string &gt; &amp;copyright_notices, const std::string &amp;generation_timestamp, const std::string &amp;origin_shah1_hash, const boost::shared_ptr&lt; <a class="el" href="a09522.html">logical::entities::decoration::modeline</a> &gt; ml, const boost::shared_ptr&lt; <a class="el" href="a09514.html">logical::entities::decoration::generation_marker</a> &gt; gm) const</td></tr>
+<tr class="separator:ae69b902c1a02258c17ed0d216a2b2702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65cf0fb8c52cf23d66df5a7a552c5cba"><td class="memItemLeft" align="right" valign="top"><a id="a65cf0fb8c52cf23d66df5a7a552c5cba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>format_preamble</b> (std::ostream &amp;s, const <a class="el" href="a07790.html#a71557b41d7e819a0d5589b1b709cb165">utility::formatters::comment_style</a> &amp;cs, const std::string &amp;licence_text, const std::list&lt; std::string &gt; &amp;copyright_notices, const std::string &amp;generation_timestamp, const std::string &amp;origin_shah1_hash, const boost::shared_ptr&lt; <a class="el" href="a09522.html">logical::entities::decoration::modeline</a> &gt; ml, const boost::shared_ptr&lt; <a class="el" href="a09514.html">logical::entities::decoration::generation_marker</a> &gt; gm) const</td></tr>
+<tr class="separator:a65cf0fb8c52cf23d66df5a7a552c5cba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7180e52d28bb9499ebd8a427652d3cdf"><td class="memItemLeft" align="right" valign="top"><a id="a7180e52d28bb9499ebd8a427652d3cdf"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>format_postamble</b> (std::ostream &amp;s, const <a class="el" href="a07790.html#a71557b41d7e819a0d5589b1b709cb165">utility::formatters::comment_style</a> &amp;cs, const boost::shared_ptr&lt; <a class="el" href="a09522.html">logical::entities::decoration::modeline</a> &gt; ml) const</td></tr>
+<tr class="separator:a7180e52d28bb9499ebd8a427652d3cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Populates all labels. </p>
+<div class="textblock"><p>Formats decorations into a stream. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

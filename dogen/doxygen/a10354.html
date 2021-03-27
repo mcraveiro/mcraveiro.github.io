@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Dogen: initializer Class Reference</title>
+<title>Dogen: helper_properties_transform Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="a07068.html">dogen</a></li><li class="navelem"><a class="el" href="a07285.html">orchestration</a></li><li class="navelem"><a class="el" href="a07288.html">features</a></li><li class="navelem"><a class="el" href="a10354.html">initializer</a></li>  </ul>
+<li class="navelem"><a class="el" href="a07272.html">dogen</a></li><li class="navelem"><a class="el" href="a07363.html">logical</a></li><li class="navelem"><a class="el" href="a07376.html">transforms</a></li><li class="navelem"><a class="el" href="a10354.html">helper_properties_transform</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -71,31 +71,32 @@ $(function() {
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="a10351.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">initializer Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
+<div class="title">helper_properties_transform Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Registers all of the available feature templates with registrar.  
+<p>Populates all of the helper properties from the PMM.  
  <a href="a10354.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a17945_source.html">initializer.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a02579_source.html">helper_properties_transform.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for initializer:</div>
+Collaboration diagram for helper_properties_transform:</div>
 <div class="dyncontent">
-<div class="center"><img src="a10352.png" border="0" usemap="#ainitializer_coll__map" alt="Collaboration graph"/></div>
-<map name="ainitializer_coll__map" id="ainitializer_coll__map">
-<area shape="rect" title="Registers all of the available feature templates with registrar." alt="" coords="5,5,159,83"/>
+<div class="center"><img src="a10352.png" border="0" usemap="#ahelper__properties__transform_coll__map" alt="Collaboration graph"/></div>
+<map name="ahelper__properties__transform_coll__map" id="ahelper__properties__transform_coll__map">
+<area shape="rect" title="Populates all of the helper properties from the PMM." alt="" coords="5,5,212,83"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a8a3570c68f8302f5b1328618a9027e17"><td class="memItemLeft" align="right" valign="top"><a id="a8a3570c68f8302f5b1328618a9027e17"></a>
-static void&#160;</td><td class="memItemRight" valign="bottom"><b>register_entities</b> (<a class="el" href="a13358.html">variability::helpers::registrar</a> &amp;rg)</td></tr>
-<tr class="separator:a8a3570c68f8302f5b1328618a9027e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeae2c499c48023fbeb1a6ed6059e5844"><td class="memItemLeft" align="right" valign="top"><a id="aeae2c499c48023fbeb1a6ed6059e5844"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>apply</b> (const <a class="el" href="a10322.html">context</a> &amp;ctx, <a class="el" href="a09570.html">entities::model</a> &amp;m)</td></tr>
+<tr class="separator:aeae2c499c48023fbeb1a6ed6059e5844"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Registers all of the available feature templates with registrar. </p>
+<div class="textblock"><p>Populates all of the helper properties from the PMM. </p>
+<p>Note that this is a gigantic hack, helpers are just a temporary physical concept bolted in to the logical model and will be removed with the PMM. It is just here for now so we can move on to the next phase of refactoring. Note also that to determine enablement of helpers we rely on an orchestration transform, as it needs the PM and that was just one hack too far. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

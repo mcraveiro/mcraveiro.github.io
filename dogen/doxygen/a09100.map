@@ -1,3 +1,3 @@
-<map id="physical_meta_name" name="physical_meta_name">
-<area shape="rect" id="node1" title="Name of an element in physical space." alt="" coords="5,5,203,552"/>
+<map id="color" name="color">
+<area shape="rect" id="node1" title="Represents a color in a diagram." alt="" coords="5,5,129,317"/>
 </map>
