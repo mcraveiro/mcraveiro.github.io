@@ -1,0 +1,84 @@
+#+title: Notebook of a Return to My Native Land - part 2
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+
+Monday, November 13, 2006
+
+/Sometimes I'm up and sometimes I'm down/
+/Yes Lord, you know sometimes I'm almost to the ground/
+-- Louis Armstrong
+
+* Dog Years
+
+Its funny how time flies. I mean, really. Our days are so densely
+packed with action that it feels like a week is at least a month
+long. An average day can entail going to the bank, printing and
+sending several letters, packing things, ringing 4 or 5 people - some
+of them on phone lines so bad you can't tell whether there is a person
+at the other end or if you're having a conversation with the echo of
+your own voice - and, on weekdays, spending nine hours at work. Our
+calendars are so full that we're even running out of time for fair
+well drinks. But the biggest problem isn't having so many things to
+do; its this unshakable sensation that we aren't actually getting
+anything done.
+
+Take the VISA card mission, for instance.
+
+One problem faced by all long term travellers is access to cash, to
+hard currency. Its one thing to go somewhere for three weeks and take
+money with you or pay extortionate credit card commissions; its quite
+another to take a wad of cash to last you six-months, or to pay
+ridiculous commissions for that long. For starters, you can imagine
+how many milliseconds a wad of cash would last in your pocket in
+downtown Luanda. So, intrepid Miss Begum conducted her usual thorough
+investigations and figured out that the cheapest way to survive out
+there is to have a VISA debit card.
+
+We've been with our current bank for a good while. We like them, and
+they like us not-particularly-clever customer types too. We're not
+really the sort of people that like change, or that shop round when it
+comes to banks. Plus, they have a really well designed web-interface
+that works well with Linux. And they're fond of students. What's there
+not to like?
+
+When we asked our old faithful bank for a VISA debit card, their
+answer was like something out of the Simpson's: a) "we don't
+understand your question; are you looking for a VISA credit card?"
+which quickly progressed to b) "nobody would ever need a VISA debit
+card! Switch and Maestro work everywhere!" and ended in apotheosis: c)
+"nobody else does these newfangled VISA debit cards anyways". The
+latter was particularly funny since we found out that their India
+operations use VISA debit cards - the only small catch is you need to
+open the bank account in India. And, yes, I did think "Indian bank
+account... How hard would that be?". Only for a split second. Shahin's
+slap brought me back to reality pretty quickly.
+
+These problems and many others we've had in the recent past with
+companies such as Amazon highlighted a wider problem. The new global
+companies are great for 99% of the cases. Trouble begins when you want
+to do something slightly out of the ordinary. For instance, we tried
+to find out the bank's closest branch that opens on a Saturday. There
+wasn't a single person in India who was able to provide this
+information. And we did speak to all of them. (One member of staff
+even told us that a branch was open just to flog us off; needless to
+say, we got there and it wasn't.)
+
+So it came to be that, having exhausted all the simpler avenues, we
+ended up trying to open a new bank account. We first wanted Lloyds TSB
+but we couldn't find any branches open on a Saturday. As we were
+walking back home in sheer desperation, we stumbled across Abbey
+National. To our surprise, they did provide their customers with shiny
+new VISA debit cards.
+
+We then went through the motions. After what it seemed like hours of
+form-filling and question-answering, we were then very politely told
+that they could not give us an immediate answer - but would be in
+touch with us as soon as possible. "But, you do understand that we
+only need this card to withdraw money on holidays? We don't need an
+overdraft or anything! Can you not give us an answer right now?"
+
+She could not. We would have to wait.
+
+And all of this before 12:00 o'clock on a Saturday.
