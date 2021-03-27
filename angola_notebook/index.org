@@ -9,3 +9,4 @@ time ago. This series of blog posts narrates the adventure.
 
 - [[file:part_1.org][Notebook of a Return to My Native Land - Part I - Human Errors]]
 - [[file:part_2.org][Notebook of a Return to My Native Land - Part II - Dog Years]]
+- [[file:part_3.org][Notebook of a Return to My Native Land - Part III - The Angolan Triangle]]

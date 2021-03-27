@@ -1,0 +1,163 @@
+#+title: Notebook of a Return to My Native Land - part 3
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+
+Monday, November 13, 2006
+
+/A good traveler has no fixed plans, and is not intent on arriving./ -- Lao Tzu
+
+...
+
+Lau Tzu must have been Angolan.
+
+* The Angolan Triangle
+
+One interesting thing we found with Angola, Luanda in particular, is
+how hard it is to communicate with people down there. Around here
+we're used to getting replies to emails in matter of minutes or
+hours. If you send an email to Angola it will most likely be days or
+weeks until you get a reply - if indeed you get a reply at all. This
+is partly to do with the Angolan-speak (see part 1). But there's
+something deeper. Sometimes you meet what appears to be a really good
+contact, with impeccable references; you speak to the contact several
+times when he/she is in Europe; you get everything agreed and start
+allowing yourself some hope; only to stop hearing from the contact as
+soon as he/she boards the TAAG plane. Literally. The first few times
+this got us worried, "Jesus are they OK?". We soon got used to it.
+
+Much like Bermuda, Angola has a triangle of its own. But, being
+Angolan, our triangle is intermittent. Sometimes it malfunctions and
+you suddenly hear from people you thought were long gone. Sometimes
+you receive a reply to an email sent many, many days ago, which you
+had forgotten all about. Unfortunately, odds are the answer is "sorry,
+no can do".
+
+If you stop hearing from us for a while, don't worry: we've probably
+been got by the Angolan Triangle.
+
+The other interesting thing we've learnt about communication is the
+importance of mediation. This, in typical Angolan fashion, is
+counter-intuitive. Around here we think that, the shorter the path
+between you and the person doing the work, the better. Not so with
+Angola. Much more important than that is having someone you know
+really well chasing someone they know really well. It is amazing how
+one can get a large chain of people connected like this to work; but,
+were you to try chasing someone you don't know that well directly, the
+odds of getting anything done are very close to zero.
+
+** Proxima Estacion Esperanza
+
+The Angolan visa has been in our minds quite a lot of late. After the
+previous problems with the invitation letter (see part 1), we got my
+cousin Elsa involved. Between Elsa and Rui we had contacts in every
+Angolan embassy on the planet. But first we had to get the invitation
+letter sorted out. Elsa's grandma has been in Angola since the
+beginning of time but she decided to stick to her Portuguese
+nationality. This was a precious advantage because Portuguese citizens
+don't need to send an authenticated copy of the passport (but they do
+need to attach a copy of their residence card). So Elsa convinced her
+grandma to send us the invitation letter and associated paperwork via
+her young cousin Claudia (one of the twins). If you recall, in
+addition to having the fax sent to the embassy, we also had to bring a
+faxed copy with us. This complicated matters somewhat as the only
+inbound fax we had available was at Shahin's work, miles away from
+both our house and the embassy.
+
+The clock was ticking. Communication was slow as we were going through
+Elsa to speak to Claudia. And to make things even more exciting,
+Elsa's phone decided to die right in the middle of our discussions. At
+the time Elsa was working far from Lisbon so there was no other way of
+getting to her. After a day and a bit of much stressing, we finally
+managed to reach Elsa in Lisbon. Elsa had indications from Luanda that
+the fax had already been sent, but not to Shahin's work. However, she
+suspected the indications were not totally accurate. We were fast
+running out of time. The visa could potentially take up to two weeks
+and we had two weeks and a bit left; and we also had to worry about
+the Mozambican visa too. So Monday was, in our minds, the
+make-it-or-break day.
+
+The day started with a lot of messing around, both with the invitation
+letter and with the collection of the remaining documents. Even the
+English were against us, and my employer references turned out to be a
+lot more involved than expected. Shahin spent so much time sorting my
+letter (don't ask) that she didn't have enough time to pick up
+hers. We finally got to the embassy, just before 12:00 PM, with most
+of our paperwork filled in, but we still had no way of knowing if the
+invitation letter had been sent.
+
+Shahin had been to the embassy before and was convinced that there
+would be no queues. I know, I know. Under normal circumstances I would
+have insisted in going for the usual Portuguese queuing hours -
+i.e. no later than 06:00 AM for a 09:30 AM opening time, if you want
+to have a chance in heaven of being seen on that day. (This reminds me
+of that time when I was queueing outside the Portuguese embassy,
+around 05:30 AM; an English couple walked past and asked "what
+demonstration are you guys organising?" "No mam, we here for the
+Portuguese embassy, 60 metres down the road. Yes mam, this many of
+us. Yes mam, we are aware that, like every other embassy, it only
+opens after 09:00 AM"). Now, if you recall, the consulate shuts at
+13:00 for visas. But since Shahin had been there before and at the
+time there were only three people in the whole of the consulate, we
+were still hopeful.
+
+And then we opened the door.
+
+I know of several Portuguese clubs that would have been well happy
+with that kind of crowd in home games. You sure can fit a lot of
+people in a small room. (Mind you, this crowd was several orders of
+magnitude smaller than the crowds in the Portuguese embassy on a slow
+day). Like good obedient British-ised citizens we took our tickets,
+went to a corner and watched the numbers on the screen. Time went
+by. The numbers weren't moving. But people were going to and fro, to
+the counter and back. We soon understood how the informal queueing
+worked and went along with the program. Fortunately, our queue was the
+smallest.
+
+#+begin_quote
+Shahin begs to differ: "While Marco believed that he was waiting
+patiently for his turn, I was quick to realise that the Angolan's were
+surely not that organised. The guy with twenty different coloured
+tickets kinda gave the game away! Marco, by the looks of it still a
+bit lost, was being slowly nudged by me into the queue... I had to
+explain to him that the whole thing was pretty messy so our best bet
+was to stay as close to the front and pray."
+#+end_quote
+
+While we were queuing I kept on staring at the girl behind the
+counter. Somehow, something kept on telling me I'd seen her
+before. Finally, around 12:45 we got seen. And wouldn't you know? The
+consular affairs representative was none other than Carla, from da
+'hood. Lordy Lord, we never lost faith in You.
+
+But Carla had some bad news: we needed Shahin's employers reference,
+the fax hadn't arrived yet, and she could not keep the application
+forms without both documents. She also asked if I had my Angolan birth
+certificate, which could potentially make things easier. I didn't have
+a birth certificate, but I vaguely remembered mom mentioning something
+about having the Church's "Cedula de Baptismo".
+
+When we went back home, I asked my mom (via my nephew Mauro) to fax
+the "Cedula de Baptismo". We returned to the embassy on Tuesday -
+09:00 AM on the dot this time, 6th in the queue. We got seen around
+10:00 AM. Our fax still hadn't arrived. But, in a turn of extreme good
+fortune, Carla was able to enter me into the Consulate with the
+Cedula. This immediately made our life simpler.
+
+Many, many forms and pounds sterling later, we managed to get our visa
+request in. And, because I am now registered in the consulate, it will
+be ready for Thursday. We won't celebrate until we get our passports
+back, of course.
+
+As we were coming back from the embassy, around 12:00 PM, with that
+sort of high you get when you finish an important exam, I remembered
+Elsa's words: "The funny thing is, whilst its all done in the
+desenrascanco sort of way, and whilst it always seems as if everything
+is so hard as to be utterly impossible, for some reason, somehow, when
+all seems truly lost, something almost miraculous always happens in
+the last moment and makes everything all right."
+
+/Omnia mutantur, nihil interit/, I quietly said to myself. And at that
+point I finally understood that the roots of my optimism are actually
+genetic.
