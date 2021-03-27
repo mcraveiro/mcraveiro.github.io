@@ -4,6 +4,8 @@
 #+bind: org-html-validation-link nil
 #+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
 
+[[file:index.org][Back to chapter index.]]
+
 Monday, November 13, 2006
 
 /A good traveler has no fixed plans, and is not intent on arriving./ -- Lao Tzu

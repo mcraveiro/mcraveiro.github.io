@@ -4,6 +4,8 @@
 #+bind: org-html-validation-link nil
 #+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
 
+[[file:../index.org][Back to home page]].
+
 I returned to my home country of Angola after leaving it a long, long
 time ago. This series of blog posts narrates the adventure.
 

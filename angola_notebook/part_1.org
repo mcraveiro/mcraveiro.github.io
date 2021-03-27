@@ -4,6 +4,8 @@
 #+bind: org-html-validation-link nil
 #+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
 
+[[file:index.org][Back to chapter index.]]
+
 Wednesday, November 08, 2006
 
 /The grand tour is just the inspired man's way of heading home./ -- Paul Theroux
