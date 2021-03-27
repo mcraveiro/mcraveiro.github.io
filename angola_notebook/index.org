@@ -15,3 +15,4 @@ time ago. This series of blog posts narrates the adventure.
 - [[file:part_4.org][Part IV - Maior e Vacinado]]
 - [[file:part_5.org][Part V - Angolan Red Tape]]
 - [[file:part_6.org][Part VI - Pinned to the Wall]]
+- [[file:part_7.org][Part VII - The Wind City]]
