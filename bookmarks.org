@@ -76,6 +76,7 @@ Blogs and other material from Emacs users.
 - [[https://www.scylladb.com/2020/03/26/avi-kivity-at-core-c-2019/][Avi Kivity at Core C++ 2019]]
 - [[https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html][The Clean Architecture]]
 - [[https://americanaffairsjournal.org/2020/05/science-without-validation-in-a-world-without-meaning/][Science without Validation in a World without Meaning]]
+- [[https://training.kalzumeus.com/newsletters/archive/do-not-end-the-week-with-nothing][Don't End The Week With Nothing]]
 
 # Local Variables:
 # org-html-validation-link: nil
