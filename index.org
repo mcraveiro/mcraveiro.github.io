@@ -32,7 +32,7 @@ too.
 | [[file:devsites.org][Developer sites]]                        | I occasionally create questions and answers in developer sites.        |
 | [[file:bookmarks.org][Interesting]]                            | Assorted bookmarks on stuff I bump into.                               |
 | [[file:twitter.org][Twitter threads]]                        | Now I found out you can unroll them, started to create links to these. |
-| [[file:angola_notebook/part_1.org][Notebook of a Return to My Native Land]] | Diary of my return to Angola in 2006, for the first time in 25 years.  |
+| [[file:angola_notebook/index.org][Notebook of a Return to My Native Land]] | Diary of my return to Angola in 2006, for the first time in 25 years.  |
 
 * Site Tooling
 

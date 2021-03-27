@@ -1,0 +1,10 @@
+#+title: Notebook of a Return to My Native Land
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+
+I returned to my home country of Angola after leaving it a long, long
+time ago. This series of blog posts narrates the adventure.
+
+- [[file:angola_notebook/part_1.org][Notebook of a Return to My Native Land - Part I]]
