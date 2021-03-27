@@ -26,11 +26,12 @@ particular order of importance - Angola, Finance, Programming,
 Computational Neuroscience, Football. There may be other topics here
 too.
 
-| Topic           | Description                                                         |
-|-----------------+---------------------------------------------------------------------|
-| [[file:dogen/dogen.org][Dogen]]           | Dogen is a code-generator I am developing as part of my PhD thesis. |
-| [[file:devsites.org][Developer sites]] | I occasionally create questions and answers in developer sites.     |
-| [[file:bookmarks.org][Interesting]]     | Assorted bookmarks on stuff I bump into.                            |
+| Topic           | Description                                                            |
+|-----------------+------------------------------------------------------------------------|
+| [[file:dogen/dogen.org][Dogen]]           | Dogen is a code-generator I am developing as part of my PhD thesis.    |
+| [[file:devsites.org][Developer sites]] | I occasionally create questions and answers in developer sites.        |
+| [[file:bookmarks.org][Interesting]]     | Assorted bookmarks on stuff I bump into.                               |
+| [[file:twitter.org][Twitter threads]] | Now I found out you can unroll them, started to create links to these. |
 
 * Site Tooling
 

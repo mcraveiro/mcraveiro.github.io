@@ -1,0 +1,16 @@
+#+title: Twitter Threads
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+HTML_HEAD: <link rel="stylesheet" href="css/tufte.css" type="text/css" />
+
+On occasion, I post threads on twitter. I recently found the thread
+reader and started to unroll some of these threads. You can see a
+summary of them here.
+
+| Subject | Description                                                  | Link      |
+|---------+--------------------------------------------------------------+-----------|
+| Emacs   | Emacs is not an editor but a framework to build editors.     | [[https://threadreaderapp.com/thread/1375717948476755969.html][threadapp]] |
+| Angola  | Português. Razão do investimento em energias não renováveis. | [[https://threadreaderapp.com/thread/1370410475553439744.html][threadapp]] |
+| Angola  | Português. Economia colonial versus economia actual.         | [[https://threadreaderapp.com/thread/1323595956445761538.html][threadapp]] |
+| Energy  | Why hydrogen may become very important in the future.        | [[https://threadreaderapp.com/thread/1288395005040775169.html][threadapp]] |
