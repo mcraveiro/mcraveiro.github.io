@@ -60,6 +60,7 @@ Tickets that I raised, or to which I added significant commentary.
 - [[https://github.com/nobiot/org-transclusion/issues/59][org-transclusion: Transclusion of non-org mode files #59]]
 - [[https://github.com/abo-abo/define-word/issues/29][define-word: Redefining display function to output to a buffer instead of messages #29]]
 - [[https://github.com/emacs-csharp/csharp-mode/issues/230][beginning-of-defun et al. not behaving the same as on C++ mode #230]]
+- [[https://github.com/ahungry/org-jira/issues/248][org-jira: Unable to update jira with contents in org-mode buffer #248]]
 
 # Variables:
 # org-html-validation-link: nil
