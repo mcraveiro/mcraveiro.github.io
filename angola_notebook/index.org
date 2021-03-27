@@ -9,9 +9,9 @@
 I returned to my home country of Angola after leaving it a long, long
 time ago. This series of blog posts narrates the adventure.
 
-- [[file:part_1.org][Notebook of a Return to My Native Land - Part I - Human Errors]]
-- [[file:part_2.org][Notebook of a Return to My Native Land - Part II - Dog Years]]
-- [[file:part_3.org][Notebook of a Return to My Native Land - Part III - The Angolan
-  Triangle]]
-- [[file:part_4.org][Notebook of a Return to My Native Land - Part IV - Maior e Vacinado]]
-- [[file:part_5.org][Notebook of a Return to My Native Land - Part IV - Angolan Red Tape]]
+- [[file:part_1.org][Part I - Human Errors]]
+- [[file:part_2.org][Part II - Dog Years]]
+- [[file:part_3.org][Part III - The Angolan Triangle]]
+- [[file:part_4.org][Part IV - Maior e Vacinado]]
+- [[file:part_5.org][Part V - Angolan Red Tape]]
+- [[file:part_6.org][Part VI - Pinned to the Wall]]
