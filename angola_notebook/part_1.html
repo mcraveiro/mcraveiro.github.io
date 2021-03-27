@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-03-27 Sat 13:51 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Notebook of a Return to My Native Land - part 1</title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" href="css/tufte.css" type="text/css" />
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Notebook of a Return to My Native Land - part 1</h1>
+<p>
+Wednesday, November 08, 2006
+</p>
+
+<p>
+<i>The grand tour is just the inspired man's way of heading home. &#x2013; Paul Theroux</i>
+</p>
+
+<div id="outline-container-org0785723" class="outline-2">
+<h2 id="org0785723">Human Errors</h2>
+<div class="outline-text-2" id="text-org0785723">
+<p>
+So there you go. 8th of November is almost gone. That leaves us with
+another 21 days before we depart from sunny old Albion. And yes, we
+still haven't got a visa for Angola, nor accommodation for Luanda, nor
+any idea of how to get from Luanda to any of the provinces (the
+Angolan counties are known as "provinces"). How do two fairly
+experienced travellers get trapped into this situation? After all, me
+and Shahin, we've seen one or two countries in our time. How hard can
+it be to plan a six-month trip to southern Africa, right?
+</p>
+
+<p>
+If you know me - and, chances are you do since you are reading this
+blog - then you also know that one of my most distinguishing traits is
+this extreme, unflinching (some would even say pathological)
+optimism. I'm the sort of guy that, having one day to plan an
+expedition to the Artic, would probably say "hey, how hard can it be,
+right"? A perfectly fine attitude to have when facing most day-to-day
+situations; alas, organizing a big trip is not your normal day at the
+office. But I digress. Lets return to the beginning.
+</p>
+
+<p>
+I've been meaning to visit my country of birth since, well, pretty
+much since I've left it, many moons ago as a young kid. Somehow I've
+managed to convince sensible Shahin that this would be a good
+idea. She, in turn, managed to convince me that it would be wiser to
+also see a few other countries in the region rather than just plonk
+ourselves in Angola for a while. In the end, the choices came down to:
+</p>
+
+<p>
+a) paying a deposit for an expensive, matchbox-sized, one-bedroom flat
+   in zone 15 of the quaint but rather inefficient English transport
+   system; or
+</p>
+
+<p>
+b) fool ourselves into believing that the property ladder is actually
+   not at all important, and instead spend six months seeing a bit of
+   my continent.
+</p>
+
+<p>
+Not much of a choice, really.
+</p>
+
+<p>
+We started by investigating the visa requirements for all the
+countries we would like to visit. The list was long, but we somehow
+managed to go through it. A bit too quickly, perhaps. We concluded
+that, with a few exceptions, the visas were actually not that
+bad. South-Africa, Namibia, Mozambique, Zambia, Botswana and even
+Zimbabwe had fairly sensible visa requirements. Angola's was a bit
+more complicated but workable. So we went and booked the tickets. Yes,
+you read that right, we booked the tickets. Yes, before we got the
+Angolan visa. To the inexperienced this sounds like a trivial mistake,
+easily solved with a trip to the embassy; worst case scenario, a
+day-off wasted.
+</p>
+
+<p>
+First big mistake.
+</p>
+
+<p>
+In addition, we planned to go to Angola around March time. Now, since
+we aimed to leave the country around the end of November, that meant
+that we would only get to Angola more than three months after leaving
+London.
+</p>
+
+<p>
+Second big mistake.
+</p>
+
+<p>
+Lastly, we assumed we would be able to stay with family or friends in
+Luanda, or, worst case scenario, to find a cheap hotel. After all,
+anything will do for a couple of tired backpackers.
+</p>
+
+<p>
+Third, very, very big mistake.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc6960ab" class="outline-2">
+<h2 id="orgc6960ab">Anatomy of a Visa</h2>
+<div class="outline-text-2" id="text-orgc6960ab">
+<p>
+As anyone who has done real travelling knows, visas are actually a
+tricky beast. Not the less seasoned traveller, however. He takes them
+for granted even without realising. For example, he may assume that
+all countries have a tourist visa. He may assume you can get a visa in
+any embassy of the country you wish to travel to. Or he may assume
+that, once you have a visa, that's it, you're sorted.
+</p>
+
+<p>
+Unfortunately for us, Angola did not have the concept of a Tourist
+Visa until very recently. In fact, as recently as two weeks ago. The
+next best thing is an Ordinary Visa. But don't be fooled by the name:
+there's nothing ordinary about it. To get one of these, one needs to
+have an invitation letter. The gist of the invitation letter is that
+an Angolan citizen, or a foreign citizen residing in Angola,
+guarantees the stay of the person requesting the visa. The letter must
+be faxed to the embassy from an Angolan telephone number. If the
+person sending the invitation letter is Angolan, you must also include
+a photocopy of the person's passport, authenticated by notary. Getting
+one of these photocopies would set you back at least 10 EUR and one or
+more days of queuing. In addition, the person requesting the visa must
+also bring a copy of the letter with them. And, to make things more
+interesting, the consulate only receives applications on Mondays and
+Tuesdays, from 09:00 to 13:00. That is, of course, excluding all
+English and Angolan public holidays. And, oh, you must also bring the
+plane tickets with you, so abandon any ideas of getting a visa before
+you buy the tickets.
+</p>
+
+<p>
+Luckily we know a lot of people in Angola. We'll expand on that in a
+moment. For the time being it suffices to say that our friends Lau and
+Leonor live there. So, we thought, lets ask them for the invitation
+letter. That's when Lau mentioned that we could not possibly be trying
+to get a visa for March next year since visas had a 60-day
+expiration. "No, it can't be", we protested. "The UK Angolan embassy
+website explains the visa process fairly well and there was no mention
+of an expiration date". We held steady, convinced against hope that
+this was, perhaps, a quirky behaviour of the Angolan embassy in
+Portugal. So we rang the embassy in the UK, and after many, many
+attempts, we got through to the consulate. The consulate dutifully
+informed us that, yes, Lau was right. "But can we at least get a visa
+from South-Africa or Namibia?" Best to check with the embassies in
+those countries, but, no, not very likely. So we rang these
+embassies. It turns out you can only obtain a visa from the embassy of
+your country of residence. In the words of one embassy worker:
+</p>
+
+<div class="epigraph"><blockquote>
+<p>
+"Para voce ainda se arranjava qualquer coisa, com um pouco de sorte,
+talvez um visto de emergencia&#x2026; Agora para a inglesa, aih nao dah
+mesmo, a situacao estah bloqueada."
+</p>
+
+</blockquote></div>
+
+<p>
+Which roughly translates to "perhaps for me they could, maybe, sort
+something out. But definitely not for the English woman". Shahin was
+out of luck. "Situacao bloqueada", or "the situation is blocked" has
+become one of the most heard phrases, and a bit of an in-joke for us
+these days. Leonor graciously offered us some contacts here in London,
+but to no avail.
+</p>
+
+<p>
+We were stuck with tickets we could not possibly use. And refund is
+not a word travel agents know of.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5fefbe0" class="outline-2">
+<h2 id="org5fefbe0">The Angolan Dictionary</h2>
+<div class="outline-text-2" id="text-org5fefbe0">
+<p>
+After much rumbling and thinking, Shahin found a solution. Whilst the
+travel agents were unwilling to refund the tickets, they would allow
+us to change the dates of the internal flights - for a modest fee, of
+course. In other words, we could go to Angola earlier on provided
+there were seats available.
+</p>
+
+<p>
+To avoid getting into further problems, we decided to sort out the
+accommodation before changing the tickets. "Just in case; hey, you
+never know".
+</p>
+
+<p>
+In fact, as we now know, accommodation in Luanda is an intractable
+problem. Leonor and Lau looked high and low for something for us, but
+nothing was to be found. We started panicking slightly: if two locals
+are saying hotels are really hard to find, maybe there's a bit of a
+problem? It turns out hotels in Luanda are scarce, and thus,
+horrendously expensive. Expensive beyond comprehension. And this is
+coming from a Londoner. In Luanda, you may count yourself lucky if
+you're paying 250 USD a day in a motel; some hotels charge 1000 USD a
+day. That is, if you can find a vacant room at all.
+</p>
+
+<p>
+Ah, but I was prepared! Whilst I tried to avoiding bugging family and
+friends as much as possible, I reserved them for emergencies. And this
+sure was one. If there's anyone who knows people, that person is
+Mom. So I rung Mom and Mom rung and rallied all the Angolans. In the
+mean time, I rung my faithful cousin Elsa, ever helpful.
+</p>
+
+<p>
+After patiently listening to my explanations, Elsa then, also
+patiently, explained the real meaning of words in Angolan
+Portuguese. This was a most enlightening experience. It is a common
+mistake people make to interpret literally things Angolans say. For
+instance, if someone says "if you come to Angola you can stay in my
+house", they are not actually saying that, were you to come to Angola,
+you can stay at their house. Instead, think of it a bit more like an
+Englishman says "How are you" when he greets you. He is not actually
+wanting to know how you are; its just a statement. It could have
+easily been "What a dreadful weather!". This applies to almost any
+Angolan statement of intention. For instance, if someone says "we'll
+see what we can do", this does not mean you don't need to worry about
+it and wait for them to come back to you. Instead, you can safely
+assume that nothing will happen unless you ring them 10 or 20 times.
+</p>
+
+<p>
+Unfortunately, time was running out. And accommodation was not
+forthcoming. So we changed the tickets without having a place to stay.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org26638ca" class="outline-2">
+<h2 id="org26638ca">Expect the Unexpected</h2>
+<div class="outline-text-2" id="text-org26638ca">
+<p>
+The travel agents found us a ticket on the 11th of December. However,
+when we reported this to Lau, we then discovered that they were going
+to leave the country on the 8th of December. And we also discovered
+that its not a good idea to have an invitation letter sent by someone
+who is unable to pick you up at the airport. This is because the DEFA
+(the Angolan emigration service) may actually want to ring the person
+who sent you the letter. And they would not be entirely pleased when
+they found out that the person who sent you the invitation letter is
+actually not in the country. After all this trouble, being locked up
+in a room answering questions didn't sound very seductive.
+</p>
+
+<p>
+So the only certainty we had until then, the invitation letter, was
+now lost. Now we were back to square one.
+</p>
+
+<p>
+As I was explaining this to Lau, he said "yeah, I know. In this
+country, one cannot take anything for granted". And he told me about
+that time when, after much effort, he had secured a plane ticket to
+visit to one of the southern provinces in Angola. He had actually
+boarded the plane, and it appeared ready to take off. Then, on the
+last moment, an announcement was made: "O motor nao pega, o voo estah
+cancelado" ("The pilot can't get the engine to start, so the flight is
+cancelled"). I suppose he was lucky to find that out before the plane
+took off.
+</p>
+
+<p>
+So we learnt another lesson: in Angola, always expect the unexpected.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2021-03-27 Sat 13:51</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
