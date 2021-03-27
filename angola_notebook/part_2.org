@@ -8,9 +8,11 @@
 
 Monday, November 13, 2006
 
+#+begin_verse
 /Sometimes I'm up and sometimes I'm down/
 /Yes Lord, you know sometimes I'm almost to the ground/
 -- Louis Armstrong
+#+end_verse
 
 * Dog Years
 
