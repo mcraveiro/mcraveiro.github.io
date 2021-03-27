@@ -209,5 +209,4 @@ took off.
 
 So we learnt another lesson: in Angola, always expect the unexpected.
 
-[[file:part_2.org][Forward to next chapter]]
-[[file:index.org][Back to chapter index.]]
+| [[file:index.org][Back to chapter index.]] | [[file:part_2.org][Forward to next chapter]] |
