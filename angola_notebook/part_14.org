@@ -805,7 +805,7 @@ quite clear that Plattenburg Bay would have been a better choice for a
 base camp than Knysna, both on the scenic side of things, but also
 because it seems to be a much livelier place.
 
-#+caption At a platform on the Canopy Tree tour. The tree is over 50 metres in height.
+#+caption: At a platform on the Canopy Tree tour. The tree is over 50 metres in height.
 [[./canopy_tree.jpg]]
 
 Nature's Valley, as the name implies is a very much unspoiled valley,
