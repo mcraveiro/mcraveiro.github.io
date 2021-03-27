@@ -17,3 +17,4 @@ time ago. This series of blog posts narrates the adventure.
 - [[file:part_6.org][Part VI - Pinned to the Wall]]
 - [[file:part_7.org][Part VII - The Wind City]]
 - [[file:part_8.org][Part VIII - The Long Wait]]
+- [[file:part_9.org][Part IX - Ilha]]
