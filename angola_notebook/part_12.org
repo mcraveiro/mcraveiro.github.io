@@ -431,3 +431,6 @@ getting into VISA problems. Nothing of the kind happened in the
 end. Things went really smoothly and we even got to try the new
 Boeings TAAG has bought, with multimedia players on each individual
 desk. A few hours later we were back in Joburg.
+
+[[file:interlude.org][Forward to next chapter]]
+[[file:index.org][Back to chapter index.]]

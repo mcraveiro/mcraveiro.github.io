@@ -304,3 +304,6 @@ end. Now the queues are over, for the most part. Ironically, you still
 have to queue for the fuel. But all the goods are available,
 supermarkets are plenty and well stocked. The new problem is cost:
 things are very expensive.
+
+[[file:part_9.org][Forward to next chapter]]
+[[file:index.org][Back to chapter index.]]
