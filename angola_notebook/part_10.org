@@ -628,5 +628,4 @@ shower, removing the thick layer of dirt that covered us.
 
 We were now officially in Benguela.
 
-[[file:part_11.org][Forward to next chapter]]
-[[file:index.org][Back to chapter index.]]
+| [[file:part_9.org][Back to previous chapter]] | [[file:index.org][Back to chapter index.]] | [[file:part_11.org][Forward to next chapter]] |

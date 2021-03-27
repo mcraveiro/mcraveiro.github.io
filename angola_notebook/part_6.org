@@ -282,5 +282,4 @@ round plus the time, flying is a much better deal.
 
 So we got the plane and went off to Windhoek.
 
-[[file:part_7.org][Forward to next chapter]]
-[[file:index.org][Back to chapter index.]]
+| [[file:part_5.org][Back to previous chapter]] | [[file:index.org][Back to chapter index.]] | [[file:part_7.org][Forward to next chapter]] |

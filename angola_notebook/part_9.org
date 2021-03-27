@@ -534,5 +534,4 @@ Elsa. It was great fun, and the food was delicious - it's impossible
 to decide on which dish was the best one. The night ended with a drink
 at Chill Out, a very nice bar down at Ilha.
 
-[[file:part_10.org][Forward to next chapter]]
-[[file:index.org][Back to chapter index.]]
+| [[file:part_8.org][Back to previous chapter]] | [[file:index.org][Back to chapter index.]] | [[file:part_10.org][Forward to next chapter]] |

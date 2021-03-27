@@ -87,5 +87,4 @@ She could not. We would have to wait.
 
 And all of this before 12:00 o'clock on a Saturday.
 
-[[file:part_3.org][Forward to next chapter]]
-[[file:index.org][Back to chapter index.]]
+| [[file:part_1.org][Back to previous chapter]] | [[file:index.org][Back to chapter index.]] | [[file:part_3.org][Forward to next chapter]] |

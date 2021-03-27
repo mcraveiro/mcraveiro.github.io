@@ -616,5 +616,4 @@ perhaps one of the most challenging aspects of the whole experience,
 and it will probably take quite a while to adapt to living in a place
 with such huge disparities between rich and poor.
 
-[[file:part_13.org][Forward to next chapter]]
-[[file:index.org][Back to chapter index.]]
+| [[file:part_12.org][Back to previous chapter]] | [[file:index.org][Back to chapter index.]] | [[file:part_13.org][Forward to next chapter]] |

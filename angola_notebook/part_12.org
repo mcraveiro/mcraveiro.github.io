@@ -432,5 +432,4 @@ end. Things went really smoothly and we even got to try the new
 Boeings TAAG has bought, with multimedia players on each individual
 desk. A few hours later we were back in Joburg.
 
-[[file:interlude.org][Forward to next chapter]]
-[[file:index.org][Back to chapter index.]]
+| [[file:part_11.org][Back to previous chapter]] | [[file:index.org][Back to chapter index.]] | [[file:interlude.org][Forward to next chapter]] |

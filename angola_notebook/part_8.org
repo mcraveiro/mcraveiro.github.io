@@ -305,5 +305,4 @@ have to queue for the fuel. But all the goods are available,
 supermarkets are plenty and well stocked. The new problem is cost:
 things are very expensive.
 
-[[file:part_9.org][Forward to next chapter]]
-[[file:index.org][Back to chapter index.]]
+| [[file:part_7.org][Back to previous chapter]] | [[file:index.org][Back to chapter index.]] | [[file:part_9.org][Forward to next chapter]] |

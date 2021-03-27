@@ -164,5 +164,4 @@ the last moment and makes everything all right."
 point I finally understood that the roots of my optimism are actually
 genetic.
 
-[[file:part_4.org][Forward to next chapter]]
-[[file:index.org][Back to chapter index.]]
+| [[file:part_2.org][Back to previous chapter]] | [[file:index.org][Back to chapter index.]] | [[file:part_4.org][Forward to next chapter]] |

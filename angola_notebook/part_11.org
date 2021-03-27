@@ -820,5 +820,4 @@ going to Bairro Vinte e Oito and Restinga, and probably many other
 places we never managed to get to, but still. So as far as we were
 concerned, Benguela won the battle, but only marginally.
 
-[[file:part_12.org][Forward to next chapter]]
-[[file:index.org][Back to chapter index.]]
+| [[file:part_10.org][Back to previous chapter]] | [[file:index.org][Back to chapter index.]] | [[file:part_12.org][Forward to next chapter]] |

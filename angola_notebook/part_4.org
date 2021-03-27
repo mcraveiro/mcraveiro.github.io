@@ -74,5 +74,4 @@ desenrascanço over planning.
 
 Shahin protests most vehemently.
 
-[[file:part_5.org][Forward to next chapter]]
-[[file:index.org][Back to chapter index.]]
+| [[file:part_3.org][Back to previous chapter]] | [[file:index.org][Back to chapter index.]] | [[file:part_5.org][Forward to next chapter]] |
