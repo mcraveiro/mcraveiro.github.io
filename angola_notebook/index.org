@@ -14,3 +14,4 @@ time ago. This series of blog posts narrates the adventure.
 - [[file:part_3.org][Notebook of a Return to My Native Land - Part III - The Angolan
   Triangle]]
 - [[file:part_4.org][Notebook of a Return to My Native Land - Part IV - Maior e Vacinado]]
+- [[file:part_5.org][Notebook of a Return to My Native Land - Part IV - Angolan Red Tape]]
