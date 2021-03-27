@@ -903,5 +903,4 @@ these are actually really competitive. We got tickets to Cape Town for
 With the tickets in our hands, we were ready to go to Cape Town, the
 coloured capital of the world.
 
-[[file:part_14.org][Forward to next chapter]]
-[[file:index.org][Back to chapter index.]]
+| [[file:part_12.org][Back to previous chapter]] | [[file:index.org][Back to chapter index.]] | [[file:part_14.org][Forward to next chapter]] |
