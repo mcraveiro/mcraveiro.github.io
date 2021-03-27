@@ -1,0 +1,433 @@
+#+title: Notebook of a Return to My Native Land - part 12
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+
+[[file:index.org][Back to chapter index.]]
+
+Saturday, February 10, 2007
+
+* Luanda, Again
+
+Our return from Benguela to Luanda was planned to be fairly painless,
+even potentially pleasant: we decided to fly back. There had been just
+too many travelling adventures to recount and we needed just a little
+bit of easiness, just that little bit of quietness for a
+change. However, this being Angola, flying was not entirely
+straightforward. We had spoken to Teresa, who convinced us not to buy
+a ticket beforehand. Recalling some of her experiences, she told us
+that at one time she had bought three plane tickets for a single
+flight - no refunds given, of course. Best to go to the airport
+without a ticket and buy one there and then, she suggested. This we
+did. Although candongueiro routes didn't seem to service the airport,
+it was easy enough to get there via taxi. When we arrived, we were
+immediately asked whether we had a ticket or not. We didn't. From that
+point onwards, the attendant started behaving in a shady sort of way,
+looking both ways before talking and speaking really low. Actually,
+everyone in the small airport suddenly seemed to act in a fishy way,
+like they were all in a secret we didn't know. The chap told us not to
+buy a ticket, and to stay in the empty waiting room till further
+notice. After a while he showed up again, said there was a potential
+flight, possibly via Lubango. Were we interested? If yes, he had to
+part with 230 USD. Unfortunately we didn't have any change, something
+he quickly picked up on, and somehow he managed to convince us he
+deserved the extra 20 bucks for the effort of sorting it all
+out. Within seconds the attendant was gone and, with him, our 250
+bucks. Yet another of those cartoon moments - you know, like when Bugs
+Bunny cons Elmer Fudd into doing something really, really silly, and a
+couple of donkey ears appear on his head before he realises the
+mistake. Those kind of moments. There you are, no attendant, no ticket
+and no money. It was hard to explain just exactly at which point did
+it seem like a good idea to give a total stranger a wad of cash and
+trust his goodwill. Oh well, now there was nothing else to do other
+than wait, so we waited and prayed for his safe return. Meanwhile a
+small plane landed. Eventually, our contact returned. He had spoken to
+the pilots, and there was now a direct flight to Luanda and we were on
+it; all we had to do is wait for the DEFA registration, and then board
+the plane. A little while longer, another half-an-hour or so, the DEFA
+person called us to fill in the paperwork. Whenever you do an internal
+flight in Angola you need to fill in some information like your
+passport details, where you're staying, and so on. Perhaps some
+remnants of the old, control-freak communist system. Once this was
+done, we waited some more. Some additional people got into the waiting
+room. Soon the pilots came round and called us for boarding. We all
+boarded a really small plane, seventeen seats in total, ten or twelve
+of them filled. And that was it, we were on our way to Luanda. As we
+were flying, some aspects of the process became clear. No tickets were
+ever issued. Our presence totally evaded the airline's ticketing
+system, and the money got paid directly to our attendant and the
+pilots. Thank God the plane didn't crash or otherwise no one would
+have ever known our whereabouts. On the positive side, the flight was
+excellent. We had never flown on a small aeroplane before but it was a
+great experience. You can see everything, and feel a lot closer to the
+sky as if you're skydiving or something. The sights were stunning.
+
+When we got closer to Luanda, we started to see the effects of the
+rains. Estadio dos Coqueiros was completely flooded, and looked like a
+giant swimming pool. Most musseques were flooded too. There was water
+everywhere. We had missed the first real rains in Luanda, the rains
+that Elsa dreaded so much.
+
+** DEFA
+
+One thing we haven't mentioned much is the VISA renewal process. Don't
+be fooled into thinking that it hasn't kept us busy - quite the
+contrary. On hindsight, almost ever since we got into the country we
+have been doing something related to the VISA; when we weren't
+actually physically going to places, we had to at least ring people or
+pray for things to get done soon. But lets go back in time, to last
+December. We first went in to DEFA to figure out the exact
+requirements and buy the forms. We were then told by a contact that we
+needed a letter signed by notary stating that someone was taking
+responsibility for us, and the photocopy of this person's ID card. Our
+cousin Rosa kindly sorted this out for us, but the entire process of
+getting the forms, filling them in, writing the letter, getting the
+notary to sign it and photocopying the ID card took over three
+weeks. There was even a point when we almost despaired, we only
+noticed the letter had the wrong date on it after the notary had
+already authenticated the signature, but since we didn't have enough
+time to get a new one, we had to go with it as it was. Just before we
+boarded the plane to Benguela, a mere three days before our VISAs
+expired, we managed to hand in the forms and our passports. In return
+we received a receipt, and were told that it had the same legal value
+of our passports whilst we were on Angolan soil - best not lose it if
+we wanted to avoid prison. There wasn't a date for the completion of
+the process and it wasn't unheard of it taking months. We asked
+around, and people thought we should be able to go on internal flights
+with the receipt, but no one was entirely sure. This helped us on our
+decision of going by bus to Benguela. In fact, we only found out for
+sure when we boarded the plane back from Benguela; the receipt does
+work fine. When we returned two weeks later, we were told the
+passports were not ready yet. We wanted to go to Namibe as quickly as
+possible, but we also wanted to have the passports with us, so we
+decided to wait around a bit more. Turns out this was a very inspired
+decision. We were told by a contact to go to DEFA a few days
+later. After some haphazard queueing and loitering round, more than
+six hours in total, we finally managed to get our passports back. It
+had taken more than six weeks since we first asked about it till we
+got our passports back, and it was one of the fastest VISA renewals on
+record. We were extremely happy to see our passports safe and sound,
+but, in the happiness of the moment, I had forgotten to check DEFA's
+work. Shahin however, being the usual stickler for perfection, did
+check it and she was not at all happy about it. The dates on the VISA
+were wrong, by precisely one day. They had given us thirty days from
+the date we requested the renewal, not the date of the last VISA. This
+would make perfect sense if there was an organised department to tell
+you the exact rules for the renewal process and to discuss things with
+you, things like whether the date of your flight out was compatible
+with the VISA expiration date or not. This being Angola, there is
+obviously no such thing - you're expected to know it all. If you
+didn't, well, that's your problem. We contemplated going back to DEFA
+and complaining, but after all the trouble we had renewing the VISA -
+and after being told a few times that we were extremely lucky for the
+fast speed at which things were happening - well, it just seemed
+obvious we had to avoid these people at all costs. The only other
+alternative was to change the outgoing flights, a much more feasible
+alternative.
+
+It was at this point when we finally understood why everyone hates the
+rains so much.
+
+When we went to TAAG (the Angolan Airlines) we were told that the
+computer systems were down, so there wasn't anything they could
+do. What they failed to tell us, and we found out later on, was that
+the systems had been down for the best part of a week, with no relief
+in sight. We spent the entire day waiting, but the system never
+returned. Unfortunately, the following day was a bank holiday,
+Luanda's 431st birthday, so everything was closed. Friday became the
+D-Day.
+
+The day started with an early trip to TAAG, but the systems were still
+down. Still praying that this was some kind of a temporary blip,
+something that would get fixed during the day, we decided to walk down
+the road to Western Union to get some money out. Unfortunately, their
+systems were down too. Whilst we waited at a local cafe, re-hydrating
+ourselves, Shahin managed to somehow swallow a fly. A dirty, Luandan
+fly. The whole scene was out of a sitcom, except it really
+happened. Fortunately, she didn't even puke. We laughed so much that
+we were stared at by all who were in the cafe as we had streams of
+tears rolling down our faces.
+
+We returned to Western Union, but the systems were still down, so we
+decided to go back to TAAG. The systems were not working there either,
+and time was fast running out but there just wasn't anything we could
+do so we went for lunch at Nando's. On our return to Western Union,
+the queue had doubled in size since we last came, but the good news
+was that the system was back up. Whilst in the queue I met Joao Solha,
+a mate from high-school I hadn't seen in years. After the usual hugs
+and reminisces, Joao told us that Western Union had been down for more
+than a week, and he was fast running out of money. Today things were
+pretty desperate. While we were chatting, news filtered out that the
+system was back up, for the great relief of the massive crowds sitting
+outside the bank. However, it was almost three o'clock - the usual
+closing time - and there were tonnes of people waiting to be seen. The
+system could go down at any time, Joao guaranteed us, like it had
+happened earlier on in the week. It was up for an hour or two, but it
+went down and hadn't returned since then. As we queued up and chatted,
+we noticed that the queue wasn't actually moving. Shahin went on a
+scouting mission and found out that the ordered queue we had joined in
+an hour ago had now evolved to the dreaded Angolan queue. Angolan
+queues are the worst type of queues. They basically grow from the
+sides. For the more technically oriented, its a mix between a LIFO
+(Last In First Out) and a Priority Queue - the priority algorithm
+being how well you know the security guard at the door or the people
+in front of you. We all got a bit upset with all this, Shahin in
+particular, and decided to take action and join the front via the
+sides too. Everybody else was doing it too, so when in Rome... This
+went on for a while, with lots of pushing and shoving and shouting,
+until the security guard decided he had had enough:
+
+- "Either you start forming a real queue, or no one gets in!!".
+
+We had been in many Angolan queues before and heard the same thing
+before too, so we knew nothing - not a thing - would change,
+regardless of the best intentions of the security chap. And so it was
+this time too. All the people closer to the wall started shouting that
+there was a real queue indeed, there had been one all along and they
+were in it - which was true for the most part, but not entirely. The
+new joiners in the middle of the sidewalk also started shouting,
+claiming they were the real queue and always had been, and that there
+was no need for further organisation. The shouting match went on for a
+bit, with some people starting to get really agitated - including
+Shahin - up to a point where the security guard had enough. You have
+to put things in perspective. This was a Friday, after a week long
+without any access to money. Everyone was really desperate. To this
+environment, a keg of powder waiting to ignite, the security guard
+decides to shout:
+
+- "OK, I've had enough! You're not willing to organise this mess?! I
+  don't care! You can all get in!"
+
+There was a second or two of silence, the quiet before the storm. What
+followed was one of the worse stampedes I've seen in my life, much
+worse than the previous one in the same location a few weeks ago. The
+really narrow door got attacked simultaneously by all sides with
+untamed force. I don't know how the metal frame and the glass survived
+it. Shahin was well in the thick of it, pushing, shouting,
+waving. Apparently - I wasn't close enough to the front to see this -
+there was a skinny lady that managed to get stuck to the door, and
+everyone was going past her. Shahin had to push her into the branch,
+probably saving her life. It was like a gold rush, except the money we
+were getting was actually ours to start off with. Once the confusion
+settled and everyone made their way in, we were told by the bank staff
+that there was no reason to fear: everyone inside the branch was going
+to get their turn - and here's the key part - provided the system was
+up. We put the forms into the in-tray and prayed. The Gods must have
+pitied us since about two hours later it was our turn, and we managed
+to get our money. We heard later that Joao also managed to finally
+access his cash, although he ended up taking a five hour lunch break
+to get it. Once we had the cash in our hands, we ran back from Mutamba
+to TAAG, all the while hoping that their system was working too and
+didn't crash in the mean time. TAAG was in full effect when we got
+there, a pretty agitated place, a rave party of a travel
+agency. Somehow, I don't know how really, we managed to get a ticket
+that was fairly close to the front of the queue. Half-an-hour later we
+were seen by the attendant. After the usual moaning and feet-dragging,
+the I'm-not-really-supposed-to-be-doing-this part, she actually
+managed to change the ticket to one day before our VISA expiration.
+
+This was one of the most tiring days we've ever experienced. When we
+got back home we were simultaneously high, from the success, but also
+really low from the tiredness. We had woken up at 7 o'clock to get to
+TAAG and got back home more than twelve hours later, exhausted.
+
+** The road to Namibe - or should I say Lubango
+
+All the exhaustion and stress had some really negative
+consequences. Shahin suddenly got a fever, very similar to the one I
+had experienced before. We did the usual tests at the usual doctors
+who, as usual, tried to help themselves of our hard earned cash - but
+this time they even suggested having a 50 USD X-ray when Shahin said
+she had a bit of a cough. That was the straw that broke the camel's
+back. Even I, the least money conscious person in the whole world, had
+just about enough of their daylight robbery. We decided to do a bit of
+mix-and-match with the exams, play doctors if you'd like, and choose
+for ourselves which exams she really needed to do. This had the
+desired effect, because the doctor didn't shout at us went we went
+back in to the room. We even had to ask him about three or for times
+how to read the results, jumping on him in the hospital corridors, and
+he must have felt sorry for us since he did explain it, somewhat. In
+the end, it seemed like Shahin also had malaria, although not as
+severe as mine. We bought the medication and followed the
+treatment. However, we were now desperate to leave Luanda again and
+this meant no rest for the wicked.
+
+We made our way to the airport on the day of the next available
+flight - as usual not reserving the tickets beforehand. Shahin was
+pretty exhausted and ill-looking, a very worrying situation. Our
+contact at the airport was going to sort it all out. We got there
+early enough, ten o'clock in the morning, but Luanda's domestic
+airport proved to be a lot more confusing than the international
+one. Our contact told us that there shouldn't be any problems, all we
+had to do is wait around to buy the ticket and then for check-in. So
+we waited. An hour went by. Shahin progressively got worse, getting
+warmer. Another half-hour went by. At this point, I heard through the
+speaker's system - yes, they do seem to have one - something along the
+lines of "Namibe's flight has been cancelled!". I couldn't hear
+properly, and the warning wasn't issued that many times so we couldn't
+tell for sure. If the flight had indeed been cancelled we would have
+to get a cab back home and try again in a couple of days. That meant
+two days less of holidays outside of Luanda, and two more days of pain
+in the middle of the capital's confusion. The only other alternative
+was to get a flight - any flight - to another province and make our
+way to Namibe overland. This is less of a crazy idea than it sounds,
+and people actually do it quite frequently due to the unpredictable
+nature of Angolan flights. I mentioned this to our contact, who I had
+to keep chasing for information, and he said he could get us to
+Lubango - provided we were ready NOW. As in, right now, run to the
+check-in desk. This with Shahin dying by my side, feverish. I did as
+much of the running as I could, but it was unavoidable, she had to do
+some running around too. Somehow we managed to buy the tickets (this
+time we had real tickets), check-in, find the right waiting lounge,
+get on the bus and board the plane. It was really exhausting. Shahin
+was holding on just about, so much so that the flight attendant asked
+me if she was alright, a worried look on her face. The flight wasn't
+particularly long, and we soon got to Lubango. There, we were told by
+Rosa that, by some huge, not yet explained coincidence, a cousin of
+ours was also getting to Lubango within the next few minutes and would
+be driving to Namibe soon after. Another cartoon moment. After some
+waiting, during which Shahin's state improved dramatically, we finally
+met cousin Chico. He told us he'd be making his way in an hour or two,
+but in the mean time we had to find our own way into town centre and
+wait there for him. Fortunately for us, the people near the airport
+were extremely nice. Not only did they make sure we got in the right
+taxi, but they also kept their cafe open for Shahin while I was busy
+hunting Chico down at the airport. We finally got into a taxi, but
+this was a fixed route cab which didn't actually go all the way to
+town. The young taxi driver took a liking to our English, having
+studied in Namibia himself, and after chatting to us for a little
+while he decided to take us to our destination for free. Not only
+that, he even gave us a mini-tour of town, showing us the cheap
+hostels and everything. We ended up giving him some 800 kwanzas, money
+he reluctantly accepted. He dropped us off at the Grand Hotel, in one
+of Lubango's main arteries.
+
+Lubango is the capital of the Huila province. It seems like a really
+nice town, and we really would have wanted to stay for a few days
+there, but since Rosa had already arranged for our transfer and since
+Shahin wasn't feeling that great still, we thought best to go to
+Namibe and return when possible. Lubango was once an important
+agricultural centre, and also had a few key factories such as
+Coca-Cola and Cuca, one of the Angolan beers. It still is a fairly
+important place, Angola's city with the highest number of Portuguese
+people. These two factories are alive and well, as is the cattle
+industry. The national university has a couple of campuses there. Its
+a big city as far as these things go, about the same size of Benguela,
+if not bigger, and seems like a pretty lively place. Because its
+further into the interior, Lubango is very green and lush. To our
+great regret, we never did manage to return there.
+
+Our stay in Lubango was cut short by Chico's arrival at the hotel in
+his massive jeep. He then drove us to Namibe, down Serra da
+Leba. These mountains are well known to all Angolans, even to those in
+the diaspora that never set foot in the country, because all parents
+mention it whenever they reminisce about the land. When you're there
+you can easily understand why. The mountains are huge,
+magnificent. The drive is extremely impressive, and it even has
+waterfalls in the background. On the way up, leaving town, one can see
+the whole of Lubango from high above. Then, for a few kilometres one
+traverses a plateau, with quite a few farms. After that, the descend
+of Serra da Leba begins. It really is an amazing trip, a must do. As
+one descends and reaches flatland again, the scenery becomes less and
+less green, until one reaches the desert proper. The scenery then
+looks like Namibia. Its a huge change, but its done really gradually
+over hundreds of kilometres. In less than three hours we were in
+Namibe, standing at my cousin's Milucha doorstep.
+
+One honourable mention goes to the roads that link Lubango to
+Namibe. These are the best roads we saw in the whole of Angola, so
+good its impossible to describe in words. There were very few holes in
+it, a veritable velvet of a surface.
+
+** Paludismo Strikes Back, Hard
+
+As we got to Namibe, Shahin's health improved dramatically. Perhaps
+some of it has to do with the much less humid climate in Lubango and
+Namibe, or with the needed rest we finally got. However, just as we
+were celebrating her recovery, I started having a mild fever. It began
+on our first outing in Namibe, in which Milucha took us to see town
+and then to the nearby city of Tombwa. Late on that day I had a very
+high fever. We couldn't manage to get the fever down, even after
+taking medicine and having cold water showers. I ended up staying
+outdoors in the yard with no t-shirt on, trying to cool down. This
+worked for a bit, but eventually the fever came back. It was still
+pretty high for most of the next morning so we decided to go to the
+doctor. There, very swiftly, the Russian doctor determined I had
+paludismo - malaria - again. He also took the time to explain which
+exams we needed to figure out if we have malaria - Gota Espessa and
+Hemograma - and explained that these exams are not affected by
+profilaxia at all. He expressed the same extreme dislike for
+profilaxia as every other doctor has in Angola. All and all, not only
+was the service a lot better in Namibe, but the prices were more
+reasonable. We spent around 50 bucks in total, and this includes the
+doctor's time, all the medicine he prescribed and the nurse's time
+too. Why would you need a nurse? Well, since my fever didn't want to
+came down, the doctor determined I needed diperona
+injections. Diperona is normally taken like paracetamol, in pill form,
+and very much like it its used to bring the fever down. It is also
+available in liquid form, for the more severe cases, but this requires
+injecting it into the patient. To be more precise, into the patient's
+bum. Not only did I have to be subjected to this humiliation, but it
+also hurt like taking back teeth out without anaesthetics. To make
+matters worse, diperona was mixed with something else, some kind of
+anti-allergenic drug, and the end result was it knocked me out,
+hard. After an injection, all I could muster was to get home groggy,
+find my bed and sleep. The doctor wanted me to take these injections
+for 3 days, twice a day, but we were keen on getting off of it as soon
+as possible. In the end, I had three injections, by which time my body
+temperature was normal. My bum, however, never quite recovered from
+it, and I still walk funny. Around four days later I felt a lot better
+and was well enough to start leaving the house - that is, for reasons
+other than going to the clinic for injections. And so it was that our
+one week stay in Namibe was taken mostly by paludismo.
+
+** Namibe
+
+Namibe is actually quite a nice town, and it is a fairly emotional
+place for me since most of my family comes from here. It is situated
+at the edge of the desert, and once upon a time it was Angola's
+fishing district. It was also responsible for producing most of
+Angola's olives. Nowadays, most employment in the province is still
+fishing related, and many fisheries still function, but they are a bit
+crippled. The government is trying to reform the industry, but its a
+slow process.
+
+Unfortunately, unlike Benguela, the candongueiro network is not
+particularly efficient in Namibe. For instance, you can't go to the
+nearby beaches without personal transportation. We were lucky that
+Milucha was actually on holidays, and was willing to spend her time
+showing us round. Even though we didn't have as much time as we would
+have liked, we still got to see most of the city, including places
+like my mom's primary and high-school, and my grandad's old house. It
+was an incredible experience. We even had time to meet up with Lau and
+Leonor, up from Luanda for the long weekend, also visiting relatives.
+
+It was great to see the level of recent development in the
+province. Most roads have been tarmacked recently, and there a few new
+hospitals and schools, including a campus of the state
+university. Clinics work really well, as we found out. There is also
+some social housing. As the locals reminded us, there is still lots of
+work to be done - for instance, electricity and water are still
+haphazard - but, for such a small district, it sure seems to have
+managed to get their act together.
+
+After a week in Namibe, we returned to Luanda.
+
+** Goodbye Angola
+
+Our last few days in Angola went by pretty quickly. We just had enough
+time to say goodbye to people and rest a bit. We had a goodbye dinner
+at Chicala's Chinese restaurant, by now our favourite for both the
+quality of the food and the price. We were hoping to get a nice crowd,
+including Ica and the wife and Rui Murthala and his
+woman. Unfortunately, everyone seemed to be tied up. The old faithfuls
+Rosa as well as Lau and Leonor did not let us down. It was a great
+dinner. Lau offered to take us early in the morning to the airport,
+which was great since Macon taxi's were found to be a bit unreliable
+on early pickups. We were still a bit concerned, worried that somehow
+TAAG would mess-up the tickets and make us stay for an extra day,
+getting into VISA problems. Nothing of the kind happened in the
+end. Things went really smoothly and we even got to try the new
+Boeings TAAG has bought, with multimedia players on each individual
+desk. A few hours later we were back in Joburg.
