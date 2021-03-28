@@ -26,11 +26,11 @@
 
 *** C++
 
- - [[https://stackoverflow.com/questions/39798321/generate-clang-compilation-database-for-a-visual-studio-project/55675091#55675091][Answer: Generate clang compilation database for a Visual Studio project]]
- - [[https://stackoverflow.com/questions/6835728/how-to-break-when-a-specific-exception-type-is-thrown-in-gdb/61030819#61030819][Answer: How to break when a specific exception type is thrown in GDB?]]
- - [[https://stackoverflow.com/questions/58205454/faster-execution-of-vanilla-swaps-in-python-in-quantlib/62397407#62397407][Answer: Faster execution of Vanilla Swaps in Python in Quantlib]]
- - [[https://stackoverflow.com/questions/47475731/cmake-include-directories-for-custom-target-type/58200691#58200691][Answer: CMake include_directories for custom target type]]
- - [[https://stackoverflow.com/questions/39910468/odb-c-unknown-database-schema-error/58107350#58107350][Answer: ODB C++ - Unknown database schema error]]
+ - [[https://stackoverflow.com/questions/39798321/generate-clang-compilation-database-for-a-visual-studio-project/55675091#55675091][A: Generate clang compilation database for a Visual Studio project]]
+ - [[https://stackoverflow.com/questions/6835728/how-to-break-when-a-specific-exception-type-is-thrown-in-gdb/61030819#61030819][A: How to break when a specific exception type is thrown in GDB?]]
+ - [[https://stackoverflow.com/questions/58205454/faster-execution-of-vanilla-swaps-in-python-in-quantlib/62397407#62397407][A: Faster execution of Vanilla Swaps in Python in Quantlib]]
+ - [[https://stackoverflow.com/questions/47475731/cmake-include-directories-for-custom-target-type/58200691#58200691][A: CMake include_directories for custom target type]]
+ - [[https://stackoverflow.com/questions/39910468/odb-c-unknown-database-schema-error/58107350#58107350][A: ODB C++ - Unknown database schema error]]
 
 ** Others
 
