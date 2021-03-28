@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-03-28 Sun 16:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Nerd Food: Gnome: A User Perspective</title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Nerd Food: Gnome: A User Perspective</h1>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><a href="index.html">Back to essay index</a></td>
+<td class="org-left"><a href="../index.html">Back to home page</a></td>
+</tr>
+</tbody>
+</table>
+
+<div class="epigraph"><blockquote>
+<p>
+We cannot choose one desktop over the other &#x2014; Gnome or KDE &#x2014;
+because there's users for both code bases. &#x2013; Miguel de Icaza
+</p>
+
+</blockquote></div>
+
+<p>
+<i>Circa 1999.</i>
+</p>
+
+<p>
+There's been enough direct and indirect ranting on desktop
+environments over the last few weeks, from articles about how C and
+UNIX are not a match made in heaven to discussions on Slashdot that
+start with "KDE 2.X is out" and end with complaints on how "Gnome
+moves at a pace that is so much slower than KDE". I know people are
+getting a bit tired of these sort of flamewars &#x2014; and I apologise
+beforehand if what I'm about to say does cover the same ground &#x2014; but
+I feel there is a need for some analysis from a user perspective.
+</p>
+
+<p>
+In particular, I would like to comment on some of the most
+controversial aspects of Gnome and give some ideas as to why things
+are like they are and where they may end in the future. I know I lack
+authority to speak about some matters, but this contribution strikes
+me has important since people with more authority seem to lack time or
+inclination; and although I am not a Gnome developer, I do use it
+since the bug infested days of 0.x and I do follow quite closely our
+community. So lets get the ball rolling.
+</p>
+
+<div id="outline-container-org56b78d6" class="outline-2">
+<h2 id="org56b78d6">Why does KDE move <i>so</i> much faster than Gnome?</h2>
+<div class="outline-text-2" id="text-org56b78d6">
+<p>
+There are no easy explanations as to why people perceive Gnome as
+being slow, but there are a few factors that might shed some
+light. Unfortunately, we have to go and dig a bit, back to those long
+forgotten days where licenses were still an issue. Lets make this as
+swift and painless as possible.
+</p>
+</div>
+
+<div id="outline-container-orgeec06f2" class="outline-3">
+<h3 id="orgeec06f2">The history issue</h3>
+<div class="outline-text-3" id="text-orgeec06f2">
+<p>
+As it is known to all, KDE made a very pragmatic decision when things
+were starting off and chose Qt as their toolkit. It was a decision
+based purely on technical merit, and on these grounds Qt had no real
+competitors. Unfortunately, Qt was not under a free license then (free
+as in speech), so this provoked a reaction from the GNU-er side of the
+community. Led by Miguel, developers got together and formed the Gnome
+project, with the goal of developing a totally free desktop
+environment. With time, Qt was re-licenced under the GPL, but by then
+it was too late &#x2014; too much effort had already been done.
+</p>
+
+<p>
+Now, apart from all the nasty things that have been said by both sides
+and worldwide trolls, this event marked the future progression of
+these two projects. You see, KDE started off with a mature toolkit
+that offered many things programmers expect: a) a good, well
+documented API b) a lot of abstraction from GCC's problems with C++ c)
+a lot of man hours spent in making sure everything was in working
+order d) a lot of scope, being more of a framework for application
+development than a toolkit.
+</p>
+
+<p>
+With regards to d), I'm certainly not the right person to talk about
+Qt's merits as I have never done any development with it; but a quick
+glance at KDevelop shows me that it includes support for containers,
+XML, DOM, a socket abstraction, FTP, and a lot more.
+</p>
+
+<p>
+Also, one should not treat a) lightly. From my knowledge of wxWindows,
+Qt appears to be very well designed and quality of its design surely
+teaches new developers to try to follow the same practice, especially
+with an OO language. And while we're talking about new users, I think
+we all agree when I say that documentation by itself is almost
+decisive when learning something new (hence why I'm such a big fan of
+wxWindows). No one likes to be struggling with the language while at
+the same time trying to make sense of third-party libraries.
+</p>
+
+<p>
+On the other hand, things are quite different in our side of the
+fence. Whatever the circumstances were when decisions were made, we
+have to coldly deal with the present. Gnome folks are more like an
+architect who must worry about designing the building while
+simultaneously dealing with the production of almost all the materials
+he's going to use.
+</p>
+
+<p>
+As things stand (1.4), we lack maturity in GTK, in some important
+Gnome libraries, in most of our applications and in our
+documentation. All of this with varying degrees, of course. At this
+point I can hear you say "Isn't that like, in everything?"
+</p>
+
+<p>
+Well, you must bear in mind that there are only so many programmers we
+can throw at a problem, especially at the boring ones. Worst, we cant
+just stop everything and focus our attention in making the building
+blocks because we are not a company. This makes our users and new
+developers very confused: why do I need so many libraries to get ZXY
+going? Why can't I have the latest X package and the latest Z package
+simultaneously? Where's the documentation for XYZ? Why is your file
+manager slow? And the answer is normally "we're working on it!".
+</p>
+
+<p>
+What we must not allow people to believe is that this is the Gnome way
+of doing things, that things are like they are on purpose. When they
+say "we're working on it!" they're actually working on it, and
+there's much to work on at the moment.
+</p>
+
+<p>
+Gnome people are not bad developers, lazy gits who don't care about
+documentation, or schizophrenic people who hate integration and love
+having different address books for each of its many mail
+applications. Its just that they're juggling with many balls at the
+same time and its hard to compete with people that juggle with less
+balls. Sometimes you are developing an application and have to stop
+and create or improve an entire library before you can go back to what
+you were doing. Obviously some of those libraries end up not having
+widespread use while some others are seen as The Right Thing (TM). Its
+all part of the learning process.
+</p>
+
+<p>
+And there's no point in saying "if you had started with a more mature
+toolkit, you'd be much better off", because when those decisions
+where taken the world was a very different place, regardless of which
+side you were on at the time, and now nothing can be done about it.
+</p>
+
+<p>
+But for those that think this is a bleak view of Gnome, it
+isn't. There is an extraordinary amount of work being done in a very
+short space of time, most of it in things that are not visible to end
+users, and the mere fact that people still put Gnome in line with KDE
+demonstrates the quality of the work.
+</p>
+
+<p>
+In fact, Gnome 2.0 will probably be a turning point in terms of
+professional-ness, because as time goes by the core gets stable and
+the side effect is we have more time on our hands so other things will
+get more CPU time and therefore improve; you cant worry about nifty
+documentation when the API itself is changing!
+</p>
+
+<p>
+Alas, when maturity is reached, we can count on our friends at SUN or
+IBM to start a professional documentation of all of the API, together
+with some nifty examples that will make any newbie a Gnome developer
+in no time. They'll be very interested in doing so by then, believe
+me. By then we'll also have a couple of nice IDE's to chose from so
+things will be much better for people starting.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org53b2cb1" class="outline-3">
+<h3 id="org53b2cb1">The language issue</h3>
+<div class="outline-text-3" id="text-org53b2cb1">
+<p>
+I have to say I am a big C++ fan; its my main language and I
+appreciate its elegance. But honestly do not believe the language is
+playing too important a role here. Lets think: in a UNIX environment,
+how many hackers are experts in C? How many have done it for years,
+and are experienced in developing large, complex applications?
+</p>
+
+<p>
+In fact, if we look at the work of a famous writer in OO theory,
+Bertrand Meyer, we can see that many of the things he considers to be
+determinant factors in a program are present in many C programs:
+robustness, correctness, extensibility, re-usability, compatibility,
+efficiency, portability. All of these apply to our beloved kernel &#x2014;
+excelling in some &#x2014; and its done in C<label for="1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="1" class="margin-toggle"/><span class="sidenote">
+In terms of re-usability, although you cannot inherit
+functionality cleanly in C, it is certainly not the only way to reuse;
+at any rate I'd probably consider design reuse more important that
+code reuse.
+</span>. Influenced by Meyer's
+thinking, I too believe OO is more of a way of thinking than it is a
+language, although languages can embody a bit of that way of thinking
+&#x2014; and some do it more than others. While being designed strictly for
+OOP is an important advantage, it cannot be denied that years of
+experience produce results that are quite close to it.
+</p>
+
+<p>
+C++ is a language that requires a lot of experience in OO, a lot of
+theory to get the design right and that's why most large free software
+projects tend to be rather bad when done in C++ &#x2014; being Abiword,
+Mozilla, KDE and its applications some notable exceptions. I believe
+there is a very good explanation for these exceptions. All of the
+projects share one fact in common, and that is there were some very
+experienced C++ hackers that laid out the foundations, making tough
+structural decisions at an early stage. For instance, look at
+Abiword's source one of these days and you'll see things along the
+lines of Design Patterns; the code is absolutely marvellous. That's
+not work of a kid in college that is learning as he goes along.
+</p>
+
+<p>
+More: to get a lot of people to that sort of level you need solid and
+proven standards, a good compiler that respects those standards, lots
+of time and lots of sample code to learn from. C++ just hasn't been
+out in the free software community long enough for us to have many
+expert hackers as we have in C. The standards are new (1998, I
+believe), the compiler is just out, the sample code is quite daunting
+and complex. The successful projects solve some of these problems by
+re-inventing a lot of the core functionality of C++ (for example, the
+STL is not very popular).
+</p>
+
+<p>
+Please note that I'm not saying KDE is where it is solely because its
+based on Qt; KDE developers have a lot of merit for things like their
+own object model, Konqueror, KDevelop, and many, many other
+applications that are astonishing accomplishments which cannot be
+argued with. But an important part of its structure is inherited from
+Qt and that gave them the solid foundations on which to build.
+</p>
+
+<p>
+My point being, it has little to do with the language and a lot more
+to do with maturity. Soon, when GTK reaches a level of maturity
+comparable to Qt, we'll see a lot less people saying that C is
+dead. There's just far too many good C hackers for that to be the
+truth.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org06b3849" class="outline-3">
+<h3 id="org06b3849">Packaging issues</h3>
+<div class="outline-text-3" id="text-org06b3849">
+<p>
+The second issue I think is interesting is the role of Ximian in the
+Gnome community. Their merit, knowledge and spirit cannot be argued
+with. But unfortunately, having a center of gravity as large as Ximian
+is generating some friction. Lets go through some problems we have at
+the moment.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5ef7609" class="outline-3">
+<h3 id="org5ef7609">Can the real Gnome please stand up?</h3>
+<div class="outline-text-3" id="text-org5ef7609">
+<p>
+It is most annoying when you get a Red Hat machine and it starts with
+a Red Hat Gnome, and I'm sure most people feel the same way. Red Hat
+is sometimes conservative on their tastes &#x2014; so we don't get the most
+up to date stuff like we're used to with Ximian (or <i>were</i> used
+to&#x2026;); and for those unfortunate enough to live where Dial Up is
+king, upgrading is an issue.
+</p>
+
+<p>
+Besides, even if you do have the latest Gnome packaged by Red Hat, you
+may want to install something distributed by Ximian or vice-versa and
+although things may work well together, the idea of installing a
+package from different distros is daunting. Its almost like installing
+a Mandrake RPM in a Red Hat box: its probably scarier if it installs
+without any error messages.
+</p>
+
+<p>
+My view here is that we do not need this duplication of efforts, and I
+think it is doing a lot of damage in terms of public image. Just try
+to explain this to a newbie: not only there are multiple distros for
+the operative system, there are also multiple distros for the desktop
+environments!
+</p>
+
+<p>
+There's also the issue of package selection, or in other words, what
+gets included and what doesn't. A KDE standard install includes a lot
+more applications than a Ximian Gnome one, and that's not because of
+the lack of GTK/Gnome apps. Part of it is possibly to do with
+commercial reasons: Ximian wants a stable product, not a mix between
+solid and bleeding edge. Or it may be that they don't want to have to
+package too many things, instead they prefer to do less and do it
+well.
+</p>
+
+<p>
+Either way this is where things get tricky: if they're the main
+packager we're stuck and <i>we</i> represents mainly the Dial Up crowd that
+can't spend hours hoping from site to site to get all the libraries
+and then get the new apps.
+</p>
+
+<p>
+So what do we need? I can see some solutions:
+</p>
+
+<ul class="org-ul">
+<li>We need to stop this packaging nonsense of my Gnome and your
+Gnome. We need to have a standard packaging the Gnome core, with all
+the libraries needed. That someone should be the distro. So Red Hat
+would make RPM's for all the platforms it runs on. This core is
+distributed as one package, that you can install or un-install
+easily.</li>
+<li>This same core offers a set of tools that allow customisation
+without rebuilding: change the initial splash screen, change the
+menu's, etc. so that a distro can configure it without having to
+rebuild it. And that should be the same for all platforms, different
+binaries but same contents.</li>
+</ul>
+
+<p>
+Just my two cents.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><a href="index.html">Back to essay index</a></td>
+<td class="org-left"><a href="../index.html">Back to home page</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Footnotes --><!--
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">
+In terms of re-usability, although you cannot inherit
+functionality cleanly in C, it is certainly not the only way to reuse;
+at any rate I'd probably consider design reuse more important that
+code reuse.
+</p></div></div>
+
+ --></div>
+<div id="postamble" class="status">
+<p class="date">Created: 2021-03-28 Sun 16:17</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

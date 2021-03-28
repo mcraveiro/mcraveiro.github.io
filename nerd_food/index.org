@@ -46,13 +46,18 @@ never saw the light of day.
 
 | Title                                                    | Date                         | Summary                                                           |
 |----------------------------------------------------------+------------------------------+-------------------------------------------------------------------|
+| [[file:gnome_a_user_perspective.org][Gnome: A User Perspective]]                                | Circa 1999.                  | Early essay opining on the then raging war between KDE and Gnome  |
+| [[file:my_emacs_and_i.org][My Emacs and I]]                                           | Circa 1999.                  | Early essay around the time I discovered Linux and Emacs.         |
 | [[file:on_optimization.org][On Optimization]]                                          | Thursday, December 14, 2006  | Optimization is a key aspect of software products                 |
 | [[file:on_world_domination.org][On World Domination]]                                      | Friday, March 23, 2007       | Will Linux ever dominate the world?                               |
 | [[file:on_maintenance.org][On Maintenance]]                                           | Thursday, May 24, 2007       | Maintenance is the most important aspect of software development. |
 | [[file:merging_and_branching_procedures.org][Merging and Branching Procedures]]                         | Monday, June 04, 2007        | Procedures for managing branches on a software product.           |
 | [[file:take_a_walk_on_the_server_side.org][Take a Walk on the Server Side]]                           | Saturday, September 22, 2007 | My views on how to developer server side applications.            |
 | [[file:on_evolutionary_methodology.org][On Evolutionary Methodology]]                              | Wednesday, June 11, 2008     | Extrapolating a software development methodology from Linux.      |
+| [[file:on_the_ubuntubox.org][On the UbuntuBox]]                                         | Thursday, June 19, 2008      | Wherein we prophetise something like a chrome book.               |
+| [[file:2009_year_of_world_domination.org][2009: Year of World Domination?]]                          | Sunday, February 1, 2009     | How the Linux desktop will win, part /deux/.                      |
 | [[file:on_mingw_cygwin_and_wine.org][On MinGW, Cygwin and Wine]]                                | Friday, May 18, 2012         | Contextual explanation of these three projects.                   |
+| [[file:cpp_times_they_are_a_changin.org][C++ times, they are a changin']]                           | Sunday, April 21, 2013       | How C++ 11 is great but also caused an upheaval.                  |
 | [[file:start-ups_at_the_gate_trends_in_the_technology_industry.org][Start-ups at the Gate: Trends in the Technology Industry]] | Thursday, September 25, 2014 | How FinTech startups will come to dominate the financial world.   |
 | [[file:pull_request_driven_development.org][Pull Request Driven Development]]                          | Friday, December 11, 2015    | Organizing software development around pull-requests.             |
 | [[file:on_product_backlog.org][On Product Backlog]]                                       | Sunday, January 17, 2016     | Why the product backlog is extremely important.                   |

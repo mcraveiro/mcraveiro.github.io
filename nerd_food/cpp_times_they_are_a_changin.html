@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-03-28 Sun 16:38 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Nerd Food: C++ times, they are a changin'</title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Nerd Food: C++ times, they are a changin'</h1>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><a href="index.html">Back to essay index</a></td>
+<td class="org-left"><a href="../index.html">Back to home page</a></td>
+</tr>
+</tbody>
+</table>
+
+<div class="epigraph"><blockquote>
+<p>
+There are only two kinds of languages: the ones people complain about
+and the ones nobody uses. &#x2014; Bjarne Stroustrup
+</p>
+
+</blockquote></div>
+
+<p>
+Sunday, April 21, 2013
+</p>
+
+<p>
+I think most C++ developers would agree that there has never been a
+better time to be a C++ developer than the present: after all, the C++
+11 standard was released adding a slew of modern features to the
+language and we are now seeing clang and gcc nearing 100% feature
+completion. In addition, there is an amount of activity around the
+language and libraries that I don't ever recall seeing in my
+professional career; the C++ 14 papers give a pretty good idea of the
+diversity and reach of this work.
+</p>
+
+<p>
+In effect, C++ is negotiating the transition from a closed, vendor
+driven platform to an open, community driven project. These two
+articles will attempt to narrate the process, from the perspective of
+a long time C++ user.
+</p>
+
+<p>
+From the beginning, Stroustrup had always believed that without
+libraries C++ would be a pretty useless language:
+</p>
+
+<p>
+Without a good library, most interesting tasks are hard to do in C++;
+but given a good library, almost any task can be made easy.
+</p>
+
+<p>
+Plain C++ was a pretty useless language: many developers reinvented
+the wheel, and libraries of poor quality were endlessly rewritten. Its
+hard to remember now, but in the nineties it was a rite of passage to
+write your own containers such as doubly-linked lists. Slashdot user
+VortexCortex gives a pretty insightful picture of those long forgotten
+days:
+</p>
+
+<p>
+Well, I wrote my own Hash Map implementation. Before that I had my own
+Linked Lists too. Before C++ came along I even maintained my own OOP
+implementation in C with a spiffy pre-processor to convert syntactic
+sugar into the equivalent ugly object oriented C code riddled with
+namespace prefixes, indecipherable pointer math for dynamic (virtual)
+functions (actions), and statically complied variable (property)
+look-up tables for run-time type inspection (reflection).
+</p>
+
+<p>
+It led to incompatibilities between codebases – My Entities+C wouldn't
+be compatible with your C+OOP. Hell, we didn't even use the same
+terminology, or necessarily even support the same feature sets. The
+point is, I wasn't the only one who was doing that (see also:
+Objective C). There were lots of us, it was a huge waste of duplicated
+effort. So many, in fact, that C++ was born, and the STL too […].
+</p>
+
+<p>
+It is in this context that the C++ 98 standard emerged, and it was
+seen as a major victory for all involved &#x2014;a milestone in the
+development of the language. However, pragmatism won the day and
+parsimony is always a requirement for shipping; the standard library
+was pretty much just the STL, the I/O Library and naively-defined
+string support. Once one exhausted the core functionality of the
+standard library, well, you were on your own. This is were library
+vendors came in.
+</p>
+
+<p>
+C++ had always been a highly profitable tooling market for vendors,
+and the vacuum of specification only served to amplify the profits. It
+was now possible to make a true claim for vendor independence &#x2014;
+"hey we are 100% standards compliant!"  &#x2014;while at the same time
+providing large amounts of vendor specific code. Once a vendor was
+chosen, vendor lock-in was almost by design: the libraries provided so
+much functionality and in such vendor-specific ways that changing
+libraries was synonymous to rewriting entire code bases.
+</p>
+
+<p>
+The other interesting aspect of these days was that C++ community just
+didn't know how to write good C++. Most of the vendor libraries coped
+out and simply defined object oriented APIs because that was easier to
+create and easier to consume. Stepanov's dreams &#x2014;that the STL was
+simply one example of many of a different way of thinking, and a raft
+of libraries along the same lines were soon to follow &#x2014;were put on
+hold.
+</p>
+
+<p>
+But people were already learning from the success of community driven
+languages such as Perl and Python. A man that was ahead of the curve
+in this regard was Beman Dawes. Not only did he deeply understand the
+standardisation process &#x2014;and its flaws &#x2014;but he also saw that
+libraries were the key to success. Thus Boost began as an effort to
+provide the missing libraries, in a nimble, community driven way that
+at the same time had high quality standards; these were provided by
+peer reviews, requests for documentation and so on. Boost soon became
+the home for the "fundamental" C++ thinking, in many ways continuing
+the discovery process of the Stepanov ideas in libraries such as
+Boost.Graph.
+</p>
+
+<p>
+In the mean time, the world didn't stand still. The rich pickings C++
+provided to vendors proved to be their downfall, as the largess of the
+tools market gave way to lean times. The crowds moved over to the new
+shinny toys such as Java and C#, and the new breed of dynamic
+languages gave C++ the final kick into the legacy bucket. It was just
+not cool anymore to be seen doing C++. These new languages learned
+their lessons and came out of the box with large class libraries that
+provided support for all sorts of things, making the standard library
+look small and antiquated in comparison. Even with Boost, one would
+still be nowhere near the functionality of out-of-the-box Java or C#,
+let alone Python or Ruby.
+</p>
+
+<p>
+When a COBOL-style death appeared certain, a phoenix-like effect
+kicked in. Just as it was with UNIX &#x2014;where the death and shrinkage of
+UNIX vendors became the catalyst to create a new breed of UNIX based
+on collaboration rather than competition &#x2014;so the same happened to
+C++. When the big money moved away it was suddenly noticed that no
+single company could afford to maintain a large library by themselves
+on the skimpy margins they were now making. Thus many companies opted
+for open sourcing their code &#x2014;some just before they went out of
+business, others as a strategic way of staying in business. Many
+vendors died, but the few that remained found healthy niches from
+which to run their businesses.
+</p>
+
+<p>
+The second factor that kept C++ alive after all the cool kids moved on
+was that the old school engineers were still around, and when
+efficiency became a key concern &#x2014;as it always does in the end &#x2014;they
+were there to explain how efficient server side code could be written
+in C++. So whilst uncool, C++ was alive and well, just surviving
+underground in the guts of data centres and in large scientific
+projects. These users were making hefty use of open source, with Linux
+GCC and a plethora of open source libraries as their weapons of
+choice. Together with the appearance of Clang, this mean that both the
+tooling and the libraries in C++ moved forward in leaps and bounds,
+but in a process that was almost entirely divorced from the
+standard. From not having enough libraries we went to having too many
+of them, with lots of overlapping functionality.
+</p>
+
+<p>
+Whilst this was happening, C++ didn't stand still. Some of the more
+obvious Boost code got shipped into TRs and made their way to end
+users. And C++ 0x was cooking. This was a major change to the
+standard, composed both of core language changes but much more
+importantly, of a great deal of additions to the standard library. A
+number of Boost libraries were polished up and moved into the std
+namespace.
+</p>
+
+<p>
+But this brought with itself its own problems. Some were related to
+the new language features &#x2014;its still not certain how some of these
+should be used &#x2014;and others are related to the new libraries. For
+those of us heavily reliant on Boost, a difficult problem emerged: the
+standard libraries didn't cover all aspects of the Boost libraries
+they standardised; for instance, Boost Serialisation won't work with
+texttt{std::shared<sub>ptr</sub>}, so now code bases become a mix of Boost and
+standard library code. Clearly the process of offloading Boost
+libraries to the standard has only begun.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><a href="index.html">Back to essay index</a></td>
+<td class="org-left"><a href="../index.html">Back to home page</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2021-03-28 Sun 16:38</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

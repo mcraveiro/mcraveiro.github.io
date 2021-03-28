@@ -1,0 +1,113 @@
+#+title: Nerd Food: My Emacs and I
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+
+| [[file:index.org][Back to essay index]] | [[file:../index.org][Back to home page]] |
+
+#+begin_quote
+Anyone could learn Lisp in one day, except that if they already knew
+Fortran, it would take three days. -- Marvin Minsky
+#+end_quote
+
+/Circa 1999./
+
+When you are a newbie both to C and to Linux the world is bleak, dark
+and full of menaces. Every time there is an extremely upsetting bug in
+a package you use often, say Gnome, you prefer avoiding it rather then
+solving the problem by re-installing the newest version; pure windows
+/luser/ logic. And that is what you feel, that you are a natural born
+/luser/. 23 years old, computer lover since 12 and you cannot
+recompile the kernel or even install packages from source: "darn,
+another dependency problem! But why doesn't it /just work/? Install
+Shield does!!". People tell you about the advantages of the command
+line interface (CLI) and you start crying.
+
+I bet this is a very common picture. You see, I started using linux
+with RH 5.2 mainly because I was tired of DOS (the whole lot, starting
+with 3.0 to Windows 98), but also because I felt that I wasn't
+learning anymore. For Christ sake, if the NIC doesn't work then
+reinstall Windows and five times out of ten your problem is solved!
+And why can't I just exit the "Network" applet with an OK without
+waiting forever when I didn't make any alterations at all? Why
+reinstalling the same files and rebooting?  It was just wrong.
+
+But, just like a kid that lived his entire life in a small town, I was
+not prepared for the big OS; It was a huge and problematic change. My
+486/66 did not like Linux --- I never managed to get past the
+=Calibrating delay loop= message --- and for 6 months I booted from a
+floppy. My 14'' monitor did only 640x400 in X and most programs at the
+time weren't made with people like me in mind; for example, while
+playing FreeCiv I had to move the window to see the bottom of the
+screen. Nothing compared to those days when you had to install Linux
+from floppies, the gurus will say, but bear in mind that Windows 95
+ran in my machine, in 800x600, and didn't complain a lot. Office 97
+was there without a problem.
+
+Still, there was something about this OS... Can't quite put it in
+words but it definetly had the same flair that my ZX Spectrum or
+Borland's Turbo Pascal had, a long, long time ago. The fact that I now
+had in my computer the efforts of thousands of developers, the tools
+used by the biggest minds in the computing world for their daily
+hacking was very inspiring; I just couldn't quit and be a standard
+\emph{luser}.
+
+And now --- when I'm almost reaching my larval stage --- I can see why
+I need to go through this ordeal, probably for years to come. It's
+because I was living a lie, because I thought I really knew about
+computers but in fact what I was learning was Microsoft speak, a
+language designed to take you away from the machine and get you into
+the world of "easiness". A world where you don't really need to know
+what you're doing because the wizards do it for you, and where people
+develop languages without believing the least in them. Where you are a
+Certified Systems Engineer, but only for 12 months.
+
+Yes, that is the right attitude for the mainstream. After all, they
+buy the right clothes, the right music, the right tooth paste and the
+right OS because it is easy, its on the telly[fn:1]. And if you don't,
+you're a rogue, end of story. But us, those who preferred hacking to
+playing, the ones who were genuiningly curious about the works of the
+beast, well, we were the betrayed generation. We were not commercially
+viable --- and so, forgotten; we had to content ourselves with the
+demented GWBASIC while other people were experimenting with C. How
+many clever minds did humanity loose in this process? We'll never
+know.
+
+[fn:1] Ken Tilton said it best:
+
+#+begin_quote
+That absolutely terrifies the herd-following, lockstep-marching,
+mainstream-saluting cowards that obediently dash out or online to
+scoop up books on The Latest Thing. They learn and use atrocities like
+Java, C++, XML, and even Python for the security it gives them and
+then sit there slaving away miserably, tediously, joylously paying off
+mortgages and supporting ungrateful teenagers who despise them, only
+to look out the double-sealed thermo-pane windows of their
+central-heated, sound-proofed, dead-bolted, suffocating little nests
+into the howling gale thinking ``what do they know that I do not
+know?'' when they see us under a lean-to hunched over our laptops to
+shield them from the rain laughing our asses off as we write great
+code between bong hits\ldots what was the question?
+#+end_quote
+
+
+When KDE presented the beta version of their IDE, I sent a post in
+Slashdot praising them and also asking for some unity between the
+Gnome and KDE worlds. As some people pointed out, I was terribly
+wrong. The fact that you can still compile, edit and debug your code
+from emacs in text mode on a 386 is one of the biggest triumphs of the
+free software community; its not commercially viable, but then again,
+freedom is probably not commercially viable. Making things properly is
+never easy, but that shouldn't stop us from trying since it didn't
+stop R. Stallman, L. Tordsvalds or M. Khan[fn:2] to name a few, and
+it's because of them we are now where we are.
+
+[fn:2] Mumit Khan, incidentally, was an important figure in Cygwin
+around the long forgotten days of the 18 or 19b release.
+
+
+The way I see it, if you can't see the advantages of Linux, you were
+simply not made to be free. End of story.
+
+| [[file:index.org][Back to essay index]] | [[file:../index.org][Back to home page]] |

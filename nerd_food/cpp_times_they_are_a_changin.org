@@ -1,0 +1,152 @@
+#+title: Nerd Food: C++ times, they are a changin'
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+
+| [[file:index.org][Back to essay index]] | [[file:../index.org][Back to home page]] |
+
+#+begin_quote
+There are only two kinds of languages: the ones people complain about
+and the ones nobody uses. --- Bjarne Stroustrup
+#+end_quote
+
+Sunday, April 21, 2013
+
+I think most C++ developers would agree that there has never been a
+better time to be a C++ developer than the present: after all, the C++
+11 standard was released adding a slew of modern features to the
+language and we are now seeing clang and gcc nearing 100% feature
+completion. In addition, there is an amount of activity around the
+language and libraries that I don't ever recall seeing in my
+professional career; the C++ 14 papers give a pretty good idea of the
+diversity and reach of this work.
+
+In effect, C++ is negotiating the transition from a closed, vendor
+driven platform to an open, community driven project. These two
+articles will attempt to narrate the process, from the perspective of
+a long time C++ user.
+
+From the beginning, Stroustrup had always believed that without
+libraries C++ would be a pretty useless language:
+
+Without a good library, most interesting tasks are hard to do in C++;
+but given a good library, almost any task can be made easy.
+
+Plain C++ was a pretty useless language: many developers reinvented
+the wheel, and libraries of poor quality were endlessly rewritten. Its
+hard to remember now, but in the nineties it was a rite of passage to
+write your own containers such as doubly-linked lists. Slashdot user
+VortexCortex gives a pretty insightful picture of those long forgotten
+days:
+
+Well, I wrote my own Hash Map implementation. Before that I had my own
+Linked Lists too. Before C++ came along I even maintained my own OOP
+implementation in C with a spiffy pre-processor to convert syntactic
+sugar into the equivalent ugly object oriented C code riddled with
+namespace prefixes, indecipherable pointer math for dynamic (virtual)
+functions (actions), and statically complied variable (property)
+look-up tables for run-time type inspection (reflection).
+
+It led to incompatibilities between codebases – My Entities+C wouldn't
+be compatible with your C+OOP. Hell, we didn't even use the same
+terminology, or necessarily even support the same feature sets. The
+point is, I wasn't the only one who was doing that (see also:
+Objective C). There were lots of us, it was a huge waste of duplicated
+effort. So many, in fact, that C++ was born, and the STL too […].
+
+It is in this context that the C++ 98 standard emerged, and it was
+seen as a major victory for all involved ---a milestone in the
+development of the language. However, pragmatism won the day and
+parsimony is always a requirement for shipping; the standard library
+was pretty much just the STL, the I/O Library and naively-defined
+string support. Once one exhausted the core functionality of the
+standard library, well, you were on your own. This is were library
+vendors came in.
+
+C++ had always been a highly profitable tooling market for vendors,
+and the vacuum of specification only served to amplify the profits. It
+was now possible to make a true claim for vendor independence ---
+"hey we are 100% standards compliant!"  ---while at the same time
+providing large amounts of vendor specific code. Once a vendor was
+chosen, vendor lock-in was almost by design: the libraries provided so
+much functionality and in such vendor-specific ways that changing
+libraries was synonymous to rewriting entire code bases.
+
+The other interesting aspect of these days was that C++ community just
+didn't know how to write good C++. Most of the vendor libraries coped
+out and simply defined object oriented APIs because that was easier to
+create and easier to consume. Stepanov's dreams ---that the STL was
+simply one example of many of a different way of thinking, and a raft
+of libraries along the same lines were soon to follow ---were put on
+hold.
+
+But people were already learning from the success of community driven
+languages such as Perl and Python. A man that was ahead of the curve
+in this regard was Beman Dawes. Not only did he deeply understand the
+standardisation process ---and its flaws ---but he also saw that
+libraries were the key to success. Thus Boost began as an effort to
+provide the missing libraries, in a nimble, community driven way that
+at the same time had high quality standards; these were provided by
+peer reviews, requests for documentation and so on. Boost soon became
+the home for the "fundamental" C++ thinking, in many ways continuing
+the discovery process of the Stepanov ideas in libraries such as
+Boost.Graph.
+
+In the mean time, the world didn't stand still. The rich pickings C++
+provided to vendors proved to be their downfall, as the largess of the
+tools market gave way to lean times. The crowds moved over to the new
+shinny toys such as Java and C#, and the new breed of dynamic
+languages gave C++ the final kick into the legacy bucket. It was just
+not cool anymore to be seen doing C++. These new languages learned
+their lessons and came out of the box with large class libraries that
+provided support for all sorts of things, making the standard library
+look small and antiquated in comparison. Even with Boost, one would
+still be nowhere near the functionality of out-of-the-box Java or C#,
+let alone Python or Ruby.
+
+When a COBOL-style death appeared certain, a phoenix-like effect
+kicked in. Just as it was with UNIX ---where the death and shrinkage of
+UNIX vendors became the catalyst to create a new breed of UNIX based
+on collaboration rather than competition ---so the same happened to
+C++. When the big money moved away it was suddenly noticed that no
+single company could afford to maintain a large library by themselves
+on the skimpy margins they were now making. Thus many companies opted
+for open sourcing their code ---some just before they went out of
+business, others as a strategic way of staying in business. Many
+vendors died, but the few that remained found healthy niches from
+which to run their businesses.
+
+The second factor that kept C++ alive after all the cool kids moved on
+was that the old school engineers were still around, and when
+efficiency became a key concern ---as it always does in the end ---they
+were there to explain how efficient server side code could be written
+in C++. So whilst uncool, C++ was alive and well, just surviving
+underground in the guts of data centres and in large scientific
+projects. These users were making hefty use of open source, with Linux
+GCC and a plethora of open source libraries as their weapons of
+choice. Together with the appearance of Clang, this mean that both the
+tooling and the libraries in C++ moved forward in leaps and bounds,
+but in a process that was almost entirely divorced from the
+standard. From not having enough libraries we went to having too many
+of them, with lots of overlapping functionality.
+
+Whilst this was happening, C++ didn't stand still. Some of the more
+obvious Boost code got shipped into TRs and made their way to end
+users. And C++ 0x was cooking. This was a major change to the
+standard, composed both of core language changes but much more
+importantly, of a great deal of additions to the standard library. A
+number of Boost libraries were polished up and moved into the std
+namespace.
+
+But this brought with itself its own problems. Some were related to
+the new language features ---its still not certain how some of these
+should be used ---and others are related to the new libraries. For
+those of us heavily reliant on Boost, a difficult problem emerged: the
+standard libraries didn't cover all aspects of the Boost libraries
+they standardised; for instance, Boost Serialisation won't work with
+texttt{std::shared_ptr}, so now code bases become a mix of Boost and
+standard library code. Clearly the process of offloading Boost
+libraries to the standard has only begun.
+
+| [[file:index.org][Back to essay index]] | [[file:../index.org][Back to home page]] |
