@@ -12,12 +12,18 @@ programming. Not all essays were copied here, as some were specific to
 a given technology that is no longer useful (/e.g./ old versions of
 Ubuntu, etc).
 
-- [[file:on_maintenance.org][On Maintenance]]
-- [[file:merging_and_branching_procedures.org][Merging and Branching Procedures]]
-- [[file:take_a_walk_on_the_server_side.org][Take a Walk on the Server Side]]
-- [[file:on_evolutionary_methodology.org][On Evolutionary Methodology]]
-- [[file:on_mingw_cygwin_and_wine.org][On MinGW, Cygwin and Wine]]
-- [[file:start-ups_at_the_gate_trends_in_the_technology_industry.org][Start-ups at the Gate: Trends in the Technology Industry]]
-- [[file:on_product_backlog.org][On Product Backlog]]
-- [[file:the_strange_case_of_the_undefined_references.org][The Strange Case of the Undefined References]]
-- [[file:the_refactoring_quagmire.org][The Refactoring Quagmire]]
+| Title                                                    | Date                         | Summary                                                           |
+|----------------------------------------------------------+------------------------------+-------------------------------------------------------------------|
+| [[file:on_optimization.org][On Optimization]]                                          | Thursday, December 14, 2006  | Optimization is a key aspect of software products                 |
+| [[file:on_world_domination.org][On World Domination]]                                      | Friday, March 23, 2007       | Will Linux ever dominate the world?                               |
+| [[file:on_maintenance.org][On Maintenance]]                                           | Thursday, May 24, 2007       | Maintenance is the most important aspect of software development. |
+| [[file:merging_and_branching_procedures.org][Merging and Branching Procedures]]                         | Monday, June 04, 2007        | Procedures for managing branches on a software product.           |
+| [[file:take_a_walk_on_the_server_side.org][Take a Walk on the Server Side]]                           | Saturday, September 22, 2007 | My views on how to developer server side applications.            |
+| [[file:on_evolutionary_methodology.org][On Evolutionary Methodology]]                              | Wednesday, June 11, 2008     | Extrapolating a software development methodology from Linux.      |
+| [[file:on_mingw_cygwin_and_wine.org][On MinGW, Cygwin and Wine]]                                | Friday, May 18, 2012         | Contextual explanation of these three projects.                   |
+| [[file:start-ups_at_the_gate_trends_in_the_technology_industry.org][Start-ups at the Gate: Trends in the Technology Industry]] | Thursday, September 25, 2014 | How FinTech startups will come to dominate the financial world.   |
+| [[file:pull_request_driven_development.org][Pull Request Driven Development]]                          | Friday, December 11, 2015    | Organizing software development around pull-requests.             |
+| [[file:on_product_backlog.org][On Product Backlog]]                                       | Sunday, January 17, 2016     | Why the product backlog is extremely important.                   |
+| [[file:the_strange_case_of_the_undefined_references.org][The Strange Case of the Undefined References]]             | Thursday, June 16, 2016      | Investigation of a strange linking error.                         |
+| [[file:the_refactoring_quagmire.org][The Refactoring Quagmire]]                                 | Wednesday, January 03, 2018  | How Dogen got itself into a quagmire and then out of it.          |
+|----------------------------------------------------------+------------------------------+-------------------------------------------------------------------|

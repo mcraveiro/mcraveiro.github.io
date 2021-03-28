@@ -1,0 +1,185 @@
+#+title: Nerd food: On Optimization
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+
+| [[file:../index.org][Back to home page]] | [[file:index.org][Back to essay index]] |
+
+Thursday, December 14, 2006
+
+* The Gnome Has Been Losing Weight
+
+If you're a Linux head, in particular a Gnome one, you've bound to
+have noticed the huge amount of work on optimization that has been
+carried out of late. People such as Federico, Ben Maurer, Michael
+Meeks, the OLPC guys and many, many others have been tireless in their
+efforts of shaving memory and cycles from all sorts of libraries and
+applications in the Gnome stack. There is even talk of colouring
+functions according to their cost so that developers are more aware of
+the price they'll pay when they make function calls.
+
+I believe no one, outside or inside the Gnome camp, will dispute that
+it has gotten a bit too fat. Even Gnome 2.16 (desktop and
+applications) seems to require 512 Mb of RAM to run comfortably. Yes,
+one can squeeze it to fit 256 Mb - or even 128 Mb - but such
+configurations are only usable with one or two applications running
+simultaneously, and certainly no more than one user on the
+machine. Some people may argue that this fattening is an inevitable
+consequence of the Free Software development methodology: since most
+developers are scratching their itch, and their itch is features,
+there is no natural evolutionary pressure towards efficiency.
+
+There is, perhaps, some merit in this line of thinking. However, I
+think it takes a static view of software development, an activity
+which is inherently dynamic. In my view, there's nothing wrong with
+focusing on features. First create an app, load it with functionality
+and expose it to the world (as always "release early, release
+often"). Then, once the problem domain is understood, factor out
+common code into libraries that can be used by other applications
+requiring the same functionality. Finally, when the libraries are
+proved to be a bottleneck, optimise them. This generalisation models
+the life-cycle of many free applications. Take the GIMP, for
+example. First, it made sense to have GTK in the GIMP. One had to
+explore the problem domain and get something out there first. Then,
+the library became sufficiently useful that it made sense to separate
+the two. Now there is a large community of applications that depend on
+GTK, and the bottlenecks are being investigated by a rather large
+number of developers. Remember Hoare? "Premature optimization is the
+root of all evil". This is optimization done at the optimal time.
+
+In addition, this demonstrates one of the strongest points of Free
+Software: its emphasis in reuse. This is such an interesting topic
+that deserves an entire post on its own, so we'll save that discussion
+proper for later. With regards to optimization, the best thing about
+reuse is that, when someone spots and fixes a particular memory or CPU
+hog, all applications that depend on the offending library will
+benefit from the fix. In many cases, these changes don't even require
+modifications at the application level - just an upgrade to the latest
+version of the shared library. While in theory the exact same logic
+applies to commercial software, the reality is that vendor lock-in and
+NIH stop reuse at the scale done in the Free Software community. In
+addition, few vendors have the incentive to continuously optimise
+their wares.
+
+So, in my view, bloat in free software applications or libraries is
+not a bad thing per se; it just denotes that the application or
+library just hasn't reached maturity yet. Which brings me neatly to my
+next point.
+
+Gnome, as it stands is pretty much feature complete for the vast
+majority of users. There are things missing, but these are mainly
+polish. Once the multimedia situation is comprehensively sorted out -
+and GStreamer seems to be on the way to achieve this objective, in
+particular by allowing both free and commercial codecs to coexist -
+we're pretty much there. Now, I know you'll disagree and tell me that
+feature X is stopping you from migrating to Gnome. I personally
+believe that Wine is the key to really unlock the Windows market; but
+this is not what we are talking about here. Gnome is now good enough
+for most normal users: people that browse the web, write documents,
+and need access to email; kids that want to learn to program; people
+that need to learn basic computer literacy skills; small
+businesses. As far as providing an alternative goes, well, we're
+there.
+
+It will be an incredibly difficult battle to unseat Microsoft (even an
+impossible one), but, as any good General knows, one should fight the
+battles one can win - not the battles we're sure to lose. Going
+straight after Microsoft's 90% share of the desktop market is
+suicidal. One has to look for the easy pickings first. This is what
+Free Software has done very successfully in many segments; and it is
+the Right Thing for the desktop too.
+
+* The Battle at the Low End of the Market
+
+Everyone knows that there is one important dent in Microsoft's armour:
+its constant upgrade cycle requires more and more hardware and more
+and more money for licences. The hardware costs were originally
+exploited by Linux in the fight for the server market but the low
+prices have made it less significant as a competitive advantage in
+that segment.
+
+However, on the desktop front this hasn't been exploited at all. In
+the past, one could say that Gnome and its applications used a lot
+less resources than Windows. I remember Gnome pre-1.0 happily running
+on 64 Mb of RAM on my 486-DX. The problem then was lack of
+features. The features are there now but this was a bit of a phyrric
+victory for the low end as the footprint has increased
+dramatically. One can hardly say that Gnome uses significantly less
+resources than Windows XP. The converse may even be true, although
+this is disputable. No matter; the key point here is you can't run the
+latest version of Gnome with a web browser, an email client, a
+spreadsheet and a word processor open on a Pentium I with 64 megs of
+RAM. The thing is, you can do all of these things with Windows
+95/98. Which is why, when you go to the developing world you see lots
+of people running these versions of Windows on the hardware they can
+afford.
+
+Microsoft has no interest in this end of the market. Little money can
+be made by making windows lighter. Getting Vista to run on a Pentium I
+does not provide Microsoft with any additional revenue: if you can't
+afford the latest hardware, you can't afford Vista anyway. But think
+about it: if you could run a full blown Gnome the same way you can run
+Windows 95/98 on a Pentium I with 64 megs of RAM, suddenly you can get
+access to the latest applications and features. There is no
+competition between Windows 95/98 and Gnome 2.16 or later; its a
+battle we're sure to win. Even if Microsoft were to give away free
+licences of these operating systems, just on functionality alone Gnome
+would win. And, as we've seen, there is no incentive to get Vista or
+XP to run on low end.
+
+Being in Africa made me realise just how much we take things for
+granted. In Europe everyone has broadband, TFT monitors and fast
+machines at home. When you travel around in Africa you see top end
+cybercafes with Pentium IIIs and connections that make Dial Up look
+fast. Very few people have PCs at home. The thing is, they could
+actually afford them. A Pentium I in England is so cheap as to be
+practically free. And yet, you see high-school students paying
+extortionate fees to use cybercafes (of course, electricity at home is
+also an issue but we can't do much on that front).
+
+When I was in Namibia I spoke to a well-off high-school student who
+was learning Turbo Pascal at school. I also learned Turbo Pascal at
+school, but that was in 1992 and it was already passe in England -
+Portugal has always been a bit behind the times. But these guys are
+learning it in 2006. This makes me cringe. And all because these are
+the licences they can afford on the hardware they can afford. They
+could and should using Monodevelop to learn C#, Eclipse to lean Java
+or Anjuta to learn C/C++. But none of these fit the hardware they've
+got. Africa is performing so badly in the information age one can't
+even say its competing at all.
+
+One can easily imagine that the same thing happens all over India and
+China, but because these countries are so big everyone focuses on the
+privileged 10% of the population. Although hardware is getting cheaper
+and cheaper, low end second-hand hardware will always be cheaper if
+not free; and there's always someone who can only afford the cheapest.
+
+And before you mention LTSP, remember how hard it is get it setup. You
+may think its easy, and sure, its has progressed quite a lot, but it
+still not as easy as installing Windows 95/98. And it requires at
+least one decent PC as the main server, plus a network.
+
+* Conclusion
+
+OLPC and associated initiatives are an eye opener for what can be done
+to bridge the digital divide. However, the front in the fight for the
+low end should be extended not just to special slimmed versions of
+important programs or to smaller, less featureful environments such as
+XFCE; there is much to be gained in having the latest and greatest
+versions of Gnome targeting low end hardware.
+
+Just imagine if Ubuntu, with its easy installation and setup, was
+available on low end hardware. And I don't mean Xubuntu, I mean the
+normal, standard Ubuntu.
+
+Whilst the Gnome hackers are doing a sterling job in general,
+optimising as much as they can, there is scope for more action. In my
+view, companies such as IBM, Novell, Redhat, Canonical and perhaps
+Google should get together and fund a comprehensive dieting program
+for Gnome and Linux in general. Whilst this is not something that can
+benefit any one particular actor in the Free Software community - as
+we've seen, there isn't much money to be made right now at the low
+end - it would have huge implications for the future. Linux could
+become the defacto operative system for the low end market, replacing
+Windows 95/98 and thus opening the doors for future growth.

@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-03-28 Sun 15:43 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Nerd food: On Optimization</title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Nerd food: On Optimization</h1>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><a href="../index.html">Back to home page</a></td>
+<td class="org-left"><a href="index.html">Back to essay index</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Thursday, December 14, 2006
+</p>
+
+<div id="outline-container-org35a6228" class="outline-2">
+<h2 id="org35a6228">The Gnome Has Been Losing Weight</h2>
+<div class="outline-text-2" id="text-org35a6228">
+<p>
+If you're a Linux head, in particular a Gnome one, you've bound to
+have noticed the huge amount of work on optimization that has been
+carried out of late. People such as Federico, Ben Maurer, Michael
+Meeks, the OLPC guys and many, many others have been tireless in their
+efforts of shaving memory and cycles from all sorts of libraries and
+applications in the Gnome stack. There is even talk of colouring
+functions according to their cost so that developers are more aware of
+the price they'll pay when they make function calls.
+</p>
+
+<p>
+I believe no one, outside or inside the Gnome camp, will dispute that
+it has gotten a bit too fat. Even Gnome 2.16 (desktop and
+applications) seems to require 512 Mb of RAM to run comfortably. Yes,
+one can squeeze it to fit 256 Mb - or even 128 Mb - but such
+configurations are only usable with one or two applications running
+simultaneously, and certainly no more than one user on the
+machine. Some people may argue that this fattening is an inevitable
+consequence of the Free Software development methodology: since most
+developers are scratching their itch, and their itch is features,
+there is no natural evolutionary pressure towards efficiency.
+</p>
+
+<p>
+There is, perhaps, some merit in this line of thinking. However, I
+think it takes a static view of software development, an activity
+which is inherently dynamic. In my view, there's nothing wrong with
+focusing on features. First create an app, load it with functionality
+and expose it to the world (as always "release early, release
+often"). Then, once the problem domain is understood, factor out
+common code into libraries that can be used by other applications
+requiring the same functionality. Finally, when the libraries are
+proved to be a bottleneck, optimise them. This generalisation models
+the life-cycle of many free applications. Take the GIMP, for
+example. First, it made sense to have GTK in the GIMP. One had to
+explore the problem domain and get something out there first. Then,
+the library became sufficiently useful that it made sense to separate
+the two. Now there is a large community of applications that depend on
+GTK, and the bottlenecks are being investigated by a rather large
+number of developers. Remember Hoare? "Premature optimization is the
+root of all evil". This is optimization done at the optimal time.
+</p>
+
+<p>
+In addition, this demonstrates one of the strongest points of Free
+Software: its emphasis in reuse. This is such an interesting topic
+that deserves an entire post on its own, so we'll save that discussion
+proper for later. With regards to optimization, the best thing about
+reuse is that, when someone spots and fixes a particular memory or CPU
+hog, all applications that depend on the offending library will
+benefit from the fix. In many cases, these changes don't even require
+modifications at the application level - just an upgrade to the latest
+version of the shared library. While in theory the exact same logic
+applies to commercial software, the reality is that vendor lock-in and
+NIH stop reuse at the scale done in the Free Software community. In
+addition, few vendors have the incentive to continuously optimise
+their wares.
+</p>
+
+<p>
+So, in my view, bloat in free software applications or libraries is
+not a bad thing per se; it just denotes that the application or
+library just hasn't reached maturity yet. Which brings me neatly to my
+next point.
+</p>
+
+<p>
+Gnome, as it stands is pretty much feature complete for the vast
+majority of users. There are things missing, but these are mainly
+polish. Once the multimedia situation is comprehensively sorted out -
+and GStreamer seems to be on the way to achieve this objective, in
+particular by allowing both free and commercial codecs to coexist -
+we're pretty much there. Now, I know you'll disagree and tell me that
+feature X is stopping you from migrating to Gnome. I personally
+believe that Wine is the key to really unlock the Windows market; but
+this is not what we are talking about here. Gnome is now good enough
+for most normal users: people that browse the web, write documents,
+and need access to email; kids that want to learn to program; people
+that need to learn basic computer literacy skills; small
+businesses. As far as providing an alternative goes, well, we're
+there.
+</p>
+
+<p>
+It will be an incredibly difficult battle to unseat Microsoft (even an
+impossible one), but, as any good General knows, one should fight the
+battles one can win - not the battles we're sure to lose. Going
+straight after Microsoft's 90% share of the desktop market is
+suicidal. One has to look for the easy pickings first. This is what
+Free Software has done very successfully in many segments; and it is
+the Right Thing for the desktop too.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3fcffc8" class="outline-2">
+<h2 id="org3fcffc8">The Battle at the Low End of the Market</h2>
+<div class="outline-text-2" id="text-org3fcffc8">
+<p>
+Everyone knows that there is one important dent in Microsoft's armour:
+its constant upgrade cycle requires more and more hardware and more
+and more money for licences. The hardware costs were originally
+exploited by Linux in the fight for the server market but the low
+prices have made it less significant as a competitive advantage in
+that segment.
+</p>
+
+<p>
+However, on the desktop front this hasn't been exploited at all. In
+the past, one could say that Gnome and its applications used a lot
+less resources than Windows. I remember Gnome pre-1.0 happily running
+on 64 Mb of RAM on my 486-DX. The problem then was lack of
+features. The features are there now but this was a bit of a phyrric
+victory for the low end as the footprint has increased
+dramatically. One can hardly say that Gnome uses significantly less
+resources than Windows XP. The converse may even be true, although
+this is disputable. No matter; the key point here is you can't run the
+latest version of Gnome with a web browser, an email client, a
+spreadsheet and a word processor open on a Pentium I with 64 megs of
+RAM. The thing is, you can do all of these things with Windows
+95/98. Which is why, when you go to the developing world you see lots
+of people running these versions of Windows on the hardware they can
+afford.
+</p>
+
+<p>
+Microsoft has no interest in this end of the market. Little money can
+be made by making windows lighter. Getting Vista to run on a Pentium I
+does not provide Microsoft with any additional revenue: if you can't
+afford the latest hardware, you can't afford Vista anyway. But think
+about it: if you could run a full blown Gnome the same way you can run
+Windows 95/98 on a Pentium I with 64 megs of RAM, suddenly you can get
+access to the latest applications and features. There is no
+competition between Windows 95/98 and Gnome 2.16 or later; its a
+battle we're sure to win. Even if Microsoft were to give away free
+licences of these operating systems, just on functionality alone Gnome
+would win. And, as we've seen, there is no incentive to get Vista or
+XP to run on low end.
+</p>
+
+<p>
+Being in Africa made me realise just how much we take things for
+granted. In Europe everyone has broadband, TFT monitors and fast
+machines at home. When you travel around in Africa you see top end
+cybercafes with Pentium IIIs and connections that make Dial Up look
+fast. Very few people have PCs at home. The thing is, they could
+actually afford them. A Pentium I in England is so cheap as to be
+practically free. And yet, you see high-school students paying
+extortionate fees to use cybercafes (of course, electricity at home is
+also an issue but we can't do much on that front).
+</p>
+
+<p>
+When I was in Namibia I spoke to a well-off high-school student who
+was learning Turbo Pascal at school. I also learned Turbo Pascal at
+school, but that was in 1992 and it was already passe in England -
+Portugal has always been a bit behind the times. But these guys are
+learning it in 2006. This makes me cringe. And all because these are
+the licences they can afford on the hardware they can afford. They
+could and should using Monodevelop to learn C#, Eclipse to lean Java
+or Anjuta to learn C/C++. But none of these fit the hardware they've
+got. Africa is performing so badly in the information age one can't
+even say its competing at all.
+</p>
+
+<p>
+One can easily imagine that the same thing happens all over India and
+China, but because these countries are so big everyone focuses on the
+privileged 10% of the population. Although hardware is getting cheaper
+and cheaper, low end second-hand hardware will always be cheaper if
+not free; and there's always someone who can only afford the cheapest.
+</p>
+
+<p>
+And before you mention LTSP, remember how hard it is get it setup. You
+may think its easy, and sure, its has progressed quite a lot, but it
+still not as easy as installing Windows 95/98. And it requires at
+least one decent PC as the main server, plus a network.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc49b6e9" class="outline-2">
+<h2 id="orgc49b6e9">Conclusion</h2>
+<div class="outline-text-2" id="text-orgc49b6e9">
+<p>
+OLPC and associated initiatives are an eye opener for what can be done
+to bridge the digital divide. However, the front in the fight for the
+low end should be extended not just to special slimmed versions of
+important programs or to smaller, less featureful environments such as
+XFCE; there is much to be gained in having the latest and greatest
+versions of Gnome targeting low end hardware.
+</p>
+
+<p>
+Just imagine if Ubuntu, with its easy installation and setup, was
+available on low end hardware. And I don't mean Xubuntu, I mean the
+normal, standard Ubuntu.
+</p>
+
+<p>
+Whilst the Gnome hackers are doing a sterling job in general,
+optimising as much as they can, there is scope for more action. In my
+view, companies such as IBM, Novell, Redhat, Canonical and perhaps
+Google should get together and fund a comprehensive dieting program
+for Gnome and Linux in general. Whilst this is not something that can
+benefit any one particular actor in the Free Software community - as
+we've seen, there isn't much money to be made right now at the low
+end - it would have huge implications for the future. Linux could
+become the defacto operative system for the low end market, replacing
+Windows 95/98 and thus opening the doors for future growth.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2021-03-28 Sun 15:43</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

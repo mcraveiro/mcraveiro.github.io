@@ -1,0 +1,217 @@
+#+title: Nerd Food: On World Domination
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+
+| [[file:../index.org][Back to home page]] | [[file:index.org][Back to essay index]] |
+
+Friday, March 23, 2007
+
+Well, three months into 2007 and very few mass migrations to desktop
+Linux have been announced. A few thousands here and there, but not the
+millions we all want. Its beginning to look like our hopes for 2007 as
+the Linux Desktop Year (TM) have been misplaced yet again. The
+algorithm for the Linux Desktop Year is becoming clear now: N + 1,
+where N is the current year. Yep, its always next year. What's going
+on here? Are we never going to have Linux on the desktop? Products
+like Ubuntu and Novell are looking more and more solid, why aren't
+people installing it en masse? What about World Domination?
+
+Lets start by defining what we really mean by "World Domination". It
+is unlikely that we will see a world where Linux has 90% of market
+share across all segments, in particular on the Desktop. There's just
+too big an installed based for that, and inertia is too strong. Nor
+would that happen overnight, as any migration at the corporate level
+can take years to plan. My personal definition of World Domination is
+much more pragmatic:
+
+- For every new PC being sold, the buyer would consider whether to
+  install Windows or Linux, basing his or her decision on technical
+  and financial aspects;
+- For every migration to the latest version of Windows, the IT
+  department would consider migrating to Linux, basing his or her
+  decision on technical and financial aspects.
+
+In other words, I want to join a company and be asked whether I want
+Linux or Windows on my desktop, rather than just be given Windows and
+be told to shut up. And when I go to PC World, I want to be asked if I
+want Linux or Windows. A lot of people think that these things are not
+happening because a) Microsoft is putting illegal pressure on vendors
+to stop Linux adoption b) there are too many Linux variants so vendors
+don't know what to do (DELL was a good example). Actually, whilst I
+think these two factors are important, they are also very
+misleading. For starters, that didn't stop Linux in other market
+segments. Lets look at the recent history.
+
+A few years ago, fifteen or so, Linux was virtually unknown in all
+computing markets (call it markets, call it segments, you choose). The
+mainstay of Linux support were the college dorms and the homebrew
+engineers. If you were to read the articles about Linux in those days,
+the few that existed, they all said that Linux would never leave the
+college dorms. Not so long after that Linux became one of the most
+popular platforms for ISPs and web servers in general, in partnership
+with Apache. We were then told that Linux would never be more than a
+platform for web-serving. Fast forward a few years more, around the
+turn of the century, and we were then told that Linux would never
+leave the server room. This was a time were Linux proved itself as a
+good file and print server, and a good citizen on a Windows network,
+all thanks to Samba. It was also the time when Linux's presence in the
+clustering, super computing and the embedded markets was
+consolidated. Around this time we also noticed Linux's presence in the
+high end server market, in databases and proprietary server
+applications. Fast forward again, now to the present time. To all
+these segments we've now added POS, kiosking and other more restricted
+desktop markets. We are now told that Linux will never leave the
+restricted Desktop markets.
+
+If you consider my narrower definition of world domination, then one
+can say that it has been obtained in all these markets. In all of
+these, people spend time looking at alternatives before settling in
+Windows or Linux. In some cases Linux has got more than 50% market
+share, in many other cases it has not, but there is an ongoing battle
+for market share.
+
+But let's have a closer look at the database segment, because many
+lessons can be learned from it. The high end is dominated by colossus
+such as DB2 and Oracle. Here Linux is extremely successful, mainly
+because people don't really care about the operative system; they care
+about the database product. Move over to the middle and low ends of
+the market though, and Linux penetration is very small. Yes, MySQL and
+PostgreSQL are making inroads, but the truth is they are yet to make a
+dent in the market share of SQLServer and Access, both Microsoft
+products. The same principle applies: people don't want to run
+PostgreSQL, they want to run SQLServer; and since it only works on
+Windows, well, that means they can only consider Windows.
+
+The lesson to take home from all of this is simple. Linux is extremely
+competitive in markets: a) that have no installed base, or where the
+field moves so fast that the installed base is obsoleted quickly and
+has to be replaced (embedded, clustering, supercomputing) b) that
+depend only in standard protocols or protocols that can be legally
+reversed engineered (file serving, web serving, authentication) c)
+that depend on applications which have already been ported to Linux,
+and where the port is of the same grade or higher as the original
+version (Java Application Servers, SAP, Oracle, DB2, bespoke
+applications, game servers) d) where there is a clone of a key
+application, and the clone offers a superset of the features of the
+original application, providing full compatibility e) where there is a
+compatibility layer that allows Linux to run applications designed for
+other platforms (.Net SWF GUI applications, Wine).
+
+All these are pretty self explanatory, with the exception of d) and e)
+so lets have a look at those.
+
+In terms of d), I don't mean cloning here like the GIMP is a clone of
+Photoshop; I mean cloning like EnterpriseDB. EnterpriseDB, the
+PostgreSQL derivative which aims to be fully compatible with Oracle,
+is experiencing huge growth, and the root cause of this growth is the
+claimed drop-in Oracle compatibility. It appears companies are buying
+the product in droves, trying to save money in Oracle licenses. In my
+personal opinion, whilst the principle is brilliant, EnterpriseDB made
+a mistake by going after Oracle. Most people that buy their products
+have money to spare and are not worried about costs. This does not
+mean there aren't many people who buy Oracle because they have to, but
+the number of people in this situation is rather small. However, if
+EnterpriseDB were to offer a drop-in SQLServer replacement, I am
+convinced their demand would have been much higher, by many orders of
+magnitude. I am talking specifically about a product that can: talk
+TDS, requiring no modification from clients to connect to it; import
+stored procedures, data and schemas from SQLServer with one click; be
+managed from Enterprise Manager and any other SQLServer tools as if it
+was another instance of SQLServer; run TSQL stored procedures without
+modification. Such a product would sell a lot more because people that
+buy SQLServer are much more cost sensitive than people that buy
+Oracle. But the principle here is that a clone can open a lot of
+doors.
+
+As far as e) is concerned, this hasn't been proved yet because the
+emulation layers are not 100% complete. The big difference between
+.Net and Java is that many .Net GUI applications rely on Windows Forms
+(SWF), which means they are a lot more Windows dependent. Mono is
+working hard in getting a good SWF implementation, but this is a hard
+task and 100% compatibility will take a while. The same can be said
+for Wine, on the making for over a decade, forever getting closer but
+still struggling with compatibility. IMHO, all big Linux companies
+should get together and finance Wine, either through investing in
+CodeWeavers or by having their own Wine developers. If Wine was able
+to run _all_ windows applications say up to XP, and do so smoothly,
+without any problems, this would open many, many doors to Linux (and
+all other operative systems with Wine). I'm not talking about "it
+almost works, or it works sometimes" type of compatibility, I'm
+talking about rock-solid, uncrashable, perfect, flawless support. This
+will require huge amounts of investment. However, such level of
+compatibility would allow IT departments to consider Linux/Windows
+migration separately from the migration of Office and other key
+windows applications. To migrate everything in one go is just too deep
+a plunge for many people, too much risk. It's not that OpenOffice and
+other applications aren't good; its just a question of reducing the
+amount of change required in one go. Both approaches are good and
+should be pursued, for different reasons. OpenOffice caters for a less
+demanding segment of the population, Office on Wine caters for a
+totally different segment.
+
+One last rant goes for the multimedia situation. We need to have _all_
+popular codecs available in Linux legally and Fluendo's work is a
+significant milestone in this regard. Ubuntu is also making strides in
+this department, and pragmatism is the only way to win the day
+here. Don't take me wrong, there is a lot of merit in a lot of the
+religious causes. OGG over MP3 any day. Software patents are evil. GNU
+rules. But to create an operative system that ignores the current
+state of the world and is instead designed for the world we all would
+like to live in, is to doom it to failure. A case in point: last year
+the basketball World Cup was on, and I desperately wanted to watch
+Angola play. I then found out that the games were available on-line,
+but could not get any of the existing Linux media players to work with
+FIBA's website. Yes, proprietary codecs are evil but this is the World
+Cup we're talking about and I'm not RMS, so I compromised. Since we
+don't have anything else other than Ubuntu at home, I ended up having
+to watch the games at work. Fortunately I had understanding bosses,
+but is it really fair to demand this sort of commitment from the mass
+market? And to shut this people from Linux is not beneficial for us
+because, as we all know, critical mass is important. If Linux had 20%
+of the desktop market we would get a lot more attention from hardware
+companies, media websites, game developers, the world at large. They
+would think about us when they release new products. Would we really
+care if 19% of the 20% didn't know anything about freedom and GNU?
+Would we be worse off with them on board than without? Besides, it is
+a lot more likely that they would find out about freedom once they've
+started using Linux. "Who are this people who give their time for free
+to create such a good product?"
+
+Forget about all the religious wars for a moment and lets put our
+business hats on. The truth is, the _vast_ majority of people out
+there never heard about Linux. Let me tell you this, I have walked
+around Africa for four months and met _two_ people that heard about
+Linux, and even then only vaguely. "Like Mac right?". A girl asked me
+if my Debian t-shirt had anything to do with lesbians. Even in South
+Africa, the home of Ubuntu, I've seen nowt, not even a single mention
+of it. Not on telly, not on the shops, not on the streets, not on the
+cybercafes, not on the big supermarket chains. You ask about Ubuntu on
+the streets and people think you're trying to learn Zulu or Khosa and
+you mean peace and unity. If we want mind share we need to be able to
+be functionally equivalent to Windows, with no excuses. You have to
+understand, from an outsider perspective religion _is_ an excuse. You
+can't really promote Linux to this people and then say "but you can't
+really play proprietary media without breaking the law, and even then
+it will take you days to configure". To start promoting Linux we first
+need the ability to play all the popular media formats, and to do so
+legally and without placing _any_ configuration demands to the user
+other than clicking a button. Keep in mind that when we do get to this
+level, we still have a long mind share struggle to face; it will take
+years to get the word out there, to get people to try.
+
+So when are we going to get world domination?
+
+- When we can run all the popular applications faultlessly, in
+  particular the Windows ones, regardless how that is done (port,
+  emulation);
+- When we can play all the media formats flawlessly and legally;
+- When Linux is mass advertised.
+
+We are getting close. But remeber the rule of credibility: "The first
+90% of the code accounts for the first 90% of the development
+time. The remaining 10% of the code accounts for the other 90% of the
+development time."
+
+| [[file:../index.org][Back to home page]] | [[file:index.org][Back to essay index]] |

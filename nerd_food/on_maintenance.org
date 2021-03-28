@@ -4,7 +4,7 @@
 #+bind: org-html-validation-link nil
 #+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
 
-[[file:../index.org][Back to home page]].
+| [[file:../index.org][Back to home page]] | [[file:index.org][Back to essay index]] |
 
 Thursday, May 24, 2007
 
@@ -288,3 +288,5 @@ close source components. These reduce the footprint of your code-base
 dramatically. Why are these languages better than say Delphi or
 RogueWave's extensions to C++? Because they insure vendor independence
 by standardising most of their interfaces.
+
+| [[file:../index.org][Back to home page]] | [[file:index.org][Back to essay index]] |

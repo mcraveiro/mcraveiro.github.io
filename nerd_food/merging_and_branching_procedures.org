@@ -4,7 +4,7 @@
 #+bind: org-html-validation-link nil
 #+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
 
-[[file:../index.org][Back to home page]].
+| [[file:../index.org][Back to home page]] | [[file:index.org][Back to essay index]] |
 
 /Historical context: this essay was written in the days of CVS and
 Subversion, prior to Git being the dominant VCS./
