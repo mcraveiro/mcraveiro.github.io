@@ -4,7 +4,7 @@
 #+bind: org-html-validation-link nil
 #+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
 
-| [[file:../index.org][Back to home page]] | [[file:index.org][Back to essay index]] |
+| [[file:index.org][Back to essay index]] | [[file:../index.org][Back to home page]] |
 
 Saturday, September 22, 2007
 
@@ -447,3 +447,5 @@ using the wrong technologies and making wrong fundamental
 architectural decisions, which cannot be fixed at a later date. When
 designing a large system from scratch, one should always prefer the
 proven approaches to the new ideas the market keeps on churning.
+
+| [[file:index.org][Back to essay index]] | [[file:../index.org][Back to home page]] |

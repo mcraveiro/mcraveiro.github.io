@@ -4,7 +4,7 @@
 #+bind: org-html-validation-link nil
 #+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
 
-| [[file:../index.org][Back to home page]] | [[file:index.org][Back to essay index]] |
+| [[file:index.org][Back to essay index]] | [[file:../index.org][Back to home page]] |
 
 Wednesday, June 11, 2008
 
@@ -473,3 +473,5 @@ however, are an entirely different beast).
 I'm not sure if there was ever any doubt; but to me, the kernel proves
 conclusively that the human factor dwarfs any other in the production
 of large scale software.
+
+| [[file:index.org][Back to essay index]] | [[file:../index.org][Back to home page]] |

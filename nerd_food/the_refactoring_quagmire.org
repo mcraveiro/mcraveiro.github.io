@@ -4,7 +4,7 @@
 #+bind: org-html-validation-link nil
 #+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
 
-| [[file:../index.org][Back to home page]] | [[file:index.org][Back to essay index]] |
+| [[file:index.org][Back to essay index]] | [[file:../index.org][Back to home page]] |
 
 Wednesday, January 03, 2018
 
@@ -246,3 +246,5 @@ something can only be described as "fit for purpose", and to do so
 requires to first determine best we can what that purpose might
 be. So, before you wonder into a refactoring quagmire of your own
 making, be sure to have a very firm idea of what your trade-offs are.
+
+| [[file:index.org][Back to essay index]] | [[file:../index.org][Back to home page]] |

@@ -6,11 +6,43 @@
 
 [[file:../index.org][Back to home page]].
 
+* About
+
 Nerd Food is a sporadic "column" I used to have on my blog and has now
 been moved here. It contains a number of essays I have made on
 programming. Not all essays were copied here, as some were specific to
 a given technology that is no longer useful (/e.g./ old versions of
 Ubuntu, etc).
+
+These essays one day will be published in book form. When they do, the
+next section will be its introduction.
+
+* Introduction
+
+#+begin_quote
+The unexamined life is not worth living. -- Socrates
+#+end_quote
+
+As we mature, we tend to introspect more and more, to spend time
+thinking about the path of one's life. Those little twists and turns
+across life's graph, some with dramatic consequences, others less
+so. When in this frame of mind, it is good to read what we had once
+written, if nothing else because it allows us to judge just how far
+one has deviated from those noble ideals of youth.
+
+Having lived most of my life in the technology space, I somewhat
+unwittingly ended up narrating my own evolution across it and, to an
+extremely limited extent, its evolution too. As such, it seemed only
+fair to collect all of these writings --- whatever their merits are in
+a literary sense --- in an easy to parse from to facilitate reading.
+
+This book thus contains a selection of essays by yours truly on
+software engineering, spanning a period of just over a decade and a
+half. It is made up mainly of blog posts taken from my haphazard
+column "Nerd Food", as well as a couple of other early essays which
+never saw the light of day.
+
+* Essays
 
 | Title                                                    | Date                         | Summary                                                           |
 |----------------------------------------------------------+------------------------------+-------------------------------------------------------------------|
@@ -27,3 +59,5 @@ Ubuntu, etc).
 | [[file:the_strange_case_of_the_undefined_references.org][The Strange Case of the Undefined References]]             | Thursday, June 16, 2016      | Investigation of a strange linking error.                         |
 | [[file:the_refactoring_quagmire.org][The Refactoring Quagmire]]                                 | Wednesday, January 03, 2018  | How Dogen got itself into a quagmire and then out of it.          |
 |----------------------------------------------------------+------------------------------+-------------------------------------------------------------------|
+
+[[file:../index.org][Back to home page]].

@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-03-28 Sun 15:49 -->
+<!-- 2021-03-28 Sun 16:03 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Nerd Food: On MinGW, Cygwin and Wine</title>
@@ -229,8 +229,8 @@
 </colgroup>
 <tbody>
 <tr>
-<td class="org-left"><a href="../index.html">Back to home page</a></td>
 <td class="org-left"><a href="index.html">Back to essay index</a></td>
+<td class="org-left"><a href="../index.html">Back to home page</a></td>
 </tr>
 </tbody>
 </table>
@@ -247,9 +247,9 @@ personal nuclear power station using this article. Or if you do, don't
 blame me.
 </p>
 
-<div id="outline-container-orgbed534e" class="outline-2">
-<h2 id="orgbed534e">UNIX Stranger on a Windows Strange Land</h2>
-<div class="outline-text-2" id="text-orgbed534e">
+<div id="outline-container-org45a2f9e" class="outline-2">
+<h2 id="org45a2f9e">UNIX Stranger on a Windows Strange Land</h2>
+<div class="outline-text-2" id="text-org45a2f9e">
 <p>
 Like pretty much every other UNIX nerd, I've been stranded on Windows
 for long periods many times in my career. Whenever that happens,
@@ -276,9 +276,9 @@ that Fits You.
 </p>
 </div>
 
-<div id="outline-container-org8d3bc98" class="outline-3">
-<h3 id="org8d3bc98">The Kernel and User Space</h3>
-<div class="outline-text-3" id="text-org8d3bc98">
+<div id="outline-container-org5cae56e" class="outline-3">
+<h3 id="org5cae56e">The Kernel and User Space</h3>
+<div class="outline-text-3" id="text-org5cae56e">
 <p>
 All operative systems share one feature in common: they all have a
 kernel. The job of the average kernel is to do low-level stuff like
@@ -302,9 +302,9 @@ combination of both, but in reality there is a difference.
 </div>
 </div>
 
-<div id="outline-container-org0ffc632" class="outline-3">
-<h3 id="org0ffc632">The Kernel Application Programming Interface (API)</h3>
-<div class="outline-text-3" id="text-org0ffc632">
+<div id="outline-container-org269757d" class="outline-3">
+<h3 id="org269757d">The Kernel Application Programming Interface (API)</h3>
+<div class="outline-text-3" id="text-org269757d">
 <p>
 When we talk about the API we normally mean a set of headers that can
 be used to compile code that talks to the kernel directly. For a
@@ -326,9 +326,9 @@ as ioctl, etc.
 </div>
 </div>
 
-<div id="outline-container-org175e1a1" class="outline-3">
-<h3 id="org175e1a1">The Kernel Application Binary Interface (ABI)</h3>
-<div class="outline-text-3" id="text-org175e1a1">
+<div id="outline-container-orgd3e1762" class="outline-3">
+<h3 id="orgd3e1762">The Kernel Application Binary Interface (ABI)</h3>
+<div class="outline-text-3" id="text-orgd3e1762">
 <p>
 From a kernel perspective, its best to think of the ABI as a
 specification that allows stitching together binary components. The
@@ -360,9 +360,9 @@ opposite approach, trying hard not to break binary compatibility.
 </div>
 </div>
 
-<div id="outline-container-orgc599742" class="outline-3">
-<h3 id="orgc599742">UNIX and The C Library</h3>
-<div class="outline-text-3" id="text-orgc599742">
+<div id="outline-container-org43e1e45" class="outline-3">
+<h3 id="org43e1e45">UNIX and The C Library</h3>
+<div class="outline-text-3" id="text-org43e1e45">
 <p>
 It is somewhat tautological to say that, on UNIX, the outer edge of
 user space begins with the C POSIX Library. It contains all of what is
@@ -413,9 +413,9 @@ required functions, which can be inspired by code in the C library.
 </div>
 </div>
 
-<div id="outline-container-org183453a" class="outline-2">
-<h2 id="org183453a">The Windows API</h2>
-<div class="outline-text-2" id="text-org183453a">
+<div id="outline-container-org252f492" class="outline-2">
+<h2 id="org252f492">The Windows API</h2>
+<div class="outline-text-2" id="text-org252f492">
 <p>
 On Windows - as always - things are not quite as simple. The Windows
 API is the equivalent outer edge of user space on Windows-land (when I
@@ -458,9 +458,9 @@ apart these two are, the higher the cost of the translation.
 </p>
 </div>
 
-<div id="outline-container-org039af1d" class="outline-3">
-<h3 id="org039af1d">The many facets of Cygwin</h3>
-<div class="outline-text-3" id="text-org039af1d">
+<div id="outline-container-orgc19c7c0" class="outline-3">
+<h3 id="orgc19c7c0">The many facets of Cygwin</h3>
+<div class="outline-text-3" id="text-orgc19c7c0">
 <p>
 It should be fairly clear by now what the first role of Cygwin is: it
 aims to provide the missing POSIX API and run time that is required by
@@ -522,9 +522,9 @@ misses some potential optimisations that Interix/SUA may be using.</li>
 </div>
 </div>
 
-<div id="outline-container-org98fb277" class="outline-3">
-<h3 id="org98fb277">MinGW and MSYS</h3>
-<div class="outline-text-3" id="text-org98fb277">
+<div id="outline-container-org59d7e49" class="outline-3">
+<h3 id="org59d7e49">MinGW and MSYS</h3>
+<div class="outline-text-3" id="text-org59d7e49">
 <p>
 Some people are not happy with the dependency on Cygwin, either due to
 the performance reasons outlined above or due to its fairly viral GPL
@@ -603,9 +603,9 @@ snapshots of GCC 4.8 are already available from their download site.
 </div>
 </div>
 
-<div id="outline-container-org0c8e221" class="outline-2">
-<h2 id="org0c8e221">Wine</h2>
-<div class="outline-text-2" id="text-org0c8e221">
+<div id="outline-container-org3b47ab7" class="outline-2">
+<h2 id="org3b47ab7">Wine</h2>
+<div class="outline-text-2" id="text-org3b47ab7">
 <p>
 A word on Wine is required for symmetry purposes. In many ways, Wine
 is the mirror image of Cygwin, in that it provides the Windows API to
@@ -647,9 +647,9 @@ its won version of MinGW called winegcc.
 </div>
 </div>
 
-<div id="outline-container-org9e35670" class="outline-2">
-<h2 id="org9e35670">Choosing the Environment that Fits You</h2>
-<div class="outline-text-2" id="text-org9e35670">
+<div id="outline-container-orgc881a13" class="outline-2">
+<h2 id="orgc881a13">Choosing the Environment that Fits You</h2>
+<div class="outline-text-2" id="text-orgc881a13">
 <p>
 If you need to develop on Windows or for Windows, the following
 checklist may be of assistance:
@@ -687,18 +687,26 @@ We're avoiding the more exotic scenarios such as building Linux
 binaries on Windows or running Cygwin on Wine.
 </p>
 
-<p>
-Date: 2012-05-18 18:28:41 BST
-</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
-<p>
-Org version 7.8.02 with Emacs version 23
-</p>
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><a href="index.html">Back to essay index</a></td>
+<td class="org-left"><a href="../index.html">Back to home page</a></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2021-03-28 Sun 15:49</p>
+<p class="date">Created: 2021-03-28 Sun 16:03</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

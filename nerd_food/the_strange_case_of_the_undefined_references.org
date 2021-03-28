@@ -4,7 +4,7 @@
 #+bind: org-html-validation-link nil
 #+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
 
-| [[file:../index.org][Back to home page]] | [[file:index.org][Back to essay index]] |
+| [[file:index.org][Back to essay index]] | [[file:../index.org][Back to home page]] |
 
 Thursday, June 16, 2016
 
@@ -384,3 +384,5 @@ has disabled their APT repo for an unspecified length of time:
 There are no alternatives at present to build with a recent
 clang. Sometimes one has the feeling that the universe does not want
 to play ball. Stiff upper lip and all that; mustn't grumble.
+
+| [[file:index.org][Back to essay index]] | [[file:../index.org][Back to home page]] |

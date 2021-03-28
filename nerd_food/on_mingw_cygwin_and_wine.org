@@ -4,7 +4,7 @@
 #+bind: org-html-validation-link nil
 #+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
 
-| [[file:../index.org][Back to home page]] | [[file:index.org][Back to essay index]] |
+| [[file:index.org][Back to essay index]] | [[file:../index.org][Back to home page]] |
 
 Friday, May 18, 2012
 
@@ -347,6 +347,4 @@ checklist may be of assistance:
 We're avoiding the more exotic scenarios such as building Linux
 binaries on Windows or running Cygwin on Wine.
 
-Date: 2012-05-18 18:28:41 BST
-
-Org version 7.8.02 with Emacs version 23
+| [[file:index.org][Back to essay index]] | [[file:../index.org][Back to home page]] |

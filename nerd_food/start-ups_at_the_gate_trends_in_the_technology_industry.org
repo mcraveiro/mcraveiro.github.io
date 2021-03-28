@@ -4,7 +4,7 @@
 #+bind: org-html-validation-link nil
 #+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
 
-| [[file:../index.org][Back to home page]] | [[file:index.org][Back to essay index]] |
+| [[file:index.org][Back to essay index]] | [[file:../index.org][Back to home page]] |
 
 Thursday, September 25, 2014
 
@@ -414,3 +414,5 @@ conclusions of these developments.
   is production ready, and a number of hedge funds are already using
   it in anger. All that is required is for the cost structure to be
   squeezed even further in the investment banking sector.
+
+| [[file:index.org][Back to essay index]] | [[file:../index.org][Back to home page]] |
