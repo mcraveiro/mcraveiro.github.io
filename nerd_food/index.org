@@ -46,8 +46,8 @@ never saw the light of day.
 
 | Title                                                    | Date                         | Summary                                                           |
 |----------------------------------------------------------+------------------------------+-------------------------------------------------------------------|
-| [[file:gnome_a_user_perspective.org][Gnome: A User Perspective]]                                | Circa 1999.                  | Early essay opining on the then raging war between KDE and Gnome  |
-| [[file:my_emacs_and_i.org][My Emacs and I]]                                           | Circa 1999.                  | Early essay around the time I discovered Linux and Emacs.         |
+| [[file:gnome_a_user_perspective.org][Gnome: A User Perspective]]                                | Circa 1999                   | Early essay opining on the then raging war between KDE and Gnome  |
+| [[file:my_emacs_and_i.org][My Emacs and I]]                                           | Circa 1999                   | Early essay around the time I discovered Linux and Emacs.         |
 | [[file:on_optimization.org][On Optimization]]                                          | Thursday, December 14, 2006  | Optimization is a key aspect of software products                 |
 | [[file:on_world_domination.org][On World Domination]]                                      | Friday, March 23, 2007       | Will Linux ever dominate the world?                               |
 | [[file:on_maintenance.org][On Maintenance]]                                           | Thursday, May 24, 2007       | Maintenance is the most important aspect of software development. |
