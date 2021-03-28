@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-03-28 Sun 12:04 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Nerd Food: Dogen: Lessons in Incremental Coding</title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Nerd Food: Dogen: Lessons in Incremental Coding</h1>
+<p>
+<a href="../index.html">Back to home page</a>.
+</p>
+
+<p>
+A lot of interesting lessons have been learned during the development
+of <a href="https://github.com/DomainDrivenConsulting/dogen">Dogen</a> and I'm rather afraid many more are still in store. As it is
+typical with agile, I'm constantly reviewing processes in search of
+improvements. One such idea was that putting pen to paper could help
+improving the retrospective process itself. The result is this rather
+long blog post, which hopefully is of use to developers in similar
+circumstances. Unlike the typical bullet-point based retrospective,
+this post it is a rambling narrative as it aims to provide context to
+the reader. Subsequent retrospectives will be a lot smaller and more
+to the point.
+</p>
+
+<p>
+Talking about context: I haven't spoken very much about Dogen in this
+blog, so a small introduction is in order. Dogen is an attempt to
+create a domain model generator. The <a href="https://github.com/DomainDrivenConsulting/dogen/blob/master/doc/manual/manual.org#fundamental-building-blocks">manual</a> goes into quite a bit more
+detail, but for the purposes of this exercise, it suffices to think of
+it as a C++ code generator. Dogen has been developed continuously
+since 2012 - with a few dry spells - and reached its <a href="https://github.com/DomainDrivenConsulting/dogen/blob/master/doc/agile/sprint_backlog_50.org">fiftieth sprint</a>
+recently. Having said that, our road to a finished product is still a
+<a href="https://github.com/DomainDrivenConsulting/dogen/blob/master/doc/agile/definition_of_done.org">long one</a>.
+</p>
+
+<p>
+The remainder of this article looks at what what has worked and what
+has not worked so well thus far into Dogen's development history.
+</p>
+
+<div id="outline-container-org245b11e" class="outline-2">
+<h2 id="org245b11e">Understanding Time</h2>
+<div class="outline-text-2" id="text-org245b11e">
+<p>
+Dogen was conceived when we were trying to do our <a href="http://kitanda.co.uk/html/index.html">first start up</a>. Once
+that ended - around the back end of 2012 - I kept working on the tool
+in my spare time, and this was a setup that has continued ever
+since. There are no other contributors; development just keeps
+chugging along, slowly but steadily, with no pressures other than to
+enjoy the sights.
+</p>
+
+<p>
+Working on my own and in my spare time meant that I had two
+conflicting requirements: very little development resources and very
+ambitious ideas that required lots of work. With family commitments
+and a full time job, I quickly found out that there weren't a lot of
+spare cycles left. In fact, after some analysis, I realised I was in a
+conundrum. Whilst there is was a lot of "dead-time" in the average
+week, it was mostly "low-quality grade time": lots of discontinued
+segments of varying and unpredictable lengths. Summed together in a
+naive way it seemed like a lot, but - as every programmer knows - six
+blocks of ten minutes do not one solid hour make.
+</p>
+
+<p>
+Nevertheless, one has to play the game with the cards that were dealt.
+I soon realised that the correct question to ask was: "what kind of
+development style makes one productive under these conditions?". The
+answer turned out to be opportunistic coding. This is rooted in having
+a better understanding of the different "qualities" of time and how
+best to exploit them. For example, when you have say five to fifteen
+minutes available, it makes sense to do small updates to the manual or
+fix trivial problems - a typo in the documentation, renaming variables
+in a function, mopping up the backlog and other activities of that
+ilk. A solid block of forty minutes to an hour affords you more: for
+instance, implementing part or the whole of stories for which the
+analysis has been completed, or doing some analysis for existing
+stories. On those rare cases where half-a-day or longer is available,
+one must make the most of it and take on a complex piece of work that
+requires sustained concentration. This sessions proved to be most
+valuable when the output is a set of well defined stories that are
+ready for implementation.
+</p>
+
+<p>
+One needs very good processes in order to be able to manage the usage
+of time in this fashion. Luckily, agile provides it.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9c18ce8" class="outline-2">
+<h2 id="org9c18ce8">Slow Motion Agile</h2>
+<div class="outline-text-2" id="text-org9c18ce8">
+<p>
+Looking back on ~2.4k commits, one of the major wins in terms of
+development process was to think incrementally. Of course, agile
+already gives you a mental framework for that, and we had a
+functioning scrum process during our start up days: daily stand-ups,
+bi-weekly sprints, pre-sprint planning, post-sprint reviews, demos and
+all of that good stuff. It worked really well, and keep us honest and
+clean. We used a very simple org-mode file to keep track of all the
+open stories, and at one point we even built a simple burn-down chart
+generator to allow us to measure velocity.
+</p>
+
+<p>
+Granted, when you are working alone in your spare time, a chunk of
+agile may not make sense; for instance, providing status updates to
+yourself may not be the most productive use of scarce
+time. Surprisingly, I found quite a bit of process to be vital. I've
+kept the bi-weekly sprint cycle, the sprint logs, the product backlog
+and the time-tracking we had originally setup and found them
+<b>extremely</b> useful - quite possibly the thing that has kept me going
+for such an extended period of time, to be brutally honest. When you
+are working on an open source project it is very easy to get lost in
+its open-ended-ness and find yourself giving up, particularly if you
+are not getting (or expecting) any user feedback. Even Linus himself
+has said many times he would have given up the kernel if it wasn't for
+other people bringing him problems to keep him interested.
+</p>
+
+<p>
+Lacking Linus' ability to attract crowds of interested developers, I
+went for the next best thing: I made them up. Well, at least in
+metaphorical way, I guess, as this is what user stories are when you
+have no external users to drive them. As I am using the product in
+anger, I find it very easy to put myself in the head of a user and
+come up with requirements that push development forward. These stories
+really help, because they transform the cloud of possibilities into
+concrete, simple, measurable deliverables that one can choose to
+deliver or not. Once you have a set of stories, you have no excuse to
+be lazy because you can visualise in your head just how much effort it
+would require you to implement a story - and hey, since nerds are
+terrible at estimating, it's never that much effort at all. As
+everyone knows, it's not quite that easy in the end; but once you've
+started, you get the feeling you have to at least finish the task at
+hand, and so on, one story at a time, one sprint at a time, until a
+body of work starts building up. It's slow, excruciatingly slow, but
+it's steady like water working in geological time; when you look back
+5 sprints, you cannot help but be amazed on how much can be achieved
+in such a incremental way - and how much is still left.
+</p>
+
+<p>
+And then you get hooked into measurements. I now love measuring
+everything, from how long it takes me to complete a story, to where
+time goes in an sprint, to how many commits I do a day, to, well,
+everything that can easily be measured without adding any
+overhead. There is no incentive for you to game the system - hell, you
+could create a script that commits 20 times a day, if the commit count
+is all you care about. But it's not, so why bother. Due to this,
+statistics start to actually tell you valuable information about the
+world and to impel you forward. For instance, GitHub streaks mean that
+I always try to at least make one commit per day. Because of this,
+even on days when I'm tired, I always force my self to do <i>something</i>
+and sometimes that quick commit morphs into an hour or two of work
+that wouldn't have happened otherwise.
+</p>
+
+<p>
+As I mentioned before, it was revealing to find out that there are
+different types of time. In order to to take advantage of this
+heterogeneity, one must make scrupulous use of the product
+backlog. This has proven invaluable, as you can attest by its <a href="https://github.com/DomainDrivenConsulting/dogen/blob/master/doc/agile/product_backlog.org">current</a>
+size. Whether we are part way through a story or just idly
+daydreaming, each and every idea must be added to the product backlog,
+with sufficient detail to allow one to reconstruct one's train of
+thought at that point in time. Once in the backlog, items can be
+continuously refined until eventually we find a suitable sprint to
+tackle them or they get deprecated altogether. But without an healthy
+backlog it is not possible to make the most these illusive time
+slots. Conversely, it is important to try to make each story as small
+and as focused as possible, and to minimise spikes unless they really
+are on the critical path of the story. This is mainly for
+psychological reasons: one needs to mark stories as complete, to feel
+like work has been done. Never-ending stories are just bad for morale.
+</p>
+
+<p>
+In general, this extreme incrementalism has served us well. Not all is
+positive though. The worst problem has been a great difficulty in
+tackling complex problems - those that require several hours just to
+load them into your head. These are unavoidable in any sufficiently
+large code base. Having lots of discontinued segments of unpredictable
+duration have reduced efficiency considerably. In particular, I notice
+I have spent a lot more time lost in conceptual circles, and I've
+taken a lot longer to explore alternatives when compared to working
+full time.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3e5ba40" class="outline-2">
+<h2 id="org3e5ba40">DVCS to the Core</h2>
+<div class="outline-text-2" id="text-org3e5ba40">
+<p>
+We had already started to use git during the start-up days, and it had
+proved to be a major win at the time. After all, one never quite knows
+where one will be coding from, and whether internet access is
+available or not, so it's important to have a self-contained
+environment. In the end we found out it brought many, many more
+advantages such as great collaborative flows, good managed web
+interfaces/hosting providers (<a href="http://www.github.com">GitHub</a> and, to some extent, <a href="http://www.bitbucket.com">BitBucket</a>),
+amazing raw speed even on low-powered machines, and a number of other
+wins - all covered by lots and lots of posts around the web, so I
+won't bore you with that.
+</p>
+
+<p>
+On the surface it may seem that DVCS is most useful on a
+multi-developer team. This is not the case. The more discontinued your
+time is, the more you start appreciating its distributed nature. This
+is because each "kind" of time has a more suitable device - perhaps a
+netbook for the train, a desktop at someone's house or even a phone
+while waiting somewhere. With DVCS you can easily to switch devices
+and continue exactly where you left off. With GitHub you can even
+author using the web interface, so a mobile phone suddenly becomes
+useful for reading and writing.
+</p>
+
+<p>
+Another decision that turned out to be a major win is still not the
+done thing. Ever the trailblazers, we decided to put everything
+related to the project in version control. And by "everything" I do
+mean <b>everything</b>: documentation, bug reports, agile process, blog
+posts, the whole lot. It did seem a bit silly not to use GitHub's Wiki
+and Issues at the time, but, on hindsight, having everything in one
+versioned controlled place proved to be a major win:
+</p>
+
+<ul class="org-ul">
+<li>searching is never further than a couple of greps away, and it's not
+sensitive to connectivity;</li>
+<li>all you need is a tiny sliver of connectivity to push or pull, and
+work can be batched to wait for that moment;</li>
+<li>updates by other people come in as commits and can be easily
+reviewed as part of the normal push/pull process - not that we got
+any of late, to be fair;</li>
+<li>changes can easily be diffed;</li>
+<li>history can be checked using the familiar version control interface,
+which is available wherever you go.</li>
+</ul>
+
+<p>
+When you have little time, these advantages are life-savers.
+</p>
+
+<p>
+The last but very important lesson learned was to commit early and
+commit often. It's rather obvious in hindsight, really. After all, if
+you have very small blocks of time to do work, you want to make sure
+you don't break anything; last thing you need is to spend a week
+debugging a tricky problem, with no idea of where you're going or how
+far you still have to travel. So it's important to make your commits
+<i>very small</i> and <i>very focused</i> such that a bisection would almost
+immediately reveal a problem - or at least provide you with an obvious
+rollback strategy. This has proved itself to be invaluable far too
+many times to count. The gist of this approach it is to split changes
+in an almost OCD sort of way, to the point that anyone can look at the
+commit comment and the commit diff and make a judgement as to whether
+the change was correct or not. To be fair, it's not quite always that
+straightforward, but that has been the overall aim.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org89e8c8a" class="outline-2">
+<h2 id="org89e8c8a">Struggling to stay Continuously Integrated</h2>
+<div class="outline-text-2" id="text-org89e8c8a">
+<p>
+After the commit comes the build, and the proof is in the pudding, as
+they say. When it comes to code, that largely means CI; granted, it
+may not be a very reliable proof, but nevertheless it is the best
+proof we've got. One of the major wins from the start up days was to
+setup CI, and to give it as wide a coverage as we could muster. We
+setup multiple build agents across compilers and platforms, added
+dynamic analysis, code coverage, packaging and basic sanity tests on
+those packages.
+</p>
+
+<p>
+All of these have proven to be major steps in keeping the show on the
+road, and once setup, they were <i>normally</i> fairly trivial to
+maintain. We did have a couple of minor issues with <a href="http://www.cdash.org/">CDash</a> whilst we
+were running our own server. Eventually we moved over to the <a href="http://my.cdash.org/index.php?project%3DDogen">hosted
+CDash server</a> but it has limitations on the number of builds, which
+meant I had to switch some build agents off. In addition to this, the
+main other stumbling block is finding the time to do large
+infrastructural updates to the build agents such as setting up new
+versions of <a href="http://www.boost.org/users/history/version_1_56_0.html">Boost</a>, new compilers and so on. These are horrendously
+time consuming across platforms because you never know what issues you
+are going to hit, and each platform has their own way of doing things.
+</p>
+
+<p>
+The biggest lesson we learned here is that CI is vital but software
+product with no time at all should not waste time managing their own
+CI. There are just not enough hours in the day. I have been looking
+into <a href="https://travis-ci.org/">travis</a> to make this process easier in the future. Also, whilst
+being cross-platform is a very worthy objective, one has to weigh the
+costs with the benefits. If you have a tiny user base, it may make
+sense to stick to one platform and continue to do portable coding
+without "proof"; once users start asking for multiple platforms, it is
+then worth considering doing the work required to support them.
+</p>
+
+<p>
+The packaging story was also a very good one to start off with - after
+all, most users will probably rely on those - but it turned out to be
+<b>much</b> harder than first thought. We spent quite a bit of time
+integrating with the GitHub API, uploading packages into their
+downloads section, downloading them from there, testing, and then
+renaming them for user consumption. Whilst it lasted, this setup was
+very useful. Unfortunately it didn't last very long as GitHub decided
+to decommission their downloads section. Since most of the upload and
+download code was GitHub specific, we could not readily move over to a
+different location. The lesson here was that this sort of
+functionality is extremely useful, and it is worth dedicating time to
+it, but one should always have a plan B and even a plan C. To make a
+long story short, the end result is that we don't have any downloads
+available at all - not even a stale ones - nor do we have any sanity
+checks on packages we produce; they basically go to <code>/dev/null</code>.
+</p>
+
+<p>
+In summary, all of our pains led us to conclude that one should
+externalise early, externalise often and externalise everything. If
+there is a free (or cheap) provider in the cloud that can take on some
+or all of your infrastructure work away, you should always consider
+using them first rather than host your own infrastructure. And
+remember: your time is worth some money, and it is better spent
+coding. Of course, it is important to ensure that the provider is
+reliable, has been around for a while and is used by a critical
+mass. There is nothing worse than spending a lot of effort migrating
+to a platform, only to find out that it is about to dramatically
+change its APIs, prices, terms and conditions - or even worse, to be
+shutdown altogether.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org31425e0" class="outline-2">
+<h2 id="org31425e0">Loosely Coupled</h2>
+<div class="outline-text-2" id="text-org31425e0">
+<p>
+Another very useful lesson I learned was to keep the <i>off-distro</i>
+dependencies to a minimum. This is rather related to the previous
+points on CI and cross-platform-ness, really. During the start up days
+we started off by requiring a C++ compiler with good C++ 11 support,
+and a Boost library with a few off-tree libraries - mainly
+<a href="http://www.boost.org/doc/libs/1_56_0/libs/log/doc/html/index.html">Boost.Log</a>. This meant we had to have our own little "chroot" with all
+of these, and we had to build them by hand, sprinkled with plenty of
+helper scripts. In those dark days, almost nothing was supplied by the
+distro and life was painful. It was just about workable when we had
+time on our hands, but this is really not the sort of thing you want
+to spend time maintaining if you are working on a project in your
+spare time.
+</p>
+
+<p>
+To be fair, I had always intended to move to distro-supplied packages
+as soon as they caught up, and when that happened the transition was
+smooth enough. As things stand, we have a very small off-distro
+footprint - mainly <a href="http://www.codesynthesis.com/products/odb/">ODB</a> and <a href="http://epa.codeplex.com/">EOS</a>. The additional advantage of not having
+off-distro dependencies is that you can start to consider yourself for
+inclusion on a distro. Even in these days of Docker, being shipped by
+a distro is still a good milestone for any open source project, so it's
+important to aim for it. Once more, it's the old psychological factors.
+</p>
+
+<p>
+All and all, it seems to me we took the right decisions as both C++ 11
+and Boost.Log have proven quite useful; but in the future I certainly
+will think very carefully about adding dependencies to off-distro
+libraries.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcb4a194" class="outline-2">
+<h2 id="orgcb4a194">Conclusions</h2>
+<div class="outline-text-2" id="text-orgcb4a194">
+<p>
+In general, the first fifty iterations of Dogen have been very
+positive. It has been a rather interesting journey, and dealing with
+pure uncertainty is not always easy - after all, one always wants to
+reach a destination. At the same time, much has been learned in the
+process, and a setup has been created that is sustainable given the
+available resources. In the near future I intend to improve the
+visibility of the project as I believe that, for all it's faults, it
+is still useful in its current form.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2021-03-28 Sun 12:04</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

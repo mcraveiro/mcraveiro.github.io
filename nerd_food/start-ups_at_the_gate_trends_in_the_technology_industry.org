@@ -1,0 +1,416 @@
+#+title: Nerd Food: Start-ups at the Gate: Trends in the Technology Industry
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+
+[[file:../index.org][Back to home page]].
+
+Thursday, September 25, 2014
+
+It is very difficult to convey the vast scale at which the largest
+Internet companies operate. To make matters worse, we are fast
+becoming immune to statistics such as one billion users and five
+trillion searches per day, surrounded as we are by a sea of large
+numbers on a daily basis. Having said that, any Information Technology
+(IT) professional worth his or her salt cannot help but feel in awe at
+what has been achieved. It is not just that these platforms are big;
+they work at a scale that is qualitatively different from anything
+that has come before. The sort of things that are possible at this
+scale are mind-boggling, and we have only begun to scratch the
+surface[fn:1].
+
+[fn:1] As one of many examples, see Google Flu Trends. It is a
+predictor of outbreaks of the flu virus, with a prediction rate of
+about 97%. For a more comprehensive - if somewhat popular - take on
+the possibilities of large data sets, see Big Data: A Revolution That
+Will Transform How We Live, Work and Think. For a very different
+take - highliting the dangers of Big Data - see Taleb's views on the
+ever decreasing noise to signal ratio: The Noise Bottleneck or How
+Noise Explodes Faster than Data.
+
+
+Perhaps even more revolutionary is the fact that these companies have
+made it possible for anyone to start thinking about data in the same
+way as they do, and to start handling it using the very same tools
+they use. There is now a never-ending archive of the very best
+large-scalability tools, all available for free, with code that anyone
+can inspect, modify and optimise to meet their specific
+requirements. The tools come with a wealth of practical documentation
+on how to put solutions together - either freely available or at
+low-cost - and with a number of passionate user communities that
+provide expert advice and are eager to accept modifications.
+
+The ecosystem they have created is truly staggering. As an example,
+Facebook has open sourced almost 10M lines of code to date. Twitter,
+Google and LinkedIn are not far behind[fn:2]. It is also important to
+notice that non-Internet companies are making extremely large
+contributions too, such as Microsoft and IBM. All told, the overall
+pool of open source code is growing exponentially, as demonstrated by
+a 2008 study. In most cases, these are full-fledged products, tested
+in the most challenging production conditions imaginable. Of course,
+one must also not forget the contributions made to projects that are
+not under company control such as the Linux Kernel, the Apache
+web-server and the GNU Compiler GCC.
+
+[fn:2] In fact, by some measures, Google has contributed several times
+that amount. For one such take, see Lauren Orsini's article.
+
+
+In order to understand why modern start-ups provide such a compelling
+financial case, one must first understand how we got to the amazing
+technology landscape we have today. To do so, we shall divide recent
+technology history into eras, and explain each era's contribution. We
+will then focus on modern start-ups, and explain how this model can be
+deployed to a large gamut of industries and in particular to the
+financial sector.
+
+* First Era: Dot-com Bubble
+
+Silicon Valley was and still is the world's start-up factory so,
+unsurprisingly, it was ground zero for the start-up revolution that
+took place at the end of the nineties. It would eventually be known as
+The Dot-com Bubble. Most people remember those days as a heady time,
+where each and every idea was packaged as a website and sold for
+millions or in some cases billions of dollars. Of course, we all had a
+steep price to pay when the bubble burst - an extinction event that
+decimated the young Internet sector and IT companies in general.
+
+There is however another way to look at this bubble: it was a gigantic
+experiment to determine whether there were successful business models
+to be found in the large scale of the Internet. Whilst much
+mal-investment occurred, the bubble still produced or pushed forward
+several of the giants of today such as Google, Amazon and Yahoo.
+
+Most of these companies share a similar technology story. Originally
+faced with a dearth of investment but with bright young engineers,
+they found themselves relying on Free and Open Source Software (FOSS)
+and cheap, off-the shelf hardware. Once they became big enough, it
+just didn't make sense to replace all of that infrastructure with
+software and hardware supplied by commercial vendors.
+
+This turn of events was crucial. If these companies had had larger
+budgets and less skilled engineers, they would have relied on the
+cutting edge technology of the time. The short-term gain would reveal
+itself as long term pain, for their ability to scale would be
+inevitably restricted. In addition, many of the business models
+wouldn't have worked due to this cost structure[fn:3]. As it was,
+since they couldn't even afford the relatively cheap licences of
+commercial software, they had to make do with what was available for
+free.
+
+[fn:3] 3 As an example, it was common practice for vendors to charge
+according to the number of processors, users and so on. Many of the
+better funded start-ups made use of technology from Cisco, Sun, Oracle
+and other large commercial vendors, but companies that did so are not
+very well represented in the population that survived the dot-com
+bubble, and they are not represented at all in the 2014 Fortune 500
+list. Google, Amazon and E-Bay are the only Fortune 500 companies from
+that crop and they all relied to a very large extent on in-house
+technology. Note though that we are making an empirical argument here
+rather than a statistical one, both due to the lack of data available,
+as well as concern for Survivorship Bias.
+
+
+The engineers in these companies - and many others that didn't make it
+through the dot-com filter - spent countless hours improving FOSS
+tools and gave back much of these improvements to communities such as
+Linux, MySQL, Apache, GCC and so on. However, they kept private the
+plumbing work done to manage the large cluster of cheap machines, as
+well as the domain related technology - in industry-speak, the Secret
+Sauce.
+
+By the time the dot-com bubble had run its course and the dust
+settled, the landscape looked as follows:
+
+- A model had been created whereby a small number of engineers could
+  bootstrap an Internet-based company at very low cost, serving a
+  small number of users initially.
+- The model had been stretched to very large numbers of users and had
+  been found to scale extremely well; as the business proved itself
+  and investment came in, it was possible increase the size of the
+  computing infrastructure to cope with demand.
+- Because of the open nature of the technologies involved, the ideas
+  became widespread over the internet.
+- The basic high-scalability FOSS stack - ready for start-ups - was
+  born; the Data Centre, where large amounts of computing are
+  available at low cost, soon followed. It would eventually morph into
+  the Cloud.
+
+* Second Era: Social Media
+
+The bursting of the dot-com bubble did not dampen the entrepreneurial
+spirits, but it did dry up all the easily available capital and thus
+pushed the aspiring start-ups to be ever more frugal. In addition, VCs
+started to look for better ways to evaluate prospects. The problem
+they faced was no different from what they had faced during the
+dot-com days: how to figure out the potential of a company with no
+defined business model and nothing else to compare it against.
+
+Google had proved comprehensively that the traditional valuation
+methods did not make sense in the world of start-ups. After all, here
+was a company which it's founders couldn't sell for 1M USD and yet a
+few years later was generating billions of dollars in revenues. Very
+few saw this coming. VCs were keen not to make the same mistake with
+the next Google[fn:4].
+
+[fn:4] For one of many takes on the attempt to sell Google, see When
+Google Wanted To Sell To Excite For Under 1 Million~— And They
+Passed. To get a flavour of how poorly understood Google's future was
+as late as 2000, see Google Senses That It's Time to Grow Up. Finally,
+the success story is best told by the growth of revenues between 2001
+and 2003 - see Google's 2003 Financial Tables.
+
+
+So it was that a system to determine potential by proxy emerged over
+the years, using indicators such as the size of the user base, time
+spent by users on the platform and so on - effectively, any attribute
+that was deemed to have given a competitive advantage to Google and
+other successful dot-com companies.
+
+In this environment, social media start-ups took took centre
+stage. Following on from the examples of their predecessors, these
+companies took for granted that they were to operate on very large
+data sets. They inherited a very good set of scalable tools, but found
+that much still had to be built on top. Unlike their predecessors,
+many chose to do some or all of the infrastructure work out in the
+open, joining or creating new communities around the tools. This was
+in no small part due to the scarcity of funds, which encouraged
+collaboration.
+
+The social media start-ups soon found themselves locked in an arms
+race for size, where the biggest would be the winner and all others
+would be doomed to irrelevance[fn:5]. The size of the user base of the
+successful companies exploded[fn:6], and the tooling required to
+manage such incredibly large volumes of data had to improve at the
+same pace or faster. Interestingly, these start-ups continued to view
+in-house code largely as a cost, not an asset, even after they started
+to bring in large revenue. The size of the secret sauce was to be kept
+at a minimum and the pace of open sourcing accelerated over
+time[fn:7].
+
+[fn:5] Twitter, Facebook, YouTube, LinkedIn and the like were the
+victors, but for every victor, a worthwhile foe was defeated; MySpace,
+Hi5, Orkut and many others were all very popular at one time but lost
+the war and faded into obscurity.
+
+[fn:6] As an example, the number of Facebook users grew at an
+exponential rate between 2004 and 2013 - see Facebook: 10 years of
+social networking, in numbers.
+
+[fn:7] A possible explanation for this decision is the need for
+continuous scalability. Even companies as large as Facebook or Google
+cannot dedicate the resources required to adequately maintain every
+single tool they own; their code bases are just too large. At the same
+time, they cannot afford for code to become stale because it must
+continually withstand brutal scalability challenges. The solution to
+this conundrum was to open source aggressively and to create vibrant
+communities around tooling. Converting themselves to stewards of the
+tools, they could now place quasi-skeleton crews to give direction to
+development, and then rely on the swarms of new start-ups to
+contribute patches. Once there are enough improvements, the latest
+version of these tools can be incorporated into the internal
+infrastructure. This proved to be a very cost-effective strategy, even
+for large companies, and allowed continued investment across the
+technology stack.
+
+
+A final factor was the rise of the next iteration of the data centre,
+popularised by Amazon with AWS and EC2. It allowed any company to
+scale out without ever having to concern themselves with physical
+hardware. This was revolutionary because it allowed razor-thin costs
+for scalability:
+
+- *Pay only for what you use*: the elastic nature of EC2 meant that
+  one could grow or shrink one's cluster based on real time traffic
+  demands and availability of capital.
+- *Zero-cost software*: FOSS was available in Amazon from the very
+  beginning and was extremely popular with start-ups.
+- *Fully automated environments via APIs*: resource constrained
+  start-ups could now start to automate all aspects of the product
+  life-cycle. This meant they could release faster, which in turn
+  allowed them to fight more effectively for their user base. This
+  would in time become the DevOps movement.
+
+By the end of the decade, the scalability tooling was largely
+complete. It was now possible for a small start-up to create a small
+website and to see it scale from hundreds to millions, restricted only
+by their ability to bring in capital.
+
+* Third Era: Mobile
+
+Mobile phones have been growing close to an exponential rate for over
+two decades. However, the rise of the smart phones was a game changer,
+and the line in the sand was drawn with the release of the
+iPhone. What makes mobile so important to our story is it's
+penetration. Until smart phones became ubiquitous, there was a large
+segment of the population that was either totally inaccessible or
+accessible for limited periods of time. With increasingly large
+numbers of people carrying smart phones as they go about their day,
+many use cases that were never before thought possible came to the
+table. So whilst we call this "the Mobile era", the true heroes are
+smart phones and, to a smaller extent, the tablets.
+
+The mobile era started with simple apps. Smart phones were still new
+and applications for each platform were novelty. There was a need to
+reinvent all that existed before in the world of PCs and adapt it to
+the new form factor. It was during this phase that the economies of
+scale of mobile phones became obvious. Whereas consumer PC software
+had prices on the range of tens to hundreds of dollars, mobile phones
+bootstrapped a completely different pricing model, with many apps
+selling for less than one dollar. Volume made up for the loss in
+revenue per unit. The model was so incredibly successful that a
+vibrant environment of apps sprung up around each of the successful
+platforms, carefully nurtured by the companies running the show via
+their app stores.
+
+Soon enough the more complex apps came about. Companies like Four
+Square and WhatsApp were trailblazers in the mobile space, merging it
+with ideas from social media. Many others like Spotify took their
+wares from the stagnant PC environment and moved to the ever growing
+mobile space. Complex apps differed from the simple apps in that they
+required large backends to manage operations. Since these companies
+were cash strapped - a perennial condition of all start-ups - they
+found themselves reusing all of the technology developed by the social
+media companies and became part of the exact same landscape. Of
+course, the social media companies were eventually forced to jump on
+the mobile bandwagon - lest they got crushed by it.
+
+So it was that the circle was closed between the three eras.
+
+* Evolutionary Pressures and Auto-Catalytic Processes
+
+The changes just described are so revolutionary that one cannot help
+but look for models to approximate some kind of explanation for what
+took place. Two stand out. The first is to imagine the population of
+start-up companies as a small segment of the overall company
+population that was submitted to an unbelievably harsh fitness
+function: to grow the data volumes exponentially while growing costs
+less than linearly. This filter generated new kinds of companies, new
+kinds of technologies and new kinds of ways of managing technology.
+
+Secondly, there is the auto-catalytic nature of the processes that
+shaped the current technology landscape. Exponential growth tends to
+have at its root this kind of self-reinforcing cycle, whereby
+improvements in an area A trigger improvements in another area B,
+which in turn forces A to improve. The process keeps on repeating
+itself whilst it manages to retain stability.
+
+It is this relationship we currently have between start-ups and FOSS:
+the better the software gets, the cheaper it is to create new
+start-ups and the faster these can grow with the same amount of
+capital. By the same token, the more start-ups rely on FOSS, the more
+they find themselves contributing back or else risk falling behind -
+both technologically and cost-wise. This feedback loop is an emerging
+property of the entire system and it has become extremely pronounced
+over time.
+
+* Finance and the Age of Disruption
+
+The concept of disruption was developed in the nineties by Clayton
+Christensen in Innovator's Dilemma. This book has seen a resurgence in
+popularity as well as in criticism[fn:8]. For good or bad, the ideas
+in this book became the intellectual underpinnings of a new generation
+of start-ups.
+
+[fn:8] 8 There are quite a few to choose from but Lepore's is one of
+the best because it robustly attacks both the ideology and the quality
+of the data.
+
+
+They seek to combine all of the advances of the previous start-ups to
+create solutions to problems far outside the traditional IT
+realm. Examples are the hotel industry (AirBnB), the taxi industry
+(Uber, Lyft) and even the banking industry (Simple). Whilst it's still
+early days, and whilst there have been many teething problems such as
+issues with regulation, the destination of travel is already clear:
+there will be more and more start-ups following the disruptive route.
+
+What makes these companies a compelling proposition to VCs is that
+they are willing to take on established concerns, with cost structures
+that are orders of magnitude larger than that of these
+start-ups. Their thinking is two-fold: the established companies are
+leaving a lot of money on the table, consumed by their inefficiency;
+and they are not exploiting the opportunities to their full potential
+because they do not understand how to operate at a vast scale.
+
+It is in this context that finance scene comes into the picture - as
+part of the expansionary movement of the disruption movement. VCs have
+longed eyed enviously the financial industry because they believed
+that the problems being solved in trading are not that dissimilar to
+those faced by many large scale start-ups. And yet the rewards are
+disproportional large in Finance, when compared with say social media.
+
+Fintech soon emerged. As applied to start-ups, Fintech is the umbrella
+name given to the ecosystem of start-ups and VCs that focus
+specifically on financial technology. This ecosystem has grown from
+930M USD in 2008 to around 3Bn in 2013 according to Accenture. Centred
+mainly in London, but with smaller offshoots in other financial
+centres, the Fintech scene is starting to attract established players
+in the world of Finance. For instance, Barclays has joined the fray by
+creating an incubator. They farmed off the work to a third-party (Tech
+Stars) but allowed all the start-ups in the programme to have
+unprecedented access to their Mobile APIs. Their target is to own the
+next generation of financial applications on Mobile devices.
+
+Whist Barclays is disrupting from the outside, it is obvious that the
+investment banking legacy platforms are a fertile ground for
+start-ups. This is where the scalability stack has a near-perfect
+fit. A typical example is OpenGamma. The start-up designed an open
+source Risk platform, initially focused on back office use. They have
+received over 20M USD in funding as of 2014 and have already been the
+recipient of several of the industry's awards. There are now several
+open source trading platforms to choose from including TradeLink and
+OpenGamma, as well as the popular quantitative analytics library
+QuantLib.
+
+As we have seen in the previous sections, there is an auto-catalytic
+process at play here. Once source code becomes widely available, the
+cost of creating the next Financial startup goes down dramatically
+because they can reuse the tools. This in turn means many more
+start-ups will emerge, thus improving the general quality of the
+publicly available source code.
+
+* Conclusions
+
+The objective of this article was to provide a quick survey of the
+impact of start-up companies in the technology landscape, and how
+these relate to finance. We now turn our attention to the logical
+conclusions of these developments.
+
+- Finance will increasingly be the target of VCs and start-ups: The
+  Fintech expansion is to continue over the coming years and it will
+  affect everyone involved in the industry, particularly the
+  established participants. More companies will take the route of
+  Barclays, trying to be part of the revolution rather than dethroned
+  by it.
+- Banks and other established companies will begin to acquire
+  start-ups: Related to the previous item in some ways; but also with
+  a twist. As part of the Deloitte TMT predictions event, Greg
+  Rogers - the manager of Barclays Accelerator - stated that the
+  acquisition of non-financial start-ups by banks was on the cards. He
+  was speaking about Facebook's acquisition of WhatsApp for 18Bn USD,
+  one of the largest of the year. As Google and Facebook begin
+  integrating payments into their social platforms, banking firms will
+  find their traditional business models under attack and will have no
+  option but to retaliate.
+- Finance will turn increasingly to FOSS: The cost structure that
+  finance firms had up to 2008 is not suitable to the post 2008
+  world. At present, the volume of regulatory work is allowing these
+  cost structures to persist (and in cases increase). However,
+  eventually banks will have to face reality and dramatically reduce
+  their costs, in line with the new kind of revenues they are expected
+  to make in a highly-regulated financial world. There will be a
+  dramatic shift away from proprietary technologies of traditional
+  vendors, unless these become much more competitive against their
+  fierce FOSS rivals.
+- A FOSS financial stack will emerge over the next five years:
+  Directly related to the previous point, but taking it further. Just
+  as it was with social media companies, so it seems likely that
+  financial firms will eventually realise that they cannot afford to
+  maintain all the infrastructure code. Once an investment bank takes
+  the leap and starts relying on FOSS for trading or back-office, the
+  change will ripple through the industry. The state of the FOSS code
+  is production ready, and a number of hedge funds are already using
+  it in anger. All that is required is for the cost structure to be
+  squeezed even further in the investment banking sector.

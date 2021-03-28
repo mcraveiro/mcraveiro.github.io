@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-03-28 Sun 11:14 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Nerd Food: Interview with Federico Mena-Quintero</title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Nerd Food: Interview with Federico Mena-Quintero</h1>
+<p>
+<a href="../index.html">Back to home page</a>.
+</p>
+
+<p>
+Wednesday, October 03, 2007
+</p>
+
+<p>
+Pretty much anyone who is involved with Free Software - even just as
+a lowly user like myself - has heard of Federico. His blog is a source
+of insightful ideas on Gnome, and lately, on performance - combined
+with a healthy dose of interest in politics and, more importantly,
+good food. I decided to send a few questions to Federico, mainly on
+the topics I was most curious about, and he kindly replied to my
+questions - and did so in record time! Many thanks to Federico for
+taking time off his busy hacking schedule for this interview.
+</p>
+
+<div id="outline-container-org99593fb" class="outline-2">
+<h2 id="org99593fb">Interview</h2>
+<div class="outline-text-2" id="text-org99593fb">
+<ol class="org-ol">
+<li>You are one of the founders of the Gnome project, which is
+currently celebrating ten years of existence. On a recent interview
+you gave to Fosdem, you considered the platform to be
+maturing. However, as we all know, the last 10% normally take 90%
+of the time, and it's considered to be boring work. What do you
+think the Gnome project needs to do to get people to focus on those
+remaining 10%?</li>
+</ol>
+
+<div class="epigraph"><blockquote>
+<p>
+Basically, to provide an incentive to get that last 10% of the work
+done :) Instead of smacking people with a stick for not writing
+documentation, you could have a web page with a bar chart of
+"percentage of documentation coverage". Then it becomes a competition:
+use a carrot instead of a stick.
+</p>
+
+<p>
+I'd also like companies to get more involved in this. If they want to
+ship GNOME as a development platform they support, then they could
+very well employ people to do those missing bits.
+</p>
+
+</blockquote></div>
+
+<ol class="org-ol">
+<li>You have been one of the champions of performance in Gnome for a
+while now. As functionality increased, Gnome started suffering more
+and more from performance problems, particularly when looked at
+from a low end perspective. You have been trying to explain to the
+masses that performance work is interesting. What do you think can
+be done to increase developer focus on this neglected area?</li>
+</ol>
+
+<div class="epigraph"><blockquote>
+<p>
+The thing about fixing performance problems is that nobody teaches you
+how to do it. There is very little documentation out there on how to
+generically approach an optimization problem (I intend to do something
+about this, but oh, time, time, time!) :)
+</p>
+
+<p>
+Also, sometimes you fix a performance problem, but it reappears in the
+future. This happens when you don't leave an infrastructure in place
+to let you run a benchmark periodically. You need to be able to see if
+there are performance regressions.
+</p>
+
+<p>
+Our tools are slowly getting better, but there are really very few
+people working on optimization and profiling tools. It takes a <b>ton</b>
+of time and skill to write a good tool; maybe that's why there are so
+few of them.
+</p>
+
+<p>
+Finally, profiling and optimizing is really about following the
+scientific method ("make a hypothesis, change one thing at a time,
+measure, confirm your hypothesis, etc."). This requires discipline and
+a lot of patience.
+</p>
+
+<p>
+Basically, it's a problem of education :)
+</p>
+
+</blockquote></div>
+
+<ol class="org-ol">
+<li>Earlier on this year, Gnome users and developers met for
+GUADEC. Did you find the conference as productive as in previous
+years? How important is GUADEC for the Gnome user and developer
+community?</li>
+</ol>
+
+<div class="epigraph"><blockquote>
+<p>
+Yes, this GUADEC was tremendously productive! I think the venue helped
+a lot; the Birmingham Conservatoire is rather compact and has nice
+practice rooms that anyone can use. So, you could grab a couple of
+hackers and go to a room to hack peacefully.
+</p>
+
+<p>
+GUADEC has always been important, even more so now that our community
+is large and widespread. It is about the only time in the year when
+most of the GNOME contributors get together in a single place and are
+able to talk in person. Do not underestimate the productivity of
+talking over a beer :)
+</p>
+
+</blockquote></div>
+
+<ol class="org-ol">
+<li>From the outside world, it appears Novell is a company who has
+regained it's soul and direction with Linux. How was the transition
+from Ximian into Novell?</li>
+</ol>
+
+<div class="epigraph"><blockquote>
+<p>
+Like all acquisitions, it was a bit rought at first. It's what you get
+when you switch from being in a small company where you know all of
+the employees, to one with several thousands of people. You have to
+adjust to bigger processes, more layers of management, new locations,
+new paperwork&#x2026;
+</p>
+
+<p>
+It has been very interesting to see the mindset of the old-time Novell
+people change over time. At first they seemed reluctant to touch Linux
+and free software, since they were of course Windows users. Then we
+had a period with lots of questions, lots of bugs that needed to be
+fixed, lots of re-training&#x2026; and now we are in a very nice period,
+when people have accepted that we must all use our own free
+software. People seem to be productive with it and happy.
+</p>
+
+<p>
+I miss the monkeys, though.
+</p>
+
+</blockquote></div>
+
+<ol class="org-ol">
+<li>You are currently telecommuting from Mexico, a position envied by a
+most developers out there. Do you find that telecommuting helps
+improving your productivity? Are there any downsides to it?</li>
+</ol>
+
+<div class="epigraph"><blockquote>
+<p>
+It has good things and bad things. Good things: working in your
+pajamas if you feel like it, not having to commute, taking a pause
+when you are stuck in a hard problem to do a bit of gardening. Bad
+things: you can't talk to people in person. You must fix all your
+networking problems yourself. Sometimes, when you are uninspired, it's
+nice to be able to look over someone else's shoulder or talk to them.
+</p>
+
+</blockquote></div>
+
+<ol class="org-ol">
+<li>Can you describe your typical day at work?</li>
+</ol>
+
+<div class="epigraph"><blockquote>
+<p>
+Well, since I work from home&#x2026; :)
+</p>
+
+<p>
+I wake up. If my wife and I are hungry, we make breakfast while my
+email gets downloaded. If we are not hungry, I'll just check for
+super-urgent email and then start programming (fixing bugs, doing new
+development, reviewing patches, etc.).
+</p>
+
+<p>
+I usually try to get some programming done in the morning, while my
+brain is fresh. Processing your email in the morning is a really bad
+idea; it will take you up to the afternoon and by then you'll be tired
+to really write code.
+</p>
+
+<p>
+We have lunch at really irregular hours. Sometimes it's more like an
+early dinner. I have the bad habit of not stopping working until I'm
+exhausted or my wife is angry that we haven't gone out to the
+supermarket yet, but I'm trying to fix that :)
+</p>
+
+<p>
+In the afternoon I tend to do "light" work&#x2026; maintaining wikis,
+answering email, coordinating people. I don't really have a fixed work
+schedule.
+</p>
+
+</blockquote></div>
+
+<ol class="org-ol">
+<li>Many developing countries are increasingly looking at Free Software
+as a way to bring down the digital divide. Do you find that Mexico
+is taking advantage of Free Software - particularly since it has
+two lead Free Software developers? Are there any lessons to be
+learned from Mexico's experience?</li>
+</ol>
+
+<div class="epigraph"><blockquote>
+<p>
+Mexico is blessed and cursed to be so close to the USA. There is
+plenty of basic usage of free software by individuals (often
+enthusiastic students), but relatively little usage in the public and
+private sectors.
+</p>
+
+<p>
+People in Mexico get very impressed by rich people; most Mexicans want
+to be like the rich people from the USA they see on TV. It's very easy
+to woo us into accepting their ways.
+</p>
+
+<p>
+So, every time there has been some noise about using free software in
+the public sector, Bill Gates has flown down, organized a big business
+lunch with government officials, and made sure that they keep using
+Microsoft products. If you are an ignorant politician, you will love
+to gloat that you had lunch (imagine, lunch!) with Bill Gates, the
+richest man in the world &#x2014; and whatever he says must be correct, of
+course. The problem we have is that most of our politicians don't have
+the faintest idea of the economic and cultural implications of free
+software, unlike those in the European Union (see the recent report on
+the economic impact of free software there!).
+</p>
+
+</blockquote></div>
+
+<p>
+<i>Thanks for the interview!</i>
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2021-03-28 Sun 11:14</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-03-28 Sun 11:20 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Nerd Food: On Evolutionary Methodology</title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Nerd Food: On Evolutionary Methodology</h1>
+<p>
+<a href="../index.html">Back to home page</a>.
+</p>
+
+<p>
+Wednesday, June 11, 2008
+</p>
+
+<div class="epigraph"><blockquote>
+<p>
+Unix's durability and adaptability have been nothing short of
+astonishing. Other technologies have come and gone like
+mayflies. Machines have increased a thousand-fold in power, languages
+have mutated, industry practice has gone through multiple
+revolutions - and Unix hangs in there, still producing, still paying
+the bills, and still commanding loyalty from many of the best and
+brightest software technologists on the planet. &#x2013; ESR
+</p>
+
+</blockquote></div>
+
+<div class="epigraph"><blockquote>
+<p>
+Unix&#x2026;is not so much a product as it is a painstakingly compiled oral
+history of the hacker subculture. &#x2013; Neal Stephenson
+</p>
+
+</blockquote></div>
+
+<div id="outline-container-org7efb14b" class="outline-2">
+<h2 id="org7efb14b">The Impossibly Scalable System</h2>
+<div class="outline-text-2" id="text-org7efb14b">
+<p>
+If development in general is an art or a craft, its finest hour is
+perhaps the maintenance of existing systems which have high
+availability requirements but are still experiencing high rates of
+change. As we covered previously, maintenance in general is a task
+much neglected in the majority of commercial shops, and many products
+suffer from entropic development; that is, the piling on of changes
+which continuously raise the complexity bar, up to a point where it is
+no longer cost-effective to continue running the existing system. The
+word "legacy" is in itself filled with predestination, implying old
+systems cannot avoid time-decay and will eventually rot into oblivion.
+</p>
+
+<p>
+The story is rather different when one looks at a few successful Free
+and Open Source Software (FOSS) systems out there. For starters,
+"legacy" is not something one often hears on that side of the fence;
+projects are either maintained or not maintained, and can freely flip
+from one state to the other. Age is not only <span class="underline">not</span> a bad thing, but,
+in many cases, it is a remarkable advantage. Many projects that
+survived their first decade are now stronger than ever: the Linux
+kernel, x.org, Samba, Postgresql, Apache, gcc, gdb, subversion, GTK,
+and many, many others. Some, like Wine, took a decade to mature and
+are now showing great promise.
+</p>
+
+<p>
+Each of these old timers has its fair share of lessons to teach, all
+of them incredibly valuable; but the project I'm particularly
+interested in is the Linux kernel. I'll abbreviate it to Linux or "the
+kernel" from now on.
+</p>
+
+<p>
+As published recently in a study by Kroah-Hartman, Corbet and
+McPherson, the kernel suffers a daily onslaught of unimaginable
+proportions. Recent kernels are a joint effort of thousands of kernel
+hackers in dozens of countries, a fair portion of which working or
+well over 100 companies. On average, these developers added or
+modified around 5K lines per day during the 2.6.24 release cycle and,
+crucially, removed some 1.5K lines per day - and "day" here includes
+weekends too. Kernel development is carried out in hundreds of
+different kernel trees, and the merge paths between these trees obeys
+no strictly enforced rules - it does follow convention, but rules get
+bent when the situation requires it.
+</p>
+
+<p>
+It is incredibly difficult to convey in words just how much of a
+technical and social achievement the kernel is, but one is still
+compelled to try. The absolute master of scalability, it ranges from
+the tiniest embedded processor with no MMU to the largest of the large
+systems - some spanning as many as 4096 processors - and covering
+pretty much everything else in between: mobile phones, Set-Top Boxes
+(STBs), game consoles, PCs, large severs, supercomputers. It supports
+more hardware architectures than any other kernel ever engineered, a
+number which seemingly keeps on growing at the same rate new hardware
+is being invented. Linux is increasingly the kernel of choice for new
+architectures, mainly because it is extremely easy to port. Even real
+time - long considered the unassailable domain of special purpose - is
+beginning to cave in, unable to resist the relentless march of the
+penguin. And the same is happening in many other niches.
+</p>
+
+<p>
+The most amazing thing about Linux may not even be its current state,
+but its pace, as clearly demonstrated by Kroah-Hartman, Corbet and
+McPherson's analysis of kernel source size: it has displayed a near
+constant growth rate between 2.6.11 and 2.6.24, hovering at around 10%
+a year. Figures on this scale can only be supported by a catalytic
+development process. And in effect, that is what Linux provides: by
+getting better it implicitly lowers the entry barrier to new adopters,
+which find it closer and closer to their needs; thus more and more
+people join in and fix what they perceive to be the limitations of the
+kernel, making it even more accessible to the next batch of adopters.
+</p>
+
+<p>
+Although some won't admit it now, the truth is none of the
+practitioners or academicians believed that such a system could ever
+be delivered. After all, Linux commits every single schoolboy error:
+started by an "inexperienced" undergrad, it did not have much of an
+upfront design, architecture and purpose; it originally had the firm
+objective of supporting only a single processor on x86; it follows the
+age-old monolithic approach rather than the "established"
+micro-kernel; it is written in C instead of a modern, object-oriented
+language; its processes appear to be haphazard, including a clear
+disregard for Brook's law; it lacks a rigorous Q&amp;A process and until
+very recently even a basic kernel debugger; version control was first
+introduced over a decade after the project was started; there is no
+clear commercial (or even centralised) ownership; there is no "vision"
+and no centralised decision making (Linus may be the final arbiter,
+but he relies on the opinions of a lot of people). The list continues
+ad infinitum.
+</p>
+
+<p>
+And yet, against all expert advice, against all odds, Linux is the
+little kernel that could. If one were to write a spec covering the
+capabilities of vanilla 2.6.25, it would run thousands of pages long;
+its cost would be monstrous; and no company or government department
+would dare to take on such an immense undertaking. Whichever way you
+look at it, Linux is a software engineering singularity.
+</p>
+
+<p>
+But how on earth can Linux work at all, and how did it make it thus
+far?
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd900a86" class="outline-2">
+<h2 id="orgd900a86">Linus' Way</h2>
+<div class="outline-text-2" id="text-orgd900a86">
+<div class="epigraph"><blockquote>
+<p>
+I'm basically a very lazy person who likes to get credit for things
+other people actually do. &#x2013; Linus Torvalds
+</p>
+
+</blockquote></div>
+
+<p>
+The engine of Linux's growth is deeply rooted in the kernel's
+methodology of software development, but it manifests itself as a set
+of core values - a culture. As with any other school of thought, not
+all kernel hackers share all values, but the group as a whole displays
+some obvious homogeneous characteristics. These we shall call Linus'
+Way, and are loosely summarised below (apologies for some redundancy,
+but some aspects are very interrelated).
+</p>
+</div>
+
+<div id="outline-container-org4c24808" class="outline-3">
+<h3 id="org4c24808">Small is beautiful</h3>
+<div class="outline-text-3" id="text-org4c24808">
+<ul class="org-ul">
+<li>Design is only useful on the small scale; there is no need to worry
+about the big picture - if anything, worrying about the big picture
+is considered harmful. Focus on the little decisions and ensure they
+are done correctly. From these, a system will emerge that <span class="underline">appears</span>
+to have had a grand design and purpose.</li>
+<li>At a small scale, do not spend too long designing and do not be
+overambitious. Rapid prototyping is the key. Think simple and do not
+over design. If you spend too much time thinking about all the
+possible permutations and solutions, you will create messy and
+unmaintainable code which will very likely going to be wrong. Best
+implement a small subset of functionality that works well, is easy
+to understand and can be evolved over time to cover any additional
+requirements.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf11b937" class="outline-3">
+<h3 id="orgf11b937">Show me the Code</h3>
+<div class="outline-text-3" id="text-orgf11b937">
+<ul class="org-ul">
+<li>Experimentation is much more important than theory by several orders
+of magnitude. You may know everything there is to know about coding
+practice and theory, but your opinion will only be heard if you have
+solid code in the wild to back it up.</li>
+<li>Specifications and class diagrams are frowned upon; you can do them
+for your own benefit, but they won't sell any ideas by themselves.</li>
+<li>Coding is a messy business and is full of compromises. Accept that
+and get on with it. Do not search for perfection before showing code
+to a wider audience. Better to have a crap system (sub-system,
+module, algorithm, etc.) that works somewhat today than a perfect
+one in a year or two. Crap systems can be made slightly less crappy;
+vapourware has no redeeming features.</li>
+<li>Merit is important, and merit is measured by code. Your ability to
+do boring tasks well can also earn a lot of brownie points (testing,
+documentation, bug hunting, etc.) and will have a large positive
+impact on your status. The more you are known and trusted in the
+community, the easier it will be for you to merge new code in and
+the more responsibilities you will end up having. Nothing is more
+important than merit as gauged by the previous indicators; it
+matters not what position you hold on your company, how important
+your company is or how many billions of dollars are at stake - nor
+does it matter how many academic titles you hold. However, past
+actions do not last forever: you must continue to talk sense to have
+the support of the community.</li>
+<li>Testing is crucial, but not just in the conventional sense. The key
+is to release things into a wider population ("Release early,
+release often"). The more exposure code has the more likely bugs
+will be found and fixed. As ESR put it, "Given enough eyeballs, all
+bugs are shallow" (dubbed Linus' law). Conventional testing is also
+welcome (the more the merrier), but its no substitute for releasing
+into the wild.</li>
+<li>Read the source, Luke. The latest code is the only authoritative and
+unambiguous source of understanding. This attitude does not in
+anyway devalue additional documentation; it just means that the
+kernel's source code overrides any such document. Thus there is a
+great impetus in making code readable, easy to understand and
+conformant to standards. It is also very much in line with Jack
+Reeve's view that source code is the only real specification a
+software system has.</li>
+<li>Make it work first, then make it better. When taking on existing
+code, one should always first make it work as intended by the
+original coders; then a set of cleanup patches can be written to
+make it better. Never start by rewriting existing code.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd204818" class="outline-3">
+<h3 id="orgd204818">No sacred cows</h3>
+<div class="outline-text-3" id="text-orgd204818">
+<ul class="org-ul">
+<li><span class="underline">anything</span> related to the kernel can change, including processes,
+code, tools, fundamental algorithms, interfaces, people. Nothing is
+done "just because". Everything can be improved, and no change is
+deemed too risky. It may have to be scheduled, and it may take a
+long time to be merged in; but if a change is of "good taste" and,
+when required, provided the originator displays the traits of a good
+maintainer, it will eventually be accepted. Nothing can stand on the
+way of progress.</li>
+<li>As a kernel hacker, you have no doubts that you are right - but
+actively you encourage others to prove you wrong and accept their
+findings once they have been a) implemented (a prototype would do,
+as long as it is complete enough for the purpose) b) peer reviewed
+and validated. In the majority of cases you gracefully accept
+defeat. This may imply a turn-around of 180 degrees; Linus has done
+this on many occasions.</li>
+<li>Processes are made to serve development. When a process is found
+wanting - regardless of how ingrained it is or how useful it has
+been in the past - it can and will be changed. This is often done
+very aggressively. Processes only exist while they provide visible
+benefits to developers or, in very few cases, due to external
+requirements (ownership attribution comes to mind). Processes are
+continuously fine-tuned so that they add the smallest possible
+amount of overhead to real work. A process that improves things
+dramatically but adds a large overhead is not accepted until the
+overhead is shaved off to the bare bone.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6d4256f" class="outline-3">
+<h3 id="org6d4256f">Tools</h3>
+<div class="outline-text-3" id="text-org6d4256f">
+<ul class="org-ul">
+<li>Must fit the development model - the development model should not
+have to change to fit tools;</li>
+<li>Must not dumb down developers (i.e. debuggers); a tool must be an
+aid and never a replacement for hard-thinking;</li>
+<li>Must be incredibly flexible; ease of use can never come at the
+expense of raw, unadultered power;</li>
+<li>Must not force everyone else to use that tool; some exceptions can
+be made, but on the whole a tool should not add
+dependencies. Developers should be free to develop with whatever
+tools they know best.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga239eb8" class="outline-3">
+<h3 id="orga239eb8">The Lieutenants</h3>
+<div class="outline-text-3" id="text-orga239eb8">
+<p>
+One may come up with clever ways of doing things, and even provide
+conclusive experimental evidence on how a change would improve
+matters; however, if one's change will disrupt existing code and
+requires specialised knowledge, then it is important to display the
+characteristics of a good maintainer in order to get the changes
+merged in. Some of these traits are:
+</p>
+
+<ul class="org-ul">
+<li>Good understanding of kernel's processes;</li>
+<li>Good social interaction: an ability to listen to other kernel
+hackers, and be ready to change your code;</li>
+<li>An ability to do boring tasks well, such as patch reviews and
+integration work;</li>
+<li>An understanding of how to implement disruptive changes, striving to
+contain disruption to the absolute minimum and a deep understanding
+of fault isolation.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8b9c59d" class="outline-3">
+<h3 id="org8b9c59d">Patches</h3>
+<div class="outline-text-3" id="text-org8b9c59d">
+<p>
+Patches have been used for eons. However, the kernel fine-tuned the
+notion to the extreme, putting it at the very core of software
+development. Thus all changes to be merged in are split into patches
+and each patch has a fairly concise objective, against which a review
+can be performed. This has forced all kernel hackers to <span class="underline">think</span> in
+terms of patches, making changes smaller and concise, and splitting
+scaffolding and clean up work and decoupling features from each
+other. The end result is a ridiculously large amount of positive
+externalities - unanticipated side-effects - such as technologies that
+get developed for one purpose but uses that were never dreamt of by
+their creator. The benefits of this approach are far too great to
+discuss here but hopefully we'll have a dedicated article on the
+subject.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6706523" class="outline-3">
+<h3 id="org6706523">Other</h3>
+<div class="outline-text-3" id="text-org6706523">
+<ul class="org-ul">
+<li>Keep politics out. The vast majority of decisions are taken on
+technical merits alone, and very rarely for political reasons. Some
+times the two coincide (such as the dislike for binary modules in
+the kernel), but one must not forget that the key driver is always
+the technical reasoning. For instance, the kernel uses the GNU GPL
+v2 purely because its the best way to ensure its openness, a key
+building block of the development process.</li>
+<li>Experience trumps fashion. Whenever choosing an approach or a
+technology, kernel hackers tend to go for the beaten track rather
+than new and exciting ones. This is not to say there is no
+innovation in the kernel; but innovators have the onus of proving
+that their approach is better. After all, there is a solid body of
+over 30 years of experience in developing UNIX kernels; its best to
+stand on the shoulders of giants whenever possible.</li>
+<li>An aggressive attitude towards bad code, or code that does not
+follow the standards. People attempting to add bad code are told so
+in no uncertain terms, in full public view. This discourages many a
+developer, but also ensures that the entry bar is raised to avoid
+lowering the signal-to-noise (S/N) ratio.</li>
+</ul>
+
+<p>
+If there ever was a single word that could describe a kernel hacker,
+that word would have to be "pragmatic". A kernel hacker sees
+development as a hard activity that should remain hard. Any other view
+of the world would result in lower quality code.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org352fb54" class="outline-3">
+<h3 id="org352fb54">Navigating Complexity</h3>
+<div class="outline-text-3" id="text-org352fb54">
+<p>
+Linus has stated in many occasions he is a big believer of development
+by evolution rather than the more traditional methodologies. In a way,
+he is the father of the evolutionary approach when applied to software
+design and maintenance. I'll just call this the evolutionary
+methodology (EM) by want of a better name. EM's properties make it
+strikingly different from everything that has preceded it. In
+particular, it appears to remove most forms of centralised
+control. For instance:
+</p>
+
+<ul class="org-ul">
+<li>It does not allow you to know where you're heading in the long run;
+all it can tell you is that if you're currently on a favourable
+state, a small, gradual increment is <span class="underline">likely</span> to take you to
+another, slightly more favourable state. When measured in a large
+timescale it will appear as if you have designed the system as a
+whole with a clear direction; in reality, this "clearness" is an
+emergent property (a side-effect) of thousands or small decisions.</li>
+<li>It exploits parallelism by trying lots of different gradual
+increments in lots of members of its population and selecting the
+ones which appear to be the most promising.</li>
+<li>It favours promiscuity (or diversity): code coming from anywhere can
+intermix with any other code.</li>
+</ul>
+
+<p>
+But how exactly does EM work? And why does it seem to be better than
+the traditional approaches? The search for these answers takes us
+right back to the fundamentals. And by "fundamentals", I really mean
+the absolute fundamentals - you'll have to grin and bear, I'm
+afraid. I'll attempt to borrow some ideas from Popper, Taleb, and
+Dawkins to make the argument less nonsensical.
+</p>
+
+<p>
+That which we call reality can be imagined as a space with a really,
+really large number of variables. Just how large one cannot know, as
+the number of variables is unknowable - it could even be infinite -
+and it is subject to change (new variables can be created; existing
+ones can be destroyed, and so on). With regards to the variables
+themselves, they change value every so often but this frequency
+varies; some change so slowly they could be better describbed as
+constants, others so rapidly they cannot be measured. And the
+frequency itself can be subject to change.
+</p>
+
+<p>
+When seen over time, these variables are curves, and reality is the
+space where all these curves live. To make matters more interesting,
+changes on one variable can cause changes to other variables, which in
+turn can also change other variables and so on. The changes can take
+many forms and display subtle correlations.
+</p>
+
+<p>
+As you can see, reality is the stuff of pure, unadulterated complexity
+and thus, by definition, any attempt to describe it in its entirety
+cannot be accurate. However, this simple view suffices for the
+purposes of our exercise.
+</p>
+
+<p>
+Now imagine, if you will, a model. A model is effectively a) the
+grabbing of a small subset of variables detected in reality; b) the
+analysis of the behaviour of these variables over time; c) the issuing
+of statements regarding their behaviour - statements which have not
+been proven to be false during the analysis period; d) the validation
+of the models predictions against past events (calibration). Where the
+model is found wanting, it needs to be changed to accommodate the new
+data. This may mean adding new variables, removing existing ones that
+were not found useful, tweaking variables, and so on. Rinse,
+repeat. These are very much the basics of the scientific method.
+</p>
+
+<p>
+Models are rather fragile things, and its easy to demonstrate
+empirically why. First and foremost, they will always be incomplete;
+exactly how incomplete one cannot know. You never know when you are
+going to end outside the model until you are there, so it must be
+treated with distrust. Second, the longer it takes you to create a
+model - a period during which validation is severely impaired - the
+higher the likelihood of it being wrong when its "finished". For very
+much the same reasons, the larger the changes you make in one go, the
+higher the likelihood of breaking the model. Thirdly, the longer a
+model has been producing correct results, the higher the probability
+that the next result will be correct. But the exact probability cannot
+be known. Finally, a model must endure constant change to remain
+useful - it may have to change as frequently as the behaviour of the
+variables it models.
+</p>
+
+<p>
+In such an environment, one has no option but to leave certainty and
+absolutes behind. It is just not possible to "prove" anything, because
+there is a large component of randomness and unknown-ability that
+cannot be removed. Reality is a messy affair. The only certainty one
+can hold on to is that of fallibility: a statement is held to be
+possibly true until proven false. Nothing else can be said. In
+addition, empiricism is highly favoured here; that is, the ability to
+look at the data, formulate an hypothesis without too much theoretical
+background and put it to the test in the wild.
+</p>
+
+<p>
+So how does this relate to code? Well, every software system ever
+designed is a model. Source code is nothing but a set of statements
+regarding variables and the rules and relationships that bind them. It
+may model conceptual things or physical things - but they all inhabit
+a reality similar to the one described above. Software systems have
+become increasingly complex over time - in other words, taking on more
+and more variables. An operative system such as multics, deemed
+phenomenally complex for its time, would be considered normal by
+today's standards - even taking into account the difficult environment
+at the time with non-standard hardware, lack of experience on that
+problem domain, and so on.
+</p>
+
+<p>
+In effect, it is this increase in complexity that breaks down older
+software development methodologies. For example, the waterfall method
+is not "wrong" per se; it can work extremely well in a problem domain
+that covers a small number of variables which are not expected to
+change very often. You can still use it today to create perfectly
+valid systems, just as long as these caveats apply. The same can be
+said for the iterative model, with its focus on rapid cycles of
+design, implementation and testing. It certainly copes with much
+larger (and faster moving) problem domains than the waterfall model,
+but it too breaks down as we start cranking up the complexity
+dial. There is a point where your development cycles cannot be made
+any smaller, testers cannot augment their coverage, etc. EM, however,
+is at its best in absurdly complex problem domains - places where no
+other methodology could aim to go.
+</p>
+
+<p>
+In short, EM's greatest advantages in taming complexity are as
+follows:
+</p>
+
+<ul class="org-ul">
+<li>Move from one known good point to another known good point. Patches
+are the key here, since they provide us with small units of
+reviewable code that can be checked by any experienced developer
+with a bit of time. By forcing all changes to be split into
+manageable patches, developers are forced to think in terms of
+small, incremental changes. This is precisely the sort of behaviour
+one would want in a complex environment.</li>
+<li>Validate, validate and then validate some more. In other words,
+Release Early, Release Often. Whilst Linus has allowed testing and
+Q&amp;A infrastructure to be put in place by interested parties, the
+main emphasis has always been placed in putting code out there in
+the wild as quickly as possible. The incredibly diverse environments
+on which the kernel runs provide a very harsh and unforgiving
+validation that brings out a great number of bugs that could not
+have possibly been found otherwise.</li>
+<li>No one knows what the right thing is, so try as many possible
+avenues as possible simultaneously. Diversity is the key, not only
+in terms of hardware (number of architectures, endless permutations
+within the same architecture, etc.), but also in terms of
+agendas. Everyone involved in Linux development has their own agenda
+and is working towards their own goal. These individual
+requirements, many times conflicting, go through the kernel
+development process and end up being converted into a number of
+fundamental architectural changes (in the design sense, not the
+hardware sense) that effectively are the superset of all
+requirements, and provide the building blocks needed to implement
+them. The process of integrating a large change to the kernel can
+take a very long time, and be broken into a sequence of never ending
+patches; but many a time it has been found that one patch that adds
+infrastructure for a given feature also provides a much better way
+of doing things in parts of the kernel that are entirely unrelated.</li>
+</ul>
+
+<p>
+Not only does EM manage complexity really well but it actually thrives
+on it. The pulling of the code base in multiple directions makes it
+stronger because it forces it to be really plastic and
+maintainable. It should also be quite clear by now that EM can only be
+deployed successfully under somewhat limited (but well defined)
+circumstances, and it requires a very strong commitment to
+openness. It is important to build a community to generate the
+diversity that propels development, otherwise its nothing but the
+iterative method in disguise done out in the open. And building a
+community entails relinquishing the traditional notions of ownership;
+people have to feel empowered if one is to maximise their
+contributions. Furthermore, it is almost impossible to direct this
+engine to attain specific goals - conventional software companies
+would struggle to understand this way of thinking.
+</p>
+
+<p>
+Just to be clear, I would like to stress the point: it is not right to
+say that the methodologies that put emphasis on design and centralised
+control are wrong, just like a hammer is not a bad tool. Moreover, its
+futile to promote one programming paradigm over another, such as
+Object-Orientation over Procedural programming; One may be superior to
+the other on the small, but on the large - the real world - they
+cannot by themselves make any significant difference (class libraries,
+however, are an entirely different beast).
+</p>
+
+<p>
+I'm not sure if there was ever any doubt; but to me, the kernel proves
+conclusively that the human factor dwarfs any other in the production
+of large scale software.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2021-03-28 Sun 11:20</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

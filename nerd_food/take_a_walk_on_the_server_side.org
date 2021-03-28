@@ -1,0 +1,449 @@
+#+title: Nerd Food: Take a Walk on the Server Side
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+
+[[file:../index.org][Back to home page]].
+
+Saturday, September 22, 2007
+
+When it comes to programming, for me there isn't much of a choice: the
+place to be is the server side. I may work a lot on the client side
+these days, but GUIs and chrome never had much of an attraction for
+me. I do have a healthy dose of respect for those who love it: client
+side work is a mixture of coding mastery, design skills and a big
+dollop of human psychology. For some reason when I visualise the
+client side I always imagine nice, pristine offices with lots of light
+and huge amounts of human interaction between programmers as well as
+between programmers and users.
+
+The server side is a totally different beast. I always visualise it as
+the dark place of green terminals and server rooms, of never ending
+performance charts and monitor applications, the land of blinken
+lights. Of course, these days we all have to share the same desks and
+deal with the same layers of managerial PHBs - and with HR and their
+latest social experiments - but the fundamental point is that these
+are two very different crafts.
+
+Thing is, I find that the server side is extremely misunderstood
+because the vast majority of developers out there come from a client
+background. When developers cross over, their bias introduces many,
+many problems on server side applications, simply because they are not
+used to the server way of thinking.
+
+This article covers many mistakes I've seen over the years, in the
+hope you may avoid them, offering some tentative solutions.
+
+** The Languages
+
+There really is only one language to do server side work: C++. Yes,
+I'm a zealot. Yes, I know that both .Net and Java are much easier to
+get along with, and have none of the tricky memory allocation problems
+that riddle C++ applications (those that haven't discovered shared
+pointers, at any rate). I agree that, in theory, both Java and C# are
+better options. In practice, however, they become problematic.
+
+The right staff. It's difficult to find a got Java/C# programmer, just
+like it was difficult to find a good VB programmer. The client side is
+a very forgiving land, and not only can bad programmers get away with
+it for years but you also have to remember that great client side
+programmers don't need to know their tools to the level of detail that
+server side programmers do. How many times do you need to read up on
+scheduling to do a GUI? Or on TCP flags? Not often, I'd wager. So the
+reality is, if you have been doing any of these languages for a while,
+you can talk all the right TLAs and describe all the right concepts
+with easiness and fly through most interviews. But when it comes to
+doing the job, you will probably be reading manuals for days trying to
+figure out which subset of technologies on your stack are good for
+server side and which ones are just plain evil performance killers. A
+good server side Java/C# programmer will use only the smallest set of
+features of the language when programming, knowing exactly the cost of
+those features.
+
+It is, of course, really hard to find a good C++ programmer too. But
+here, there are two things that help us. There are not that many left
+doing C++ work - most of them have migrated to higher pastures by now,
+in particular those that always felt uncomfortable with the
+language. The few that are left are doing server side work. The second
+thing is, due to C++'s lower level of abstraction, even a bad C++
+programmer is well aware of the bare metal. It basically forces you to
+think harder, rather than just pickup a manual and copy an example.
+
+Minimise layers of indirection. Another problem I have with Java/C# is
+indirection, which is another way of saying performance. Now, I know
+all you Java and .Net heads have many benchmarks proving how your AOT
+compilers optimise on the fly and make them even faster than native
+code, or how your VM is much better at understanding application's run
+time behaviour and optimising itself for it. And the fact that you
+never worry about memory leaks goes without saying. Well, that's all
+fine and dandy as far as the lab is concerned.
+
+What I found out on the field is different. Resource allocation is
+still a massive problem, either due to complex cyclical referencing,
+or just plain programmer incompetence. Memory consumption is massive,
+because programmers don't really understand the costs involved in
+using APIs, and thus just use whatever is easier. This, of course,
+also impacts performance badly. And to make things even worse, you
+then have to deal with the non-deterministic behaviour of the VM. It's
+bad enough not knowing what the kernel will decide and when, but when
+you put in a VM - and god forbid, an application server! - then its
+nigh impossible. It could be a VM bug. Or it could be that you are not
+using certain API properly. Or it's just your complex code. Or it's
+the OS's fault. Who knows. That's when you have to fork out mega-bucks
+and pay an expensive Java/.Net consultant to sort it all out. And pray
+he/she knows what he/she is talking about.
+
+The truth is, I've never heard of a Java/.Net application on the field
+that was found to be more performant than it's C++ counterpart. In
+part, this is because we are comparing apples with oranges - the
+rewrites seldom cover the same functionality, adding large amounts of
+new features and making straight comparisons impossible. But there
+must be more to it too, since, from experience, Java/.Net engineers
+seem to spend an inordinate amount of time trying to improve
+performance.
+
+Now, before you go and start rewriting your apps in C++, keep this in
+mind: the biggest decision factor in deciding a language is the
+competence of your staff. If you have a Java/.Net house, and you ain't
+going to hire, don't use C++. It will only lead to tears and
+frustration, and in the end you will conclude C++ is crap. If you are
+really serious about C++, you will need a team of very strong,
+experienced C++ developers leading the charge. If you haven't got
+that, best use whatever language you are most competent at.
+
+Another very important thing to keep in mind is the greatest C++
+shortcoming: its small standard class library. It is perhaps the
+language's biggest problem (and probably the biggest reason for
+Java/c#'s success). This means you either end up writing things from
+scratch, buying a third party product (vendor lock-in) or using one or
+several open source products, each with their own conventions, styles,
+etc. At present Boost is a must have in any C++ shop, but it does not
+cover the entire problem domain of server side development. These are
+the following things to look for in any library:
+
+- Networking
+- Database access
+- Threading
+- Logging
+- Configuration
+- Serialisation
+
+** The Hardware Platform
+
+As far as the client side is concerned, platform is almost a
+non-issue: you will most likely only support Windows on x86. After
+all, Linux and Mac are so far behind in terms of market share it's not
+even funny. The cautious developer will point out that a Web
+application is a safer bet, although you may loose much richness due
+to the limitations of the technology. AJAX is nice, but not quite the
+same as a solid GUI. If kiosks and POS are some or all of your target
+market, you will be forced to look at cross-platform since Linux is
+making inroads in this market. And you can always use Java.
+
+With regards to the server side, one must look at the world in a
+totally different light. Because you never know what your scalability
+requirements are, there is no such thing as an ideal hardware
+platform. Today, one 32-bit Windows server with 2 processors and 4
+gigs or RAM may be more than enough; tomorrow you may need to run apps
+that require 20 gigs of RAM and 16 processors, and big iron is your
+only option.
+
+So the most important aspect in terms of the hardware platform is
+this: whatever you do, _never_ commit yourself to one. Write a
+cross-platform application from the start, and ensure it remains
+one. Even on a Windows only shop, it's not hard to use a
+cross-platform toolkit and have a PowerPC Linux box on the side to run
+tests on. Its actually not much harder to write cross-platform _server
+side_ code, as long as you have a library you can trust to abstract
+things properly. And as long as you take cross-platform testing
+seriously.
+
+Think of it as an insurance policy. One day, when your boss asks you
+for a 10-fold increase in deal volume, you know you can always run to
+the shop and buy some really, really big boxen to do the job. Tying
+yourself to an hardware platform is like putting all of your eggs in
+one basket; better not drop it.
+
+** The Architecture
+
+The single most important lesson to learn on the server side is that
+architecture is everything. No server side project should start
+without first having a top notch architect, known to have built at
+least two large scale systems. You can always do it on the cheap, save
+the money and get more programmers instead, but remember: you will pay
+the cost later. Things would be different if maintenance was taken
+seriously; but don't kid yourself, it's not.
+
+When the business suddenly tells you that you need to double up
+capacity, or support Asia and America, or add some products that are
+radically different from the ones your system now processes - that's
+when you'll feel the pain. And that's when you'll have to start
+designing v2.0 of your system, starting mainly from scratch.
+
+One of the key differences between client side and server side work is
+this focus on scalability. After all, there is only so much work a
+single person can do, so many simultaneous instances of a client side
+application that can be started on any one machine, and so many trades
+that can be loaded into a single PC. Not so with the server side. You
+may think that processing N trades is more than enough, but that is
+today; tomorrow, who knows, 10xN could be the average.
+
+A good architect will probably look at the problem and find ways to
+distribute it. That is, to design a very large number of small,
+well-defined servers, each of which with a small subset of
+responsibilities - all talking to each other over a messaging bus of
+some kind. The system will use a narrow point of access to the
+database, and huge amounts of caching on each server. This will allow
+the system to scale as demand grows, just by adding more
+servers. Hardware is cheap; software engineers are expensive.
+
+The ideal architect will also be clever enough to allow client tools
+to be written on Java or C#, and let someone with more experience on
+these matters lead its development.
+
+In summary, the key components of a system will be along these lines:
+A solid, cross-platform, scalable relational database. Oracle and
+Sybase are likely candidates, and PostgreSQL on the free software side
+of things; A solid, cross-platform, scalable messaging bus. Tibco,
+Talarian, etc. Choose something you have experience with. Never, ever,
+under any circumstances write your own. (at present, I'm not aware of
+any free software alternatives for messaging); A large number of small
+servers, communicating over the messaging bus.  Getting the
+architecture right is essential; but once you're there, you must work
+hard to maintain it.
+
+** The Database
+
+Just as you need an architect, you also need a DBA. You may be a
+hotshot when it comes to databases, you think, but the truth is a good
+DBA will take your optimal code and optimise it ten times
+over. Minimum. It's what they do for a living. It's important to get
+the DBA early into the system design process to ensure no crass
+mistakes are made on the early stages. These are much harder to fix
+afterwards. And make sure the schema is designed by him/her, with
+large input from developers - minimising the impedance mismatch
+between the C++ datamodel and the database schema.
+
+If your DBA hasn't got the bandwidth to write all the stored procs
+directly, at least make sure he/she sets down the guide lines on how
+to write the stored procs, and if at all possible reviews code before
+check-ins.
+
+You should also create a repeatable testing framework for performance
+on all procs, to detect quickly when somebody makes a change that
+impacts performance. But a good DBA will tell you all about it, and
+many things more.
+
+** A Catalogue of Mistakes
+
+There are many small mistakes to be found on server side apps, some at
+the architectural level, others at the implementation. This is a
+summary of a few I've seen over the years.
+
+*Overusing XML*. Whilst XML is a brilliant technology to enable
+cross-platform communication, and it has many benefits for client side
+development, it is of very limited usage on the server side. Pretty
+much the only things it should be considered for are: Allow Java /
+.Net clients to talk to the server side; Allow external parties to
+send data into our system; Save the configuration settings for
+servers.  It should not be used for anything else. (And even then, you
+should still think really hard about each of these cases). It
+certainly should not be used for communication between servers within
+the server side, nor should it be used, god forbid, in any kind of way
+within the database. De-serialising XML in a stored proc is an
+aberration of server side nature.
+
+Bear in mind the following XML constraints: The vast majority of the
+message is redundant information, making messages unnecessarily
+large. This will clog up your pipes, and have particularly nasty
+effects in terms of throughput on high-latency links (any large
+message will).  XML messages normally have associated a schema or
+DTD. Servers that you yourself wrote will use the same serialisation
+code, so there shouldn't be any need to validate these messages
+against a DTD/schema (you will of course have some sanity checks on
+C++).  Serialising and de-serialising from XML is horrendously
+expensive. In particular, if all your servers are running on the same
+hardware platform, there are absolutely no benefits - and the costs
+are massive.  Compressed XML is a solution in need of a problem. You
+may save costs on transport, but these have been transferred to an
+intensive CPU bound process (decompressing and compressing).  In
+conclusion, XML is not cheap. As your deal volumes increase, you will
+find that you're spending more and more of your absolute time
+transporting, serialising, de-serialising and validating. It's fine
+for one-offs, for sure, but not for volume.
+
+The only type of serialisation permitted on the server room is binary
+serialisation. You can make it cross-platform using something along
+the lines of XDR or X.409.
+
+The lesson we learn from XML is applicable everywhere else on the
+server side: always evaluate cautiously a technology and make sure you
+fully understand its costs - in particular with regards to increases
+in volume.
+
+XML is a brilliant technology, and fit for purpose; that purpose is
+not efficiency.
+
+*Cool technologies*. If you didn't listen to my point on how C++ is
+the only option and insisted in using Java or C# - or, god forbid, you
+found a way of doing it in C++ - you may have started using
+reflection. This, and many other technologies are utterly forbidden on
+the server side.
+
+Very much like XML, the problem with such technologies is that in 99%
+of cases they are used to solve problems that never existed in the
+first place. I mean, do you really need to dynamically determine the
+database driver you are going to use? How often do you change
+relational database providers without making any code changes? Of
+course, those calls would be cached, but still, it's the principle
+that matters. And does it really help application design to determine
+at run-time which method to call, and its parameters and their types?
+This is several orders of magnitude more expensive than virtual
+functions. Does it really make coding any simpler? Because the cost is
+huge, and the scalability is poor. If you are using reflection because
+there is large amount of repetitive code, which can be factored out
+with reflection, consider using a text processing language to generate
+the repetitive code. This is a clean, maintainable and performant
+solution.
+
+Another pet peeve are components and distributed technologies. Do you
+really need complex technologies such as (D)COM and CORBA? Components
+are nice in theory, but in reality they add huge amounts of
+maintenance problems, configuration costs, debugging becomes much
+harder and performance is hindered in mysterious ways.
+
+In the vast majority of cases, you can create your own little
+messaging layer in extremely simple C++ - code that anyone understands
+and can debug in seconds - built on top of a serialisation framework
+such as Boost.Serialisation. Whilst Boost.Serialisation is not the
+most performant of them all, nor does it have great support for
+cross-platform binary serialisation, it is good enough for a large
+number of cases; and you can extend its binary serialisation to fit
+your needs.
+
+The server side is not the place to experiment. Cool and hip are
+bad. Pretty much all technologies that are required to make
+large-scale, scalable applications have been invented decades ago -
+they just need to be used properly. When choosing a server side
+technology, always go down the proven path.
+
+Performance testing. One thing many people do is to create servers
+that can only be loaded up from a database or another server, and can
+only send their results to a database or another server. This is a
+crushing limitation, introduced for no reason other than laziness or
+bad project planning ("test tools? no time for them!"). The whole
+point of server side development is to be able to offer guarantees in
+terms of scalability. Those guarantees can only be offered if there is
+a reliable way of stress testing your components independently, and
+create a baseline of such tests so that regressions can be found
+quickly.
+
+Having to setup an entire environment to test a given server is not
+just troublesome, it hinders fault isolation. It may also mean that
+there are only a few test systems available. Each developer should be
+able to have their own development environment.
+
+Of course, don't take me wrong: one should have system-wide
+performance tests; but these are only relevant if all components
+passed their individual load tests.
+
+*GUI tools*. One thing you should consider from the beginning is the
+ecosystem of GUI tools that are required to manage your system,
+ideally written in a high-level language such as Java/C#. Here, in the
+vast majority of cases, usability is more important than performance,
+and this is where Java/C# are at their best.
+
+The GUI tools should focus on things like: Account administration:
+adding new users, deleting them, etc.  Monitoring and diagnostics:
+graphs on deal volume, health checks to ensure servers are still
+alive, memory usage, cpu usage.  Maintenance, deployment,
+configuration: restarting servers when they die, easy deployment and
+configuration of servers.  Data administration: special functions to
+perform on the data to resolve cases where duff data was inserted,
+etc. This is sort of a client for power users.  The biggest problem of
+not having a good ecosystem of GUI management tools is that your
+development work will became more and more operational, since the
+system is too complex to give it to real operators.
+
+*Database Serialisation*. This is one of the most important aspects of
+any server side system, and has to be carefully thought out. You
+should keep it to a bare minimum the number of servers that touch the
+database directly, and make sure they are physically located as close
+as possible to the database - but no closer; never on the same
+machine. All other servers must go to these data servers to read and
+write to the database.
+
+The second important point is to try to "automate" the serialisation
+as much as possible. All objects that are serialisable to the database
+should have auto-generated code (never reflection!) responsible for
+reading/writing the data. They should also interface with the database
+via stored procs - never reading tables directly - all making sensible
+use of transactions.
+
+Keep it simple and Know Your Costs. Optimal code is normally very
+simple; sub-optimal code is non-performant due to its complexity. This
+simple truism underlies very much all performance work. It's very rare
+that one needs to increase complexity to improve performance. In the
+majority of cases, the easiest way is to ask the simple question: do
+we really need to do this? And when you decide you really need to do
+something, make sure you are fully aware of its O cost. Choosing a
+O(N) approach (or worse) should never be taken lightly because it's a
+scalability time bomb and it will always blow up when you need it the
+least - i.e. when the system is overloaded.
+
+I found that Object Orientation is in many cases detrimental to
+performance, because people are so focused in API's and abstraction
+that they forget about the hidden costs. For instance, it's common to
+see a call-stack five levels deep (or more) just to do something as
+simple as changing the value of a variable. Inheritance is
+particularly evil due to its encapsulation breaking and
+tight-coupling. When you think in terms of algorithms and data
+structures, the costs are much more obvious.
+
+In designing a modern OO system, it's best to: keep inheritance to an
+absolute minimum, using either interfaces or client-supplier
+relationships; keep behaviour to a minimum in the objects of your data
+model - probably best if they are but glorified data structures with
+getters/setters, on which other, more specialised classes operate on.
+
+*Do not optimise early*. One classic case of early optimisation in C++
+is not using virtual functions because of performance. This may be
+true in certain cases, but you need to be coding really close to the
+metal to start suffering from it. However, many programmers refuse to
+consider inheritance or interfaces at design-time - even in systems
+where microsecond performance will never be an issue - limiting their
+options dramatically, for no real gain whatsoever. There are many,
+many other such examples - like designing your own string class before
+you proved it to be a bottleneck.
+
+*Misuse of threads*. Another classic case in server side programming
+is thread misuse. Many developers look at every bit of code and think:
+"I'll stick a thread pool in there; this will scale really neatly when
+we have more processors". The end result of this sort of thinking was
+apparent at one customer site, where they had over 170 threads (!!!)
+for one single server application. This application was running in
+boxes with 64 processors, and sharing them with other instances as
+well as other servers which also made liberal use of threads.
+
+The problem with this approach is obvious: very rarely is there a need
+to have more threads than processors (unless you're doing IO bound
+work; and even then, threading may not be the best solution; consider
+multiplexing); really thread-safe code requires lots of locking; when
+you finally make your code multithread-safe you may find it performs
+as badly as single threaded code - if not worse!  having ridiculous
+amounts of threads hinders performance even if they are doing nothing
+(as it was the case with our application above) because threads
+consume resources and take time to construct and destroy.  Server side
+and threading go hand-in-had, like bread and butter. But they should
+only be used in cases where few or no locking is required - and that
+requires large amounts of experience in application design.
+
+** Conclusion
+
+Designing large-scale, server side systems is a very difficult job and
+should not be taken lightly. Lack of experience normally leads to
+using the wrong technologies and making wrong fundamental
+architectural decisions, which cannot be fixed at a later date. When
+designing a large system from scratch, one should always prefer the
+proven approaches to the new ideas the market keeps on churning.

@@ -1,0 +1,179 @@
+#+title: Nerd Food: Interview with Federico Mena-Quintero
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+
+[[file:../index.org][Back to home page]].
+
+Wednesday, October 03, 2007
+
+Pretty much anyone who is involved with Free Software - even just as
+a lowly user like myself - has heard of Federico. His blog is a source
+of insightful ideas on Gnome, and lately, on performance - combined
+with a healthy dose of interest in politics and, more importantly,
+good food. I decided to send a few questions to Federico, mainly on
+the topics I was most curious about, and he kindly replied to my
+questions - and did so in record time! Many thanks to Federico for
+taking time off his busy hacking schedule for this interview.
+
+* Interview
+
+1. You are one of the founders of the Gnome project, which is
+   currently celebrating ten years of existence. On a recent interview
+   you gave to Fosdem, you considered the platform to be
+   maturing. However, as we all know, the last 10% normally take 90%
+   of the time, and it's considered to be boring work. What do you
+   think the Gnome project needs to do to get people to focus on those
+   remaining 10%?
+
+#+begin_quote
+Basically, to provide an incentive to get that last 10% of the work
+done :) Instead of smacking people with a stick for not writing
+documentation, you could have a web page with a bar chart of
+"percentage of documentation coverage". Then it becomes a competition:
+use a carrot instead of a stick.
+
+I'd also like companies to get more involved in this. If they want to
+ship GNOME as a development platform they support, then they could
+very well employ people to do those missing bits.
+#+end_quote
+
+2. You have been one of the champions of performance in Gnome for a
+   while now. As functionality increased, Gnome started suffering more
+   and more from performance problems, particularly when looked at
+   from a low end perspective. You have been trying to explain to the
+   masses that performance work is interesting. What do you think can
+   be done to increase developer focus on this neglected area?
+
+#+begin_quote
+The thing about fixing performance problems is that nobody teaches you
+how to do it. There is very little documentation out there on how to
+generically approach an optimization problem (I intend to do something
+about this, but oh, time, time, time!) :)
+
+Also, sometimes you fix a performance problem, but it reappears in the
+future. This happens when you don't leave an infrastructure in place
+to let you run a benchmark periodically. You need to be able to see if
+there are performance regressions.
+
+Our tools are slowly getting better, but there are really very few
+people working on optimization and profiling tools. It takes a *ton*
+of time and skill to write a good tool; maybe that's why there are so
+few of them.
+
+Finally, profiling and optimizing is really about following the
+scientific method ("make a hypothesis, change one thing at a time,
+measure, confirm your hypothesis, etc."). This requires discipline and
+a lot of patience.
+
+Basically, it's a problem of education :)
+#+end_quote
+
+3. Earlier on this year, Gnome users and developers met for
+   GUADEC. Did you find the conference as productive as in previous
+   years? How important is GUADEC for the Gnome user and developer
+   community?
+
+#+begin_quote
+Yes, this GUADEC was tremendously productive! I think the venue helped
+a lot; the Birmingham Conservatoire is rather compact and has nice
+practice rooms that anyone can use. So, you could grab a couple of
+hackers and go to a room to hack peacefully.
+
+GUADEC has always been important, even more so now that our community
+is large and widespread. It is about the only time in the year when
+most of the GNOME contributors get together in a single place and are
+able to talk in person. Do not underestimate the productivity of
+talking over a beer :)
+#+end_quote
+
+4. From the outside world, it appears Novell is a company who has
+   regained it's soul and direction with Linux. How was the transition
+   from Ximian into Novell?
+
+#+begin_quote
+Like all acquisitions, it was a bit rought at first. It's what you get
+when you switch from being in a small company where you know all of
+the employees, to one with several thousands of people. You have to
+adjust to bigger processes, more layers of management, new locations,
+new paperwork...
+
+It has been very interesting to see the mindset of the old-time Novell
+people change over time. At first they seemed reluctant to touch Linux
+and free software, since they were of course Windows users. Then we
+had a period with lots of questions, lots of bugs that needed to be
+fixed, lots of re-training... and now we are in a very nice period,
+when people have accepted that we must all use our own free
+software. People seem to be productive with it and happy.
+
+I miss the monkeys, though.
+#+end_quote
+
+5. You are currently telecommuting from Mexico, a position envied by a
+   most developers out there. Do you find that telecommuting helps
+   improving your productivity? Are there any downsides to it?
+
+#+begin_quote
+It has good things and bad things. Good things: working in your
+pajamas if you feel like it, not having to commute, taking a pause
+when you are stuck in a hard problem to do a bit of gardening. Bad
+things: you can't talk to people in person. You must fix all your
+networking problems yourself. Sometimes, when you are uninspired, it's
+nice to be able to look over someone else's shoulder or talk to them.
+#+end_quote
+
+6. Can you describe your typical day at work?
+
+#+begin_quote
+Well, since I work from home... :)
+
+I wake up. If my wife and I are hungry, we make breakfast while my
+email gets downloaded. If we are not hungry, I'll just check for
+super-urgent email and then start programming (fixing bugs, doing new
+development, reviewing patches, etc.).
+
+I usually try to get some programming done in the morning, while my
+brain is fresh. Processing your email in the morning is a really bad
+idea; it will take you up to the afternoon and by then you'll be tired
+to really write code.
+
+We have lunch at really irregular hours. Sometimes it's more like an
+early dinner. I have the bad habit of not stopping working until I'm
+exhausted or my wife is angry that we haven't gone out to the
+supermarket yet, but I'm trying to fix that :)
+
+In the afternoon I tend to do "light" work... maintaining wikis,
+answering email, coordinating people. I don't really have a fixed work
+schedule.
+#+end_quote
+
+7. Many developing countries are increasingly looking at Free Software
+   as a way to bring down the digital divide. Do you find that Mexico
+   is taking advantage of Free Software - particularly since it has
+   two lead Free Software developers? Are there any lessons to be
+   learned from Mexico's experience?
+
+#+begin_quote
+Mexico is blessed and cursed to be so close to the USA. There is
+plenty of basic usage of free software by individuals (often
+enthusiastic students), but relatively little usage in the public and
+private sectors.
+
+People in Mexico get very impressed by rich people; most Mexicans want
+to be like the rich people from the USA they see on TV. It's very easy
+to woo us into accepting their ways.
+
+So, every time there has been some noise about using free software in
+the public sector, Bill Gates has flown down, organized a big business
+lunch with government officials, and made sure that they keep using
+Microsoft products. If you are an ignorant politician, you will love
+to gloat that you had lunch (imagine, lunch!) with Bill Gates, the
+richest man in the world --- and whatever he says must be correct, of
+course. The problem we have is that most of our politicians don't have
+the faintest idea of the economic and cultural implications of free
+software, unlike those in the European Union (see the recent report on
+the economic impact of free software there!).
+#+end_quote
+
+/Thanks for the interview!/

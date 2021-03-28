@@ -1,0 +1,129 @@
+#+title: Nerd Food: Merging and Branching Procedures
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+
+[[file:../index.org][Back to home page]].
+
+/Historical context: this essay was written in the days of CVS and
+Subversion, prior to Git being the dominant VCS./
+
+Monday, June 04, 2007
+
+It seems version control is a popular topic again, thanks to the ever
+courteous Linus. If you haven't seen the talk he gave at Google, do
+watch it as it's quite interesting. Linus, in his usual
+so-offensive-its-funny style, criticises SVN to death. I got to say
+that I quite like SVN, perhaps because I've been forced to use
+ClearCase, SourceSafe, RCS and CVS for far too long. My only complaint
+with SVN has always been the terrible merging, something that Linus
+rightly criticises on his talk. The good news is it appears the most
+severe problems with merging will be fixed on the next SVN release.
+
+Linus' talk did make me more aware of distributed version control
+though, but I'm not entirely convinced it would work in a commercial
+software house. After all, we already have a hard time with branches -
+let alone having multiple repositories...
+
+All this talk about version control reminded me of a set of procedures
+for merging and branching I once wrote. I can't take all the credit,
+of course, since my good friends Kevin and Chris - the ClearCase
+genius - fixed some mistakes and added important bits. Here is the
+procedure, in the hope that someone else may find it not entirely
+without merit. Apologies for the (lack of) indentation.
+
+Merging and Branching
+
+- 1. Trunk (HEAD/LATEST/[insert version control term here]) is always
+  compilable and stable.
+
+- 2. When a new project is started, a set of branches are created:
+- 2.1. Integration branch: off trunk;
+- 2.2. Branch for each developer (or whatever the required granularity
+  is, one branch per 2 developers, etc.): off the integration branch;
+- 2.3. All branches should be named sensibly and follow a
+  repository-wide convention (e.g. PRODUCT_TEAM_PROJECT or something
+  equally meaningful).
+
+- 3. Each developer works on his/her own development
+  branch. Developers must check in every day (PC never contains
+  unsaved data), but are encouraged to do so more frequently.
+
+- 4. When the developer is happy enough with his/her changes, he/she
+  "rebases" (aka forward merges), that is:
+
+- 4.1. Updates development branch to the current state of the
+  integration branch (this should be done as often as possible
+  anyways);
+- 4.2. Ensures no one else is merging to the integration branch;
+- 4.3. Tests development with the new changes (in theory runs his/her
+  [J|N]Unit tests, in practice, well... :-)
+- 4.4. "merges back", that is updates integration branch to the state
+  of the development branch;
+- 4.5. Features should be merged one-at-a-time, that is if a developer
+  is working on 5 features for a given release, he/she should merge to
+  integration each feature at a time, allowing other developers to
+  pick and test each change rather than one huge patch.
+
+- 5. While the project is in development, the integration branch may
+  be rebased from the trunk, but never the opposite (see small
+  bugfixes below).
+
+- 6. When the project enters development testing (feature freeze):
+
+- 6.1. All developers rebase from integration and merge back to
+  integration as described above;
+- 6.2. Developers test the current state of the integration branch
+  (normally this means validating the functionality they've
+  coded). Integration branch is by now equal to dev branches;
+- 6.3. Bugfixes are applied to development branches, and
+  rebased/merged back to integration (iterate till right).
+
+- 7. When integration branch is ready for a release to QC (UAT):
+- 7.1. Release branch is created with unique release number, off
+  integration branch. (i.e. release is "labeled", but this is
+  equivalent to branching in SVN). All dev branches are locked;
+- 7.2. Release is shipped to QC and release branch is locked;
+
+- 7.3. If release passes QC, ship it. If release needs another spin:
+- 7.3.1. Bugfix branch is created with the bug ticket number and the
+  version number. This is off the integration branch;
+- 7.3.2. Bugfix is made, tested in bugfix branch and rebased back to
+  integration;
+- 7.3.3. When all bugfix branches have been merged in, integration
+  branch is dev tested;
+- 7.3.4. New release branch with release number is created and
+  tested. rinse, repeat;
+- 7.3.5. If required, a "special" release branch is created for the
+  final release so we can distinguish between release candidates and
+  final release.
+
+- 8. When a release passes QC and is shipped:
+- 8.1. No one is allowed to merge back to trunk (this has to be
+  serialized across all teams using the trunk and must be done asap
+  after the release);
+- 8.2. Integration branch, which at this point is identical to the
+  final release branch, is rebased off trunk;
+- 8.3. Integration branch is tested (QC should get involved);
+- 8.4. Integration branch is merged back into the trunk;
+- 8.5. At this point the release is complete.
+
+- 9. Small bugfixes:
+- 9.1. Branch of trunk with version number and bug ticket number (just
+  integration branch will do, no need for dev branches);
+- 9.2. Do bugfix in integration branch;
+- 9.3. Dev test integration branch;
+- 9.4. Create release branch off integration branch;
+- 9.5. QC release branch;
+- 9.6. Ship;
+- 9.7. Rebase / merge back to trunk.
+
+- 10. Ideally, once all the merging is done, branches should be
+  deleted IF the version control system keeps the history of the
+  merged files. This greatly avoids clutter (i.e. you can actually
+  find a branch when looking for it), makes the repository smaller and
+  improves the performance of a few operations.
+
+- 11. Ideally you should be running something like CruiseControl on
+  selected branches (such as HEAD and integration).

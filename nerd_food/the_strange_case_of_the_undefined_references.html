@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-03-28 Sun 11:59 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Nerd Food: The Strange Case of the Undefined References</title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Nerd Food: The Strange Case of the Undefined References</h1>
+<p>
+<a href="../index.html">Back to home page</a>.
+</p>
+
+<p>
+Thursday, June 16, 2016
+</p>
+
+<p>
+As a kid, I loved reading Sherlock Holmes and Poirot novels. Each book
+got me completely spellbound, totally immersed and pretty much unable
+to do anything else until I finally found out whodunnit. Somehow, the
+culprits were never the characters I suspected of. Debugging and
+troubleshooting difficult software engineering problems is a lot like
+the plot of a crime novel: in both cases you are trying to form a
+mental picture of something that happened, with very incomplete
+information - the clues; in both cases, experience and attention to
+detail is crucial, with many a wrong path taken before the final
+eureka moment; and, in both cases too, there is this overwhelming
+sense of urgency in figuring out whodunnit. Of course, unlike a crime
+novel, we'd all prefer not having to deal with these kinds of
+"interesting" issues, but you don't choose the problems - they choose
+you.
+</p>
+
+<p>
+I recently had to deal with one such problem, which annoyed me to no
+end until I finally fixed it. It was so annoying I decided it was
+worth blogging about - if nothing else, it may save other people from
+the same level of pain and misery.
+</p>
+
+<p>
+A bit of context for those that are new here. Dogen is a pet project
+that I've been maintaining for a few years now. Like many other C++
+projects, it relies on the foundational Boost libraries. To be fair,
+we rely on other stuff as well - libraries such as LibXML2 and so on -
+but Boost is our core C++ dependency and the only one where latest is
+greatest, so it tends to cause us the most problems. I've covered my
+past woes in terms of dependency management and how happy I was to
+find Conan. And so it was that life was bliss for a number of builds,
+until one day…
+</p>
+
+<div id="outline-container-orgfeb02d3" class="outline-2">
+<h2 id="orgfeb02d3">It All Started With a Warning</h2>
+<div class="outline-text-2" id="text-orgfeb02d3">
+<p>
+It was a rainy day and I must have been bored because I noticed a
+rather innocuous-looking warning on my Travis build, related to Conan:
+</p>
+
+<pre class="code"><code>CMake Warning (dev) in build/output/conanbuildinfo.cmake:
+  Syntax Warning in cmake code at
+    /home/travis/build/DomainDrivenConsulting/dogen/build/output/conanbuildinfo.cmake:142:88
+  Argument not separated from preceding token by whitespace.
+Call Stack (most recent call first):
+  CMakeLists.txt:30 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+</code></pre>
+
+<p>
+Little did I know that this simple discovery would lead to a sequence
+of troublesome events and to many a broken build. I decided to report
+the problem to the Conan developers who, with their usual promptness,
+rolled up their sleeves, quickly bounced ideas back and forth and then
+did a sterling job in spinning fixes until we got to the bottom of the
+issue. Some of the fixes were to Conan itself, whereas some others
+were related to rebuilding Boost. In the heat of the investigation, I
+bumped into some very troubling - and apparently unrelated - linking
+errors:
+</p>
+
+<pre class="code"><code>/home/travis/.conan/data/Boost/1.60.0/lasote/stable/package/ebdc9c0c0164b54c29125127c75297f6607946c5/lib/libboost_log.so: undefined reference to `std::invalid_argument::invalid_argument(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; const&amp;)@GLIBCXX_3.4.21'
+/home/travis/.conan/data/Boost/1.60.0/lasote/stable/package/ebdc9c0c0164b54c29125127c75297f6607946c5/lib/libboost_log.so: undefined reference to `std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;::find(char const*, unsigned long, unsigned long) const@GLIBCXX_3.4.21'
+</code></pre>
+
+<p>
+The build was littered with errors such as these. But the most
+puzzling thing was that I had changed nothing of consequence on my
+side and the Conan guys changed very little at their end too! What on
+earth was going on?
+</p>
+
+<p>
+After quite a lot of thinking, Conan's <a href="https://github.com/memsharded">memsharded</a> came up a startling
+conclusion: we've been hit by one of those rare-but-dreadful
+ABI-transitions! His comment is worth <a href="https://github.com/conan-io/conan/issues/138#issuecomment-185163060">reading in full</a>, but the crux of
+his findings is as follows (copied verbatim):
+</p>
+
+<ul class="org-ul">
+<li>Boost packages, generated with travis use docker to manage different
+versions of gcc, as gcc 5.2 or gcc 5.3</li>
+<li>Those docker images are using modern linux distros, e.g. &gt; Ubuntu
+15.10</li>
+<li>By default, new modern linux distros have switched to the gcc &gt; 5.1
+new C++11 ABI, that is libstdc++ is built with gcc &gt; 5.1, usually
+named libcxx11, as well as the rest of the system. The libcxx11 ABI
+is incompatible with the old gcc &lt; 5.1 libcxx98 ABI.</li>
+<li>Building in such environment links with the new libcxx11 by default.</li>
+<li>Now, we move to our user, package consumer environment, which could
+be an Ubuntu 14.04, or a travis VM (12.04). Those distros use a
+libcxx98 libstdc++, as a lot of programs of those distros depends on
+the old libcxx98 ABI. It is not simple to replace it for the new
+one, requiring to rebuild or reinstall large part of the system and
+applications. Maybe it could be installed for dev only, and
+specified in the build, but I have not been able yet.</li>
+</ul>
+
+<p>
+Reading the above may have given you that sad, sinking feeling: "what
+on earth is he on about, I just want to compile my code!", "Why oh why
+is C++ so damn complicated!" and so forth. So, for the benefit of
+those not in the know, let me try to provide the required background
+to fully grok memsharded's comment.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf470dbb" class="outline-2">
+<h2 id="orgf470dbb">What's this ABI Malarkey Again?</h2>
+<div class="outline-text-2" id="text-orgf470dbb">
+<p>
+This topic may sound oddly familiar to the faithful reader of Nerd
+Food and with good reason: we did cover ABIs in the distant past, at a
+slightly lower level. The post in question was On MinGW, Cygwin and
+Wine and it does provide some useful context to this discussion, but,
+if you want a TL;DR, it basically dealt with kernel space and user
+space and with things such as the C library. This time round we will
+turn our attention to the C++ Standard Library.
+</p>
+
+<p>
+In addition to specifying the C++ language, the C++ Standard also
+defines the API of the C++ Standard Library - the classes and their
+methods, the functions and so on. The C++ Standard Library is
+responsible for providing a set of services for applications compiled
+with a C++ compiler. So far, so similar to the C Standard
+Library. Where things begin to differ is in the crucial matter of the
+ABI. But first, lets get a working definition for ABI, just so we are
+all on the same page. For this, we can do worse than using Linux
+System Programming:
+</p>
+
+<div class="epigraph"><blockquote>
+<p>
+Whereas an API defines a source interface, an ABI defines the
+low-level binary interface between two or more pieces of software on a
+particular architecture. It defines how an application interacts with
+itself, how an application interacts with the kernel, and how an
+application interacts with libraries. An ABI ensures binary
+compatibility, guaranteeing that a piece of object code will function
+on any system with the same ABI, without requiring recompilation.
+</p>
+
+<p>
+ABIs are concerned with issues such as calling conventions, byte
+ordering, register use, system call invocation, linking, library
+behavior, and the binary object format. The calling convention, for
+example, defines how functions are invoked, how arguments are passed
+to functions, which registers are preserved and which are mangled, and
+how the caller retrieves the return value.
+</p>
+
+</blockquote></div>
+
+<p>
+The second paragraph is especially crucial. You see, although both the
+C and the C++ Standards are somewhat silent on the matter of
+specifying an ABI, C tends to have a de facto standard for a given OS
+on a given architecture. This may not sound like much and you may be
+saying: "what, wait: the same OS on a different architecture has a
+different ABI?" Yep, that is indeed the case. If you think about it,
+it makes perfect sense; after all, C was carefully designed to be
+equivalent to "portable assembler"; in order to achieve maximum
+performance, one must not create artificial layers of indirection on
+top of the hardware but instead expose it as is. So, by the same
+token, two different C compilers working on the same architecture and
+OS will tend to agree on the ABI. The reason why is because the OS
+will also follow the hardware where it must, for performance reasons;
+and where the OS can make choices, it more or less makes the choice
+for everybody else. For example, until recently, if you were on
+Windows, it did you no good to compile code into an ELF binary because
+the law of the land was PE. Things have now changed dramatically, but
+the general point remains: the OS and the hardware rule.
+</p>
+
+<p>
+C++ inherits much of C's approach to efficiency, so at first blush you
+may be fooled into thinking it too would have a de facto ABI standard
+("for a given OS, " etc. etc.). However, there are a few crucial
+differences that have grave consequences. Let me point out a few:
+</p>
+
+<ul class="org-ul">
+<li>C++'s support for genericity - such as function overloading,
+templates, etc - is implemented by using name mangling; however,
+each compiler tends to have their own mangling scheme.</li>
+<li>implementation details such as the memory layout of objects in the
+C++ Standard Library - in particular, as we shall see, std::string -
+are important.</li>
+</ul>
+
+<p>
+In the past, compiler vendors tended exacerbate differences such as
+these; as it was with the UNIX wars, so too during the "C++ wars" did
+it make sense to be as incompatible as possible in the never ending
+hunt for monetisation. Thus, ABI specifications were kept internal and
+were closely guarded secrets. But since then the world has changed. To
+a large extent, C++ lost the huge amounts of funding it once had
+during the nineties and part of the naughties, and many vendors either
+went under or greatly reduced their efforts in this space. Two
+compilers emerged as victors: MSVC on the Windows platform and - once
+the dust of the EGCS fork finally settled - GCC everywhere else. The
+excellent quality of GCC across a vast array of platforms and its
+strict standards adherence - coupled with a quick response to the
+standardisation efforts - resulted in total domination outside of
+Windows. So much so that only recently did it meet a true challenger
+in Clang. The brave new world in which we now find ourselves in is one
+where C++ ABI standardisation is a real possibility - see Defining a
+Portable C++ ABI.
+</p>
+
+<p>
+But pray forgive the old hand, I digress again. The main point is
+that, for a given OS on a given architecture, you normally had to
+compile all your code with a single compiler; if you did that, you
+were good to go. Granted, GCC never made any official promises to keep
+its releases ABI-compatible, but in practice we came to rely on the
+fact that new and old releases interoperated just fine since the days
+of 3.x. And so did Clang, respecting GCC's ABI so carefully it made us
+think of them as one happy family. Then, C++-11 arrived.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2b3c327" class="outline-2">
+<h2 id="org2b3c327">Mixing and Matching</h2>
+<div class="outline-text-2" id="text-org2b3c327">
+<p>
+As described in <a href="http://developers.redhat.com/blog/2015/02/05/gcc5-and-the-c11-abi/">GCC5 and the C++11 ABI</a>, this pleasant state of affairs
+was too idyllic to last forever:
+</p>
+
+<div class="epigraph"><blockquote>
+<p>
+[&#x2026;] [S]ome new complexity requirements in the C++11 standard require
+ABI changes to several standard library classes to satisfy, most
+notably to std::basic<sub>string</sub> and std::list. And since
+std::basic<sub>string</sub> is used widely, much of the standard library is
+affected.
+</p>
+
+</blockquote></div>
+
+<p>
+On hindsight, the improvements in the std::string implementation are
+great; as a grasshopper, I recall spending hours on end debugging my
+code in the long forgotten days of EGGS 2.91, only to find out there
+was a weird bug in the COW implementation for my architecture. That
+was the first time - and as it happens, the last time too - I found a
+library bug, and it made a strong impression on me, at that young
+age. These people were not infallible.
+</p>
+
+<p>
+These days I sit much higher up in the C++ stack. Like many, I didn't
+read that carefully the GCC 5 release notes when it came out, relying
+as usual on my distro to do the right thing. And, as usual, the
+distros largely did, even though, unbeknown to many, a stir was
+happening in their world<label for="1" class="margin-toggle sidenote-number"></label><input type="checkbox" id="1" class="margin-toggle"/><span class="sidenote">
+For example, see The Case of GCC-5.1 and the Two C++ ABIs to
+understand Arch's pains.
+</span>. But hey, who reads distro blogs, right?
+Hidden comfortably under my Debian Testing lean-to, I was blissfully
+unaware of this transition since my code continued to compile just
+fine. Also, where things start to get hairy is when you need to mix
+and match compiler versions and build settings - and who on their
+right mind does that, right?
+</p>
+
+<p>
+As it happens, this is a situation in which modern C++ users of Travis
+may easily find themselves in, stuck as they are on either on Ubuntu
+12.04 (2012) or Ubuntu 14.04 (2014). Nick Sarten's <a href="http://genbattle.bitbucket.org/blog/2016/01/17/c++-travis-ci/">blog post</a> rams the
+point home in inimitable fashion:
+</p>
+
+<div class="epigraph"><blockquote>
+<p>
+Hold on, did I say GCC 4.6? Clang 3.4? WHAT YEAR IS IT?
+</p>
+
+</blockquote></div>
+
+<p>
+Yes, what year is it indeed. So it is that most of us rely on PPA's to
+bring the C++ environment on Travis up to date, such as the Ubuntu
+Toolchain:
+</p>
+
+<pre class="code"><code>sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+</code></pre>
+
+<p>
+This always seemed like an innocent thing to do but after my linking
+errors and memsharded discoveries, one suddenly started to question
+everything: what settings did the PPA use to build? What settings were
+used to build the Boost Conan packages? With what compiler? In what
+distro? The nightmare was endless. It was clear this was going to lead
+to tears before bedtime.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org379fc87" class="outline-2">
+<h2 id="org379fc87">The Long Road to a Solution</h2>
+<div class="outline-text-2" id="text-org379fc87">
+<p>
+Whilst memsharded honed into the problem pretty quickly - less than a
+couple of weeks - a complete solution to my woes was a lot more
+elusive. In truth, this is the kind of situation where you need long
+spells of concentrated effort, so working in your copious spare time
+does not help at all. I first tried the easiest approach: to pray that
+it would all go away by itself, given enough time. And, lo and behold,
+things did work again, for a little while! And then started to fail
+again; the Boost package in Conan got rebuilt and the build broke. And
+that way it stayed.
+</p>
+
+<p>
+Once waiting was no longer an option, I had to take it seriously and
+started investigating in earnest. Trouble is, when you lose trust in
+the compilation settings you then need to methodically validate
+absolutely everything, until you bottom out the problem. And that
+takes time. Many things were tried, including:
+</p>
+
+<ul class="org-ul">
+<li>rebuilding Boost locally, attempting to reproduce the issue - to no
+avail.</li>
+<li>rebuilding the Conan Boost packages with the old ABI; a fail (<a href="https://github.com/lasote/conan-boost/issues/12">#12</a>).</li>
+<li>reading up a variety of articles on the subject, most of them linked
+in this post.</li>
+<li>building the Boost packages locally and exporting them into Travis
+using DropBox's public folders. Another fail, but DropBox was a win.</li>
+<li>obtaining the exact same Ubuntu 14.04 image as Travis is using, use
+the compiler from the PPA and export Boost to Travis using DropBox
+and replicating the problem locally in a VM. This worked.</li>
+</ul>
+
+<p>
+Predictably, the final step is the one I should have tried first, but
+one is always lazy. Still, all of this got me wondering why had things
+been so complicated. Normally one would be able to ldd or nm -C the
+binary and figure out the dependencies, but in this case I seemed to
+always be pointing to libstdc++.so.6 regardless. Most puzzling. And
+then I found the Debian wiki page on <a href="https://wiki.debian.org/GCC5">GCC5</a>, which states:
+</p>
+
+<div class="epigraph"><blockquote>
+<p>
+The good news is, that GCC 5 now provides a stable libcxx11 ABI, and
+stable support for C++11 (GCC version before 5 called this supported
+experimental). This required some changes in the libstdc++ ABI, and
+now libstdc++6 provides a dual ABI, the classic libcxx98 ABI, and the
+new libcxx11 (GCC 5 (&lt;&lt; 5.1.1-20) only provides the classic libcxx98
+ABI). The bad news is that the (experimental) C++11 support in the
+classic libcxx98 ABI and the new stable libcxx11 ABIs are not
+compatible, and upstream doesn't provide an upgrade path except for
+rebuilding. Note that even in the past there were incompatibilities
+between g++ versions, but not as fundamental ones as found in the
+g++-5 update to stable C++11 support.
+</p>
+
+<p>
+Using different libstdc++ ABIs in the same object or in the same
+library is allowed, as long as you don't try to pass std::list to
+something expecting std::_<sub>cxx11</sub>::list or vice versa. We should
+rebuild everything with g++-5 (once it is the default). Using g++-4.9
+as a fallback won't be possible in many cases.
+</p>
+
+<p>
+libstdc++ (&gt;= 5.1.1-20) doesn't change the soname, provides a dual
+ABI. Existing C++98 binary packages will continue to work. Building
+these packages using g++-5 is expected to work after build failures
+are fixed.
+</p>
+
+</blockquote></div>
+
+<p>
+The crux is, of course, all the stuff about a dual ABI. I had never
+bumped into the dual ABI beast before, and now that I did I'm not sure
+I am entirely pleased. It's probably great when it just works, but
+it's tricky to troubleshoot when it doesn't: are you linking against a
+libstdc++ with dual ABI disabled/unsupported? Or is it some other
+error you've introduced? Personally, having a completely different SO
+name like memsharded had suggested seems like a less surprising
+approach - e.g. call it libcxx11 instead of libstdc++. But, as always,
+one has to play with the cards that were dealt so there is no point in
+complaining.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org33cc3fd" class="outline-2">
+<h2 id="org33cc3fd">Conclusion</h2>
+<div class="outline-text-2" id="text-org33cc3fd">
+<p>
+The Ubuntu 14.04 build of Boost did get us a green build again, but
+for all the joyous celebrations, there is still a grey cloud hovering
+above since the mop-up exercise is not completed. I now need to figure
+out how to build Boost with Conan on 14.04 and upload this version
+into the package manager's repo. However, for now carpe diem. After so
+much unproductive time, there is a real need for a few weeks (months!)
+of proper coding - the reason why I have a spare time project in the
+first place. But some lessons were learned.
+</p>
+
+<p>
+Firstly, one cannot but feel truly annoyed at ${COSMIC<sub>DEITY</sub>} for
+having to deal with issues such as this. After all, one of the reasons
+I prefer C++ to the languages I use at work (C# and Java) is that it
+is usually very transparent; normally I can very quickly reproduce,
+diagnose and fix a problem in my code. Of course, lord knows this
+statement is not true of all C++ code, but at least it tends to be
+valid for most Modern C++ - and over the last five years that's all
+the C++ I dealt with in anger. It was indeed rather irritating to find
+out that the pain has not yet been removed from the language, and on
+occasion, even experienced developers get bitten. Hard.
+</p>
+
+<p>
+A second point worth of note is that in C++ - more so than in any
+other language - one cannot just blindly trust the package
+manager. There are just so many configuration knobs and buttons for
+that to be possible, and one can easily get bitten by assumptions. The
+sad truth is that even when using Conan, one should probably upload
+one's own packages built with a well understood configuration. True,
+this may cost time - but on the other hand, it will avoid wild goose
+chases such as this one.
+</p>
+
+<p>
+Finally, its also important to note that this whole episode
+illustrates the sterling job that package maintainers do in
+distributions. Paradoxically, their work is often so good that we tend
+to be blissfully unaware of its importance. Articles such as
+Maintainers Matter take a heightened sense of urgency after an
+experience like this.
+</p>
+
+<p>
+The road was narrow, long and troublesome. But, as with all Poirot
+novels, there is always that satisfying feeling of finally finding out
+whodunnit in the end.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2d6cc08" class="outline-2">
+<h2 id="org2d6cc08">Post Script</h2>
+<div class="outline-text-2" id="text-org2d6cc08">
+<p>
+There is one final twist to this story, which adds insult to injury
+and further illustrates ${COSMIC<sub>DEITY</sub>}'s sense of humour. When I
+finally attempted to restore our clang builds, I found out that LLVM
+has disabled their APT repo for an unspecified length of time:
+</p>
+
+<div class="epigraph"><blockquote>
+<p>
+&gt; TL;DR: APT repo switched off due to excessive load / traffic
+</p>
+
+</blockquote></div>
+
+<p>
+There are no alternatives at present to build with a recent
+clang. Sometimes one has the feeling that the universe does not want
+to play ball. Stiff upper lip and all that; mustn't grumble.
+</p>
+</div>
+</div>
+<!-- Footnotes --><!--
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">
+For example, see The Case of GCC-5.1 and the Two C++ ABIs to
+understand Arch's pains.
+</p></div></div>
+
+ --></div>
+<div id="postamble" class="status">
+<p class="date">Created: 2021-03-28 Sun 11:59</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

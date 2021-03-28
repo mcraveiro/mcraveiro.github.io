@@ -1,0 +1,23 @@
+#+title: Nerd Food
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+
+[[file:../index.org][Back to home page]].
+
+Nerd Food is a sporadic "column" I used to have on my blog and has now
+been moved here. It contains a number of essays I have made on
+programming. Not all essays were copied here, as some were specific to
+a given technology that is no longer useful (/e.g./ old versions of
+Ubuntu, etc).
+
+- [[file:on_maintenance.org][On Maintenance]]
+- [[file:merging_and_branching_procedures.org][Merging and Branching Procedures]]
+- [[file:take_a_walk_on_the_server_side.org][Take a Walk on the Server Side]]
+- [[file:on_evolutionary_methodology.org][On Evolutionary Methodology]]
+- [[file:on_mingw_cygwin_and_wine.org][On MinGW, Cygwin and Wine]]
+- [[file:start-ups_at_the_gate_trends_in_the_technology_industry.org][Start-ups at the Gate: Trends in the Technology Industry]]
+- [[file:on_product_backlog.org][On Product Backlog]]
+- [[file:the_strange_case_of_the_undefined_references.org][The Strange Case of the Undefined References]]
+- [[file:the_refactoring_quagmire.org][The Refactoring Quagmire]]
