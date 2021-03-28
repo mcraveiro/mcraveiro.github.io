@@ -214,4 +214,79 @@ We are getting close. But remeber the rule of credibility: "The first
 time. The remaining 10% of the code accounts for the other 90% of the
 development time."
 
+* Replies
+
+This post generated a few interesting comments which I reproduce here
+with only minor changes in formatting.
+
+[[https://www.blogger.com/profile/07324523069794537212][Scott Findlater]]:
+
+#+begin_quote
+Dawg, your usual well thought out argument and
+surprisingly unbiased :) I agree about the database side that is for
+sure. I think ignorance of the general population is one major problem
+... a computer = windows. They just dont get the idea that a computer
+is the hardware and different operating systems are available. And
+sadly multi media seems to be a main, if not, the major selling point
+for computers over the last few years ... and so yes Microsoft
+dominate somehow :( Curse those codecs!!!
+
+That said there is clearly significant move in the Linux camp for mass
+market desktops and it is one of general education ... slowly general
+people are realising that linux is not just a black screen for long
+haired hippies ... it is a fully functioning, solid operating system
+with an awsome GUI !!!!
+
+Who knows when world domination will come!!! Has Vista saved
+Microsoft??? Who knows??!?!?!
+#+end_quote
+
+[[https://www.blogger.com/profile/08897222275562703823][Dan Kegel]]:
+
+#+begin_quote
+You're right about needing a rock-solid Wine, but we have to be
+pragmatic about how to get there.
+
+I figure it'll take a couple hundred man-years of effort to get Wine
+to the point you want it, but only a couple dozen to get it to the
+point where even big companies without much imagination or stomach for
+risk see that it's worth it for them to get their apps running.
+
+So I'm focusing on a few key areas:
+
+- a) fix installer bugs
+- b) get Adobe apps running
+- c) in general, find out who's running serious desktop migrations,
+  get their list of required Windows apps, and start fixing their
+  bugs, or helping them fix 'em themselves.
+- d) mentoring new Wine developers
+
+Each success in the above generates more excitement, attracts more
+users, and hopefully will result in more resources being devoted to
+the problem.
+
+See [[http://wiki.winehq.org/DesktopMigrationProjects][Desktop Migration Projects]] for the (small) list of confirmed
+migration projects that have provided lists of needed Windows apps.
+(Feel free to add to this list if you know of any.)
+#+end_quote
+
+Marco Craveiro:
+
+#+begin_quote
+Dan, thanks for your post. I hope I didn't sound as if was being
+critical of Wine or CodeWeavers, I think these guys are all doing a
+fantastic job. Every time I try Wine I find that it gets that much
+better, and the releases have been at a blistering pace of late. What
+I would like to see is people like Red Hat, IBM and Novell putting
+their huge resources towards helping Wine/CodeWeavers.
+
+I understand it would take many man years to achieve perfection, but
+these people have the resources - if not to achieve perfection, then
+perhaps to get close. Your approach is obviously a good one, and I'm
+sure having lots more people doing the same would get us there as
+quickly as possible.
+
+Many thanks for all of your work, and for reading the article.
+#+end_quote
+
 | [[file:index.org][Back to essay index]] | [[file:../index.org][Back to home page]] |
