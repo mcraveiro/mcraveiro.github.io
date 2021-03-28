@@ -33,7 +33,7 @@ too.
 | [[file:bookmarks.org][Interesting]]                            | Assorted bookmarks on stuff I bump into.                               |
 | [[file:twitter.org][Twitter threads]]                        | Now I found out you can unroll them, started to create links to these. |
 | [[file:angola_notebook/index.org][Notebook of a Return to My Native Land]] | Diary of my return to Angola in 2006, for the first time in 25 years.  |
-| [[file:nerd_food/index.org][Nerd Food]]                              | Collected essays on programming                                        |
+| [[file:nerd_food/index.org][Nerd Food]]                              | Collected essays on programming.                                       |
 
 * Site Tooling
 
