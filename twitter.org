@@ -14,3 +14,4 @@ summary of them here.
 | Angola  | Português. Razão do investimento em energias não renováveis. | [[https://threadreaderapp.com/thread/1370410475553439744.html][threadapp]] |
 | Angola  | Português. Economia colonial versus economia actual.         | [[https://threadreaderapp.com/thread/1323595956445761538.html][threadapp]] |
 | Energy  | Why hydrogen may become very important in the future.        | [[https://threadreaderapp.com/thread/1288395005040775169.html][threadapp]] |
+| Emacs   | Should you learn Emacs? Probably not.                        | [[https://threadreaderapp.com/thread/1377931149947891712.html][threadapp]] |
