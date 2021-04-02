@@ -1,0 +1,52 @@
+#+title: Kizua Mwangola: Part 11: Newspaper men
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+
+[[file:index.org][Back to chapter index.]]
+
+Tuesday, January 19, 2010
+
+Our days have been incredibly busy of late. Not only because I'm
+spending longer hours at the tech support at Uni but also because the
+cream of the reporting crop is staying at our guest house: being the
+only hotel with a name in English and having an American expat running
+it makes it the obvious choice for every other English-speaking
+foreigner. These are famous people in their fields, contributers to
+papers such as Financial Times, Daily Telegraph, The Independent, Die
+Spiegel, BBC, et al. This, of course, excluding Nigerian and Angolan
+papers.
+
+All this excitement not only makes my tech support somewhat harder ---
+we now have people that rely on the Internet to do proper work rather
+than the occasional browsing --- but it also means me and even Shahin
+are on "translation duties" at all hours. For example, yesterday I
+translated an interview with the Zambian coach for local
+newspapers. I've also spoken quite a lot of really bad French (but
+fortunately, the Swiss are here to help!). Shahin's claim to fame is
+translating French to Portuguese, the unfortunate targets being our
+Gabonese guests. I've also been [[http://www.earthtimes.org/articles/show/304652,excuse-me-is-there-any-football-being-played-here--feature.html][quoted]] [[http://www.guardian.co.uk/football/blog/2010/jan/18/angola-africa-cup-of-nations][twice]] (if not entirely
+precisely). And to top it all off, we're traveling to Lubango tomorrow
+with journalist and [[http://www.amazon.co.uk/Inverting-Pyramid-History-Football-Tactics/dp/1409102041/ref=pd_bxgy_b_text_c][book author]], [[http://www.guardian.co.uk/profile/jonathanwilson][Jonathan Wilson]] --- a gem of a bloke
+by the way. Mind you, [[http://www.pfd.co.uk/client/peter_auf_der_heyde/books/?section=books_authors][Pete]] was looking over my shoulder as I write
+this and he swears that [[http://www.amazon.com/Has-Anybody-Got-Whistle-Football/dp/1903158311][his book]] is better for the common man, so I
+may end up buying both.
+
+There is nothing scarier than watching a football match on telly with
+five or ten of these guys. You just feel afraid of shouting even the
+most trivial things, lest they look at you with disapproving eyes ---
+"do you know _anything_ at all about football, young man?". On the
+plus side, they are a really great bunch to chat over a few
+cucas. There were a couple of comments that really made me laugh. One
+was that "the stadiums were just too good, you couldn't tell whether
+this was Germany or Angola" which made me pretty laugh pretty
+smugly. Apparently Ghana and Mali's African cup had a more African
+feel. Don't want to discriminate against our African brothers, but
+I'll take that as a compliment. The other, which made me laugh really
+hard was --- "I hate those Scandinavians! Their biggest problem is a
+complete lack of cynicism! I mean, just look all the NGO's they have
+which actually _believe_ in changing the world!". I wish all my
+Scandinavian friends could read this now.
+
+| [[file:part_10.org][Back to previous chapter]] | [[file:index.org][Back to chapter index.]] | [[file:part_12.org][Forward to next chapter]] |

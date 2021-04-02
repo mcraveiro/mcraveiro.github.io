@@ -1,0 +1,74 @@
+#+title: Kizua Mwangola: Part 2: The Lion's Den
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+
+[[file:index.org][Back to chapter index.]]
+
+Thursday, November 19, 2009
+
+Alvalade is the home of Sporting Lisbon, the mighty lion of Portuguese
+football. And now, its also the key to my future...
+
+------
+
+As promised, the day started early, with a trip to Alvalade's
+Conservatoria. However, it was just my luck that it had burnt down in
+a fire recently. Oscillating between hope and despair --- have they lost
+my entry? can we create a new one? --- we wondered down to the abandoned
+shop window to read a notice: the conservatoria had migrated, lock
+stock and smoking barrels (literally) to a different place. Luckily,
+it was only up the road, next to the Sonangol pumps by the national
+radio station.
+
+To our great displeasure, the new place was nothing like the ordered
+chaos of Kinaxixe. Here we had sheer, unabated, uncontained
+disorganised chaos. After watching some great examples of Angolan
+queueing (surely an oxymoron if I ever seen one), I managed to
+sneakily speak to a worker. She dutifully told me that archive
+searches were not one of their set tasks; I should know to which
+conservatoria I belong, and that's that. If I truly wanted to conduct
+a search, I could wait two weeks for the new IT system that was being
+installed.
+
+Well, we couldn't wait two weeks --- half of our visas!! --- nor did I
+have any belief in time scales for software development --- Angolan's
+or otherwise, worked on far too many of these critters to have any
+faith left --- so we gave up and decided to go for breakfast. I badly
+needed my morning coffee to regain my strength. God had, of course,
+very different ideas. An hour walk revealed nothing that could vaguely
+resemble a cafe and Shahin boycotted all street vendors so, in
+addition to all our troubles, starvation now beckoned.
+
+We considered our options in a quiet shade under my baptism church. As
+if sensing our despair, just there and then our friend L decided to
+ring us. A lawyer! Surely a sign. She didn't know off the top of her
+head whether there were any other conservatorias in Alvalade, but she
+would check; in the mean time, we were to ring Portugal and try to
+rinse out more details. Shahin also thought we should consult the
+padre and see if we can get any additional info from him.
+
+As we queued up to see the padre, we met another couple that were in
+almost exactly the same situation as us: a Scottish girl was trying to
+marry an Angolan chap, R, but they were struggling in both Britain and
+Angola. The coincidence was so amazing it felt uncanny. We chatted for
+a bit and traded war stories, commiserating each other. R told us he
+had had a lot of problems getting his birth certificate, and one of
+the most important things is knowing the location of one's entry in
+the registry. This was to be a vital detail.
+
+In the end, all our sources came together:
+
+- The church archives did not know where I was registered, but they
+  knew the exact location (book, page, etc.) of my entry in it; thanks
+  to R, we appreciated the importance of this vital information.
+- My uncle knew where we were registered, and L confirmed that there
+  was only one conservatoria in Alvalade. We also found my cousin's B
+  entry in the church archive, and it mentioned the conservatoria (but
+  regrettably, not the location of his book in the archives!).
+
+Great dectective work. Now all we need is to request the documents on
+Monday.
+
+| [[file:part_1.org][Back to previous chapter]] | [[file:index.org][Back to chapter index.]] | [[file:part_3.org][Forward to next chapter]] |

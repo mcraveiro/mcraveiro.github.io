@@ -1,0 +1,29 @@
+#+title: Kizua Mwangola
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+
+[[file:../index.org][Back to home page]].
+
+These series of short posts narrate my experiences on the second
+return to my homeland of Angola. The main topics are the hard work I
+had to do to get my Angolan papers back, and some lose coverage of the
+African Cup of Nations (CAN), which was held in Angolan soil for the
+first time.
+
+- [[file:part_1.org][Part 1: Dead on Arrival]]
+- [[file:part_2.org][Part 2: The Lion's Den]]
+- [[file:part_3.org][Part 3: Huambo]]
+- [[file:part_4.org][Part 4: Angolan Again]]
+- [[file:part_5.org][Part 5: Diaspora HOWTO]]
+- [[file:part_6.org][Part 6: Benguela]]
+- [[file:part_7.org][Part 7: Kick'em while they're down]]
+- [[file:part_8.org][Part 8: Benguela's first game]]
+- [[file:part_9.org][Part 9: Deadly Mambas]]
+- [[file:part_10.org][Part 10: Why I love Benguela]]
+- [[file:part_11.org][Part 11: Newspaper men]]
+- [[file:part_12.org][Part 12: Lubango]]
+- [[file:part_13.org][Part 13: Aiwee!! Ta Doeeeer!!]]
+- [[file:part_14.org][Part 14: Peter and the Kupapata]]
+- [[file:part_15.org][Part 15: Magreb War]]

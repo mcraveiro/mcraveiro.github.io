@@ -1,0 +1,52 @@
+#+title: Kizua Mwangola: Part 10: Why I love Benguela
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+
+[[file:index.org][Back to chapter index.]]
+
+* We're through!
+
+Tuesday, January 19, 2010
+
+[[http://news.bbc.co.uk/sport2/hi/football/africa/8464507.stm][Awful game]]! I'm sure Mali and Malawi thought it wasn't cricket any
+more too, but hey - we probably would have lost on a real game. Now,
+lets see how we fare against the elephants.
+
+* Why I love Benguela
+
+Tuesday, January 19, 2010
+
+Everyone is always asking me, but what makes you like Benguela so
+much. I thought perhaps a piece of photo-blogging would help. So
+here's my first part of Why I love Benguela:
+
+#+caption: Our brand spanking sidewalks. (c) Shahinara Craveiro
+[[./IMG_1397.JPG]]
+
+#+caption: Loads of lovely public gardens. (c) Shahinara Craveiro
+[[./IMG_1392.JPG]]
+
+#+caption: The new Ombaka stadium. (c) Shahinara Craveiro
+[[./IMG_1214.JPG]]
+
+#+caption: The sunsets we get every day. (c) Shahinara Craveiro
+[[./IMG_1109.JPG]]
+
+#+caption: The rush hour traffic. (c) Shahinara Craveiro
+[[./IMG_0893.JPG]]
+
+#+caption: Great colonial architecture. (c) Shahinara Craveiro
+[[./IMG_0892.JPG]]
+
+#+caption: Caotinha beach. (c) Shahinara Craveiro
+[[./IMG_0826.JPG]]
+
+#+caption: Catumbela river. (c) Shahinara Craveiro
+[[./IMG_0623.JPG]]
+
+#+caption: Local capoeira school. (c) Shahinara Craveiro
+[[./IMG_0540.JPG]]
+
+| [[file:part_9.org][Back to previous chapter]] | [[file:index.org][Back to chapter index.]] | [[file:part_11.org][Forward to next chapter]] |

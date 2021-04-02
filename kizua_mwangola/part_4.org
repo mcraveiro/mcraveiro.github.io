@@ -1,0 +1,107 @@
+#+title: Kizua Mwangola: Part 4: Angolan Again
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+
+[[file:index.org][Back to chapter index.]]
+
+Monday, December 07, 2009
+
+On our return to Luanda, we found the city to be busier than
+ever. Perhaps it was the long, empty roads of Huambo that made us
+adapt to the slow pace of country life. Luanda hits you in the face,
+overflowing with people, cars, rubble. We were not expecting much of
+the conservatoria, not quite believing that the express service was
+actually going to deliver results. To my amazement it did: a
+brand-spanking cedula and birth-certificate were at the ready, waiting
+for me.
+
+The next mission was to sort out the ID card. We did the scouting as
+usual, dropping by during the day and figured out another early start
+was required. I went solo. I got there for around 05:10 AM, managed to
+be number 38 after some complications (don't ask), waited for ages and
+got seen around 09:30. The going was good until around 5 people ahead
+of me. At this point, a middle-aged white Angolan goes up to the
+desk --- a desk sitting more or less in the centre of the room, in full
+view of everyone. The chap was talking too softly for me to hear, but
+our Angolan public servant was not; his loudness was calculated to
+ensure everyone could participate in the exchange. Proceedings went
+more or less like this:
+
+#+begin_verse
+--- So you're 40-odd years of age, haven't you ever had an ID card
+    before?
+
+(inaudible mumble by citizen)
+
+--- So now you come back with this measly piece of paper (pointing to
+    the birth certificate) and want me to believe this person is in fact
+    you? How do I know?
+
+(more inaudible mumble by citizen)
+
+--- No, no, if it comes from the province you need to go back to the
+    province! You all go when things got though and now want to come
+    back when its sweet, and expect us to just believe your word!! If
+    you want me to accept your documents you need some supporting
+    evidence!!
+
+(even more inaudible mumble by citizen)
+
+--- Back to the province I say!! I'm here to do my job!!
+#+end_verse
+
+The citizen left the building, but the public servant wasn't quite
+finished. He kept talking about it while processing the subsequent
+four cases, getting angrier and angrier as time went by --- a full
+fledged monologue by now, punctuated only by the yesses and hm hms
+uttered by the customer and a few in the crowd. This went on until it
+was my turn, at which point he finally stopped talking, but for all
+the wrong reasons. He could hardly believe his eyes when he looked at
+my birth certificate, alternating between the paper and me several
+times with gaping mouth:
+
+#+begin_verse
+--- I can't believe this!! Another one!?! What's going on here today??
+    Where is your old ID card?
+
+--- I never had one Sir --- I say, starting to despair, but with still
+    one card up my sleeve. Using my politest, nicest, humblest
+    Portuguese I mumble:
+
+--- I also have the church's birth certificate, if that helps at all.
+#+end_verse
+
+Incredibly, the guy changed his tone immediately after seeing the
+church's document, and suddenly starts displaying me as a model
+citizen to the crowd, explaining how this is the sort of behaviour he
+expects, with the neat confirming documents and so on. We all had a
+chuckle at the expense of these citizens that come round with only one
+document --- me noisily joining the crowd slagging those fools. In the
+same breath I was thanking God I had remembered the old Portuguese
+bureaucratic trick of bringing every single legal document you own
+every time you go to a government agency --- this makes it harder for
+them to send you home for lack of documentation.
+
+The adventure wasn't quite finished after that --- there were some
+other minor problems, but nothing major and the end result was that I
+/almost/ managed to finish the day with a valid Angolan ID card. Yep,
+this is the same day in which I initiated my request, and I did not do
+anything different from a regular, average Angolan citizen. The
+/almost/ bit was due to some mishaps with my file that I don't fully
+understand --- something to do with stamps; my lovely number 38 ended
+up being processed at number 72 or so, meaning I was at the very back
+of the queue by the end of the working day (around 14:30). And this is
+excluding the other minor incident in which the chap calling out
+people got the files in the wrong order and jumped from 29 to 60 odd,
+skipping everyone inbetween; it took the queue something like ten
+names to notice the problem, at which point we were all shouting in
+unison: TA ERRADO CHEFE!!! TROCOU A ORDEM!!! (its all wrong boss, you
+flipped the order!!).
+
+Anyway. Next day I returned at the late hour of 08:00 AM and it took
+me the whole of 20 mins to obtain my brand-spanking new Angolan ID
+card.
+
+| [[file:part_3.org][Back to previous chapter]] | [[file:index.org][Back to chapter index.]] | [[file:part_5.org][Forward to next chapter]] |

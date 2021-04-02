@@ -1,0 +1,95 @@
+#+title: Kizua Mwangola: Part 15: Magreb War
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+
+[[file:index.org][Back to chapter index.]]
+
+* OMG, Ghana!!
+
+Thursday, January 28, 2010
+
+Unbelievable. Watching Ghana v Nigeria was exactly like watching
+Angola v Ghana. One attack from Ghana early on in which they score,
+then 90-odd minutes of Nigeria attacking badly. Amazing, like a carbon
+copy. Off to the stadium now, to watch Egypt v Algeria. Hopefully my
+[[http://www.portalangop.co.ao/motix/pt_pt/noticias/desporto/2010/0/4/Benguelenses-divididos-quanto-vencedor-Egipto-Argelia,0d5a2380-0018-4c30-bb91-f1621d540927.html][predictions]] will come to pass, and we'll have an Egypt v Ghana final -
+either way, I think Ghana is running out of luck, fast.
+
+* Magreb War
+
+Friday, January 29, 2010
+
+There is no other way to describe yesterday's game --- it was like being
+invited to watch someone else's war. A few days ago I overheard one of
+the reporters quoting a Algerian player, his words being along the
+lines of "this is a matter of life or death" and "it will be a
+war". Well, it really was. To make matters worse, the game boasted the
+biggest crowd of away fans we've ever seen in CAN, with a predominance
+for the Algerian side. The rumours of two thousand Algerian fans
+entering the country were certainly an exaggeration, but at least five
+hundred must have done the trek, and they were noisy too.
+
+There was a lot at stake, and it wasn't just the place in the
+final. The Egyptians wanted revenge from Sudan, which according to
+them was solely due to the referee's mistakes. The Algerians wanted to
+prove that Sudan was no mistake, and that they deserved to represent
+the Magreb and the whole Arab world in the World Cup. If, to that, you
+add years of bad blood between these two, you're starting to get a
+rough idea of how high the tension was.
+
+#+caption: Algerian Supporters. (c) Shahinara Craveiro
+[[./algerian_supporters.JPG]]
+
+When it came to football, however, the Algerians demonstrated their
+Achilles heel: bad behaviour. To be fair, this is a common problem on
+all Arab teams. We've seen Egypt and Tunisia losing it too, moaning on
+every decision referees take against them and ganging up around the
+ref. Algeria managed to go that extra step, causing total havoc when
+Egypt got a penalty. The game was going Egypt's way, to be sure, but
+it wasn't clear cut; but playing Egypt is always a difficult task, and
+playing with ten men is neigh impossible. From then on it was a
+slippery slope, red cards following red cards and trivial goals
+following trivial goals. Egypt wasn't even trying to score, but the
+massive gaps in the Algerian defence made it so easy they couldn't
+resist. The final body count revealed almost as many red cards as
+goals (three of the former against four of the latter). It seems Egypt
+is, and always was, the champion waiting to be crowned.
+
+#+caption: Egyptian keeper anticipates Algerian striker. (c) Shahinara Craveiro
+[[./algerian_attack.JPG]]
+
+As a side note, I was extremely surprised to see a packed ground for
+this game --- must have been around thirty thousand of us watching
+it. Most people here are interested in the Southern African teams, and
+very few can name an Arab player other than Egypt's Zidane. However,
+Benguela turned up for the game in great numbers and made loads of
+noise. A good few hours later, I'm still unable to hear properly. I
+guess Egypt became our adoptive team, the only one that never left
+Benguela all the way up to the final. Egypt's coach said so in the
+after match press conference, and thanked the Benguelans for all the
+support.
+
+This was also a milestone for us: the last game of the competition
+we're watching live. We've seen many games, travelled to three of the
+four CAN stadiums, saw Angola live and met many, many great people. It
+was a great adventure. But all good things must come to an end,
+unfortunately, and the tiredness is now getting to us. The last two
+games will be watched on telly.
+
+* They think it's all over...
+
+Sunday, January 31, 2010
+
+And it's all over now: Egypt has won the CAN. Ghana did a lot better
+than I expected though, and in the end the game was actually quite
+close. The cup goes to the best team though. The other point worth of
+notice was the size of the crowd: over forty thousand Angolans turned
+up to watch it, an amazing figure for a final that did not involve the
+host nation.
+
+#+caption: Egypt team. (c) Angola Press
+[[./egypt.jpg]]
+
+| [[file:part_14.org][Back to previous chapter]] | [[file:index.org][Back to chapter index.]] |

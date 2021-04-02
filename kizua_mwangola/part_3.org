@@ -1,0 +1,48 @@
+#+title: Kizua Mwangola: Part 3: Huambo
+#+author: marco craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+html_head: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+
+[[file:index.org][back to chapter index.]]
+
+Monday, December 07, 2009
+
+Things ended up going quite well with the conservatoria in the end. It
+sure didn't look like it in the beginning though. We got there around
+07:00 AM on the dot, thinking this was early enough --- I should have
+known better. The fall of Saigon had less people roaming
+around. Nevertheless, it was an instructive day as we figured out all
+the requirements to get things done. Next day I turned up at 05:10 AM,
+and was still number 12 in the queue (!!) but managed to put my
+request in. On the plus side, I was out by 09:30 AM.
+
+Since it would take 5 working days to pick up the finished articles
+(e.g. the cedula and birth certificate), we decided to trek to Huambo
+to visit Cousin R. This is Angola's equivalent of Namibia's Windhoek,
+as it sits more or less on the centre of the country. Many years ago,
+the Portuguese had ambitions of making Huambo the capital of the
+empire; they called it Nova Lisboa. Due to its strategic importance
+and proximity to the rebels home ground, Huambo and the surrounding
+areas got shelled intensively during the war, particularly during the
+late nineties.
+
+These days, the city is a recovering place. It still displays many
+scars of the recent past, but it also sports a great deal of rebuilt
+infrastructure. The government sees Huambo and the surrounding areas
+(such as Cela in Wako Kungo) as key for the agricultural revival the
+nation requires. Angola imports around 80% of what it consumes, a lot
+of which are cereals and other agricultural products. This is all the
+more amazing when one travels through the fertile lands of the
+plateau, kilometres and kilometres of greenery and very little of it
+affected by human hand. Imagine something like Hertfordshire but with
+unspoilt nature instead of farms and then scale that to a Britain-like
+size and you get close. Excluding the landmines, of course.
+
+After a difficult bus trip, we spent 5 days in great luxury at cousin
+R's pad, with all the mod-coms. During the day we treked the city,
+visiting places like the granja, and meeting nice people such as
+Hugo. Time went far too quickly, and we had to go back to the madness
+of Luanda.
+
+| [[file:part_2.org][Back to previous chapter]] | [[file:index.org][Back to chapter index.]] | [[file:part_4.org][Forward to next chapter]] |

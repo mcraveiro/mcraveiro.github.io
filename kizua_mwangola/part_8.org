@@ -1,0 +1,75 @@
+#+title: Kizua Mwangola: Part 8: Benguela's first game
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+
+[[file:index.org][Back to chapter index.]]
+
+* HOWTO: Underplaying your hand
+
+Sunday, January 10, 2010
+
+Right, not only are we all traumatised with the events of last Friday
+but we now have to deal with the media coverage of it as well. And
+lordy, lord is it bipolar or what. On one side we have the dramatic,
+disaster-intensive coverage coming from the west, making it clear the
+world is coming to an end --- Angola first. On the other side we have
+a Beijing style, 1980's coverage from the national media that makes it
+all sound oh so alright and downplays Togolese suffering far too much.
+
+If the authorities were media savvy they would have instantly
+recognised a neo-liberal sort of moment and played it to their
+advantage. Shock and awe and all that. How easy it would have been to
+make the most out of this disaster, using it to unite the national and
+international communities around the "war on terror" disease --- all
+the while promoting the continuation of the CAN as a duty to all who
+do not believe in giving in to terror. Someone needs to go to America
+for a 101 course on modern propaganda.
+
+Anyway, three hours for the game against Mali. Força Palancas!
+
+* Snatching defeat from the jaws of victory
+
+Sunday, January 10, 2010
+
+There isn't much in common between the Angolans and the English. One
+exception is an uncanny ability to engineer defeats where no one else
+would believe them possible. That was most certainly the case [[http://news.bbc.co.uk/sport2/hi/football/africa/8450491.stm][against
+Mali tonight]].
+
+* Benguela's first game
+
+Thursday, January 14, 2010
+
+We made it to the stadium! Shahin covered it on her facebook, but
+here's a teaser. The crowd was much bigger in the end, but it took
+ages to get in!
+
+From Shahin's Facebook:
+
+#+begin_quote
+African Cup of Nations
+
+Nigeria v Egypt and Mozambique v Benin at the Benguela stadium in
+Angola. Absolutely fantastic atmosphere even though hosts were not
+playing!
+#+end_quote
+
+[[./19932_284376273901_4522219_n.jpg]]
+
+[[./19932_284376288901_262785_n.jpg]]
+
+[[./19932_284376298901_3287333_n.jpg]]
+
+[[./19932_284376323901_4824602_n.jpg]]
+
+[[./19932_284386538901_5503564_n.jpg]]
+
+[[./19932_284386528901_6815785_n.jpg]]
+
+[[./19932_284386523901_8048400_n.jpg]]
+
+[[./19932_284376313901_7019852_n.jpg]]
+
+| [[file:part_7.org][Back to previous chapter]] | [[file:index.org][Back to chapter index.]] | [[file:part_9.org][Forward to next chapter]] |

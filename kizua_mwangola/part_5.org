@@ -1,0 +1,224 @@
+#+title: Kizua Mwangola: Part 5: Diaspora HOWTO
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+
+[[file:index.org][Back to chapter index.]]
+
+Monday, December 07, 2009
+
+Right, y'all know I'm a nerd, and part of the nerd lifestyle is
+writing HOWTOs. For all the non-nerds out there, the reason why we
+tend to do this is because we love efficiency: there is nothing worse
+than having more than one person wasting time figuring something
+out. So, in this spirit, for all the Angolan diasporans out there that
+are planning to come back home, here are some tips on how to get your
+documents back.
+
+*NOTE 1*: The below assumes only the legally available means (e.g. it's
+gasosa-free).
+
+*NOTE 2*: The standard disclaimer applies: this HOWTO is distributed
+in the hope that it will be useful, but WITHOUT ANY WARRANTY; without
+even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Without further ado, here's the returning to Angola HOWTO for
+diasporians.
+
+* _BEFORE_ you travel to Angola, make sure to:
+
+- Speak to all elements of your family that know anything at all about
+  your past in Angola. You want to make sure you know exactly WHERE
+  you were baptised and registered (exact addresses of church and
+  conservatoria) and WHEN (year and month ideally). Old addresses are
+  useful (even with the old street and town names, don't worry about
+  that). Also, you need to find out where you live in the register of
+  the conservatoria (e.g. Registo, Folhas, Livro).
+- Collect every single old _Angolan_ document you can lay your hands
+  on (e.g. documents issued by the Portuguese-Angolan government
+  before the independence or the Angolan government after
+  independence; documents issued by the Portuguese government after
+  independence are of no use, even if they state Angolan details).
+- If married a non-Angolan outside of Angola and you wish to issue
+  your Angolan documents as married, ensure you bring a translated
+  copy of: a) the foreigner's birth certificate and the foreigners
+  criminal record; b) the marriage certificate. These copies MUST be
+  stamped by the Angolan consulate at the country in which the
+  foreigner was born and the wedding took place (if you're talking
+  about Portugal or Brazil, the translation is not required of
+  course). DO NOT leave the country(ies) until you have these
+  documents, or nothing will be done.
+
+*NOTE*: if you do NOT know your conservatoria, you will not be able to
+obtain an Angolan citizenship, I don't think.
+
+* When you get to Angola:
+
+- If you need to update your marriage status, you must do it before
+  anything else. You will need to go to the registros centrais in
+  Luanda next to Hotel Mundial, not far from Mutamba (I don't think
+  this can be done in the provinces, but I'm probably wrong). The
+  process of bringing your document into existence in Angolan law is
+  called a "transcricao". You will need a lot of stuff for this:
+- The translated and stamped versions of the birth certificate,
+  marriage certificate and criminal record, as explained above.
+- Doctor's certificate (Atestado medico), indicating everyone is alive
+  and healthy.
+- Residence certificate (Atestado de residencia, this is normally
+  proving the address of the Angolan member of the couple and issued
+  by the Bairro's Comissao de Moradores).
+- Basic Curriculum Vitae
+
+One very useful thing about going through this process is your wife
+will then have a much easier time getting a residence card. I'll cover
+that on a later update to this HOWTO. After you have transcribed your
+marriage properly (if required), you can start the climb of the
+documentation ladder proper.
+
+*NOTE*: the below assumes you know the conservatoria, registo, folhas
+and livro.
+
+- Go to the church you were baptised and request a Certidao
+  Narrativa. You may not need this, but I would get it if I were you
+  (see my previous episode). Churches have a "notario" on the back. I
+  don't think opening times are standard, but it may be between 10:00
+  AM and 12:00 PM. Queueing is normally not too bad (e.g. one or two
+  people in the queue). You can collect the certidao narrativa while
+  sorting out the certidao de nascimento (but do it BEFORE going for
+  the ID card).
+- Next, go to THE conservatoria where you were originally registered
+  at any time during its working hours, and look for a paper with an
+  account number and prices (ideally you want to do this on a Friday
+  or Thursday). DO NOT rely on information from other
+  conservatorias. The paper should contain a standard price and an
+  express price for the certidao (2700'ish and 4900'ish kwanzas
+  respectively; get the EXACT values). It should also contain a cost
+  for the cedula (210'ish kwanzas). IN THEORY you don't need to pay
+  for both the certidao and the cedula as the cedula is included; in
+  practice I'd pay for both since the cedula is so cheap. Ensure you
+  find out WHICH BANK the account belongs to. It should be BPC, but
+  just in case check. I strongly suggest you go for the EXPRESS option
+  (5 working days).
+- Go very early to the bank and make the payments (I suggest 05:00 AM
+  start but you may be lucky). Ensure you make SEPARATE payments for
+  each document, with the EXACT amounts as displayed in the price
+  sheet. Of course, ENSURE the account number is correct.
+- Ensure you receive a receipt from the bank for each transaction,
+  STAMPED as deposited.
+
+*NOTE*: There is no point in going to the conservatoria without the receipts.
+
+Once you got the receipts, take them to THE conservatoria where you
+were originally registered to obtain a cedula and a birth certificate:
+
+- The birth certificate (certidao de nascimento) is also known as
+  Assento de Nascimento (abbreviated to assento).
+- Conservatorias only deal with requests on MONDAYS and TUESDAYS, from
+  08:00 to 13:00. In practice you need to get there no later than
+  05:00 AM. I suggest going there on a Monday, in case anything goes
+  wrong (god forbid) or else you'll have to wait for next week.
+- When you get there early in the morning, keep your eyes and ears
+  open. Ask around. Some places have "lists" (a lista). These are
+  informal documents created by customers that list the names of other
+  customers in order of arrival. Make sure you keep your eyes on the
+  list and do not leave the queue/place at any time. There are
+  sometimes competing lists done by different people, so keep a keen
+  eye open. There should, however, be multiple lists kept by _one_
+  person, one list per _department_; worry if there is only a single
+  list for everything, as there will be trouble later on. You want to
+  be in the Certidao list (NOT on the cedula list as the child
+  registration is sometimes called). If you are on the wrong list and
+  discover this later on YOU WILL have to queue again next time, so
+  make sure you're on the correct list.
+- If your position in the list is greater than 50 don't bother waiting
+  for too long; most conservatorias only accept 50 requests a day, so
+  only the first 50 people get a go. At 51 to 55 you may get lucky,
+  any higher than that and its neigh impossible you will be seen to on
+  the day. At any rate, ask as your conservatoria may be different.
+- At around 08:00 AM the public servants will drop by and collect the
+  lists. They will then read out the list and for every citizen
+  present, give our a "ficha" with a number. This will be the order of
+  processing for the day.
+- When your turn comes, make sure you ask for a Cedula as well as a
+  Certidao/Assento de nascimento. Ensure the receipt states its a
+  request for both documents. Ask for the collection date (the exact
+  day of the week).
+- Guard the receipt they give you with your life. Make at least one
+  photocopy of it. The copy is accepted in place of the original.
+- If you payed for express service, return at any day during the week
+  to collect it. It can be at any of the valid working hours. If you
+  paid for regular service, you can ONLY collect on Thursdays, between
+  08:00 and 13:00. Do not bother coming on any other day of the week
+  as they will NOT see you.
+- When you receive your documents, its likely the cedula will be
+  produced on the spot. Regardless, SPEND AS LONG AS NECESSARY
+  CHECKING EVERY FIELD OF YOUR CEDULA. DO NOT LEAVE until you're
+  satisfied. Misspellings, even minor ones will lead to trouble later
+  on. Try to get them to fix your cedula there and then.
+
+If at this point you still don't know your registo, folhas and livro
+you need to do a search on the conservatoria's books. This is
+EXTREMELY painful. You NEED to at least know the year. You will have
+to go to the conservatoria and do a "search". This can two or more
+weeks and the result can be negative (e.g. "you're not registered in
+1966", try again).
+
+When you get your certidao narrativa, certidao de nascimento (assento
+de nascimento) and cedula, find ANY centro de identificacao (I think,
+will fix it later if this is not the correct name):
+
+- Ideally go to a province as they are normally not as busy as
+  Luanda. If you must do it in Luanda, I suggest Chicala (Ilha), next
+  to the Portvgalia brewery. This is not quite as mad-busy as other
+  places.
+- They normally are open Monday to Friday at 07:00 and accept requests
+  until 13:30. In practice, its best to arrive very early (05:00 AM).
+- There is only one queue for everything, although some people make
+  different queues for men and women. This is rather pointless as they
+  end-up merging the two queues, using an entirely arbitrary merge
+  algorithm that is likely to piss you off (mine was 3 men, 3 women
+  and it worked very much against me). The queue will result in a
+  "ficha", with your number. Guard the ficha with your life.
+- When they call you, the first counter will be a validation
+  counter. They spot fakes and so on. They should be happy with your
+  supporting documents (e.g. certidao narrativa and cedula).
+- The second counter takes your details and enters them into the
+  computer (dados biograficos).
+- The third counter takes your biometric details (e.g. picture and
+  finger prints).
+- The fourth counter will hand your ID card.
+- If you're at the beginning of the queue, you may get an ID card
+  printed on the day. This could be as late as 13:30 to 15:30. If its
+  not done by then, you need to come back next working day at any time
+  after 07:00.
+
+With the ID card you are now ready to go and get:
+
+- Numero de contribuinte (tax number): you can't really work without
+  this.
+- Numero de seguranca social (social security number): you can't
+  really work without this.
+- Criminal Record: most employers will ask you for it. Look for a
+  Registo Criminal. The document should cost less than 2000 kwanzas
+  (express) and should be ready within a couple of days.
+- Passport: you won't be able to travel as Angolan without this. Its
+  very useful within SADC as there are lots of special agreements with
+  member countries. Any DEFA would do, the provinces preferably as
+  they are quieter (but slower). Should take around 30 days to
+  issue. To be on the safe side, its best to renew your ordinary visa
+  in the mean time (although this shouldn't really be required after
+  getting an ID card).
+
+Although the process is long, cumbersome and complex, I must say all
+the people I dealt with were surprisingly professional and managed to
+get things done in the time slots promised (I'm trying to say this
+whithout sounding too amazed, but yeh, I was really amazed).
+
+I'll update the HOWTO with more details as I get the remaining
+documents.
+
+HTH.
+
+| [[file:part_4.org][Back to previous chapter]] | [[file:index.org][Back to chapter index.]] | [[file:part_6.org][Forward to next chapter]] |

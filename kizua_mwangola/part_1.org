@@ -1,0 +1,62 @@
+#+title: Kizua Mwangola: Part 1: Dead on Arrival
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+
+[[file:index.org][Back to chapter index.]]
+
+Thursday, November 19, 2009
+
+Not so long ago I started a email newsletter with very restricted
+circulation: a palavra do dia (word of the day). Its purpose was to
+teach myself and a few friends and family some meagre words of
+kimbundu, one of the major Angolan languages. I regret to say it was a
+rather short lived and somewhat unsuccessful project, but I did pickup
+one or two words. One of them was Kizua, or "word". My really limited
+kimbundu has not progressed much further since then, as the title of
+these series of blog posts attests. What I'm trying to say in terrible
+pidgin kimbundu is "words from Angola". Perhaps one day a real
+kimbundu speaker will help me fix the title.
+
+Another pet project of mine was A Notebook of a [[https://mcraveiro.github.io/angola_notebook/index.html][Return to My Native
+Land]], chronicling my return to Angola. This one was slightly more
+successful, and a complete book was actually "published" in the end
+--- if with a somewhat restricted circulation of one copy. At the
+time, many people protested about the long length of posts (all the
+ten of you), so this time I'll try to keep them short and (hopefully)
+frequent.
+
+------
+
+After a rather long trip, we arrived in the motherland safe and
+sound. As usual, Cousin R had made a sterling job of organising it
+all, a feat even more amazing considering she now dwells far away in
+the provinces and did everything by phone. Cousin Z picked us up and
+gave us a mini-tour of town.
+
+Its strange but if anything Luanda hasn't changed that much: there are
+lots of new buildings --- all of them sky-high --- but the key things
+are as we remembered, if not worse. Terrible traffic, bad side-walks
+and expensive things. Luanda is incredibly even busier than any city
+in Vietnam, with the added messiness that only big African cities seem
+to have.
+
+------
+
+Our first mission after a good night rest was to obtain my cedula. We
+hoped the job was going to be easy as I already possess a
+shiny"certidao narrativa" (not quite a birth certificate, but
+almost. Don't ask.). No such luck, said the man at the Conservatoria
+(Registry Office). We need to figure out where my parents did the
+original registration and Lord knows where that was.
+
+Mum gave us some tips. We're going to queue up from 07:00 onwards
+tomorrow morning in the vain hope that one of the places she suggested
+is the right one (Alvalade). Of course, cedulas are only requested on
+Mondays or Tuesdays and collected on Wednesdays and at best take eight
+days to be processed but hey, we'll try it on anyway. Our spirits are
+high. And we're that desperate to get out of Luanda and hit the real
+beaches down south.
+
+| [[file:index.org][Back to chapter index.]] | [[file:part_2.org][Forward to next chapter]] |

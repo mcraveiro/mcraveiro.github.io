@@ -1,0 +1,38 @@
+#+title: Kizua Mwangola: Part 14: Peter and the Kupapata
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+
+[[file:index.org][Back to chapter index.]]
+
+Wednesday, January 27, 2010
+
+After a prolonged stay here at Nancy's, Peter decided to move to Hotel
+Praia Morena. We were all getting quite used to him (and to Mark too,
+another recent defector), but that's the gist of a guest house I
+guess - people come and people go. But that's not the story; the story
+is _how_ he got there.
+
+Like any practical South-African-come-Irish-come-German he thought the
+fastest way to move hotels was to take a kupapata (a
+bike-taxi). However, he had some luggage, so he decided to go for a
+kupapata with a trailer - something fairly common around here. He
+immediately caused chaos amongst all the staff by asking them to
+arrange one for him: surely not!! A Praia Morena guest riding on the
+back of the kupapata with the luggage?! Unheard off! Debates
+immediately started, and heated discussions too; people wanted to see
+this crazy foreigner riding with the luggage. I was even asked to take
+a picture, an undeniable proof that this event had actually happened.
+
+#+caption: Peter with Senhor Viana. (c) Marco Craveiro
+[[./pete_with_senhor_viana.JPG]]
+
+No one believed the security guards would allow them to park at the
+entrance of the hotel. In the end, the mission was successful. Whilst
+the locals were getting agitated, the foreigners didn't quite
+understand what the fuss was all about - seemed like the sensible
+thing to do, really. I guess they don't quite get the "never lose your
+style" moto.
+
+| [[file:part_13.org][Back to previous chapter]] | [[file:index.org][Back to chapter index.]] | [[file:part_15.org][Forward to next chapter]] |
