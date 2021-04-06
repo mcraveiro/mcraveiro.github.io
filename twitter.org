@@ -15,3 +15,4 @@ summary of them here.
 | Angola  | Português. Economia colonial versus economia actual.         | [[https://threadreaderapp.com/thread/1323595956445761538.html][threadapp]] |
 | Energy  | Why hydrogen may become very important in the future.        | [[https://threadreaderapp.com/thread/1288395005040775169.html][threadapp]] |
 | Emacs   | Should you learn Emacs? Probably not.                        | [[https://threadreaderapp.com/thread/1377931149947891712.html][threadapp]] |
+| Emacs   | Org-mode agenda FTW                                          | [[https://threadreaderapp.com/thread/1379389562200412160.html][threadapp]] |
