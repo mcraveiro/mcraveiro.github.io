@@ -257,7 +257,7 @@ I_C = C\frac{dv}{dt}
 Thus its not much of a leap to say:
 
 \[
-I(t) = v(t) RC\frac{dv}{dt}
+I(t) = \frac{v(t)}{R} + C\frac{dv}{dt}
 \]
 
 Now, if we now multiply both sides by R, we get:
@@ -333,7 +333,7 @@ t_{n + 1} = t_n + h
 \]
 
 \[
-y_{n+1} = y_n + h ∗ f(x_n,t_n)
+y_{n+1} = y_n + h \times f(x_n,t_n)
 \]
 
 And that's it. You just need to know where you are right now, by how

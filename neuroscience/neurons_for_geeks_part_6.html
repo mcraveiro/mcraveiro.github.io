@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-04-10 Sat 16:40 -->
+<!-- 2021-04-10 Sat 16:56 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Neurons for Computer Geeks - Part VI: LIF At Long Last!</title>
@@ -258,9 +258,9 @@ rather important to understanding Integrate-and-Fire (IAF) models. So
 lets look at that first and then return to our trail.
 </p>
 
-<div id="outline-container-orgb40fee1" class="outline-2">
-<h2 id="orgb40fee1">Resting Potential and Action Potential</h2>
-<div class="outline-text-2" id="text-orgb40fee1">
+<div id="outline-container-org9ce24d5" class="outline-2">
+<h2 id="org9ce24d5">Resting Potential and Action Potential</h2>
+<div class="outline-text-2" id="text-org9ce24d5">
 <p>
 We have spoken <a href="neurons_for_geeks_part_5.html">before</a> about the <a href="https://en.wikipedia.org/wiki/Membrane_potential">membrane potential</a> and the resting
 membrane potential, but we did so with such a high degree of
@@ -293,7 +293,7 @@ over time, clearly showing the spikes. Taking a fairly random example:
 </p>
 
 
-<div id="org90fe67e" class="figure">
+<div id="org87c2992" class="figure">
 <p><img src="./Simulation_of_hrose_neuron.png" alt="Simulation_of_hrose_neuron.png" />
 </p>
 <p><span class="figure-number">Figure 1: </span>Source: Wikipedia, Neural oscillation</p>
@@ -318,9 +318,9 @@ This spiking or firing behaviour is what we are trying to model.
 </div>
 </div>
 
-<div id="outline-container-org7c9a123" class="outline-2">
-<h2 id="org7c9a123">Historical Background</h2>
-<div class="outline-text-2" id="text-org7c9a123">
+<div id="outline-container-org4bef71f" class="outline-2">
+<h2 id="org4bef71f">Historical Background</h2>
+<div class="outline-text-2" id="text-org4bef71f">
 <p>
 As it happens, we are not the first ones to try to do so. A couple of
 years after Einstein's <i>annus mirabilis</i>, a french chap called <a href="https://en.wikipedia.org/wiki/Louis_Lapicque">Louis
@@ -368,9 +368,9 @@ already well understood.
 </div>
 </div>
 
-<div id="outline-container-org2d4e520" class="outline-2">
-<h2 id="org2d4e520">The IAF Family</h2>
-<div class="outline-text-2" id="text-org2d4e520">
+<div id="outline-container-org52154f7" class="outline-2">
+<h2 id="org52154f7">The IAF Family</h2>
+<div class="outline-text-2" id="text-org52154f7">
 <p>
 Integrate-and-Fire is actually a family of models - related because
 all of them follow Lapicque's original insights. Over time, people
@@ -405,9 +405,9 @@ LIF.
 </p>
 </div>
 
-<div id="outline-container-org500cfbf" class="outline-3">
-<h3 id="org500cfbf">IAF: Integrate-and-Fire</h3>
-<div class="outline-text-3" id="text-org500cfbf">
+<div id="outline-container-org9c084bf" class="outline-3">
+<h3 id="org9c084bf">IAF: Integrate-and-Fire</h3>
+<div class="outline-text-3" id="text-org9c084bf">
 <p>
 This the Lapicque model. It is also called a "perfect" or "non-leaky"
 neuron. The formula is as follows:
@@ -448,9 +448,9 @@ input current increases.
 </div>
 </div>
 
-<div id="outline-container-org7882c59" class="outline-3">
-<h3 id="org7882c59">Integrate-and-Fire with Refractory Period</h3>
-<div class="outline-text-3" id="text-org7882c59">
+<div id="outline-container-org9eb2a92" class="outline-3">
+<h3 id="org9eb2a92">Integrate-and-Fire with Refractory Period</h3>
+<div class="outline-text-3" id="text-org9eb2a92">
 <p>
 It is possible to extend IAF to take the refractory period into
 account. This is done by adding a period of time t ref during which
@@ -459,9 +459,9 @@ the neuron does not fire.
 </div>
 </div>
 
-<div id="outline-container-org1fa8b6f" class="outline-3">
-<h3 id="org1fa8b6f">LIF: Leaky Integrate-and-Fire</h3>
-<div class="outline-text-3" id="text-org1fa8b6f">
+<div id="outline-container-orge601c14" class="outline-3">
+<h3 id="orge601c14">LIF: Leaky Integrate-and-Fire</h3>
+<div class="outline-text-3" id="text-orge601c14">
 <p>
 One of the problems of IAF is that it will "remember" stimulus,
 regardless of the time that elapses between stimuli. By way of
@@ -486,9 +486,9 @@ We will discuss it in detail later on.
 </div>
 </div>
 
-<div id="outline-container-orgb7aa8f6" class="outline-3">
-<h3 id="orgb7aa8f6">Interlude: Leaky Integrators and Low-Pass Filters</h3>
-<div class="outline-text-3" id="text-orgb7aa8f6">
+<div id="outline-container-orgb0f91ab" class="outline-3">
+<h3 id="orgb0f91ab">Interlude: Leaky Integrators and Low-Pass Filters</h3>
+<div class="outline-text-3" id="text-orgb0f91ab">
 <p>
 <b>Update</b>: this section got moved here from an earlier post.
 </p>
@@ -518,9 +518,9 @@ filter.
 </div>
 </div>
 
-<div id="outline-container-orga4250f0" class="outline-3">
-<h3 id="orga4250f0">Exponential Integrate-and-Fire</h3>
-<div class="outline-text-3" id="text-orga4250f0">
+<div id="outline-container-orgde19211" class="outline-3">
+<h3 id="orgde19211">Exponential Integrate-and-Fire</h3>
+<div class="outline-text-3" id="text-orgde19211">
 <p>
 In this model, spike generation is exponential:
 </p>
@@ -547,9 +547,9 @@ potential crosses XT, it diverges to infinity in finite time.
 </div>
 </div>
 
-<div id="outline-container-org087d4b9" class="outline-3">
-<h3 id="org087d4b9">Others</h3>
-<div class="outline-text-3" id="text-org087d4b9">
+<div id="outline-container-orgc743a15" class="outline-3">
+<h3 id="orgc743a15">Others</h3>
+<div class="outline-text-3" id="text-orgc743a15">
 <p>
 We could continue and look into other IAF models, but you get the
 point. Each model has limitations, and as people work through those
@@ -561,9 +561,9 @@ and create new members of the IAF family.
 </div>
 </div>
 
-<div id="outline-container-orgf641fa8" class="outline-2">
-<h2 id="orgf641fa8">Explaining the LIF Formula</h2>
-<div class="outline-text-2" id="text-orgf641fa8">
+<div id="outline-container-orgca5fadf" class="outline-2">
+<h2 id="orgca5fadf">Explaining the LIF Formula</h2>
+<div class="outline-text-2" id="text-orgca5fadf">
 <p>
 Let's look at a slightly more familiar formulation of LIF:
 </p>
@@ -612,7 +612,7 @@ Thus its not much of a leap to say:
 
 <p>
 \[
-I(t) = v(t) RC\frac{dv}{dt}
+I(t) = \frac{v(t)}{R} + C\frac{dv}{dt}
 \]
 </p>
 
@@ -653,9 +653,9 @@ And with that we have enough to start thinking about code…
 </div>
 </div>
 
-<div id="outline-container-org9370003" class="outline-2">
-<h2 id="org9370003">Method in our Madness</h2>
-<div class="outline-text-2" id="text-org9370003">
+<div id="outline-container-org97b3daf" class="outline-2">
+<h2 id="org97b3daf">Method in our Madness</h2>
+<div class="outline-text-2" id="text-org97b3daf">
 <p>
 &#x2026; Or so you may think. First, a quick detour on discretisation. As
 it happens, computers are rather fond of discrete things rather than
@@ -724,7 +724,7 @@ t_{n + 1} = t_n + h
 
 <p>
 \[
-y_{n+1} = y_n + h ∗ f(x_n,t_n)
+y_{n+1} = y_n + h \times f(x_n,t_n)
 \]
 </p>
 
@@ -759,9 +759,9 @@ This method is also known as Forward Euler or Explicit Euler.
 </div>
 </div>
 
-<div id="outline-container-org7f63e26" class="outline-2">
-<h2 id="org7f63e26">What next?</h2>
-<div class="outline-text-2" id="text-org7f63e26">
+<div id="outline-container-orga0033d0" class="outline-2">
+<h2 id="orga0033d0">What next?</h2>
+<div class="outline-text-2" id="text-orga0033d0">
 <p>
 And yet again, we run out of time yet again before we can get into
 serious coding. In the next instalment we shall cover the
@@ -792,7 +792,7 @@ in the future.
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2021-04-10 Sat 16:40</p>
+<p class="date">Created: 2021-04-10 Sat 16:56</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

@@ -58,14 +58,14 @@ the nice and logical metric system, with its neat use of the decimal
 system, physicists came up instead with the Coulomb, or C, one
 definition of which is:
 
-- 1 Coloumb (1C) = 6.241 x 1018 protons
-- -1 Coloumb (-1C) = 6.241 x 1018 electrons
+- 1 Coloumb (1C) = $6.241 \times 10^{18}$ protons
+- -1 Coloumb (-1C) = $6.241 \times 10^{18}$ electrons
 
-This may sound like a very odd choice - hey, why not just 1 x 1020 or
-some other "round" number? - but just like [[http://www.quora.com/Why-is-a-kilogram-equal-to-1000-grams-but-a-kilobyte-equals-1024-bytes][a kilobyte is 1024 bytes
-rather 1000]], this wasn't done by accident either. In fact, all related
-[[https://en.wikipedia.org/wiki/International_System_of_Units][SI units]] were carefuly designed to work together and make calculations
-as easy as possible.
+This may sound like a very odd choice - hey, why not just $1 \times
+10^{20}$ or some other "round" number? - but just like [[http://www.quora.com/Why-is-a-kilogram-equal-to-1000-grams-but-a-kilobyte-equals-1024-bytes][a kilobyte is
+1024 bytes rather 1000]], this wasn't done by accident either. In fact,
+all related [[https://en.wikipedia.org/wiki/International_System_of_Units][SI units]] were carefuly designed to work together and make
+calculations as easy as possible.
 
 Anyway, whenever you see =q= or =Q= in formulas it normally refers to
 a charge in Coulombs.
@@ -295,7 +295,7 @@ We have now introduced all the main actors required for one of the
 main parts in the play: Ohm's Law. It can be stated very easily:
 
 \[
-V = R I
+V = R \times I
 \]
 
 And here's a picture to aid intuition.

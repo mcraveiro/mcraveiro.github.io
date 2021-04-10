@@ -250,7 +250,7 @@ Because of Kirchhoff's law, we can state that, for the positive
 terminal of the capacitor:
 
 \[
-ic(t) + ir(t) =0
+i_c(t) + i_r(t) =0
 \]
 
 That is: at any particular point in time =t=, the current flowing
@@ -260,13 +260,13 @@ previous formulas; after all, our section on capacitance taught us
 that:
 
 \[
-ic(t) = C\frac{dv(t)}{dt}
+i_c(t) = C\frac{dv(t)}{dt}
 \]
 
 And making use of Ohm's Law we can also say that:
 
 \[
-ir(t) = \frac{v(t)}{R}
+i_r(t) = \frac{v(t)}{R}
 \]
 
 So we can expand the original formula to:

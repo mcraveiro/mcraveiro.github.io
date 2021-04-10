@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-04-10 Sat 16:40 -->
+<!-- 2021-04-10 Sat 16:49 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Neurons for Computer Geeks - Part IV: More Electricity</title>
@@ -267,9 +267,9 @@ resistors, so lets start by having a look at this new crazy critter,
 the capacitor.
 </p>
 
-<div id="outline-container-orge9b918c" class="outline-2">
-<h2 id="orge9b918c">Capacitors</h2>
-<div class="outline-text-2" id="text-orge9b918c">
+<div id="outline-container-org2aef6e5" class="outline-2">
+<h2 id="org2aef6e5">Capacitors</h2>
+<div class="outline-text-2" id="text-org2aef6e5">
 <p>
 Just like the battery is a source of current, one can think of the
 capacitor as a temporary store of current. If you plug a capacitor
@@ -301,9 +301,9 @@ same "total" charge but different signs (i.e. <code>-q</code> and <code>+q</code
 </div>
 </div>
 
-<div id="outline-container-org3d4d9a1" class="outline-2">
-<h2 id="org3d4d9a1">Capacitance</h2>
-<div class="outline-text-2" id="text-org3d4d9a1">
+<div id="outline-container-org106af45" class="outline-2">
+<h2 id="org106af45">Capacitance</h2>
+<div class="outline-text-2" id="text-org106af45">
 <p>
 We mentioned a "maximum limit". A few things control this limit: how
 big the plates are, how much space there is between them and the kind
@@ -361,9 +361,9 @@ Capacitance is measured in SI units of Farads, denoted by the letter
 </div>
 </div>
 
-<div id="outline-container-org186dcb4" class="outline-2">
-<h2 id="org186dcb4">Capacitors and Current</h2>
-<div class="outline-text-2" id="text-org186dcb4">
+<div id="outline-container-org0e622d3" class="outline-2">
+<h2 id="org0e622d3">Capacitors and Current</h2>
+<div class="outline-text-2" id="text-org0e622d3">
 <p>
 After charging a capacitor, one may be tempted to discharge it. For
 that one could construct a simple circuit with just the
@@ -459,9 +459,9 @@ time.</li>
 </div>
 </div>
 
-<div id="outline-container-org1774b44" class="outline-2">
-<h2 id="org1774b44">Circuits: Parallel and Series</h2>
-<div class="outline-text-2" id="text-org1774b44">
+<div id="outline-container-org949c435" class="outline-2">
+<h2 id="org949c435">Circuits: Parallel and Series</h2>
+<div class="outline-text-2" id="text-org949c435">
 <p>
 The RC circuit can appear in a parallel or series form, so its a good
 time to introduce these concepts. One way we can connect circuits is
@@ -484,7 +484,7 @@ terminal - say <code>-</code>. Graphically - and pardoning my inability to use
 </p>
 
 
-<div id="org3cc8b15" class="figure">
+<div id="org9fe52d4" class="figure">
 <p><img src="./series_circuit.png" alt="series_circuit.png" />
 </p>
 </div>
@@ -511,7 +511,7 @@ cable, more or less like so:
 </p>
 
 
-<div id="orgab1c110" class="figure">
+<div id="org62bc5c3" class="figure">
 <p><img src="./parallel_circuit.png" alt="parallel_circuit.png" />
 </p>
 </div>
@@ -532,9 +532,9 @@ world of neurons.
 </div>
 </div>
 
-<div id="outline-container-org7769e1c" class="outline-2">
-<h2 id="org7769e1c">The RC Circuit</h2>
-<div class="outline-text-2" id="text-org7769e1c">
+<div id="outline-container-orgddc3f49" class="outline-2">
+<h2 id="orgddc3f49">The RC Circuit</h2>
+<div class="outline-text-2" id="text-orgddc3f49">
 <p>
 With all of this we can now move to the RC circuit. In its simplest
 form, the circuit has a source of current with a resistor and a
@@ -542,7 +542,7 @@ capacitor:
 </p>
 
 
-<div id="org6d8bd6a" class="figure">
+<div id="org2990c19" class="figure">
 <p><object type="image/svg+xml" data="./Discharging_capacitor.svg" class="org-svg">
 Sorry, your browser does not support SVG.</object>
 </p>
@@ -581,7 +581,7 @@ terminal of the capacitor:
 
 <p>
 \[
-ic(t) + ir(t) =0
+i_c(t) + i_r(t) =0
 \]
 </p>
 
@@ -595,7 +595,7 @@ that:
 
 <p>
 \[
-ic(t) = C\frac{dv(t)}{dt}
+i_c(t) = C\frac{dv(t)}{dt}
 \]
 </p>
 
@@ -605,7 +605,7 @@ And making use of Ohm's Law we can also say that:
 
 <p>
 \[
-ir(t) = \frac{v(t)}{R}
+i_r(t) = \frac{v(t)}{R}
 \]
 </p>
 
@@ -677,16 +677,16 @@ percent) of full charge or to discharge it to 37 percent (actually
 </blockquote></div>
 
 
-<div id="orgbe3a0c5" class="figure">
+<div id="org42707e1" class="figure">
 <p><img src="./32NE0159.GIF" alt="32NE0159.GIF" />
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org60dacbc" class="outline-2">
-<h2 id="org60dacbc">What next?</h2>
-<div class="outline-text-2" id="text-org60dacbc">
+<div id="outline-container-org0fe9756" class="outline-2">
+<h2 id="org0fe9756">What next?</h2>
+<div class="outline-text-2" id="text-org0fe9756">
 <p>
 Now we understand the basic behaviour of the RC Circuit, together with
 a vague understanding of the maths that describe it, we need to return
@@ -715,7 +715,7 @@ to the neuron's morphology. Stay tuned.
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2021-04-10 Sat 16:40</p>
+<p class="date">Created: 2021-04-10 Sat 16:49</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
