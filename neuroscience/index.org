@@ -37,5 +37,17 @@ level.
 
 ** Neurons for Computer Geeks
 
-Basic overview of what neurons are, and how one could go about
-modeling them.
+This is a series of blog posts that attempts to introduce all concepts
+necessary to understand one of the the simplest models of a neuron:
+LIF. The series never quite finished but it may still prove useful to
+anyone trying to get a basic overview of what neurons are, and how one
+would go about modeling them.
+
+| Part | Title                                  | Date                          | Description                                              |
+|------+----------------------------------------+-------------------------------+----------------------------------------------------------|
+| I    | [[file:neurons_for_geeks_part_1.org][A Neuron From Up On High]]               | Monday, August 31, 2015       | General overview of the neuron cell.                     |
+| II   | [[file:neurons_for_geeks_part_2.org][The Shocking Complexity of Electricity]] | Monday, August 31, 2015       | Overview of key electrical terms.                        |
+| III  | [[file:neurons_for_geeks_part_3.org][Coding Interlude]]                       | Friday, September 04, 2015    | We start a project to contain the models.                |
+| IV   | [[file:neurons_for_geeks_part_4.org][More Electricity]]                       | Saturday, September 05, 2015  | We resume our journey into core electrical concepts.     |
+| V    | [[file:neurons_for_geeks_part_5.org][Yet More Theory]]                        | Monday, September 07, 2015    | We now discuss the mathematical modeling of neurons.     |
+| VI   | [[file:neurons_for_geeks_part_6.org][LIF At Long Last!]]                      | Wednesday, September 16, 2015 | All the concepts are brought together in the LIF models. |

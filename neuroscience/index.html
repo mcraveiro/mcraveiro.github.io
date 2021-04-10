@@ -6,7 +6,7 @@
 <!-- 2021-04-10 Sat 16:39 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Neurons for Computer Geeks: Part I - A Neuron From Up On High</title>
+<title>Computational Neuroscience</title>
 <meta name="generator" content="Org mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
@@ -218,180 +218,66 @@
 </head>
 <body>
 <div id="content">
-<h1 class="title">Neurons for Computer Geeks: Part I - A Neuron From Up On High</h1>
+<h1 class="title">Computational Neuroscience</h1>
 <p>
-<a href="index.html">Back to chapter index.</a>
+<a href="../index.html">Back to home page</a>.
 </p>
 
 <p>
-Monday, August 31, 2015
+On my <a href="http://www.catb.org/~esr/jargon/html/C/copious-free-time.html">copious free time</a>, I like to learn a little bit about
+<a href="https://en.wikipedia.org/wiki/Computational_neuroscience">computational neuroscience</a>. At one point I even considered doing my
+PhD in this field, before realising my lack of knowledge of biology,
+chemistry, physics and mathematics was a bit of an
+impediment. Nonetheless, I still like learning and writing about the
+subject.
 </p>
 
+<div id="outline-container-orged52949" class="outline-2">
+<h2 id="orged52949">Other people's material</h2>
+<div class="outline-text-2" id="text-orged52949">
 <p>
-As any computer geek would tell you, computer science is great in and
-of itself and many of us could live long and contented lives inside
-that box. But things certainly tend to become interesting when there
-is a whole problem domain to model, and doubly so when that domain is
-outside of our comfort zone. As it happens, I have managed to step
-outside said zone - rather, quite far outside - so it seemed like a
-good idea to chronicle these adventures here.
+My main a hero in this field, <a href="https://en.wikipedia.org/wiki/Jeff_Hawkins">Jeff Hawkins</a> (he of Palm fame), and I
+highly recommend both of his books, which target laypeople like me and
+are at the "popular science" level.
 </p>
 
-<p>
-The journey we are about to embark starts with a deceptively simple
-mission: to understand how one can use computers to model neurons. The
-intended audience of these posts is anyone who loves coding but has no
-idea about electricity, circuits, cells and so on - basically someone
-very much like me. We shall try to explain, at least to a degree, all
-of the required core concepts in order to start coding. As it turns
-out, there are quite a few.
-</p>
+<ul class="org-ul">
+<li><a href="https://numenta.com/resources/on-intelligence/">On Intelligence</a></li>
+<li><a href="https://numenta.com/a-thousand-brains-by-jeff-hawkins">A Thousand Brains: A New Theory of Intelligence</a></li>
+</ul>
 
 <p>
-But hey, as <a href="http://skeptics.stackexchange.com/questions/8742/did-einstein-say-if-you-cant-explain-it-simply-you-dont-understand-it-well-en">they say</a>, "If you can't explain something to a six
-year-old, you really don't understand it yourself". So lets see if I
-got it or not.
+If you are interested in more "serious" academic material (but still
+introductory), I also recommend:
 </p>
 
-<div id="outline-container-org910c15f" class="outline-2">
-<h2 id="org910c15f">I'm a Cell, Get Me Out Of Here!</h2>
-<div class="outline-text-2" id="text-org910c15f">
-<p>
-A neuron is a cell, so it makes sense to start with cells. Cells are a
-basic building block in biology and can be considered as the smallest
-unit of a living organism - at least for our purposes, if nothing
-else. The key idea behind a cell is as obvious as you'd like: there is
-the inside, the outside, and the thing that separates both.
-</p>
-
-<p>
-Of course, this being biology, we need to give it complicated
-names. Accordingly, the inside of the cell is the cytoplasm and the
-thing that separates the cell from the outside world is the
-membrane. You can think of it as a tiny roundy-box-like thing, with
-some gooey stuff inside. The material of the box is the membrane. The
-gooey stuff is the cytoplasm. When we start describing the different
-cellular structures - as we are doing here - we are talking about the
-cell's morphology.
-</p>
-
-<p>
-Living beings are made up of many, many cells - according to some
-estimates, a human body would have several trillion - and cells
-themselves come in many, many kinds. Fortunately, we are interested in
-just one kind: the neuron.
-</p>
+<ul class="org-ul">
+<li><a href="http://www.cambridge.org/us/academic/subjects/life-sciences/neuroscience/principles-computational-modelling-neuroscience">Principles of Computational Modelling in Neuroscience</a>: "bible" of
+the subject for newcomers.</li>
+<li><a href="http://klewel.com/conferences/epfl-neural-networks/index.php?talkID=1">Neural networks and biological modeling</a>: series of lectures by
+Gerstner.</li>
+</ul>
 </div>
 </div>
 
-<div id="outline-container-org3e404be" class="outline-2">
-<h2 id="org3e404be">The Neuron Cell</h2>
-<div class="outline-text-2" id="text-org3e404be">
+<div id="outline-container-org9295c23" class="outline-2">
+<h2 id="org9295c23">My material</h2>
+<div class="outline-text-2" id="text-org9295c23">
 <p>
-The neuron is a nerve cell. Of course, there are many, many kinds of
-neurons - nature just seems to love complexity - but they all share
-things in common, and those things define their neuron-ness.
-</p>
-
-<p>
-Unlike the "typical" cell we described above (i.e. "roundy-box-like
-thing"), the neuron is more like a roundy-box-like thing with some
-branches coming out of it. The box-like thing is the cell body and is
-called soma. There are two types of branches: axons and dendrites. A
-dendrite tends to be short, and it branches like a tree with a very
-small trunk. The axon tends to be long and it also branches off like a
-tree, but with a very long trunk. As we said, there are many kinds of
-neurons, but a fair generalisation is that they tend to have few axons
-(one or maybe a couple) and many dendrites (in the thousands).
-</p>
-
-
-<div id="org422db9f" class="figure">
-<p><img src="./neuron_cell.png" alt="neuron_cell.png" />
-</p>
-<p><span class="figure-number">Figure 1: </span>Model of a neuron cell. Source: What is a Neuron?</p>
-</div>
-
-<p>
-This very basic morphology is already sufficient to allows to start to
-think of a neuron as a "computing device" - a strange kind of device
-where the dendrites provide inputs and the axon outputs. The neuron
-receives all these inputs, performs some kind of computation over
-them, and produces an output.
-</p>
-
-<p>
-The next logical question for a computer scientist is, then: "where do
-the outputs come from and where do they go?". Imagining an idealised
-neuron, the dendrites would be "connecting" to other dendrites or to
-axons. At this juncture (pun not intended), we need to expand on what
-exactly these "connections" are. In truth, its not that the axon binds
-directly to the dendrite; there is always a gap between them. But this
-gap is a special kind of gap, first because it is a very small gap and
-second because it is one over which things can travel, from the axon
-into the dendrite. This kind of connectivity between neurons is called
-a synapse.
-</p>
-
-<p>
-From this it is an easy leap to imagine that these sets of neurons
-connected to other neurons begin to form "networks" of connectivity,
-and these networks will also have computational-device-like
-properties, just like a neuron. These are called neural networks. Our
-brain happens to be one of these "neural networks", and a pretty large
-one at that: it can have as many as <a href="http://www.nature.com/scitable/blog/brain-metrics/are_there_really_as_many">80-100 billion neurons</a>, connected
-over some 1 quadrillion synapses. In these days of financial billions
-and trillions, it is easy to be fooled into thinking 100 billion is
-not a very large number, so to get a sense of perspective lets compare
-it to another large network. The biggest and fastest growing
-human-made network is the Internet, estimated to have some <a href="http://www.gartner.com/newsroom/id/2905717">5 billion
-connected devices</a> but less than <a href="http://bgp.potaroo.net/">600k connections in its core</a> - and yet
-we are already <a href="http://research.dyn.com/2014/08/internet-512k-global-routes/">creacking at the seams</a>.
+All of the material I have written is at the interested layperson
+level.
 </p>
 </div>
-</div>
 
-<div id="outline-container-orga0f2fa5" class="outline-2">
-<h2 id="orga0f2fa5">The Need To Go Lower</h2>
-<div class="outline-text-2" id="text-orga0f2fa5">
+<div id="outline-container-orgd89afac" class="outline-3">
+<h3 id="orgd89afac">Neurons for Computer Geeks</h3>
+<div class="outline-text-3" id="text-orgd89afac">
 <p>
-Alas, we must dig deeper before we start to understand how these
-things behave in groups. Our skimpy first pass at the neuron
-morphology left a lot of details out, which are required to understand
-how they behave. As we explained, neurons have axons and dendrites,
-and these are responsible for hooking them together. However, what is
-interesting is what they talk about once they are hooked.
-</p>
-
-<p>
-A neuron is can be thought of as an electrical device, and much of its
-power (sorry!) stems from this. In general, as computer scientists, we
-don't like to get too close to the physical messiness of the world of
-hardware; we deem it sufficient to understand some high-level
-properties, but rarely do we want to concern ourselves with
-transistors or even - regrettably - registers or pipelines in the
-CPU. With neurons, we can't get away with it. We need to understand
-the hardware - or better, the wetware - and for that we have to go
-very low-level.
-</p>
-
-<p>
-We started off by saying cells have a membrane that separates the
-outside world from the cytoplasm. That was a tad of an
-oversimplification; after all, if the membrane did not allow anything
-in, how would the cell continue to exist - or even come about in the
-first place? In practice these membranes are permeable - or to be
-precise, semi-permeable. This just means that it allows some stuff in
-and some stuff out, under controlled circumstances. This is how a cell
-gets energy in to do its thing and how it expels its unwanted content
-out. Once things started to move in and out selectively, something
-very interesting can start to happen: the build up of "electric
-potential". However, rather unfortunately, in order to understand what
-we mean by this, we need to cover the fundamentals of electricity.
-</p>
-
-<p>
-Onward and downwards we march. Stay tuned for Part II.
+This is a series of blog posts that attempts to introduce all concepts
+necessary to understand one of the the simplest models of a neuron:
+LIF. The series never quite finished but it may still prove useful to
+anyone trying to get a basic overview of what neurons are, and how one
+would go about modeling them.
 </p>
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
@@ -401,14 +287,64 @@ Onward and downwards we march. Stay tuned for Part II.
 <col  class="org-left" />
 
 <col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
 </colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Part</th>
+<th scope="col" class="org-left">Title</th>
+<th scope="col" class="org-left">Date</th>
+<th scope="col" class="org-left">Description</th>
+</tr>
+</thead>
 <tbody>
 <tr>
-<td class="org-left"><a href="index.html">Back to chapter index.</a></td>
-<td class="org-left"><a href="neurons_for_geeks_part_2.html">Forward to next chapter</a></td>
+<td class="org-left">I</td>
+<td class="org-left"><a href="neurons_for_geeks_part_1.html">A Neuron From Up On High</a></td>
+<td class="org-left">Monday, August 31, 2015</td>
+<td class="org-left">General overview of the neuron cell.</td>
+</tr>
+
+<tr>
+<td class="org-left">II</td>
+<td class="org-left"><a href="neurons_for_geeks_part_2.html">The Shocking Complexity of Electricity</a></td>
+<td class="org-left">Monday, August 31, 2015</td>
+<td class="org-left">Overview of key electrical terms.</td>
+</tr>
+
+<tr>
+<td class="org-left">III</td>
+<td class="org-left"><a href="neurons_for_geeks_part_3.html">Coding Interlude</a></td>
+<td class="org-left">Friday, September 04, 2015</td>
+<td class="org-left">We start a project to contain the models.</td>
+</tr>
+
+<tr>
+<td class="org-left">IV</td>
+<td class="org-left"><a href="neurons_for_geeks_part_4.html">More Electricity</a></td>
+<td class="org-left">Saturday, September 05, 2015</td>
+<td class="org-left">We resume our journey into core electrical concepts.</td>
+</tr>
+
+<tr>
+<td class="org-left">V</td>
+<td class="org-left"><a href="neurons_for_geeks_part_5.html">Yet More Theory</a></td>
+<td class="org-left">Monday, September 07, 2015</td>
+<td class="org-left">We now discuss the mathematical modeling of neurons.</td>
+</tr>
+
+<tr>
+<td class="org-left">VI</td>
+<td class="org-left"><a href="neurons_for_geeks_part_6.html">LIF At Long Last!</a></td>
+<td class="org-left">Wednesday, September 16, 2015</td>
+<td class="org-left">All the concepts are brought together in the LIF models.</td>
 </tr>
 </tbody>
 </table>
+</div>
 </div>
 </div>
 </div>

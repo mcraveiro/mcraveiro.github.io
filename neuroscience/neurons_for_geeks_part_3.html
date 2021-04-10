@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-04-10 Sat 11:49 -->
+<!-- 2021-04-10 Sat 16:40 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Neurons for Computer Geeks - Part III: Coding Interlude</title>
@@ -257,9 +257,9 @@ All the code is available in GitHub under <a href="https://github.com/mcraveiro/
 look at the project structure.
 </p>
 
-<div id="outline-container-org88662cf" class="outline-2">
-<h2 id="org88662cf">CMake</h2>
-<div class="outline-text-2" id="text-org88662cf">
+<div id="outline-container-org1bfb3e3" class="outline-2">
+<h2 id="org1bfb3e3">CMake</h2>
+<div class="outline-text-2" id="text-org1bfb3e3">
 <p>
 We just took a slimmed down version of the Dogen build system to build
 this code. We could have gotten away with a much simpler CMake setup,
@@ -283,9 +283,9 @@ that matters for this article.</li>
 </div>
 </div>
 
-<div id="outline-container-org6f26a99" class="outline-2">
-<h2 id="org6f26a99"><code>ohms_law</code> Project</h2>
-<div class="outline-text-2" id="text-org6f26a99">
+<div id="outline-container-org2eeddee" class="outline-2">
+<h2 id="org2eeddee"><code>ohms_law</code> Project</h2>
+<div class="outline-text-2" id="text-org2eeddee">
 <p>
 The project is made up of two classes, in files <code>calculator.[hc]pp</code>
 and <code>view.[hc]pp</code>. The names are fairly arbitrary but they try to
@@ -294,9 +294,9 @@ separate View from Model: the user interface is in view and the
 </p>
 </div>
 
-<div id="outline-container-orgb73a476" class="outline-3">
-<h3 id="orgb73a476">The View</h3>
-<div class="outline-text-3" id="text-orgb73a476">
+<div id="outline-container-org2c477f6" class="outline-3">
+<h3 id="org2c477f6">The View</h3>
+<div class="outline-text-3" id="text-org2c477f6">
 <p>
 Lets have a quick look at view. In the header file we simply define a
 Wt application with a few widgets:
@@ -350,9 +350,9 @@ handler that performs the "computations" when the button is clicked.
 </div>
 </div>
 
-<div id="outline-container-org32d4a77" class="outline-3">
-<h3 id="org32d4a77">The Model</h3>
-<div class="outline-text-3" id="text-org32d4a77">
+<div id="outline-container-orgb90c4af" class="outline-3">
+<h3 id="orgb90c4af">The Model</h3>
+<div class="outline-text-3" id="text-orgb90c4af">
 <p>
 The model is equally as simple as the view. It is made up of a single
 class, calculator, whose job is to compute the voltage using Ohm's
@@ -375,9 +375,9 @@ library as part of this series of articles.
 </div>
 </div>
 
-<div id="outline-container-org5dbe4f1" class="outline-2">
-<h2 id="org5dbe4f1">Compiling and Running</h2>
-<div class="outline-text-2" id="text-org5dbe4f1">
+<div id="outline-container-org0eeb2ad" class="outline-2">
+<h2 id="org0eeb2ad">Compiling and Running</h2>
+<div class="outline-text-2" id="text-org0eeb2ad">
 <p>
 If you are on a debian-based distribution, you can do the following
 steps to get the code up and running. First install the dependencies:
@@ -441,7 +441,7 @@ the promise that the real code will come later on.
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2021-04-10 Sat 11:49</p>
+<p class="date">Created: 2021-04-10 Sat 16:40</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
