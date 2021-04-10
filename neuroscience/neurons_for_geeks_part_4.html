@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-04-10 Sat 12:10 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Neurons for Computer Geeks - Part IV: More Electricity</title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Neurons for Computer Geeks - Part IV: More Electricity</h1>
+<p>
+<a href="index.html">Back to chapter index.</a>
+</p>
+
+<p>
+Saturday, September 05, 2015
+</p>
+
+<p>
+<a href="neurons_for_geeks_part_1.html">Part I</a> of this series looked at a neuron from above; <a href="neurons_for_geeks_part_2.html">Part II</a> attempted
+to give us the fundamental building blocks in electricity required to
+get us on the road to modeling neurons. We did a quick interlude with
+a bit of coding in <a href="neurons_for_geeks_part_3.html">part III</a> but now, sadly, we must return to boring
+theory once more.
+</p>
+
+<p>
+Now that we grok the basics of electricity, we need to turn our
+attention to the RC circuit. As we shall see, this circuit is of
+particular interest when modeling neurons. The RC circuit is so called
+because it is a circuit, and it is composed of a Resistor and a
+Capacitor. We've already got some vague understanding of circuits and
+resistors, so lets start by having a look at this new crazy critter,
+the capacitor.
+</p>
+
+<div id="outline-container-org1acb6c8" class="outline-2">
+<h2 id="org1acb6c8">Capacitors</h2>
+<div class="outline-text-2" id="text-org1acb6c8">
+<p>
+Just like the battery is a source of current, one can think of the
+capacitor as a temporary store of current. If you plug a capacitor
+into a circuit with just a battery, it will start to "accumulate"
+charge over time, up to a "maximum limit". But how exactly does this
+process work?
+</p>
+
+<p>
+In <a href="https://www.khanacademy.org/science/physics/circuits-topic/circuits-with-capacitors/v/capacitors-and-capacitance">simple terms</a>, the capacitor is made up of two metal plates, one of
+which will connect to the positive end of the battery and another
+which connects to the negative end. At the positive end, the metal
+plate will start to lose negative charges because these are attracted
+to the positive end of the battery. This will make this metal plate
+positively charged. Similarly, at the negative end, the plate will
+start to accumulate negative charges. This happens because the
+electrons are repelled by the negative end of the battery. Whilst this
+process is taking place, the capacitor is charging.
+</p>
+
+<p>
+At some point, the process reaches a kind of equilibrium, whereby the
+electrons in the positively charged plate are attracted equally to the
+plate as they are to the positive end of the battery, and thus stop
+flowing. At this point we say the capacitor is charged. It is
+interesting to note that both plates of the capacitor end up with the
+same "total" charge but different signs (i.e. <code>-q</code> and <code>+q</code>).
+</p>
+</div>
+</div>
+
+<div id="outline-container-org39b5f13" class="outline-2">
+<h2 id="org39b5f13">Capacitance</h2>
+<div class="outline-text-2" id="text-org39b5f13">
+<p>
+We mentioned a "maximum limit". A few things control this limit: how
+big the plates are, how much space there is between them and the kind
+of material we place between them, if any. The bigger the plates and
+the closer they are - without touching - the more you can store in the
+capacitor. The material used for the plates is, of course, of great
+importance too - it must be some kind of metal good at conducting.
+</p>
+
+<p>
+In a more technical language, this notion of a limit is captured by
+the concept of capacitance, and is given by the following formula:
+</p>
+
+<p>
+\[
+C = \frac{q}{V}
+\]
+</p>
+
+<p>
+Lets break it down to its components to see what the formula is trying
+to tell us. The role of <code>V</code> is to inform us about the potential
+difference between the two plates. This much is easy to grasp; since
+one plate is positively charged and other negatively charged, it is
+therefore straightforward to imagine that a charge will have a
+different electric potential in each plate, and thus that there will
+be an electric potential difference between them. <code>q</code> tells us about
+the magnitude of the charges that we placed on the plates -
+i.e. ignoring the sign. It wouldn't be to great a leap to conceive
+that plates with a larger surface area would probably have more
+"space" for charges and so a larger <code>q</code> - and vice-versa.
+</p>
+
+<p>
+Capacitance is then the ratio between these two things; a measure of
+how much electric charge one can store for a given potential
+difference. It may not be very obvious from this formula, but
+capacitance is constant. That is to say, a given capacitor has a
+capacitance, influenced by the properties described above. This
+formula does not describe the discharging or charging process - but of
+course, capacitance is used in the formulas that describe those.
+</p>
+
+<p>
+Capacitance is measured in SI units of Farads, denoted by the letter
+<code>F</code>. A farad is 1 coulomb over 1 volt:
+</p>
+
+<p>
+\[
+1F = \frac{C}{V}
+\]
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd117c93" class="outline-2">
+<h2 id="orgd117c93">Capacitors and Current</h2>
+<div class="outline-text-2" id="text-orgd117c93">
+<p>
+After charging a capacitor, one may be tempted to discharge it. For
+that one could construct a simple circuit with just the
+capacitor. Once the circuit is closed, the negative charges will start
+to flow to the positively charged plate, at full speed - minus the
+resistance of the material. Soon enough both plates would be made
+neutral. At first glance, this may appear to be very similar to our
+previous circuit with a battery. However, there is one crucial
+difference: the battery circuit had a constant voltage and a constant
+current (for a theoretical battery) whereas a circuit with a
+discharging capacitor has voltage and current that decay over time. By
+"decaying", all we really mean is that we start at some arbitrarily
+high value and we move towards zero over a period of time. This makes
+intuitive sense: you cannot discharge the capacitor forever; and, as
+you discharge it, the voltage starts to decrease - for there are less
+charges in the plates and so less potential difference - and
+similarly, so does the current - for there is less "pressure" to make
+the charges flow.
+</p>
+
+<p>
+This intuition is formally captured by the following equation:
+</p>
+
+<p>
+\[
+I(t) = C\frac{dV(t)}{dt}
+\]
+</p>
+
+<p>
+I'm rather afraid that, at this juncture, we have no choice but to
+introduce Calculus. A proper explanation of Calculus a tad outside the
+remit of these posts, so instead we will have to make do with some
+common-sense but extremely hand-waved interpretations of the ideas
+behind it. If you are interested in a light-hearted but still
+comprehensive treatment of the subject, perhaps <a href="http://betterexplained.com/articles/a-gentle-introduction-to-learning-calculus/">A Gentle Introduction
+To Learning Calculus</a> may be to your liking.
+</p>
+
+<p>
+Let's start by taking a slightly different representation of the
+formula above and then compare these two formulas.
+</p>
+
+<p>
+\[
+i = C\frac{dv}{dt}
+\]
+</p>
+
+<p>
+In the first case we are talking about the current <code>I</code>, which normally
+is some kind of average current over some unspecified period. Up to
+now, time didn't really matter - so we got away with just talking
+about <code>I</code> in these general terms. This was the case with the Ohm's Law
+in <a href="neurons_for_geeks_part_2.html">part II</a>. However, as we've seen, it is not so with capacitors - so
+we need to make the current specific to a point in time. For that we
+supply an "argument" to <code>I</code> - <code>I(t)</code>; here, a mathematician would say
+that that <code>I</code> is a <i>function of time</i>. In the second case, we make use
+of <code>i</code>, which is the instantaneous current through the capacitor. The
+idea is that, somehow, we are able to know - for any point in time -
+what the instantaneous current is.
+</p>
+
+<p>
+How we achieve that is via the magic of Calculus. The expression
+\(\frac{dv}{dt}\) in the second formula provides us with the
+instantaneous rate of change of the voltage over time. The same notion
+can be applied to <code>V</code>, as per first formula.
+</p>
+
+<p>
+These formulae may sound awfully complicated, but what they are trying
+to tell us is that the capacitor's current has the following
+properties:
+</p>
+
+<ul class="org-ul">
+<li>it varies as a "function" of time; that is to say, different time
+points have different currents. Well, that's pretty consistent with
+our simplistic notion of a decaying current.</li>
+<li>it is "scaled" by the capacitor's capacitance <code>C</code>; "bigger"
+capacitors can hold on to higher currents for longer when compared
+to "smaller" capacitors.</li>
+<li>the change in electric potential difference varies as a function of
+time. This is subtle but also makes sense: we imagined some kind of
+decay for our voltage, but there was nothing to say the decay would
+remain constant until we reached zero. This formula tells us it does
+not; voltage may decrease faster or slower at different points in
+time.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org6cb971c" class="outline-2">
+<h2 id="org6cb971c">Circuits: Parallel and Series</h2>
+<div class="outline-text-2" id="text-org6cb971c">
+<p>
+The RC circuit can appear in a parallel or series form, so its a good
+time to introduce these concepts. One way we can connect circuits is
+in series; that is, all components are connected along a single path,
+such that the current flows through all of them, one after the
+other. If any component fails, the flow will cease.
+</p>
+
+<p>
+This is best understood by way of example. Lets imagine the canonical
+example of a battery - our old friend the 1.5V AA battery - and a
+three small light bulbs. A circuit that connects them in series would
+be made up of a cable segment plugged onto one of the battery's
+terminals - say <code>+</code>, then connected to the first light bulb. A second
+cable segment would then connect this light bulb to another light
+bulb, followed by another segment and another light bulb. Finally, a
+cable segment would connect the light build to the other battery
+terminal - say <code>-</code>. Graphically - and pardoning my inability to use
+<a href="https://wiki.gnome.org/Apps/Dia/">Dia</a> to create circuit diagrams - it would look more or less like this:
+</p>
+
+
+<div id="org41da068" class="figure">
+<p><img src="./series_circuit.png" alt="series_circuit.png" />
+</p>
+</div>
+<p>
+This circuit has a few interesting properties. First, if any of the
+light bulbs fail, all of them will stop working because the circuit is
+no longer closed. Second, if one were to add more and more light
+bulbs, the brightness of each light bulb will start to decrease. This
+is because each light bulb is in effect a resistor - the light shining
+being a byproduct of said resistance - and so they are each decreasing
+the current. So it is that in a series circuit the total resistance is
+given by the sum of all individual resistances, and the current is the
+same for all elements.
+</p>
+
+<p>
+Parallel circuits are a bit different. The idea is that two or more
+components are connected to the circuit in parallel, i.e. there are
+two or more paths along which the current can flow at the same
+time. So we'd have to modify our example to have a path to each of the
+light bulbs which exists in parallel to the main path - quite
+literally a segment of cable that connects the other segments of
+cable, more or less like so:
+</p>
+
+
+<div id="org6bf66b6" class="figure">
+<p><img src="./parallel_circuit.png" alt="parallel_circuit.png" />
+</p>
+</div>
+<p>
+Here you can see that if a bulb fails, there is still a closed loop in
+which current can flow, so the other bulbs should be unaffected. This
+also means that the voltage is the same for all components in the
+circuit. Current and resistance are now "relative" to each component,
+and it is possible to compute the overall current for the circuit via
+Kirchhoff's Current Law. Simplifying it, it means that the current for
+the circuit is the sum of all currents flowing through each component.
+</p>
+
+<p>
+This will become significant later on when we finally return to the
+world of neurons.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4170c8c" class="outline-2">
+<h2 id="org4170c8c">The RC Circuit</h2>
+<div class="outline-text-2" id="text-org4170c8c">
+<p>
+With all of this we can now move to the RC circuit. In its simplest
+form, the circuit has a source of current with a resistor and a
+capacitor:
+</p>
+
+
+<div id="org78fb2c5" class="figure">
+<p><object type="image/svg+xml" data="./Discharging_capacitor.svg" class="org-svg">
+Sorry, your browser does not support SVG.</object>
+</p>
+<p><span class="figure-number">Figure 3: </span>Source: Wikipedia, RC circuit</p>
+</div>
+
+<p>
+Let's try to understand how the capacitor's voltage will behave over
+time. This circuit is rather similar to the one we analysed when
+discussing capacitance, with the exception that we now have a resistor
+as well. But in order to understand this, we must return to
+Kirchhoff's current law, which we hand-waved a few paragraphs
+ago. Wikipedia tells us that:
+</p>
+
+<div class="epigraph"><blockquote>
+<p>
+The algebraic sum of currents in a network of conductors meeting at a
+point is zero.
+</p>
+
+</blockquote></div>
+
+<p>
+One way to understand this statement is to think that the total
+quantity of current entering a junction point must be identical to the
+total quantity leaving that junction point. If we consider entering to
+be positive and leaving to be negative, that means that adding the two
+together must yield zero.
+</p>
+
+<p>
+Because of Kirchhoff's law, we can state that, for the positive
+terminal of the capacitor:
+</p>
+
+<p>
+\[
+ic(t) + ir(t) =0
+\]
+</p>
+
+<p>
+That is: at any particular point in time <code>t</code>, the current flowing
+through the capacitor added to the current flowing through the
+resistor must sum to zero. However, we can now make use of the
+previous formulas; after all, our section on capacitance taught us
+that:
+</p>
+
+<p>
+\[
+ic(t) = C\frac{dv(t)}{dt}
+\]
+</p>
+
+<p>
+And making use of Ohm's Law we can also say that:
+</p>
+
+<p>
+\[
+ir(t) = \frac{v(t)}{R}
+\]
+</p>
+
+<p>
+So we can expand the original formula to:
+</p>
+
+<p>
+\[
+C\frac{dv(t)}{dt} + \frac{v(t)}{R}
+\]
+</p>
+
+<p>
+Or:
+</p>
+
+<p>
+\[
+C\frac{dV}{dt} + \frac{V}{R}
+\]
+</p>
+
+<p>
+I'm not actually going to follow the remaining steps to compute <code>V</code>,
+but you can see them <a href="http://www.digilentinc.com/classroom/realanalog/text/Chapter_2p4p2.pdf">here</a> and they are fairly straighforward, or at
+least as straightforward as calculus gets. The key point is, when you
+solve the differential equation for <code>V</code>, you get:
+</p>
+
+<p>
+\[
+V(t) = V_0e^{\frac{−t}{RC}}
+\]
+</p>
+
+<p>
+With \(V_0\) being voltage when time is zero. This is called the
+circuit's <i>natural response</i>. This equation is <i>very important</i>. Note
+that we are now able to describe the behaviour of voltage over time
+with just a few inputs: the starting voltage, the time, the resistance
+and the capacitance.
+</p>
+
+<p>
+A second thing falls off of this equation: the RC Time constant, or
+<code>τ</code>. It is given by:
+</p>
+
+<p>
+\[
+τ = RC
+\]
+</p>
+
+<p>
+The Time Constant is described in a very useful way <a href="http://www.tpub.com/neets/book2/3d.htm">in this page</a>, so
+I'll just quote them and their chart here:
+</p>
+
+<div class="epigraph"><blockquote>
+<p>
+The time required to charge a capacitor to 63 percent (actually 63.2
+percent) of full charge or to discharge it to 37 percent (actually
+36.8 percent) of its initial voltage is known as the TIME CONSTANT
+(TC) of the circuit.
+</p>
+
+</blockquote></div>
+
+
+<div id="orgb0adcf6" class="figure">
+<p><img src="./32NE0159.GIF" alt="32NE0159.GIF" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgebde866" class="outline-2">
+<h2 id="orgebde866">What next?</h2>
+<div class="outline-text-2" id="text-orgebde866">
+<p>
+Now we understand the basic behaviour of the RC Circuit, together with
+a vague understanding of the maths that describe it, we need to return
+to the neuron's morphology. Stay tuned.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><a href="neurons_for_geeks_part_3.html">Back to previous chapter</a></td>
+<td class="org-left"><a href="index.html">Back to chapter index.</a></td>
+<td class="org-left"><a href="neurons_for_geeks_part_5.html">Forward to next chapter</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2021-04-10 Sat 12:10</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

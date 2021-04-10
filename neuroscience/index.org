@@ -1,0 +1,41 @@
+#+title: Computational Neuroscience
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+
+[[file:../index.org][Back to home page]].
+
+On my [[http://www.catb.org/~esr/jargon/html/C/copious-free-time.html][copious free time]], I like to learn a little bit about
+[[https://en.wikipedia.org/wiki/Computational_neuroscience][computational neuroscience]]. At one point I even considered doing my
+PhD in this field, before realising my lack of knowledge of biology,
+chemistry, physics and mathematics was a bit of an
+impediment. Nonetheless, I still like learning and writing about the
+subject.
+
+* Other people's material
+
+My main a hero in this field, [[https://en.wikipedia.org/wiki/Jeff_Hawkins][Jeff Hawkins]] (he of Palm fame), and I
+highly recommend both of his books, which target laypeople like me and
+are at the "popular science" level.
+
+- [[https://numenta.com/resources/on-intelligence/][On Intelligence]]
+- [[https://numenta.com/a-thousand-brains-by-jeff-hawkins][A Thousand Brains: A New Theory of Intelligence]]
+
+If you are interested in more "serious" academic material (but still
+introductory), I also recommend:
+
+- [[http://www.cambridge.org/us/academic/subjects/life-sciences/neuroscience/principles-computational-modelling-neuroscience][Principles of Computational Modelling in Neuroscience]]: "bible" of
+  the subject for newcomers.
+- [[http://klewel.com/conferences/epfl-neural-networks/index.php?talkID=1][Neural networks and biological modeling]]: series of lectures by
+  Gerstner.
+
+* My material
+
+All of the material I have written is at the interested layperson
+level.
+
+** Neurons for Computer Geeks
+
+Basic overview of what neurons are, and how one could go about
+modeling them.

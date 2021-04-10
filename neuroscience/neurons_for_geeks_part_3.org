@@ -1,0 +1,167 @@
+#+title: Neurons for Computer Geeks - Part III: Coding Interlude
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+
+[[file:index.org][Back to chapter index.]]
+
+Friday, September 04, 2015
+
+If you are anything like me, the first two parts of this series have
+already bored you silly with theory ([[file:neurons_for_geeks_part_1.org][Part I]], [[file:neurons_for_geeks_part_2.org][Part II]]) and you are now
+hankering for some code - any code - to take away the pain. So part
+III is here to do exactly that. However, let me prefix that grandiose
+statement by saying this is not the best code you will ever
+see. Rather, its just a quick hack to introduce a few of the
+technologies we will make use of for the remainder of these series,
+namely:
+
+- [[http://www.cmake.org/][CMake]] and [[http://martine.github.io/ninja/][Ninja]]: this is how we will build our code.
+- [[http://www.webtoolkit.eu/wt][Wt]]: provides a quick way to knock-up a web frontend for C++ code.
+- [[http://www.boost.org/][Boost]]: in particular [[http://www.boost.org/doc/libs/1_59_0/doc/html/boost_units.html][Boost Units]] and later on [[http://www.boost.org/doc/libs/1_59_0/libs/numeric/odeint/doc/html/index.html][Boost OdeInt]]. Provides
+  us with the foundations for our numeric work.
+
+What I mean by a "quick hack" is: there is no validation, no unit
+tests, no "sound architecture" and none of the things you'd expect
+from production code. But it should serve as an introduction to
+modeling in C++.
+
+All the code is available in GitHub under [[https://github.com/mcraveiro/neurite][neurite]]. Lets have a quick
+look at the project structure.
+
+* CMake
+
+We just took a slimmed down version of the Dogen build system to build
+this code. We could have gotten away with a much simpler CMake setup,
+but I intend to use it for the remainder of this series so that's why
+its a bit more complex than what you'd expect. It is made up of the
+following files:
+
+- Top-level =CMakeLists.txt=: ensures all of the dependencies can be
+  found and configured for building, sets up the version number and
+  debug/release builds.
+- =build/cmake=: any Find* scripts that are not supplied with the
+  CMake distribution. We Google for these and copied them here.
+- =projects/CMakeLists.txt=: sets up all of the compiler and linker
+  flags we need to build the project. Uses pretty aggressive flags
+  such as -Wall and -Werror.
+- =projects/ohms_law/src/CMakeLists.txt=: our actual project, the bit
+  that matters for this article.
+
+* =ohms_law= Project
+
+The project is made up of two classes, in files =calculator.[hc]pp=
+and =view.[hc]pp=. The names are fairly arbitrary but they try to
+separate View from Model: the user interface is in view and the
+"number crunching" is in calculator.
+
+** The View
+
+Lets have a quick look at view. In the header file we simply define a
+Wt application with a few widgets:
+
+#+begin_src c++
+class view : public Wt::WApplication {
+public:
+  view(const Wt::WEnvironment& env);
+
+private:
+  Wt::WLineEdit* current_;
+  Wt::WLineEdit* resistance_;
+  Wt::WText* result_;
+};
+#+end_src
+
+It is implemented in an equally trivial manner. We just setup the
+widgets and hook them together. Finally, we create a trivial event
+handler that performs the "computations" when the button is clicked.
+
+#+begin_src c++
+view::view(const Wt::WEnvironment& env) : Wt::WApplication(env) {
+  setTitle("Ohm's Law Calculator");
+
+  root()->addWidget(new Wt::WText("Current: "));
+  current_ = new Wt::WLineEdit(root());
+  current_->setValidator(new Wt::WDoubleValidator());
+  current_->setFocus();
+
+  root()->addWidget(new Wt::WText("Resistance: "));
+  resistance_ = new Wt::WLineEdit(root());
+  resistance_->setValidator(new Wt::WDoubleValidator());
+
+  Wt::WPushButton* button = new Wt::WPushButton("Calculate!", root());
+  button->setMargin(5, Wt::Left);
+  root()->addWidget(new Wt::WBreak());
+  result_ = new Wt::WText(root());
+
+  button->clicked().connect([&](Wt::WMouseEvent&) {
+      const auto current(boost::lexical_cast<double>(current_->text()));
+      const auto resistance(boost::lexical_cast<double>(resistance_->text()));
+
+      calculator c;
+      const auto voltage(c.voltage(resistance, current));
+      const auto s(boost::lexical_cast<std::string>(voltage));
+      result_->setText("Voltage: " + s);
+    });
+}
+#+end_src
+
+** The Model
+
+The model is equally as simple as the view. It is made up of a single
+class, calculator, whose job is to compute the voltage using Ohm's
+Law. It does this by making use of Boost Units. This is obviously not
+necessary, but we wanted to take the opportunity to explore this
+library as part of this series of articles.
+
+#+begin_src c++
+double calculator::
+voltage(const double resistance, const double current) const {
+  boost::units::quantity<boost::units::si::resistance>
+    R(resistance * boost::units::si::ohms);
+  boost::units::quantity<boost::units::si::current>
+    I(current * boost::units::si::amperes);
+  auto V(R * I);
+  return V.value();
+}
+#+end_src
+
+* Compiling and Running
+
+If you are on a debian-based distribution, you can do the following
+steps to get the code up and running. First install the dependencies:
+
+#+begin_src sh
+$ sudo apt-get install libboost-all-dev witty-dev ninja-build cmake clang-3.5
+#+end_src
+
+Then obtain the source code from GitHub:
+
+#+begin_src sh
+$ git clone https://github.com/mcraveiro/neurite.git
+#+end_src
+
+Now you can build it:
+
+#+begin_src sh
+cd neurite
+mkdir output
+cd output
+cmake ../ -G Ninja
+ninja -j5
+#+end_src
+
+If all went according to plan, you should be able to run it:
+
+#+begin_src sh
+$ stage/bin/neurite_ohms_law --docroot . --http-address 0.0.0.0 --http-port 8080
+#+end_src
+
+Now using a web browser such as chrome, connect to
+http://127.0.0.1:8080 and you should see a "shiny" Ohm's Law
+calculator! Sorry, just had to be done to take away the boredom a
+little bit. Lets proceed with the more serious matters at hand, with
+the promise that the real code will come later on.
+
+| [[file:neurons_for_geeks_part_2.org][Back to previous chapter]] | [[file:index.org][Back to chapter index.]] | [[file:neurons_for_geeks_part_4.org][Forward to next chapter]] |
