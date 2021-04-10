@@ -27,8 +27,8 @@ introductory), I also recommend:
 
 - [[http://www.cambridge.org/us/academic/subjects/life-sciences/neuroscience/principles-computational-modelling-neuroscience][Principles of Computational Modelling in Neuroscience]]: "bible" of
   the subject for newcomers.
-- [[http://klewel.com/conferences/epfl-neural-networks/index.php?talkID=1][Neural networks and biological modeling]]: series of lectures by
-  Gerstner.
+- [[https://lcnwww.epfl.ch/gerstner/NeuronalDynamics-MOOCall.html][Neuronal Dynamics - Computational Neuroscience]]: series of lectures
+  by Gerstner.
 
 * My material
 
