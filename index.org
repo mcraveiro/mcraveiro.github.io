@@ -26,15 +26,16 @@ particular order of importance - Angola, Finance, Programming,
 Computational Neuroscience, Football. There may be other topics here
 too.
 
-| Title                                  | Topic                | Description                                                                                               |
-|----------------------------------------+----------------------+-----------------------------------------------------------------------------------------------------------|
-| [[file:dogen/dogen.org][Dogen]]                                  | Programming          | Dogen is a code-generator I am developing as part of my PhD thesis.                                       |
-| [[file:devsites.org][Developer sites]]                        | Programming          | I occasionally create questions and answers in developer sites.                                           |
-| [[file:bookmarks.org][Interesting]]                            | Various, Programming | Assorted bookmarks on stuff I bump into.                                                                  |
-| [[file:twitter.org][Twitter threads]]                        | Various              | Now I found out you can unroll them, started to create links to these.                                    |
-| [[file:angola_notebook/index.org][Notebook of a Return to My Native Land]] | Angola               | Diary of my return to Angola in 2006, for the first time in 25 years.                                     |
-| [[file:kizua_mwangola/index.org][Kizua Mwangola]]                         | Angola               | Diary of my second trip to Angola in 2009, not quite as detailed as the first one but with more pictures. |
-| [[file:nerd_food/index.org][Nerd Food]]                              | Programming          | Collected essays on programming.                                                                          |
+| Title                                  | Topic                                   | Description                                                                                               |
+|----------------------------------------+-----------------------------------------+-----------------------------------------------------------------------------------------------------------|
+| [[file:dogen/dogen.org][Dogen]]                                  | Programming                             | Dogen is a code-generator I am developing as part of my PhD thesis.                                       |
+| [[file:devsites.org][Developer sites]]                        | Programming                             | I occasionally create questions and answers in developer sites.                                           |
+| [[file:bookmarks.org][Interesting]]                            | Various, Programming                    | Assorted bookmarks on stuff I bump into.                                                                  |
+| [[file:twitter.org][Twitter threads]]                        | Various                                 | Now I found out you can unroll them, started to create links to these.                                    |
+| [[file:angola_notebook/index.org][Notebook of a Return to My Native Land]] | Angola                                  | Diary of my return to Angola in 2006, for the first time in 25 years.                                     |
+| [[file:kizua_mwangola/index.org][Kizua Mwangola]]                         | Angola                                  | Diary of my second trip to Angola in 2009, not quite as detailed as the first one but with more pictures. |
+| [[file:nerd_food/index.org][Nerd Food]]                              | Programming                             | Collected essays on programming.                                                                          |
+| [[file:neuroscience/index.org][Computational Neuroscience]]             | Computational neuroscience, programming | Assorted texts on computational neuroscience.                                                             |
 
 * Site Tooling
 
