@@ -37,34 +37,35 @@ else. The key idea behind a cell is as obvious as you'd like: there is
 the inside, the outside, and the thing that separates both.
 
 Of course, this being biology, we need to give it complicated
-names. Accordingly, the inside of the cell is the cytoplasm and the
+names. Accordingly, the inside of the cell is the /cytoplasm/ and the
 thing that separates the cell from the outside world is the
-membrane. You can think of it as a tiny roundy-box-like thing, with
+/membrane/. You can think of it as a tiny roundy-box-like thing, with
 some gooey stuff inside. The material of the box is the membrane. The
 gooey stuff is the cytoplasm. When we start describing the different
 cellular structures - as we are doing here - we are talking about the
-cell's morphology.
+cell's /morphology/.
 
 Living beings are made up of many, many cells - according to some
 estimates, a human body would have several trillion - and cells
 themselves come in many, many kinds. Fortunately, we are interested in
-just one kind: the neuron.
+just one kind: the /neuron/.
 
 * The Neuron Cell
 
-The neuron is a nerve cell. Of course, there are many, many kinds of
+The neuron is a nerve cell. Of course, there are many, /many kinds/ of
 neurons - nature just seems to love complexity - but they all share
 things in common, and those things define their neuron-ness.
 
 Unlike the "typical" cell we described above (i.e. "roundy-box-like
 thing"), the neuron is more like a roundy-box-like thing with some
 branches coming out of it. The box-like thing is the cell body and is
-called soma. There are two types of branches: axons and dendrites. A
-dendrite tends to be short, and it branches like a tree with a very
-small trunk. The axon tends to be long and it also branches off like a
-tree, but with a very long trunk. As we said, there are many kinds of
-neurons, but a fair generalisation is that they tend to have few axons
-(one or maybe a couple) and many dendrites (in the thousands).
+called /soma/. There are two types of branches: /axons/ and
+/dendrites/. A dendrite tends to be short, and it branches like a tree
+with a very small trunk. The axon tends to be long and it also
+branches off like a tree, but with a very long trunk. As we said,
+there are many kinds of neurons, but a fair generalisation is that
+they tend to have few axons (one or maybe a couple) and many dendrites
+(in the thousands).
 
 #+caption: Model of a neuron cell. Source: What is a Neuron?
 [[./neuron_cell.png]]
@@ -84,7 +85,7 @@ directly to the dendrite; there is always a gap between them. But this
 gap is a special kind of gap, first because it is a very small gap and
 second because it is one over which things can travel, from the axon
 into the dendrite. This kind of connectivity between neurons is called
-a synapse.
+a /synapse/.
 
 From this it is an easy leap to imagine that these sets of neurons
 connected to other neurons begin to form "networks" of connectivity,
@@ -124,14 +125,15 @@ outside world from the cytoplasm. That was a tad of an
 oversimplification; after all, if the membrane did not allow anything
 in, how would the cell continue to exist - or even come about in the
 first place? In practice these membranes are permeable - or to be
-precise, semi-permeable. This just means that it allows some stuff in
-and some stuff out, under controlled circumstances. This is how a cell
-gets energy in to do its thing and how it expels its unwanted content
-out. Once things started to move in and out selectively, something
-very interesting can start to happen: the build up of "electric
-potential". However, rather unfortunately, in order to understand what
-we mean by this, we need to cover the fundamentals of electricity.
+precise, /semi-permeable/. This just means that it allows some stuff
+in and some stuff out, under controlled circumstances. This is how a
+cell gets energy in to do its thing and how it expels its unwanted
+content out. Once things started to move in and out selectively,
+something very interesting can start to happen: the build up of
+"electric potential". However, rather unfortunately, in order to
+understand what we mean by this, we need to cover the fundamentals of
+electricity.
 
-Onward and downwards we march. Stay tuned for Part II.
+Onward and downwards we march. Stay tuned for [[file:neurons_for_geeks_part_2.org][Part II]].
 
 | [[file:index.org][Back to chapter index.]] | [[file:neurons_for_geeks_part_2.org][Forward to next chapter]] |

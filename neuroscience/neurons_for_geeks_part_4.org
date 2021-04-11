@@ -184,8 +184,8 @@ cable segment would connect the light build to the other battery
 terminal - say =-=. Graphically - and pardoning my inability to use
 [[https://wiki.gnome.org/Apps/Dia/][Dia]] to create circuit diagrams - it would look more or less like this:
 
-[[./series_circuit.png]]
 #+caption: Series circuit. Source: Author
+[[./series_circuit.png]]
 
 This circuit has a few interesting properties. First, if any of the
 light bulbs fail, all of them will stop working because the circuit is
@@ -205,8 +205,8 @@ light bulbs which exists in parallel to the main path - quite
 literally a segment of cable that connects the other segments of
 cable, more or less like so:
 
-[[./parallel_circuit.png]]
 #+caption: Parallel circuit. Source: Author
+[[./parallel_circuit.png]]
 
 Here you can see that if a bulb fails, there is still a closed loop in
 which current can flow, so the other bulbs should be unaffected. This
@@ -313,8 +313,8 @@ percent) of full charge or to discharge it to 37 percent (actually
 (TC) of the circuit.
 #+end_quote
 
-[[./32NE0159.GIF]]
 #+caption: The RC Time constant. Source: Concepts of alternating current
+[[./32NE0159.GIF]]
 
 * What next?
 

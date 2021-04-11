@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-04-10 Sat 16:46 -->
+<!-- 2021-04-11 Sun 10:00 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Neurons for Computer Geeks: Part II: The Shocking Complexity of Electricity</title>
@@ -250,25 +250,25 @@ Monday, August 31, 2015
 </p>
 
 <p>
-In part I we started to describe the basic morphology of the
+In <a href="neurons_for_geeks_part_1.html">part I</a> we started to describe the basic morphology of the
 neuron. In order to continue, we now need to take a detour around the
 world of electricity. If you are an electricity nerd, I apologise in
 advance; this is what happens when a computer scientist escapes into
 your realm, I'm afraid.
 </p>
 
-<div id="outline-container-org6aaef20" class="outline-2">
-<h2 id="org6aaef20">"Honor the charge they made!"</h2>
-<div class="outline-text-2" id="text-org6aaef20">
+<div id="outline-container-org2881d46" class="outline-2">
+<h2 id="org2881d46">"Honor the charge they made!"</h2>
+<div class="outline-text-2" id="text-org2881d46">
 <p>
-First and foremost, we need to understand the concept of charge. It is
-almost a tautology that atoms are made up of "sub-atomic"
-particles. These are the proton, the neutron and the electron. The
-neutron is not particularly interesting right now; however the
-electron and the proton are, and all because they have a magical
-property called charge. For our purposes, it suffices to know that
-"charge" means that certain sub-atomic particles attract or repeal
-each other, according to a well defined set of rules.
+First and foremost, we need to understand the concept of <i>charge</i>. It
+is almost a tautology that atoms are made up of "sub-atomic"
+particles. These are the <i>proton</i>, the <i>neutron</i> and the
+<i>electron</i>. The neutron is not particularly interesting right now;
+however the electron and the proton are, and all because they have a
+magical property called charge. For our purposes, it suffices to know
+that "charge" means that certain sub-atomic particles attract or
+repeal each other, according to a well defined set of rules.
 </p>
 
 <p>
@@ -276,9 +276,9 @@ You can think of a charge as a property attached to the sub-atomic
 particle, very much like a person has a weight or height, but with a
 side-effect; it is as if this property makes people push or hug each
 other when they are in close proximity, and they do so with the same
-strength when at the same distance. This "strength" is the electric
-force. How they decide whether to hug or push the next guy is based on
-the "sign" of the charge - that is, positive or negative - with
+strength when at the same distance. This "strength" is the <i>electric
+force</i>. How they decide whether to hug or push the next guy is based
+on the "sign" of the charge - that is, positive or negative - with
 respect to their own charge "sign". Positives push positives away but
 hug negatives and vice-versa.
 </p>
@@ -289,12 +289,13 @@ electron has one negative unit of charge and a proton has a positive
 unit of charge. The sign is, of course, rather arbitrary. We could
 have just as well said that protons are red and electrons are blue or
 some other suitably binary-like convention to represent these
-permutations. Just because protons and electrons have the same charge,
-it does not follow that they are similar in other respects. In fact,
-they are very different creatures. For example, the electron is very
-"small" when compared to the proton - almost 2000 times "smaller". The
-relevance of this "size" difference will become apparent later
-on. Physicists call this "size" mass, by the by.
+permutations. Just because protons and electrons have the same
+magnitude of charge (<i>e.g.</i>, 1 unit), it does not follow that they are
+similar in other respects. In fact, they are very different
+creatures. For example, the electron is very "small" when compared to
+the proton - almost 2000 times "smaller". The relevance of this "size"
+difference will become apparent later on. Physicists call this "size"
+<i>mass</i>, by the by.
 </p>
 
 <p>
@@ -306,13 +307,13 @@ people came up with a sensible way to bundle up the charges of the
 sub-atomic particles in bigger numbers, much like we don't talk about
 millimetres when measuring the distance to the Moon. However, unlike
 the nice and logical metric system, with its neat use of the decimal
-system, physicists came up instead with the Coulomb, or C, one
+system, physicists came up instead with the <i>Coulomb</i>, or <code>C</code>, one
 definition of which is:
 </p>
 
 <ul class="org-ul">
-<li>1 Coloumb (1C) = \(6.241 \times 10^{18}\) protons</li>
-<li>-1 Coloumb (-1C) = \(6.241 \times 10^{18}\) electrons</li>
+<li>1 Coloumb (<code>1C</code>) = \(6.241 \times 10^{18}\) protons</li>
+<li>-1 Coloumb (<code>-1C</code>) = \(6.241 \times 10^{18}\) electrons</li>
 </ul>
 
 <p>
@@ -330,9 +331,9 @@ a charge in Coulombs.
 </div>
 </div>
 
-<div id="outline-container-orgc5ad8e2" class="outline-2">
-<h2 id="orgc5ad8e2">Units, Dimensions, Measures, Oh My!</h2>
-<div class="outline-text-2" id="text-orgc5ad8e2">
+<div id="outline-container-org5832916" class="outline-2">
+<h2 id="org5832916">Units, Dimensions, Measures, Oh My!</h2>
+<div class="outline-text-2" id="text-org5832916">
 <p>
 Since we are on the subject of SI, this is probably a good point to
 talk about units, dimensions, measurements, magnitudes, conversions
@@ -356,7 +357,8 @@ replace "magnitude" with "quantity".
 <p>
 Finally, it is entirely possible to have compound dimensional units;
 that is, one can have a unit of measure that refers to more than one
-dimension, such as say "10 kilometres per second".
+dimension, such as say "10 kilometres per second". The Ampere is
+precisely one such measure, as we shall soon see.
 </p>
 
 <p>
@@ -367,9 +369,9 @@ one unit to another. This will become relevant later on.
 </div>
 </div>
 
-<div id="outline-container-org9c678b3" class="outline-2">
-<h2 id="org9c678b3">Go With the Flow</h2>
-<div class="outline-text-2" id="text-org9c678b3">
+<div id="outline-container-orgae35705" class="outline-2">
+<h2 id="orgae35705">Go With the Flow</h2>
+<div class="outline-text-2" id="text-orgae35705">
 <p>
 Now we have a way of talking about charge, and now we know these
 things can move - since they attract and repel each other - the next
@@ -384,9 +386,11 @@ have zipped past over a period of time.
 </p>
 
 <p>
-In terms of SI units, current is measured in Amperes, which have the
-symbol A; an Ampere tells us how many Coloumbs have flown past in a
-second. Whenever you see I in formulas it normally refers to current.
+In terms of SI units, current is measured in <i>Amperes</i>, which have the
+symbol <code>A</code>; an Ampere tells us how many <i>Coloumbs</i> have flown past in
+a second. Whenever you see <code>I</code> in formulas it normally refers to
+current. Because there are lots of them, we measure them in bundles of
+Coloumbs.
 </p>
 
 <p>
@@ -404,9 +408,9 @@ see going past in a time tick is the current.
 </div>
 </div>
 
-<div id="outline-container-orga3f8a58" class="outline-2">
-<h2 id="orga3f8a58">Resist!</h2>
-<div class="outline-text-2" id="text-orga3f8a58">
+<div id="outline-container-orgf1e0d67" class="outline-2">
+<h2 id="orgf1e0d67">Resist!</h2>
+<div class="outline-text-2" id="text-orgf1e0d67">
 <p>
 Going back to our example of current in a river, one can imagine that
 some surfaces are better at allowing water to flow than others; for
@@ -419,7 +423,7 @@ landscape slow down water, whereas a nice flat pipe would have no such
 impediments. If one were to take these two extremes - a plastic pipe
 designed for maximum water flow versus a landscape - one could see
 that they affect flow differently; and one could be tempted to name
-the property of "slowing down the flow" resistance, because it
+the property of "slowing down the flow" <i>resistance</i>, because it
 describes how much "resistance" these things are offering to the
 water. If you put up a barrier to avoid flooding, you probably would
 want it to "resist" water quite a lot rather than allow it to flow;
@@ -437,8 +441,8 @@ others do not allow them to flow at all.
 
 <p>
 Since we are dealing with physics, it is of course possible to measure
-resistance. We do so in SI units of Ohms, denoted by the Greek letter
-upper-case Ω.
+resistance. We do so in SI units of <i>Ohms</i>, denoted by the Greek
+letter upper-case Ω.
 </p>
 
 <p>
@@ -448,9 +452,9 @@ resistance.
 </div>
 </div>
 
-<div id="outline-container-orgfe212fd" class="outline-2">
-<h2 id="orgfe212fd">You've Got Potential Baby!</h2>
-<div class="outline-text-2" id="text-orgfe212fd">
+<div id="outline-container-orgd27d1fa" class="outline-2">
+<h2 id="orgd27d1fa">You've Got Potential Baby!</h2>
+<div class="outline-text-2" id="text-orgd27d1fa">
 <p>
 Lets return to our non-existing "pipe that allows charges to flow"
 scenario, and take it one step further. Imagine that for whatever
@@ -511,14 +515,14 @@ potential difference. It uses the same approach as electric potential,
 in that everything is scaled to just one unit of charge, but as the
 name implies, it provides a measurement of the difference between the
 electric potential of two points. Electric potential difference is
-more commonly known as voltage. Interestingly, it is also known as
-electric pressure, and this may be the most meaningful of its names;
+more commonly known as <i>voltage</i>. Interestingly, it is also known as
+<i>electric pressure</i>, and this may be the most meaningful of its names;
 this is because when there is an electric potential difference, it
 applies "pressure" on charges which force them to move.
 </p>
 
 <p>
-The SI unit Volt is used to measure electric potential, electric
+The SI unit <i>Volt</i> is used to measure electric potential, electric
 potential energy and electric potential difference amongst other
 things. This may sound a bit weird at first, but it is just because
 one is unfamiliar with these concepts. Take time, for example: we use
@@ -531,9 +535,9 @@ same dimension.
 </div>
 </div>
 
-<div id="outline-container-org8862815" class="outline-2">
-<h2 id="org8862815">Quick Conceptual Mop-Up</h2>
-<div class="outline-text-2" id="text-org8862815">
+<div id="outline-container-org4ab5f76" class="outline-2">
+<h2 id="org4ab5f76">Quick Conceptual Mop-Up</h2>
+<div class="outline-text-2" id="text-org4ab5f76">
 <p>
 Before we move over to the formulae, it may be best to tie up a few
 loose ends. These are not strictly necessary, but just make the
@@ -544,7 +548,7 @@ if still very simplistic.
 <p>
 First, we should start with atoms; we mentioned charges but skipped
 them. Atoms are (mostly) a stable arrangement of charges, placed in
-such a way that the atoms themselves are neutral - i.e. contain
+such a way that the atoms themselves are <i>neutral</i> - i.e. contain
 exactly the same amount of negative and positive charges. We mentioned
 before that protons and electrons don't really get along, and neutrons
 are kind of just there, hanging around. In truth, neutrons and protons
@@ -564,10 +568,12 @@ picture, these look like lattices of some kind.
 </p>
 
 
-<div id="orgb31c3f7" class="figure">
+<div id="org8b4e900" class="figure">
 <p><img src="./carbon-atoms.jpg" alt="carbon-atoms.jpg" />
 </p>
+<p><span class="figure-number">Figure 1: </span>Microscopic View of Carbon Atoms. Source: Quantum Physics: The Brink of Knowing Something Wonderful</p>
 </div>
+
 <p>
 In practice, copper wires are made up of a great many things rather
 than just atoms of copper. One such "kind of thing" is the unbound
@@ -581,19 +587,19 @@ end and plug it to the - side of the battery. According to all we've
 just learned, its easy to imagine what will happen: the electrons
 stored in the - side will zip across the copper to meet their proton
 friends at the other end. This elemental construction, with its
-circular path, is called a circuit. What you've done is to upset the
+circular path, is called a <i>circuit</i>. What you've done is to upset the
 neutral balance of the copper wire and got all the electrons to move
 in a coordinated way (rather than random) from the <code>-</code> side to the <code>+</code>
 side.
 </p>
 
 <p>
-It is at this juncture that we must introduce the concept of ions. An
-ion is basically an atom that is no longer neutral - either because it
-has more protons than electrons (called a cation) or more electrons
-than protons (called an anion). In either case, this comes about
-because the atom has gained or lost some electrons. Ions will become
-of great interest when we return to the neuron.
+It is at this juncture that we must introduce the concept of
+<i>ions</i>. An ion is basically an atom that is no longer neutral - either
+because it has more protons than electrons (called a <i>cation</i>) or more
+electrons than protons (called an <i>anion</i>). In either case, this comes
+about because the atom has gained or lost some electrons. Ions will
+become of great interest when we return to the neuron.
 </p>
 
 <p>
@@ -602,13 +608,9 @@ One final word on resistance and its sister concept of conductance:
 
 <ul class="org-ul">
 <li><b>Resistance</b> is in effect a <a href="http://education.jlab.org/qa/current_02.html">byproduct of the way the electrons are
-arranged in the electron cloud</a> and is related to the ionisation</li>
-</ul>
-<p>
+arranged in the electron cloud</a> and is related to the ionisation
 mentioned above; certain arrangements just don't allow electrons to
-flow across.
-</p>
-<ul class="org-ul">
+flow across.</li>
 <li><b>Conductance</b> is the inverse of resistance. When you talk about
 resistance you are focusing on the material's ability to impair
 movement of charges; when you talk about conductance you are
@@ -622,12 +624,12 @@ because they are good at conducting these pesky electrons.
 </div>
 </div>
 
-<div id="outline-container-orge4f0090" class="outline-2">
-<h2 id="orge4f0090">Ohm's Law</h2>
-<div class="outline-text-2" id="text-orge4f0090">
+<div id="outline-container-org9209524" class="outline-2">
+<h2 id="org9209524">Ohm's Law</h2>
+<div class="outline-text-2" id="text-org9209524">
 <p>
 We have now introduced all the main actors required for one of the
-main parts in the play: Ohm's Law. It can be stated very easily:
+main parts in the play: <i>Ohm's Law</i>. It can be stated very easily:
 </p>
 
 <p>
@@ -641,20 +643,24 @@ And here's a picture to aid intuition.
 </p>
 
 
-<div id="org34168e9" class="figure">
+<div id="org42d9f91" class="figure">
 <p><img src="./ohm_law_cartoon.jpg" alt="ohm_law_cartoon.jpg" />
 </p>
+<p><span class="figure-number">Figure 2: </span>Cartoon for Ohm's law. Source: Could someone intuitively explain to me Ohm's law?</p>
 </div>
+
 <p>
 The best way to understand this law is to create a simple circuit.
 </p>
 
 
-<div id="orgcc85136" class="figure">
+<div id="org231784e" class="figure">
 <p><object type="image/svg+xml" data="./Ohm's_Law_with_Voltage_source_TeX.svg" class="org-svg">
 Sorry, your browser does not support SVG.</object>
 </p>
+<p><span class="figure-number">Figure 3: </span>Simple electrical circuit. Source: Wikipedia, Electrical network</p>
 </div>
+
 <p>
 On the left we have a voltage source, which could be our 1.5V AA
 battery. On the right of the diagram we have a resistor - an electric
@@ -706,9 +712,9 @@ part. These are called quasi-ohmic.
 </div>
 </div>
 
-<div id="outline-container-orgbe12f02" class="outline-2">
-<h2 id="orgbe12f02">What next?</h2>
-<div class="outline-text-2" id="text-orgbe12f02">
+<div id="outline-container-orgd5c6a3f" class="outline-2">
+<h2 id="orgd5c6a3f">What next?</h2>
+<div class="outline-text-2" id="text-orgd5c6a3f">
 <p>
 We have already run out of time for this instalment but there are
 still some more fundamental electrical concepts we need to
@@ -738,7 +744,7 @@ to the neuron.
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2021-04-10 Sat 16:46</p>
+<p class="date">Created: 2021-04-11 Sun 10:00</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
