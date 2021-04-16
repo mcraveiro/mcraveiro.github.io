@@ -67,6 +67,7 @@ Tickets that I raised, or to which I added significant commentary.
 *** Emacs
 
 - [[https://github.com/jkitchin/org-ref/issues/800][org-ref: Better glossaries #800]]
+- [[https://github.com/jkitchin/org-ref/issues/108][org-ref: Glossary example #108]]
 
 * Reddit
 
