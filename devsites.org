@@ -62,6 +62,12 @@ Tickets that I raised, or to which I added significant commentary.
 - [[https://github.com/emacs-csharp/csharp-mode/issues/230][beginning-of-defun et al. not behaving the same as on C++ mode #230]]
 - [[https://github.com/ahungry/org-jira/issues/248][org-jira: Unable to update jira with contents in org-mode buffer #248]]
 
+** Others
+
+*** Emacs
+
+- [[https://github.com/jkitchin/org-ref/issues/800][org-ref: Better glossaries #800]]
+
 * Reddit
 
 ** Emacs
