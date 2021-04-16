@@ -59,6 +59,7 @@ never saw the light of day.
 | [[file:on_mingw_cygwin_and_wine.org][On MinGW, Cygwin and Wine]]                                | Friday, May 18, 2012         | Contextual explanation of these three projects.                   |
 | [[file:cpp_times_they_are_a_changin.org][C++ times, they are a changin']]                           | Sunday, April 21, 2013       | How C++ 11 is great but also caused an upheaval.                  |
 | [[file:start-ups_at_the_gate_trends_in_the_technology_industry.org][Start-ups at the Gate: Trends in the Technology Industry]] | Thursday, September 25, 2014 | How FinTech startups will come to dominate the financial world.   |
+| [[file:the_package_management_saga.org][The Package Management Saga]]                              | Tuesday, December 22, 2015   | How Dogen experimented with different C++ package managers.       |
 | [[file:pull_request_driven_development.org][Pull Request Driven Development]]                          | Friday, December 11, 2015    | Organizing software development around pull-requests.             |
 | [[file:on_product_backlog.org][On Product Backlog]]                                       | Sunday, January 17, 2016     | Why the product backlog is extremely important.                   |
 | [[file:the_strange_case_of_the_undefined_references.org][The Strange Case of the Undefined References]]             | Thursday, June 16, 2016      | Investigation of a strange linking error.                         |

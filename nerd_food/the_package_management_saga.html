@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-04-16 Fri 12:02 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Nerd Food: Dogen: The Package Management Saga</title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" href="../css/tufte.css" type="text/css" />
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><a href="index.html">Back to essay index</a></td>
+<td class="org-left"><a href="../index.html">Back to home page</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Tuesday, December 22, 2015
+</p>
+
+<p>
+Over the last few years I've had a little project on the side called
+<i><a href="https://github.com/DomainDrivenConsulting/dogen">Dogen</a></i>. Dogen is a code generator designed to target domain models,
+with the lofty ambition of automating the modeling process as much as
+possible: users create domain models using a supported UML tool and
+respecting a set of predefined restrictions; Dogen uses the tool’s
+diagram files to generate the source code representation. The
+generated code contains most of the services required from a typical
+domain object such as serialisation, hashing, streaming and so on.
+Dogen is written in C++ 14 and generates C++ 14 too, but other
+languages will eventually be supported as well.
+</p>
+
+<p>
+Now, for a four-year-old project, I guess it's fair to say that Dogen
+hasn't exactly set the Open Source world on fire. Nevertheless, it has
+proven to be a personal fountain of lessons and experiences on
+software development; one such lesson was package management and
+that's what I shall reminisce about in this article.
+</p>
+
+<div id="outline-container-orgdfb6e81" class="outline-2">
+<h2 id="orgdfb6e81">The Conundrum</h2>
+<div class="outline-text-2" id="text-orgdfb6e81">
+<p>
+Like any other part-time C++ developer whose professional mainstay is
+C# and Java, I have keenly felt the need for a package manager when in
+C++-land. The problem is less visible when you are working with mature
+libraries and dealing with just Linux, due to the huge size of the
+package repositories and the great tooling built around them. However,
+things get messier when you start to go cross-platform, and messier
+still when you are coding on the bleeding edge of C++: either the
+package you need is not available in the distro's repos or even <a href="https://launchpad.net/ubuntu/%2Bppas">PPA's</a>;
+or, when it is, its rarely at the version you require.
+</p>
+
+<p>
+Alas, for all our sins, that's exactly where we were when Dogen got
+started.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1a7bf71" class="outline-2">
+<h2 id="org1a7bf71">A Spoonful of Dogen History</h2>
+<div class="outline-text-2" id="text-org1a7bf71">
+<p>
+Dogen sprung to life just a tad after C++-0x became <a href="https://en.wikipedia.org/wiki/C%252B%252B11">C++-11</a>, so we
+experienced first hand the highs of a quasi-new-language followed by
+the lows of feeling the brunt of the bleeding edge pain. For starters,
+<i>nothing</i> we ever wanted was available out of the box, on any of the
+platforms we were interested in. Even Debian Testing was a fair bit
+behind the curve - probably stalled due to a compiler transition or
+other. In those days, Real Programmers were Real Programmers and mice
+were mice: we had to <a href="http://mcraveiro.blogspot.co.uk/2012/06/nerd-food-c-11-with-gcc.html">build and install the C++ compilers ourselves</a>
+and, even then, C++-11 support was new, a bit flaky and limited. We
+then had to use those compilers to compile all of the dependencies in
+C++-11 mode.
+</p>
+</div>
+
+<div id="outline-container-orgdce423a" class="outline-3">
+<h3 id="orgdce423a">The PFH Days</h3>
+<div class="outline-text-3" id="text-orgdce423a">
+<p>
+After doing this manually once or twice, it soon stopped being
+fun. And so we solved this problem by creating the PFH - the Private
+Filesystem Hierarchy - a gloriously over-ambitious name to describe a
+set of wrapper scripts that helped with the process of downloading
+tarballs, unpacking, building and finally installing them into
+well-defined locations. It worked well enough in the confines of its
+remit, but we were often outside those, having to apply out-of-tree
+patches, adding new dependencies and so on. We also didn't use Travis
+then; not even sure it existed, but if it did, the rigmarole of the
+bleeding edge experience would certainly put a stop to any ideas of
+using it. So we used a local install of CDash with a number of build
+agents on OSX, Windows (MinGW) and Linux (32-bit and 64-bit). Things
+worked beautifully when nothing changed and the setup was stable; but
+every time a new version of a library - or god forbid, of a compiler -
+was released, one had that sense of dread: do I <b>really</b> need to
+upgrade? And yet we often did, because we needed the features.
+</p>
+
+<p>
+Since one of the main objectives of Dogen was to learn about C++-11,
+one has to say that the pain was worth it. But all of the moving parts
+described above were not ideal and they were certainly not the thing
+you want to be wasting your precious time on when it is very
+scarce. They were certainly not scalable.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge765e60" class="outline-3">
+<h3 id="orge765e60">The Good Days and the Bad Days</h3>
+<div class="outline-text-3" id="text-orge765e60">
+<p>
+Things improved slightly for a year or two when distros started
+shipping C++-11 compliant compilers and recent Boost versions. This
+led to an attack of pragmatism, during which we ditched all platforms
+except for Linux, got rid of almost all our private infrastructure and
+moved over to <a href="https://travis-ci.org/DomainDrivenConsulting/dogen">Travis</a>. For a while things looked really good. However,
+due to Travis' <a href="https://wiki.ubuntu.com/LTS">Ubuntu LTS</a> policy, we were stuck with a rapidly ageing
+Boost version. At first PPAs were a good solution, but over time these
+became stale too.
+</p>
+
+<p>
+Soon we were stuck, unable to afford to revert back to the bad old
+days of the PFH but also unable to freeze all dependencies in time, as
+it would provide a worse development experience. So it was that the
+only route left was to break the build on Travis and hope that a
+solution would manifest itself. The red build painfully lingered on,
+commit after commit, whilst alternatives such as Drone.io and GitLab
+were unsuccessfully tried.
+</p>
+
+<p>
+Finally, there was nothing else for it. We simply needed a package
+manager to manage the development dependencies.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc6f6269" class="outline-3">
+<h3 id="orgc6f6269">Nuget Hopes Dashed</h3>
+<div class="outline-text-3" id="text-orgc6f6269">
+<p>
+Having used <a href="https://www.nuget.org/">Nuget</a> in anger for both C# and C++ projects - and given
+Microsoft's recent change of heart with regards to open source - I was
+secretly hoping that Nuget would get some traction in the wider C++
+world. Nuget works <a href="http://mcraveiro.blogspot.co.uk/2014/05/nerd-food-using-mono-in-anger-part-ii_3422.html">well enough in Mono</a>, and C++ support for Windows
+was added fairly <a href="http://blogs.msdn.com/b/vcblog/archive/2013/04/26/nuget-for-c.aspx">early on</a>. It was somewhat limited and a bit quirky at
+the start but it kept on getting better, to the point of being
+actually usable; we now use Nuget to manage our C++ dependencies at
+work - a Windows shop on the main - and it has improved our quality of
+life dramatically.
+</p>
+
+<p>
+Unfortunately, the troubles begun on closer inspection. The truth is
+that Microsoft's current Nuget focus is C# and Visual Studio, not
+Linux and C++. Also, it seems that outside Microsoft and Xamarin there
+just isn't enough traction for this tool at present.
+</p>
+
+<p>
+However, there have been a couple of recent announcements from
+Microsoft that give me hope things may change in the future:
+</p>
+
+<ul class="org-ul">
+<li><a href="http://blogs.msdn.com/b/vcblog/archive/2015/12/04/introducing-clang-with-microsoft-codegen-in-vs-2015-update-1.aspx">Clang with Microsoft CodeGen in VS 2015 Update 1</a></li>
+<li><a href="http://blogs.msdn.com/b/vcblog/archive/2015/12/15/support-for-android-cmake-projects-in-visual-studio.aspx">Support for Android CMake projects in Visual Studio</a></li>
+</ul>
+
+<p>
+Surely the logical consequence is to be able to manage packages in a
+consistent way across platforms? We can but hope.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4e1af12" class="outline-3">
+<h3 id="org4e1af12">Biicode Comes to the Rescue?</h3>
+<div class="outline-text-3" id="text-org4e1af12">
+<p>
+Nuget did not pan out but what did happen was even more unlikely: some
+crazy-cool Spaniards had decided to create a stand alone package
+manager. Being from the same peninsula, I felt compelled to use their
+wares, and was joyful as they went from strength to strength -
+including the success of their <a href="https://www.biicode.com/biicode-open-source-challenge">open source campaign</a>. And I loved the
+fact that it integrated really well with <a href="https://cmake.org">CMake</a>, and that <a href="https://www.jetbrains.com/clion/">CLion</a>
+provided Biicode integration very early on.
+</p>
+
+<p>
+However, my biggest problem with Biicode was that it was just too
+complicated. I don't mean to say the creators of the product didn't
+have very good reasons for their technical choices - lord knows
+creating a product is hard enough, so I have nothing but praise to
+anyone who tries. However, for me personally, I never had the time to
+understand why Biicode needed its own version of CMake, nor did I want
+to modify my CMake files too much in order to fit properly with
+Biicode and so on. Basically, I needed a solution that worked well and
+required minimal changes at my end. Having been brought up with Maven
+and Nuget, I just could not understand why there wasn't a simple
+<code>packages.xml</code> file that specified the dependencies and then some
+non-intrusive CMake support to expose those into the CMake files. As
+you can see from some of <a href="http://forum.biicode.com/t/building-out-of-tree-using-biicode/460">my posts</a>, it just seemed it required
+"getting" Biicode in order to make use of it, which for me was not an
+option.
+</p>
+
+<p>
+Another thing that annoyed me was the difficulty on knowing what the
+"real" version of a library was. I wrote, at the time:
+</p>
+
+<div class="epigraph"><blockquote>
+<p>
+One slightly confusing thing about the process of adding dependencies
+is that there may be more than one page for a given dependency and it
+is not clear which one is the "best" one. For RapidJson there are
+three options, presumably from three different Biicode users:
+</p>
+
+<ul class="org-ul">
+<li><a href="https://www.biicode.com/fenix/rapidjson">fenix</a>: authored on 2015-Apr-28, v1.0.1.</li>
+<li><a href="https://www.biicode.com/hithwen/rapidjson">hithwen</a>: authored 2014-Jul-30</li>
+<li><a href="https://www.biicode.com/denis/rapidjson">denis</a>: authored 2014-Oct-09</li>
+</ul>
+
+<p>
+The "fenix" option appeared to be the most up-to-date so I went with
+that one. However, this illustrates a deeper issue: how do you know
+you can trust a package? In the ideal setup, the project owners would
+add Biicode support and that would then be the one true
+version. However, like any other project, Biicode faces the initial
+adoption conundrum: people are not going to be willing to spend time
+adding support for Biicode if there aren't a lot of users of Biicode
+out there already, but without a large library of dependencies there
+is nothing to draw users in. In this light, one can understand that it
+makes sense for Biicode to allow anyone to add new packages as a way
+to bootstrap their user base; but sooner or later they will face the
+same issues as all distributions face.
+</p>
+
+<p>
+A few features would be helpful in the mean time:
+</p>
+
+<ul class="org-ul">
+<li>popularity/number of downloads</li>
+<li>user ratings</li>
+</ul>
+
+<p>
+These metrics would help in deciding which package to depend on.
+</p>
+
+</blockquote></div>
+
+<p>
+For all these reasons, I never found the time to get Biicode setup and
+these stories lingered in Dogen's backlog. And the build continued to
+be red.
+</p>
+
+<p>
+Sadly Biicode the company <a href="http://blog.biicode.com/biicode-just-the-company-post-mortem/">didn't make it either</a>. I feel very sad for
+the guys behind it, because their heart was on the right place.
+</p>
+
+<p>
+Which brings us right up to date.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf73f242" class="outline-2">
+<h2 id="orgf73f242">Enter Conan</h2>
+<div class="outline-text-2" id="text-orgf73f242">
+<p>
+When I was a kid, we were all big fans of Conan. No, not <a href="https://en.wikipedia.org/wiki/Conan_the_Barbarian">the
+barbarian</a>, the Japanese Manga <a href="https://en.wikipedia.org/wiki/Future_Boy_Conan">Future Boy Conan</a>. For me the name Conan
+will always bring back great memories of this show, which we watched
+in the original Japanese with Portuguese subtitles. So I was secretly
+pleased when I found <a href="https://www.conan.io/">conan.io</a>, a new package management system for
+C++. The guy behind it seems to be one of the original Biicode
+developers, so a lot of lessons from Biicode were learned.
+</p>
+
+<p>
+To cut a short story short, the great news is I managed to add Conan
+support to Dogen in roughly <a href="https://github.com/DomainDrivenConsulting/dogen/blob/master/doc/agile/sprint_backlog_77.org#add-support-for-conanio">3 hours</a> and with very minimal knowledge
+about Conan. This to me was a litmus test of sorts, because I have
+very little interest in package management - creating my own product
+has proven to be challenging enough, so the last thing I need is to
+divert my energy further. The other interesting thing is that roughly
+half of that time was taken by trying to get Travis to behave, so its
+not quite fair to impute it to Conan.
+</p>
+</div>
+
+<div id="outline-container-org5682773" class="outline-3">
+<h3 id="org5682773">Setting Up Dogen for Conan</h3>
+<div class="outline-text-3" id="text-org5682773">
+<p>
+So, what changes did I do to get it all working? It was a very simple
+3-step process. First I installed Conan using a Debian package from
+<a href="https://www.conan.io/downloads">their site</a>.
+</p>
+
+<p>
+I then created a <code>conanfile.txt</code> on my top-level directory:
+</p>
+
+<pre class="example" id="orge44b384">
+[requires]
+Boost/1.60.0@lasote/stable
+
+[generators]
+cmake
+</pre>
+
+<p>
+Finally I modified my top-level <code>CMakeLists.txt</code>:
+</p>
+
+<pre class="example" id="org767381c">
+# conan support
+if(EXISTS "${CMAKE_BINARY_DIR}/conanbuildinfo.cmake")
+    message(STATUS "Setting up Conan support.")
+    include("${CMAKE_BINARY_DIR}/conanbuildinfo.cmake")
+    CONAN_BASIC_SETUP()
+else()
+    message(STATUS "Conan build file not found, skipping include")
+endif()
+</pre>
+
+<p>
+This means that it is entirely possible to build Dogen without Conan,
+but if it is present, it will be used. With these two changes, all
+that was left to do was to build:
+</p>
+
+<pre class="example" id="org64a1b04">
+$ cd dogen/build/output
+$ mkdir gcc-5-conan
+$ conan install ../../..
+$ make -j5 run_all_specs
+</pre>
+
+<p>
+<i>Et voila</i>, I had a brand spanking new build of Dogen using
+Conan. Well, actually, <i>not quite</i>. I've omitted a couple of problems
+that are a bit of a distraction on the Conan success story. Let's look
+at them now.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org89b38c1" class="outline-3">
+<h3 id="org89b38c1">Problems and Their Solutions</h3>
+<div class="outline-text-3" id="text-org89b38c1">
+<p>
+The first problem was that Boost 1.59 does not appear to have an
+overridden <code>FindBoost</code>, which means that I was not able to link. I
+moved to Boost 1.60 - which I wanted to do anyway - and it worked out
+of the box.
+</p>
+
+<p>
+The second problem was that Conan seems to get confused with <a href="https://ninja-build.org/manual.html">Ninja</a>, my
+build system of choice. For whatever reason, when I use the Ninja
+generator, it fails like so:
+</p>
+
+<pre class="example" id="org2e06ebe">
+$ cmake ../../../ -G Ninja
+$ ninja -j5
+$ ninja: error: '~/.conan/data/Boost/1.60.0/lasote/stable/package/ebdc9c0c0164b54c29125127c75297f6607946c5/lib/libboost_system.so', needed by 'stage/bin/dogen_utility_spec', missing and no known rule to make it
+</pre>
+
+<p>
+This is very strange because boost system is clearly available in the
+Conan download folder. Going back to <code>make</code> solved this problem. I've
+opened an issue in Conan (<a href="https://github.com/conan-io/conan/issues/56">#56</a>) and its currently under investigation.
+</p>
+
+<p>
+The third problem is more boost related than anything else. Boost
+Graph has not been as well maintained as it should, really. Thus users
+now find themselves carrying patches, and all because no one seems to
+be able to apply them upstream. Dogen is in this situation as we've
+hit the issue described here: <a href="http://stackoverflow.com/questions/25395805/compile-error-with-boost-graph-1-56-0-and-g-4-6-4">Compile error with boost.graph 1.56.0
+and g++ 4.6.4.</a> Sadly this is still present on Boost 1.60; the patch
+exists in Trac but remains unapplied (<a href="https://svn.boost.org/trac/boost/ticket/10382">#10382</a>). This is a tad worrying
+as we make a lot of use of Boost Graph and intend to increase the
+usage in the future.
+</p>
+
+<p>
+At any rate, as you can see, none of the problems were showstoppers,
+nor can they all be attributed to Conan.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge4e7ac6" class="outline-3">
+<h3 id="orge4e7ac6">Getting Travis to Behave</h3>
+<div class="outline-text-3" id="text-orge4e7ac6">
+<p>
+Once I got Dogen building locally, I then went on a mission to
+convince Travis to use it. It was painful, but mainly because of the
+lag between commits and hitting an error. The core of the changes to
+my YML file were as follows:
+</p>
+
+<pre class="example" id="org604db3b">
+install:
+&lt;snip&gt;
+  # conan
+  - wget https://s3-eu-west-1.amazonaws.com/conanio-production/downloads/conan-ubuntu-64_0_5_0.deb -O conan.deb
+  - sudo dpkg -i conan.deb
+  - rm conan.deb
+&lt;snip&gt;
+script:
+  - export GIT_REPO="`pwd`"
+  - cd ${GIT_REPO}/build
+  - mkdir output
+  - cd output
+  - conan install ${GIT_REPO}
+  - hash=`ls ~/.conan/data/Boost/1.60.0/lasote/stable/package/`
+  - cd ~/.conan/data/Boost/1.60.0/lasote/stable/package/${hash}/include/
+  - sudo patch -p0 &lt; ${GIT_REPO}/patches/boost_1_59_graph.patch
+  - cmake ${GIT_REPO} -DWITH_MINIMAL_PACKAGING=on
+  - make -j2 run_all_specs
+&lt;snip&gt;
+</pre>
+
+<p>
+I probably should have a bash script by know, given the size of the
+YML, but hey - if it works. The changes above deal with installation
+of the package, applying the boost patch and using Make instead of
+Ninja. Quite trivial in the end, even though it required a lot of
+iterations to get there.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org82bf114" class="outline-2">
+<h2 id="org82bf114">Conclusions</h2>
+<div class="outline-text-2" id="text-org82bf114">
+<p>
+Having a red build is a very distressful event for a developer, so you
+can imagine how painful it has been to have red builds for <i>several
+months</i>. So it is with unmitigated pleasure that I got to see <a href="https://travis-ci.org/DomainDrivenConsulting/dogen/builds/98304957">build
+#628</a> in a shiny emerald green. As far as that goes, it has been an
+unmitigated success.
+</p>
+
+<p>
+In a broader sense though, what can we say about Conan? There are many
+positives to take home, even at this early stage of Dogen usage:
+</p>
+
+<ul class="org-ul">
+<li>it is a lot less intrusive than Biicode and easier to setup. Biicode
+was very well documented, but it was easy to stray from the beaten
+track and that then required reading a lot of different wiki
+pages. It seems easier to stay on the beaten track with Conan.</li>
+<li>as with Biicode, it seems to provide solutions to Debug/Release and
+multi-platforms and compilers. We shall be testing it on Windows
+soon and reporting back.</li>
+<li>hopefully, since it started Open Source from the beginning, it will
+form a community of developers around the source with the know-how
+required to maintain it. It would also be great to see if a business
+forms around it, since someone will have to pay the cloud bill. It
+certainly is gaining popularity, as <a href="http://cppcast.com/2016/05/diego-rodriguez-losada/">the recent CppCast</a> attests.</li>
+</ul>
+
+<p>
+In terms of negatives:
+</p>
+
+<ul class="org-ul">
+<li>I still believe the most scalable approach would have been to extend
+Nuget for the C++ Linux use case, since Microsoft is willing to take
+patches and since they foot the bill for the public repo. However,
+I can understand why one would prefer to have total control over the
+solution rather than depend on the whims of some middle-manager in
+order to commit.</li>
+<li>it seems publishing packages requires getting down into
+Python. Haven't tried it yet, but I'm hoping it will be made as easy
+as importing packages with a simple text file. The more complexity
+around these flows the tool adds, the less likely they are to be
+used.</li>
+<li>there still are no "official builds" from projects. As explained
+above, this is a chicken and egg problem, because people are only
+willing to dedicate time to it once there are enough users
+complaining. Having said that, since Conan is easy to setup, one
+hopes to see some adoption in the near future.</li>
+<li>even when using a GitHub profile, one still has to define a Conan
+specific password. This was not required with Biicode. Minor pain,
+but still, if they want to increase traction, this is probably an
+unnecessary stumbling block. It was sufficient to make me think
+twice about setting up a login, for one.</li>
+</ul>
+
+<p>
+In truth, these are all very minor negative points, but still worth
+making them. All and all, I am quite pleased with Conan thus far.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><a href="index.html">Back to essay index</a></td>
+<td class="org-left"><a href="../index.html">Back to home page</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2021-04-16 Fri 12:02</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
