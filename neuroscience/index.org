@@ -15,7 +15,7 @@ subject.
 
 * Other people's material
 
-My main a hero in this field, [[https://en.wikipedia.org/wiki/Jeff_Hawkins][Jeff Hawkins]] (he of Palm fame), and I
+My main a hero in this field is [[https://en.wikipedia.org/wiki/Jeff_Hawkins][Jeff Hawkins]] (he of Palm fame), and I
 highly recommend both of his books, which target laypeople like me and
 are at the "popular science" level.
 
