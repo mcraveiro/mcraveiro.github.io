@@ -51,7 +51,7 @@ Borland's Turbo Pascal had, a long, long time ago. The fact that I now
 had in my computer the efforts of thousands of developers, the tools
 used by the biggest minds in the computing world for their daily
 hacking was very inspiring; I just couldn't quit and be a standard
-\emph{luser}.
+/luser/.
 
 And now --- when I'm almost reaching my larval stage --- I can see why
 I need to go through this ordeal, probably for years to come. It's
@@ -65,16 +65,8 @@ Certified Systems Engineer, but only for 12 months.
 
 Yes, that is the right attitude for the mainstream. After all, they
 buy the right clothes, the right music, the right tooth paste and the
-right OS because it is easy, its on the telly[fn:1]. And if you don't,
-you're a rogue, end of story. But us, those who preferred hacking to
-playing, the ones who were genuiningly curious about the works of the
-beast, well, we were the betrayed generation. We were not commercially
-viable --- and so, forgotten; we had to content ourselves with the
-demented GWBASIC while other people were experimenting with C. How
-many clever minds did humanity loose in this process? We'll never
-know.
-
-[fn:1] Ken Tilton said it best:
+right OS because it is easy, its on the telly. Ken Tilton said it
+best:
 
 #+begin_quote
 That absolutely terrifies the herd-following, lockstep-marching,
@@ -85,12 +77,19 @@ then sit there slaving away miserably, tediously, joylously paying off
 mortgages and supporting ungrateful teenagers who despise them, only
 to look out the double-sealed thermo-pane windows of their
 central-heated, sound-proofed, dead-bolted, suffocating little nests
-into the howling gale thinking ``what do they know that I do not
-know?'' when they see us under a lean-to hunched over our laptops to
-shield them from the rain laughing our asses off as we write great
-code between bong hits\ldots what was the question?
+into the howling gale thinking "what do they know that I do not know?"
+when they see us under a lean-to hunched over our laptops to shield
+them from the rain laughing our asses off as we write great code
+between bong hits... what was the question?
 #+end_quote
 
+And if you don't follow the mainstream, you're a rogue, end of
+story. But us, those who preferred hacking to playing, the ones who
+were genuiningly curious about the works of the beast, well, we were
+the betrayed generation. We were not commercially viable --- and so,
+forgotten; we had to content ourselves with the demented GWBASIC while
+other people were experimenting with C. How many clever minds did
+humanity loose in this process? We'll never know.
 
 When KDE presented the beta version of their IDE, I sent a post in
 Slashdot praising them and also asking for some unity between the

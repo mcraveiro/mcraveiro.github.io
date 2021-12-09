@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-04-18 Sun 11:10 -->
+<!-- 2021-12-09 Thu 19:54 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Developer Sites Participation</title>
@@ -39,7 +39,7 @@
   }
   pre.src {
     position: relative;
-    overflow: auto;
+    overflow: visible;
     padding-top: 1.2em;
   }
   pre.src:before {
@@ -51,7 +51,7 @@
     padding: 3px;
     border: 1px solid black;
   }
-  pre.src:hover:before { display: inline; margin-top: 14px;}
+  pre.src:hover:before { display: inline;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
@@ -194,26 +194,50 @@
 </style>
 <link rel="stylesheet" href="css/tufte.css" type="text/css" />
 <script type="text/javascript">
-// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
 <!--/*--><![CDATA[/*><!--*/
-     function CodeHighlightOn(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.add("code-highlighted");
-         target.classList.add("code-highlighted");
-       }
-     }
-     function CodeHighlightOff(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.remove("code-highlighted");
-         target.classList.remove("code-highlighted");
-       }
-     }
-    /*]]>*///-->
-// @license-end
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
 </script>
 </head>
 <body>
@@ -223,43 +247,44 @@
 <a href="../index.html">Back to home page</a>.
 </p>
 
-<div id="outline-container-org62233c8" class="outline-2">
-<h2 id="org62233c8">Stackoverflow</h2>
-<div class="outline-text-2" id="text-org62233c8">
+<div id="outline-container-org5e6261e" class="outline-2">
+<h2 id="org5e6261e">Stack Overflow</h2>
+<div class="outline-text-2" id="text-org5e6261e">
 </div>
-<div id="outline-container-org69a544b" class="outline-3">
-<h3 id="org69a544b">Mine</h3>
-<div class="outline-text-3" id="text-org69a544b">
+<div id="outline-container-orga4b500c" class="outline-3">
+<h3 id="orga4b500c">Mine</h3>
+<div class="outline-text-3" id="text-orga4b500c">
 <p>
 List of questions and answers I've done in Stack Overflow.
 </p>
 </div>
 
-<div id="outline-container-orgbb7424c" class="outline-4">
-<h4 id="orgbb7424c">Emacs</h4>
-<div class="outline-text-4" id="text-orgbb7424c">
+<div id="outline-container-orgfdacd90" class="outline-4">
+<h4 id="orgfdacd90">Emacs</h4>
+<div class="outline-text-4" id="text-orgfdacd90">
 <ul class="org-ul">
 <li><a href="https://emacs.stackexchange.com/questions/63391/how-do-i-link-to-an-id-on-a-non-org-mode-file">Q: How do I link to an ID on a non org-mode file?</a></li>
 <li><a href="https://emacs.stackexchange.com/questions/45490/changing-display-function-in-define-word-package/63637#63637">A: changing display function in define-word package</a></li>
 <li><a href="https://emacs.stackexchange.com/questions/63350/how-can-i-display-very-large-svg-files-using-image-mode/63373#63373">Q: How can I display very large SVG files using `image-mode`?</a></li>
 <li><a href="https://stackoverflow.com/questions/1587972/how-to-display-indentation-guides-in-emacs/56144459#56144459">A: How to display indentation guides in Emacs?</a></li>
-<li>Q&amp;A: <a href="https://emacs.stackexchange.com/questions/63886/large-org-mode-file-causes-error-re-entering-top-level-after-c-stack-overflow">Large org-mode file causes error “Re-entering top level after C stack overflow”</a></li>
+<li>Q&amp;A: <a href="https://emacs.stackexchange.com/questions/63886/large-org-mode-file-causes-error-re-entering-top-level-after-c-stack-overflow">Large org-mode file causes error “Re-entering top level after C stack overflow”</a>q</li>
+<li><a href="https://emacs.stackexchange.com/questions/68635/effect-of-doom-themes-in-tabulated-list-header-line-is-visually-confusing">Q&amp;A: Effect of doom themes in tabulated list header line is visually confusing</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org1de63bc" class="outline-4">
-<h4 id="org1de63bc">Dotnet</h4>
-<div class="outline-text-4" id="text-org1de63bc">
+<div id="outline-container-orgcff107b" class="outline-4">
+<h4 id="orgcff107b">Dotnet</h4>
+<div class="outline-text-4" id="text-orgcff107b">
 <ul class="org-ul">
 <li><a href="https://stackoverflow.com/questions/7557562/how-do-i-get-the-message-msbuild-task-to-show-up-in-the-visual-studio-project/61209137#61209137">Answer: How do I get the &lt;Message&gt; MSBuild task to show up in the Visual Studio project output?</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org75d4563" class="outline-4">
-<h4 id="org75d4563">C++</h4>
-<div class="outline-text-4" id="text-org75d4563">
+<div id="outline-container-org3935cab" class="outline-4">
+<h4 id="org3935cab">C++</h4>
+<div class="outline-text-4" id="text-org3935cab">
 <ul class="org-ul">
 <li><a href="https://stackoverflow.com/questions/39798321/generate-clang-compilation-database-for-a-visual-studio-project/55675091#55675091">A: Generate clang compilation database for a Visual Studio project</a></li>
 <li><a href="https://stackoverflow.com/questions/6835728/how-to-break-when-a-specific-exception-type-is-thrown-in-gdb/61030819#61030819">A: How to break when a specific exception type is thrown in GDB?</a></li>
@@ -271,18 +296,18 @@ List of questions and answers I've done in Stack Overflow.
 </div>
 </div>
 
-<div id="outline-container-org9bc5177" class="outline-3">
-<h3 id="org9bc5177">Others</h3>
-<div class="outline-text-3" id="text-org9bc5177">
+<div id="outline-container-org6b4b286" class="outline-3">
+<h3 id="org6b4b286">Others</h3>
+<div class="outline-text-3" id="text-org6b4b286">
 <p>
 Links to questions that I have used in the past for some reason or
 other and I don't want to forget.
 </p>
 </div>
 
-<div id="outline-container-org899bf96" class="outline-4">
-<h4 id="org899bf96">Emacs</h4>
-<div class="outline-text-4" id="text-org899bf96">
+<div id="outline-container-org0e47096" class="outline-4">
+<h4 id="org0e47096">Emacs</h4>
+<div class="outline-text-4" id="text-org0e47096">
 <ul class="org-ul">
 <li><a href="https://emacs.stackexchange.com/questions/4253/how-to-start-emacs-with-a-custom-user-emacs-directory">How to start emacs with a custom user-emacs-directory</a></li>
 </ul>
@@ -291,35 +316,35 @@ other and I don't want to forget.
 </div>
 </div>
 
-<div id="outline-container-orgdeaf789" class="outline-2">
-<h2 id="orgdeaf789">GitHub</h2>
-<div class="outline-text-2" id="text-orgdeaf789">
+<div id="outline-container-org64740ee" class="outline-2">
+<h2 id="org64740ee">GitHub</h2>
+<div class="outline-text-2" id="text-org64740ee">
 <p>
 Any useful commentary in GitHub.
 </p>
 </div>
 
-<div id="outline-container-org4d49e35" class="outline-3">
-<h3 id="org4d49e35">Mine</h3>
-<div class="outline-text-3" id="text-org4d49e35">
+<div id="outline-container-org4562b40" class="outline-3">
+<h3 id="org4562b40">Mine</h3>
+<div class="outline-text-3" id="text-org4562b40">
 <p>
 Tickets that I raised, or to which I added significant commentary.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org4442a2b" class="outline-3">
-<h3 id="org4442a2b">C++</h3>
-<div class="outline-text-3" id="text-org4442a2b">
+<div id="outline-container-orge5bf557" class="outline-3">
+<h3 id="orge5bf557">C++</h3>
+<div class="outline-text-3" id="text-orge5bf557">
 <ul class="org-ul">
 <li><a href="https://github.com/jothepro/doxygen-awesome-css/issues/2">doxygen-awesome-css: Creating a link to the dark theme #2</a></li>
 <li><a href="https://github.com/doxygen/doxygen/issues/8455">doxygen: Documentation coverage information #8455</a></li>
 </ul>
 </div>
 
-<div id="outline-container-org03b8f4e" class="outline-4">
-<h4 id="org03b8f4e">Emacs</h4>
-<div class="outline-text-4" id="text-org03b8f4e">
+<div id="outline-container-org0f5426a" class="outline-4">
+<h4 id="org0f5426a">Emacs</h4>
+<div class="outline-text-4" id="text-org0f5426a">
 <ul class="org-ul">
 <li><a href="https://github.com/skuro/plantuml-mode/issues/134">plantuml-mode: Vertical split preview #134</a></li>
 <li><a href="https://github.com/nobiot/org-transclusion/issues/59">org-transclusion: Transclusion of non-org mode files #59</a></li>
@@ -327,18 +352,26 @@ Tickets that I raised, or to which I added significant commentary.
 <li><a href="https://github.com/emacs-csharp/csharp-mode/issues/230">beginning-of-defun et al. not behaving the same as on C++ mode #230</a></li>
 <li><a href="https://github.com/ahungry/org-jira/issues/248">org-jira: Unable to update jira with contents in org-mode buffer #248</a></li>
 <li><a href="https://github.com/joodland/bm/issues/35">bm: Integrating bm with org-mode: expanding tree on jump #35</a></li>
+<li><a href="https://github.com/politza/pdf-tools/issues/670">pdf-tools: Disabling automatic revert for pdf-tools #670</a></li>
+<li><a href="https://github.com/federicotdn/verb/issues/37">verb-mode: Render HTML response in eww #37</a></li>
+<li><a href="https://github.com/minad/vertico/issues/127">Using vertico with lsp-mode #127</a></li>
+<li><a href="https://github.com/Alexander-Miller/treemacs/issues/846">treemacs dired: unwanted indentation for directories #846</a></li>
+<li><a href="https://github.com/emacs-lsp/lsp-treemacs/issues/112">Configuring font size via treemacs-text-scale #112</a></li>
+<li><a href="https://github.com/emacs-lsp/lsp-mode/issues/3118">Omnisharp-Roslyn not available in the list of installable servers #3118</a></li>
+<li><a href="https://github.com/rejeep/prodigy.el/issues/133">Associate mode with output buffer #133</a></li>
+<li><a href="https://github.com/jkitchin/org-ref/issues/956">org-ref: Caption with cite results in cite appearing in list of figures</a> #956</li>
 </ul>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org96dd28e" class="outline-3">
-<h3 id="org96dd28e">Others</h3>
-<div class="outline-text-3" id="text-org96dd28e">
+<div id="outline-container-org38ea9ec" class="outline-3">
+<h3 id="org38ea9ec">Others</h3>
+<div class="outline-text-3" id="text-org38ea9ec">
 </div>
-<div id="outline-container-orge186115" class="outline-4">
-<h4 id="orge186115">Emacs</h4>
-<div class="outline-text-4" id="text-orge186115">
+<div id="outline-container-orgf83fd78" class="outline-4">
+<h4 id="orgf83fd78">Emacs</h4>
+<div class="outline-text-4" id="text-orgf83fd78">
 <ul class="org-ul">
 <li><a href="https://github.com/jkitchin/org-ref/issues/800">org-ref: Better glossaries #800</a></li>
 <li><a href="https://github.com/jkitchin/org-ref/issues/108">org-ref: Glossary example #108</a></li>
@@ -348,23 +381,25 @@ Tickets that I raised, or to which I added significant commentary.
 </div>
 </div>
 
-<div id="outline-container-org5a2f6b1" class="outline-2">
-<h2 id="org5a2f6b1">Reddit</h2>
-<div class="outline-text-2" id="text-org5a2f6b1">
+<div id="outline-container-orgdc84c16" class="outline-2">
+<h2 id="orgdc84c16">Reddit</h2>
+<div class="outline-text-2" id="text-orgdc84c16">
 </div>
-<div id="outline-container-org4ab8a77" class="outline-3">
-<h3 id="org4ab8a77">Emacs</h3>
-<div class="outline-text-3" id="text-org4ab8a77">
+<div id="outline-container-org3b42977" class="outline-3">
+<h3 id="org3b42977">Emacs</h3>
+<div class="outline-text-3" id="text-org3b42977">
 <ul class="org-ul">
 <li><a href="https://www.reddit.com/r/emacs/comments/ms0nq9/supporting_image_sources_in_orgmode_when/">Q: Supporting image sources in org-mode when exporting to latex</a></li>
+<li><a href="https://www.reddit.com/r/emacs/comments/mxpvuw/creating_named_groups_of_window_configurations/">Q: Creating "named groups" of window configurations for eyebrowse</a></li>
+<li></li>
 </ul>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2021-04-18 Sun 11:10</p>
-<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="date">Created: 2021-12-09 Thu 19:54</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>

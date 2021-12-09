@@ -6,7 +6,7 @@
 
 [[file:../index.org][Back to home page]].
 
-* Stackoverflow
+* Stack Overflow
 
 ** Mine
 
@@ -18,7 +18,8 @@
 - [[https://emacs.stackexchange.com/questions/45490/changing-display-function-in-define-word-package/63637#63637][A: changing display function in define-word package]]
 - [[https://emacs.stackexchange.com/questions/63350/how-can-i-display-very-large-svg-files-using-image-mode/63373#63373][Q: How can I display very large SVG files using `image-mode`?]]
 - [[https://stackoverflow.com/questions/1587972/how-to-display-indentation-guides-in-emacs/56144459#56144459][A: How to display indentation guides in Emacs?]]
-- Q&A: [[https://emacs.stackexchange.com/questions/63886/large-org-mode-file-causes-error-re-entering-top-level-after-c-stack-overflow][Large org-mode file causes error “Re-entering top level after C stack overflow”]]
+- Q&A: [[https://emacs.stackexchange.com/questions/63886/large-org-mode-file-causes-error-re-entering-top-level-after-c-stack-overflow][Large org-mode file causes error “Re-entering top level after C stack overflow”]]q
+- [[https://emacs.stackexchange.com/questions/68635/effect-of-doom-themes-in-tabulated-list-header-line-is-visually-confusing][Q&A: Effect of doom themes in tabulated list header line is visually confusing]]
 
 *** Dotnet
 
@@ -62,6 +63,14 @@ Tickets that I raised, or to which I added significant commentary.
 - [[https://github.com/emacs-csharp/csharp-mode/issues/230][beginning-of-defun et al. not behaving the same as on C++ mode #230]]
 - [[https://github.com/ahungry/org-jira/issues/248][org-jira: Unable to update jira with contents in org-mode buffer #248]]
 - [[https://github.com/joodland/bm/issues/35][bm: Integrating bm with org-mode: expanding tree on jump #35]]
+- [[https://github.com/politza/pdf-tools/issues/670][pdf-tools: Disabling automatic revert for pdf-tools #670]]
+- [[https://github.com/federicotdn/verb/issues/37][verb-mode: Render HTML response in eww #37]]
+- [[https://github.com/minad/vertico/issues/127][Using vertico with lsp-mode #127]]
+- [[https://github.com/Alexander-Miller/treemacs/issues/846][treemacs dired: unwanted indentation for directories #846]]
+- [[https://github.com/emacs-lsp/lsp-treemacs/issues/112][Configuring font size via treemacs-text-scale #112]]
+- [[https://github.com/emacs-lsp/lsp-mode/issues/3118][Omnisharp-Roslyn not available in the list of installable servers #3118]]
+- [[https://github.com/rejeep/prodigy.el/issues/133][Associate mode with output buffer #133]]
+- [[https://github.com/jkitchin/org-ref/issues/956][org-ref: Caption with cite results in cite appearing in list of figures]] #956
 
 ** Others
 
@@ -75,6 +84,8 @@ Tickets that I raised, or to which I added significant commentary.
 ** Emacs
 
 - [[https://www.reddit.com/r/emacs/comments/ms0nq9/supporting_image_sources_in_orgmode_when/][Q: Supporting image sources in org-mode when exporting to latex]]
+- [[https://www.reddit.com/r/emacs/comments/mxpvuw/creating_named_groups_of_window_configurations/][Q: Creating "named groups" of window configurations for eyebrowse]]
+-
 
 # Variables:
 # org-html-validation-link: nil
