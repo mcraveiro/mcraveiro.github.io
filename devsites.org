@@ -85,7 +85,7 @@ Tickets that I raised, or to which I added significant commentary.
 
 - [[https://www.reddit.com/r/emacs/comments/ms0nq9/supporting_image_sources_in_orgmode_when/][Q: Supporting image sources in org-mode when exporting to latex]]
 - [[https://www.reddit.com/r/emacs/comments/mxpvuw/creating_named_groups_of_window_configurations/][Q: Creating "named groups" of window configurations for eyebrowse]]
--
+- [[https://www.reddit.com/r/emacs/comments/rgatjz/cellmode_spreadsheet_mode_for_emacs/][Cell-mode: spreadsheet mode for Emacs]]
 
 # Variables:
 # org-html-validation-link: nil
