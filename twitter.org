@@ -16,3 +16,4 @@ summary of them here.
 | Energy  | Why hydrogen may become very important in the future.        | [[https://threadreaderapp.com/thread/1288395005040775169.html][threadapp]] |
 | Emacs   | Should you learn Emacs? Probably not.                        | [[https://threadreaderapp.com/thread/1377931149947891712.html][threadapp]] |
 | Emacs   | Org-mode agenda FTW                                          | [[https://threadreaderapp.com/thread/1379389562200412160.html][threadapp]] |
+| Energy  | English. Non-linearity in energy transition.                 | [[https://threadreaderapp.com/thread/1470741444210176000.html][threadapp]] |
