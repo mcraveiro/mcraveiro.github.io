@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-03-27 Sat 17:08 -->
+<!-- 2021-12-21 Tue 11:51 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Notebook of a Return to My Native Land - part 10</title>
@@ -39,7 +39,7 @@
   }
   pre.src {
     position: relative;
-    overflow: auto;
+    overflow: visible;
     padding-top: 1.2em;
   }
   pre.src:before {
@@ -51,7 +51,7 @@
     padding: 3px;
     border: 1px solid black;
   }
-  pre.src:hover:before { display: inline; margin-top: 14px;}
+  pre.src:hover:before { display: inline;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
@@ -194,26 +194,50 @@
 </style>
 <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
 <script type="text/javascript">
-// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
 <!--/*--><![CDATA[/*><!--*/
-     function CodeHighlightOn(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.add("code-highlighted");
-         target.classList.add("code-highlighted");
-       }
-     }
-     function CodeHighlightOff(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.remove("code-highlighted");
-         target.classList.remove("code-highlighted");
-       }
-     }
-    /*]]>*///-->
-// @license-end
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
 </script>
 </head>
 <body>
@@ -227,9 +251,9 @@
 Friday, January 26, 2007
 </p>
 
-<div id="outline-container-org4fb3417" class="outline-2">
-<h2 id="org4fb3417">Benfica Market</h2>
-<div class="outline-text-2" id="text-org4fb3417">
+<div id="outline-container-org89fed1f" class="outline-2">
+<h2 id="org89fed1f">Benfica Market</h2>
+<div class="outline-text-2" id="text-org89fed1f">
 <p>
 Benfica, like many areas of the greater Luanda, is not a particularly
 nice place. There isn't much to it, really, apart from the main road
@@ -370,9 +394,9 @@ lower quality, of course, but still.
 </p>
 </div>
 
-<div id="outline-container-org9be32e3" class="outline-3">
-<h3 id="org9be32e3">The Long Walk; Goodbye and Hello</h3>
-<div class="outline-text-3" id="text-org9be32e3">
+<div id="outline-container-org981164b" class="outline-3">
+<h3 id="org981164b">The Long Walk; Goodbye and Hello</h3>
+<div class="outline-text-3" id="text-org981164b">
 <p>
 As the new year dawned, time came for Elsa and Rui to return to
 Portugal. Just before departing, they still managed to find a bit of
@@ -523,9 +547,9 @@ from an unexpected source: Lau and Leonor had just arrived in town.
 </div>
 </div>
 
-<div id="outline-container-orga2e9444" class="outline-3">
-<h3 id="orga2e9444">On the Road to Benguela</h3>
-<div class="outline-text-3" id="text-orga2e9444">
+<div id="outline-container-orgde80cd7" class="outline-3">
+<h3 id="orgde80cd7">On the Road to Benguela</h3>
+<div class="outline-text-3" id="text-orgde80cd7">
 <p>
 With Elsa's departure, we began to feel more and more restless. Luanda
 is not a friendly place to people without a vehicle; it makes you feel
@@ -601,39 +625,35 @@ timetable - if one did exist.
 </p>
 
 <p>
-With Elsa's departure, our mobility was greatly reduced, so we had no
-option but to venture further inland into the candongueiro transport
-system. While we were extremely confident on travelling from Mutamba
-to Ilha, either by Taxi or Candongueiro, we had little experience on
-any other route. This is a much more severe problem than what it seems
-to the untrained eye. You see, the whole infrastructure is designed
-for locals who know what they're doing. There just isn't a
-candongueiro central information point, explaining all the routes and
-detailing the most optimal way to get from A to B. People who ride on
-these things know them inside out, nobody needs external
-information. The difficult bit is attaining membership to this select
-club. Our intelligence pointed out to a candongueiro that did the
-route from Mutamba all the way to Rocha Pinto, precisely what we
-needed. However, we didn't quite know the exact spot in Mutamba where
-the stop was, and this is no small place - particularly when there are
-dozens of candongueiros wizzing past in all directions. And since the
-cobradores (or ticket inspectors) in the candongueiros just shout
-reference points, one did not quite know how to make sense of what
-they were saying. "Angolense!!" - does that go past Rocha Pinto or
-not? To make matters worse, cobradores and candongueiros in general
-are always in a rush; its impossible to maintain a conversation with
-them for more than twenty seconds. You can only ask something like "do
-you go to Rocha Pinto?" and get a yes or no answer. That is, if they
-manage to understand what you're saying. And herein lies another of
-the great difficulties facing the diaspora. No one, not a single young
-Angolan, seems to understand what we say unless we speak r<sub>e</sub><sub>a</sub><sub>l</sub><sub>l</sub><sub>y</sub>
-s<sub>l</sub><sub>o</sub><sub>w</sub><sub>l</sub><sub>y</sub> and with no slang whatsoever. Forget about looking cool,
-its much more important to be understood. I just don't get it, its
-like we're speaking in a totally different language - except we use
-almost identical vocabulary, with words like kota, kubico, kamba, bueh
-and so on. Don't get me wrong, when they talk back to us, good lord,
-we can't understand a word of what they're saying either. So we have
-these hilarious conversations with no meaning whatsoever:
+With Elsa's departure, our mobility was greatly reduced, so we had no option but
+to venture further inland into the candongueiro transport system. While we were
+extremely confident on travelling from Mutamba to Ilha, either by Taxi or
+Candongueiro, we had little experience on any other route. This is a much more
+severe problem than what it seems to the untrained eye. You see, the whole
+infrastructure is designed for locals who know what they're doing. There just
+isn't a candongueiro central information point, explaining all the routes and
+detailing the most optimal way to get from A to B. People who ride on these
+things know them inside out, nobody needs external information. The difficult
+bit is attaining membership to this select club. Our intelligence pointed out to
+a candongueiro that did the route from Mutamba all the way to Rocha Pinto,
+precisely what we needed. However, we didn't quite know the exact spot in
+Mutamba where the stop was, and this is no small place - particularly when there
+are dozens of candongueiros wizzing past in all directions. And since the
+cobradores (or ticket inspectors) in the candongueiros just shout reference
+points, one did not quite know how to make sense of what they were saying.
+"Angolense!!" - does that go past Rocha Pinto or not? To make matters worse,
+cobradores and candongueiros in general are always in a rush; its impossible to
+maintain a conversation with them for more than twenty seconds. You can only ask
+something like "do you go to Rocha Pinto?" and get a yes or no answer. That is,
+if they manage to understand what you're saying. And herein lies another of the
+great difficulties facing the diaspora. No one, not a single young Angolan,
+seems to understand what we say unless we speak <i>really slowly</i> and
+with no slang whatsoever. Forget about looking cool, its much more important to
+be understood. I just don't get it, its like we're speaking in a totally
+different language - except we use almost identical vocabulary, with words like
+kota, kubico, kamba, bueh and so on. Don't get me wrong, when they talk back to
+us, good lord, we can't understand a word of what they're saying either. So we
+have these hilarious conversations with no meaning whatsoever:
 </p>
 
 <ul class="org-ul">
@@ -920,8 +940,8 @@ We were now officially in Benguela.
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2021-03-27 Sat 17:08</p>
-<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="date">Created: 2021-12-21 Tue 11:51</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
