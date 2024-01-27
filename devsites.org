@@ -79,6 +79,10 @@ Tickets that I raised, or to which I added significant commentary.
 - [[https://github.com/jkitchin/org-ref/issues/800][org-ref: Better glossaries #800]]
 - [[https://github.com/jkitchin/org-ref/issues/108][org-ref: Glossary example #108]]
 
+*** Linux
+
+- [[https://github.com/lwfinger/rtl8188eu/issues/404][rtl8188eu: TP-Link TL-WN725N does not connect to router with latest master]] #404
+
 * Reddit
 
 ** Emacs
