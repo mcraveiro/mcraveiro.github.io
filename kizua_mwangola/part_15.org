@@ -39,7 +39,7 @@ add years of bad blood between these two, you're starting to get a
 rough idea of how high the tension was.
 
 #+caption: Algerian Supporters. (c) Shahinara Craveiro
-[[../assets/images/algerian_supporters.JPG]]
+[[../assets/images/algerian_supporters.jpg]]
 
 When it came to football, however, the Algerians demonstrated their
 Achilles heel: bad behaviour. To be fair, this is a common problem on
@@ -57,7 +57,7 @@ goals (three of the former against four of the latter). It seems Egypt
 is, and always was, the champion waiting to be crowned.
 
 #+caption: Egyptian keeper anticipates Algerian striker. (c) Shahinara Craveiro
-[[../assets/images/algerian_attack.JPG]]
+[[../assets/images/algerian_attack.jpg]]
 
 As a side note, I was extremely surprised to see a packed ground for
 this game --- must have been around thirty thousand of us watching

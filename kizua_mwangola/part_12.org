@@ -20,7 +20,7 @@ covering African cups for a long time and are used to the, how shall I
 put it, vagaries of African travel. So by bus we went.
 
 #+caption: Jonathan and Silvano. (c) Shahinara Craveiro
-[[../assets/images/silvano_and_jonathan.JPG
+[[../assets/images/silvano_and_jonathan.jpg
 ]]
 By the standards of most of our trips, this bus journey was remarkable
 for its non-eventfulness. No flat tires, no drunken passengers, not
@@ -34,7 +34,7 @@ weather. After enjoying a constant stream of hot, cloudless days, it
 was a real shock to see rain and --- gasp --- feel the cold.
 
 #+caption: Main road in Lubango. (c) Shahinara Craveiro
-[[../assets/images/rain_in_lubano.JPG]]
+[[../assets/images/rain_in_lubano.jpg]]
 
 Luckily we were promptly picked up by Remidor, our contact in town. In
 fact, he proved to be a really valuable resource and --- surprisingly
@@ -60,7 +60,7 @@ had won the group. In the end, Zambia and Cameroon qualified, giving
 us an exciting Egypt v Cameroon here in Benguela.
 
 #+caption: Nigeria's Peter Odemwimgie. (c) Shahinara Craveiro
-[[../assets/images/peter_odemwimgie.JPG]]
+[[../assets/images/peter_odemwimgie.jpg]]
 
 The other interesting highlight of Lubango, and one which I hope to
 pursue in the future, is the huge white Angolan community down
