@@ -2,7 +2,6 @@
 #+author: marco craveiro
 #+options: num:nil author:nil toc:nil
 #+bind: org-html-validation-link nil
-#+html_head: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
 
 [[file:index.org][back to chapter index.]]
 

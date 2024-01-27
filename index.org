@@ -22,11 +22,11 @@ about me, see the [[file:about.org][about page]].
 
 The site is organised rather like a wiki, instead of having the more traditional
 "blog posts" feel. Some of the stuff is very old and was originally published in
-[[https://mcraveiro.blogspot.com/][my blog in blogger]] - though these days I very much prefer writing and publishing
-directly in org-mode, and thus my blog has died a slow death. My main topics of
-interest are - in no particular order of importance - Angola, Finance,
-Programming, Computational Neuroscience, Football. There may be other topics
-here too.
+[[https://mcraveiro.blogspot.com/][my blog in blogger]] --- though these days I very much prefer writing and
+publishing directly in org-mode, and thus my blog has died a slow death. My main
+topics of interest are --- in no particular order of importance --- Angola,
+Finance, Programming, Computational Neuroscience and Football --- [[https://vfc.pt/][Vitória
+Futebol Clube]]. There may be other topics here too.
 
 | Title                                  | Topic                                   | Description                                                                                               |
 |----------------------------------------+-----------------------------------------+-----------------------------------------------------------------------------------------------------------|
