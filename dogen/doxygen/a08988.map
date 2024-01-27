@@ -1,3 +1,0 @@
-<map id="file_to_artefact_transform" name="file_to_artefact_transform">
-<area shape="rect" id="node1" title="Reads a file at a given path and creates an artefact from it. The file extension is used to populate ..." alt="" coords="5,5,196,83"/>
-</map>

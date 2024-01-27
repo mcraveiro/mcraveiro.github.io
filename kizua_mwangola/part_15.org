@@ -2,7 +2,6 @@
 #+author: Marco Craveiro
 #+options: num:nil author:nil toc:nil
 #+bind: org-html-validation-link nil
-#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
 
 [[file:index.org][Back to chapter index.]]
 
@@ -40,7 +39,7 @@ add years of bad blood between these two, you're starting to get a
 rough idea of how high the tension was.
 
 #+caption: Algerian Supporters. (c) Shahinara Craveiro
-[[./algerian_supporters.JPG]]
+[[../assets/images/algerian_supporters.JPG]]
 
 When it came to football, however, the Algerians demonstrated their
 Achilles heel: bad behaviour. To be fair, this is a common problem on
@@ -58,7 +57,7 @@ goals (three of the former against four of the latter). It seems Egypt
 is, and always was, the champion waiting to be crowned.
 
 #+caption: Egyptian keeper anticipates Algerian striker. (c) Shahinara Craveiro
-[[./algerian_attack.JPG]]
+[[../assets/images/algerian_attack.JPG]]
 
 As a side note, I was extremely surprised to see a packed ground for
 this game --- must have been around thirty thousand of us watching
@@ -90,6 +89,6 @@ up to watch it, an amazing figure for a final that did not involve the
 host nation.
 
 #+caption: Egypt team. (c) Angola Press
-[[./egypt.jpg]]
+[[../assets/images/egypt.jpg]]
 
 | [[file:part_14.org][Back to previous chapter]] | [[file:index.org][Back to chapter index.]] |

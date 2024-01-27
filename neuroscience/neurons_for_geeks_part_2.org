@@ -2,7 +2,6 @@
 #+author: Marco Craveiro
 #+options: num:nil author:nil toc:nil
 #+bind: org-html-validation-link nil
-#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
 
 [[file:index.org][Back to chapter index.]]
 
@@ -253,7 +252,7 @@ arrangements of protons, neutrons and electrons. As you can see in the
 picture, these look like lattices of some kind.
 
 #+caption: Microscopic View of Carbon Atoms. Source: Quantum Physics: The Brink of Knowing Something Wonderful
-[[./carbon-atoms.jpg]]
+[[../assets/images/carbon-atoms.jpg]]
 
 In practice, copper wires are made up of a great many things rather
 than just atoms of copper. One such "kind of thing" is the unbound
@@ -305,12 +304,12 @@ V = R \times I
 And here's a picture to aid intuition.
 
 #+caption: Cartoon for Ohm's law. Source: Could someone intuitively explain to me Ohm's law?
-[[./ohm_law_cartoon.jpg]]
+[[../assets/images/ohm_law_cartoon.jpg]]
 
 The best way to understand this law is to create a simple circuit.
 
 #+caption: Simple electrical circuit. Source: Wikipedia, Electrical network
-[[./Ohm's_Law_with_Voltage_source_TeX.svg]]
+[[../assets/images/Ohm's_Law_with_Voltage_source_TeX.svg]]
 
 On the left we have a voltage source, which could be our 1.5V AA
 battery. On the right of the diagram we have a resistor - an electric

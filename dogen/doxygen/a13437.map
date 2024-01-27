@@ -1,7 +1,0 @@
-<map id="element" name="element">
-<area shape="rect" id="node1" title="Represents an element modeling some aspect of variability." alt="" coords="363,5,481,435"/>
-<area shape="rect" id="node2" href="$a13426.html" title="Maps a feature name to an instance value." alt="" coords="5,761,188,1103"/>
-<area shape="rect" id="node3" href="$a13442.html" title="Unit of configuration within Dogen. Defines the domain of values." alt="" coords="213,629,407,1235"/>
-<area shape="rect" id="node4" href="$a13454.html" title="Defines a template that can be used to instantiate features." alt="" coords="432,483,636,1381"/>
-<area shape="rect" id="node5" href="$a13482.html" title="Holds a set of templates for configuration points." alt="" coords="661,791,826,1073"/>
-</map>

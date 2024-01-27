@@ -2,7 +2,6 @@
 #+author: Marco Craveiro
 #+options: num:nil author:nil toc:nil
 #+bind: org-html-validation-link nil
-#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
 
 [[file:index.org][Back to chapter index.]]
 
@@ -23,30 +22,30 @@ much. I thought perhaps a piece of photo-blogging would help. So
 here's my first part of Why I love Benguela:
 
 #+caption: Our brand spanking sidewalks. (c) Shahinara Craveiro
-[[./IMG_1397.JPG]]
+[[../assets/images/IMG_1397.JPG]]
 
 #+caption: Loads of lovely public gardens. (c) Shahinara Craveiro
-[[./IMG_1392.JPG]]
+[[../assets/images/IMG_1392.JPG]]
 
 #+caption: The new Ombaka stadium. (c) Shahinara Craveiro
-[[./IMG_1214.JPG]]
+[[../assets/images/IMG_1214.JPG]]
 
 #+caption: The sunsets we get every day. (c) Shahinara Craveiro
-[[./IMG_1109.JPG]]
+[[../assets/images/IMG_1109.JPG]]
 
 #+caption: The rush hour traffic. (c) Shahinara Craveiro
-[[./IMG_0893.JPG]]
+[[../assets/images/IMG_0893.JPG]]
 
 #+caption: Great colonial architecture. (c) Shahinara Craveiro
-[[./IMG_0892.JPG]]
+[[../assets/images/IMG_0892.JPG]]
 
 #+caption: Caotinha beach. (c) Shahinara Craveiro
-[[./IMG_0826.JPG]]
+[[../assets/images/IMG_0826.JPG]]
 
 #+caption: Catumbela river. (c) Shahinara Craveiro
-[[./IMG_0623.JPG]]
+[[../assets/images/IMG_0623.JPG]]
 
 #+caption: Local capoeira school. (c) Shahinara Craveiro
-[[./IMG_0540.JPG]]
+[[../assets/images/IMG_0540.JPG]]
 
 | [[file:part_9.org][Back to previous chapter]] | [[file:index.org][Back to chapter index.]] | [[file:part_11.org][Forward to next chapter]] |

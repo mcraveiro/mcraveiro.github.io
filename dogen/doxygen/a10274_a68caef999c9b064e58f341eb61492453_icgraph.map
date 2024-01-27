@@ -1,6 +1,0 @@
-<map id="from_primitive" name="from_primitive">
-<area shape="rect" id="node1" title="Converts a single well&#45;known stereotype into its enum." alt="" coords="469,60,588,87"/>
-<area shape="rect" id="node2" href="$a10274.html#ac92ccc1183ba2d6afce393426387e5b0" title="Given a list of stereotypes, returns the set of well&#45;known stereotypes as well as those it does not k..." alt="" coords="295,60,421,87"/>
-<area shape="rect" id="node3" href="$a10582.html#a51f4970993d9282691fc9b4e96159ac7" title="Converts an codec element with a stereotype of masd::physical::archetype." alt="" coords="5,5,247,61"/>
-<area shape="rect" id="node4" href="$a10582.html#ab3d7bc66e3af71c3536c29d03e4fac76" title="Converts an codec element with a stereotype of masd::physical::helper." alt="" coords="17,85,235,141"/>
-</map>

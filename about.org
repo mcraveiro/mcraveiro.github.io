@@ -1,48 +1,52 @@
+:properties:
+:id: 5ADCD11B-45FB-6224-11EB-531B26681143
+:end:
 #+title: About Me
 #+author: Marco Craveiro
-#+options: num:nil author:nil toc:nil
-#+HTML_HEAD: <link rel="stylesheet" href="css/tufte.css" type="text/css" />
+#+options: <:nil c:nil todo:nil ^:nil d:nil date:nil author:nil toc:nil html-postamble:nil
+#+startup: inlineimages
 
-[[file:index.org][Back to home page]].
+/[[file:index.org][Back to home page]]/
 
 * Quick Bio
 
 The bio from my [[https://github.com/mcraveiro][GitHub profile]] is still fairly accurate:
 
 #+begin_quote
-Dad, Husband, PhD Student, Senior Software Engineer, FX Derivatives
-geek, Angolan-Portuguese.
+Dad, Husband, PhD, Senior Software Engineer, FX Derivatives geek,
+Angolan-Portuguese.
 #+end_quote
 
 * Programming
 
-I've spent over twenty years programming professionally, almost all of
-which spent in the United Kingdom, with a few escapades in Angola and
-Portugal. My main focus over the last fifteen or so years has been the
-financial sector - in particular the FX derivatives market. I am
-currently gainfully employed and therefore not looking for
-opportunities.
+I've spent a quarter of a century programming professionally, almost all of
+which in the United Kingdom --- though I did do a couple of quick escapades to
+Angola and Portugal. My main focus over the last twenty or so years has been the
+financial sector --- the FX derivatives market in particular. I am currently
+gainfully employed and therefore not looking for opportunities.
 
-* Domain Driven Consulting
+* Academia
 
-On my spare time I also manage my company Domain Driven Consulting,
-focusing on software automation - the subject of which is my PhD
-thesis, which I will hope to publish soon (famous last words). My
+I did a PhD thesis which may (or may not) be of interest: [[https://uhra.herts.ac.uk/handle/2299/25708][Model Assisted
+Software Development --- a MDE-Based Software Development Methodology]]. As part
+of that work, I wrote a few papers:
+
+- [[https://zenodo.org/records/5790875#.YkoSutDMKXI][Survey of Special Purpose Code Generators]]
+- [[https://zenodo.org/records/5767247#.YkoS6NDMKXI][Experience Report of Industrial Adoption of Model Driven Development in the
+  Financial Sector]]
+- [[https://zenodo.org/records/5812017#.YkmlftDMKXI][Notes on Model Driven Engineering]]
+
+On my spare time I continue to work on this topic over at the [[https://masd-project.github.io/progen/index.html][MASD Project]]. My
 /alma matter/ is the [[https://www.herts.ac.uk/][University of Hertfordshire]].
 
 * Languages
 
-I speak fluently English and Portuguese, but I can survive in Spanish
-and if really pushed, maybe in French; my favourite expression, which
-I heard our [[https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo][Congolese neighbours]] say many a time is /Je me
-débrouille/.
+My mother tongue is Portuguese, but I speak English fluently enough (though my
+kids may tell you otherwise). I can survive in Spanish and, if really pushed,
+rather badly in French. My favourite expression, which I heard our [[https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo][Congolese
+neighbours]] say a lot is /Je me débrouille/.
 
-#+caption: Profile picture
-#+NAME: fig:gotch
-#+attr_html: :width 30% :height 30% :align center
-[[./gfx/gotchi_large.jpg]]
-
-# Local Variables:
-# org-html-validation-link: nil
-# org-tufte-include-footnotes-at-bottom: t
-# End:
+#+caption: Profile picture. (C) 2020 Shahinara Craveiro.
+#+name: fig-gotch
+#+attr_html: :width 50% :height 50% :align center
+[[./assets/images/gotchi_large.jpg]]

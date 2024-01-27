@@ -1,5 +1,0 @@
-<map id="read" name="read">
-<area shape="rect" id="node1" title="Reads the next node from the stream." alt="" coords="165,31,216,57"/>
-<area shape="rect" id="node2" href="$a13362.html#a5fb66d8637433a32f81858f1a2f3f200" title="Moves to the next element, which must exist." alt="" coords="14,5,109,32"/>
-<area shape="rect" id="node3" href="$a13362.html#a017962735ef1fcca60a2e024503f0574" title="Moves to the next element and ensures it has the expected name." alt="" coords="5,56,117,83"/>
-</map>

@@ -1,3 +1,0 @@
-<map id="json_artefact_to_model_transform" name="json_artefact_to_model_transform">
-<area shape="rect" id="node1" title="Processes the artefact as if encoded using JSON, converting it into an instance of the codec model." alt="" coords="5,5,180,97"/>
-</map>

@@ -2,7 +2,6 @@
 #+author: Marco Craveiro
 #+options: num:nil author:nil toc:nil
 #+bind: org-html-validation-link nil
-#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
 
 [[file:index.org][Back to chapter index.]]
 
@@ -185,7 +184,7 @@ terminal - say =-=. Graphically - and pardoning my inability to use
 [[https://wiki.gnome.org/Apps/Dia/][Dia]] to create circuit diagrams - it would look more or less like this:
 
 #+caption: Series circuit. Source: Author
-[[./series_circuit.png]]
+[[../assets/images/series_circuit.png]]
 
 This circuit has a few interesting properties. First, if any of the
 light bulbs fail, all of them will stop working because the circuit is
@@ -206,7 +205,7 @@ literally a segment of cable that connects the other segments of
 cable, more or less like so:
 
 #+caption: Parallel circuit. Source: Author
-[[./parallel_circuit.png]]
+[[../assets/images/parallel_circuit.png]]
 
 Here you can see that if a bulb fails, there is still a closed loop in
 which current can flow, so the other bulbs should be unaffected. This
@@ -226,7 +225,7 @@ form, the circuit has a source of current with a resistor and a
 capacitor:
 
 #+caption: Source: Wikipedia, RC circuit
-[[./Discharging_capacitor.svg]]
+[[../assets/images/Discharging_capacitor.svg]]
 
 Let's try to understand how the capacitor's voltage will behave over
 time. This circuit is rather similar to the one we analysed when
@@ -314,7 +313,7 @@ percent) of full charge or to discharge it to 37 percent (actually
 #+end_quote
 
 #+caption: The RC Time constant. Source: Concepts of alternating current
-[[./32NE0159.GIF]]
+[[../assets/images/32NE0159.GIF]]
 
 * What next?
 

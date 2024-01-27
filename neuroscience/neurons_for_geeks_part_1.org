@@ -2,7 +2,6 @@
 #+author: Marco Craveiro
 #+options: num:nil author:nil toc:nil
 #+bind: org-html-validation-link nil
-#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
 
 [[file:index.org][Back to chapter index.]]
 
@@ -68,7 +67,7 @@ they tend to have few axons (one or maybe a couple) and many dendrites
 (in the thousands).
 
 #+caption: Model of a neuron cell. Source: What is a Neuron?
-[[./neuron_cell.png]]
+[[../assets/images/neuron_cell.png]]
 
 This very basic morphology is already sufficient to allows to start to
 think of a neuron as a "computing device" - a strange kind of device

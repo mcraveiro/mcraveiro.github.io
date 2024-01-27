@@ -2,7 +2,6 @@
 #+author: Marco Craveiro
 #+options: num:nil author:nil toc:nil
 #+bind: org-html-validation-link nil
-#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
 
 [[file:index.org][Back to chapter index.]]
 
@@ -205,7 +204,7 @@ by thinking of it as an electric circuit. Taking a patch of membrane
 as an example, it can be visualised as an electric circuit like so:
 
 #+caption: Source: Wikipedia, Membrane Potential
-[[./Cell_membrane_equivalent_circuit.png]]
+[[../assets/images/Cell_membrane_equivalent_circuit.png]]
 
 What this diagram tells us is that the membrane itself acts as a
 capacitor, with its capacitance determined by the properties of the
@@ -229,7 +228,7 @@ channels, we can perform an additional simplification on the circuit
 above and we finally end up with an RC Circuit:
 
 #+caption: Source: Wikipedia, Membrane Potential
-[[./Cell_membrane_reduced_circuit.png]]
+[[../assets/images/Cell_membrane_reduced_circuit.png]]
 
 The circuit now has one resistance, which we call the membrane
 resistance, and a membrane battery.

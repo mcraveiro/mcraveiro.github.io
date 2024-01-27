@@ -2,7 +2,6 @@
 #+author: Marco Craveiro
 #+options: num:nil author:nil toc:nil
 #+bind: org-html-validation-link nil
-#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
 
 [[file:index.org][Back to chapter index.]]
 
@@ -129,7 +128,7 @@ playing pool, not causing much trouble at all - at least during the
 time we were in town.
 
 #+caption: Cyclists passing through Simon's Town
-[[./simons_town_cyclists.jpg]]
+[[../assets/images/simons_town_cyclists.jpg]]
 
 There are a few restaurants to choose from in Simon's Town, not a wide
 choice of options but just about enough to keep one entertained for a
@@ -166,7 +165,7 @@ too soon, the sun still high up in the sky, but not so hot as to make
 walking strenuous.
 
 #+caption: Penguins at Boulders Beach, next door to Simon's Town.
-[[./simons_town_penguins.jpg]]
+[[../assets/images/simons_town_penguins.jpg]]
 
 The national park caters for the less wealthy, providing free access
 to an extensive area that circumscribes the main penguin
@@ -345,7 +344,7 @@ week my ears were in absolute pain. We also started to go to bed
 later, to make the process slightly more bearable.
 
 #+caption: The V&A Waterfront.
-[[./cape_town_victoria_albert.jpg]]
+[[../assets/images/cape_town_victoria_albert.jpg]]
 
 Other than its loudness, Long Street is actually a nice place. There
 are many (many) second-hand bookshops, ready to receive your old books
@@ -447,7 +446,7 @@ the way to the summit. However, getting from town centre to the cable
 cars still involves some walking, most of it up a rather steep hill.
 
 #+caption: Camps bay
-[[./cape_town_camps_bay.jpg]]
+[[../assets/images/cape_town_camps_bay.jpg]]
 
 We left the house fully intending to get a bus to the cable cars. But
 as we started to walk to the bus stop, uncertain as we were about its
@@ -528,7 +527,7 @@ Town. At that point it hit me that a name much more apt for the town
 would have been Windhoek.
 
 #+caption: Fire at the Signal Hill
-[[./cape_town_signal_hill_fire.jpg]]
+[[../assets/images/cape_town_signal_hill_fire.jpg]]
 
 The bus trip started normally, with a bit of wind. As we started
 making our into town the winds got stronger and stronger, to a point
@@ -618,7 +617,7 @@ left to appreciate the stunning views of the ocean, Cape Town fading
 in the horizon, the island drawing nearer and nearer.
 
 #+caption: Security towers at Robben Island.
-[[./robben_island.jpg]]
+[[../assets/images/robben_island.jpg]]
 
 At the island one is taken into a bus, and driven around. The first
 stop was the quarry. If you know a bit of Madiba's story, you are
@@ -699,7 +698,7 @@ slum with a trendy little Cartier - a description to which, I'm sure,
 80% of its population would eagerly subscribe to.
 
 #+caption: Young Capetonian selling The Issue
-[[./cape_town_poverty.jpg]]
+[[../assets/images/cape_town_poverty.jpg]]
 
 It may seem unfair to single out the Cape since places like Jozi and
 even Durban, not to mention Luanda, also have deep poverty
@@ -726,7 +725,7 @@ driving where enough to dissuade us to drive, so we hoped on a
 Greyhound and rode all the way to Knysna.
 
 #+caption: The Plattenberg.
-[[./plattenberg.jpg]]
+[[../assets/images/plattenberg.jpg]]
 
 After a very scenic bus trip, we arrived at Knysna and booked
 ourselves in the Knysna Backpackers. Incredibly, we forgot the lessons
@@ -806,7 +805,7 @@ base camp than Knysna, both on the scenic side of things, but also
 because it seems to be a much livelier place.
 
 #+caption: At a platform on the Canopy Tree tour. The tree is over 50 metres in height.
-[[./canopy_tree.jpg]]
+[[../assets/images/canopy_tree.jpg]]
 
 Nature's Valley, as the name implies is a very much unspoiled valley,
 at the bottom of which lies a river. The hills are covered with lots
@@ -942,7 +941,7 @@ better standard, something we no doubt will put to test in the near
 future.
 
 #+caption: View from our Hotel in Port Elizabeth.
-[[./port_elizabeth.jpg]]
+[[../assets/images/port_elizabeth.jpg]]
 
 PE does lack somewhat with regards to eating. There are many
 restaurants to choose from, but other than our hotel's cuisine and one
@@ -1038,7 +1037,7 @@ was great seeing him again. Events like these make you realise just
 how small our world really is.
 
 #+caption: A poor area in Soweto.
-[[./jozi_soweto.jpg]]
+[[../assets/images/jozi_soweto.jpg]]
 
 Our trip started with a drive around Soweto, followed by a short visit
 to a Church where police had attacked defenceless protesters. We then

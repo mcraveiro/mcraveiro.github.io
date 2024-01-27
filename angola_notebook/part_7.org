@@ -2,7 +2,6 @@
 #+author: Marco Craveiro
 #+options: num:nil author:nil toc:nil
 #+bind: org-html-validation-link nil
-#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
 
 [[file:index.org][Back to chapter index.]]
 
@@ -121,7 +120,7 @@ origin: D for Damara, H for Herero, and so on. Not only there was a
 clear division between whites, coloreds and blacks but there was a
 fairly large rift between the different black ethnic groups.
 
-[[./namibia_katatura.jpg]]
+[[../assets/images/namibia_katatura.jpg]]
 
 We went to a market in Katatura, where anything and everything gets
 sold. It is actually very organised, and one gets the feeling that
@@ -205,7 +204,7 @@ came out, but very cold and windy otherwise. And the sea is extremely
 cold. Its a bit like the sea in Porto, northern Portugal. Very, very
 cold.
 
-[[./namibia_desert.jpg]]
+[[../assets/images/namibia_desert.jpg]]
 
 In Swakop we decided to start going on tours. We first did the
 desert. This was a great experience. We had a couple of teenagers
@@ -226,7 +225,7 @@ with the seals. Its awfully hard to take pictures of dolphins, and I
 think Shahin is very happy with her digital camera and the ability to
 take many, many shots of empty sea without having to develop them.
 
-[[./namibia_seal.jpg]]
+[[../assets/images/namibia_seal.jpg]]
 
 After a couple of days in Swakop, people started arriving. It was
 indeed as most people said, a rather popular place (at least in

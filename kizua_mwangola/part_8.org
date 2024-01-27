@@ -2,7 +2,6 @@
 #+author: Marco Craveiro
 #+options: num:nil author:nil toc:nil
 #+bind: org-html-validation-link nil
-#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
 
 [[file:index.org][Back to chapter index.]]
 
@@ -56,20 +55,20 @@ Angola. Absolutely fantastic atmosphere even though hosts were not
 playing!
 #+end_quote
 
-[[./19932_284376273901_4522219_n.jpg]]
+[[../assets/images/19932_284376273901_4522219_n.jpg]]
 
-[[./19932_284376288901_262785_n.jpg]]
+[[../assets/images/19932_284376288901_262785_n.jpg]]
 
-[[./19932_284376298901_3287333_n.jpg]]
+[[../assets/images/19932_284376298901_3287333_n.jpg]]
 
-[[./19932_284376323901_4824602_n.jpg]]
+[[../assets/images/19932_284376323901_4824602_n.jpg]]
 
-[[./19932_284386538901_5503564_n.jpg]]
+[[../assets/images/19932_284386538901_5503564_n.jpg]]
 
-[[./19932_284386528901_6815785_n.jpg]]
+[[../assets/images/19932_284386528901_6815785_n.jpg]]
 
-[[./19932_284386523901_8048400_n.jpg]]
+[[../assets/images/19932_284386523901_8048400_n.jpg]]
 
-[[./19932_284376313901_7019852_n.jpg]]
+[[../assets/images/19932_284376313901_7019852_n.jpg]]
 
 | [[file:part_7.org][Back to previous chapter]] | [[file:index.org][Back to chapter index.]] | [[file:part_9.org][Forward to next chapter]] |

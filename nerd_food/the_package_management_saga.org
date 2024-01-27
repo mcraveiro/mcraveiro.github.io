@@ -2,7 +2,6 @@
 #+options: date:nil toc:nil author:nil num:nil title:nil
 #+options: num:nil author:nil toc:nil
 #+bind: org-html-validation-link nil
-#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
 
 | [[file:index.org][Back to essay index]] | [[file:../index.org][Back to home page]] |
 

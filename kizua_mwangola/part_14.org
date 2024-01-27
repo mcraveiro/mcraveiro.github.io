@@ -2,7 +2,6 @@
 #+author: Marco Craveiro
 #+options: num:nil author:nil toc:nil
 #+bind: org-html-validation-link nil
-#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
 
 [[file:index.org][Back to chapter index.]]
 
@@ -26,7 +25,7 @@ this crazy foreigner riding with the luggage. I was even asked to take
 a picture, an undeniable proof that this event had actually happened.
 
 #+caption: Peter with Senhor Viana. (c) Marco Craveiro
-[[./pete_with_senhor_viana.JPG]]
+[[../assets/images/pete_with_senhor_viana.JPG]]
 
 No one believed the security guards would allow them to park at the
 entrance of the hotel. In the end, the mission was successful. Whilst

@@ -2,7 +2,6 @@
 #+author: Marco Craveiro
 #+options: num:nil author:nil toc:nil
 #+bind: org-html-validation-link nil
-#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
 
 [[file:index.org][Back to chapter index.]]
 
@@ -45,7 +44,7 @@ behaviour over time you will see a spike train - a plot of the voltage
 over time, clearly showing the spikes. Taking a fairly random example:
 
 #+caption: Source: Wikipedia, Neural oscillation
-[[./Simulation_of_hrose_neuron.png]]
+[[../assets/images/Simulation_of_hrose_neuron.png]]
 
 One way of picturing this is as a kind of "chain-reaction" whereby
 something triggers the voltage of the neuron to rise, which triggers a

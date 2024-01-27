@@ -2,7 +2,6 @@
 #+author: Marco Craveiro
 #+options: num:nil author:nil toc:nil
 #+bind: org-html-validation-link nil
-#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
 
 [[file:index.org][Back to chapter index.]]
 
@@ -165,7 +164,7 @@ monastery. Getting rid of all the material things seemed like the only
 thing to do. I suppose I had a bit of an epiphany: I suddenly realised
 how hard it is to own absolutely nothing.
 
-[[./marco_shahin_bethnal_green.jpg]]
+[[../assets/images/marco_shahin_bethnal_green.jpg]]
 
 In the midst of this delirious state, someway, somehow we managed to
 get to a point were things could mostly fit in the two small

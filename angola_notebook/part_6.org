@@ -2,7 +2,6 @@
 #+author: Marco Craveiro
 #+options: num:nil author:nil toc:nil
 #+bind: org-html-validation-link nil
-#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
 
 [[file:index.org][Back to chapter index.]]
 
@@ -83,7 +82,7 @@ to mind). On the whole, the areas of Jozzie we drove through look like
 a fairly posh London suburb, but with the white and Asian people
 replaced by black people.
 
-[[./joburg_traffic_lights.jpg]]
+[[../assets/images/joburg_traffic_lights.jpg]]
 
 Interestingly enough Gemini is around the corner from the Alexandra
 township, which is famous for all the wrong reasons. There were enough
@@ -102,7 +101,7 @@ swimming pools (with filters running and everything) but the water
 never seems clean enough for swimming. I don't quite understand why
 they bother to have the pool at all.
 
-[[./gemini_backpackers.jpg]]
+[[../assets/images/gemini_backpackers.jpg]]
 
 There are some significant differences between the African backpacker
 and its Asian/Australian counterpart. First, there are lots of older
@@ -248,7 +247,7 @@ in Southern Africa; and since we were surrounded mainly by foreigners
 and cautious lodge staff, we just didn't know where the limits
 were. It seemed safer to err in the side of caution.
 
-[[./gemini_aaron.jpg]]
+[[../assets/images/gemini_aaron.jpg]]
 
 Organizing the departure was interesting in itself. Gemini has this
 one-man-band approach and all administrative tasks are done by one

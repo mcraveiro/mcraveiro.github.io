@@ -75,7 +75,7 @@
          :time-stamp-file nil)      ;; Don't include time stamp in file
         ("progen-site:images"
          :base-directory "./assets/images"
-         :base-extension "png\\|jpg"
+         :base-extension "png\\|jpg\\|gif\\|svg"
          :publishing-directory "./build/output/site/assets/images"
          :publishing-function org-publish-attachment)
         ("progen-site:css"

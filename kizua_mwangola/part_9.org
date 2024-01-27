@@ -2,7 +2,6 @@
 #+author: Marco Craveiro
 #+options: num:nil author:nil toc:nil
 #+bind: org-html-validation-link nil
-#+HTML_HEAD: <link rel="stylesheet" href="../css/tufte.css" type="text/css" />
 
 [[file:index.org][Back to chapter index.]]
 
@@ -21,7 +20,7 @@ against them. I mean, jeez, we even sang _Mozambican_ songs. This was
 better support than they would have in Maputo, I tell you.
 
 #+caption: Mozambique v Egypt, Benguela. (c) Shahinara Craveiro
-[[./IMG_1387.JPG]]
+[[../assets/images/IMG_1387.JPG]]
 
 The first half was exciting, mainly because Egypt didn't quite manage
 to score, but Mozambique did make a few interesting moves. The crowed
@@ -63,7 +62,7 @@ seemed amazed with the big stadium though.
 
 
 #+caption: The "Miudo" (c) Shahinara Craveiro
-[[./miudo.JPG]]
+[[../assets/images/miudo.JPG]]
 
 ------
 
