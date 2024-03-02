@@ -13,8 +13,8 @@
 The bio from my [[https://github.com/mcraveiro][GitHub profile]] is still fairly accurate:
 
 #+begin_quote
-Dad, Husband, PhD, Senior Software Engineer, FX Derivatives geek,
-Angolan-Portuguese.
+Dad, Husband, Computer Science PhD, Senior Software Engineer, FX Derivatives
+geek, Angolan-Portuguese.
 #+end_quote
 
 * Programming
@@ -37,7 +37,8 @@ of that work, I wrote a few papers:
 - [[https://zenodo.org/records/5812017#.YkmlftDMKXI][Notes on Model Driven Engineering]]
 
 On my spare time I continue to work on this topic over at the [[https://masd-project.github.io/progen/index.html][MASD Project]]. My
-/alma matter/ is the [[https://www.herts.ac.uk/][University of Hertfordshire]].
+/[[https://en.wikipedia.org/wiki/Alma_mater][almae matres]]/ are: [[https://www.herts.ac.uk/][University of Hertfordshire]] (PhD, MsC) and [[https://www.ualg.pt/][Universidade do
+Algarve]] - Escola Superior de Gestão, Hotelaria e Turismo (ESGHT) (BSc).
 
 * Languages
 
