@@ -69,6 +69,6 @@ What follows is a series of videos I have created on ORE Studio.
 
 What follows is a series of posts on the topic of ORE Studio and related technologies.
 
-| Post                               | Description |
-|------------------------------------+-------------|
-| [[file:quant_summit_london_2026.org][Quant Summit London 2026 in Review]] |             |
+| Post                               | Description                                                     |
+|------------------------------------+-----------------------------------------------------------------|
+| [[file:quant_summit_london_2026.org][Quant Summit London 2026 in Review]] | Report in the 2026's Quant Summit at the London Stock Exchange. |
