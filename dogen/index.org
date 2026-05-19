@@ -1,22 +1,23 @@
 :properties:
 :id: 11F938FF-2A01-4424-DBE3-16527251E747
 :end:
-#+title: Progen, or Dogen v2
+#+title: Dogen
 #+options: <:nil c:nil todo:nil ^:nil d:nil date:nil author:nil toc:nil html-postamble:nil
 #+startup: inlineimages
 #+cite_export: basic author author-year
 #+bibliography: bibliography.bib
 
+[[file:../index.org][Back to home page]].
+
 [[./assets/images/masd_logo.png]]
 
-This site contains all of the product documentation for Progen. Progen is the
-second incantation of [[https://github.com/MASD-Project/dogen][Dogen]], the Model Assisted Software Development (MASD) code
-generator. MASD is a methodology to develop software systems[fn:thesis] based on
-[[id:C29C6088-B396-A404-9183-09FE5AD2D105][MDE - Model Driven Development]]. Throughout this site you will find all the
-information needed to make sense of these and many other terms, as well as the
-rationale for the existence of Progen. This project makes heavy use of the
-[[https://www.orgroam.com/manual.html][org-roam]] approach, though if you are consuming it from within a web-browser, it
-should not make much difference.
+This site contains all of the product documentation for [[https://github.com/MASD-Project/dogen][Dogen]], the Model
+Assisted Software Development (MASD) code generator. MASD is a methodology to
+develop software systems[fn:thesis] based on [[id:C29C6088-B396-A404-9183-09FE5AD2D105][MDE - Model Driven Development]].
+Throughout this site you will find all the information needed to make sense of
+these and many other terms, as well as the rationale for the existence of
+Dogen. This project makes heavy use of the [[https://www.orgroam.com/manual.html][org-roam]] approach, though if you
+are consuming it from within a web-browser, it should not make much difference.
 
 [fn:thesis] MASD was developed as part of my PhD thesis. See [[id:5FA85AF3-E55C-B174-D943-1E2246CAEB14][MASD Academic
 Papers]].
@@ -25,10 +26,9 @@ Papers]].
 
 ** General Pages
 
-| Page   | Description                    |
-|--------+--------------------------------|
-| [[id:BA763158-3DC5-E914-BF2B-5C9CABBC3676][Readme]] | The project README in github.  |
-| [[id:26C11B63-95AE-D454-4663-0B147D32B568][Progen]] | Details of the project itself. |
+| Page   | Description                       |
+|--------+-----------------------------------|
+| [[id:BA763158-3DC5-E914-BF2B-5C9CABBC3676][Readme]] | Overview of the Dogen project.    |
 
 ** Domain Concepts
 
