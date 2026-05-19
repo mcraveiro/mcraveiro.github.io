@@ -1,0 +1,367 @@
+#+title: Quant Summit London 2026
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+
+[[file:index.org][Back to ORE Studio page]].
+
+One of my yearly traditions is to attend the [[https://github.com/OpenSourceRisk/Engine][ORE]] Quant Summit, hosted by [[https://www.lseg.com/en/post-trade/solutions/advise/open-source-risk-engine][LSEG]]
+(London Stock Exchange Group). I was impressed with my last summit, as I tried
+(and failed) to convey via [[https://www.linkedin.com/in/marco-craveiro-phd-%F0%9F%87%A6%F0%9F%87%B4%F0%9F%87%B5%F0%9F%87%B9-31558919][LinkedIn]]:
+
+[[../assets/images/quant_summit_2025.png]]
+/Figure 1: Quant Summit 2025, with the "two Rolands" (bottom left)./
+
+Even with the bar raised ever so high by previous sessions, I must confess this
+year's summit beat expectations by a margin. So, rather than a measly LinkedIn
+post, I thought I'd give it full "blog post" honours to capture it for... well,
+for posterity. In addition, in keeping with our objectives at [[https://github.com/OreStudio/OreStudio][ORE Studio]] to
+popularise Quantitative Finance, I will also attempt to add some context where I
+can.
+
+Before we begin, a spoiler alert: unfortunately the "Main Man" [[https://www.linkedin.com/in/luigiballabio/][Luigi Ballabio]]
+was unable to attend the Summit this year. It is a shame as he is a very nice
+and interesting character.
+
+* Masterclass
+
+The Quant Summit has traditionally started with a "Masterclass", in which
+experts provide a deluge of detailed ORE knowledge to the unsuspecting masses.
+Previous sessions included a hands-on lab session where participants were guided
+through the ropes of setting up ORE via python, simple pricing scenarios and the
+like. I must confess I was rather fond of this take, even if some aspects
+weren't exactly what the old hands would call exciting. There are only so many
+=venvs= one can set up in a lifetime, and all that--- and yes, I can already
+hear the koolkids shouting from the back that the crowd has long since moved on
+to greener pastures such as =uv=, but the point still holds. But I digress; all
+of this to say that, other than environmental setup, I did enjoy the "hands on"
+sessions with ORE.
+
+Alas, the Quant Summit has evolved past those; the master class is now more akin
+to a series of PhD-style university lectures, or maybe more like a quick
+Technical Report presentation for a Journal Club. Both approaches have their
+merits. The always funny [[https://www.linkedin.com/in/james-mac-hale-8040654b/][James Mac Hale]] told me the main issue with hands-on
+labs is the variance of audience member setups and resulting
+hard-to-troubleshoot IT problems. Much time is lost in dealing with such issues
+rather than focusing on the tasks at hand. In addition, in these days of LLMs,
+it is perhaps not the best use of expert time, since you have a personal
+assistant with detailed ORE knowledge at your fingertips anyway. So it was that
+we were treated to these lectures, which the next section will briefly
+summarise.
+
+** SVI
+
+The first was focused on the state of SVI (Stochastic Volatility Inspired)
+support in ORE. To recap why this would be useful, Aurell [[https://www.diva-portal.org/smash/get/diva2:744907/FULLTEXT02.pdf][tell us]] that:
+
+#+begin_quote
+The SVI implied volatility model is a parametric model for stochastic implied
+volatility. The SVI is interesting because of the possibility to state explicit
+conditions on its parameters so that the model does not generate prices where
+static arbitrage opportunities can occur. Calibration of the SVI model to real
+market data requires non-linear optimization algorithms and can be quite time
+consuming. In recent years, methods to calibrate the SVI model that use its
+inherent structure to reduce the dimensions of the optimization problem have
+been invented in order to speed up the calibration.
+#+end_quote
+
+[[../assets/images/IMG_20260511_101051330_HDR.jpg]]
+/Figure 2: The SVI model family./
+
+If I understood correctly, SVI will appear within the curve config as a form of
+interpolation, available for strike and time interpolation. The two types of
+arbitrage that were mentioned were calendar arb and fly arb, but I wonder from
+browsing Aurell if there are other types of static arbitrage that the SVI family
+can help with.
+
+** Local Vol
+
+The guru [[https://www.linkedin.com/in/peter-caspers-1a3b1619/][Peter Caspers]] spoke about Local Vol support in ORE. As a brief overview
+on the topic:
+
+#+begin_quote
+Local volatility (LV) models compute volatility as a deterministic function of
+the current asset price and time, \(\sigma(S_t, t)\), allowing for a perfect fit
+to market prices but poor dynamic hedging. Stochastic volatility (SV) models,
+such as Heston or SABR, treat volatility itself as a random process, providing
+superior dynamic hedging and capturing realistic smile evolution.
+#+end_quote
+
+For a treatment more amenable to the lay, see Kumar Jha's [[https://medium.com/@akjha22/local-vs-stochastic-volatility-easiest-explanation-351e9b97a9f8][Local vs Stochastic
+Volatility: Easiest Explanation]].
+
+[[../assets/images/IMG_20260511_102933770_HDR.jpg]]
+/Figure 3: Peter Caspers discussing Local Vol support./
+
+I must say, it is still unclear to me how Local Vol and Stochastic Vol should
+interact in the context of intraday risk management, but I suspect a lot of
+these concepts will only become clear once I advance [[https://github.com/OreStudio/OreStudio][ORE Studio]] sufficiently to
+be able to play with them interactively. And to further complicate matters ---
+if I understood Caspers correctly --- you also need to take into account
+stochastic rates, as these impact even the short end of the curve these days,
+meaning you also need to correct for those. At any rate, it is great to see that
+ORE is catering for all of these real world features of vol surface management.
+
+** COM
+
+[[https://www.linkedin.com/in/sarp-kaya-acar-85579749/][Sarp Kaya Acar]] made a presentation about modeling in commodities --- an asset
+class to which I know next to nothing. On the plus side, Acar's presentation
+provided sufficient context to allow a layperson a modicum of understanding on
+the motivation of these changes, as the figure demonstrates.
+
+[[../assets/images/IMG_20260511_104148024_HDR.jpg]]
+/Figure 4: Limitations of single factor models./
+
+The gist of it is that existing commodity models in ORE support only a single
+factor and no seasonality. In the real world, this model is too simplistic and
+the eventual target is to generalise support to /n/ factors, much like [[https://cran.r-project.org/web/packages/NFCP/vignettes/NFCP.html][models in
+R provide]] and for very much the same reasons:
+
+#+begin_quote
+‘NFCP’ (N-Factor Commodity Pricing) provides a framework for the modeling,
+parameter estimation, probabilistic forecasting, European and American options
+on futures contracts valuation and simulation of commodity prices through state
+space and Monte Carlo methods, risk-neutral valuation and Kalman filtering.
+Commodity pricing models are systems of stochastic differential equations that
+are utilized for the valuation and hedging of commodity contingent claims (i.e.
+derivative products on the commodity) and other commodity related investments.
+Parameters of commodity pricing models are estimated through maximum likelihood
+estimation (MLE), using available term structure futures data of a commodity.
+Commodity pricing models that capture market dynamics are of great importance to
+commodity market participants in order to exercise sound investment and
+risk-management strategies. The N-factor commodity pricing model framework was
+first presented in the work of Cortazar and Naranjo (2006) titled “An N-Factor
+Gaussian Model of Oil Futures Prices”.
+#+end_quote
+
+However, Acar argued that in many cases $n = 2$ suffices, though this appears to
+be highly dependent on the commodity in question. Gas markets, for example, seem
+to work well with 2 factors and seasonality support, but maybe there are other
+more complicated cases which require larger $n$. Bear in mind this work has not
+yet been merged to the main ORE branch, but from Acar's talk it seems to be
+progressing quite well and should land soon.
+
+[[../assets/images/IMG_20260511_105010723_HDR.jpg]]
+/Figure 5: Two factor models./
+
+*** SWIG Support
+
+The next presentation was a bit easier to understand for regular developers.
+[[https://www.linkedin.com/in/eric-ehlers-9ba682/][Eric Ehlers]] and a colleague --- unfortunately I do not seem to have caught her
+name on my notes --- spoke at length at the progress in [[https://www.swig.org/][SWIG]] support in ORE.
+Having used SWIG in the past to consume proprietary quant models, I can only
+attest to the importance of having thorough coverage in this front. The main
+focus of the presentation was on exposing functionality over to Python, but of
+course the beauty of SWIG is that it should work for all supported languages ---
+modulus some implementation quirks. This means you should now be able to consume
+ORE from say Java or .NET via the SWIG interfaces.
+
+[[../assets/images/IMG_20260511_111015846_HDR.jpg]]
+/Figure 6: State of SWIG coverage in ORE./
+
+There are few free lunches of course, and there is always a catch. When
+consuming those proprietary models I mentioned from C#, I was bitten many a time
+and spent a bit of cycles thinking hard about the memory model across language
+boundaries; non-deterministic garbage collection, large objects and c++ are not
+always the nicest of friends. Nonetheless, these advances open up ORE to a wide
+range of applications.
+
+[[../assets/images/IMG_20260511_111216897_HDR.jpg]]
+/Figure 7: Consuming ORE from Jupyter notebooks./
+
+In terms of coverage: at "only" 45%, the headline number is somewhat misleading.
+Instead, one should bear in mind that not all functions are of equal importance.
+Some obscure methods, perhaps low-level QuantLib functions say, are of less use
+than high-level curve construction infrastructure. According to the presenters,
+the most useful functionality is covered within those 45%, meaning the tail may
+not actually be of significance for the daily use cases of desk and developers
+alike. For this exact reason, their approach was to prioritise workflow entry
+points where the biggest bang for buck lies.
+
+And one such key use case is to consume ORE from within [[https://jupyter.org/][Jupyter notebooks]] ---
+demonstrated live by Eric Ehlers. Being an Emacs man myself, I prefer org-mode
+rather than Jupyter, but this will be obviously useful to the typical developer
+and Quant.
+
+** Risk Analytics Lab
+
+The master class finished with a presentation by [[https://www.linkedin.com/in/jacobrullman/][Jake Ullman]] on a new LSEG tool
+called Risk Analytics Lab (RAL). It appeared to be extremely useful, and with
+some overlap in functionality with what we are trying to do with [[https://github.com/OreStudio/OreStudio][ORE Studio]].
+Where they differ, of course, is that RAL targets the professional user which
+plenty of domain knowledge, and provides all of the professional infrastructure
+one requires to drive ORE in real business use cases --- /e.g./ a wealth of
+market data feeds and the like. ORE Studio instead targets the student and the
+apprentice --- those who are trying to master the domain and the tool
+simultaneously and are not able to access all of the required market data needed
+to drive these features.
+
+[[../assets/images/IMG_20260511_113042513_HDR.jpg]]
+/Figure 8: Risk Analytics Lab demo./
+
+As I do not have access to RAL I won't comment too much on it, other than it
+seems to be a very user friendly tool and provides a lot of useful functionality
+such as P&L Attribution. In addition, it seems to integrate really well with
+Jupyter, so you can bring all of your python tools to bear and easily extend it
+as required as well as integrating it with the existing quant toolkits that most
+Tier 1 banks already have. One can imagine the SWIG work has been driven by a
+large extent to initiatives such as RAL, which is great to see.
+
+* Talks and Panels
+
+The second part of the day was taken by a series of talks and panels by industry
+experts and internal elements of LSEG where they discussed very interesting
+topics related to ORE and the industry in general. I will only briefly mention
+each of these talks as they spanned a number of topics and I cannot possibly do
+them justice.
+
+** Welcome Keynote
+
+[[https://www.linkedin.com/in/emily-prince-ceo-yieldbook/][Emily Prince]] gave some perspective on the topic of AI and the quant world.
+Overall the presentation was measured and realistic --- not entirely sure why,
+but it reminded me of the tone of de Prado's book, if not the content ([[https://www.amazon.com/Advances-Financial-Machine-Learning-Marcos/dp/1119482089][Advances
+in Financial Machine Learning]]). The gist of it is that, yes, it is a useful
+technology but, no, it is no [[https://en.wikipedia.org/wiki/No_Silver_Bullet][silver bullet]].
+
+[[../assets/images/IMG_20260511_130527431_HDR.jpg]]
+/Figure 9: Prince's keynote on AI./
+
+There are many things which will change dramatically, mainly those related to
+the more mechanistic aspects of the quant realm, and everyone will have to
+update their skills; there will be no blind use of AI to replace every developer
+and quant; and experience, judgement, taste and insight will continue to matter
+--- dimensions which are very hard to replicate in AI. Interestingly, the
+increased use of AI may result in a need for more humans rather than less, but
+of a different skill set.
+
+** LSEG’s Internal Adoption of ORE
+
+This panel was /extremely/ interesting to those of us outside of LSEG because it
+lifted the veil on just how strategic ORE is to the entire organisation. The use
+of the risk engine is endemic now, and the direction of travel seems to be
+obvious; in an ideal world, it should be used everywhere where there is a good
+fit --- and it seems to fit an awful lot of places. There is a clear move away
+from third party vendors, with a considerable effort to integrate new
+functionality in ORE which is not yet supported, so that migration away from
+third-party vendors is made possible. This is extremely good news for those of
+us outside the LSEG walled garden because it fills us with confidence that ORE
+is gaining more and more functionality over time. In addition, replacing battle
+hardened third party frameworks that have years (and in many cases decades) of
+market experience only demonstrates ORE is mature and very comprehensive.
+
+[[../assets/images/IMG_20260511_132017623_HDR.jpg]]
+/Figure 10: Panel on LSEG’s Internal Adoption of ORE./
+
+A special mention for [[https://www.linkedin.com/in/sanja-hukovic/][Sanja Hukovic]], not only because she was rather funny, but
+also because she and her team are doing a lot of the difficult work around model
+governance. To those outside, it seems that ORE is undergoing the difficult
+journey around model validation and governance; a complex journey, as anyone
+familiar with internal models in Tier 1 investment banks would tell you,
+probably shaking their heads due to PTSD. Yet this is vital work in such a
+highly regulated sector. It would probably be in LSEG's interest to make a
+public release of the documentation around these processes, including benchmarks
+--- much like providers of open weights LLMs release the model cards and
+detailed white papers. This would certainly do no harm to ORE adoption at the
+highest levels.
+
+** Performance Optimisation and Run-time Considerations for ORE
+
+When I saw the agenda I assumed this "talk" would have had a better fit with the
+morning Masterclass sessions since it appeared more low-level and nerd-oriented
+rather than business focused. Contrary to my expectations, rather than a talk it
+was a panel on the business side of optimisation and performance; and it was
+/riveting/.
+
+[[../assets/images/IMG_20260511_134634622_HDR.jpg]]
+/Figure 11: Panel on Performance Optimisation and Run-time Considerations for ORE./
+
+The panel discussed using ORE as a intraday pricing engine, something I
+suspected was possible but had no evidence for. Since my background is
+specifically Intraday Risk and Analytics development, I was extremely keen to
+hear an experience report on this front. I was even happier with what I heard:
+industry confirmation on the validity of ORE for this use case --- particularly
+with large population sizes (~80M trades in a day) and fairly quick valuation
+ticks (every 5 minutes). Even more fascinating was that the setup was not yet
+making use of [[https://en.wikipedia.org/wiki/Automatic_differentiation][AAD]] nor GPU support, bot already mainlined.
+
+Peter Caspers also provided some colour with implementation-level details on the
+performance optimisations that have been made so far --- and, though I could not
+fully parse all of his content, what I could understand was very insightful, as
+it always is with Peter. I'll summarise the key points straight from Peter's
+slides:
+
+- Multithreading: It is possible to make use of multithreading for specific
+  valuation cases.
+- AMC: Improvements to the American MonteCarlo engine in the context of the
+  exposure frameworks.
+- AMC-CG: Rewrite of AMC based on Computation Graph.
+- AAD: improvements to the AAD implementation.
+- GPU: more work on the GPU backend, focusing on T0 Analytics Exotics and XVA
+  Sensis / Stress.
+
+** LSEG Models-as-a-Service (MaaS) and MCP: Spotlights on RAL and Anthropic Partnership
+
+More of a pitch to the many potential customers, but also a great demonstration
+of the power of the overall approach, this session shed some light into a
+partnership between Anthropic and LSEG. Via the swiss-army knife of LLM
+protocols, MCP, it is possible to access LSEG's offering within Claude. This
+means that users with LSEG subscriptions can integrate a lot of their LLM
+workflow with the wealth of functionality available within LSEGs walled garden.
+Of course, for those of us outside it this is not immediately useful --- other
+than demonstrating the power of integrating ORE with LLMs, such as those behind
+Claude Code. What was demonstrated appear to be the future, though already
+available in the present: asking Claude to retrieve risk numbers, massaging data
+into rich reports via APIs and the like.
+
+** ORE in the Era of Agentic AI
+
+Continuing on the topic of AI and ORE, this panel provided a lot of industry
+insight on the direction of travel. Much like Prince, their view is nuanced and
+focused a lot more on the possibilities in this brand new world --- as well as
+the risks --- rather than your typical Silicon Valley, "boil the oceans and the
+sky is blue" approach. I am not sure if it is just the differences between the
+British versus American approaches, but I always feel like the British approach
+is the more realistic for the here and now and the American approach is always
+trying to sell us some AGI agentic future that seems hard to even imagine what
+it means in practice. So it was reassuring to hear from those in the front lines
+of running large desks on how they are using AI for practical purposes. [[https://www.linkedin.com/in/gordon-lee-a336b367/][Gordon
+Lee]] in particular was both very funny (and energetic) and very sensible in the
+approach. It is still early days, the technology is extremely promising and much
+can already be done, but there are pitfalls if not applied sensibly.
+
+** Benchmarking Counterparty Credit Risk Capital Models
+
+This session had some of the hallmarks of a "boring reg talk", but was actually
+quite interesting. My main take away from it is that [[https://www.isda.org/][ISDA]] (and likely other
+regulators and standard organisations) are starting to see ORE as the "neutral"
+risk model. This means whenever you need to talk risk, methodologies and
+numbers, it helps a lot to have a risk engine we can all use and experiment
+with. One can imagine this will be the direction of travel.
+
+** New Features in ORE release v15/16 and Recent Research Initiatives
+
+The final session of the day was a laundry list by Peter and James of the latest
+releases of ORE. I did take copious notes on the presentation, but to be honest,
+I would just be presenting here the list of features recently added --- and as
+one member of the audience said, ORE already does a great job in it's user guide
+in documenting all of it's features. So we will proceed to my conclusions.
+
+* Conclusions
+
+What a conference it was, a jam packed day full both of socialising, hard maths
+and engineering and lots (and I mean lots) of business talk. There were many
+points worthy of note but my main take-aways from the event are these:
+
+- ORE continues to grow organically in response to real market demand from real
+  customers which are using it in production scenarios to compute risk and
+  manage trading positions.
+- LSEG is using ORE internally a lot, and increasingly so.
+- The many features we are seeing in these releases (15, 16) are direct
+  responses to either internal or external use cases, and most of them are used
+  in anger.
+- There is a community of contributors, thought to my eyes still quite small for
+  such a key open source project. There wasn't much of a spotlit in the
+  conference or in this talk in particular, for external contributors. I think
+  this is something ORE could really benefit from.
+
+Hope to see everyone in the Quant Summit 2027.

@@ -1,0 +1,200 @@
+/* ==========================================================================
+   Professional Dark Mode Theme for Emacs Org-mode Exports
+   ========================================================================== */
+
+:root {
+    --bg-primary: #121214;       /* Deep matte background */
+    --bg-secondary: #1a1a1e;     /* Section/Card background */
+    --bg-accent: #26262b;        /* Table headers / code blocks */
+
+    --text-primary: #e3e3e6;     /* High contrast off-white for body text */
+    --text-muted: #a1a1aa;       /* Muted gray for captions, subtitles, dates */
+
+    --accent: #58a6ff;           /* Crisp blue for primary links */
+    --accent-hover: #8ab4f8;     /* Brighter blue for interactive states */
+    --accent-dim: #21262d;       /* Subtle decorative accents / borders */
+
+    --border-color: #30363d;     /* Clean, thin borders */
+    --max-width: 920px;          /* Optimal reading line length */
+}
+
+/* Scale everything up slightly from the 16px default */
+html {
+    font-size: 17px;
+}
+
+/* Global Reset & Body */
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.75;
+    margin: 0;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content {
+    max-width: var(--max-width);
+    width: 100%;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+h1.title {
+    font-size: 2.25rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1rem;
+    margin-top: 0;
+    text-align: left; /* Cleaner, more professional than centered */
+}
+
+h2 {
+    font-size: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.3rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+/* Links */
+a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--accent-hover);
+    text-decoration: underline;
+}
+
+/* Images and Figures */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    display: block;
+    margin: 1.5rem auto;
+}
+
+/* Hero/banner images sit edge-to-edge without inline-figure chrome */
+figure.hero {
+    margin: 0 0 2rem;
+}
+
+img.hero {
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    width: 100%;
+}
+
+figure.hero figcaption {
+    margin-top: 0.5rem;
+}
+
+.figure-number, caption, figcaption {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: -0.5rem;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+/* Blockquotes: left-aligned with a subtle bar, distinct from captions */
+blockquote {
+    margin: 1.5rem 0;
+    padding: 0.5rem 1.25rem;
+    border-left: 3px solid var(--accent);
+    background-color: rgba(255, 255, 255, 0.025);
+    color: var(--text-muted);
+}
+
+blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+/* Tables (Crucial for your content index) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 0.95rem;
+}
+
+th, td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background-color: var(--bg-accent);
+    color: #ffffff;
+    font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.025);
+}
+
+tbody tr:hover {
+    background-color: var(--bg-secondary);
+}
+
+/* Code Blocks & Monospace (Emacs/Git references) */
+code, pre {
+    font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+    font-size: 0.875rem;
+    background-color: var(--bg-secondary);
+    border-radius: 4px;
+}
+
+code {
+    padding: 0.15rem 0.4rem;
+    color: #e3b341; /* Warm amber — visible but less shouty than red in prose */
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+pre {
+    padding: 1rem;
+    overflow-x: auto;
+    border: 1px solid var(--border-color);
+    line-height: 1.45;
+}
+
+/* Lists */
+ul, ol {
+    padding-left: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer / Postamble */
+#postamble {
+    width: 100%;
+    max-width: var(--max-width);
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-align: center;
+}

@@ -5,7 +5,7 @@
 
 [[file:../index.org][Back to home page]].
 
-On my [[http://www.catb.org/~esr/jargon/html/C/copious-free-time.html][copious free time]], I like to learn a little bit about
+In my [[http://www.catb.org/~esr/jargon/html/C/copious-free-time.html][copious free time]], I like to learn a little bit about
 [[https://en.wikipedia.org/wiki/Computational_neuroscience][computational neuroscience]]. At one point I even considered doing my
 PhD in this field, before realising my lack of knowledge of biology,
 chemistry, physics and mathematics was a bit of an
