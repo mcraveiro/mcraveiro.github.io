@@ -6,12 +6,11 @@
 [[file:../index.org][Back to home page]].
 
 In my [[http://www.catb.org/~esr/jargon/html/C/copious-free-time.html][copious free time]], I like to work on [[id:8BF323A0-B868-7AA4-EC7B-D988934482AA][computational finance]]. [[https://github.com/OreStudio/OreStudio][ORE Studio]] was
-born as a general way to condense all of my work in computation finance.
+born as a general way to condense all of my software engineering work in the
+field of finance.
 
 [[file:../assets/images/ore_studio_v0.0.17.png]]
-/Figure 1: ORE Studio v0.0.17 --- the Portfolio Explorer in dark mode,
-showing portfolios (left), trades in the selected portfolio (right) and the
-counterparties window (bottom)./
+/Figure 1: ORE Studio at v0.0.17./
 
 To avoid repeating myself, I will copy verbatim selected portions of the ORE
 Studio [[https://github.com/OreStudio/OreStudio/blob/main/readme.org][readme]]:
@@ -86,14 +85,14 @@ and the philosophy of modeling the field. These started life inside the ORE
 Studio project docs but felt more at home here, as ramblings rather than
 reference material.
 
-| Page                                              | Topic                                                                |
-|---------------------------------------------------+----------------------------------------------------------------------|
-| [[file:musings/computational_finance.org][Computational Finance]]                             | Intro to the field and scoping the ambitions of the project.          |
-| [[file:musings/money.org][Money]]                                             | A working definition of money, rooted in Wikipedia.                   |
-| [[file:musings/functions_of_money.org][Functions of Money]]                                | Medium of exchange, store of value, unit of account.                  |
-| [[file:musings/kinds_of_money.org][Kinds of Money]]                                    | Historical evolution: commodity, fiat, and beyond.                    |
-| [[file:musings/money_and_its_close_relatives.org][Money and its Close Relatives]]                     | Concepts adjacent to money.                                           |
-| [[file:musings/currency.org][Currency]]                                          | The concept of currency, distinct from money.                         |
-| [[file:musings/cash.org][Cash]]                                              | Cash, liquidity, and the friction of asset conversion.                |
-| [[file:musings/trading.org][Trading]]                                           | Valuation, value and the mechanics of exchange.                       |
-| [[file:musings/finance_and_modeling.org][Finance and Modeling]]                               | A meta-essay on modeling rigour in finance versus established fields. |
+| Page                          | Topic                                                                 |
+|-------------------------------+-----------------------------------------------------------------------|
+| [[file:musings/computational_finance.org][Computational Finance]]         | Intro to the field and scoping the ambitions of the project.          |
+| [[file:musings/money.org][Money]]                         | A working definition of money, rooted in Wikipedia.                   |
+| [[file:musings/functions_of_money.org][Functions of Money]]            | Medium of exchange, store of value, unit of account.                  |
+| [[file:musings/kinds_of_money.org][Kinds of Money]]                | Historical evolution: commodity, fiat, and beyond.                    |
+| [[file:musings/money_and_its_close_relatives.org][Money and its Close Relatives]] | Concepts adjacent to money.                                           |
+| [[file:musings/currency.org][Currency]]                      | The concept of currency, distinct from money.                         |
+| [[file:musings/cash.org][Cash]]                          | Cash, liquidity, and the friction of asset conversion.                |
+| [[file:musings/trading.org][Trading]]                       | Valuation, value and the mechanics of exchange.                       |
+| [[file:musings/finance_and_modeling.org][Finance and Modeling]]          | A meta-essay on modeling rigour in finance versus established fields. |
