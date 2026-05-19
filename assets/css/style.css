@@ -156,6 +156,12 @@ tbody tr:hover {
     background-color: var(--bg-secondary);
 }
 
+/* Images inside table cells — e.g. video thumbnails — drop the prose-margin */
+td img {
+    margin: 0;
+    max-width: 240px;
+}
+
 /* Code Blocks & Monospace (Emacs/Git references) */
 code, pre {
     font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
