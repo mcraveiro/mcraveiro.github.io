@@ -6,9 +6,15 @@
 [[file:../index.org][Back to home page]].
 
 In my [[http://www.catb.org/~esr/jargon/html/C/copious-free-time.html][copious free time]], I like to work on [[https://orestudio.github.io/OreStudio/doc/domain/computational_finance.html#ID-8BF323A0-B868-7AA4-EC7B-D988934482AA][computational finance]]. [[https://github.com/OreStudio/OreStudio][ORE Studio]] was
-born as a general way to condense all of my work in computation finance. To
-avoid repeating myself, I will copy verbatim selected portions of the ORE Studio
-[[https://github.com/OreStudio/OreStudio/blob/main/readme.org][readme]]:
+born as a general way to condense all of my work in computation finance.
+
+[[file:../assets/images/ore_studio_v0.0.17.png]]
+/Figure 1: ORE Studio v0.0.17 --- the Portfolio Explorer in dark mode,
+showing portfolios (left), trades in the selected portfolio (right) and the
+counterparties window (bottom)./
+
+To avoid repeating myself, I will copy verbatim selected portions of the ORE
+Studio [[https://github.com/OreStudio/OreStudio/blob/main/readme.org][readme]]:
 
 ORE Studio is a graphical wrapper around [[https://www.opensourcerisk.org/][Acadia's]] [[https://github.com/OpenSourceRisk/Engine][Open Source Risk Engine (ORE)]],
 which itself builds atop of [[https://github.com/lballabio/QuantLib][QuantLib]]. Please note that this open source project
