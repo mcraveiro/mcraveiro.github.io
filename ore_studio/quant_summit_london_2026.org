@@ -1,11 +1,11 @@
 #+title: Quant Summit London 2026
 #+author: Marco Craveiro
-#+options: num:nil author:nil toc:nil
+#+options: num:nil author:nil
 #+bind: org-html-validation-link nil
 
 [[file:index.org][Back to ORE Studio page]].
 
-One of my yearly traditions is to attend the [[https://github.com/OpenSourceRisk/Engine][ORE]] Quant Summit, hosted by [[https://www.lseg.com/en/post-trade/solutions/advise/open-source-risk-engine][LSEG]]
+One of my yearly traditions is to attend the [[https://github.com/OpenSourceRisk/Engine][ORE]] [[https://solutions.lseg.com/Quant_Summit_London_2026][Quant Summit]], hosted by [[https://www.lseg.com/en/post-trade/solutions/advise/open-source-risk-engine][LSEG]]
 (London Stock Exchange Group). I was impressed with my last summit, as I tried
 (and failed) to convey via [[https://www.linkedin.com/in/marco-craveiro-phd-%F0%9F%87%A6%F0%9F%87%B4%F0%9F%87%B5%F0%9F%87%B9-31558919][LinkedIn]]:
 
@@ -13,15 +13,18 @@ One of my yearly traditions is to attend the [[https://github.com/OpenSourceRisk
 /Figure 1: Quant Summit 2025, with the "two Rolands" (bottom left)./
 
 Even with the bar raised ever so high by previous sessions, I must confess this
-year's summit beat expectations by a margin. So, rather than a measly LinkedIn
-post, I thought I'd give it full "blog post" honours to capture it for... well,
-for posterity. In addition, in keeping with our objectives at [[https://github.com/OreStudio/OreStudio][ORE Studio]] to
-popularise Quantitative Finance, I will also attempt to add some context where I
-can.
+year's summit beat expectations by a wide margin. So, rather than a measly
+LinkedIn post, I thought I'd give it full "blog post" honours to capture it
+for... well, for posterity. In addition, in keeping with our objectives at [[https://github.com/OreStudio/OreStudio][ORE
+Studio]] to popularise Quantitative Finance, I will also attempt to add some
+context where I can.
 
 Before we begin, a spoiler alert: unfortunately the "Main Man" [[https://www.linkedin.com/in/luigiballabio/][Luigi Ballabio]]
-was unable to attend the Summit this year. It is a shame as he is a very nice
-and interesting character.
+was unable to attend this year's summit as he was otherwise engaged. For those
+not in the know, Luigi is the [[https://en.wikipedia.org/wiki/Linus_Torvalds][Linus Torvalds]] of Open Source Quantitative
+Finance: he is one of the founders of [[https://github.com/lballabio/QuantLib][QuantLib]] and its main maintainer for
+longer than I care to remember. It is a shame he couldn't make it as he is a
+very nice chap and interesting character to boot.
 
 * Masterclass
 
@@ -33,25 +36,26 @@ like. I must confess I was rather fond of this take, even if some aspects
 weren't exactly what the old hands would call exciting. There are only so many
 =venvs= one can set up in a lifetime, and all that--- and yes, I can already
 hear the koolkids shouting from the back that the crowd has long since moved on
-to greener pastures such as =uv=, but the point still holds. But I digress; all
-of this to say that, other than environmental setup, I did enjoy the "hands on"
+to greener pastures such as =uv=, but the point still holds. I digress; all of
+this to say that, other than environmental setup, I did enjoy the "hands on"
 sessions with ORE.
 
 Alas, the Quant Summit has evolved past those; the master class is now more akin
 to a series of PhD-style university lectures, or maybe more like a quick
 Technical Report presentation for a Journal Club. Both approaches have their
 merits. The always funny [[https://www.linkedin.com/in/james-mac-hale-8040654b/][James Mac Hale]] told me the main issue with hands-on
-labs is the variance of audience member setups and resulting
+labs is the variance in audience member setups and the resulting
 hard-to-troubleshoot IT problems. Much time is lost in dealing with such issues
-rather than focusing on the tasks at hand. In addition, in these days of LLMs,
+rather than focusing on the tasks at hand. In addition, in these days of [[https://en.wikipedia.org/wiki/Large_language_model][LLMs]],
 it is perhaps not the best use of expert time, since you have a personal
-assistant with detailed ORE knowledge at your fingertips anyway. So it was that
-we were treated to these lectures, which the next section will briefly
-summarise.
+assistant with detailed ORE knowledge at your fingertips anyway.
+
+So it was that we were treated to these lectures, which the next section will
+briefly summarise.
 
 ** SVI
 
-The first was focused on the state of SVI (Stochastic Volatility Inspired)
+The first talk was focused on the state of SVI ([[https://en.wikipedia.org/wiki/Stochastic_volatility][Stochastic Volatility]] Inspired)
 support in ORE. To recap why this would be useful, Aurell [[https://www.diva-portal.org/smash/get/diva2:744907/FULLTEXT02.pdf][tell us]] that:
 
 #+begin_quote
@@ -161,10 +165,16 @@ ORE from say Java or .NET via the SWIG interfaces.
 
 There are few free lunches of course, and there is always a catch. When
 consuming those proprietary models I mentioned from C#, I was bitten many a time
-and spent a bit of cycles thinking hard about the memory model across language
-boundaries; non-deterministic garbage collection, large objects and c++ are not
-always the nicest of friends. Nonetheless, these advances open up ORE to a wide
-range of applications.
+and spent a fair bit of time thinking hard about the memory model across
+language boundaries; non-deterministic garbage collection, large objects and c++
+are not always the nicest of friends. Especially when you are dealing with
+legacy C++ code bases, most certainly not designed with these use cases in mind
+and not particularly amenable to large refactoring efforts. Nonetheless, SWIG
+was amazingly useful to unlock the powers of these code bases in a modern
+scenario, particularly since there was no appetite to rewrite the code --- in
+C++ or in any other language. In very much the same vein, one can imagine many
+shops were the language of choice is Python, Java or C# and a high-quality SWIG
+wrapper will make all the difference, even with the caveats I just mentioned.
 
 [[../assets/images/IMG_20260511_111216897_HDR.jpg]]
 /Figure 7: Consuming ORE from Jupyter notebooks./
@@ -186,7 +196,7 @@ and Quant.
 ** Risk Analytics Lab
 
 The master class finished with a presentation by [[https://www.linkedin.com/in/jacobrullman/][Jake Ullman]] on a new LSEG tool
-called Risk Analytics Lab (RAL). It appeared to be extremely useful, and with
+called [[https://www.lseg.com/en/post-trade/solutions/analyse/risk-analytics-lab][Risk Analytics Lab]] (RAL). It appeared to be extremely useful, and with
 some overlap in functionality with what we are trying to do with [[https://github.com/OreStudio/OreStudio][ORE Studio]].
 Where they differ, of course, is that RAL targets the professional user which
 plenty of domain knowledge, and provides all of the professional infrastructure
