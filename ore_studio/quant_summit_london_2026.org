@@ -118,24 +118,24 @@ the motivation of these changes, as the figure demonstrates.
 
 The gist of it is that existing commodity models in ORE support only a single
 factor and no seasonality. In the real world, this model is too simplistic and
-the eventual target is to generalise support to /n/ factors, much like [[https://cran.r-project.org/web/packages/NFCP/vignettes/NFCP.html][models in
+the eventual target is to generalise support to $n$ factors, much like [[https://cran.r-project.org/web/packages/NFCP/vignettes/NFCP.html][models in
 R provide]] and for very much the same reasons:
 
 #+begin_quote
 ‘NFCP’ (N-Factor Commodity Pricing) provides a framework for the modeling,
-parameter estimation, probabilistic forecasting, European and American options
-on futures contracts valuation and simulation of commodity prices through state
-space and Monte Carlo methods, risk-neutral valuation and Kalman filtering.
-Commodity pricing models are systems of stochastic differential equations that
-are utilized for the valuation and hedging of commodity contingent claims (i.e.
-derivative products on the commodity) and other commodity related investments.
-Parameters of commodity pricing models are estimated through maximum likelihood
-estimation (MLE), using available term structure futures data of a commodity.
-Commodity pricing models that capture market dynamics are of great importance to
-commodity market participants in order to exercise sound investment and
-risk-management strategies. The N-factor commodity pricing model framework was
-first presented in the work of Cortazar and Naranjo (2006) titled “An N-Factor
-Gaussian Model of Oil Futures Prices”.
+parameter estimation, probabilistic forecasting [of] European and American
+options on futures contracts valuation and simulation of commodity prices
+through state space and Monte Carlo methods, risk-neutral valuation and Kalman
+filtering. Commodity pricing models are systems of stochastic differential
+equations that are utilized for the valuation and hedging of commodity
+contingent claims (/i.e./ derivative products on the commodity) and other
+commodity related investments. Parameters of commodity pricing models are
+estimated through maximum likelihood estimation (MLE), using available term
+structure futures data of a commodity. Commodity pricing models that capture
+market dynamics are of great importance to commodity market participants in
+order to exercise sound investment and risk-management strategies. The N-factor
+commodity pricing model framework was first presented in the work of Cortazar
+and Naranjo (2006) titled “An N-Factor Gaussian Model of Oil Futures Prices”.
 #+end_quote
 
 However, Acar argued that in many cases $n = 2$ suffices, though this appears to
@@ -152,9 +152,9 @@ progressing quite well and should land soon.
 
 The next presentation was a bit easier to understand for regular developers.
 [[https://www.linkedin.com/in/eric-ehlers-9ba682/][Eric Ehlers]] and a colleague --- unfortunately I do not seem to have caught her
-name on my notes --- spoke at length at the progress in [[https://www.swig.org/][SWIG]] support in ORE.
+name on my notes --- spoke at length on the progress in [[https://www.swig.org/][SWIG]] support in ORE.
 Having used SWIG in the past to consume proprietary quant models, I can only
-attest to the importance of having thorough coverage in this front. The main
+attest to the importance of having thorough coverage on this front. The main
 focus of the presentation was on exposing functionality over to Python, but of
 course the beauty of SWIG is that it should work for all supported languages ---
 modulus some implementation quirks. This means you should now be able to consume
@@ -174,7 +174,8 @@ was amazingly useful to unlock the powers of these code bases in a modern
 scenario, particularly since there was no appetite to rewrite the code --- in
 C++ or in any other language. In very much the same vein, one can imagine many
 shops were the language of choice is Python, Java or C# and a high-quality SWIG
-wrapper will make all the difference, even with the caveats I just mentioned.
+wrapper will make all the difference to ORE adoption, even with the caveats I
+just mentioned.
 
 [[../assets/images/IMG_20260511_111216897_HDR.jpg]]
 /Figure 7: Consuming ORE from Jupyter notebooks./
@@ -197,14 +198,14 @@ and Quant.
 
 The master class finished with a presentation by [[https://www.linkedin.com/in/jacobrullman/][Jake Ullman]] on a new LSEG tool
 called [[https://www.lseg.com/en/post-trade/solutions/analyse/risk-analytics-lab][Risk Analytics Lab]] (RAL). It appeared to be extremely useful, and with
-some overlap in functionality with what we are trying to do with [[https://github.com/OreStudio/OreStudio][ORE Studio]].
-Where they differ, of course, is that RAL targets the professional user which
-plenty of domain knowledge, and provides all of the professional infrastructure
-one requires to drive ORE in real business use cases --- /e.g./ a wealth of
-market data feeds and the like. ORE Studio instead targets the student and the
-apprentice --- those who are trying to master the domain and the tool
-simultaneously and are not able to access all of the required market data needed
-to drive these features.
+some overlap in functionality with what we are trying to do in [[https://github.com/OreStudio/OreStudio][ORE Studio]]. Where
+they differ, of course, is that RAL targets the professional user which plenty
+of domain knowledge, and provides all of the professional infrastructure one
+requires to drive ORE in /real/ business use cases --- /e.g./ a wealth of market
+data feeds, access to a Quant team and the like. ORE Studio instead targets the
+student and the apprentice --- those who are trying to master the domain and the
+tool simultaneously and are not able to access all of the required market data
+needed to drive these features.
 
 [[../assets/images/IMG_20260511_113042513_HDR.jpg]]
 /Figure 8: Risk Analytics Lab demo./
@@ -266,13 +267,13 @@ A special mention for [[https://www.linkedin.com/in/sanja-hukovic/][Sanja Hukovi
 also because she and her team are doing a lot of the difficult work around model
 governance. To those outside, it seems that ORE is undergoing the difficult
 journey around model validation and governance; a complex journey, as anyone
-familiar with internal models in Tier 1 investment banks would tell you,
-probably shaking their heads due to PTSD. Yet this is vital work in such a
-highly regulated sector. It would probably be in LSEG's interest to make a
-public release of the documentation around these processes, including benchmarks
---- much like providers of open weights LLMs release the model cards and
-detailed white papers. This would certainly do no harm to ORE adoption at the
-highest levels.
+familiar with internal models in Tier 1 investment banks would tell you ---
+probably shaking their heads due to PTSD. Yet this is /vital work/ in such a
+highly regulated sector. In fact, it would probably be in LSEG's interest to
+make a public release of the documentation around these processes, including
+benchmarks, much like the purveyors of open weight LLMs release model cards and
+detailed white papers. Such an approach would certainly do no harm to ORE
+adoption at the highest levels.
 
 ** Performance Optimisation and Run-time Considerations for ORE
 
@@ -314,14 +315,16 @@ slides:
 More of a pitch to the many potential customers, but also a great demonstration
 of the power of the overall approach, this session shed some light into a
 partnership between Anthropic and LSEG. Via the swiss-army knife of LLM
-protocols, MCP, it is possible to access LSEG's offering within Claude. This
+protocols, [[https://en.wikipedia.org/wiki/Model_Context_Protocol][MCP]], it is possible to access LSEG's offering within [[https://en.wikipedia.org/wiki/Claude_(language_model)][Claude]]. This
 means that users with LSEG subscriptions can integrate a lot of their LLM
 workflow with the wealth of functionality available within LSEGs walled garden.
-Of course, for those of us outside it this is not immediately useful --- other
+Of course, for those of us outside it, this is not immediately useful --- other
 than demonstrating the power of integrating ORE with LLMs, such as those behind
-Claude Code. What was demonstrated appear to be the future, though already
-available in the present: asking Claude to retrieve risk numbers, massaging data
-into rich reports via APIs and the like.
+Claude Code. Nevertheless, what was demonstrated appear to be the future, though
+already available in the present: asking Claude to retrieve risk numbers,
+massaging data into rich reports via APIs and the like. My dream is to do
+something similar to this in ORE Studio, but using [[https://github.com/ggml-org/llama.cpp][llama.cpp]] and a local model
+such as a recent [[https://en.wikipedia.org/wiki/Qwen][Qwen]].
 
 ** ORE in the Era of Agentic AI
 
@@ -330,31 +333,67 @@ insight on the direction of travel. Much like Prince, their view is nuanced and
 focused a lot more on the possibilities in this brand new world --- as well as
 the risks --- rather than your typical Silicon Valley, "boil the oceans and the
 sky is blue" approach. I am not sure if it is just the differences between the
-British versus American approaches, but I always feel like the British approach
-is the more realistic for the here and now and the American approach is always
-trying to sell us some AGI agentic future that seems hard to even imagine what
-it means in practice. So it was reassuring to hear from those in the front lines
-of running large desks on how they are using AI for practical purposes. [[https://www.linkedin.com/in/gordon-lee-a336b367/][Gordon
-Lee]] in particular was both very funny (and energetic) and very sensible in the
-approach. It is still early days, the technology is extremely promising and much
-can already be done, but there are pitfalls if not applied sensibly.
+British versus American takes, but I always feel like the British version is the
+more realistic for the here and now and the American approach is always trying
+to sell us some AGI agentic future that seems hard to even imagine what it means
+in practice. So it was reassuring to hear from those in the front lines, running
+large desks, on how they are using AI /in practice/. [[https://www.linkedin.com/in/gordon-lee-a336b367/][Gordon Lee]] in particular
+was simultaneously very funny, very energetic and yet very sensible in his
+approach and views. It is still early days; the technology is extremely
+promising and much can already be done but --- as with all technological
+revolutions --- there are dangerous pitfalls awaiting those who do not apply it
+sensibly.
 
 ** Benchmarking Counterparty Credit Risk Capital Models
 
-This session had some of the hallmarks of a "boring reg talk", but was actually
-quite interesting. My main take away from it is that [[https://www.isda.org/][ISDA]] (and likely other
-regulators and standard organisations) are starting to see ORE as the "neutral"
-risk model. This means whenever you need to talk risk, methodologies and
-numbers, it helps a lot to have a risk engine we can all use and experiment
-with. One can imagine this will be the direction of travel.
+This session had some of the hallmarks of a "boring reg talk", but was
+unexpectedly interesting. My main take-away from it is that [[https://www.isda.org/][ISDA]] (and likely
+other regulators and standard organisations) are starting to see ORE as the
+"neutral" risk model. This means whenever you need to talk risk, methodologies
+and numbers, it helps a lot to have a risk engine we can all use and experiment
+with. A /lingua franca/ of risk modeling, if you will. One can imagine this will
+be the direction of travel.
 
 ** New Features in ORE release v15/16 and Recent Research Initiatives
 
 The final session of the day was a laundry list by Peter and James of the latest
-releases of ORE. I did take copious notes on the presentation, but to be honest,
-I would just be presenting here the list of features recently added --- and as
-one member of the audience said, ORE already does a great job in it's user guide
-in documenting all of it's features. So we will proceed to my conclusions.
+releases of ORE. In truth, we don't really need latest and greatest in ORE
+Studio, given that so much of the framework code is still yet to be written, but
+hearing of the new release is still important to us as a way of measuring the
+velocity of ORE. As it happens, v16 seems to be packed full of goodies, and it
+will hopefully be released soon. My notes from the slides captured the
+following, which I will dump more or less verbatim:
+
+- New Instruments:
+  - Swaption Straddles as a single trade
+  - Cross-currency
+  - Flexi-Swap and Cross-currency Bermudan Swaptions
+  - New range accrual variation
+  - Rate digital option
+  - Dual European Binary Option
+  - Cross-Currency support for CommoditySwap
+- XVA:
+  - LocalVol support for FX in exposure simulations
+  - Speed up of MC exposure simulation, scenario generation and fast fx forward,
+    vanilla swap engines
+  - Review of inflation simulation framework
+  - Speed up of cube reading / writing
+- Pricing:
+  - Heston model for scripted trade pricing
+  - SVI for equity, fx, commodity, credit vol surfaces
+  - Convexity adjustments for EquityTRS and BondTRS
+  - Optionally use effective volatilities in market cap surfaces
+  - Include conditional fee paid on exercise for swaption pricing
+- Market Data:
+  - Support for rebasing of inflation indices
+  - Update single name CDS options to current conventions
+  - Quoted commodity calendar spread options
+  - Wildcards for zero curve spreads
+- Update to latest QuantLib 1.42.
+
+I did take copious notes during the presentation, but to be honest, I would just
+be presenting here a poor impersonation of the [[https://github.com/OpenSourceRisk/Engine/blob/master/Docs/userguide.pdf][User Guide]]. So let's all wait for
+the latest release to come out, and instead proceed to the conclusions.
 
 * Conclusions
 
