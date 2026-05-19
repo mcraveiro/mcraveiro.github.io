@@ -53,6 +53,7 @@ Tickets that I raised, or to which I added significant commentary.
 
 - [[https://github.com/jothepro/doxygen-awesome-css/issues/2][doxygen-awesome-css: Creating a link to the dark theme #2]]
 - [[https://github.com/doxygen/doxygen/issues/8455][doxygen: Documentation coverage information #8455]]
+- [[https://github.com/craflin/xsdcpp/pull/12][xsdcpp: Address issues parsing XSD for ORE #12]]
 
 *** Emacs
 
@@ -70,6 +71,18 @@ Tickets that I raised, or to which I added significant commentary.
 - [[https://github.com/emacs-lsp/lsp-mode/issues/3118][Omnisharp-Roslyn not available in the list of installable servers #3118]]
 - [[https://github.com/rejeep/prodigy.el/issues/133][Associate mode with output buffer #133]]
 - [[https://github.com/jkitchin/org-ref/issues/956][org-ref: Caption with cite results in cite appearing in list of figures]] #956
+
+** sqlgen
+
+[[https://github.com/getml/sqlgen][sqlgen]] is a C++ library for type-safe SQL query generation across multiple backends (SQLite, PostgreSQL, MySQL, DuckDB). It uses reflection via [[https://github.com/getml/reflect-cpp][reflect-cpp]] to map C++ structs directly to database tables without boilerplate.
+
+- [[https://github.com/getml/sqlgen/pull/122][sqlgen: Add parameterized execute for postgres #122]]
+- [[https://github.com/getml/sqlgen/pull/121][sqlgen: Use PGPASSWORD env var for postgres test credentials #121]]
+- [[https://github.com/getml/sqlgen/pull/120][sqlgen: Add PostgreSQL notice processor support #120]]
+- [[https://github.com/getml/sqlgen/pull/105][sqlgen: Implement listen / notify for Postgres backend #105]]
+- [[https://github.com/getml/sqlgen/pull/102][sqlgen: Implement OFFSET support #102]]
+- [[https://github.com/getml/sqlgen/pull/89][sqlgen: Fix memory management for postgres in edge cases #89]]
+- [[https://github.com/getml/sqlgen/pull/71][sqlgen: Handle schemas in SQL generation #71]]
 
 ** Others
 
