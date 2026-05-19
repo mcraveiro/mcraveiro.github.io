@@ -32,7 +32,7 @@ Futebol Clube]]. There may be other topics here too.
 
 | Title                                  | Topic                                   | Description                                                                                               |
 |----------------------------------------+-----------------------------------------+-----------------------------------------------------------------------------------------------------------|
-| [[https://masd-project.github.io/progen/index.html][Dogen]]                                  | Programming                             | [[https://github.com/MASD-Project/dogen][Dogen]] was a code-generator I developed as part of my PhD in Computer Science.                             |
+| [[file:dogen/index.org][Dogen]]                                  | Programming                             | [[https://github.com/MASD-Project/dogen][Dogen]] was a code-generator I developed as part of my PhD in Computer Science.                             |
 | [[https://mcraveiro.github.io/cunene/][Cunene]]                                 | Programming                             | Cunene is my personal configuration for [[https://en.wikipedia.org/wiki/Emacs][Emacs]].                                                            |
 | [[https://mcraveiro.github.io/GeneralModelTheory/][General Model Theory]]                   | Philosophy                              | In my spare time, I am trying to translate Stachowiak's work to English.                                  |
 | [[file:devsites.org][Developer sites]]                        | Programming                             | I occasionally create questions and answers in developer sites.                                           |
@@ -47,8 +47,9 @@ Futebol Clube]]. There may be other topics here too.
 * Site Tooling
 
 The site is kept intentionally very simple --- just a set of org-mode files,
-exported to HTML using [[https://orgmode.org/manual/Publishing.html][org-publish]]. We alternate the CSS somewhat; at present we
-have settled on "[[https://gongzhitaao.org/orgcss/][CSS for Org-exported HTML]]" by [[https://gongzhitaao.org/][Zhitao Gong]].
+exported to HTML using [[https://orgmode.org/manual/Publishing.html][org-publish]]. The CSS is our own, a hand-rolled dark theme
+living at [[file:assets/css/style.css][assets/css/style.css]]. Syntax highlighting is provided by
+[[https://highlightjs.org/][highlight.js]] using the =atom-one-dark= theme.
 
 * Social Media
 

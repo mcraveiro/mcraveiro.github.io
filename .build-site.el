@@ -83,8 +83,13 @@
          :base-extension "css"
          :publishing-directory "./build/output/site/assets/css"
          :publishing-function org-publish-attachment)
+        ("progen-site:dogen-images"
+         :base-directory "./dogen/assets/images"
+         :base-extension "png\\|jpg\\|gif\\|svg"
+         :publishing-directory "./build/output/site/dogen/assets/images"
+         :publishing-function org-publish-attachment)
         ( "progen-site:main"
-          :components("progen-site:images" "progen-site:pages" "progen-site:css"))
+          :components("progen-site:images" "progen-site:pages" "progen-site:css" "progen-site:dogen-images"))
        ))
 
 ;; Generate the site output
