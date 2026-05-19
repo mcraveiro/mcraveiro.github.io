@@ -26,9 +26,10 @@ Papers]].
 
 ** General Pages
 
-| Page   | Description                       |
-|--------+-----------------------------------|
-| [[id:BA763158-3DC5-E914-BF2B-5C9CABBC3676][Readme]] | Overview of the Dogen project.    |
+| Page   | Description                                       |
+|--------+---------------------------------------------------|
+| [[id:BA763158-3DC5-E914-BF2B-5C9CABBC3676][Readme]] | Overview of the Dogen project.                    |
+| [[id:D89B0BFC-1141-4A36-AB37-65A6E6A8C2B5][Videos]] | YouTube playlists with Dogen demos and lectures.  |
 
 ** Domain Concepts
 

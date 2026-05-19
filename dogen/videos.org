@@ -1,0 +1,198 @@
+:properties: 
+:id: D89B0BFC-1141-4A36-AB37-65A6E6A8C2B5 
+:end: 
+#+title: Dogen Videos 
+#+author: Marco Craveiro 
+#+options: num:nil author:nil toc:t html-postamble:nil 
+#+bind: org-html-validation-link nil 
+ 
+[[file:index.org][Back to Dogen page]]. 
+ 
+A number of videos are available discussing Dogen, gathered under "themed" playlists. Each playlist is shown below as a table of its videos. 
+ 
+* MASD - Dogen Demos 
+ 
+End of sprint demos. Suitable for end users. 
+ 
+Full playlist on YouTube: [[https://www.youtube.com/playlist?list=PLwfrwe216gF0RmXOv8yCinHfv9QeSRDcm][open]]. 
+ 
+| Thumbnail | Video | Description | 
+|-+-+-| 
+| [[https://www.youtube.com/watch?v=FO1QdT8paIU][https://img.youtube.com/vi/FO1QdT8paIU/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=FO1QdT8paIU][MASD - Dogen Demos: Sprint 31]] | Demo for Dogen's Sprint 30. | 
+| [[https://www.youtube.com/watch?v=ei8B1Pine34][https://img.youtube.com/vi/ei8B1Pine34/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=ei8B1Pine34][MASD - Dogen Demos: Sprint 30]] | Demo for Dogen's Sprint 30. | 
+| [[https://www.youtube.com/watch?v=FEqQVCWo0S4][https://img.youtube.com/vi/FEqQVCWo0S4/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=FEqQVCWo0S4][MASD - Dogen Demos: Sprint 29]] | Demo for Dogen's Sprint 29. | 
+| [[https://www.youtube.com/watch?v=tLzxPJMPFFI][https://img.youtube.com/vi/tLzxPJMPFFI/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=tLzxPJMPFFI][MASD - Dogen Demos: Sprint 28]] | Demo for Dogen's Sprint 28. | 
+| [[https://www.youtube.com/watch?v=swpKj0rKCpM][https://img.youtube.com/vi/swpKj0rKCpM/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=swpKj0rKCpM][MASD - Dogen Demos: Sprint 27]] | Demo for Dogen's Sprint 27. | 
+| [[https://www.youtube.com/watch?v=IugTPs_19KQ][https://img.youtube.com/vi/IugTPs_19KQ/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=IugTPs_19KQ][MASD - Dogen Demos: Sprint 26]] | Demo for Dogen's Sprint 26. | 
+| [[https://www.youtube.com/watch?v=nRGHIA2Chxc][https://img.youtube.com/vi/nRGHIA2Chxc/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=nRGHIA2Chxc][MASD - Dogen Demos: Sprint 25]] | Demo for Dogen's Sprint 24. | 
+| [[https://www.youtube.com/watch?v=pUAZb6e52gI][https://img.youtube.com/vi/pUAZb6e52gI/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=pUAZb6e52gI][MASD - Dogen Demos: Sprint 24]] | Demo for Dogen's Sprint 24. | 
+| [[https://www.youtube.com/watch?v=GFjBXArR6Jk][https://img.youtube.com/vi/GFjBXArR6Jk/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=GFjBXArR6Jk][MASD - Dogen Demos: Sprint 23]] | Demo for Dogen's Sprint 23. |
+| [[https://www.youtube.com/watch?v=RysjvA2eZ4o][https://img.youtube.com/vi/RysjvA2eZ4o/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=RysjvA2eZ4o][MASD - Dogen Demos: Sprint 22]] | Demo for Dogen's Sprint 22. |
+| [[https://www.youtube.com/watch?v=J5duq-gw-nI][https://img.youtube.com/vi/J5duq-gw-nI/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=J5duq-gw-nI][MASD - Dogen Demos: Sprint 21]] | Demo for Dogen's Sprint 21. | 
+| [[https://www.youtube.com/watch?v=MvuagYRCWrg][https://img.youtube.com/vi/MvuagYRCWrg/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=MvuagYRCWrg][MASD - Dogen Demos: Sprint 20]] | Demo for Dogen's Sprint 20. | 
+| [[https://www.youtube.com/watch?v=YNwi0ONyy70][https://img.youtube.com/vi/YNwi0ONyy70/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=YNwi0ONyy70][MASD - Dogen Demos: Sprint 19]] | Demo for Dogen's Sprint 19. | 
+| [[https://www.youtube.com/watch?v=TkYQTW_jAGk][https://img.youtube.com/vi/TkYQTW_jAGk/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=TkYQTW_jAGk][MASD - Dogen Demos: Sprint 18]] | Demo for Dogen's Sprint 18. | 
+| [[https://www.youtube.com/watch?v=A8mFqvdpvcg][https://img.youtube.com/vi/A8mFqvdpvcg/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=A8mFqvdpvcg][MASD - Dogen Demos: Sprint 17]] | Demo for Dogen's Sprint 17. | 
+| [[https://www.youtube.com/watch?v=3XrHSFkdVps][https://img.youtube.com/vi/3XrHSFkdVps/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=3XrHSFkdVps][MASD - Dogen Demos: Sprint 16]] | Demo for Dogen's Sprint 16. | 
+| [[https://www.youtube.com/watch?v=cIZ_ubETbVE][https://img.youtube.com/vi/cIZ_ubETbVE/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=cIZ_ubETbVE][MASD - Dogen Demos: Sprint 15]] | Demo for Dogen's Sprint 15. | 
+| [[https://www.youtube.com/watch?v=zNnzGF6VSTw][https://img.youtube.com/vi/zNnzGF6VSTw/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=zNnzGF6VSTw][MASD - Dogen Demos: Sprint 14]] | Demo for Dogen's Sprint 14. | 
+| [[https://www.youtube.com/watch?v=yerm2xiKBqA][https://img.youtube.com/vi/yerm2xiKBqA/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=yerm2xiKBqA][MASD - Dogen Demos: Sprint 13]] | Demo for Dogen's Sprint 13. | 
+| [[https://www.youtube.com/watch?v=Tt34P3JXzeE][https://img.youtube.com/vi/Tt34P3JXzeE/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=Tt34P3JXzeE][MASD - Dogen Demos: Sprint 12]] | Demo for Dogen's Sprint 12. | 
+| [[https://www.youtube.com/watch?v=Z7k8qbImXkU][https://img.youtube.com/vi/Z7k8qbImXkU/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=Z7k8qbImXkU][Kitanda - Sprint 20 - Dogen Demo]] | Dogen is a code generator designed to target domain models. Dogen was created to make the modeling process simpler: the user creates a domain model using a UML tool and Dogen uses it to generate its source code representation. The generated code contains most of the services required from a typical C++ domain object such as serialisation, hashing, streaming and so on. | 
+ 
+* MASD - An Introduction to Model Assisted Software Development 
+ 
+Series of lectures on Model Assisted Software Development (MASD), the methodology put forward in my PhD and implemented by Dogen. This series of lectures was made in preparation for the /viva/. 
+ 
+Full playlist on YouTube: [[https://www.youtube.com/playlist?list=PLwfrwe216gF3Qamk0YOSo5Csx1R_LplG0][open]]. 
+ 
+| Thumbnail | Video | Description | 
+|-+-+-| 
+| [[https://www.youtube.com/watch?v=yRFjSegsC_s][https://img.youtube.com/vi/yRFjSegsC_s/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=yRFjSegsC_s][MASD: An introduction to Model Assisted Software Development - Part 1]] | Series of lectures on Model Assisted Software Development (MASD), the methodology put forward in my PhD and implemented by Dogen. | 
+| [[https://www.youtube.com/watch?v=Q-5Ic_gOd0Y][https://img.youtube.com/vi/Q-5Ic_gOd0Y/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=Q-5Ic_gOd0Y][MASD: An introduction to Model Assisted Software Development - Part 2]] | Series of lectures on Model Assisted Software Development (MASD), the methodology put forward in my PhD and implemented by Dogen. | 
+| [[https://www.youtube.com/watch?v=P20uEmc0wtc][https://img.youtube.com/vi/P20uEmc0wtc/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=P20uEmc0wtc][MASD: An introduction to Model Assisted Software Development - Part 3]] | Series of lectures on Model Assisted Software Development (MASD), the methodology put forward in my PhD and implemented by Dogen. | 
+| [[https://www.youtube.com/watch?v=_x5Wnab8Ipk][https://img.youtube.com/vi/_x5Wnab8Ipk/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=_x5Wnab8Ipk][MASD: An introduction to Model Assisted Software Development - Part 4]] | Series of lectures on Model Assisted Software Development (MASD), the methodology put forward in my PhD and implemented by Dogen. | 
+| [[https://www.youtube.com/watch?v=w1ZH4v8UiJU][https://img.youtube.com/vi/w1ZH4v8UiJU/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=w1ZH4v8UiJU][MASD: An introduction to Model Assisted Software Development - Part 5]] | Series of lectures on Model Assisted Software Development (MASD), the methodology put forward in my PhD and implemented by Dogen. | 
+| [[https://www.youtube.com/watch?v=TcCNNpH4EfM][https://img.youtube.com/vi/TcCNNpH4EfM/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=TcCNNpH4EfM][MASD: An introduction to Model Assisted Software Development - Part 6]] | Series of lectures on Model Assisted Software Development (MASD), the methodology put forward in my PhD and implemented by Dogen. | 
+| [[https://www.youtube.com/watch?v=r33MbmOv2ag][https://img.youtube.com/vi/r33MbmOv2ag/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=r33MbmOv2ag][MASD: An introduction to Model Assisted Software Development - Part 7]] | Series of lectures on Model Assisted Software Development (MASD), the methodology put forward in my PhD and implemented by Dogen. | 
+| [[https://www.youtube.com/watch?v=AAvopzFQm9Q][https://img.youtube.com/vi/AAvopzFQm9Q/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=AAvopzFQm9Q][MASD: An introduction to Model Assisted Software Development - Part 8]] | Series of lectures on Model Assisted Software Development (MASD), the methodology put forward in my PhD and implemented by Dogen. | 
+| [[https://www.youtube.com/watch?v=EFPMWq5SNGQ][https://img.youtube.com/vi/EFPMWq5SNGQ/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=EFPMWq5SNGQ][MASD: An introduction to Model Assisted Software Development - Part 9]] | Series of lectures on Model Assisted Software Development (MASD), the methodology put forward in my PhD and implemented by Dogen. | 
+| [[https://www.youtube.com/watch?v=IozJjmWNZQk][https://img.youtube.com/vi/IozJjmWNZQk/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=IozJjmWNZQk][MASD: An introduction to Model Assisted Software Development - Part 10]] | Series of lectures on Model Assisted Software Development (MASD), the methodology put forward in my PhD and implemented by Dogen. | 
+ 
+* MASD - MDE Paper of the Week 
+ 
+Series of relevant MDE papers that we've read to get a better understanding of the field. The main thrust of this series was during research, but we may occasionally update it when an interesting paper appears. 
+ 
+Full playlist on YouTube: [[https://www.youtube.com/playlist?list=PLwfrwe216gF0wbLBkiOmpCpdaeAU66634][open]]. 
+ 
+| Thumbnail | Video | Description | 
+|-+-+-| 
+| [[https://www.youtube.com/watch?v=OvCgcKHc__Y][https://img.youtube.com/vi/OvCgcKHc__Y/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=OvCgcKHc__Y][MDE PotW 14: Features as transformations: A generative approach to software development]] | Paper: Vranić, Valentino, and Roman Táborský. "Features as transformations: A generative approach to software development." Computer Science and Information Systems 13.3 (2016): 759-778. | 
+| [[https://www.youtube.com/watch?v=XfVGK8XOKmk][https://img.youtube.com/vi/XfVGK8XOKmk/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=XfVGK8XOKmk][MDE PotW 13: An evaluation of the Graphical Modeling Framework GMF]] | Paper: Seehusen, Fredrik, and Ketil Stølen. "An evaluation of the graphical modeling framework (gmf) based on the development of the coras tool." International Conference on Theory and Practice of Model Transformations. Springer, Berlin, Heidelberg, 2011. | 
+| [[https://www.youtube.com/watch?v=_1Xc2L5RpTY][https://img.youtube.com/vi/_1Xc2L5RpTY/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=_1Xc2L5RpTY][MDE PotW 12: A Comparison of Generative Approaches: XVCL and GenVoca]] | Paper: Blair, James, and Don Batory. "A Comparison of Generative Approaches: XVCL and GenVoca." Technical report, The University of Texas at Austin, Department of Computer Sciences (2004). | 
+| [[https://www.youtube.com/watch?v=9x_pqJOw_FE][https://img.youtube.com/vi/9x_pqJOw_FE/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=9x_pqJOw_FE][MDE PotW 11: A flexible code generator for MOF based modeling languages]] | Review of the paper: Bichler, Lutz. "A flexible code generator for MOF-based modeling languages." 2nd OOPSLA Workshop on Generative Techniques in the context of Model Driven Architecture. 2003. | 
+| [[https://www.youtube.com/watch?v=UlYLsBHjU1I][https://img.youtube.com/vi/UlYLsBHjU1I/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=UlYLsBHjU1I][MDE PotW 10: Using Aspects to Model Product Line Variability]] | Review of the paper: Groher, Iris, and Markus Voelter. "Using Aspects to Model Product Line Variability." SPLC (2). 2008. | 
+| [[https://www.youtube.com/watch?v=Ri7sYv20wlE][https://img.youtube.com/vi/Ri7sYv20wlE/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=Ri7sYv20wlE][MDE PotW 07: Architecture Centric Model Driven Web Engineering]] | Review of the paper: | 
+| [[https://www.youtube.com/watch?v=Xvh0BX47BkA][https://img.youtube.com/vi/Xvh0BX47BkA/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=Xvh0BX47BkA][MDE PotW 06: An Abstraction for Reusable MDD Components]] | Link: https://dl.acm.org/doi/pdf/10.1145/1449913.1449940 | 
+| [[https://www.youtube.com/watch?v=Z24mT64j0po][https://img.youtube.com/vi/Z24mT64j0po/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=Z24mT64j0po][MDE PotW 04: Un estudio comparativo de dos herramientas MDA: OptimalJ y ArcStyler]] | Review of the paper: (Spanish) | 
+| [[https://www.youtube.com/watch?v=QFlnn4Mbchs][https://img.youtube.com/vi/QFlnn4Mbchs/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=QFlnn4Mbchs][MDE PotW 03: A Lightweight MDSD Process Applied in Small Projects]] | Review of the paper: | 
+| [[https://www.youtube.com/watch?v=cJ1J5Evz3mg][https://img.youtube.com/vi/cJ1J5Evz3mg/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=cJ1J5Evz3mg][MDE PotW 02:A Code Generation Metamodel for ULF-Ware Generating Code for SDL]] | Review of the paper: | 
+| [[https://www.youtube.com/watch?v=SRnQgrvq7Cg][https://img.youtube.com/vi/SRnQgrvq7Cg/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=SRnQgrvq7Cg][MDE PotW 01: Systems Variability Modeling: A Textual Model Mixing Class and Feature Concepts]] | Review of the paper: | 
+ 
+* MASD - Dogen Coding: Move to GitHub Actions 
+ 
+Slightly messy video series that continues where the previous series left off (Move to GitHub CI), e.g. on getting our CI and nightlies to work again. It was meant to be about refactoring the PMM but we still had a number of CI issues. Due to sound-related problems we had to abandon the series mid-way through. 
+ 
+Full playlist on YouTube: [[https://www.youtube.com/playlist?list=PLwfrwe216gF0_1KPp_ir7ZCYLwnhdmBGJ][open]]. 
+ 
+| Thumbnail | Video | Description | 
+|-+-+-| 
+| [[https://www.youtube.com/watch?v=WeUBvf_SLSU][https://img.youtube.com/vi/WeUBvf_SLSU/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=WeUBvf_SLSU][MASD - Dogen Coding: Move to GitHub Actions - Part 1]] | Series of videos documenting the move to GitHub actions. | 
+| [[https://www.youtube.com/watch?v=wTGTcSz1vgM][https://img.youtube.com/vi/wTGTcSz1vgM/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=wTGTcSz1vgM][MASD - Dogen Coding: Move to GitHub Actions - Part 2]] | Series of videos documenting the PMM (Physical Meta-Model) refactor. | 
+| [[https://www.youtube.com/watch?v=1VmGUEN-6eI][https://img.youtube.com/vi/1VmGUEN-6eI/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=1VmGUEN-6eI][MASD - Dogen Coding: Move to GitHub Actions - Part 3]] | Series of videos documenting the PMM (Physical Meta-Model) refactor. | 
+ 
+* MASD - Dogen Coding: Move to GitHub CI 
+ 
+Series of videos on moving Dogen from Travis CI to GitHub CI. 
+ 
+Full playlist on YouTube: [[https://www.youtube.com/playlist?list=PLwfrwe216gF2qlIWKsBrL7UEsrEg8dXC0][open]]. 
+ 
+| Thumbnail | Video | Description | 
+|-+-+-| 
+| [[https://www.youtube.com/watch?v=l13FwDpvcA8][https://img.youtube.com/vi/l13FwDpvcA8/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=l13FwDpvcA8][MASD - Dogen Coding: Move to GitHub CI - Part 1]] | Series of videos on moving Dogen from Travis CI to GitHub CI. | 
+| [[https://www.youtube.com/watch?v=v7ebzs6XIf4][https://img.youtube.com/vi/v7ebzs6XIf4/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=v7ebzs6XIf4][MASD - Dogen Coding: Move to GitHub CI - Part 2]] | Series of videos on moving Dogen from Travis CI to GitHub CI. | 
+| [[https://www.youtube.com/watch?v=JOQPzueENB0][https://img.youtube.com/vi/JOQPzueENB0/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=JOQPzueENB0][MASD - Dogen Coding: Move to GitHub CI - Part 3]] | Series of videos on moving Dogen from Travis CI to GitHub CI. | 
+| [[https://www.youtube.com/watch?v=zu-YeZ6akcM][https://img.youtube.com/vi/zu-YeZ6akcM/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=zu-YeZ6akcM][MASD - Dogen Coding: Move to GitHub CI - Part 4]] | Series of videos on moving Dogen from Travis CI to GitHub CI. | 
+| [[https://www.youtube.com/watch?v=OdDDQlV72BA][https://img.youtube.com/vi/OdDDQlV72BA/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=OdDDQlV72BA][MASD - Dogen Coding: Move to GitHub CI - Part 5]] | Series of videos on moving Dogen from Travis CI to GitHub CI. | 
+| [[https://www.youtube.com/watch?v=aY_OLBtkEHY][https://img.youtube.com/vi/aY_OLBtkEHY/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=aY_OLBtkEHY][MASD - Dogen Coding: Move to GitHub CI - Part 6]] | Series of videos on moving Dogen from Travis CI to GitHub CI. | 
+| [[https://www.youtube.com/watch?v=gtV9frKFZTw][https://img.youtube.com/vi/gtV9frKFZTw/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=gtV9frKFZTw][MASD - Dogen Coding: Move to GitHub CI - Part 7]] | Series of videos on moving Dogen from Travis CI to GitHub CI. | 
+| [[https://www.youtube.com/watch?v=Pf-nD5UpLT8][https://img.youtube.com/vi/Pf-nD5UpLT8/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=Pf-nD5UpLT8][MASD - Dogen Coding: Move to GitHub CI - Part 8]] | Series of videos on moving Dogen from Travis CI to GitHub CI. | 
+ 
+* MASD - Dogen Coding: Org Codec 
+ 
+Series of videos describing the addition of org-mode support to Dogen. 
+ 
+Full playlist on YouTube: [[https://www.youtube.com/playlist?list=PLwfrwe216gF0wdVhy4fO1_QXJ-njWLSy4][open]]. 
+ 
+| Thumbnail | Video | Description | 
+|-+-+-| 
+| [[https://www.youtube.com/watch?v=xfJNJ_9uAGU][https://img.youtube.com/vi/xfJNJ_9uAGU/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=xfJNJ_9uAGU][MASD - Dogen Coding: Org Codec - Part 1]] | Series of videos documenting the implementation of proper org-mode support in Dogen. | 
+| [[https://www.youtube.com/watch?v=HueypBCfwIM][https://img.youtube.com/vi/HueypBCfwIM/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=HueypBCfwIM][MASD - Dogen Coding: Org Codec - Part 2]] | Series of videos documenting the implementation of proper org-mode support in Dogen. | 
+| [[https://www.youtube.com/watch?v=QE7P9s-8Xg0][https://img.youtube.com/vi/QE7P9s-8Xg0/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=QE7P9s-8Xg0][MASD - Dogen Coding: Org Codec - Part 3]] | Series of videos documenting the implementation of proper org-mode support in Dogen. | 
+| [[https://www.youtube.com/watch?v=I-PkSHkpwhI][https://img.youtube.com/vi/I-PkSHkpwhI/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=I-PkSHkpwhI][MASD - Dogen Coding: Org Codec - Part 4]] | Series of videos documenting the implementation of proper org-mode support in Dogen. | 
+| [[https://www.youtube.com/watch?v=ZfpqC9PuEog][https://img.youtube.com/vi/ZfpqC9PuEog/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=ZfpqC9PuEog][MASD - Dogen Coding: Org Codec - Part 5]] | Series of videos documenting the implementation of proper org-mode support in Dogen. | 
+| [[https://www.youtube.com/watch?v=z0LnWyoWQyM][https://img.youtube.com/vi/z0LnWyoWQyM/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=z0LnWyoWQyM][MASD - Dogen Coding: Org Codec - Part 6]] | Series of videos documenting the implementation of proper org-mode support in Dogen. | 
+| [[https://www.youtube.com/watch?v=6XDt7lV0k_k][https://img.youtube.com/vi/6XDt7lV0k_k/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=6XDt7lV0k_k][MASD - Dogen Coding: Org Codec - Part 7]] | Series of videos documenting the implementation of proper org-mode support in Dogen. | 
+| [[https://www.youtube.com/watch?v=6wqsbT-jG6Y][https://img.youtube.com/vi/6wqsbT-jG6Y/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=6wqsbT-jG6Y][MASD - Dogen Coding: Org Codec - Part 8]] | Series of videos documenting the implementation of proper org-mode support in Dogen. | 
+| [[https://www.youtube.com/watch?v=GvsI7IGk5sY][https://img.youtube.com/vi/GvsI7IGk5sY/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=GvsI7IGk5sY][MASD - Dogen Coding: Org Codec - Part 9]] | Series of videos documenting the implementation of proper org-mode support in Dogen. | 
+ 
+* MASD - Dogen Coding: Relational Model for Tracing 
+ 
+Narrates the design and implementation of the relational model for tracing. 
+ 
+Full playlist on YouTube: [[https://www.youtube.com/playlist?list=PLwfrwe216gF3EzrrvwNFivnLSZ2l8X9k6][open]]. 
+ 
+| Thumbnail | Video | Description | 
+|-+-+-| 
+| [[https://www.youtube.com/watch?v=re36Sr1u0Iw][https://img.youtube.com/vi/re36Sr1u0Iw/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=re36Sr1u0Iw][MASD - Dogen Coding: Relational Model for Tracing - Part 1]] | Series of videos describing the implementation of a relational model for tracing. | 
+| [[https://www.youtube.com/watch?v=FOAorRx6V7I][https://img.youtube.com/vi/FOAorRx6V7I/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=FOAorRx6V7I][MASD - Dogen Coding: Relational Model for Tracing - Part 2]] | Series of videos describing the implementation of a relational model for tracing. | 
+| [[https://www.youtube.com/watch?v=jrhBiluTTRE][https://img.youtube.com/vi/jrhBiluTTRE/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=jrhBiluTTRE][MASD - Dogen Coding: Relational Model for Tracing - Part 3]] | Series of videos describing the implementation of a relational model for tracing. | 
+| [[https://www.youtube.com/watch?v=1QteMezGDSE][https://img.youtube.com/vi/1QteMezGDSE/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=1QteMezGDSE][MASD - Dogen Coding: Relational Model for Tracing - Part 4]] | Series of videos describing the implementation of a relational model for tracing. | 
+| [[https://www.youtube.com/watch?v=J1qT4jCGJow][https://img.youtube.com/vi/J1qT4jCGJow/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=J1qT4jCGJow][MASD - Dogen Coding: Relational Model for Tracing - Part 5]] | Series of videos describing the implementation of a relational model for tracing. | 
+| [[https://www.youtube.com/watch?v=SkFvGy-hMFU][https://img.youtube.com/vi/SkFvGy-hMFU/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=SkFvGy-hMFU][MASD - Dogen Coding: Relational Model for Tracing - Part 6]] | Series of videos describing the implementation of a relational model for tracing. | 
+| [[https://www.youtube.com/watch?v=HcGA6Wcg4CM][https://img.youtube.com/vi/HcGA6Wcg4CM/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=HcGA6Wcg4CM][MASD - Dogen Coding: Relational Model for Tracing - Part 7]] | Series of videos describing the implementation of a relational model for tracing. | 
+| [[https://www.youtube.com/watch?v=xUilSokIA_c][https://img.youtube.com/vi/xUilSokIA_c/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=xUilSokIA_c][MASD - Dogen Coding: Relational Model for Tracing - Part 8]] | Series of videos describing the implementation of a relational model for tracing. | 
+| [[https://www.youtube.com/watch?v=g06Gn7tkfdw][https://img.youtube.com/vi/g06Gn7tkfdw/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=g06Gn7tkfdw][MASD - Dogen Coding: Relational Model for Tracing - Part 9]] | Series of videos describing the implementation of a relational model for tracing. | 
+| [[https://www.youtube.com/watch?v=Zm2TiQOsYWs][https://img.youtube.com/vi/Zm2TiQOsYWs/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=Zm2TiQOsYWs][MASD - Dogen Coding: Relational Model for Tracing - Part 10]] | Series of videos describing the implementation of a relational model for tracing. | 
+| [[https://www.youtube.com/watch?v=rpwelEM1rDE][https://img.youtube.com/vi/rpwelEM1rDE/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=rpwelEM1rDE][MASD - Dogen Coding: Relational Model for Tracing - Part 11]] | Series of videos describing the implementation of a relational model for tracing. | 
+| [[https://www.youtube.com/watch?v=LpPuenXCLlE][https://img.youtube.com/vi/LpPuenXCLlE/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=LpPuenXCLlE][MASD - Dogen Coding: Relational Model for Tracing - Part 12]] | Series of videos describing the implementation of a relational model for tracing. | 
+| [[https://www.youtube.com/watch?v=v7auSt2LXHA][https://img.youtube.com/vi/v7auSt2LXHA/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=v7auSt2LXHA][MASD - Dogen Coding: Relational Model for Tracing - Part 13]] | Series of videos describing the implementation of a relational model for tracing. | 
+| [[https://www.youtube.com/watch?v=_1uqdUw_oaw][https://img.youtube.com/vi/_1uqdUw_oaw/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=_1uqdUw_oaw][MASD - Dogen Coding: Relational Model for Tracing - Part 14]] | Series of videos describing the implementation of a relational model for tracing. | 
+| [[https://www.youtube.com/watch?v=f6ggaT2scE4][https://img.youtube.com/vi/f6ggaT2scE4/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=f6ggaT2scE4][MASD - Dogen Coding: Relational Model for Tracing - Part 15]] | Series of videos describing the implementation of a relational model for tracing. | 
+| [[https://www.youtube.com/watch?v=t9ra0uUGgOY][https://img.youtube.com/vi/t9ra0uUGgOY/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=t9ra0uUGgOY][MASD - Dogen Coding: Relational Model for Tracing - Part 16]] | Series of videos describing the implementation of a relational model for tracing. | 
+| [[https://www.youtube.com/watch?v=SNKabxVbs44][https://img.youtube.com/vi/SNKabxVbs44/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=SNKabxVbs44][MASD - Dogen Coding: Relational Model for Tracing - Part 17]] | Series of videos describing the implementation of a relational model for tracing. | 
+ 
+* MASD - Dogen Coding: Identification Refactor 
+ 
+Describes some of the woes we went through when updating the code-base to use the shiny new =identification= model. 
+ 
+Full playlist on YouTube: [[https://www.youtube.com/playlist?list=PLwfrwe216gF0wxWcw33JrXI4R2gTN9E8X][open]]. 
+ 
+| Thumbnail | Video | Description | 
+|-+-+-| 
+| [[https://www.youtube.com/watch?v=pMqUzX0PU_I][https://img.youtube.com/vi/pMqUzX0PU_I/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=pMqUzX0PU_I][MASD - Dogen Coding: Identification Refactor - Part 1]] | Series of videos describing a large refactor in the Dogen code base, with the introduction of the Identification model. | 
+| [[https://www.youtube.com/watch?v=qMqeG2awLac][https://img.youtube.com/vi/qMqeG2awLac/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=qMqeG2awLac][MASD - Dogen Coding: Identification Refactor - Part 2]] | Series of videos describing a large refactor in the Dogen code base, with the introduction of the Identification model. | 
+| [[https://www.youtube.com/watch?v=rP8r8FPCFfc][https://img.youtube.com/vi/rP8r8FPCFfc/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=rP8r8FPCFfc][MASD - Dogen Coding: Identification Refactor - Part 3]] | Series of videos describing a large refactor in the Dogen code base, with the introduction of the Identification model. | 
+ 
+* MASD - Dogen Coding: Formatables Refactor 
+ 
+Series of videos covering the long-running formatables refactor in Dogen, which moved most technical space specific types into their Logical and Physical destinations. 
+ 
+Full playlist on YouTube: [[https://www.youtube.com/playlist?list=PLwfrwe216gF0NHaErGDeJrtGU8pAoNYlG][open]]. 
+ 
+| Thumbnail | Video | Description | 
+|-+-+-| 
+| [[https://www.youtube.com/watch?v=CPugL2Qmj0c][https://img.youtube.com/vi/CPugL2Qmj0c/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=CPugL2Qmj0c][MASD - Dogen Coding: Formatables Refactor - Part 1]] | Series of videos describing a large refactor in the Dogen code base, attempting to get rid of the formatables represent. | 
+| [[https://www.youtube.com/watch?v=4UW8HNPYdm0][https://img.youtube.com/vi/4UW8HNPYdm0/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=4UW8HNPYdm0][MASD - Dogen Coding: Formatables Refactor - Part 2]] | Series of videos describing a large refactor in the Dogen code base, attempting to get rid of the formatables represent. | 
+| [[https://www.youtube.com/watch?v=YN6i3fmZaVo][https://img.youtube.com/vi/YN6i3fmZaVo/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=YN6i3fmZaVo][MASD - Dogen Coding: Formatables Refactor - Part 3]] | Series of videos describing a large refactor in the Dogen code base, attempting to get rid of the formatables represent. | 
+| [[https://www.youtube.com/watch?v=MlgeBEThR0Y][https://img.youtube.com/vi/MlgeBEThR0Y/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=MlgeBEThR0Y][MASD - Dogen Coding: Formatables Refactor - Part 4]] | Series of videos describing a large refactor in the Dogen code base, attempting to get rid of the formatables represent. | 
+| [[https://www.youtube.com/watch?v=S533ja8Uvqc][https://img.youtube.com/vi/S533ja8Uvqc/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=S533ja8Uvqc][MASD - Dogen Coding: Formatables Refactor - Part 5]] | Series of videos describing a large refactor in the Dogen code base, attempting to get rid of the formatables represent. | 
+| [[https://www.youtube.com/watch?v=4pouLW4oLCw][https://img.youtube.com/vi/4pouLW4oLCw/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=4pouLW4oLCw][MASD - Dogen Coding: Formatables Refactor - Part 6]] | Series of videos describing a large refactor in the Dogen code base, attempting to get rid of the formatables represent. | 
+| [[https://www.youtube.com/watch?v=nhmLWBKuTCE][https://img.youtube.com/vi/nhmLWBKuTCE/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=nhmLWBKuTCE][MASD - Dogen Coding: Formatables Refactor - Part 7]] | Series of videos describing a large refactor in the Dogen code base, attempting to get rid of the formatables represent. | 
+| [[https://www.youtube.com/watch?v=_-zBX6JBX74][https://img.youtube.com/vi/_-zBX6JBX74/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=_-zBX6JBX74][MASD - Dogen Coding: Formatables Refactor - Part 8]] | Series of videos describing a large refactor in the Dogen code base, attempting to get rid of the formatables represent. | 
+| [[https://www.youtube.com/watch?v=3Jy02qjjSkQ][https://img.youtube.com/vi/3Jy02qjjSkQ/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=3Jy02qjjSkQ][MASD - Dogen Coding: Formatables Refactor - Part 9]] | Series of videos describing a large refactor in the Dogen code base, attempting to get rid of the formatables represent. | 
+| [[https://www.youtube.com/watch?v=S7U3VhkDQ8E][https://img.youtube.com/vi/S7U3VhkDQ8E/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=S7U3VhkDQ8E][MASD - Dogen Coding: Formatables Refactor - Part 10]] | Series of videos describing a large refactor in the Dogen code base, attempting to get rid of the formatables represent. | 
+| [[https://www.youtube.com/watch?v=9Y15-nbIddg][https://img.youtube.com/vi/9Y15-nbIddg/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=9Y15-nbIddg][MASD - Dogen Coding: Formatables Refactor - Part 11]] | Series of videos describing a large refactor in the Dogen code base, attempting to get rid of the formatables represent. | 
+| [[https://www.youtube.com/watch?v=1GaWU6o5_vs][https://img.youtube.com/vi/1GaWU6o5_vs/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=1GaWU6o5_vs][MASD - Dogen Coding: Formatables Refactor - Part 12]] | Series of videos describing a large refactor in the Dogen code base, attempting to get rid of the formatables represent. | 
+| [[https://www.youtube.com/watch?v=3kWLjk_PhIQ][https://img.youtube.com/vi/3kWLjk_PhIQ/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=3kWLjk_PhIQ][MASD - Dogen Coding: Formatables Refactor - Part 13]] | Series of videos describing a large refactor in the Dogen code base, attempting to get rid of the formatables represent. | 
+| [[https://www.youtube.com/watch?v=BIdkYHBcnwk][https://img.youtube.com/vi/BIdkYHBcnwk/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=BIdkYHBcnwk][MASD - Dogen Coding: Formatables Refactor - Part 14]] | Series of videos describing a large refactor in the Dogen code base, attempting to get rid of the formatables represent. | 
+| [[https://www.youtube.com/watch?v=KoRl8OL0GZY][https://img.youtube.com/vi/KoRl8OL0GZY/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=KoRl8OL0GZY][MASD - Dogen Coding: Formatables Refactor - Part 15]] | Series of videos describing a large refactor in the Dogen code base, attempting to get rid of the formatables represent. | 
+| [[https://www.youtube.com/watch?v=h-kXGcTUcac][https://img.youtube.com/vi/h-kXGcTUcac/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=h-kXGcTUcac][MASD - Dogen Coding: Formatables Refactor - Part 16]] | Series of videos describing a large refactor in the Dogen code base, attempting to get rid of the formatables represent. | 
+| [[https://www.youtube.com/watch?v=QSDSa_AtD5M][https://img.youtube.com/vi/QSDSa_AtD5M/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=QSDSa_AtD5M][MASD - Dogen Coding: Formatables Refactor - Part 17]] | Series of videos describing a large refactor in the Dogen code base, attempting to get rid of the formatables represent. | 
+| [[https://www.youtube.com/watch?v=NH60Pi85HTQ][https://img.youtube.com/vi/NH60Pi85HTQ/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=NH60Pi85HTQ][MASD - Dogen Coding: Formatables Refactor - Part 18]] | Series of videos describing a large refactor in the Dogen code base, attempting to get rid of the formatables represent. | 
+| [[https://www.youtube.com/watch?v=0e0NQ2Kaqj4][https://img.youtube.com/vi/0e0NQ2Kaqj4/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=0e0NQ2Kaqj4][MASD - Dogen Coding: Formatables Refactor - Part 19]] | Series of videos describing a large refactor in the Dogen code base, attempting to get rid of the formatables represent. | 
+| [[https://www.youtube.com/watch?v=UQhHk4yJwtM][https://img.youtube.com/vi/UQhHk4yJwtM/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=UQhHk4yJwtM][MASD - Dogen Coding: Formatables Refactor - Part 20]] | Series of videos describing a large refactor in the Dogen code base, attempting to get rid of the formatables represent. | 
+| [[https://www.youtube.com/watch?v=yRFOnENVt1k][https://img.youtube.com/vi/yRFOnENVt1k/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=yRFOnENVt1k][MASD - Dogen Coding: Formatables Refactor - Part 21]] | Series of videos describing a large refactor in the Dogen code base, attempting to get rid of the formatables represent. | 
+| [[https://www.youtube.com/watch?v=IaT8bX4l1LY][https://img.youtube.com/vi/IaT8bX4l1LY/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=IaT8bX4l1LY][MASD - Dogen Coding: Formatables Refactor - Part 22]] | Series of videos describing a large refactor in the Dogen code base, attempting to get rid of the formatables represent. | 
+| [[https://www.youtube.com/watch?v=Qyimrk3uWv0][https://img.youtube.com/vi/Qyimrk3uWv0/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=Qyimrk3uWv0][MASD - Dogen Coding: Formatables Refactor - Part 23]] | Series of videos describing a large refactor in the Dogen code base, attempting to get rid of the formatables represent. | 
+| [[https://www.youtube.com/watch?v=cbscX39OJUc][https://img.youtube.com/vi/cbscX39OJUc/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=cbscX39OJUc][MASD - Dogen Coding: Formatables Refactor - Part 24]] | Series of videos describing a large refactor in the Dogen code base, attempting to get rid of the formatables represent. | 
