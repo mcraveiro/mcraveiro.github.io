@@ -53,6 +53,12 @@ assistant with detailed ORE knowledge at your fingertips anyway.
 So it was that we were treated to these lectures, which the next section will
 briefly summarise.
 
+#+begin_note
+*Addendum (20th May 2026):* [[https://images.communications.lseg.com/Web/LSEG/%7B0a3e4609-3bd7-4663-87c6-fd5121ca4cda%7D_Masteclass_Slides.pdf?utm_source=Eloqua&utm_medium=email&utm_campaign=&utm_content=Quant%20Summit%202026%20Post%20Event&cid=15426068][Slides]] and [[https://vimeo.com/1192620838/7162c71b35][recording]] for the Masterclass are now
+available. As far as I could tell, the sound quality was not the absolute best
+but you can still hear the presenters.
+#+end_note
+
 ** SVI
 
 The first talk was focused on the state of SVI ([[https://en.wikipedia.org/wiki/Stochastic_volatility][Stochastic Volatility]] Inspired)
@@ -230,6 +236,11 @@ experts and internal elements of LSEG where they discussed very interesting
 topics related to ORE and the industry in general. I will only briefly mention
 each of these talks as they spanned a number of topics and I cannot possibly do
 them justice.
+
+#+begin_note
+*Addendum (20th May 2026):* [[https://images.communications.lseg.com/Web/LSEG/%7B74e2c159-9b6f-4bf2-af3d-09653fb87ca8%7D_Quant_Summit_Slides_final_(1).pdf?utm_source=Eloqua&utm_medium=email&utm_campaign=&utm_content=Quant%20Summit%202026%20Post%20Event&cid=15426068][Slides]] for the talks are now available.
+#+end_note
+
 
 ** Welcome Keynote
 
