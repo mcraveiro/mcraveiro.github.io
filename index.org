@@ -1,14 +1,7 @@
-#+title: Marco Craveiro's Home Page
+#+title: Home
 #+author: Marco Craveiro
 #+options: num:nil author:nil toc:nil
 #+bind: org-html-validation-link nil
-
-#+begin_export html
-<figure class="hero">
-  <img class="hero" src="./assets/images/benguela-baia-azul-2022.png" alt="Baía Azul, Benguela, Angola"/>
-  <figcaption>Baía Azul, Benguela, Angola. (C) 2022 Casal Sampaio</figcaption>
-</figure>
-#+end_export
 
 * Introduction
 

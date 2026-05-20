@@ -68,6 +68,20 @@
          :base-directory "./"
          :publishing-function org-html-publish-to-html
          :publishing-directory "./build/output/site"
+         :html-preamble "<header id='site-header'>
+  <div id='site-header-inner'>
+    <a href='/' id='site-title'>Marco Craveiro&#8217;s Home Page</a>
+    <nav id='site-nav'>
+      <a href='/'>Home</a>
+      <a href='/ore_studio/index.html'>ORE Studio</a>
+      <a href='/dogen/index.html'>Dogen</a>
+      <a href='/nerd_food/index.html'>Nerd Food</a>
+      <a href='/angola_notebook/index.html'>Angola</a>
+      <a href='/about.html'>About</a>
+    </nav>
+  </div>
+  <p id='site-header-caption'>Baía Azul, Benguela, Angola. © 2022 Casal Sampaio</p>
+</header>"
          :with-author nil           ;; Don't include author name
          :with-creator t            ;; Include Emacs and Org versions in footer
          :with-toc t                ;; Include a table of contents
