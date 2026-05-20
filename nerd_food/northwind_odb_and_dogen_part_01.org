@@ -1,6 +1,8 @@
 #+title: Nerd Food: Northwind, or Using Dogen with ODB - Part I
 #+options: date:nil toc:t author:nil num:nil title:nil
 
+[[file:index.org][Back to Nerd Food]]
+
 Thanks to my first [[https://github.com/DomainDrivenConsulting/dogen][Dogen]] paying customer, I finally got a chance to
 work with [[http://www.codesynthesis.com/products/odb/][ODB]] - [[http://www.codesynthesis.com][Code Synthesis']] amazingly interesting C++
 Object-Relational Mapping tool, built on the back of the GCC plugin

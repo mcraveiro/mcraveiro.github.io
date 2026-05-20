@@ -9,7 +9,7 @@
 #+cite_export: basic author author-year
 #+bibliography: ../bibliography.bib
 
-/[[id:11F938FF-2A01-4424-DBE3-16527251E747][Back to home page]]/
+[[file:index.org][Back to Dogen page]]
 
 #+begin_quote
 One of the more controversial concepts in Agile Modeling is that agile models

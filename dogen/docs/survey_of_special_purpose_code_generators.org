@@ -9,7 +9,7 @@
 #+cite_export: basic author author-year
 #+bibliography: ../bibliography.bib
 
-/[[id:11F938FF-2A01-4424-DBE3-16527251E747][Back to home page]]/
+[[file:index.org][Back to Dogen page]]
 
 #+begin_abstract
 [[id:C29C6088-B396-A404-9183-09FE5AD2D105][MDE]] is an approach to software engineering centred around modeling. Code

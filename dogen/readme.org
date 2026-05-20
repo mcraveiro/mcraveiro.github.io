@@ -8,6 +8,9 @@
 #+name: fig:logo
 [[./assets/images/new_logo_with_message.png]]
 
+
+[[file:index.org][Back to Dogen page]].
+
 * Overview
 
 Dogen is the reference implementation of the MASD Project code generator. MASD -

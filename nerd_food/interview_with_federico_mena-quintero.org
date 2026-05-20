@@ -3,7 +3,7 @@
 #+options: num:nil author:nil toc:t
 #+bind: org-html-validation-link nil
 
-[[file:../index.org][Back to home page]].
+[[file:index.org][Back to Nerd Food]]
 
 Wednesday, October 03, 2007
 

@@ -9,7 +9,7 @@
 #+cite_export: basic author author-year
 #+bibliography: ../bibliography.bib
 
-/[[id:11F938FF-2A01-4424-DBE3-16527251E747][Back to home page]]/
+[[file:index.org][Back to Dogen page]]
 
 #+begin_quote
 Accordingly, all of cognition is /cognition in models or by means of models/,

@@ -6,8 +6,6 @@
 #+options: num:nil author:nil toc:nil
 #+bind: org-html-validation-link nil
 
-[[file:../index.org][Back to home page]].
-
 In my [[http://www.catb.org/~esr/jargon/html/C/copious-free-time.html][copious free time]], I like to work on [[id:8BF323A0-B868-7AA4-EC7B-D988934482AA][computational finance]]. [[https://github.com/OreStudio/OreStudio][ORE Studio]] was
 born as a general way to condense all of my software engineering work in the
 field of finance.

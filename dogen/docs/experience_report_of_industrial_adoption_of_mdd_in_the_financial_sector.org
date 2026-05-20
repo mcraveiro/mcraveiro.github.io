@@ -9,7 +9,7 @@
 #+cite_export: basic author author-year
 #+bibliography: ../bibliography.bib
 
-/[[id:11F938FF-2A01-4424-DBE3-16527251E747][Back to home page]]/
+[[file:index.org][Back to Dogen page]]
 
 #+begin_abstract
 This paper is an experience report that analyses the use of [[id:79EC741E-8818-3494-8B1B-2B27C182B160][MDD]] techniques to

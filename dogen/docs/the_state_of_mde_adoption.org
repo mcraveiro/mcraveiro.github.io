@@ -9,7 +9,7 @@
 #+cite_export: basic author author-year
 #+bibliography: ../bibliography.bib
 
-/[[id:11F938FF-2A01-4424-DBE3-16527251E747][Back to home page]]/
+[[file:index.org][Back to Dogen page]]
 
 #+begin_quote
 But, as we look to the horizon of a decade hence we see no silver bullet. There

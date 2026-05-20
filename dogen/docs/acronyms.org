@@ -6,7 +6,7 @@
 #+email: marco.craveiro@gmail.com
 #+options: <:nil c:nil todo:nil ^:nil d:nil date:nil author:nil toc:t html-postamble:nil <:nil H:7 ^:{}
 
-/[[id:11F938FF-2A01-4424-DBE3-16527251E747][Back to home page]]/
+[[file:index.org][Back to Dogen page]]
 
 #+name: acronyms
 #+caption: Commonly used acronyms.

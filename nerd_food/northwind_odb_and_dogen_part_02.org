@@ -1,6 +1,8 @@
 #+title: Nerd Food: Northwind, or Using Dogen with ODB - Part II
 #+options: date:nil toc:t author:nil num:nil title:nil
 
+[[file:index.org][Back to Nerd Food]]
+
 On [[http://mcraveiro.blogspot.co.uk/2017/02/nerd-food-northwind-or-using-dogen-with.html][Part I]] of this series, we got our Oracle Express database up and
 running against Debian Testing. It involved quite a bit of fiddling
 but we seemed to get there in the end. In Part II we shall now finish
