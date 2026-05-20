@@ -12,6 +12,8 @@ field of finance.
 [[file:../assets/images/ore_studio_v0.0.17.png]]
 /Figure 1: ORE Studio at v0.0.17./
 
+* What is ORE Studio
+
 To avoid repeating myself, I will copy verbatim selected portions of the ORE
 Studio [[https://github.com/OreStudio/OreStudio/blob/main/readme.org][readme]]:
 
@@ -59,6 +61,11 @@ pricing engines.
 - ability to configure and orchestrate ORE execution.
 
 * Material
+
+Much like with [[file:dogen/index.org][Dogen]], I have started to create assorted material for ORE Studio
+in different media. Hopefully this list will increase over time. The objective
+is to give users a broad view of what we are trying to achieve, as well as how
+the development process is done.
 
 ** Videos
 
