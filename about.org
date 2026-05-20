@@ -6,8 +6,6 @@
 #+options: <:nil c:nil todo:nil ^:nil d:nil date:nil author:nil toc:nil html-postamble:nil
 #+startup: inlineimages
 
-/[[file:index.org][Back to home page]]/
-
 * Quick Bio
 
 The bio from my [[https://github.com/mcraveiro][GitHub profile]] is still fairly accurate:

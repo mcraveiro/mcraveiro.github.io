@@ -7,8 +7,8 @@
 
 Welcome to my website. Over the years I've accumulated quite a large amount of
 assorted content, in various different platforms, and begun to lose track of it.
-In order to bring some kind of order to the chaos, I decided to republish all of
-this material under a single home, using the tools I love - /e.g./, [[https://www.gnu.org/software/emacs/][emacs]],
+In order to bring /some/ kind of order to the chaos, I decided to republish all
+of this material under a single home, using the tools I love - /e.g./, [[https://www.gnu.org/software/emacs/][emacs]],
 [[https://orgmode.org/][org-mode]], [[https://git-scm.com/][git]] and the like. I'm not entirely sure you will find anything
 particularly amazing around here, but have a browse. If you need to know more
 about me, see the [[file:about.org][about page]].
