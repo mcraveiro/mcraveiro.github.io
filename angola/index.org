@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID: ACC943D8-3CB6-4E6B-A92C-EC9A4E331AD0
+:END:
+#+title: Angola
+#+author: Marco Craveiro
+#+options: num:nil author:nil toc:nil
+#+bind: org-html-validation-link nil
+
+[[file:../index.org][Back to home page]].
+
+When I can, I travel to Angola, where I am originally from, and write some
+travel content. So far I have made two such trips.
+
+| Title                                          | Description                                                                                         |
+|------------------------------------------------+-----------------------------------------------------------------------------------------------------|
+| [[id:2C76127C-6DBA-4162-963E-B71A770416AE][Notebook of a Return to My Native Land]] | Diary of my first return to Angola in 2006, after leaving it for the first time in 25 years.        |
+| [[id:57EB3B44-586A-4A92-AB15-281752D9E4F4][Kizua Mwangola]]                         | Diary of my second trip to Angola in 2009, covering the process of recovering my Angolan documents. |

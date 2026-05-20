@@ -1,9 +1,12 @@
+:PROPERTIES:
+:ID: 57EB3B44-586A-4A92-AB15-281752D9E4F4
+:END:
 #+title: Kizua Mwangola
 #+author: Marco Craveiro
 #+options: num:nil author:nil toc:nil
 #+bind: org-html-validation-link nil
 
-[[file:../index.org][Back to home page]].
+[[id:ACC943D8-3CB6-4E6B-A92C-EC9A4E331AD0][Back to Angola]].
 
 These series of short posts narrate my experiences on the second
 return to my homeland of Angola. The main topics are the hard work I

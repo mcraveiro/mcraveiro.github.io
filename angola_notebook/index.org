@@ -1,9 +1,12 @@
+:PROPERTIES:
+:ID: 2C76127C-6DBA-4162-963E-B71A770416AE
+:END:
 #+title: Notebook of a Return to My Native Land
 #+author: Marco Craveiro
 #+options: num:nil author:nil toc:nil
 #+bind: org-html-validation-link nil
 
-[[file:../index.org][Back to home page]].
+[[id:ACC943D8-3CB6-4E6B-A92C-EC9A4E331AD0][Back to Angola]].
 
 I returned to my home country of Angola after leaving it a long, long
 time ago. This series of blog posts narrates the adventure.

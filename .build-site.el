@@ -76,7 +76,7 @@
       <a href='/ore_studio/index.html'>ORE Studio</a>
       <a href='/dogen/index.html'>Dogen</a>
       <a href='/nerd_food/index.html'>Nerd Food</a>
-      <a href='/angola_notebook/index.html'>Angola</a>
+      <a href='/angola/index.html'>Angola</a>
       <a href='/about.html'>About</a>
     </nav>
   </div>
