@@ -47,9 +47,9 @@ Turismo (ESGHT) (BSc).
 After working for over two decades for [[https://www.natwestgroup.com/who-we-are/board-and-governance/our-subsidiaries/natwest-markets-plc.html][Natwest Markets]] --- as both a contractor,
 and a permie, and a contractor a few times, and a permie to finish off --- I am
 now no longer in the City of London. It has been a very big change for me, since
-I worked in the city for roughly 25 years of my life, or just about half so far.
-I do try to keep my hands busy with Quantitative Finance in my spare time via
-[[https://github.com/OreStudio/OreStudio][ORE Studio]]. I otherwise work as a remote Senior Software Engineer.
+I worked in the city for roughly 25 years of my life, or just about half of it
+so far. I do try to keep my hands busy with Quantitative Finance in my spare
+time via [[https://github.com/OreStudio/OreStudio][ORE Studio]]. I otherwise work as a remote Senior Software Engineer.
 
 * Languages
 
