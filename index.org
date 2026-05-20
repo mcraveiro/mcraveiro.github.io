@@ -51,6 +51,13 @@ exported to HTML using [[https://orgmode.org/manual/Publishing.html][org-publish
 living at [[file:assets/css/style.css][assets/css/style.css]]. Syntax highlighting is provided by
 [[https://highlightjs.org/][highlight.js]] using the =atom-one-dark= theme.
 
+#+begin_note
+*On LLMs*: Whilst I do use LLMs to help me organise the site (Claude Code in
+particular), the texts themselves are all written by me, by hand. So far, I
+haven't even used LLMs to help me organise posts, though as I become more
+familiar with them, that may change in the future.
+#+end_note
+
 * Social Media
 
 You may find me in several social media platforms, though I am not the most

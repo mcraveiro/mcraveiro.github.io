@@ -6,6 +6,8 @@
 #+options: <:nil c:nil todo:nil ^:nil d:nil date:nil author:nil toc:nil html-postamble:nil
 #+startup: inlineimages
 
+[[id:1DE77E99-9018-4C20-A999-06767D61C2C7][Back to Domain Musings]].
+
 Not all money is treated in the same way. There is an obvious difference between
 having some hard currency in your pocket versus having the same amount deposited
 in a bank; the former is easier to access (and spend) when compared to the

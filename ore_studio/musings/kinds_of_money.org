@@ -8,6 +8,8 @@
 #+cite_export: basic author author-year
 #+bibliography: bibliography.bib
 
+[[id:1DE77E99-9018-4C20-A999-06767D61C2C7][Back to Domain Musings]].
+
 Money has evolved over time in a long and convoluted manner, eventually
 transforming itself into the complex entity that it is today[fn:ascent_money].
 We need not analyse all of the intermediate steps that were taken, but can

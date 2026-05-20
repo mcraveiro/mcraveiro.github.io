@@ -6,6 +6,8 @@
 #+options: <:nil c:nil todo:nil ^:nil d:nil date:nil author:nil toc:nil html-postamble:nil
 #+bibliography: bibliography.bib
 
+[[id:1DE77E99-9018-4C20-A999-06767D61C2C7][Back to Domain Musings]].
+
 Most of the concepts introduced thus far are foundational to a number of
 disciplines like economics, accounting and so forth. In a very real sense, these
 are /core concepts/ of [[id:8BF323A0-B868-7AA4-EC7B-D988934482AA][Computational Finance]]. Yet, as you no doubt noticed,

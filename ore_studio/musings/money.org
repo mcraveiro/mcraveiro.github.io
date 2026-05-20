@@ -6,6 +6,8 @@
 #+options: <:nil c:nil todo:nil ^:nil d:nil date:nil author:nil toc:nil html-postamble:nil
 #+startup: inlineimages
 
+[[id:1DE77E99-9018-4C20-A999-06767D61C2C7][Back to Domain Musings]].
+
 Money lies at the root of many things --- evil or otherwise --- so it's not
 exactly surprising to find it at the heart of the Computational Finance
 discipline. Its central role makes it a fitting point from which to start our

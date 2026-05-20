@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID: 855A9992-FC1D-4317-B6DB-A8B95A547678
+:END:
 #+title: ORE Studio
 #+author: Marco Craveiro
 #+options: num:nil author:nil toc:nil
@@ -62,7 +65,7 @@ pricing engines.
 
 * Material
 
-Much like with [[file:dogen/index.org][Dogen]], I have started to create assorted material for ORE Studio
+Much like with [[id:11F938FF-2A01-4424-DBE3-16527251E747][Dogen]], I have started to create assorted material for ORE Studio
 in different media. Hopefully this list will increase over time. The objective
 is to give users a broad view of what we are trying to achieve, as well as how
 the development process is done.
@@ -88,18 +91,4 @@ What follows is a series of posts on the topic of ORE Studio and related technol
 ** Domain Musings
 
 Speculative notes on the finance domain --- on money, value, currency, trading
-and the philosophy of modeling the field. These started life inside the ORE
-Studio project docs but felt more at home here, as ramblings rather than
-reference material.
-
-| Page                          | Topic                                                                 |
-|-------------------------------+-----------------------------------------------------------------------|
-| [[file:musings/computational_finance.org][Computational Finance]]         | Intro to the field and scoping the ambitions of the project.          |
-| [[file:musings/money.org][Money]]                         | A working definition of money, rooted in Wikipedia.                   |
-| [[file:musings/functions_of_money.org][Functions of Money]]            | Medium of exchange, store of value, unit of account.                  |
-| [[file:musings/kinds_of_money.org][Kinds of Money]]                | Historical evolution: commodity, fiat, and beyond.                    |
-| [[file:musings/money_and_its_close_relatives.org][Money and its Close Relatives]] | Concepts adjacent to money.                                           |
-| [[file:musings/currency.org][Currency]]                      | The concept of currency, distinct from money.                         |
-| [[file:musings/cash.org][Cash]]                          | Cash, liquidity, and the friction of asset conversion.                |
-| [[file:musings/trading.org][Trading]]                       | Valuation, value and the mechanics of exchange.                       |
-| [[file:musings/finance_and_modeling.org][Finance and Modeling]]          | A meta-essay on modeling rigour in finance versus established fields. |
+and the philosophy of modeling the field. See [[id:1DE77E99-9018-4C20-A999-06767D61C2C7][Domain Musings]].

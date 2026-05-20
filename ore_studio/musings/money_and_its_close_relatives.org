@@ -8,6 +8,8 @@
 #+cite_export: basic author author-year
 #+bibliography: bibliography.bib
 
+[[id:1DE77E99-9018-4C20-A999-06767D61C2C7][Back to Domain Musings]].
+
 #+begin_quote
 Finance is concerned with the relations between the values of securities and
 their risk, and with the behavior of those values. It aspires to be a practical

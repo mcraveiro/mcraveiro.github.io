@@ -193,6 +193,38 @@ li {
     margin-bottom: 0.5rem;
 }
 
+/* Footnotes */
+#footnotes {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+#footnotes h2.footnotes {
+    font-size: 1rem;
+    color: var(--text-muted);
+    border-bottom: none;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.footdef {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.footdef .footpara {
+    flex: 1;
+}
+
+.footdef .footpara p {
+    margin-bottom: 0;
+}
+
 /* Info / note admonition box */
 .note {
     background-color: rgba(88, 166, 255, 0.07);

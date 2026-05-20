@@ -8,6 +8,8 @@
 #+cite_export: basic author author-year
 #+bibliography: bibliography.bib
 
+[[id:1DE77E99-9018-4C20-A999-06767D61C2C7][Back to Domain Musings]].
+
 A concept closely coupled with that of [[id:D564B035-80F8-0D04-B1DB-2832CD93B95B][money]] is /currency/. Wikipedia [[https://en.wikipedia.org/wiki/Currency][states]]
 (/emphasis ours/):
 

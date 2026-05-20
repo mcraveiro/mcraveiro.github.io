@@ -6,6 +6,8 @@
 #+options: <:nil c:nil todo:nil ^:nil d:nil date:nil author:nil toc:nil html-postamble:nil
 #+startup: inlineimages
 
+[[id:1DE77E99-9018-4C20-A999-06767D61C2C7][Back to Domain Musings]].
+
 One way in which to define [[id:D564B035-80F8-0D04-B1DB-2832CD93B95B][money]] is to focus on its /functional characteristics/
 --- that is to say, what can it be used for in practical terms. In the
 [[https://en.wikipedia.org/wiki/Money][before-mentioned]] page, Wikipedia goes on to state (/emphasis ours/):

@@ -29,7 +29,7 @@ cohesive narrative of gaps exploitable by a new [[id:C29C6088-B396-A404-9183-09F
 requirement back to the theoretical or practical concerns which gave rise to it.
 Since, in our view, application is inextricably linked with theory, we have
 opted for two categories of requirements: requirements for the theoretical
-framework (/cf./ Section [[id:66251FED-9382-1064-37F3-E14160524F03][Theoretical Framework Requirements]]) and requirements
+framework (/cf./ Section [[id:6F8E8A09-1CF6-4B09-B7F2-834F95D104FB][Theoretical Framework Requirements]]) and requirements
 related to tooling (/cf./ Section [[id:25AAE8FE-10C1-7C84-4B8B-D85D9CBDD5BB][Tooling Requirements]]). Each requirement is
 comprised of a numbered requirement definition to facilitate cross-referencing
 by the remainder of the dissertation[fn:req_def] and a short overview. Let us
@@ -40,8 +40,8 @@ start then by looking at what is deemed necessary from a theoretical standpoint.
 
 * Theoretical Framework Requirements
   :properties:
-  :id: 66251FED-9382-1064-37F3-E14160524F03
-  :custom_id: ID-66251FED-9382-1064-37F3-E14160524F03
+  :id: 6F8E8A09-1CF6-4B09-B7F2-834F95D104FB
+  :custom_id: ID-6F8E8A09-1CF6-4B09-B7F2-834F95D104FB
   :end:
 
 ** RQ-01: Well-Defined Purpose
