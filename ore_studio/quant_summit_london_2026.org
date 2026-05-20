@@ -139,11 +139,16 @@ and Naranjo (2006) titled “An N-Factor Gaussian Model of Oil Futures Prices”
 #+end_quote
 
 However, Acar argued that in many cases $n = 2$ suffices, though this appears to
-be highly dependent on the commodity in question. Gas markets, for example, seem
-to work well with 2 factors and seasonality support, but maybe there are other
-more complicated cases which require larger $n$. Bear in mind this work has not
-yet been merged to the main ORE branch, but from Acar's talk it seems to be
-progressing quite well and should land soon.
+be highly dependent on the commodity in question[fn:modeling_in_finance]. Gas
+markets, for example, seem to work well with 2 factors and seasonality support,
+but maybe there are other more complicated cases which require larger $n$. Bear
+in mind this work has not yet been merged to the main ORE branch, but from
+Acar's talk it seems to be progressing quite well and should land soon.
+
+[fn:modeling_in_finance] This, in my mind, is yet another example of how finicky
+and somewhat arbitrary, modeling in finance is. But I've moaned about it
+[[id:8D7F5CE2-FA9F-53F4-D373-D9B3A21BEC69][elsewhere]] so I won't repeat it here.
+
 
 [[../assets/images/IMG_20260511_105010723_HDR.jpg]]
 /Figure 5: Two factor models./
