@@ -1,6 +1,6 @@
 #+title: Neurons for Computer Geeks - Part V: Yet More Theory
 #+author: Marco Craveiro
-#+options: num:nil author:nil toc:nil
+#+options: num:nil author:nil toc:t
 #+bind: org-html-validation-link nil
 
 [[file:index.org][Back to chapter index.]]

@@ -1,5 +1,5 @@
 #+title: Nerd Food: Northwind, or Using Dogen with ODB - Part III
-#+options: date:nil toc:nil author:nil num:nil title:nil
+#+options: date:nil toc:t author:nil num:nil title:nil
 
 #+begin_html
 <table border="0">

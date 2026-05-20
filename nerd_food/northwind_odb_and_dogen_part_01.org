@@ -1,5 +1,5 @@
 #+title: Nerd Food: Northwind, or Using Dogen with ODB - Part I
-#+options: date:nil toc:nil author:nil num:nil title:nil
+#+options: date:nil toc:t author:nil num:nil title:nil
 
 Thanks to my first [[https://github.com/DomainDrivenConsulting/dogen][Dogen]] paying customer, I finally got a chance to
 work with [[http://www.codesynthesis.com/products/odb/][ODB]] - [[http://www.codesynthesis.com][Code Synthesis']] amazingly interesting C++

@@ -1,6 +1,6 @@
 #+title: Notebook of a Return to My Native Land - part 4
 #+author: Marco Craveiro
-#+options: num:nil author:nil toc:nil
+#+options: num:nil author:nil toc:t
 #+bind: org-html-validation-link nil
 
 [[file:index.org][Back to chapter index.]]

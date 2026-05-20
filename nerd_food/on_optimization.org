@@ -1,6 +1,6 @@
 #+title: Nerd food: On Optimization
 #+author: Marco Craveiro
-#+options: num:nil author:nil toc:nil
+#+options: num:nil author:nil toc:t
 #+bind: org-html-validation-link nil
 
 | [[file:index.org][Back to essay index]] | [[file:../index.org][Back to home page]] |

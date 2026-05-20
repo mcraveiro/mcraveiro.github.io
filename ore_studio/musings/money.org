@@ -3,7 +3,7 @@
 :END:
 #+title: Money
 #+author: Marco Craveiro
-#+options: <:nil c:nil todo:nil ^:nil d:nil date:nil author:nil toc:nil html-postamble:nil
+#+options: <:nil c:nil todo:nil ^:nil d:nil date:nil author:nil toc:t html-postamble:nil
 #+startup: inlineimages
 
 [[id:1DE77E99-9018-4C20-A999-06767D61C2C7][Back to Domain Musings]].

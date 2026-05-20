@@ -1,6 +1,6 @@
 #+title: Kizua Mwangola: Part 3: Huambo
 #+author: marco craveiro
-#+options: num:nil author:nil toc:nil
+#+options: num:nil author:nil toc:t
 #+bind: org-html-validation-link nil
 
 [[file:index.org][back to chapter index.]]
