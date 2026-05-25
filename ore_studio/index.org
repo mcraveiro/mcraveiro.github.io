@@ -78,6 +78,14 @@ What follows is a series of videos I have created on ORE Studio.
 | [[https://www.youtube.com/watch?v=OpZtZPi49rA][https://img.youtube.com/vi/OpZtZPi49rA/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=OpZtZPi49rA][ORE Studio overview - part 2]] | In this second part we address the multiple comments we had from people who have reached out, demonstrate fixing issues using our Claude Code setup and demonstrate the counterparties wizard working correctly. |
 | [[https://www.youtube.com/watch?v=kYpU9NDRR4E][https://img.youtube.com/vi/kYpU9NDRR4E/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=kYpU9NDRR4E][ORE Studio Overview - part 3]] | In this video we provide an overview of the Karpathian approach we take in ORE Studio, including a brief explanation of AAD which references [[https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbWJNVENmVGFyYUktRTVPMUFBcHR1VnhyN013d3xBQ3Jtc0tuZXByaTc1NWFLYllRTVNVQXZnTVF6UDRNY0wyamp1cXNPOXNIUmg2NkJQOElCWjJqWExlYmVBSnpQQ0FTYzVqTWRzbHZFbU0xRlRkSXhibkFqSXZVTzAtWjBITzFybW0tQlNqdWpBQmN4c3V4cHllUQ&q=https%3A%2F%2Fgithub.com%2Fkarpathy%2Fmicrograd&v=kYpU9NDRR4E][Micrograd]].                                                          |
 
+** Demos
+
+What follows is a series of sprint demos showcasing the latest development on ORE Studio.
+
+| Thumbnail                                                                                            | Video                                                              | Description                                                  |
+|------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------+-------------------------------------------------------------|
+| [[https://www.youtube.com/watch?v=NDxW12FNhrU][https://img.youtube.com/vi/NDxW12FNhrU/mqdefault.jpg]] | [[https://www.youtube.com/watch?v=NDxW12FNhrU][ORE Studio: Sprint 17 Demo]] | A demo of the work completed during Sprint 17 of ORE Studio. |
+
 ** Articles
 
 What follows is a series of posts on the topic of ORE Studio and related technologies.
