@@ -87,7 +87,7 @@ Dogen was started in 2011 by the author of the present document, who acts as
 both its maintainer and main contributor. Dogen has been in continuous
 development since inception, with a frequent if somewhat irregular release
 cadence, totalling 130 releases over the decade-long span --- 110 of which are
-publicly available. Figure [[fig-app_process]] shows the distribution of releases
+publicly available. Figure [[fig-dogen_releases_per_year]] shows the distribution of releases
 per year, starting in 2012, which is the year the project
 was first made available in GitHub.[fn:old_releases] Its latest release is
 v1.0.30, published at the start of January 2021.[fn:dogen_1_0_30] Focus then
@@ -414,7 +414,7 @@ where applicable.
   and =dogen.codec=).
 - =dogen.profiles=: contains the configuration for the Dogen product,
   instantiating the VMM and defining the configuration language for
-  Dogen. Figure [[fig-masd_configuration]] shows a fragment of this model.
+  Dogen.
 - =dogen.text=: projection framework that takes logical model elements and
   generates their physical representation. These are implemented as M2T
   transforms, defined using the internal text templating languages discussed
