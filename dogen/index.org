@@ -56,3 +56,5 @@ the basic concepts of this field and why we found it necessary to extend it.
 | [[id:3310548C-2A30-0FA4-71F3-6E31EB98D498][The State of MDE Adoption]]                 | Analysis of the practicalities of MDE adoption.                            |
 | [[id:8EFC0922-AD38-9514-538B-88C0EF9F730E][Requirements for a new Methodology]]        | Requirements for the MASD methodology.                                     |
 | [[id:EE673330-E634-3294-54E3-BBE3A4D741BE][The MASD Methodology]]                      | Definition of the MASD methodology.                                        |
+| [[id:1F62296F-DE7E-489C-876D-48FE1FC6321C][Literate Modeling with org-model]]           | MASD's approach to literate modeling using org-mode.                       |
+| [[id:28172515-59C8-458A-B9CF-B0DCC48BB0EC][MASD Reference Implementation]]             | Dogen code generator and its reference products.                           |
