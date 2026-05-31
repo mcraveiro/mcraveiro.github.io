@@ -72,14 +72,12 @@ XML, preferably XMI (/cf./ [[id:6EBDB35D-8892-8964-6D03-393E013B74BA][State of t
 was seen as the obvious language for model editing. For the majority of MASD's
 lifespan, Dia[fn:dia_tool] has been used in this regard. Dia is a
 general-purpose FOSS diagramming tool, with support for UML amongst great many
-other notations. Figure [[fig-dia_identification_model]] shows Dia with a fragment
+other notations. The figure shows Dia with a fragment
 of a model from MASD's MRI.
 
 [fn:dia_tool] https://gitlab.gnome.org/GNOME/dia/
 
 
-#+caption: Dia modeling tool with a MASD model.
-#+name: fig-dia_identification_model
 
 From a perspective of industrial-grade modeling, Dia suffers from significant
 deficiencies: it has limited understanding of UML --- not much beyond seeing it
@@ -87,7 +85,7 @@ as a set of shapes --- and supports several core features in an inconsistent
 manner. For example, model-level stereotypes and tagged values are not
 available, though they exist for other elements --- hence why these have been
 added to UML notes via a MASD-specific extension, as demonstrated in Figure
-[[fig-dia_identification_model]] (top-left, in yellow). That said, these
+ (top-left, in yellow). That said, these
 limitations were incidental to MASD because our express intent is to avoid
 coupling the domain architecture to any one tool, and to use tooling merely as
 a means for model composition. In other words, the richer the feature set of
@@ -106,7 +104,7 @@ representation aids comprehension --- particularly when carefully curated and
 aided by colour schemes, as is done in the MRI --- a large proportion of the
 modeling work is related to editing elements and their properties. Often times
 it entails going backwards and forwards between different representations, as
-depicted by Figure [[fig-masd_information_flow]].
+depicted by The figure.
 
 [fn:graphical_challenges] Note that our intention is not to make a general
 statement about graphical modeling --- though, as our review of adoption
@@ -120,8 +118,6 @@ consult the MRI's release notes when this feature was introduced.
 [cite:@Dogen1030]
 
 
-#+caption: Information flow across representations in MASD.
-#+name: fig-masd_information_flow
 
 The image provides a simplified view of information flows across
 representations within the MRI, as observed during the development of new
@@ -204,7 +200,7 @@ TextUML[fn:textuml], PlantUML[fn:plantuml], yUML[fn:yuml] and others of a
 similar ilk, all characterised by a compact scope and a focus on outputting
 diagrams as images; one could conceivably target the structural subset of any
 one of these implementations to satisfy MASD's requirements. Alas, by carefully
-observing MASD's information flow (Figure [[fig-masd_information_flow]]), these
+observing MASD's information flow (The figure), these
 approaches were seen to be better suited for extractive projections out of MASD
 rather than as injections. It is so because both the agile representation and
 the documentation representation involve natural language; the literate modeling
@@ -326,7 +322,7 @@ to their workflow, or find ways of using org-mode with their current setup.
 As org-mode is well documented, physical modeling (/cf./
 [[id:EE673330-E634-3294-54E3-BBE3A4D741BE][The MASD Methodology]]) relied on existing sources such as
 [cite:@org_mode_syntax]. Two brief examples will be shown to demonstrate the
-morphology of org-mode files. Figure [[fig-org-mode-example-top]] displays a
+morphology of org-mode files. The figure displays a
 fragment of a sample org-mode document, as sourced from the previously cited
 project's website.[fn:org-mode] The document is at the centre, with a darker
 background; to its left and right are annotations to help identify elements and
@@ -334,8 +330,6 @@ features. The outline structure of org-mode is created via the star or asterisk
 character (=*=), with the number of stars conveying depth --- shown in the
 picture with headlines of varying colours.
 
-#+caption: Fragment of example org-mode document. /Source:/ Project website.
-#+name: fig-org-mode-example-top
 
 Different kinds of metadata can be associated with the document --- such as
 =title=, =author= and =date=, top left --- as well as task management
@@ -350,7 +344,7 @@ documents via the =#+include= keyword.
 
 Our second example, also sourced from the org-mode website, demonstrates the
 usage of source code blocks within a org-mode document (Figure
-[[fig-org-mode-source-code-block]]). The =#+begin_src= keyword denotes the start of
+). The =#+begin_src= keyword denotes the start of
 the source code block, followed by the language used within the block (=python=
 in this particular case). In addition to providing syntax highlighting relative
 to the language used, org-mode also allows editing the source code block within
@@ -358,13 +352,11 @@ an environment that is similar --- if not exactly identical --- to a full
 programming environment, with access to IDE-like features such as code
 completion, compilation errors and the like.
 
-#+caption: Fragment with source code blocks. /Source:/ Project website.
-#+name: fig-org-mode-source-code-block
 
 The third and final example focuses on property drawers. Documents, headlines
 and other org-mode elements can be associated with an arbitrary number of
 properties. As with headlines, these can be kept open or folded away for
-convenience. Figure [[fig-org-mode-propery-drawers]] demonstrates the use of
+convenience. The figure demonstrates the use of
 property drawers, both at the document level, as well as at the headline level.
 In the example, we show the =ID= property associating a UUID with each element,
 including the document itself (at the top). One of the property drawers is
@@ -372,8 +364,6 @@ folded away (headline "Example sub-headline collapsed"). For completeness, we
 also created a sample property called =MY-PROPERTY= that is only associated
 with the top-most headline "Example headline".
 
-#+caption: Org-mode document with property drawers.
-#+name: fig-org-mode-propery-drawers
 
 This brief overview portrays only a sliver of org-mode's power and abilities.
 Nonetheless, these examples demonstrate all of the core features needed by MASD
@@ -407,12 +397,10 @@ authoring of org-model diagrams.
 [fn:orgmodeparser] https://github.com/mirkoboehm/OrgModeParser
 
 
-#+caption: Dia representation of org-mode model.
-#+name: fig-masd_org_mode_model
 
 Having no other alternative, we implemented org-mode support by extending the
 MRI. This was done by creating a component model to store all of the data
-structures required by the codec (Figure [[fig-masd_org_mode_model]]), and writing a
+structures required by the codec (The figure), and writing a
 parser that reads input files in org-mode notation and instantiates entities
 with MASD's org-mode model. Thanks to the codec pipeline, the integration of
 the org-mode model with the remainder of the framework was quite
@@ -430,16 +418,14 @@ The mapping was surprisingly simple:
 - Finally, the content of the headline was used to populate the comment for the
   codec element.
 
-The mapping can be seen in action on Figure [[fig-masd_org_mode_model_top]],
+The mapping can be seen in action on The figure,
 depicting an org-mode representation of the org-mode model previously shown in
-its Dia incarnation (Figure [[fig-masd_org_mode_model]]). The property drawers have
+its Dia incarnation (The figure). The property drawers have
 been left open for illustrative purposes but, even in their expanded state, it
 should be apparent how documentation now dominates the model when compared to
 its UML representation, taking us much closer to literate modeling without
 subverting the org-mode file format.
 
-#+caption: Org-mode model in org-mode notation.
-#+name: fig-masd_org_mode_model_top
 
 This outcome was not completely left to chance. Indeed, a key principle when
 designing the mapping was to try to keep to org-mode's native idioms as much as
@@ -450,7 +436,7 @@ that the mapping is not completely native as of yet, with further analysis work
 still ongoing; for example, references could make use of links to facilitate
 navigation between org-mode documents, but at present these are properties
 within the model drawer (/e.g./ =masd.codec.reference= in Figure
-[[fig-masd_org_mode_model_top]], near the top).[fn:references-org-roam]
+, near the top).[fn:references-org-roam]
 
 A final note is warranted on the processing of headline titles. In the interest
 of pushing forward with the literate modeling agenda, titles can make use of
@@ -515,26 +501,22 @@ are unequivocal:
 - *Text templating integration*: org-mode source code blocks allowed us to
   integrate the text templates used to generate M2T transforms in a very natural
   way. These will be discussed in more detail on [[id:28172515-59C8-458A-B9CF-B0DCC48BB0EC][MASD Reference Implementation]],
-  but the example shown on Figure [[fig-org_model_text_stitch_template]]
+  but the example shown on The figure
   demonstrates the principle. The templates are carried within source code
   blocks in org-mode documents, facilitating their editing and composition.
 
-#+caption: Example text template in a org-mode model.
-#+name: fig-org_model_text_stitch_template
 
 However, not all aspects of this transition have been positive. By far, the
 most significant downside of moving towards a text representation was the loss
 of a graphical representation for modeling. Given that UML class diagrams had
 been very central to modeling within MASD, this was not an acceptable
 trade-off, so we decided to address this shortcoming by adding a PlantUML codec
-to the MRI. As Figure [[fig-plantuml_org_mode_model]] attests, basic support for
+to the MRI. As The figure attests, basic support for
 class diagrams is already available, though their expressiveness is not yet at
 the same level of past Dia diagrams.
 
-#+caption: PlantUML representation of org-mode model.
-#+name: fig-plantuml_org_mode_model
 
-Figure [[fig-masd_org_mode_model]] had shown the Dia representation for a fragment
+The figure had shown the Dia representation for a fragment
 of this very model. It should be apparent that the manually crafted diagram is
 "easier on the eye" when compared to the automatically generated PlantUML
 diagram, though the qualitative nature of this judgement makes it difficult to
