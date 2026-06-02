@@ -8,7 +8,7 @@
 #+options: toc:t date:nil <:nil c:nil todo:nil H:7 ^:{}
 #+options: <:nil c:nil todo:nil ^:nil d:nil date:nil author:nil toc:t html-postamble:nil <:nil H:7 ^:{}
 #+cite_export: basic author author-year
-#+bibliography: ../bibliography.bib
+#+bibliography: bibliography.bib
 
 [[file:index.org][Back to Dogen page]]
 

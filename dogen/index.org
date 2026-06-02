@@ -5,7 +5,7 @@
 #+options: <:nil c:nil todo:nil ^:nil d:nil date:nil author:nil toc:nil html-postamble:nil
 #+startup: inlineimages
 #+cite_export: basic author author-year
-#+bibliography: bibliography.bib
+#+bibliography: docs/bibliography.bib
 
 [[./assets/images/masd_logo.png]]
 
